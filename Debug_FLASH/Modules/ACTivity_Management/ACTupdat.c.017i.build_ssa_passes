@@ -1,0 +1,954 @@
+act_UpdateFaultSeverity ()
+{
+  <bb 2> :
+  _1 = ACT_errors.fastPowerDown.all;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.severity = 3;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  _2 = ACT_errors.slowPowerDown.all;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.severity = 2;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _3 = ACT_errors.warnings.all;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.severity = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.severity = 0;
+
+  <bb 9> :
+  return;
+
+}
+
+
+act_UpdateFaultOrigin ()
+{
+  <bb 2> :
+  _1 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[0].flags.moduleFlags.warns.all;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  ACT_errors.origin.originFlag.powerCore1 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.origin.originFlag.powerCore1 = 0;
+
+  <bb 6> :
+  _3 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  if (_3 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _4 = CNV_powercoreUnitTable[1].flags.moduleFlags.warns.all;
+  if (_4 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.origin.originFlag.powerCore2 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  ACT_errors.origin.originFlag.powerCore2 = 0;
+
+  <bb 10> :
+  return;
+
+}
+
+
+act_CheckErrors ()
+{
+  <bb 2> :
+  act_CheckUnavailableCOMETi ();
+  act_CheckCanLossErrors ();
+  act_CheckPowerCoreError ();
+  act_CheckAddressChanged ();
+  act_CheckRelayNokError ();
+  act_CheckVoltageMeas ();
+  act_CheckOverCurrent ();
+  act_CheckDiscreteIOErrors ();
+  act_CheckPrechargeError ();
+  act_CheckParamError ();
+  _1 = ACT_errors.slowPowerDown.all;
+  _2 = ACT_errors.slowPowerDownMask.all;
+  _3 = _1 & _2;
+  ACT_errors.slowPowerDown.all = _3;
+  _4 = ACT_errors.fastPowerDown.all;
+  _5 = ACT_errors.fastPowerDownMask.all;
+  _6 = _4 & _5;
+  ACT_errors.fastPowerDown.all = _6;
+  _7 = ACT_errors.warnings.all;
+  _8 = ACT_errors.warningsMask.all;
+  _9 = _7 & _8;
+  ACT_errors.warnings.all = _9;
+  return;
+
+}
+
+
+act_CheckPowerCoreError ()
+{
+  size_t index;
+  boolean checkVoltageShourceSide;
+  boolean checkCriticalCapacity;
+
+  <bb 2> :
+  checkCriticalCapacity = 0;
+  checkVoltageShourceSide = 0;
+  index = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[index].flags.moduleFlags.faults.all;
+  if (_1 > 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  checkCriticalCapacity = 1;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  _2 = CNV_powercoreUnitTable[index].flags.moduleFlags.faults.all;
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  checkVoltageShourceSide = 1;
+
+  <bb 7> :
+  index = index + 1;
+
+  <bb 8> :
+  if (index <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  if (checkCriticalCapacity != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  ACT_errors.fastPowerDown.error.criticalCapacity = 1;
+
+  <bb 11> :
+  ACT_errors.warnings.warningsFlags.noVoltageOnSourceSide = checkVoltageShourceSide;
+  return;
+
+}
+
+
+act_CheckWarnings ()
+{
+  size_t index;
+  boolean tempWarning;
+
+  <bb 2> :
+  tempWarning = 0;
+  index = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) tempWarning;
+  _2 = CNV_powercoreUnitTable[index].flags.moduleFlags.warns.all;
+  _3 = (int) _2;
+  _4 = _1 | _3;
+  tempWarning = _4 != 0;
+  index = index + 1;
+
+  <bb 4> :
+  if (index <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  ACT_errors.warnings.warningsFlags.internalWarning = tempWarning;
+  act_CheckTemperture ();
+  act_CheckMaintCondition ();
+  act_CheckUnkownCometiUnit ();
+  act_CheckRelayCmd ();
+  act_CheckOverVolt ();
+  act_CheckAutoCnvEnd ();
+  act_CheckRegulationRequestNok ();
+  _5 = ACT_errors.warnings.all;
+  _6 = ACT_errors.warningsMask.all;
+  _7 = _5 & _6;
+  ACT_errors.warnings.all = _7;
+  return;
+
+}
+
+
+act_CheckUnavailableCOMETi ()
+{
+  <bb 2> :
+  _1 = PWB_Flags.faults.flags.unavailableCometi;
+  ACT_errors.slowPowerDown.error.limitedCapacity = _1;
+  return;
+
+}
+
+
+act_CheckMaintCondition ()
+{
+  <bb 2> :
+  _1 = FSM_errors.bbAuxInMaintMode;
+  ACT_errors.warnings.warningsFlags.bbauxInMaintenanceMode = _1;
+  _2 = FSM_errors.EnterMaintModeNotMet;
+  ACT_errors.warnings.warningsFlags.maintenanceConditionNotMet = _2;
+  return;
+
+}
+
+
+act_CheckRegulationRequestNok ()
+{
+  <bb 2> :
+  _1 = CNV_regulationReq.reqAccepted;
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  _6 = (_Bool) _5;
+  ACT_errors.warnings.warningsFlags.regulationRequestNOK = _6;
+  return;
+
+}
+
+
+act_CheckAutoCnvEnd ()
+{
+  <bb 2> :
+  _1 = FSM_errors.autonomousBoostEnd;
+  ACT_errors.warnings.warningsFlags.autonomousBoostEnd = _1;
+  _2 = FSM_errors.autonomousBuckEnd;
+  ACT_errors.warnings.warningsFlags.autonomousBuckEnd = _2;
+  return;
+
+}
+
+
+act_CheckOverVolt ()
+{
+  uint32_t overVoltConfirmationTime;
+
+  <bb 2> :
+  overVoltConfirmationTime = PAR_paramConfig[51].realVal.unsignedVal;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.overVolt;
+  if (overVoltConfirmationTime > _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.overVolt;
+  _5 = _4 + 1;
+  errorsTimeouts.overVolt = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.overVolt = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.overVolt;
+  if (overVoltConfirmationTime <= _6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.overVoltage = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+act_CheckRelayCmd ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.relayCmdWarning;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.relayCmdWarning;
+  _5 = _4 + 1;
+  errorsTimeouts.relayCmdWarning = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.relayCmdWarning = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.relayCmdWarning;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.warnings.warningsFlags.relayCommandWarning = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+act_CheckUnkownCometiUnit ()
+{
+  <bb 2> :
+  _1 = COM_flags.moduleFlags.faults.flags.unkownCOMETi;
+  ACT_errors.warnings.warningsFlags.unknownPowercoreUnit = _1;
+  return;
+
+}
+
+
+act_CheckParamError ()
+{
+  <bb 2> :
+  _1 = PAR_paramReq.lastError;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.fastPowerDown.error.parameterError = 1;
+
+  <bb 4> :
+  return;
+
+}
+
+
+act_CheckPrechargeError ()
+{
+  <bb 2> :
+  _1 = PWB_Flags.status.flags.prechargeAborted;
+  ACT_errors.fastPowerDown.error.prechargeError = _1;
+  return;
+
+}
+
+
+act_CheckDiscreteIOErrors ()
+{
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.faults.flags);
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.discretIoError;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.discretIoError;
+  _5 = _4 + 1;
+  errorsTimeouts.discretIoError = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.discretIoError = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.discretIoError;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.discreteIOsError = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+act_CheckOverCurrent ()
+{
+  uint32_t overCurrentConfirmationTime;
+
+  <bb 2> :
+  overCurrentConfirmationTime = PAR_paramConfig[52].realVal.unsignedVal;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 64;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.overCurrent;
+  if (overCurrentConfirmationTime > _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.overCurrent;
+  _5 = _4 + 1;
+  errorsTimeouts.overCurrent = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.overCurrent = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.overCurrent;
+  if (overCurrentConfirmationTime <= _6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.overCurrent = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+act_CheckVoltageMeas ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 16;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.hvVoltMeas;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.hvVoltMeas;
+  _5 = _4 + 1;
+  errorsTimeouts.hvVoltMeas = _5;
+
+  <bb 5> :
+  ACT_errors.warnings.warningsFlags.hvVoltageMeas = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  errorsTimeouts.hvVoltMeas = 0;
+  ACT_errors.warnings.warningsFlags.hvVoltageMeas = 0;
+
+  <bb 7> :
+  _6 = errorsTimeouts.hvVoltMeas;
+  if (_6 > 99)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.fastPowerDown.error.hvVoltageMeas = 1;
+
+  <bb 9> :
+  _7 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _8 = _7 & 32;
+  if (_8 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 10> :
+  _9 = errorsTimeouts.lvVoltMeas;
+  if (_9 <= 99)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _10 = errorsTimeouts.lvVoltMeas;
+  _11 = _10 + 1;
+  errorsTimeouts.lvVoltMeas = _11;
+
+  <bb 12> :
+  ACT_errors.warnings.warningsFlags.lvVoltageMeas = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  errorsTimeouts.lvVoltMeas = 0;
+  ACT_errors.warnings.warningsFlags.lvVoltageMeas = 0;
+
+  <bb 14> :
+  _12 = errorsTimeouts.lvVoltMeas;
+  if (_12 > 99)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  ACT_errors.fastPowerDown.error.lvVoltageMeas = 1;
+
+  <bb 16> :
+  return;
+
+}
+
+
+act_CheckRelayNokError ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 4;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.hvRelayNok;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.hvRelayNok;
+  _5 = _4 + 1;
+  errorsTimeouts.hvRelayNok = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.hvRelayNok = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.hvRelayNok;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.hvCouplerNok = 1;
+
+  <bb 8> :
+  _7 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _8 = _7 & 8;
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  _9 = errorsTimeouts.lvRelayNok;
+  if (_9 <= 99)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  _10 = errorsTimeouts.lvRelayNok;
+  _11 = _10 + 1;
+  errorsTimeouts.lvRelayNok = _11;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  errorsTimeouts.lvRelayNok = 0;
+
+  <bb 12> :
+  _12 = errorsTimeouts.lvRelayNok;
+  if (_12 > 99)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  ACT_errors.fastPowerDown.error.LvPrechargeNok = 1;
+
+  <bb 14> :
+  return;
+
+}
+
+
+act_evaluateTempSeverity (uint32_t temp, ACT_TempSeverity currentSeverity, uint32_t lowTheshold, uint32_t medTheshold, uint32_t highTheshold)
+{
+  ACT_TempSeverity returnValue;
+  ACT_TempSeverity D.8830;
+
+  <bb 2> :
+  returnValue = currentSeverity;
+  switch (currentSeverity) <default: <L18> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L9> [INV], case 3: <L15> [INV]>
+
+  <bb 3> :
+<L0>:
+  if (temp > lowTheshold)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  returnValue = 1;
+
+  <bb 5> :
+  goto <bb 20>; [INV]
+
+  <bb 6> :
+<L3>:
+  if (temp > medTheshold)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  returnValue = 2;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  _1 = lowTheshold + 4294967291;
+  if (temp < _1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  returnValue = 0;
+
+  <bb 10> :
+  goto <bb 20>; [INV]
+
+  <bb 11> :
+<L9>:
+  if (temp > highTheshold)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  returnValue = 3;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+  _2 = medTheshold + 4294967291;
+  if (temp < _2)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  returnValue = 1;
+
+  <bb 15> :
+  goto <bb 20>; [INV]
+
+  <bb 16> :
+<L15>:
+  _3 = highTheshold + 4294967291;
+  if (temp < _3)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  returnValue = 2;
+
+  <bb 18> :
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+<L18>:
+
+  <bb 20> :
+  D.8830 = returnValue;
+
+  <bb 21> :
+<L20>:
+  return D.8830;
+
+}
+
+
+act_CheckTemperture ()
+{
+  uint32_t maxAbmientTemp;
+  uint32_t powerCore_high_Threshold;
+  uint32_t powerCore_med_Threshold;
+  uint32_t powerCore_low_Threshold;
+  uint32_t bbAUX_high_Threshold;
+  uint32_t bbAUX_med_Threshold;
+  uint32_t bbAUX_low_Threshold;
+
+  <bb 2> :
+  bbAUX_low_Threshold = PAR_paramConfig[23].realVal.unsignedVal;
+  bbAUX_med_Threshold = PAR_paramConfig[24].realVal.unsignedVal;
+  bbAUX_high_Threshold = PAR_paramConfig[25].realVal.unsignedVal;
+  powerCore_low_Threshold = PAR_paramConfig[26].realVal.unsignedVal;
+  powerCore_med_Threshold = PAR_paramConfig[27].realVal.unsignedVal;
+  powerCore_high_Threshold = PAR_paramConfig[28].realVal.unsignedVal;
+  maxAbmientTemp = 0;
+  _1 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  _2 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  if (_1 > _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  maxAbmientTemp = (uint32_t) _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  maxAbmientTemp = (uint32_t) _4;
+
+  <bb 5> :
+  _5 = PWB_measures.Hv_Temp;
+  bbaux_severityLevel.3_6 = bbaux_severityLevel;
+  _7 = act_evaluateTempSeverity (_5, bbaux_severityLevel.3_6, bbAUX_low_Threshold, bbAUX_med_Threshold, bbAUX_high_Threshold);
+  bbaux_severityLevel = _7;
+  cometi_severityLevel.4_8 = cometi_severityLevel;
+  _9 = act_evaluateTempSeverity (maxAbmientTemp, cometi_severityLevel.4_8, powerCore_low_Threshold, powerCore_med_Threshold, powerCore_high_Threshold);
+  cometi_severityLevel = _9;
+  cometi_severityLevel.5_10 = cometi_severityLevel;
+  bbaux_severityLevel.6_11 = bbaux_severityLevel;
+  _12 = MAX_EXPR <cometi_severityLevel.5_10, bbaux_severityLevel.6_11>;
+  ACT_tempSeverity = _12;
+  ACT_tempSeverity.7_13 = ACT_tempSeverity;
+  switch (ACT_tempSeverity.7_13) <default: <L6> [INV], case 1: <L5> [INV], case 2: <L4> [INV], case 3: <L3> [INV]>
+
+  <bb 6> :
+<L3>:
+  ACT_errors.fastPowerDown.error.overTemperature = 1;
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 1;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 1;
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+
+  <bb 10> :
+  return;
+
+}
+
+
+act_CheckAddressChanged ()
+{
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.faults.flags);
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.addressChanged;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.addressChanged;
+  _5 = _4 + 1;
+  errorsTimeouts.addressChanged = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.addressChanged = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.addressChanged;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.addressChanged = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+act_CheckCanLossErrors ()
+{
+  <bb 2> :
+  _1 = COM_flags.moduleFlags.faults.flags.canCComLoss;
+  ACT_errors.slowPowerDown.error.controlCanLoss = _1;
+  _2 = ACT_errors.slowPowerDown.error.limitedCapacity;
+  _3 = COM_flags.moduleFlags.faults.flags.canIComLoss;
+  _4 = _2 | _3;
+  _5 = (int) _4;
+  _6 = _5 != 0;
+  ACT_errors.slowPowerDown.error.limitedCapacity = _6;
+  return;
+
+}
+
+
+act_UpdateMasks ()
+{
+  uint32_t warningsMask;
+  uint32_t slowPowerDownMask;
+  uint32_t fastPowerDownMask;
+
+  <bb 2> :
+  FSM_mode.0_1 = FSM_mode;
+  if (FSM_mode.0_1 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  FSM_mode.1_2 = FSM_mode;
+  if (FSM_mode.1_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  FSM_mode.2_3 = FSM_mode;
+  if (FSM_mode.2_3 == 5)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.fastPowerDownMask.all = 0;
+  ACT_errors.slowPowerDownMask.all = 0;
+  ACT_errors.warningsMask.all = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  fastPowerDownMask = PAR_paramConfig[31].realVal.unsignedVal;
+  slowPowerDownMask = PAR_paramConfig[30].realVal.unsignedVal;
+  warningsMask = PAR_paramConfig[29].realVal.unsignedVal;
+  _4 = (short unsigned int) fastPowerDownMask;
+  ACT_errors.fastPowerDownMask.all = _4;
+  ACT_errors.slowPowerDownMask.all = slowPowerDownMask;
+  _5 = (short unsigned int) warningsMask;
+  ACT_errors.warningsMask.all = _5;
+
+  <bb 7> :
+  return;
+
+}
+
+
+ACT_UpdateFaults ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+
+  <bb 4> :
+  act_UpdateMasks ();
+  act_CheckWarnings ();
+  act_CheckErrors ();
+  act_UpdateFaultOrigin ();
+  act_UpdateFaultSeverity ();
+  return;
+
+}
+
+

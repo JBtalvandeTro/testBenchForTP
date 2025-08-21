@@ -1,0 +1,10 @@
+FLA.c:60:6:FLA_Init	24	static
+FLA.c:114:6:FLA_Deinit	0	static
+FLA.c:127:13:Fla_GetPartitionSize	24	static
+FLA.c:144:13:FLA_Erase	40	static
+FLA.c:203:13:FLA_Write	40	static
+FLA.c:336:13:FLA_Read	40	static
+FLA.c:387:20:fla_CheckPartitionId	16	static
+FLA.c:407:20:fla_CheckAddressRange	40	static
+FLA.c:443:20:fla_ExecuteJob	24	static
+FLA.c:478:13:fla_CacheSetup	0	static

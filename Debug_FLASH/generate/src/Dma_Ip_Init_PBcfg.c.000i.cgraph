@@ -1,0 +1,720 @@
+Trivially needed symbols: Dma_Ip_xDmaInitPB_INIT Dma_Ip_paxHwChannelStateArrayPB_INIT HwChannel1StatePB_INIT HwChannel0StatePB_INIT Dma_Ip_paxLogicChannelConfigArrayPB_INIT LogicChannel1ConfigPB_INIT LogicChannel0ConfigPB_INIT LogicChannel1GlobalConfigPB_INIT LogicChannel0GlobalConfigPB_INIT Dma_Ip_paxLogicInstanceConfigArrayPB_INIT LogicInstance0ConfigPB_INIT
+
+
+Initial Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066392d0
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06639240
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066391b0
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06639120
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06639090
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06639000
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0662fee8
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0662fe10
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0662fd80
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0662fca8
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: not-ready
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: available
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: available
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Dma_Ip_xDmaInitPB_INIT Dma_Ip_paxHwChannelStateArrayPB_INIT HwChannel1StatePB_INIT HwChannel0StatePB_INIT Dma_Ip_paxLogicChannelConfigArrayPB_INIT LogicChannel1ConfigPB_INIT LogicChannel0ConfigPB_INIT LogicChannel1GlobalConfigPB_INIT LogicChannel0GlobalConfigPB_INIT Dma_Ip_paxLogicInstanceConfigArrayPB_INIT LogicInstance0ConfigPB_INIT
+Removing variables:
+
+Final Symbol table:
+
+Dma_Ip_xLogicInstanceResetConfig/14 (Dma_Ip_xLogicInstanceResetConfig) @06639438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Dma_Ip_xLogicChannelResetConfig/13 (Dma_Ip_xLogicChannelResetConfig) @066393f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @0663a7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @0663a700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_xDmaInitPB_INIT/10 (Dma_Ip_xDmaInitPB_INIT) @066392d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)Dma_Ip_xLogicChannelResetConfig/13 (addr)Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)Dma_Ip_xLogicInstanceResetConfig/14 (addr)Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (Dma_Ip_paxHwChannelStateArrayPB_INIT) @06639240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @066392d0
+  References: HwChannel0StatePB_INIT/7 (addr)HwChannel1StatePB_INIT/8 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized
+HwChannel1StatePB_INIT/8 (HwChannel1StatePB_INIT) @066391b0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06639240
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: available
+  Varpool flags:
+HwChannel0StatePB_INIT/7 (HwChannel0StatePB_INIT) @06639120
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @066391b0
+  References: 
+  Referring: Dma_Ip_paxHwChannelStateArrayPB_INIT/9 (addr)
+  Availability: available
+  Varpool flags:
+Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (Dma_Ip_paxLogicChannelConfigArrayPB_INIT) @06639090
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06639120
+  References: LogicChannel0ConfigPB_INIT/4 (addr)LogicChannel1ConfigPB_INIT/5 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1ConfigPB_INIT/5 (LogicChannel1ConfigPB_INIT) @06639000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06639090
+  References: Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/12 (addr)LogicChannel1GlobalConfigPB_INIT/3 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0ConfigPB_INIT/4 (LogicChannel0ConfigPB_INIT) @0662fee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06639000
+  References: Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/11 (addr)LogicChannel0GlobalConfigPB_INIT/2 (addr)
+  Referring: Dma_Ip_paxLogicChannelConfigArrayPB_INIT/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel1GlobalConfigPB_INIT/3 (LogicChannel1GlobalConfigPB_INIT) @0662fe10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0662fee8
+  References: 
+  Referring: LogicChannel1ConfigPB_INIT/5 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicChannel0GlobalConfigPB_INIT/2 (LogicChannel0GlobalConfigPB_INIT) @0662fd80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0662fe10
+  References: 
+  Referring: LogicChannel0ConfigPB_INIT/4 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (Dma_Ip_paxLogicInstanceConfigArrayPB_INIT) @0662fca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0662fd80
+  References: LogicInstance0ConfigPB_INIT/0 (addr)
+  Referring: Dma_Ip_xDmaInitPB_INIT/10 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LogicInstance0ConfigPB_INIT/0 (LogicInstance0ConfigPB_INIT) @0662fc18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0662fca8
+  References: 
+  Referring: Dma_Ip_paxLogicInstanceConfigArrayPB_INIT/1 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

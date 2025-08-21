@@ -1,0 +1,463 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: can_Error COM_Deinit COM_UpdatePeriodParams COM_Init
+
+
+Marking externally visible variables: COM_framesMaintenance COM_framesInternal COM_framesControl COM_txPeriodInternal COM_txPeriodControl COM_txDelayCounterInternal COM_txDelayCounterControl COM_errorMasks COM_debugTestReq COM_paramReq COM_mode COM_internalComLostCounter COM_controlComLostCounter COM_pbitResultsInfo COM_controlStatusInfo COM_tempMeasures COM_powerMeasures COM_errorsAndWarnings COM_Address COM_flags
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+CBU_flags/30 (CBU_flags) @061ce510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_Init/20 (read)COM_Init/20 (read)COM_Init/20 (read)COM_Init/20 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_SetBitrate/29 (CBU_SetBitrate) @061ca7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_Init/20 COM_Init/20 COM_Init/20 
+  Calls: 
+CBU_Address/28 (CBU_Address) @061ce3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_Init/20 (read)COM_Init/20 (read)COM_Init/20 (read)
+  Availability: not_available
+  Varpool flags:
+Dio_WriteChannel/27 (Dio_WriteChannel) @061ca700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_Init/20 
+  Calls: 
+PAR_paramConfig/26 (PAR_paramConfig) @061ce360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_Init/20 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)COM_UpdatePeriodParams/21 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/25 (FSM_mode) @061ce318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_Init/20 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_Init/24 (CBU_Init) @061ca540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_Init/20 
+  Calls: 
+can_Error/23 (can_Error) @061ca0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+COM_Deinit/22 (COM_Deinit) @061bae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/0 (write)COM_Address/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+COM_UpdatePeriodParams/21 (COM_UpdatePeriodParams) @061ba0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodControl/15 (write)PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodControl/15 (write)PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodControl/15 (write)PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodControl/15 (write)PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodInternal/16 (write)PAR_paramConfig/26 (read)PAR_paramConfig/26 (read)COM_txPeriodInternal/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_Init/20 
+  Calls: 
+COM_Init/20 (COM_Init) @061bad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_errorMasks/12 (write)COM_errorMasks/12 (write)COM_txDelayCounterControl/13 (write)COM_txDelayCounterInternal/14 (write)COM_flags/0 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_mode/9 (write)COM_paramReq/10 (write)COM_paramReq/10 (write)COM_paramReq/10 (write)COM_paramReq/10 (write)COM_paramReq/10 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_debugTestReq/11 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_powerMeasures/3 (write)COM_tempMeasures/4 (write)COM_tempMeasures/4 (write)COM_tempMeasures/4 (write)COM_tempMeasures/4 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)FSM_mode/25 (read)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)COM_controlStatusInfo/5 (write)PAR_paramConfig/26 (read)COM_pbitResultsInfo/6 (write)COM_pbitResultsInfo/6 (write)COM_pbitResultsInfo/6 (write)COM_pbitResultsInfo/6 (write)COM_pbitResultsInfo/6 (write)COM_Address/1 (write)CBU_Address/28 (read)CBU_Address/28 (read)CBU_Address/28 (read)CBU_flags/30 (read)COM_flags/0 (write)CBU_flags/30 (read)COM_flags/0 (write)CBU_flags/30 (read)COM_flags/0 (write)CBU_flags/30 (read)COM_flags/0 (write)COM_flags/0 (read)COM_flags/0 (write)COM_flags/0 (read)COM_flags/0 (write)COM_flags/0 (read)COM_flags/0 (write)COM_flags/0 (read)COM_flags/0 (write)COM_flags/0 (write)COM_flags/0 (read)COM_flags/0 (write)COM_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SetBitrate/29 CBU_SetBitrate/29 CBU_SetBitrate/29 Dio_WriteChannel/27 COM_UpdatePeriodParams/21 CBU_Init/24 
+COM_framesMaintenance/19 (COM_framesMaintenance) @05a672d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+COM_framesInternal/18 (COM_framesInternal) @05a67168
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+COM_framesControl/17 (COM_framesControl) @05a30ca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+COM_txPeriodInternal/16 (COM_txPeriodInternal) @05a30948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_UpdatePeriodParams/21 (write)COM_UpdatePeriodParams/21 (write)
+  Availability: available
+  Varpool flags:
+COM_txPeriodControl/15 (COM_txPeriodControl) @05a30900
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_UpdatePeriodParams/21 (write)COM_UpdatePeriodParams/21 (write)COM_UpdatePeriodParams/21 (write)COM_UpdatePeriodParams/21 (write)
+  Availability: available
+  Varpool flags:
+COM_txDelayCounterInternal/14 (COM_txDelayCounterInternal) @05a308b8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_txDelayCounterControl/13 (COM_txDelayCounterControl) @05a30870
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_errorMasks/12 (COM_errorMasks) @05a30828
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_debugTestReq/11 (COM_debugTestReq) @05a307e0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_paramReq/10 (COM_paramReq) @05a30798
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_mode/9 (COM_mode) @05a30750
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_internalComLostCounter/8 (COM_internalComLostCounter) @05a30708
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+COM_controlComLostCounter/7 (COM_controlComLostCounter) @05a306c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+COM_pbitResultsInfo/6 (COM_pbitResultsInfo) @05a30678
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_controlStatusInfo/5 (COM_controlStatusInfo) @05a30630
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_tempMeasures/4 (COM_tempMeasures) @05a305e8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_powerMeasures/3 (COM_powerMeasures) @05a305a0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)
+  Availability: available
+  Varpool flags:
+COM_errorsAndWarnings/2 (COM_errorsAndWarnings) @05a30558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+COM_Address/1 (COM_Address) @05a30510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Deinit/22 (write)
+  Availability: available
+  Varpool flags:
+COM_flags/0 (COM_flags) @05a304c8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (read)COM_Init/20 (write)COM_Init/20 (read)COM_Init/20 (write)COM_Init/20 (read)COM_Init/20 (write)COM_Init/20 (read)COM_Init/20 (write)COM_Init/20 (write)COM_Init/20 (read)COM_Init/20 (write)COM_Init/20 (write)COM_Deinit/22 (write)
+  Availability: available
+  Varpool flags:
+can_Error ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+COM_Deinit ()
+{
+  <bb 2> :
+  COM_flags.all = 0;
+  COM_Address = 0;
+  return;
+
+}
+
+
+COM_UpdatePeriodParams ()
+{
+  <bb 2> :
+  _1 = PAR_paramConfig[10].realVal.unsignedVal;
+  _2 = PAR_paramConfig[11].realVal.unsignedVal;
+  _3 = _1 * _2;
+  _4 = _3 * 10;
+  COM_txPeriodControl[1] = _4;
+  _5 = PAR_paramConfig[10].realVal.unsignedVal;
+  _6 = PAR_paramConfig[12].realVal.unsignedVal;
+  _7 = _5 * _6;
+  _8 = _7 * 10;
+  COM_txPeriodControl[2] = _8;
+  _9 = PAR_paramConfig[10].realVal.unsignedVal;
+  _10 = PAR_paramConfig[14].realVal.unsignedVal;
+  _11 = _9 * _10;
+  _12 = _11 * 10;
+  COM_txPeriodControl[6] = _12;
+  _13 = PAR_paramConfig[10].realVal.unsignedVal;
+  _14 = PAR_paramConfig[13].realVal.unsignedVal;
+  _15 = _13 * _14;
+  _16 = _15 * 10;
+  COM_txPeriodControl[5] = _16;
+  _17 = PAR_paramConfig[10].realVal.unsignedVal;
+  _18 = PAR_paramConfig[15].realVal.unsignedVal;
+  _19 = _17 * _18;
+  _20 = _19 * 10;
+  COM_txPeriodInternal[3] = _20;
+  _21 = PAR_paramConfig[10].realVal.unsignedVal;
+  _22 = PAR_paramConfig[15].realVal.unsignedVal;
+  _23 = _21 * _22;
+  _24 = _23 * 10;
+  COM_txPeriodInternal[4] = _24;
+  return;
+
+}
+
+
+COM_Init ()
+{
+  uint32_t group;
+
+  <bb 2> :
+  COM_errorMasks.error1Mask = 4294967295;
+  COM_errorMasks.error2Mask = 4294967295;
+  CBU_Init (1, 1, 1);
+  group = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  COM_txDelayCounterControl[group] = 0;
+  COM_txDelayCounterInternal[group] = 0;
+  group = group + 1;
+
+  <bb 4> :
+  if (group <= 6)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  COM_UpdatePeriodParams ();
+  COM_flags.all = 0;
+  COM_mode.currentLimit = 0;
+  COM_mode.limitationActive = 0;
+  COM_mode.limitationType = 0;
+  COM_mode.mainMode = 0;
+  COM_mode.regType = 0;
+  COM_mode.setpoint = 0;
+  COM_mode.startOrder = 0;
+  COM_mode.startOrderValid = 0;
+  COM_mode.S3ModeReq = 0;
+  COM_paramReq.readRequest = 0;
+  COM_paramReq.changeRequest = 0;
+  COM_paramReq.saveRequest = 0;
+  COM_paramReq.index = 0;
+  COM_paramReq.value = 0;
+  COM_debugTestReq.relaySwitchTestRequest = 0;
+  COM_debugTestReq.hvMeasuresTestRequest = 0;
+  COM_debugTestReq.lvMeasuresTestRequest = 0;
+  COM_debugTestReq.discreteIosTestRequest = 0;
+  COM_debugTestReq.ledsTestRequest = 0;
+  COM_debugTestReq.muxAddress = 0;
+  COM_debugTestReq.measFormat = 0;
+  COM_debugTestReq.relaySwitchCmd = 0;
+  COM_debugTestReq.relaySwitchId = 0;
+  COM_debugTestReq.discreteIoCmd = 0;
+  COM_debugTestReq.discreteIoId = 0;
+  COM_debugTestReq.ledCmd = 0;
+  COM_debugTestReq.ledId = 0;
+  COM_debugTestReq.ledColor = 0;
+  COM_debugTestReq.ledBlinkFreq = 0;
+  COM_debugTestReq.relaySwitchResult = 0;
+  COM_debugTestReq.discreteIosReadResult = 0;
+  COM_debugTestReq.discreteIosPWMResult = 0;
+  COM_debugTestReq.rawMeasure = 0;
+  COM_debugTestReq.hmiMeasure = 0;
+  COM_powerMeasures.uBusHv = 0;
+  COM_powerMeasures.uBusLv = 0;
+  COM_powerMeasures.uBusHvAux = 0;
+  COM_powerMeasures.iBusHv = 0;
+  COM_powerMeasures.iBusLv = 0;
+  COM_powerMeasures.pBusHv = 0;
+  COM_powerMeasures.pBusLv = 0;
+  COM_tempMeasures.tempHvCoupler = 0;
+  COM_tempMeasures.temp1Cometi = 0;
+  COM_tempMeasures.temp2Cometi = 0;
+  COM_tempMeasures.tempNotif = 0;
+  COM_controlStatusInfo.setpoint = 0;
+  COM_controlStatusInfo.currentLimit = 0;
+  FSM_mode.0_1 = FSM_mode;
+  COM_controlStatusInfo.dcdcState = FSM_mode.0_1;
+  COM_controlStatusInfo.limitationType = 0;
+  COM_controlStatusInfo.lvPrechargeStatus = 0;
+  COM_controlStatusInfo.hvCouplerStatus1 = 0;
+  COM_controlStatusInfo.buckType = 0;
+  COM_controlStatusInfo.powercoreUnitsNb = 0;
+  COM_controlStatusInfo.emerstopStatus = 0;
+  COM_controlStatusInfo.healthStatus = 0;
+  COM_controlStatusInfo.hasNewValues = 0;
+  _2 = PAR_paramConfig[0].realVal.unsignedVal;
+  _3 = (unsigned char) _2;
+  _4 = (long unsigned int) _3;
+  COM_pbitResultsInfo.softwareVersion = _4;
+  COM_pbitResultsInfo.pbitStatus = 0;
+  COM_pbitResultsInfo.lvPrechargeStatus = 0;
+  COM_pbitResultsInfo.hvCouplerStatus = 0;
+  COM_pbitResultsInfo.dsioStatus = 0;
+  COM_Address = 0;
+  Dio_WriteChannel (87, 1);
+  CBU_Address.1_5 = CBU_Address;
+  _6 = (short unsigned int) CBU_Address.1_5;
+  CBU_SetBitrate (0, _6, 1);
+  CBU_Address.2_7 = CBU_Address;
+  _8 = (short unsigned int) CBU_Address.2_7;
+  CBU_SetBitrate (1, _8, 1);
+  CBU_Address.3_9 = CBU_Address;
+  _10 = (short unsigned int) CBU_Address.3_9;
+  CBU_SetBitrate (2, _10, 1);
+  _11 = CBU_flags.status.canCInitialized;
+  COM_flags.moduleFlags.status.flags.canCInitialized = _11;
+  _12 = CBU_flags.status.canIInitialized;
+  COM_flags.moduleFlags.status.flags.canIInitialized = _12;
+  _13 = CBU_flags.status.canMInitialized;
+  COM_flags.moduleFlags.status.flags.canMInitialized = _13;
+  _14 = CBU_flags.status.middlewareInitialized;
+  COM_flags.moduleFlags.status.flags.middlewareInitialized = _14;
+  _15 = COM_flags.moduleFlags.status.flags.canCInitialized;
+  _16 = (int) _15;
+  _17 = _16 != 0;
+  _18 = ~_17;
+  _19 = (int) _18;
+  _20 = (_Bool) _19;
+  COM_flags.moduleFlags.faults.flags.canCUninitialized = _20;
+  _21 = COM_flags.moduleFlags.status.flags.canIInitialized;
+  _22 = (int) _21;
+  _23 = _22 != 0;
+  _24 = ~_23;
+  _25 = (int) _24;
+  _26 = (_Bool) _25;
+  COM_flags.moduleFlags.faults.flags.canIUninitialized = _26;
+  _27 = COM_flags.moduleFlags.status.flags.canMInitialized;
+  _28 = (int) _27;
+  _29 = _28 != 0;
+  _30 = ~_29;
+  _31 = (int) _30;
+  _32 = (_Bool) _31;
+  COM_flags.moduleFlags.faults.flags.canMUninitialized = _32;
+  _33 = COM_flags.moduleFlags.status.flags.middlewareInitialized;
+  _34 = (int) _33;
+  _35 = _34 != 0;
+  _36 = ~_35;
+  _37 = (int) _36;
+  _38 = (_Bool) _37;
+  COM_flags.moduleFlags.faults.flags.middlewareUninitialized = _38;
+  COM_flags.moduleFlags.faults.flags.unkownCOMETi = 0;
+  _39 = COM_flags.moduleFlags.faults.all;
+  if (_39 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  COM_flags.moduleFlags.status.flags.moduleInitialized = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  COM_flags.moduleFlags.status.flags.moduleInitialized = 0;
+
+  <bb 8> :
+  return;
+
+}
+
+

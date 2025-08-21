@@ -1,0 +1,521 @@
+ctbPbit_DsiPbit2TimerCB ()
+{
+  <bb 2> :
+  Dio_FlipChannel (113);
+  return;
+
+}
+
+
+ctb_dsicpu6_callback ()
+{
+  <bb 2> :
+  dsi6_edgeCounter.25_1 = dsi6_edgeCounter;
+  _2 = dsi6_edgeCounter.25_1 + 1;
+  dsi6_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu5_callback ()
+{
+  <bb 2> :
+  dsi5_edgeCounter.24_1 = dsi5_edgeCounter;
+  _2 = dsi5_edgeCounter.24_1 + 1;
+  dsi5_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu4_callback ()
+{
+  <bb 2> :
+  dsi4_edgeCounter.23_1 = dsi4_edgeCounter;
+  _2 = dsi4_edgeCounter.23_1 + 1;
+  dsi4_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu3_callback ()
+{
+  uint8_t i;
+
+  <bb 2> :
+  dsi3_edgeCounter.21_1 = dsi3_edgeCounter;
+  _2 = dsi3_edgeCounter.21_1 + 1;
+  dsi3_edgeCounter = _2;
+  i = 0;
+  dsi3_edgeCounter.22_3 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.22_3 == 18)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  i = 9;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  i = 8;
+
+  <bb 5> :
+  return;
+
+}
+
+
+ctb_dsicpu2_callback ()
+{
+  <bb 2> :
+  dsi2_edgeCounter.20_1 = dsi2_edgeCounter;
+  _2 = dsi2_edgeCounter.20_1 + 1;
+  dsi2_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu1_callback ()
+{
+  <bb 2> :
+  dsi1_edgeCounter.19_1 = dsi1_edgeCounter;
+  _2 = dsi1_edgeCounter.19_1 + 1;
+  dsi1_edgeCounter = _2;
+  return;
+
+}
+
+
+CTBPbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CTBPbit_ReadDSI (CTB_DSI_PinsE dsiPin)
+{
+  <bb 2> :
+  switch (dsiPin) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = Dio_ReadChannel (141);
+  _2 = _1 != 0;
+  ctb_DSI_readResult = _2;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = Dio_ReadChannel (155);
+  _4 = _3 != 0;
+  ctb_DSI_readResult = _4;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  _5 = Dio_ReadChannel (140);
+  _6 = _5 != 0;
+  ctb_DSI_readResult = _6;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  _7 = Dio_ReadChannel (138);
+  _8 = _7 != 0;
+  ctb_DSI_readResult = _8;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  _9 = Dio_ReadChannel (139);
+  _10 = _9 != 0;
+  ctb_DSI_readResult = _10;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  _11 = Dio_ReadChannel (137);
+  _12 = _11 != 0;
+  ctb_DSI_readResult = _12;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  return;
+
+}
+
+
+ctbPbit_StopTestDSI (CTB_DSI_PinsE dsiPin)
+{
+  <bb 2> :
+  switch (dsiPin) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Pwm_SetPeriodAndDuty (9, 60241, 0);
+  Port_SetPinMode (38, 1);
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  Pwm_SetPeriodAndDuty (10, 60241, 0);
+  Port_SetPinMode (67, 1);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  Pwm_SetPeriodAndDuty (8, 60241, 0);
+  Port_SetPinMode (37, 1);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  Gpt_DisableNotification (1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  Pwm_SetPeriodAndDuty (7, 60241, 0);
+  Port_SetPinMode (36, 1);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  Pwm_SetPeriodAndDuty (6, 60241, 0);
+  Port_SetPinMode (34, 1);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  return;
+
+}
+
+
+ctbPbit_StartTestDSI (CTB_DSI_PinsE dsiPin)
+{
+  <bb 2> :
+  switch (dsiPin) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Port_SetPinMode (38, 2);
+  Pwm_SetPeriodAndDuty (9, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  Port_SetPinMode (67, 2);
+  Pwm_SetPeriodAndDuty (10, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  Port_SetPinMode (37, 2);
+  Pwm_SetPeriodAndDuty (8, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  Gpt_EnableNotification (1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  Port_SetPinMode (36, 2);
+  Pwm_SetPeriodAndDuty (7, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  Port_SetPinMode (34, 2);
+  Pwm_SetPeriodAndDuty (6, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  CTBPbit_Started = 1;
+  CTBPbit_TimePeriodEnded = 0;
+  return;
+
+}
+
+
+ctbPbit_CheckFrqDSI ()
+{
+  int iftmp.16;
+  int iftmp.13;
+  int iftmp.10;
+  int iftmp.7;
+  int iftmp.4;
+  int iftmp.1;
+
+  <bb 2> :
+  dsi1_edgeCounter.2_1 = dsi1_edgeCounter;
+  if (dsi1_edgeCounter.2_1 > 14)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  dsi1_edgeCounter.3_2 = dsi1_edgeCounter;
+  if (dsi1_edgeCounter.3_2 <= 17)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.1 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.1 = 0;
+
+  <bb 6> :
+  _3 = (_Bool) iftmp.1;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = _3;
+  dsi5_edgeCounter.5_4 = dsi5_edgeCounter;
+  if (dsi5_edgeCounter.5_4 > 14)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  dsi5_edgeCounter.6_5 = dsi5_edgeCounter;
+  if (dsi5_edgeCounter.6_5 <= 17)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.4 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.4 = 0;
+
+  <bb 10> :
+  _6 = (_Bool) iftmp.4;
+  ctb_DSI_TestResult.HPP_1_TestResult = _6;
+  dsi6_edgeCounter.8_7 = dsi6_edgeCounter;
+  if (dsi6_edgeCounter.8_7 > 14)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  dsi6_edgeCounter.9_8 = dsi6_edgeCounter;
+  if (dsi6_edgeCounter.9_8 <= 17)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.7 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.7 = 0;
+
+  <bb 14> :
+  _9 = (_Bool) iftmp.7;
+  ctb_DSI_TestResult.HPP_2_TestResult = _9;
+  dsi4_edgeCounter.11_10 = dsi4_edgeCounter;
+  if (dsi4_edgeCounter.11_10 > 14)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  dsi4_edgeCounter.12_11 = dsi4_edgeCounter;
+  if (dsi4_edgeCounter.12_11 <= 17)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.10 = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.10 = 0;
+
+  <bb 18> :
+  _12 = (_Bool) iftmp.10;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = _12;
+  dsi2_edgeCounter.14_13 = dsi2_edgeCounter;
+  if (dsi2_edgeCounter.14_13 > 14)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 19> :
+  dsi2_edgeCounter.15_14 = dsi2_edgeCounter;
+  if (dsi2_edgeCounter.15_14 <= 17)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.13 = 1;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  iftmp.13 = 0;
+
+  <bb 22> :
+  _15 = (_Bool) iftmp.13;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = _15;
+  dsi3_edgeCounter.17_16 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.17_16 > 14)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 23> :
+  dsi3_edgeCounter.18_17 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.18_17 <= 17)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  iftmp.16 = 1;
+  goto <bb 26>; [INV]
+
+  <bb 25> :
+  iftmp.16 = 0;
+
+  <bb 26> :
+  _18 = (_Bool) iftmp.16;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = _18;
+  dsi1_edgeCounter = 0;
+  dsi2_edgeCounter = 0;
+  dsi3_edgeCounter = 0;
+  dsi4_edgeCounter = 0;
+  dsi5_edgeCounter = 0;
+  dsi6_edgeCounter = 0;
+  return;
+
+}
+
+
+CTBPbit_SetTimePeriod ()
+{
+  <bb 2> :
+  CTBPbit_Started.0_1 = CTBPbit_Started;
+  if (CTBPbit_Started.0_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CTBPbit_TimePeriodEnded = 1;
+  ctbPbit_CheckFrqDSI ();
+
+  <bb 4> :
+  return;
+
+}
+
+
+CTBPbit_RunTests ()
+{
+  uint8_t pincmd;
+  uint8_t pinId;
+
+  <bb 2> :
+  pinId = COM_debugTestReq.discreteIoId;
+  pincmd = COM_debugTestReq.discreteIoCmd;
+  _1 = (int) pincmd;
+  switch (_1) <default: <L3> [INV], case 4: <L0> [INV], case 5: <L1> [INV], case 6: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = (<unnamed type>) pinId;
+  CTBPbit_ReadDSI (_2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = (<unnamed type>) pinId;
+  ctbPbit_StartTestDSI (_3);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = (<unnamed type>) pinId;
+  ctbPbit_StopTestDSI (_4);
+  CTBPbit_Started = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+CTBPbit_Init ()
+{
+  uint32_t cpu_timerFreq166Hz;
+
+  <bb 2> :
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Platform_InstallIrqHandler (49, LPIT_0_CH_1_ISR, 0B);
+  cpu_timerFreq166Hz = 24096;
+  _1 = cpu_timerFreq166Hz + 4294967295;
+  Gpt_StartTimer (1, _1);
+  Icu_EnableEdgeDetection (0);
+  Icu_EnableNotification (0);
+  Icu_EnableEdgeCount (1);
+  Icu_EnableNotification (1);
+  Icu_EnableEdgeCount (2);
+  Icu_EnableNotification (2);
+  Icu_EnableEdgeDetection (3);
+  Icu_EnableNotification (3);
+  Icu_EnableEdgeDetection (4);
+  Icu_EnableNotification (4);
+  Icu_EnableEdgeDetection (5);
+  Icu_EnableNotification (5);
+  dsi1_edgeCounter = 0;
+  dsi2_edgeCounter = 0;
+  dsi3_edgeCounter = 0;
+  dsi4_edgeCounter = 0;
+  dsi5_edgeCounter = 0;
+  dsi6_edgeCounter = 0;
+  CTBPbit_Started = 0;
+  CTBPbit_TimePeriodEnded = 0;
+  ctb_DSI_readResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = 0;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = 0;
+  ctb_DSI_TestResult.HPP_1_TestResult = 0;
+  ctb_DSI_TestResult.HPP_2_TestResult = 0;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = 0;
+  ctb_DSI_TestResult.reserved = 3;
+  return;
+
+}
+
+

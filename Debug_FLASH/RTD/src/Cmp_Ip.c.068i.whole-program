@@ -1,0 +1,827 @@
+
+Marking local functions: Cmp_Ip_InitCmpC2 Cmp_Ip_InitCmpC1 Cmp_Ip_InitCmpC0
+
+
+Marking externally visible functions: Cmp_Ip_SetInterruptActivation Cmp_Ip_DisableInterrupt Cmp_Ip_EnableInterrupt Cmp_Ip_DisableNotification Cmp_Ip_EnableNotification Cmp_Ip_Deinit Cmp_Ip_Init
+
+
+Marking externally visible variables: Cmp_Ip_apxBase
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Cmp_Ip_SetInterruptActivation/11 (Cmp_Ip_SetInterruptActivation) @06744a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_DisableInterrupt/10 (Cmp_Ip_DisableInterrupt) @067447e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_EnableInterrupt/9 (Cmp_Ip_EnableInterrupt) @067442a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (read)Cmp_Ip_axState/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_DisableNotification/8 (Cmp_Ip_DisableNotification) @06740c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_EnableNotification/7 (Cmp_Ip_EnableNotification) @067409a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_Deinit/6 (Cmp_Ip_Deinit) @06740700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (read)Cmp_Ip_axState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Cmp_Ip_Init/5 (Cmp_Ip_Init) @06740460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Cmp_Ip_axState/0 (read)Cmp_Ip_axState/0 (write)Cmp_Ip_axState/0 (write)Cmp_Ip_axState/0 (write)Cmp_Ip_axState/0 (write)Cmp_Ip_axState/0 (write)Cmp_Ip_axState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_InitCmpC2/4 Cmp_Ip_InitCmpC1/3 Cmp_Ip_InitCmpC0/2 
+Cmp_Ip_InitCmpC2/4 (Cmp_Ip_InitCmpC2) @067401c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Cmp_Ip_Init/5 
+  Calls: 
+Cmp_Ip_InitCmpC1/3 (Cmp_Ip_InitCmpC1) @0668da80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Cmp_Ip_Init/5 
+  Calls: 
+Cmp_Ip_InitCmpC0/2 (Cmp_Ip_InitCmpC0) @0668d620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Cmp_Ip_Init/5 
+  Calls: 
+Cmp_Ip_apxBase/1 (Cmp_Ip_apxBase) @06651d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Cmp_Ip_axState/0 (Cmp_Ip_axState) @06651c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Cmp_Ip_Deinit/6 (read)Cmp_Ip_EnableInterrupt/9 (read)Cmp_Ip_Init/5 (write)Cmp_Ip_Deinit/6 (write)Cmp_Ip_Init/5 (write)Cmp_Ip_EnableNotification/7 (write)Cmp_Ip_DisableNotification/8 (write)Cmp_Ip_Init/5 (read)Cmp_Ip_Init/5 (write)Cmp_Ip_Init/5 (write)Cmp_Ip_Init/5 (write)Cmp_Ip_Init/5 (write)Cmp_Ip_EnableInterrupt/9 (read)Cmp_Ip_SetInterruptActivation/11 (write)
+  Availability: available
+  Varpool flags:
+Cmp_Ip_SetInterruptActivation (uint8 instance, Cmp_Ip_OutputInterruptTriggerType Edge)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) instance_2(D);
+  Cmp_Ip_axState[_1].CmpInterruptEdge = Edge_4(D);
+  return;
+
+}
+
+
+Cmp_Ip_DisableInterrupt (uint8 instance)
+{
+  struct CMP_Type * base;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  _1 = (int) instance_6(D);
+  base_7 = 1074212864B;
+  _2 ={v} base_7->C0;
+  _3 = _2 & 3892314111;
+  base_7->C0 ={v} _3;
+  _4 ={v} base_7->C2;
+  _5 = _4 & 3221225471;
+  base_7->C2 ={v} _5;
+  return;
+
+}
+
+
+Cmp_Ip_EnableInterrupt (uint8 instance)
+{
+  struct CMP_Type * base;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  int _4;
+  <unnamed type> _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  int _13;
+  _Bool _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+
+  <bb 2> :
+  _1 = (int) instance_21(D);
+  base_22 = 1074212864B;
+  _2 ={v} base_22->C0;
+  _3 = _2 | 100663296;
+  base_22->C0 ={v} _3;
+  _4 = (int) instance_21(D);
+  _5 = Cmp_Ip_axState[_4].CmpInterruptEdge;
+  switch (_5) <default: <L4> [INV], case 0: <L3> [INV], case 1: <L1> [INV], case 2: <L0> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _6 ={v} base_22->C0;
+  _7 = _6 | 268435456;
+  base_22->C0 ={v} _7;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  _8 ={v} base_22->C0;
+  _9 = _8 | 134217728;
+  base_22->C0 ={v} _9;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  _10 ={v} base_22->C0;
+  _11 = _10 | 402653184;
+  base_22->C0 ={v} _11;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  _12 ={v} base_22->C0;
+  base_22->C0 ={v} _12;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  _13 = (int) instance_21(D);
+  _14 = Cmp_Ip_axState[_13].EnRoundRobinInterrupt;
+  if (_14 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _15 ={v} base_22->C2;
+  _16 = _15 | 16711680;
+  base_22->C2 ={v} _16;
+  _17 ={v} base_22->C2;
+  _18 = _17 | 1073741824;
+  base_22->C2 ={v} _18;
+
+  <bb 10> :
+  return;
+
+}
+
+
+Cmp_Ip_DisableNotification (uint8 instance)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) instance_2(D);
+  Cmp_Ip_axState[_1].NotificationEnabled = 0;
+  return;
+
+}
+
+
+Cmp_Ip_EnableNotification (uint8 instance)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) instance_2(D);
+  Cmp_Ip_axState[_1].NotificationEnabled = 1;
+  return;
+
+}
+
+
+Cmp_Ip_Deinit (uint8 instance)
+{
+  Cmp_Ip_StatusType retStatus;
+  Cmp_Ip_StatusType D.6035;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  Cmp_Ip_StatusType _11;
+
+  <bb 2> :
+  retStatus_6 = 0;
+  _1 = (int) instance_7(D);
+  _2 = Cmp_Ip_axState[_1].State;
+  if (_2 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = (int) instance_7(D);
+  Cmp_Ip_axState[_3].State = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_9 = 1;
+
+  <bb 5> :
+  # retStatus_4 = PHI <retStatus_6(3), retStatus_9(4)>
+  _11 = retStatus_4;
+
+  <bb 6> :
+<L3>:
+  return _11;
+
+}
+
+
+Cmp_Ip_Init (uint8 instance, const struct Cmp_Ip_ConfigType * userConfig)
+{
+  Cmp_Ip_StatusType retStatus;
+  Cmp_Ip_StatusType D.5986;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  <unnamed type> _4;
+  int _5;
+  _Bool _6;
+  int _7;
+  int _8;
+  void (*<T4ab>) (uint16, boolean) _9;
+  int _10;
+  void (*<T4ab>) (uint16, boolean) _11;
+  int _12;
+  short unsigned int _13;
+  Cmp_Ip_StatusType _30;
+
+  <bb 2> :
+  retStatus_16 = 0;
+  _1 = (int) instance_17(D);
+  _2 = Cmp_Ip_axState[_1].State;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Cmp_Ip_InitCmpC0 (instance_17(D), userConfig_20(D));
+  Cmp_Ip_InitCmpC1 (instance_17(D), userConfig_20(D));
+  Cmp_Ip_InitCmpC2 (instance_17(D), userConfig_20(D));
+  _3 = (int) instance_17(D);
+  _4 = userConfig_20(D)->Comparator.OutputInterruptTrigger;
+  Cmp_Ip_axState[_3].CmpInterruptEdge = _4;
+  _5 = (int) instance_17(D);
+  _6 = userConfig_20(D)->Trigger.EnableRoundRobinInterrupt;
+  Cmp_Ip_axState[_5].EnRoundRobinInterrupt = _6;
+  _7 = (int) instance_17(D);
+  Cmp_Ip_axState[_7].State = 1;
+  _8 = (int) instance_17(D);
+  _9 = userConfig_20(D)->TriggerNotification;
+  Cmp_Ip_axState[_8].TriggerNotification = _9;
+  _10 = (int) instance_17(D);
+  _11 = userConfig_20(D)->ComparatorNotification;
+  Cmp_Ip_axState[_10].ComparatorNotification = _11;
+  _12 = (int) instance_17(D);
+  _13 = userConfig_20(D)->CallbackParam1;
+  Cmp_Ip_axState[_12].CallbackParam1 = _13;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus_19 = 1;
+
+  <bb 5> :
+  # retStatus_14 = PHI <retStatus_16(3), retStatus_19(4)>
+  _30 = retStatus_14;
+
+  <bb 6> :
+<L3>:
+  return _30;
+
+}
+
+
+Cmp_Ip_InitCmpC2 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C2;
+  struct CMP_Type * base;
+  long unsigned int iftmp.10;
+  long unsigned int iftmp.9;
+  int _1;
+  _Bool _2;
+  _Bool _3;
+  <unnamed type> _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  <unnamed type> _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  <unnamed type> _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  unsigned char _17;
+  long unsigned int _18;
+  long unsigned int iftmp.9_19;
+  long unsigned int iftmp.10_20;
+  long unsigned int iftmp.9_26;
+  long unsigned int iftmp.9_27;
+  long unsigned int iftmp.10_29;
+  long unsigned int iftmp.10_30;
+
+  <bb 2> :
+  _1 = (int) instance_21(D);
+  base_22 = 1074212864B;
+  Cmp_C2_23 = 0;
+  _2 = userConfig_25(D)->Trigger.EnableRoundRobinInterrupt;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.9_27 = 1073741824;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.9_26 = 0;
+
+  <bb 5> :
+  # iftmp.9_19 = PHI <iftmp.9_27(3), iftmp.9_26(4)>
+  Cmp_C2_28 = iftmp.9_19 | Cmp_C2_23;
+  _3 = userConfig_25(D)->Trigger.EnableRoundRobin;
+  if (_3 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.10_30 = 2147483648;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.10_29 = 0;
+
+  <bb 8> :
+  # iftmp.10_20 = PHI <iftmp.10_30(6), iftmp.10_29(7)>
+  Cmp_C2_31 = iftmp.10_20 | Cmp_C2_28;
+  _4 = userConfig_25(D)->Trigger.FixedPort;
+  _5 = _4 << 29;
+  _6 = _5 & 536870912;
+  Cmp_C2_32 = Cmp_C2_31 | _6;
+  _7 = userConfig_25(D)->Trigger.FixedChannel;
+  _8 = _7 << 25;
+  _9 = _8 & 234881024;
+  Cmp_C2_33 = Cmp_C2_32 | _9;
+  _10 = userConfig_25(D)->Trigger.SampleDelay;
+  _11 = _10 << 14;
+  _12 = _11 & 65535;
+  Cmp_C2_34 = Cmp_C2_33 | _12;
+  _13 = userConfig_25(D)->Trigger.InitDelayValue;
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 8;
+  _16 = _15 & 16128;
+  Cmp_C2_35 = Cmp_C2_34 | _16;
+  _17 = userConfig_25(D)->Trigger.RoundRobinEnChannelMask;
+  _18 = (long unsigned int) _17;
+  Cmp_C2_36 = Cmp_C2_35 | _18;
+  base_22->C2 ={v} Cmp_C2_36;
+  return;
+
+}
+
+
+Cmp_Ip_InitCmpC1 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C1;
+  struct CMP_Type * base;
+  long unsigned int iftmp.8;
+  long unsigned int iftmp.7;
+  long unsigned int iftmp.6;
+  long unsigned int iftmp.5;
+  long unsigned int iftmp.4;
+  int _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+  long unsigned int _5;
+  <unnamed type> _6;
+  <unnamed type> _7;
+  <unnamed type> _8;
+  long unsigned int _9;
+  <unnamed type> _10;
+  <unnamed type> _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  unsigned char _14;
+  long unsigned int _15;
+  long unsigned int iftmp.4_16;
+  long unsigned int iftmp.5_17;
+  long unsigned int iftmp.6_18;
+  long unsigned int iftmp.7_19;
+  long unsigned int iftmp.8_20;
+  long unsigned int iftmp.4_26;
+  long unsigned int iftmp.4_27;
+  long unsigned int iftmp.5_29;
+  long unsigned int iftmp.5_30;
+  long unsigned int iftmp.6_32;
+  long unsigned int iftmp.6_33;
+  long unsigned int iftmp.7_35;
+  long unsigned int iftmp.7_36;
+  long unsigned int iftmp.8_38;
+  long unsigned int iftmp.8_39;
+
+  <bb 2> :
+  _1 = (int) instance_21(D);
+  base_22 = 1074212864B;
+  Cmp_C1_23 = 0;
+  _2 = userConfig_25(D)->Comparator.NegativeInputMux;
+  if (_2 != 128)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.4_27 = 16777216;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.4_26 = 0;
+
+  <bb 5> :
+  # iftmp.4_16 = PHI <iftmp.4_27(3), iftmp.4_26(4)>
+  Cmp_C1_28 = iftmp.4_16 | Cmp_C1_23;
+  _3 = userConfig_25(D)->Comparator.NegativeInputMux;
+  if (_3 != 128)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _4 = userConfig_25(D)->Comparator.NegativeInputMux;
+  _5 = _4 << 8;
+  iftmp.5_30 = _5 & 1792;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.5_29 = 0;
+
+  <bb 8> :
+  # iftmp.5_17 = PHI <iftmp.5_30(6), iftmp.5_29(7)>
+  Cmp_C1_31 = iftmp.5_17 | Cmp_C1_28;
+  _6 = userConfig_25(D)->Comparator.PositiveInputMux;
+  if (_6 != 128)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.6_33 = 134217728;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.6_32 = 0;
+
+  <bb 11> :
+  # iftmp.6_18 = PHI <iftmp.6_33(9), iftmp.6_32(10)>
+  Cmp_C1_34 = iftmp.6_18 | Cmp_C1_31;
+  _7 = userConfig_25(D)->Comparator.PositiveInputMux;
+  if (_7 != 128)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _8 = userConfig_25(D)->Comparator.PositiveInputMux;
+  _9 = _8 << 11;
+  iftmp.7_36 = _9 & 14336;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.7_35 = 0;
+
+  <bb 14> :
+  # iftmp.7_19 = PHI <iftmp.7_36(12), iftmp.7_35(13)>
+  Cmp_C1_37 = iftmp.7_19 | Cmp_C1_34;
+  _10 = userConfig_25(D)->Dac.PowerState;
+  if (_10 == 1)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.8_39 = 32768;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.8_38 = 0;
+
+  <bb 17> :
+  # iftmp.8_20 = PHI <iftmp.8_39(15), iftmp.8_38(16)>
+  Cmp_C1_40 = iftmp.8_20 | Cmp_C1_37;
+  _11 = userConfig_25(D)->Dac.VoltageRefSource;
+  _12 = _11 << 14;
+  _13 = _12 & 16384;
+  Cmp_C1_41 = Cmp_C1_40 | _13;
+  _14 = userConfig_25(D)->Dac.VoltageLevel;
+  _15 = (long unsigned int) _14;
+  Cmp_C1_42 = Cmp_C1_41 | _15;
+  base_22->C1 ={v} Cmp_C1_42;
+  return;
+
+}
+
+
+Cmp_Ip_InitCmpC0 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C0;
+  struct CMP_Type * base;
+  long unsigned int iftmp.3;
+  long unsigned int iftmp.2;
+  long unsigned int iftmp.1;
+  long unsigned int iftmp.0;
+  int _1;
+  <unnamed type> _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  <unnamed type> _19;
+  long unsigned int _20;
+  <unnamed type> _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  _Bool _24;
+  _Bool _25;
+  _Bool _26;
+  _Bool _27;
+  <unnamed type> _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long unsigned int iftmp.0_32;
+  long unsigned int iftmp.1_33;
+  long unsigned int iftmp.2_34;
+  long unsigned int iftmp.3_35;
+  long unsigned int iftmp.0_76;
+  long unsigned int iftmp.0_77;
+  long unsigned int iftmp.1_79;
+  long unsigned int iftmp.1_80;
+  long unsigned int iftmp.2_82;
+  long unsigned int iftmp.2_83;
+  long unsigned int iftmp.3_85;
+  long unsigned int iftmp.3_86;
+
+  <bb 2> :
+  _1 = (int) instance_36(D);
+  base_37 = 1074212864B;
+  Cmp_C0_38 = 0;
+  _2 = userConfig_40(D)->Comparator.FunctionalMode;
+  switch (_2) <default: <L9> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L3> [INV], case 3: <L2> [INV], case 4: <L4> [INV], case 5: <L5> [INV], case 6: <L6> [INV], case 7: <L7> [INV], case 8: <L8> [INV]>
+
+  <bb 3> :
+<L0>:
+  Cmp_C0_73 = Cmp_C0_38;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  Cmp_C0_71 = Cmp_C0_38 | 256;
+  Cmp_C0_72 = Cmp_C0_71;
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+<L2>:
+  Cmp_C0_62 = Cmp_C0_38 | 256;
+  Cmp_C0_63 = Cmp_C0_62;
+  Cmp_C0_64 = Cmp_C0_63 | 32768;
+  Cmp_C0_65 = Cmp_C0_64 | 16;
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+<L3>:
+  Cmp_C0_66 = Cmp_C0_38 | 256;
+  Cmp_C0_67 = Cmp_C0_66;
+  Cmp_C0_68 = Cmp_C0_67;
+  Cmp_C0_69 = Cmp_C0_68 | 16;
+  _3 = userConfig_40(D)->Comparator.FilterSamplePeriod;
+  _4 = (long unsigned int) _3;
+  _5 = _4 << 16;
+  _6 = _5 & 16711680;
+  Cmp_C0_70 = Cmp_C0_69 | _6;
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_C0_58 = Cmp_C0_38 | 256;
+  Cmp_C0_59 = Cmp_C0_58;
+  Cmp_C0_60 = Cmp_C0_59 | 32768;
+  Cmp_C0_61 = Cmp_C0_60 | 32;
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L5>:
+  Cmp_C0_53 = Cmp_C0_38 | 256;
+  Cmp_C0_54 = Cmp_C0_53;
+  Cmp_C0_55 = Cmp_C0_54;
+  Cmp_C0_56 = Cmp_C0_55 | 32;
+  _7 = userConfig_40(D)->Comparator.FilterSamplePeriod;
+  _8 = (long unsigned int) _7;
+  _9 = _8 << 16;
+  _10 = _9 & 16711680;
+  Cmp_C0_57 = Cmp_C0_56 | _10;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+<L6>:
+  Cmp_C0_50 = Cmp_C0_38 | 256;
+  Cmp_C0_51 = Cmp_C0_50 | 16384;
+  Cmp_C0_52 = Cmp_C0_51;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+<L7>:
+  Cmp_C0_46 = Cmp_C0_38 | 256;
+  Cmp_C0_47 = Cmp_C0_46 | 16384;
+  Cmp_C0_48 = Cmp_C0_47;
+  _11 = userConfig_40(D)->Comparator.FilterSamplePeriod;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 16;
+  _14 = _13 & 16711680;
+  Cmp_C0_49 = Cmp_C0_48 | _14;
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+<L8>:
+  Cmp_C0_41 = Cmp_C0_38 | 256;
+  Cmp_C0_42 = Cmp_C0_41 | 16384;
+  Cmp_C0_43 = Cmp_C0_42;
+  Cmp_C0_44 = Cmp_C0_43 | 32;
+  _15 = userConfig_40(D)->Comparator.FilterSamplePeriod;
+  _16 = (long unsigned int) _15;
+  _17 = _16 << 16;
+  _18 = _17 & 16711680;
+  Cmp_C0_45 = Cmp_C0_44 | _18;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  # Cmp_C0_31 = PHI <Cmp_C0_73(3), Cmp_C0_72(4), Cmp_C0_65(5), Cmp_C0_70(6), Cmp_C0_61(7), Cmp_C0_57(8), Cmp_C0_52(9), Cmp_C0_49(10), Cmp_C0_45(11), Cmp_C0_38(12)>
+  _19 = userConfig_40(D)->Comparator.HysteresisLevel;
+  _20 = _19 & 3;
+  Cmp_C0_74 = Cmp_C0_31 | _20;
+  _21 = userConfig_40(D)->Comparator.OffsetLevel;
+  _22 = _21 << 2;
+  _23 = _22 & 4;
+  Cmp_C0_75 = Cmp_C0_74 | _23;
+  _24 = userConfig_40(D)->Comparator.EnablePinOutput;
+  if (_24 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.0_77 = 512;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.0_76 = 0;
+
+  <bb 16> :
+  # iftmp.0_32 = PHI <iftmp.0_77(14), iftmp.0_76(15)>
+  Cmp_C0_78 = iftmp.0_32 | Cmp_C0_75;
+  _25 = userConfig_40(D)->Comparator.EnableInverter;
+  if (_25 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.1_80 = 2048;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  iftmp.1_79 = 0;
+
+  <bb 19> :
+  # iftmp.1_33 = PHI <iftmp.1_80(17), iftmp.1_79(18)>
+  Cmp_C0_81 = iftmp.1_33 | Cmp_C0_78;
+  _26 = userConfig_40(D)->Comparator.EnableHighPowerMode;
+  if (_26 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.2_83 = 4096;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  iftmp.2_82 = 0;
+
+  <bb 22> :
+  # iftmp.2_34 = PHI <iftmp.2_83(20), iftmp.2_82(21)>
+  Cmp_C0_84 = iftmp.2_34 | Cmp_C0_81;
+  _27 = userConfig_40(D)->Comparator.EnableDma;
+  if (_27 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  iftmp.3_86 = 1073741824;
+  goto <bb 25>; [INV]
+
+  <bb 24> :
+  iftmp.3_85 = 0;
+
+  <bb 25> :
+  # iftmp.3_35 = PHI <iftmp.3_86(23), iftmp.3_85(24)>
+  Cmp_C0_87 = iftmp.3_35 | Cmp_C0_84;
+  _28 = userConfig_40(D)->Comparator.OutputSelect;
+  _29 = _28 << 10;
+  _30 = _29 & 1024;
+  Cmp_C0_88 = Cmp_C0_87 | _30;
+  base_37->C0 ={v} Cmp_C0_88;
+  return;
+
+}
+
+

@@ -1,0 +1,6 @@
+Callgraph clone;Lpspi_Ip_PushDataToFifo;5;../RTD/src/Lpspi_Ip.c;345;19;Lpspi_Ip_TransferProcess;7;../RTD/src/Lpspi_Ip.c;680;13;inlining to
+Callgraph clone;Lpspi_Ip_ReadDataFromFifo;4;../RTD/src/Lpspi_Ip.c;291;19;Lpspi_Ip_TransferProcess;7;../RTD/src/Lpspi_Ip.c;680;13;inlining to
+Callgraph clone;Lpspi_Ip_PushDataToFifo;5;../RTD/src/Lpspi_Ip.c;345;19;Lpspi_Ip_SyncTransmit;17;../RTD/src/Lpspi_Ip.c;1662;21;inlining to
+Callgraph clone;Lpspi_Ip_ReadDataFromFifo;4;../RTD/src/Lpspi_Ip.c;291;19;Lpspi_Ip_SyncTransmit;17;../RTD/src/Lpspi_Ip.c;1662;21;inlining to
+Callgraph removal;Lpspi_Ip_ReadDataFromFifo;4;../RTD/src/Lpspi_Ip.c;291;19
+Callgraph removal;Lpspi_Ip_PushDataToFifo;5;../RTD/src/Lpspi_Ip.c;345;19

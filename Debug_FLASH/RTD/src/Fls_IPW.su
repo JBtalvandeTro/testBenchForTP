@@ -1,0 +1,16 @@
+Fls_IPW.c:921:6:Fls_IPW_Init	8	static
+Fls_IPW.c:974:6:Fls_IPW_AbortSuspended	0	static
+Fls_IPW.c:1040:6:Fls_IPW_ClearHVJob	0	static
+Fls_IPW.c:1108:6:Fls_IPW_LLDMainFunction	16	static
+Fls_IPW.c:1144:19:Fls_IPW_SectorRead	40	static
+Fls_IPW.c:1281:19:Fls_IPW_SectorErase	32	static
+Fls_IPW.c:1319:19:Fls_IPW_SectorWrite	32	static
+Fls_IPW.c:1351:20:Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus	16	static
+Fls_IPW.c:1393:20:Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus	16	static
+Fls_IPW.c:1431:13:Fls_IPW_LLDMainFunctionFtfcJobs	16	static
+Fls_IPW.c:1457:33:Fls_IPW_SectorEraseFtfcJobs	32	static
+Fls_IPW.c:1517:33:Fls_IPW_SectorWriteFtfcJobs	40	static
+Fls_IPW.c:1579:20:Fls_IPW_CallAccessCodeWrite	8	static
+Fls_IPW.c:1595:20:Fls_IPW_CallAccessCodeErase	8	static
+Fls_IPW.c:1611:26:Fls_IPW_TranslateReturnCode	24	static
+Fls_IPW.c:1710:29:Fls_IPW_GetBlockNumberFromAddress	16	static

@@ -1,0 +1,476 @@
+IPA summary for PWBCBit_UpdatePsValidState/9 is missing.
+IPA summary for pwbCbit_getOffSetCalibration/8 is missing.
+IPA summary for pwbCbit_getGainCalibration/7 is missing.
+IPA summary for PWBCbit_Deinit/6 is missing.
+IPA summary for PWBCbit_GetHvMeasures/5 is missing.
+IPA summary for PWBCbit_GetLvMeasures/4 is missing.
+IPA summary for PWBCbit_Init/3 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        2 calls, 2.000000 freq, 0 count
+function body not available                       :       11 calls, 11.000000 freq, 0 count
+IPA summary for PWBCBit_UpdatePsValidState/9 is missing.
+IPA summary for pwbCbit_getOffSetCalibration/8 is missing.
+IPA summary for pwbCbit_getGainCalibration/7 is missing.
+IPA summary for PWBCbit_Deinit/6 is missing.
+IPA summary for PWBCbit_GetHvMeasures/5 is missing.
+IPA summary for PWBCbit_GetLvMeasures/4 is missing.
+IPA summary for PWBCbit_Init/3 is missing.
+Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not_available
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not_available
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: available
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: available
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function PWBCbit_Init (PWBCbit_Init, funcdef_no=0, decl_uid=5429, cgraph_uid=1, symbol_order=3)
+
+PWBCbit_Init ()
+{
+  <bb 2> :
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  PWB_psValidState = 1;
+  return;
+
+}
+
+
+
+;; Function PWBCbit_GetLvMeasures (PWBCbit_GetLvMeasures, funcdef_no=1, decl_uid=5431, cgraph_uid=2, symbol_order=4)
+
+PWBCbit_GetLvMeasures (uint8_t muxAdd)
+{
+  int32_t tempMeasure;
+  int32_t offset;
+  int32_t gain;
+  uint32_t result;
+  uint8_t bit2;
+  uint8_t bit1;
+  uint8_t bit0;
+  unsigned char _1;
+  unsigned char _2;
+  short unsigned int _3;
+  long unsigned int gain.0_4;
+  long unsigned int _5;
+  long unsigned int offset.1_6;
+  long unsigned int _7;
+  long int _8;
+
+  <bb 2> :
+  bit0_10 = muxAdd_9(D) & 1;
+  _1 = muxAdd_9(D) >> 1;
+  bit1_11 = _1 & 1;
+  _2 = muxAdd_9(D) >> 2;
+  bit2_12 = _2 & 1;
+  Dio_WriteChannel (53, bit0_10);
+  Dio_WriteChannel (54, bit1_11);
+  Dio_WriteChannel (55, bit2_12);
+  result_17 = 0;
+  SPC_GetLvVoltageMeasures ();
+  result_19 = Spc_returnMeasures.LvVoltage;
+  gain_20 = PAR_paramConfig[32].realVal.signedVal;
+  offset_21 = PAR_paramConfig[33].realVal.signedVal;
+  tempMeasure_22 = 0;
+  _3 = (short unsigned int) result_19;
+  PWBCbit_cmdResults.ReadMeasResultRaw = _3;
+  gain.0_4 = (long unsigned int) gain_20;
+  _5 = result_19 * gain.0_4;
+  offset.1_6 = (long unsigned int) offset_21;
+  _7 = _5 + offset.1_6;
+  tempMeasure_24 = (int32_t) _7;
+  _8 = tempMeasure_24 / 100;
+  PWBCbit_cmdResults.ReadMeasResultHMI = _8;
+  return;
+
+}
+
+
+
+;; Function PWBCbit_GetHvMeasures (PWBCbit_GetHvMeasures, funcdef_no=2, decl_uid=5435, cgraph_uid=3, symbol_order=5)
+
+PWBCbit_GetHvMeasures (uint8_t muxAdd)
+{
+  int32_t tempMeasure;
+  int32_t offset;
+  int32_t gain;
+  uint32_t result;
+  uint8_t bit2;
+  uint8_t bit1;
+  uint8_t bit0;
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  short unsigned int _4;
+  long unsigned int gain.2_5;
+  long unsigned int _6;
+  long unsigned int offset.3_7;
+  long unsigned int _8;
+  long int _9;
+
+  <bb 2> :
+  bit0_13 = muxAdd_12(D) & 1;
+  _1 = muxAdd_12(D) >> 1;
+  bit1_14 = _1 & 1;
+  _2 = muxAdd_12(D) >> 2;
+  bit2_15 = _2 & 1;
+  Dio_WriteChannel (49, bit0_13);
+  Dio_WriteChannel (50, bit1_14);
+  Dio_WriteChannel (51, bit2_15);
+  result_20 = 0;
+  _3 = (int) muxAdd_12(D);
+  switch (_3) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L2> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  SPC_GetHvCurrentMeasures ();
+  result_26 = Spc_returnMeasures.HvCurrent;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  SPC_GetHvTemperaturesMeasures ();
+  result_22 = Spc_returnMeasures.HvTemperature;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  SPC_GetHvVoltageMeasures ();
+  result_24 = Spc_returnMeasures.HvVoltage;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # result_10 = PHI <result_26(3), result_22(4), result_24(5), result_20(6)>
+  gain_28 = pwbCbit_getGainCalibration (muxAdd_12(D));
+  offset_30 = pwbCbit_getOffSetCalibration (muxAdd_12(D));
+  tempMeasure_31 = 0;
+  _4 = (short unsigned int) result_10;
+  PWBCbit_cmdResults.ReadMeasResultRaw = _4;
+  gain.2_5 = (long unsigned int) gain_28;
+  _6 = result_10 * gain.2_5;
+  offset.3_7 = (long unsigned int) offset_30;
+  _8 = _6 + offset.3_7;
+  tempMeasure_33 = (int32_t) _8;
+  _9 = tempMeasure_33 / 100;
+  PWBCbit_cmdResults.ReadMeasResultHMI = _9;
+  return;
+
+}
+
+
+
+;; Function PWBCbit_Deinit (PWBCbit_Deinit, funcdef_no=3, decl_uid=5437, cgraph_uid=4, symbol_order=6)
+
+PWBCbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+
+;; Function pwbCbit_getGainCalibration (pwbCbit_getGainCalibration, funcdef_no=4, decl_uid=6360, cgraph_uid=5, symbol_order=7)
+
+pwbCbit_getGainCalibration (uint8_t muxAdd)
+{
+  int32_t gainTemp;
+  int32_t D.6420;
+  int _1;
+  int32_t _9;
+
+  <bb 2> :
+  gainTemp_3 = 0;
+  _1 = (int) muxAdd_4(D);
+  switch (_1) <default: <L3> [INV], case 0: <L1> [INV], case 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  gainTemp_7 = PAR_paramConfig[36].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  gainTemp_8 = PAR_paramConfig[34].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  gainTemp_6 = PAR_paramConfig[38].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # gainTemp_2 = PHI <gainTemp_7(3), gainTemp_8(4), gainTemp_6(5), gainTemp_3(6)>
+  _9 = gainTemp_2;
+
+  <bb 8> :
+<L5>:
+  return _9;
+
+}
+
+
+
+;; Function pwbCbit_getOffSetCalibration (pwbCbit_getOffSetCalibration, funcdef_no=5, decl_uid=6362, cgraph_uid=6, symbol_order=8)
+
+pwbCbit_getOffSetCalibration (uint8_t muxAdd)
+{
+  int32_t offSetTemp;
+  int32_t D.6422;
+  int _1;
+  int32_t _9;
+
+  <bb 2> :
+  offSetTemp_3 = 0;
+  _1 = (int) muxAdd_4(D);
+  switch (_1) <default: <L3> [INV], case 0: <L1> [INV], case 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  offSetTemp_7 = PAR_paramConfig[37].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  offSetTemp_8 = PAR_paramConfig[35].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  offSetTemp_6 = PAR_paramConfig[39].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # offSetTemp_2 = PHI <offSetTemp_7(3), offSetTemp_8(4), offSetTemp_6(5), offSetTemp_3(6)>
+  _9 = offSetTemp_2;
+
+  <bb 8> :
+<L5>:
+  return _9;
+
+}
+
+
+
+;; Function PWBCBit_UpdatePsValidState (PWBCBit_UpdatePsValidState, funcdef_no=6, decl_uid=5433, cgraph_uid=7, symbol_order=9)
+
+PWBCBit_UpdatePsValidState ()
+{
+  boolean currentState;
+  unsigned char _1;
+  long unsigned int psValidDebounceBuffer.4_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int psValidDebounceBuffer.5_6;
+  long unsigned int _7;
+  long unsigned int psValidDebounceBuffer.6_8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = Dio_ReadChannel (76);
+  currentState_13 = _1 != 0;
+  psValidDebounceBuffer.4_2 = psValidDebounceBuffer;
+  _3 = psValidDebounceBuffer.4_2 << 1;
+  _4 = (long unsigned int) currentState_13;
+  _5 = _3 | _4;
+  psValidDebounceBuffer = _5;
+  psValidDebounceBuffer.5_6 = psValidDebounceBuffer;
+  _7 = psValidDebounceBuffer.5_6 & 31;
+  if (_7 == 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PWB_psValidState = 1;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  psValidDebounceBuffer.6_8 = psValidDebounceBuffer;
+  _9 = psValidDebounceBuffer.6_8 & 31;
+  if (_9 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  PWB_psValidState = 0;
+
+  <bb 6> :
+  return;
+
+}
+
+

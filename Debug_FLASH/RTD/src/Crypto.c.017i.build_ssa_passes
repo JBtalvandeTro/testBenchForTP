@@ -1,0 +1,822 @@
+Crypto_ReportErrorToDet (uint8 u8ServiceId, uint8 u8Error)
+{
+  <bb 2> :
+  _1 = (int) u8Error;
+  switch (_1) <default: <L2> [INV], case 128: <L0> [INV], case 131: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  Det_ReportRuntimeError (114, 0, u8ServiceId, 128);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  Det_ReportRuntimeError (114, 0, u8ServiceId, 129);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+Crypto_MainFunction ()
+{
+  const uint32 u32PartitionId;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  _1 = Crypto_aeDriverState[u32PartitionId];
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crypto_Ipw_MainFunction (u32PartitionId);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Crypto_CertificateVerify (uint32 cryptoKeyId, uint32 verifyCryptoKeyId, Crypto_VerifyResultType * verifyPtr)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6614;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6614 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6614;
+
+}
+
+
+Crypto_CertificateParse (uint32 cryptoKeyId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6612;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6612 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6612;
+
+}
+
+
+Crypto_KeyExchangeCalcSecret (uint32 cryptoKeyId, const uint8 * partnerPublicValuePtr, uint32 partnerPublicValueLength)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6610;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6610 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6610;
+
+}
+
+
+Crypto_KeyExchangeCalcPubVal (uint32 cryptoKeyId, uint8 * publicValuePtr, uint32 * publicValueLengthPtr)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6608;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6608 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6608;
+
+}
+
+
+Crypto_KeyDerive (uint32 cryptoKeyId, uint32 targetCryptoKeyId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6606;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6606 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6606;
+
+}
+
+
+Crypto_KeyGenerate (uint32 cryptoKeyId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6604;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6604 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6604;
+
+}
+
+
+Crypto_RandomSeed (uint32 cryptoKeyId, const uint8 * seedPtr, uint32 seedLength)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6602;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6602 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6602;
+
+}
+
+
+Crypto_KeyElementIdsGet (uint32 cryptoKeyId, uint32 * keyElementIdsPtr, uint32 * keyElementIdsLengthPtr)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6600;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6600 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6600;
+
+}
+
+
+Crypto_KeyCopy (uint32 cryptoKeyId, uint32 targetCryptoKeyId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6598;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6598 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6598;
+
+}
+
+
+Crypto_KeyElementCopyPartial (uint32 cryptoKeyId, uint32 keyElementId, uint32 keyElementSourceOffset, uint32 keyElementTargetOffset, uint32 keyElementCopyLength, uint32 targetCryptoKeyId, uint32 targetKeyElementId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6596;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6596 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6596;
+
+}
+
+
+Crypto_KeyElementCopy (uint32 cryptoKeyId, uint32 keyElementId, uint32 targetCryptoKeyId, uint32 targetKeyElementId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6594;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6594 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6594;
+
+}
+
+
+Crypto_KeyElementGet (uint32 cryptoKeyId, uint32 keyElementId, uint8 * resultPtr, uint32 * resultLengthPtr)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6592;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6592 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6592;
+
+}
+
+
+Crypto_KeySetValid (uint32 cryptoKeyId)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6590;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6590 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6590;
+
+}
+
+
+Crypto_KeyElementSet (uint32 cryptoKeyId, uint32 keyElementId, const uint8 * keyPtr, uint32 keyLength)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6588;
+
+  <bb 2> :
+  RetVal = 1;
+  D.6588 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6588;
+
+}
+
+
+Crypto_CancelJob (uint32 objectId, struct Crypto_JobInfoType * job)
+{
+  uint32 u32ObjectIdx;
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6586;
+  long unsigned int iftmp.2;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  if (objectId == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.2 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.2 = 4294967295;
+
+  <bb 5> :
+  u32ObjectIdx = iftmp.2;
+  RetVal = Crypto_Ipw_CancelJob (u32PartitionId, u32ObjectIdx, job);
+  RetVal.3_1 = (signed char) RetVal;
+  if (RetVal.3_1 < 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Crypto_ReportErrorToDet (14, RetVal);
+  RetVal = 1;
+
+  <bb 7> :
+  D.6586 = RetVal;
+
+  <bb 8> :
+<L5>:
+  return D.6586;
+
+}
+
+
+Crypto_ProcessJob (uint32 objectId, struct Crypto_JobType * job)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32ObjectIdx;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6503;
+  long unsigned int iftmp.0;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  if (objectId == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.0 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.0 = 4294967295;
+
+  <bb 5> :
+  u32ObjectIdx = iftmp.0;
+  RetVal = 1;
+  RetVal = Crypto_CheckForErrorsInProcessJob (u32PartitionId, u32ObjectIdx, job);
+
+  <bb 6> :
+  if (RetVal == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  RetVal = Crypto_Ipw_ProcessJob (u32PartitionId, u32ObjectIdx, job);
+
+  <bb 8> :
+  if (RetVal == 3)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Det_ReportRuntimeError (114, 0, 3, 0);
+
+  <bb 10> :
+  RetVal.1_1 = (signed char) RetVal;
+  if (RetVal.1_1 < 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  Crypto_ReportErrorToDet (3, RetVal);
+  RetVal = 1;
+
+  <bb 12> :
+  D.6503 = RetVal;
+
+  <bb 13> :
+<L11>:
+  return D.6503;
+
+}
+
+
+Crypto_Init (const Crypto_ConfigType * configPtr)
+{
+  const uint32 u32PartitionId;
+  Std_ReturnType RetVal;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  _1 = Crypto_aeDriverState[u32PartitionId];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  RetVal = Crypto_Ipw_Init (u32PartitionId);
+  if (RetVal == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Crypto_Util_InitJobQueues ();
+  Crypto_aeDriverState[u32PartitionId] = 1;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Crypto_CheckForErrorsInProcessJob (const uint32 u32PartitionId, const uint32 u32ObjectIdx, const struct Crypto_JobType * pJob)
+{
+  Crypto_ProcessJobErrorType eProcessJobError;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6514;
+
+  <bb 2> :
+  RetVal = 1;
+  eProcessJobError = Crypto_GetProcessJobError (pJob);
+  if (eProcessJobError == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RetVal = 9;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  if (eProcessJobError == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal = 129;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (eProcessJobError == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  RetVal = 0;
+
+  <bb 8> :
+  D.6514 = RetVal;
+
+  <bb 9> :
+<L9>:
+  return D.6514;
+
+}
+
+
+Crypto_GetProcessJobError (const struct Crypto_JobType * const pJob)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  const Crypto_OperationModeType eJobMode;
+  const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput;
+  const Crypto_ServiceInfoType eJobService;
+  Crypto_ProcessJobErrorType D.6516;
+
+  <bb 2> :
+  _1 = pJob->jobPrimitiveInfo;
+  _2 = _1->primitiveInfo;
+  eJobService = _2->service;
+  pJobPrimitiveInputOutput = &pJob->jobPrimitiveInputOutput;
+  eJobMode = pJobPrimitiveInputOutput->mode;
+  eRetVal = Crypto_GetJobErrorForService (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  D.6516 = eRetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6516;
+
+}
+
+
+Crypto_GetJobErrorForOutAndVerifyPtrs (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6552;
+
+  <bb 2> :
+  eRetVal = Crypto_GetJobErrorForOutputPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  if (eRetVal == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  eRetVal = Crypto_GetJobErrorForSecondaryOutputPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  if (eRetVal == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = Crypto_GetJobErrorForVerifyPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+
+  <bb 5> :
+  D.6552 = eRetVal;
+
+  <bb 6> :
+<L4>:
+  return D.6552;
+
+}
+
+
+Crypto_GetJobErrorForService (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6528;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobService;
+  _2 = (int) _1;
+  _3 = Crypto_aProcessJobServiceParams[_2].bSingleCallOnly;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (eJobMode != 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = 1;
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  eRetVal = Crypto_GetJobErrorForInputPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  if (eRetVal == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  eRetVal = Crypto_GetJobErrorForSecondaryInputPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  if (eRetVal == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  eRetVal = Crypto_GetJobErrorForTertiaryInputPtr (eJobService, pJobPrimitiveInputOutput, eJobMode);
+  if (eRetVal == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  eRetVal = Crypto_GetJobErrorForOutAndVerifyPtrs (eJobService, pJobPrimitiveInputOutput, eJobMode);
+
+  <bb 9> :
+  D.6528 = eRetVal;
+
+  <bb 10> :
+<L10>:
+  return D.6528;
+
+}
+
+
+Crypto_GetJobErrorForVerifyPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6578;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8VerifyPtrModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->verifyPtr;
+  if (_4 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = 4;
+
+  <bb 5> :
+  D.6578 = eRetVal;
+
+  <bb 6> :
+<L4>:
+  return D.6578;
+
+}
+
+
+Crypto_GetJobErrorForSecondaryOutputPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6572;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8SecondaryOutputModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->secondaryOutputPtr;
+  if (_4 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _5 = pJobPrimitiveInputOutput->secondaryOutputLengthPtr;
+  if (_5 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  eRetVal = 4;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  _6 = pJobPrimitiveInputOutput->secondaryOutputLengthPtr;
+  _7 = *_6;
+  if (_7 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  eRetVal = 5;
+
+  <bb 8> :
+  D.6572 = eRetVal;
+
+  <bb 9> :
+<L8>:
+  return D.6572;
+
+}
+
+
+Crypto_GetJobErrorForOutputPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6562;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8OutputModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->outputPtr;
+  if (_4 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _5 = pJobPrimitiveInputOutput->outputLengthPtr;
+  if (_5 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  eRetVal = 4;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  _6 = pJobPrimitiveInputOutput->outputLengthPtr;
+  _7 = *_6;
+  if (_7 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  eRetVal = 5;
+
+  <bb 8> :
+  D.6562 = eRetVal;
+
+  <bb 9> :
+<L8>:
+  return D.6562;
+
+}
+
+
+Crypto_GetJobErrorForTertiaryInputPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6546;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8TertiaryInputModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->tertiaryInputPtr;
+  if (_4 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = 4;
+
+  <bb 5> :
+  D.6546 = eRetVal;
+
+  <bb 6> :
+<L4>:
+  return D.6546;
+
+}
+
+
+Crypto_GetJobErrorForSecondaryInputPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6540;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8SecondaryInputModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->secondaryInputPtr;
+  if (_4 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = 4;
+
+  <bb 5> :
+  D.6540 = eRetVal;
+
+  <bb 6> :
+<L4>:
+  return D.6540;
+
+}
+
+
+Crypto_GetJobErrorForInputPtr (const Crypto_ServiceInfoType eJobService, const struct Crypto_JobPrimitiveInputOutputType * const pJobPrimitiveInputOutput, const Crypto_OperationModeType eJobMode)
+{
+  Crypto_ProcessJobErrorType eRetVal;
+  Crypto_ProcessJobErrorType D.6534;
+
+  <bb 2> :
+  eRetVal = 0;
+  _1 = (unsigned char) eJobMode;
+  _2 = Crypto_aProcessJobServiceParams[eJobService].u8InputModeMask;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = pJobPrimitiveInputOutput->inputPtr;
+  if (_4 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal = 4;
+
+  <bb 5> :
+  D.6534 = eRetVal;
+
+  <bb 6> :
+<L4>:
+  return D.6534;
+
+}
+
+

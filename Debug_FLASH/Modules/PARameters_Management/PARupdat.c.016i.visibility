@@ -1,0 +1,623 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: PAR_SaveParametersInFlash PAR_Update
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+PAR_CheckIsValueAllowed/23 (PAR_CheckIsValueAllowed) @05be8ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: par_ManageWriteVal/4 
+  Calls: 
+PAR_IsValidAccess/22 (PAR_IsValidAccess) @05be8d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: par_ManageWriteVal/4 par_ManageReadVal/3 
+  Calls: 
+FSM_mode/21 (FSM_mode) @05c146c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: par_UpdateAccessRight/2 (read)
+  Availability: not_available
+  Varpool flags:
+WDO_Management/20 (WDO_Management) @05be8a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 PAR_SaveParametersInFlash/1 
+  Calls: 
+WDO_Init/19 (WDO_Init) @05be89a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 PAR_SaveParametersInFlash/1 
+  Calls: 
+PAR_flags/18 (PAR_flags) @05c14360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_SaveParametersInFlash/1 (write)
+  Availability: not_available
+  Varpool flags:
+FLA_Write/17 (FLA_Write) @05be88c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 
+  Calls: 
+PAR_CalculateCRC/16 (PAR_CalculateCRC) @05be87e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 
+  Calls: 
+PAR_ParamValues/15 (PAR_ParamValues) @05c14240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (addr)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (addr)par_ManageWriteVal/4 (write)
+  Availability: not_available
+  Varpool flags:
+FLA_Erase/14 (FLA_Erase) @05be8700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 PAR_SaveParametersInFlash/1 
+  Calls: 
+PAR_currentFlashPartition/13 (PAR_currentFlashPartition) @05c141b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (write)
+  Availability: not_available
+  Varpool flags:
+WDO_Deinit/12 (WDO_Deinit) @05be8540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_SaveParametersInFlash/1 PAR_SaveParametersInFlash/1 
+  Calls: 
+PAR_writeAtInit/11 (PAR_writeAtInit) @05c140d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_SaveParametersInFlash/1 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/10 (PAR_paramConfig) @05c0d7e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (read)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (read)par_ManageReadVal/3 (read)par_ManageWriteVal/4 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_right/9 (PAR_right) @05c0d798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (read)PAR_Update/0 (read)par_UpdateAccessRight/2 (write)par_UpdateAccessRight/2 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_flashUpToDate/8 (PAR_flashUpToDate) @05c0d750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (read)PAR_Update/0 (write)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (write)
+  Availability: not_available
+  Varpool flags:
+COM_paramReq/7 (COM_paramReq) @05c0d708
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_Update/0 (read)PAR_SaveParametersInFlash/1 (read)par_ManageWriteVal/4 (read)par_ManageWriteVal/4 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/6 (PAR_paramReq) @05c0d678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (read)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (write)PAR_Update/0 (read)PAR_Update/0 (write)PAR_SaveParametersInFlash/1 (read)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (write)PAR_SaveParametersInFlash/1 (write)par_ManageReadVal/3 (write)par_ManageReadVal/3 (write)par_ManageWriteVal/4 (write)par_ManageWriteVal/4 (write)par_ManageWriteVal/4 (read)par_ManageWriteVal/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_flags/5 (COM_flags) @05c0d630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Update/0 (read)
+  Availability: not_available
+  Varpool flags:
+par_ManageWriteVal/4 (par_ManageWriteVal) @05bde700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_paramReq/7 (read)PAR_paramReq/6 (write)COM_paramReq/7 (read)PAR_paramReq/6 (write)PAR_paramConfig/10 (write)PAR_paramReq/6 (read)PAR_paramReq/6 (read)PAR_ParamValues/15 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_Update/0 
+  Calls: PAR_CheckIsValueAllowed/23 PAR_IsValidAccess/22 
+par_ManageReadVal/3 (par_ManageReadVal) @05bde0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramReq/6 (write)PAR_paramConfig/10 (read)PAR_paramReq/6 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_Update/0 
+  Calls: PAR_IsValidAccess/22 
+par_UpdateAccessRight/2 (par_UpdateAccessRight) @05bdee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/21 (read)PAR_right/9 (write)PAR_right/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_Update/0 
+  Calls: 
+PAR_SaveParametersInFlash/1 (PAR_SaveParametersInFlash) @05bdeb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_flashUpToDate/8 (read)COM_paramReq/7 (read)PAR_writeAtInit/11 (read)PAR_paramReq/6 (read)PAR_paramReq/6 (write)PAR_currentFlashPartition/13 (read)PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PAR_paramConfig/10 (write)PAR_paramConfig/10 (read)PAR_ParamValues/15 (write)PAR_ParamValues/15 (write)PAR_ParamValues/15 (addr)PAR_ParamValues/15 (write)PAR_ParamValues/15 (addr)PAR_currentFlashPartition/13 (read)PAR_currentFlashPartition/13 (write)PAR_paramReq/6 (write)PAR_flashUpToDate/8 (write)PAR_paramReq/6 (write)PAR_paramReq/6 (write)PAR_paramReq/6 (write)PAR_paramConfig/10 (read)PAR_flags/18 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: WDO_Management/20 WDO_Init/19 WDO_Management/20 WDO_Init/19 FLA_Erase/14 FLA_Write/17 PAR_CalculateCRC/16 FLA_Erase/14 WDO_Deinit/12 WDO_Deinit/12 
+PAR_Update/0 (PAR_Update) @05bde8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/5 (read)PAR_paramReq/6 (write)COM_paramReq/7 (read)COM_paramReq/7 (read)COM_paramReq/7 (read)PAR_paramReq/6 (write)PAR_paramReq/6 (read)COM_paramReq/7 (read)PAR_flashUpToDate/8 (read)PAR_right/9 (read)PAR_right/9 (read)PAR_paramReq/6 (write)PAR_paramReq/6 (write)PAR_paramReq/6 (write)PAR_paramReq/6 (write)PAR_paramReq/6 (write)COM_paramReq/7 (read)PAR_paramReq/6 (write)COM_paramReq/7 (read)PAR_paramReq/6 (write)COM_paramReq/7 (read)COM_paramReq/7 (read)COM_paramReq/7 (read)COM_paramReq/7 (read)PAR_paramConfig/10 (read)COM_paramReq/7 (read)COM_paramReq/7 (read)PAR_paramReq/6 (write)PAR_paramReq/6 (read)PAR_flashUpToDate/8 (write)COM_paramReq/7 (read)COM_paramReq/7 (read)COM_paramReq/7 (read)PAR_paramReq/6 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: par_ManageReadVal/3 par_ManageWriteVal/4 par_UpdateAccessRight/2 
+par_ManageWriteVal (uint16_t param, uint32_t value)
+{
+  union PAR_ValueU val;
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6550;
+
+  <bb 2> :
+  _1 = (<unnamed type>) param;
+  error = PAR_IsValidAccess (_1, 1);
+  if (error == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  value.8_2 = (long int) value;
+  val.signedVal = value.8_2;
+  _3 = (<unnamed type>) param;
+  error = PAR_CheckIsValueAllowed (_3, val);
+  if (error == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = COM_paramReq.index;
+  PAR_paramReq.index = _4;
+  _5 = COM_paramReq.value;
+  _6 = (long int) _5;
+  PAR_paramReq.value.signedVal = _6;
+  _7 = (int) param;
+  PAR_paramConfig[_7].realVal = PAR_paramReq.value;
+  _8 = PAR_paramReq.value.signedVal;
+  _9 = (int) param;
+  _10 = (long unsigned int) _8;
+  PAR_ParamValues[_9] = _10;
+
+  <bb 5> :
+  D.6550 = error;
+  val = {CLOBBER};
+
+  <bb 6> :
+<L5>:
+  return D.6550;
+
+}
+
+
+par_ManageReadVal (uint16_t param)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6544;
+
+  <bb 2> :
+  error = 0;
+  _1 = (<unnamed type>) param;
+  error = PAR_IsValidAccess (_1, 0);
+  if (error == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = (int) param;
+  PAR_paramReq.readValue = PAR_paramConfig[_2].realVal;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  PAR_paramReq.readValue.unsignedVal = 4294967295;
+
+  <bb 5> :
+  D.6544 = error;
+
+  <bb 6> :
+<L3>:
+  return D.6544;
+
+}
+
+
+par_UpdateAccessRight ()
+{
+  <bb 2> :
+  FSM_mode.7_1 = FSM_mode;
+  if (FSM_mode.7_1 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  PAR_right = 4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  PAR_right = 1;
+
+  <bb 5> :
+  return;
+
+}
+
+
+PAR_SaveParametersInFlash ()
+{
+  FLA_PartitionIdE newActivePartition;
+  FLA_StatusE ret;
+
+  <bb 2> :
+  PAR_flashUpToDate.3_1 = PAR_flashUpToDate;
+  _2 = ~PAR_flashUpToDate.3_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 3> :
+  _3 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _4 = _3 & 4;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  PAR_writeAtInit.4_5 = PAR_writeAtInit;
+  if (PAR_writeAtInit.4_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 5> :
+  _6 = PAR_paramReq.processed;
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 6> :
+  WDO_Deinit (1);
+  WDO_Deinit (0);
+  PAR_paramReq.processed = 1;
+  PAR_currentFlashPartition.5_8 = PAR_currentFlashPartition;
+  if (PAR_currentFlashPartition.5_8 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  newActivePartition = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  newActivePartition = 0;
+
+  <bb 9> :
+  ret = FLA_Erase (newActivePartition);
+  if (ret == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 10> :
+  _9 = PAR_paramConfig[7].realVal.unsignedVal;
+  if (_9 != 4294967295)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _10 = PAR_paramConfig[7].realVal.unsignedVal;
+  _11 = _10 + 1;
+  PAR_paramConfig[7].realVal.unsignedVal = _11;
+  _12 = PAR_paramConfig[7].realVal.unsignedVal;
+  PAR_ParamValues[7] = _12;
+
+  <bb 12> :
+  PAR_ParamValues[256] = 1431677610;
+  _13 = PAR_CalculateCRC (&PAR_ParamValues, 1020);
+  _14 = (long unsigned int) _13;
+  PAR_ParamValues[255] = _14;
+  ret = FLA_Write (newActivePartition, 0, &PAR_ParamValues, 1032);
+  if (ret == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 13> :
+  PAR_currentFlashPartition.6_15 = PAR_currentFlashPartition;
+  ret = FLA_Erase (PAR_currentFlashPartition.6_15);
+  PAR_currentFlashPartition = newActivePartition;
+  if (ret != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  PAR_paramReq.lastError = 21;
+  goto <bb 18>; [INV]
+
+  <bb 15> :
+  PAR_flashUpToDate = 1;
+  PAR_paramReq.lastError = 0;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+  PAR_paramReq.lastError = 26;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  PAR_paramReq.lastError = 21;
+
+  <bb 18> :
+  _16 = PAR_paramConfig[6].realVal.unsignedVal;
+  if (_16 == 1)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  PAR_flags.moduleFlags.status.flags.rebootRequested = 1;
+
+  <bb 20> :
+  WDO_Init (0);
+  WDO_Management (0, 0);
+  WDO_Init (1);
+  WDO_Management (1, 1);
+
+  <bb 21> :
+  return;
+
+}
+
+
+PAR_Update ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PAR_paramReq.lastError = 0;
+
+  <bb 4> :
+  par_UpdateAccessRight ();
+  _3 = COM_paramReq.readRequest;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  _5 = COM_paramReq.saveRequest;
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _7 = COM_paramReq.changeRequest;
+  _8 = ~_7;
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  PAR_paramReq.processed = 0;
+  goto <bb 25>; [INV]
+
+  <bb 8> :
+  _9 = PAR_paramReq.processed;
+  _10 = ~_9;
+  if (_10 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 9> :
+  _11 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _12 = _11 & 4;
+  if (_12 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 10> :
+  PAR_flashUpToDate.0_13 = PAR_flashUpToDate;
+  _14 = ~PAR_flashUpToDate.0_13;
+  if (_14 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 11> :
+  PAR_right.1_15 = PAR_right;
+  if (PAR_right.1_15 != 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 12> :
+  PAR_right.2_16 = PAR_right;
+  if (PAR_right.2_16 != 4)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 13> :
+  PAR_paramReq.processed = 1;
+  PAR_paramReq.lastError = 2;
+  goto <bb 24>; [INV]
+
+  <bb 14> :
+  PAR_paramReq.processed = 1;
+  PAR_paramReq.lastError = 2;
+  goto <bb 24>; [INV]
+
+  <bb 15> :
+  PAR_paramReq.processed = 1;
+  _17 = COM_paramReq.index;
+  PAR_paramReq.index = _17;
+  _18 = COM_paramReq.value;
+  PAR_paramReq.value.unsignedVal = _18;
+  _19 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _20 = _19 & 2;
+  if (_20 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 16> :
+  _21 = COM_paramReq.readRequest;
+  _22 = ~_21;
+  if (_22 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 17> :
+  _23 = COM_paramReq.value;
+  _24 = COM_paramReq.index;
+  _25 = (int) _24;
+  _26 = PAR_paramConfig[_25].realVal.unsignedVal;
+  if (_23 != _26)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 18> :
+  _27 = COM_paramReq.index;
+  _28 = COM_paramReq.value;
+  _29 = par_ManageWriteVal (_27, _28);
+  PAR_paramReq.lastError = _29;
+  _30 = PAR_paramReq.lastError;
+  if (_30 == 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  PAR_flashUpToDate = 0;
+
+  <bb 20> :
+  goto <bb 24>; [INV]
+
+  <bb 21> :
+  _31 = COM_paramReq.changeRequest;
+  _32 = ~_31;
+  if (_32 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 22> :
+  _33 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _34 = _33 & 1;
+  if (_34 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _35 = COM_paramReq.index;
+  _36 = par_ManageReadVal (_35);
+  PAR_paramReq.lastError = _36;
+
+  <bb 24> :
+
+  <bb 25> :
+  return;
+
+}
+
+

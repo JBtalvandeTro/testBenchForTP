@@ -1,0 +1,635 @@
+Trivially needed symbols: Wdg_Ipw_Service Wdg_Ipw_StopTimer Wdg_Ipw_StartTimer Wdg_Ipw_SetMode Wdg_Ipw_Init Wdg_Ipw_aeIp
+
+
+Initial Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Service/5 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StartTimer/3 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_SetMode/2 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 Wdg_Ipw_StartTimer/3 Wdg_Ipw_SetMode/2 Wdg_Ipw_Init/1 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Init/1 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Service/11 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c017e0
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StopTimer/10 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c01540
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StartTimer/9 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c012a0
+  References: Wdg_Ipw_aeIp/0 (write)Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Config/8 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c01000
+  References: Wdg_Ipw_aeIp/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Init/6 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05a6c2a0
+  References: 
+  Referring: Wdg_Ipw_Init/1 (write)Wdg_Ipw_SetMode/2 (write)Wdg_Ipw_SetMode/2 (read)Wdg_Ipw_StartTimer/3 (read)Wdg_Ipw_StopTimer/4 (read)Wdg_Ipw_Service/5 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Service/5 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StartTimer/3 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_SetMode/2 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 Wdg_Ipw_StartTimer/3 Wdg_Ipw_SetMode/2 Wdg_Ipw_Init/1 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Init/1 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Service/11 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StopTimer/10 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StartTimer/9 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Config/8 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Init/6 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_Ipw_Init/1 (write)Wdg_Ipw_SetMode/2 (write)Wdg_Ipw_SetMode/2 (read)Wdg_Ipw_StartTimer/3 (read)Wdg_Ipw_StopTimer/4 (read)Wdg_Ipw_Service/5 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Service/5 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StartTimer/3 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_SetMode/2 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 Wdg_Ipw_StartTimer/3 Wdg_Ipw_SetMode/2 Wdg_Ipw_Init/1 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Init/1 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Service/11 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StopTimer/10 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StartTimer/9 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Config/8 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Init/6 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_Ipw_Init/1 (write)Wdg_Ipw_SetMode/2 (write)Wdg_Ipw_SetMode/2 (read)Wdg_Ipw_StartTimer/3 (read)Wdg_Ipw_StopTimer/4 (read)Wdg_Ipw_Service/5 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Service/5 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StartTimer/3 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_SetMode/2 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 Wdg_Ipw_StartTimer/3 Wdg_Ipw_SetMode/2 Wdg_Ipw_Init/1 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_Ipw_Init/1 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Service/11 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StopTimer/10 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StartTimer/9 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Config/8 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Init/6 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_Ipw_Init/1 (write)Wdg_Ipw_SetMode/2 (write)Wdg_Ipw_SetMode/2 (read)Wdg_Ipw_StartTimer/3 (read)Wdg_Ipw_StopTimer/4 (read)Wdg_Ipw_Service/5 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_Service/5 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_StartTimer/3 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_SetMode/2 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_StopTimer/4 Wdg_Ipw_StartTimer/3 Wdg_Ipw_SetMode/2 Wdg_Ipw_Init/1 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_Ipw_Init/1 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Service/11 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StopTimer/10 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_StartTimer/9 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)Wdg_Ipw_aeIp/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Config/8 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_Ipw_aeIp/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/7 Wdog_Ip_Init/6 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_Ipw_StartTimer/3 (read)Wdg_Ipw_SetMode/2 (read)Wdg_Ipw_StopTimer/4 (read)Wdg_Ipw_Init/1 (write)Wdg_Ipw_SetMode/2 (write)Wdg_Ipw_Service/5 (read)
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdg_Ipw_aeIp
+Removing variables:
+
+Final Symbol table:
+
+Wdog_Ip_Service/11 (Wdog_Ip_Service) @05c082a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_StopTimer/10 (Wdog_Ip_StopTimer) @05c080e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_StartTimer/9 (Wdog_Ip_StartTimer) @05c01620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_Config/8 (Wdog_Ip_Config) @05c010e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportRuntimeError/7 (Det_ReportRuntimeError) @05c01e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_Init/6 (Wdog_Ip_Init) @05c01d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_Service/5 (Wdg_Ipw_Service) @05c017e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_StopTimer/4 (Wdg_Ipw_StopTimer) @05c01540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_StartTimer/3 (Wdg_Ipw_StartTimer) @05c012a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_SetMode/2 (Wdg_Ipw_SetMode) @05c01000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_Init/1 (Wdg_Ipw_Init) @05a6c2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_aeIp/0 (Wdg_Ipw_aeIp) @05a70120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

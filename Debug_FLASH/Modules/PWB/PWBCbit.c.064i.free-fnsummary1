@@ -1,0 +1,269 @@
+PWBCBit_UpdatePsValidState ()
+{
+  boolean currentState;
+  unsigned char _1;
+  long unsigned int psValidDebounceBuffer.4_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int psValidDebounceBuffer.5_6;
+  long unsigned int _7;
+  long unsigned int psValidDebounceBuffer.6_8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = Dio_ReadChannel (76);
+  currentState_13 = _1 != 0;
+  psValidDebounceBuffer.4_2 = psValidDebounceBuffer;
+  _3 = psValidDebounceBuffer.4_2 << 1;
+  _4 = (long unsigned int) currentState_13;
+  _5 = _3 | _4;
+  psValidDebounceBuffer = _5;
+  psValidDebounceBuffer.5_6 = psValidDebounceBuffer;
+  _7 = psValidDebounceBuffer.5_6 & 31;
+  if (_7 == 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PWB_psValidState = 1;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  psValidDebounceBuffer.6_8 = psValidDebounceBuffer;
+  _9 = psValidDebounceBuffer.6_8 & 31;
+  if (_9 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  PWB_psValidState = 0;
+
+  <bb 6> :
+  return;
+
+}
+
+
+pwbCbit_getOffSetCalibration (uint8_t muxAdd)
+{
+  int32_t offSetTemp;
+  int32_t D.6422;
+  int _1;
+  int32_t _9;
+
+  <bb 2> :
+  offSetTemp_3 = 0;
+  _1 = (int) muxAdd_4(D);
+  switch (_1) <default: <L3> [INV], case 0: <L1> [INV], case 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  offSetTemp_7 = PAR_paramConfig[37].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  offSetTemp_8 = PAR_paramConfig[35].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  offSetTemp_6 = PAR_paramConfig[39].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # offSetTemp_2 = PHI <offSetTemp_7(3), offSetTemp_8(4), offSetTemp_6(5), offSetTemp_3(6)>
+  _9 = offSetTemp_2;
+
+  <bb 8> :
+<L5>:
+  return _9;
+
+}
+
+
+pwbCbit_getGainCalibration (uint8_t muxAdd)
+{
+  int32_t gainTemp;
+  int32_t D.6420;
+  int _1;
+  int32_t _9;
+
+  <bb 2> :
+  gainTemp_3 = 0;
+  _1 = (int) muxAdd_4(D);
+  switch (_1) <default: <L3> [INV], case 0: <L1> [INV], case 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  gainTemp_7 = PAR_paramConfig[36].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  gainTemp_8 = PAR_paramConfig[34].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  gainTemp_6 = PAR_paramConfig[38].realVal.signedVal;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # gainTemp_2 = PHI <gainTemp_7(3), gainTemp_8(4), gainTemp_6(5), gainTemp_3(6)>
+  _9 = gainTemp_2;
+
+  <bb 8> :
+<L5>:
+  return _9;
+
+}
+
+
+PWBCbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+PWBCbit_GetHvMeasures (uint8_t muxAdd)
+{
+  int32_t tempMeasure;
+  int32_t offset;
+  int32_t gain;
+  uint32_t result;
+  uint8_t bit2;
+  uint8_t bit1;
+  uint8_t bit0;
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  short unsigned int _4;
+  long unsigned int gain.2_5;
+  long unsigned int _6;
+  long unsigned int offset.3_7;
+  long unsigned int _8;
+  long int _9;
+
+  <bb 2> :
+  bit0_13 = muxAdd_12(D) & 1;
+  _1 = muxAdd_12(D) >> 1;
+  bit1_14 = _1 & 1;
+  _2 = muxAdd_12(D) >> 2;
+  bit2_15 = _2 & 1;
+  Dio_WriteChannel (49, bit0_13);
+  Dio_WriteChannel (50, bit1_14);
+  Dio_WriteChannel (51, bit2_15);
+  result_20 = 0;
+  _3 = (int) muxAdd_12(D);
+  switch (_3) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L2> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  SPC_GetHvCurrentMeasures ();
+  result_26 = Spc_returnMeasures.HvCurrent;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  SPC_GetHvTemperaturesMeasures ();
+  result_22 = Spc_returnMeasures.HvTemperature;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  SPC_GetHvVoltageMeasures ();
+  result_24 = Spc_returnMeasures.HvVoltage;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # result_10 = PHI <result_26(3), result_22(4), result_24(5), result_20(6)>
+  gain_28 = pwbCbit_getGainCalibration (muxAdd_12(D));
+  offset_30 = pwbCbit_getOffSetCalibration (muxAdd_12(D));
+  tempMeasure_31 = 0;
+  _4 = (short unsigned int) result_10;
+  PWBCbit_cmdResults.ReadMeasResultRaw = _4;
+  gain.2_5 = (long unsigned int) gain_28;
+  _6 = result_10 * gain.2_5;
+  offset.3_7 = (long unsigned int) offset_30;
+  _8 = _6 + offset.3_7;
+  tempMeasure_33 = (int32_t) _8;
+  _9 = tempMeasure_33 / 100;
+  PWBCbit_cmdResults.ReadMeasResultHMI = _9;
+  return;
+
+}
+
+
+PWBCbit_GetLvMeasures (uint8_t muxAdd)
+{
+  int32_t tempMeasure;
+  int32_t offset;
+  int32_t gain;
+  uint32_t result;
+  uint8_t bit2;
+  uint8_t bit1;
+  uint8_t bit0;
+  unsigned char _1;
+  unsigned char _2;
+  short unsigned int _3;
+  long unsigned int gain.0_4;
+  long unsigned int _5;
+  long unsigned int offset.1_6;
+  long unsigned int _7;
+  long int _8;
+
+  <bb 2> :
+  bit0_10 = muxAdd_9(D) & 1;
+  _1 = muxAdd_9(D) >> 1;
+  bit1_11 = _1 & 1;
+  _2 = muxAdd_9(D) >> 2;
+  bit2_12 = _2 & 1;
+  Dio_WriteChannel (53, bit0_10);
+  Dio_WriteChannel (54, bit1_11);
+  Dio_WriteChannel (55, bit2_12);
+  result_17 = 0;
+  SPC_GetLvVoltageMeasures ();
+  result_19 = Spc_returnMeasures.LvVoltage;
+  gain_20 = PAR_paramConfig[32].realVal.signedVal;
+  offset_21 = PAR_paramConfig[33].realVal.signedVal;
+  tempMeasure_22 = 0;
+  _3 = (short unsigned int) result_19;
+  PWBCbit_cmdResults.ReadMeasResultRaw = _3;
+  gain.0_4 = (long unsigned int) gain_20;
+  _5 = result_19 * gain.0_4;
+  offset.1_6 = (long unsigned int) offset_21;
+  _7 = _5 + offset.1_6;
+  tempMeasure_24 = (int32_t) _7;
+  _8 = tempMeasure_24 / 100;
+  PWBCbit_cmdResults.ReadMeasResultHMI = _8;
+  return;
+
+}
+
+
+PWBCbit_Init ()
+{
+  <bb 2> :
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  PWB_psValidState = 1;
+  return;
+
+}
+
+

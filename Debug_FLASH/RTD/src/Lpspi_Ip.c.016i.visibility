@@ -1,0 +1,2550 @@
+
+Marking local functions: Lpspi_Ip_PushDataToFifo Lpspi_Ip_ReadDataFromFifo
+
+
+Marking externally visible functions: Lpspi_Ip_GetStatus Lpspi_Ip_IrqHandler Lpspi_Ip_Cancel Lpspi_Ip_UpdateTransferMode Lpspi_Ip_UpdateDefaultTransmitData Lpspi_Ip_UpdateLsb Lpspi_Ip_UpdateFrameSize Lpspi_Ip_ManageBuffers Lpspi_Ip_AsyncTransmit Lpspi_Ip_SyncTransmit Lpspi_Ip_DeInit Lpspi_Ip_Init Lpspi_Ip_IrqRxDmaHandler Lpspi_Ip_IrqTxDmaHandler
+
+
+Marking externally visible variables: Lpspi_Ip_apxStateStructureArray
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_10/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_10) @06a8a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_Cancel/26 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_10/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_10) @06a8a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_Cancel/26 
+  Calls: 
+Dma_Ip_GetLogicChannelStatus/40 (Dma_Ip_GetLogicChannelStatus) @06a8a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_ManageBuffers/21 Lpspi_Ip_ManageBuffers/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_11/39 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_11) @06914380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_AsyncTransmit/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_11/38 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_11) @06914ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_AsyncTransmit/20 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09/37 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09) @06914e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_AsyncTransmit/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_09/36 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_09) @06914d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_AsyncTransmit/20 
+  Calls: 
+OsIf_GetElapsed/35 (OsIf_GetElapsed) @069149a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+OsIf_GetCounter/34 (OsIf_GetCounter) @069148c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08/33 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08) @069147e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_SyncTransmit/17 Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_08/32 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_08) @06914700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+OsIf_MicrosToTicks/31 (OsIf_MicrosToTicks) @06914620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+Dma_Ip_SetLogicChannelCommand/30 (Dma_Ip_SetLogicChannelCommand) @06a71b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_Cancel/26 Lpspi_Ip_Cancel/26 Lpspi_Ip_ManageBuffers/21 Lpspi_Ip_ManageBuffers/21 Lpspi_Ip_IrqRxDmaHandler/14 Lpspi_Ip_IrqTxDmaHandler/13 Lpspi_Ip_TxDmaFinishTransfer/12 Lpspi_Ip_RxDmaContinueTransfer/11 Lpspi_Ip_TxDmaContinueTransfer/10 Lpspi_Ip_RxDmaConfig/9 Lpspi_Ip_TxDmaConfig/8 
+  Calls: 
+Dma_Ip_SetLogicChannelTransferList/29 (Dma_Ip_SetLogicChannelTransferList) @06a71a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_RxDmaContinueTransfer/11 Lpspi_Ip_TxDmaContinueTransfer/10 Lpspi_Ip_RxDmaConfig/9 Lpspi_Ip_TxDmaConfig/8 
+  Calls: 
+Lpspi_Ip_GetStatus/28 (Lpspi_Ip_GetStatus) @06a67a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpspi_Ip_IrqHandler/27 (Lpspi_Ip_IrqHandler) @06a67540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_TransferProcess/7 
+Lpspi_Ip_Cancel/26 (Lpspi_Ip_Cancel) @06a67000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_10/42 Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_SetLogicChannelCommand/30 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_10/41 
+Lpspi_Ip_UpdateTransferMode/25 (Lpspi_Ip_UpdateTransferMode) @06a67c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_Init/15 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/24 (Lpspi_Ip_UpdateDefaultTransmitData) @06a679a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpspi_Ip_UpdateLsb/23 (Lpspi_Ip_UpdateLsb) @06a67700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/22 (Lpspi_Ip_UpdateFrameSize) @06a67460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpspi_Ip_ManageBuffers/21 (Lpspi_Ip_ManageBuffers) @06a671c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqTxDmaHandler/13 Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_GetLogicChannelStatus/40 Lpspi_Ip_IrqRxDmaHandler/14 Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_GetLogicChannelStatus/40 Lpspi_Ip_TransferProcess/7 
+Lpspi_Ip_AsyncTransmit/20 (Lpspi_Ip_AsyncTransmit) @06a55c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)Lpspi_Ip_apxBases/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_TxDmaConfig/8 Lpspi_Ip_RxDmaConfig/9 Dma_Ip_SetLogicChannelTransferList/29 Dma_Ip_SetLogicChannelTransferList/29 Lpspi_TransmitRxInit/19 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_11/39 Lpspi_TransmitTxInit/18 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_11/38 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09/37 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09/37 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_09/36 
+Lpspi_TransmitRxInit/19 (Lpspi_TransmitRxInit) @06a55620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_SyncTransmit/17 
+  Calls: 
+Lpspi_TransmitTxInit/18 (Lpspi_TransmitTxInit) @06a550e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_SyncTransmit/17 Lpspi_Ip_SyncTransmit/17 Lpspi_Ip_TxDmaFinishTransfer/12 Lpspi_Ip_TransferProcess/7 
+  Calls: 
+Lpspi_Ip_SyncTransmit/17 (Lpspi_Ip_SyncTransmit) @06a55b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)Lpspi_Ip_apxBases/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_GetElapsed/35 Lpspi_TransmitTxInit/18 Lpspi_Ip_PushDataToFifo/5 Lpspi_Ip_ReadDataFromFifo/4 OsIf_GetCounter/34 Lpspi_TransmitRxInit/19 Lpspi_TransmitTxInit/18 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08/33 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08/33 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_08/32 OsIf_MicrosToTicks/31 
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @06a558c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)Lpspi_Ip_apxStateStructureArray/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpspi_Ip_Init/15 (Lpspi_Ip_Init) @06a55540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_axStateStructure/0 (addr)Lpspi_Ip_apxStateStructureArray/2 (write)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/25 
+Lpspi_Ip_IrqRxDmaHandler/14 (Lpspi_Ip_IrqRxDmaHandler) @06a552a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_ManageBuffers/21 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Lpspi_Ip_RxDmaContinueTransfer/11 
+   Indirect call
+   Indirect call
+Lpspi_Ip_IrqTxDmaHandler/13 (Lpspi_Ip_IrqTxDmaHandler) @06a55000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_ManageBuffers/21 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Lpspi_Ip_TxDmaFinishTransfer/12 Lpspi_Ip_TxDmaContinueTransfer/10 
+   Indirect call
+Lpspi_Ip_TxDmaFinishTransfer/12 (Lpspi_Ip_TxDmaFinishTransfer) @06870b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_IrqTxDmaHandler/13 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Lpspi_Ip_TxDmaConfig/8 Lpspi_TransmitTxInit/18 
+Lpspi_Ip_RxDmaContinueTransfer/11 (Lpspi_Ip_RxDmaContinueTransfer) @06870620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_IrqRxDmaHandler/14 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_SetLogicChannelTransferList/29 
+Lpspi_Ip_TxDmaContinueTransfer/10 (Lpspi_Ip_TxDmaContinueTransfer) @068700e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_IrqTxDmaHandler/13 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_SetLogicChannelTransferList/29 
+Lpspi_Ip_RxDmaConfig/9 (Lpspi_Ip_RxDmaConfig) @06870d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)Lpspi_Ip_u32DiscardData/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_AsyncTransmit/20 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_SetLogicChannelTransferList/29 
+Lpspi_Ip_TxDmaConfig/8 (Lpspi_Ip_TxDmaConfig) @06870a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_AsyncTransmit/20 Lpspi_Ip_TxDmaFinishTransfer/12 
+  Calls: Dma_Ip_SetLogicChannelCommand/30 Dma_Ip_SetLogicChannelTransferList/29 
+Lpspi_Ip_TransferProcess/7 (Lpspi_Ip_TransferProcess) @068707e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_IrqHandler/27 Lpspi_Ip_ManageBuffers/21 
+  Calls: Lpspi_Ip_ChannelFinished/6 Lpspi_TransmitTxInit/18 Lpspi_Ip_PushDataToFifo/5 Lpspi_Ip_ReadDataFromFifo/4 
+Lpspi_Ip_ChannelFinished/6 (Lpspi_Ip_ChannelFinished) @06870540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpspi_Ip_TransferProcess/7 
+  Calls: 
+   Indirect call
+Lpspi_Ip_PushDataToFifo/5 (Lpspi_Ip_PushDataToFifo) @068702a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpspi_Ip_SyncTransmit/17 Lpspi_Ip_TransferProcess/7 
+  Calls: 
+Lpspi_Ip_ReadDataFromFifo/4 (Lpspi_Ip_ReadDataFromFifo) @06870000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_apxBases/3 (read)Lpspi_Ip_apxStateStructureArray/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpspi_Ip_SyncTransmit/17 Lpspi_Ip_TransferProcess/7 
+  Calls: 
+Lpspi_Ip_apxBases/3 (Lpspi_Ip_apxBases) @067e97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Lpspi_Ip_TransferProcess/7 (read)Lpspi_Ip_ReadDataFromFifo/4 (read)Lpspi_Ip_PushDataToFifo/5 (read)Lpspi_Ip_TxDmaConfig/8 (read)Lpspi_Ip_RxDmaConfig/9 (read)Lpspi_Ip_TxDmaContinueTransfer/10 (read)Lpspi_Ip_RxDmaContinueTransfer/11 (read)Lpspi_Ip_TxDmaFinishTransfer/12 (read)Lpspi_Ip_IrqTxDmaHandler/13 (read)Lpspi_Ip_IrqRxDmaHandler/14 (read)Lpspi_Ip_Init/15 (read)Lpspi_Ip_DeInit/16 (read)Lpspi_Ip_SyncTransmit/17 (read)Lpspi_TransmitTxInit/18 (read)Lpspi_Ip_AsyncTransmit/20 (read)Lpspi_Ip_ManageBuffers/21 (read)Lpspi_Ip_Cancel/26 (read)Lpspi_Ip_IrqHandler/27 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Lpspi_Ip_apxStateStructureArray/2 (Lpspi_Ip_apxStateStructureArray) @067e9750
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Lpspi_Ip_ChannelFinished/6 (read)Lpspi_Ip_TransferProcess/7 (read)Lpspi_Ip_ReadDataFromFifo/4 (read)Lpspi_Ip_PushDataToFifo/5 (read)Lpspi_Ip_TxDmaConfig/8 (read)Lpspi_Ip_RxDmaConfig/9 (read)Lpspi_Ip_TxDmaContinueTransfer/10 (read)Lpspi_Ip_RxDmaContinueTransfer/11 (read)Lpspi_Ip_TxDmaFinishTransfer/12 (read)Lpspi_Ip_IrqTxDmaHandler/13 (read)Lpspi_Ip_IrqRxDmaHandler/14 (read)Lpspi_Ip_Init/15 (read)Lpspi_Ip_Init/15 (write)Lpspi_Ip_Init/15 (read)Lpspi_Ip_DeInit/16 (read)Lpspi_Ip_DeInit/16 (write)Lpspi_Ip_SyncTransmit/17 (read)Lpspi_TransmitTxInit/18 (read)Lpspi_TransmitRxInit/19 (read)Lpspi_Ip_AsyncTransmit/20 (read)Lpspi_Ip_ManageBuffers/21 (read)Lpspi_Ip_UpdateFrameSize/22 (read)Lpspi_Ip_UpdateLsb/23 (read)Lpspi_Ip_UpdateDefaultTransmitData/24 (read)Lpspi_Ip_UpdateTransferMode/25 (read)Lpspi_Ip_Cancel/26 (read)Lpspi_Ip_IrqHandler/27 (read)Lpspi_Ip_GetStatus/28 (read)
+  Availability: available
+  Varpool flags:
+Lpspi_Ip_u32DiscardData/1 (Lpspi_Ip_u32DiscardData) @067e96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Lpspi_Ip_RxDmaConfig/9 (addr)
+  Availability: available
+  Varpool flags:
+Lpspi_Ip_axStateStructure/0 (Lpspi_Ip_axStateStructure) @067e9630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Lpspi_Ip_Init/15 (addr)
+  Availability: available
+  Varpool flags:
+Lpspi_Ip_GetStatus (uint8 Instance)
+{
+  Lpspi_Ip_HwStatusType Status;
+  const struct Lpspi_Ip_StateStructureType * State;
+  Lpspi_Ip_HwStatusType D.6707;
+
+  <bb 2> :
+  Status = 0;
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  if (State != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = State->Status;
+
+  <bb 4> :
+  D.6707 = Status;
+
+  <bb 5> :
+<L2>:
+  return D.6707;
+
+}
+
+
+Lpspi_Ip_IrqHandler (uint8 Instance)
+{
+  uint32 IrqFlags;
+  const struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  long unsigned int D.6700;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  IrqFlags = 0;
+  if (State != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _3 = Base->SR;
+  IrqFlags = _3 & 6147;
+  _4 = Base->IER;
+  D.6700 = _4 & 6147;
+  IrqFlags = D.6700 & IrqFlags;
+  if (IrqFlags != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Lpspi_Ip_TransferProcess (Instance);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  _5 = Base->SR;
+  _6 = _5 & 16128;
+  Base->SR = _6;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _7 = Base->SR;
+  _8 = _7 & 16128;
+  Base->SR = _8;
+
+  <bb 7> :
+  return;
+
+}
+
+
+Lpspi_Ip_Cancel (uint8 Instance)
+{
+  uint32 Cfgr1;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  Cfgr1 = 0;
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_10 ();
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _4 = Base->TCR;
+  _5 = _4 | 524288;
+  Base->TCR = _5;
+  Cfgr1 = Base->CFGR1;
+  _6 = Base->CR;
+  _7 = _6 | 2;
+  Base->CR = _7;
+  _8 = Base->CR;
+  _9 = _8 & 4294967293;
+  Base->CR = _9;
+  Base->CFGR1 = Cfgr1;
+  _10 = State->PhyUnitConfig;
+  _11 = _10->DmaUsed;
+  if (_11 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _12 = State->PhyUnitConfig;
+  _13 = _12->RxDmaChannel;
+  _14 = (long unsigned int) _13;
+  Dma_Ip_SetLogicChannelCommand (_14, 1);
+  _15 = State->PhyUnitConfig;
+  _16 = _15->TxDmaChannel;
+  _17 = (long unsigned int) _16;
+  Dma_Ip_SetLogicChannelCommand (_17, 1);
+
+  <bb 5> :
+  State->Status = 1;
+
+  <bb 6> :
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_10 ();
+  return;
+
+}
+
+
+Lpspi_Ip_UpdateTransferMode (uint8 Instance, Lpspi_Ip_ModeType Mode)
+{
+  Lpspi_Ip_StatusType Status;
+  struct Lpspi_Ip_StateStructureType * State;
+  Lpspi_Ip_StatusType D.6692;
+
+  <bb 2> :
+  Status = 0;
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  _2 = State->Status;
+  if (_2 != 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  State->TransferMode = Mode;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status = 1;
+
+  <bb 5> :
+  D.6692 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.6692;
+
+}
+
+
+Lpspi_Ip_UpdateDefaultTransmitData (const struct Lpspi_Ip_ExternalDeviceType * ExternalDevice, uint32 DefaultData)
+{
+  Lpspi_Ip_StatusType Status;
+  const struct Lpspi_Ip_StateStructureType * State;
+  Lpspi_Ip_StatusType D.6687;
+
+  <bb 2> :
+  Status = 0;
+  _1 = ExternalDevice->Instance;
+  _2 = (int) _1;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->Status;
+  if (_3 != 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = ExternalDevice->DeviceParams;
+  _4->DefaultData = DefaultData;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status = 1;
+
+  <bb 5> :
+  D.6687 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.6687;
+
+}
+
+
+Lpspi_Ip_UpdateLsb (const struct Lpspi_Ip_ExternalDeviceType * ExternalDevice, boolean Lsb)
+{
+  Lpspi_Ip_StatusType Status;
+  const struct Lpspi_Ip_StateStructureType * State;
+  Lpspi_Ip_StatusType D.6682;
+
+  <bb 2> :
+  Status = 0;
+  _1 = ExternalDevice->Instance;
+  _2 = (int) _1;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->Status;
+  if (_3 != 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = ExternalDevice->DeviceParams;
+  _4->Lsb = Lsb;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status = 1;
+
+  <bb 5> :
+  D.6682 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.6682;
+
+}
+
+
+Lpspi_Ip_UpdateFrameSize (const struct Lpspi_Ip_ExternalDeviceType * ExternalDevice, uint8 FrameSize)
+{
+  Lpspi_Ip_StatusType Status;
+  const struct Lpspi_Ip_StateStructureType * State;
+  Lpspi_Ip_StatusType D.6677;
+
+  <bb 2> :
+  Status = 0;
+  _1 = ExternalDevice->Instance;
+  _2 = (int) _1;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->Status;
+  if (_3 != 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = ExternalDevice->DeviceParams;
+  _4->FrameSize = FrameSize;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status = 1;
+
+  <bb 5> :
+  D.6677 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.6677;
+
+}
+
+
+Lpspi_Ip_ManageBuffers (uint8 Instance)
+{
+  struct Dma_Ip_LogicChannelStatusType DmaChannelStatus;
+  const struct Lpspi_Ip_StateStructureType * State;
+  const struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->TransferMode;
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _4 = State->PhyUnitConfig;
+  _5 = _4->DmaUsed;
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  _7 = Base->SR;
+  _8 = _7 & 2;
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _9 = Base->SR;
+  _10 = _9 & 1;
+  if (_10 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 6> :
+  _11 = State->CurrentTxFifoSlot;
+  if (_11 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 7> :
+  Lpspi_Ip_TransferProcess (Instance);
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  _12 = State->PhyUnitConfig;
+  _13 = _12->RxDmaChannel;
+  _14 = (long unsigned int) _13;
+  Dma_Ip_GetLogicChannelStatus (_14, &DmaChannelStatus);
+  _15 = DmaChannelStatus.Done;
+  if (_15 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _16 = State->PhyUnitConfig;
+  _17 = _16->RxDmaChannel;
+  _18 = (long unsigned int) _17;
+  Dma_Ip_SetLogicChannelCommand (_18, 3);
+  Lpspi_Ip_IrqRxDmaHandler (Instance);
+
+  <bb 10> :
+  _19 = State->PhyUnitConfig;
+  _20 = _19->TxDmaChannel;
+  _21 = (long unsigned int) _20;
+  Dma_Ip_GetLogicChannelStatus (_21, &DmaChannelStatus);
+  _22 = DmaChannelStatus.Done;
+  if (_22 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _23 = State->PhyUnitConfig;
+  _24 = _23->TxDmaChannel;
+  _25 = (long unsigned int) _24;
+  Dma_Ip_SetLogicChannelCommand (_25, 3);
+  Lpspi_Ip_IrqTxDmaHandler (Instance);
+
+  <bb 12> :
+  DmaChannelStatus = {CLOBBER};
+  return;
+
+}
+
+
+Lpspi_Ip_AsyncTransmit (const struct Lpspi_Ip_ExternalDeviceType * ExternalDevice, uint8 * TxBuffer, uint8 * RxBuffer, uint16 Length, void (*Lpspi_Ip_CallbackType) (uint8, Lpspi_Ip_EventType) EndCallback)
+{
+  struct Dma_Ip_LogicChannelTransferListType DmaTcdList[1];
+  uint8 Instance;
+  Lpspi_Ip_StatusType Status;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  Lpspi_Ip_StatusType D.6658;
+
+  <bb 2> :
+  Status = 0;
+  Instance = 0;
+  Instance = ExternalDevice->Instance;
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  _2 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_2];
+  SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_09 ();
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09 ();
+  Status = 1;
+  goto <bb 19>; [INV]
+
+  <bb 4> :
+  State->Status = 2;
+  State->ExternalDevice = ExternalDevice;
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_09 ();
+  State->Callback = EndCallback;
+  _4 = State->KeepCs;
+  State->NextTransferConfigAvailable = _4;
+  State->TxDoneFlag = 0;
+  _5 = State->FirstCmd;
+  if (_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_11 ();
+  _6 = Base->CR;
+  _7 = _6 | 768;
+  Base->CR = _7;
+  _8 = Base->SR;
+  _9 = _8 & 16128;
+  Base->SR = _9;
+  _10 = ExternalDevice->Ccr;
+  Base->CCR = _10;
+  State->CurrentTxFifoSlot = 4;
+  _11 = State->ExternalDevice;
+  _12 = _11->DeviceParams;
+  _13 = _12->FrameSize;
+  _14 = State->ExternalDevice;
+  _15 = _14->DeviceParams;
+  _16 = _15->Lsb;
+  Lpspi_TransmitTxInit (Instance, TxBuffer, _13, _16, Length);
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_11 ();
+
+  <bb 6> :
+  _17 = State->ExternalDevice;
+  _18 = _17->DeviceParams;
+  _19 = _18->FrameSize;
+  Lpspi_TransmitRxInit (Instance, RxBuffer, _19, Length);
+  _20 = State->PhyUnitConfig;
+  _21 = _20->DmaUsed;
+  _22 = ~_21;
+  if (_22 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 7> :
+  Base->FCR = 3;
+  Base->DER = 0;
+  _23 = State->TransferMode;
+  switch (_23) <default: <L7> [INV], case 0: <L5> [INV], case 1: <L6> [INV]>
+
+  <bb 8> :
+<L5>:
+  Base->IER = 0;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+<L6>:
+  Base->IER = 6147;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L7>:
+
+  <bb 11> :
+  goto <bb 19>; [INV]
+
+  <bb 12> :
+  Base->IER = 0;
+  DmaTcdList[0].Param = 21;
+  _24 = State->TransferMode;
+  switch (_24) <default: <L12> [INV], case 0: <L10> [INV], case 1: <L11> [INV]>
+
+  <bb 13> :
+<L10>:
+  DmaTcdList[0].Value = 0;
+  goto <bb 16>; [INV]
+
+  <bb 14> :
+<L11>:
+  DmaTcdList[0].Value = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+<L12>:
+
+  <bb 16> :
+  Base->FCR = 1;
+  _25 = State->PhyUnitConfig;
+  _26 = _25->TxDmaChannel;
+  _27 = (long unsigned int) _26;
+  Dma_Ip_SetLogicChannelTransferList (_27, &DmaTcdList, 1);
+  _28 = State->PhyUnitConfig;
+  _29 = _28->RxDmaChannel;
+  _30 = (long unsigned int) _29;
+  Dma_Ip_SetLogicChannelTransferList (_30, &DmaTcdList, 1);
+  Lpspi_Ip_RxDmaConfig (Instance);
+  _31 = State->FirstCmd;
+  if (_31 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  Lpspi_Ip_TxDmaConfig (Instance);
+
+  <bb 18> :
+  Base->DER = 3;
+
+  <bb 19> :
+  D.6658 = Status;
+  DmaTcdList = {CLOBBER};
+
+  <bb 20> :
+<L19>:
+  return D.6658;
+
+}
+
+
+Lpspi_TransmitRxInit (uint8 Instance, uint8 * RxBuffer, uint8 RxFrameSize, uint16 NumberOfFrames)
+{
+  struct Lpspi_Ip_StateStructureType * State;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  State->RxIndex = 0;
+  State->RxBuffer = RxBuffer;
+  if (RxFrameSize <= 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  State->ExpectedFifoReads = NumberOfFrames;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RxFrameSize <= 16)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = NumberOfFrames / 2;
+  State->ExpectedFifoReads = _2;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = NumberOfFrames / 4;
+  State->ExpectedFifoReads = _3;
+
+  <bb 7> :
+  return;
+
+}
+
+
+Lpspi_TransmitTxInit (uint8 Instance, uint8 * TxBuffer, uint8 TxFrameSize, boolean TxLsb, uint16 NumberOfFrames)
+{
+  uint8 LsbWriteValue;
+  uint32 TransferCommand;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  uint8 iftmp.14;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  TransferCommand = 0;
+  if (TxLsb != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.14 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.14 = 0;
+
+  <bb 5> :
+  LsbWriteValue = iftmp.14;
+  State->TxFrameSize = TxFrameSize;
+  State->TxLsb = TxLsb;
+  _3 = State->ExternalDevice;
+  _4 = _3->Tcr;
+  _5 = (long unsigned int) TxFrameSize;
+  _6 = _5 + 4294967295;
+  _7 = _6 & 4095;
+  _8 = _4 | _7;
+  _9 = (long unsigned int) LsbWriteValue;
+  _10 = _9 << 23;
+  _11 = _10 & 8388608;
+  TransferCommand = _8 | _11;
+  _12 = State->FirstCmd;
+  if (_12 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Base->TCR = TransferCommand;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _13 = TransferCommand & 2097152;
+  if (_13 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _14 = TransferCommand | 1048576;
+  Base->TCR = _14;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Base->TCR = TransferCommand;
+
+  <bb 10> :
+  _15 = State->CurrentTxFifoSlot;
+  _16 = _15 + 255;
+  State->CurrentTxFifoSlot = _16;
+  State->TxIndex = 0;
+  State->TxBuffer = TxBuffer;
+  if (TxFrameSize <= 8)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  State->ExpectedFifoWrites = NumberOfFrames;
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  if (TxFrameSize <= 16)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _17 = NumberOfFrames / 2;
+  State->ExpectedFifoWrites = _17;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  _18 = NumberOfFrames / 4;
+  State->ExpectedFifoWrites = _18;
+
+  <bb 15> :
+  return;
+
+}
+
+
+Lpspi_Ip_SyncTransmit (const struct Lpspi_Ip_ExternalDeviceType * ExternalDevice, uint8 * TxBuffer, uint8 * RxBuffer, uint16 Length, uint32 TimeOut)
+{
+  boolean TxDoneFlag;
+  uint32 Cfgr1;
+  uint8 Instance;
+  uint32 ElapsedTicks;
+  uint32 CurrentTicks;
+  uint32 TimeoutTicks;
+  Lpspi_Ip_StatusType Status;
+  uint8 NumberOfReads;
+  uint8 NumberOfWrites;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  Lpspi_Ip_StatusType D.6623;
+  long unsigned int D.6614;
+
+  <bb 2> :
+  Status = 0;
+  TimeoutTicks = OsIf_MicrosToTicks (TimeOut, 0);
+  CurrentTicks = 0;
+  ElapsedTicks = 0;
+  Instance = 0;
+  Cfgr1 = 0;
+  TxDoneFlag = 0;
+  Instance = ExternalDevice->Instance;
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  _2 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_2];
+  SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_08 ();
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08 ();
+  Status = 1;
+  goto <bb 33>; [INV]
+
+  <bb 4> :
+  State->Status = 2;
+  State->ExternalDevice = ExternalDevice;
+  SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_08 ();
+  Base->DER = 0;
+  Base->IER = 0;
+  _4 = State->KeepCs;
+  State->NextTransferConfigAvailable = _4;
+  _5 = State->FirstCmd;
+  if (_5 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Cfgr1 = Base->CFGR1;
+  _6 = Base->CR;
+  _7 = _6 | 2;
+  Base->CR = _7;
+  _8 = Base->CR;
+  _9 = _8 & 4294967293;
+  Base->CR = _9;
+  Base->CFGR1 = Cfgr1;
+  _10 = Base->SR;
+  _11 = _10 & 16128;
+  Base->SR = _11;
+  _12 = ExternalDevice->Ccr;
+  Base->CCR = _12;
+  State->CurrentTxFifoSlot = 4;
+  _13 = State->ExternalDevice;
+  _14 = _13->DeviceParams;
+  _15 = _14->FrameSize;
+  _16 = State->ExternalDevice;
+  _17 = _16->DeviceParams;
+  _18 = _17->Lsb;
+  Lpspi_TransmitTxInit (Instance, TxBuffer, _15, _18, Length);
+
+  <bb 6> :
+  _19 = State->ExternalDevice;
+  _20 = _19->DeviceParams;
+  _21 = _20->FrameSize;
+  Lpspi_TransmitRxInit (Instance, RxBuffer, _21, Length);
+  _22 = OsIf_GetCounter (0);
+  CurrentTicks = _22;
+  goto <bb 26>; [INV]
+
+  <bb 7> :
+  _23 = Base->FSR;
+  _24 = _23 >> 16;
+  _25 = (unsigned char) _24;
+  NumberOfReads = _25 & 7;
+  if (NumberOfReads != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 8> :
+  _26 = (int) NumberOfReads;
+  _27 = State->ExpectedFifoReads;
+  _28 = (int) _27;
+  _29 = State->RxIndex;
+  _30 = (int) _29;
+  _31 = _28 - _30;
+  if (_26 > _31)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _32 = State->ExpectedFifoReads;
+  _33 = (unsigned char) _32;
+  _34 = State->RxIndex;
+  _35 = (unsigned char) _34;
+  NumberOfReads = _33 - _35;
+
+  <bb 10> :
+  _36 = State->RxIndex;
+  if (_36 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _37 = State->CurrentTxFifoSlot;
+  _38 = _37 + 1;
+  State->CurrentTxFifoSlot = _38;
+
+  <bb 12> :
+  Lpspi_Ip_ReadDataFromFifo (Instance, NumberOfReads);
+  _39 = State->CurrentTxFifoSlot;
+  _40 = NumberOfReads + _39;
+  State->CurrentTxFifoSlot = _40;
+  ElapsedTicks = 0;
+
+  <bb 13> :
+  _41 = State->CurrentTxFifoSlot;
+  if (_41 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 14> :
+  _42 = ~TxDoneFlag;
+  if (_42 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 15> :
+  _43 = State->ExpectedFifoWrites;
+  _44 = State->TxIndex;
+  if (_43 != _44)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 16> :
+  NumberOfWrites = State->CurrentTxFifoSlot;
+  _45 = (int) NumberOfWrites;
+  _46 = State->ExpectedFifoWrites;
+  _47 = (int) _46;
+  _48 = State->TxIndex;
+  _49 = (int) _48;
+  _50 = _47 - _49;
+  if (_45 > _50)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _51 = State->ExpectedFifoWrites;
+  _52 = (unsigned char) _51;
+  _53 = State->TxIndex;
+  _54 = (unsigned char) _53;
+  NumberOfWrites = _52 - _54;
+
+  <bb 18> :
+  Lpspi_Ip_PushDataToFifo (Instance, NumberOfWrites);
+  _55 = State->CurrentTxFifoSlot;
+  _56 = _55 - NumberOfWrites;
+  State->CurrentTxFifoSlot = _56;
+  ElapsedTicks = 0;
+  goto <bb 24>; [INV]
+
+  <bb 19> :
+  _57 = State->NextTransferConfigAvailable;
+  if (_57 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  _58 = State->ExternalDevice;
+  _59 = _58->DeviceParams;
+  _60 = State->DefaultDataNext;
+  _59->DefaultData = _60;
+  State->FirstCmd = 0;
+  _61 = State->TxBufferNext;
+  _62 = State->FrameSizeNext;
+  _63 = State->LsbNext;
+  _64 = State->LengthNext;
+  Lpspi_TransmitTxInit (Instance, _61, _62, _63, _64);
+  State->NextTransferConfigAvailable = 0;
+  goto <bb 24>; [INV]
+
+  <bb 21> :
+  TxDoneFlag = 1;
+  _65 = State->KeepCs;
+  _66 = ~_65;
+  if (_66 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 22> :
+  _67 = Base->TCR;
+  _68 = _67 & 2097152;
+  if (_68 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _69 = Base->TCR;
+  _70 = _69 & 4291821567;
+  Base->TCR = _70;
+
+  <bb 24> :
+  D.6614 = OsIf_GetElapsed (&CurrentTicks, 0);
+  ElapsedTicks = D.6614 + ElapsedTicks;
+  if (ElapsedTicks >= TimeoutTicks)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  Status = 3;
+  goto <bb 27>; [INV]
+
+  <bb 26> :
+  _71 = State->RxIndex;
+  _72 = State->ExpectedFifoReads;
+  if (_71 != _72)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 27> :
+  if (Status != 0)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 28> :
+  if (Length == 0)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 29> :
+  if (Length == 0)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 30> :
+  Status = 1;
+
+  <bb 31> :
+  State->Status = 3;
+  goto <bb 33>; [INV]
+
+  <bb 32> :
+  State->Status = 1;
+
+  <bb 33> :
+  D.6623 = Status;
+  CurrentTicks = {CLOBBER};
+
+  <bb 34> :
+<L39>:
+  return D.6623;
+
+}
+
+
+Lpspi_Ip_DeInit (uint8 Instance)
+{
+  Lpspi_Ip_StatusType Status;
+  const struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  Lpspi_Ip_StatusType D.6585;
+
+  <bb 2> :
+  Status = 0;
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = Base->CR;
+  _5 = _4 | 2;
+  Base->CR = _5;
+  Base->CR = 0;
+  _6 = (int) Instance;
+  Lpspi_Ip_apxStateStructureArray[_6] = 0B;
+
+  <bb 5> :
+  D.6585 = Status;
+
+  <bb 6> :
+<L3>:
+  return D.6585;
+
+}
+
+
+Lpspi_Ip_Init (const struct Lpspi_Ip_ConfigType * PhyUnitConfigPtr)
+{
+  uint8 Instance;
+  Lpspi_Ip_StatusType Status;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+  Lpspi_Ip_StatusType D.6580;
+
+  <bb 2> :
+  Status = 0;
+  Instance = 0;
+  Instance = PhyUnitConfigPtr->Instance;
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  _2 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_2];
+  _3 = PhyUnitConfigPtr->StateIndex;
+  _4 = (int) _3;
+  _5 = (int) Instance;
+  _6 = &Lpspi_Ip_axStateStructure[_4];
+  Lpspi_Ip_apxStateStructureArray[_5] = _6;
+  _7 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_7];
+  State->PhyUnitConfig = PhyUnitConfigPtr;
+  _8 = PhyUnitConfigPtr->Cr;
+  _9 = _8 | 8;
+  Base->CR = _9;
+  _10 = PhyUnitConfigPtr->Cfgr1;
+  Base->CFGR1 = _10;
+  Base->FCR = 3;
+  State->KeepCs = 0;
+  State->FirstCmd = 1;
+  State->Status = 1;
+  _11 = PhyUnitConfigPtr->TransferMode;
+  Lpspi_Ip_UpdateTransferMode (Instance, _11);
+  _12 = Base->CR;
+  _13 = _12 | 1;
+  Base->CR = _13;
+  D.6580 = Status;
+
+  <bb 3> :
+<L0>:
+  return D.6580;
+
+}
+
+
+Lpspi_Ip_IrqRxDmaHandler (uint8 Instance)
+{
+  boolean EndOfTransferFlag;
+  boolean ErrorFlag;
+  uint32 SrStatusRegister;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  SrStatusRegister = 0;
+  ErrorFlag = 0;
+  EndOfTransferFlag = 0;
+  if (State != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 3> :
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 4> :
+  SrStatusRegister = Base->SR;
+  _4 = Base->SR;
+  _5 = _4 & 16128;
+  Base->SR = _5;
+  _6 = SrStatusRegister & 6144;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorFlag = 1;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _7 = State->ExpectedFifoReads;
+  _8 = State->RxIndex;
+  if (_7 != _8)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Lpspi_Ip_RxDmaContinueTransfer (Instance);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  EndOfTransferFlag = 1;
+
+  <bb 9> :
+  if (EndOfTransferFlag != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  if (ErrorFlag != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 11> :
+  Base->DER = 0;
+  if (ErrorFlag != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  State->Status = 3;
+  _9 = State->PhyUnitConfig;
+  _10 = _9->TxDmaChannel;
+  _11 = (long unsigned int) _10;
+  Dma_Ip_SetLogicChannelCommand (_11, 1);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  State->Status = 1;
+
+  <bb 14> :
+  _12 = State->Callback;
+  if (_12 != 0B)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 15> :
+  if (ErrorFlag != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  _13 = State->Callback;
+  _13 (Instance, 1);
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  _14 = State->Callback;
+  _14 (Instance, 0);
+
+  <bb 18> :
+  return;
+
+}
+
+
+Lpspi_Ip_IrqTxDmaHandler (uint8 Instance)
+{
+  boolean ErrorFlag;
+  uint32 SrStatusRegister;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  SrStatusRegister = 0;
+  ErrorFlag = 0;
+  if (State != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  SrStatusRegister = Base->SR;
+  _4 = Base->SR;
+  _5 = _4 & 16128;
+  Base->SR = _5;
+  _6 = SrStatusRegister & 6144;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorFlag = 1;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _7 = State->ExpectedFifoWrites;
+  _8 = State->TxIndex;
+  if (_7 != _8)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Lpspi_Ip_TxDmaContinueTransfer (Instance);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Lpspi_Ip_TxDmaFinishTransfer (Instance);
+
+  <bb 9> :
+  if (ErrorFlag != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  Base->DER = 0;
+  _9 = State->PhyUnitConfig;
+  _10 = _9->RxDmaChannel;
+  _11 = (long unsigned int) _10;
+  Dma_Ip_SetLogicChannelCommand (_11, 1);
+  State->Status = 3;
+  _12 = State->Callback;
+  if (_12 != 0B)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _13 = State->Callback;
+  _13 (Instance, 1);
+
+  <bb 12> :
+  return;
+
+}
+
+
+Lpspi_Ip_TxDmaFinishTransfer (const uint8 Instance)
+{
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->KeepCs;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _5 = State->KeepCs;
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 4> :
+  _7 = Base->TCR;
+  _8 = _7 & 2097152;
+  if (_8 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  _9 = Base->TCR;
+  _10 = _9 & 4291821567;
+  Base->TCR = _10;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _11 = State->NextTransferConfigAvailable;
+  if (_11 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _12 = State->ExternalDevice;
+  _13 = _12->DeviceParams;
+  _14 = State->DefaultDataNext;
+  _13->DefaultData = _14;
+  State->FirstCmd = 0;
+  _15 = State->TxBufferNext;
+  _16 = State->FrameSizeNext;
+  _17 = State->LsbNext;
+  _18 = State->LengthNext;
+  Lpspi_TransmitTxInit (Instance, _15, _16, _17, _18);
+  State->NextTransferConfigAvailable = 0;
+  _19 = Base->DER;
+  _20 = _19 & 4294967294;
+  Base->DER = _20;
+  Lpspi_Ip_TxDmaConfig (Instance);
+  _21 = State->PhyUnitConfig;
+  _22 = _21->TxDmaChannel;
+  _23 = (long unsigned int) _22;
+  Dma_Ip_SetLogicChannelCommand (_23, 2);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  State->NextTransferDone = 1;
+
+  <bb 9> :
+  return;
+
+}
+
+
+Lpspi_Ip_RxDmaContinueTransfer (uint8 Instance)
+{
+  uint16 NumberDmaIterRead;
+  struct Dma_Ip_LogicChannelTransferListType DmaTcdList[1];
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->ExpectedFifoReads;
+  _4 = State->RxIndex;
+  NumberDmaIterRead = _3 - _4;
+  NumberDmaIterRead.13_5 = (signed short) NumberDmaIterRead;
+  if (NumberDmaIterRead.13_5 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  NumberDmaIterRead = 32767;
+
+  <bb 4> :
+  _6 = State->RxIndex;
+  _7 = NumberDmaIterRead + _6;
+  State->RxIndex = _7;
+  DmaTcdList[0].Param = 18;
+  _8 = (long unsigned int) NumberDmaIterRead;
+  DmaTcdList[0].Value = _8;
+  _9 = State->PhyUnitConfig;
+  _10 = _9->RxDmaChannel;
+  _11 = (long unsigned int) _10;
+  Dma_Ip_SetLogicChannelTransferList (_11, &DmaTcdList, 1);
+  _12 = State->PhyUnitConfig;
+  _13 = _12->RxDmaChannel;
+  _14 = (long unsigned int) _13;
+  Dma_Ip_SetLogicChannelCommand (_14, 0);
+  _15 = Base->DER;
+  _16 = _15 | 1;
+  Base->DER = _16;
+  DmaTcdList = {CLOBBER};
+  return;
+
+}
+
+
+Lpspi_Ip_TxDmaContinueTransfer (uint8 Instance)
+{
+  uint16 NumberDmaIterWrite;
+  struct Dma_Ip_LogicChannelTransferListType DmaTcdList[1];
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  _3 = State->ExpectedFifoWrites;
+  _4 = State->TxIndex;
+  NumberDmaIterWrite = _3 - _4;
+  NumberDmaIterWrite.12_5 = (signed short) NumberDmaIterWrite;
+  if (NumberDmaIterWrite.12_5 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  NumberDmaIterWrite = 32767;
+
+  <bb 4> :
+  _6 = State->TxIndex;
+  _7 = NumberDmaIterWrite + _6;
+  State->TxIndex = _7;
+  DmaTcdList[0].Param = 18;
+  _8 = (long unsigned int) NumberDmaIterWrite;
+  DmaTcdList[0].Value = _8;
+  _9 = State->PhyUnitConfig;
+  _10 = _9->TxDmaChannel;
+  _11 = (long unsigned int) _10;
+  Dma_Ip_SetLogicChannelTransferList (_11, &DmaTcdList, 1);
+  _12 = Base->DER;
+  _13 = _12 & 4294967294;
+  Base->DER = _13;
+  _14 = State->PhyUnitConfig;
+  _15 = _14->TxDmaChannel;
+  _16 = (long unsigned int) _15;
+  Dma_Ip_SetLogicChannelCommand (_16, 0);
+  DmaTcdList = {CLOBBER};
+  return;
+
+}
+
+
+Lpspi_Ip_RxDmaConfig (uint8 Instance)
+{
+  uint16 NumberDmaIterRead;
+  struct Dma_Ip_LogicChannelTransferListType DmaTcdList[10];
+  struct Lpspi_Ip_StateStructureType * State;
+  const struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  NumberDmaIterRead = State->ExpectedFifoReads;
+  NumberDmaIterRead.10_3 = (signed short) NumberDmaIterRead;
+  if (NumberDmaIterRead.10_3 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  NumberDmaIterRead = 32767;
+
+  <bb 4> :
+  State->RxIndex = NumberDmaIterRead;
+  DmaTcdList[0].Param = 0;
+  DmaTcdList[1].Param = 5;
+  DmaTcdList[2].Param = 1;
+  DmaTcdList[3].Param = 3;
+  DmaTcdList[4].Param = 8;
+  DmaTcdList[5].Param = 15;
+  DmaTcdList[6].Param = 6;
+  DmaTcdList[7].Param = 18;
+  DmaTcdList[8].Param = 23;
+  DmaTcdList[9].Param = 7;
+  _4 = &Base->RDR;
+  _5 = (long unsigned int) _4;
+  DmaTcdList[0].Value = _5;
+  DmaTcdList[2].Value = 0;
+  _6 = State->ExternalDevice;
+  _7 = _6->DeviceParams;
+  _8 = _7->FrameSize;
+  if (_8 <= 8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  DmaTcdList[3].Value = 0;
+  DmaTcdList[4].Value = 0;
+  DmaTcdList[5].Value = 1;
+  DmaTcdList[6].Value = 1;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _9 = State->ExternalDevice;
+  _10 = _9->DeviceParams;
+  _11 = _10->FrameSize;
+  if (_11 <= 16)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  DmaTcdList[3].Value = 1;
+  DmaTcdList[4].Value = 1;
+  DmaTcdList[5].Value = 2;
+  DmaTcdList[6].Value = 2;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  DmaTcdList[3].Value = 2;
+  DmaTcdList[4].Value = 2;
+  DmaTcdList[5].Value = 4;
+  DmaTcdList[6].Value = 4;
+
+  <bb 9> :
+  _12 = State->RxBuffer;
+  if (_12 == 0B)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  Lpspi_Ip_u32DiscardData.11_13 = (long unsigned int) &Lpspi_Ip_u32DiscardData;
+  DmaTcdList[1].Value = Lpspi_Ip_u32DiscardData.11_13;
+  DmaTcdList[6].Value = 0;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  _14 = State->RxBuffer;
+  _15 = (long unsigned int) _14;
+  DmaTcdList[1].Value = _15;
+
+  <bb 12> :
+  _16 = (long unsigned int) NumberDmaIterRead;
+  DmaTcdList[7].Value = _16;
+  DmaTcdList[8].Value = 1;
+  DmaTcdList[9].Value = 0;
+  _17 = State->PhyUnitConfig;
+  _18 = _17->RxDmaChannel;
+  _19 = (long unsigned int) _18;
+  Dma_Ip_SetLogicChannelTransferList (_19, &DmaTcdList, 10);
+  _20 = State->PhyUnitConfig;
+  _21 = _20->RxDmaChannel;
+  _22 = (long unsigned int) _21;
+  Dma_Ip_SetLogicChannelCommand (_22, 0);
+  DmaTcdList = {CLOBBER};
+  return;
+
+}
+
+
+Lpspi_Ip_TxDmaConfig (uint8 Instance)
+{
+  uint16 NumberDmaIterWrite;
+  struct Dma_Ip_LogicChannelTransferListType DmaTcdList[10];
+  struct Lpspi_Ip_StateStructureType * State;
+  const struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  NumberDmaIterWrite = State->ExpectedFifoWrites;
+  NumberDmaIterWrite.9_3 = (signed short) NumberDmaIterWrite;
+  if (NumberDmaIterWrite.9_3 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  NumberDmaIterWrite = 32767;
+
+  <bb 4> :
+  State->TxIndex = NumberDmaIterWrite;
+  DmaTcdList[0].Param = 0;
+  DmaTcdList[1].Param = 5;
+  DmaTcdList[2].Param = 1;
+  DmaTcdList[3].Param = 3;
+  DmaTcdList[4].Param = 8;
+  DmaTcdList[5].Param = 15;
+  DmaTcdList[6].Param = 6;
+  DmaTcdList[7].Param = 18;
+  DmaTcdList[8].Param = 23;
+  DmaTcdList[9].Param = 7;
+  _4 = &Base->TDR;
+  _5 = (long unsigned int) _4;
+  DmaTcdList[1].Value = _5;
+  _6 = State->TxFrameSize;
+  if (_6 <= 8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  DmaTcdList[2].Value = 1;
+  DmaTcdList[3].Value = 0;
+  DmaTcdList[4].Value = 0;
+  DmaTcdList[5].Value = 1;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _7 = State->TxFrameSize;
+  if (_7 <= 16)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  DmaTcdList[2].Value = 2;
+  DmaTcdList[3].Value = 1;
+  DmaTcdList[4].Value = 1;
+  DmaTcdList[5].Value = 2;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  DmaTcdList[2].Value = 4;
+  DmaTcdList[3].Value = 2;
+  DmaTcdList[4].Value = 2;
+  DmaTcdList[5].Value = 4;
+
+  <bb 9> :
+  _8 = State->TxBuffer;
+  if (_8 == 0B)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _9 = State->ExternalDevice;
+  _10 = _9->DeviceParams;
+  _11 = &_10->DefaultData;
+  _12 = (long unsigned int) _11;
+  DmaTcdList[0].Value = _12;
+  DmaTcdList[2].Value = 0;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  _13 = State->TxBuffer;
+  _14 = (long unsigned int) _13;
+  DmaTcdList[0].Value = _14;
+
+  <bb 12> :
+  DmaTcdList[6].Value = 0;
+  _15 = (long unsigned int) NumberDmaIterWrite;
+  DmaTcdList[7].Value = _15;
+  DmaTcdList[8].Value = 1;
+  DmaTcdList[9].Value = 0;
+  _16 = State->PhyUnitConfig;
+  _17 = _16->TxDmaChannel;
+  _18 = (long unsigned int) _17;
+  Dma_Ip_SetLogicChannelTransferList (_18, &DmaTcdList, 10);
+  _19 = State->PhyUnitConfig;
+  _20 = _19->TxDmaChannel;
+  _21 = (long unsigned int) _20;
+  Dma_Ip_SetLogicChannelCommand (_21, 0);
+  DmaTcdList = {CLOBBER};
+  return;
+
+}
+
+
+Lpspi_Ip_TransferProcess (uint8 Instance)
+{
+  boolean ErrorFlag;
+  uint8 NumberOfReads;
+  uint8 NumberOfWrites;
+  uint32 SrStatusRegister;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  NumberOfWrites = 0;
+  NumberOfReads = 0;
+  ErrorFlag = 0;
+  _3 = State->Status;
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 3> :
+  SrStatusRegister = Base->SR;
+  _4 = Base->SR;
+  _5 = _4 & 16128;
+  Base->SR = _5;
+  _6 = SrStatusRegister & 6144;
+  if (_6 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  ErrorFlag = 1;
+  goto <bb 22>; [INV]
+
+  <bb 5> :
+  _7 = Base->FSR;
+  _8 = _7 >> 16;
+  _9 = (unsigned char) _8;
+  NumberOfReads = _9 & 7;
+  if (NumberOfReads != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _10 = (int) NumberOfReads;
+  _11 = State->ExpectedFifoReads;
+  _12 = (int) _11;
+  _13 = State->RxIndex;
+  _14 = (int) _13;
+  _15 = _12 - _14;
+  if (_10 > _15)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _16 = State->ExpectedFifoReads;
+  _17 = (unsigned char) _16;
+  _18 = State->RxIndex;
+  _19 = (unsigned char) _18;
+  NumberOfReads = _17 - _19;
+
+  <bb 8> :
+  _20 = State->RxIndex;
+  if (_20 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _21 = State->CurrentTxFifoSlot;
+  _22 = _21 + 1;
+  State->CurrentTxFifoSlot = _22;
+
+  <bb 10> :
+  Lpspi_Ip_ReadDataFromFifo (Instance, NumberOfReads);
+  _23 = State->CurrentTxFifoSlot;
+  _24 = NumberOfReads + _23;
+  State->CurrentTxFifoSlot = _24;
+
+  <bb 11> :
+  _25 = State->CurrentTxFifoSlot;
+  if (_25 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 12> :
+  _26 = State->TxDoneFlag;
+  _27 = ~_26;
+  if (_27 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 13> :
+  _28 = State->ExpectedFifoWrites;
+  _29 = State->TxIndex;
+  if (_28 != _29)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 14> :
+  NumberOfWrites = State->CurrentTxFifoSlot;
+  _30 = (int) NumberOfWrites;
+  _31 = State->ExpectedFifoWrites;
+  _32 = (int) _31;
+  _33 = State->TxIndex;
+  _34 = (int) _33;
+  _35 = _32 - _34;
+  if (_30 > _35)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _36 = State->ExpectedFifoWrites;
+  _37 = (unsigned char) _36;
+  _38 = State->TxIndex;
+  _39 = (unsigned char) _38;
+  NumberOfWrites = _37 - _39;
+
+  <bb 16> :
+  Lpspi_Ip_PushDataToFifo (Instance, NumberOfWrites);
+  _40 = State->CurrentTxFifoSlot;
+  _41 = _40 - NumberOfWrites;
+  State->CurrentTxFifoSlot = _41;
+  goto <bb 22>; [INV]
+
+  <bb 17> :
+  _42 = State->NextTransferConfigAvailable;
+  if (_42 != 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  _43 = State->ExternalDevice;
+  _44 = _43->DeviceParams;
+  _45 = State->DefaultDataNext;
+  _44->DefaultData = _45;
+  State->FirstCmd = 0;
+  _46 = State->TxBufferNext;
+  _47 = State->FrameSizeNext;
+  _48 = State->LsbNext;
+  _49 = State->LengthNext;
+  Lpspi_TransmitTxInit (Instance, _46, _47, _48, _49);
+  State->NextTransferConfigAvailable = 0;
+  goto <bb 22>; [INV]
+
+  <bb 19> :
+  State->TxDoneFlag = 1;
+  _50 = Base->IER;
+  _51 = _50 & 4294967294;
+  Base->IER = _51;
+  _52 = State->KeepCs;
+  _53 = ~_52;
+  if (_53 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 20> :
+  _54 = Base->TCR;
+  _55 = _54 & 2097152;
+  if (_55 != 0)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  _56 = Base->TCR;
+  _57 = _56 & 4291821567;
+  Base->TCR = _57;
+
+  <bb 22> :
+  _58 = State->RxIndex;
+  _59 = State->ExpectedFifoReads;
+  if (_58 == _59)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 23> :
+  if (ErrorFlag != 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  Base->IER = 0;
+  Lpspi_Ip_ChannelFinished (Instance, ErrorFlag);
+
+  <bb 25> :
+  return;
+
+}
+
+
+Lpspi_Ip_ChannelFinished (uint8 Instance, boolean ErrorFlag)
+{
+  Lpspi_Ip_EventType EventState;
+  struct Lpspi_Ip_StateStructureType * State;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_1];
+  EventState = 1;
+  if (ErrorFlag != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  State->Status = 3;
+  EventState = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  State->Status = 1;
+  EventState = 0;
+
+  <bb 5> :
+  _2 = State->Callback;
+  if (_2 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = State->Callback;
+  _3 (Instance, EventState);
+
+  <bb 7> :
+  return;
+
+}
+
+
+__attribute__((always_inline))
+Lpspi_Ip_PushDataToFifo (uint8 Instance, uint8 NumberOfWrites)
+{
+  uint8 Index;
+  uint32 Data;
+  struct Lpspi_Ip_StateStructureType * State;
+  struct LPSPI_Type * Base;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  Data = 0;
+  Index = 0;
+  _3 = State->ExternalDevice;
+  _4 = _3->DeviceParams;
+  Data = _4->DefaultData;
+  _5 = State->TxBuffer;
+  if (_5 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 3> :
+  _6 = State->TxFrameSize;
+  if (_6 <= 8)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  Index = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = State->TxBuffer;
+  _8 = State->TxIndex;
+  _9 = (int) _8;
+  _10 = (int) Index;
+  _11 = _9 + _10;
+  _12 = (sizetype) _11;
+  _13 = _7 + _12;
+  _14 = *_13;
+  Data = (uint32) _14;
+  Base->TDR = Data;
+  Index.5_15 = Index;
+  Index = Index.5_15 + 1;
+
+  <bb 6> :
+  if (Index < NumberOfWrites)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 7> :
+  _16 = State->TxFrameSize;
+  if (_16 <= 16)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  Index = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  _17 = State->TxBuffer;
+  _18 = State->TxIndex;
+  _19 = (int) _18;
+  _20 = (int) Index;
+  _21 = _19 + _20;
+  _22 = (unsigned int) _21;
+  _23 = _22 * 2;
+  _24 = _17 + _23;
+  _25 = MEM[(uint16 *)_24];
+  Data = (uint32) _25;
+  Base->TDR = Data;
+  Index.6_26 = Index;
+  Index = Index.6_26 + 1;
+
+  <bb 10> :
+  if (Index < NumberOfWrites)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 11> :
+  Index = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  _27 = State->TxBuffer;
+  _28 = State->TxIndex;
+  _29 = (int) _28;
+  _30 = (int) Index;
+  _31 = _29 + _30;
+  _32 = (unsigned int) _31;
+  _33 = _32 * 4;
+  _34 = _27 + _33;
+  Data = MEM[(uint32 *)_34];
+  Base->TDR = Data;
+  Index.7_35 = Index;
+  Index = Index.7_35 + 1;
+
+  <bb 13> :
+  if (Index < NumberOfWrites)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 14> :
+  Index = 0;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  Base->TDR = Data;
+  Index.8_36 = Index;
+  Index = Index.8_36 + 1;
+
+  <bb 16> :
+  if (Index < NumberOfWrites)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  _37 = State->TxIndex;
+  _38 = (short unsigned int) NumberOfWrites;
+  _39 = _37 + _38;
+  State->TxIndex = _39;
+  return;
+
+}
+
+
+__attribute__((always_inline))
+Lpspi_Ip_ReadDataFromFifo (uint8 Instance, uint8 NumberOfReads)
+{
+  uint8 Index;
+  uint32 Data;
+  struct Lpspi_Ip_StateStructureType * State;
+  const struct LPSPI_Type * Base;
+  long unsigned int vol.3;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = Lpspi_Ip_apxBases[_1];
+  _2 = (int) Instance;
+  State = Lpspi_Ip_apxStateStructureArray[_2];
+  Data = 0;
+  Index = 0;
+  _3 = State->RxBuffer;
+  if (_3 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 3> :
+  _4 = State->ExternalDevice;
+  _5 = _4->DeviceParams;
+  _6 = _5->FrameSize;
+  if (_6 <= 8)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  Index = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Data = Base->RDR;
+  _7 = State->RxBuffer;
+  _8 = State->RxIndex;
+  _9 = (int) _8;
+  _10 = (int) Index;
+  _11 = _9 + _10;
+  _12 = (sizetype) _11;
+  _13 = _7 + _12;
+  _14 = (unsigned char) Data;
+  *_13 = _14;
+  Index.0_15 = Index;
+  Index = Index.0_15 + 1;
+
+  <bb 6> :
+  if (Index < NumberOfReads)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 7> :
+  _16 = State->ExternalDevice;
+  _17 = _16->DeviceParams;
+  _18 = _17->FrameSize;
+  if (_18 <= 16)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  Index = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Data = Base->RDR;
+  _19 = State->RxBuffer;
+  _20 = State->RxIndex;
+  _21 = (int) _20;
+  _22 = (int) Index;
+  _23 = _21 + _22;
+  _24 = (unsigned int) _23;
+  _25 = _24 * 2;
+  _26 = _19 + _25;
+  _27 = (short unsigned int) Data;
+  MEM[(uint16 *)_26] = _27;
+  Index.1_28 = Index;
+  Index = Index.1_28 + 1;
+
+  <bb 10> :
+  if (Index < NumberOfReads)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 11> :
+  Index = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  Data = Base->RDR;
+  _29 = State->RxBuffer;
+  _30 = State->RxIndex;
+  _31 = (int) _30;
+  _32 = (int) Index;
+  _33 = _31 + _32;
+  _34 = (unsigned int) _33;
+  _35 = _34 * 4;
+  _36 = _29 + _35;
+  MEM[(uint32 *)_36] = Data;
+  Index.2_37 = Index;
+  Index = Index.2_37 + 1;
+
+  <bb 13> :
+  if (Index < NumberOfReads)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 14> :
+  Index = 0;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  vol.3 = Base->RDR;
+  Index.4_38 = Index;
+  Index = Index.4_38 + 1;
+
+  <bb 16> :
+  if (Index < NumberOfReads)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  _39 = State->RxIndex;
+  _40 = (short unsigned int) NumberOfReads;
+  _41 = _39 + _40;
+  State->RxIndex = _41;
+  return;
+
+}
+
+

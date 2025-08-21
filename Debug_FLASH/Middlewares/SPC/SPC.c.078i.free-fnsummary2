@@ -1,0 +1,197 @@
+spc_RxGetHvTemperaturesMeasures ()
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  signed short _4;
+  unsigned char _5;
+  signed short _6;
+  signed short _7;
+  short unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = spc_Rxbuffer[0];
+  _2 = (int) _1;
+  _3 = _2 << 8;
+  _4 = (signed short) _3;
+  _5 = spc_Rxbuffer[1];
+  _6 = (signed short) _5;
+  _7 = _4 | _6;
+  _8 = (short unsigned int) _7;
+  _9 = (long unsigned int) _8;
+  Spc_returnMeasures.HvTemperature = _9;
+  return;
+
+}
+
+
+spc_RxGetHvCurrentMeasures ()
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  signed short _4;
+  unsigned char _5;
+  signed short _6;
+  signed short _7;
+  short unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = spc_Rxbuffer[0];
+  _2 = (int) _1;
+  _3 = _2 << 8;
+  _4 = (signed short) _3;
+  _5 = spc_Rxbuffer[1];
+  _6 = (signed short) _5;
+  _7 = _4 | _6;
+  _8 = (short unsigned int) _7;
+  _9 = (long unsigned int) _8;
+  Spc_returnMeasures.HvCurrent = _9;
+  return;
+
+}
+
+
+spc_RxGetHvVoltageMeasures ()
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  signed short _4;
+  unsigned char _5;
+  signed short _6;
+  signed short _7;
+  short unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = spc_Rxbuffer[0];
+  _2 = (int) _1;
+  _3 = _2 << 8;
+  _4 = (signed short) _3;
+  _5 = spc_Rxbuffer[1];
+  _6 = (signed short) _5;
+  _7 = _4 | _6;
+  _8 = (short unsigned int) _7;
+  _9 = (long unsigned int) _8;
+  Spc_returnMeasures.HvVoltage = _9;
+  return;
+
+}
+
+
+spc_RxGetLowVoltageMeasures ()
+{
+  unsigned char _1;
+  int _2;
+  int _3;
+  signed short _4;
+  unsigned char _5;
+  signed short _6;
+  signed short _7;
+  short unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = spc_Rxbuffer[0];
+  _2 = (int) _1;
+  _3 = _2 << 8;
+  _4 = (signed short) _3;
+  _5 = spc_Rxbuffer[1];
+  _6 = (signed short) _5;
+  _7 = _4 | _6;
+  _8 = (short unsigned int) _7;
+  _9 = (long unsigned int) _8;
+  Spc_returnMeasures.LvVoltage = _9;
+  return;
+
+}
+
+
+SPC_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+SPC_GetHvCurrentMeasures ()
+{
+  <bb 2> :
+  Spi_SetupEB (0, &spc_Txbuffer, &spc_Rxbuffer, 2);
+  Spi_AsyncTransmit (2);
+  return;
+
+}
+
+
+SPC_GetHvVoltageMeasures ()
+{
+  <bb 2> :
+  Spi_SetupEB (0, &spc_Txbuffer, &spc_Rxbuffer, 2);
+  Spi_AsyncTransmit (1);
+  return;
+
+}
+
+
+SPC_GetHvTemperaturesMeasures ()
+{
+  <bb 2> :
+  Spi_SetupEB (0, &spc_Txbuffer, &spc_Rxbuffer, 2);
+  Spi_AsyncTransmit (3);
+  return;
+
+}
+
+
+SPC_GetLvVoltageMeasures ()
+{
+  <bb 2> :
+  Spi_SetupEB (1, &spc_Txbuffer, &spc_Rxbuffer, 2);
+  Spi_AsyncTransmit (0);
+  return;
+
+}
+
+
+SPC_Init ()
+{
+  uint8_t i;
+  int _1;
+  int _2;
+  unsigned char i.0_3;
+
+  <bb 2> :
+  Spi_Init (&Spi_Config_Init);
+  i_8 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) i_4;
+  spc_Rxbuffer[_1] = 0;
+  _2 = (int) i_4;
+  spc_Txbuffer[_2] = 0;
+  i.0_3 = i_4;
+  i_15 = i.0_3 + 1;
+
+  <bb 4> :
+  # i_4 = PHI <i_8(2), i_15(3)>
+  if (i_4 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  Spc_returnMeasures.HvVoltage = 0;
+  Spc_returnMeasures.HvCurrent = 0;
+  Spc_returnMeasures.HvTemperature = 0;
+  Spc_returnMeasures.LvVoltage = 0;
+  return;
+
+}
+
+

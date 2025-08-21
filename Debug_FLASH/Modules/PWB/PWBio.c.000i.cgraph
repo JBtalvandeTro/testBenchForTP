@@ -1,0 +1,720 @@
+Trivially needed symbols: PWBio_Deinit PWBio_RunTests PWBio_ReadAuxSwitch PWBio_UnsetCdeSwitch PWBio_SetCdeSwitch PWBio_Init PWBio_LowerDutyCycleS3 PWBio_LowerDutyCycleS2 PWBio_cmdResults
+
+
+Initial Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06836700
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068360e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06836e00
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06836b60
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068368c0
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DevAssert/3 (DevAssert) @066790e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06836620
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @065fea68
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @065fea20
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not_available
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: PWBio_LowerDutyCycleS3 PWBio_LowerDutyCycleS2 PWBio_cmdResults
+Removing variables:
+
+Final Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @065fea68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @065fea20
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

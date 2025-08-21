@@ -1,0 +1,384 @@
+IPA summary for PWBio_Deinit/9 is missing.
+IPA summary for PWBio_RunTests/8 is missing.
+IPA summary for PWBio_ReadAuxSwitch/7 is missing.
+IPA summary for PWBio_UnsetCdeSwitch/6 is missing.
+IPA summary for PWBio_SetCdeSwitch/5 is missing.
+IPA summary for PWBio_Init/4 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        3 calls, 3.000000 freq, 0 count
+function body not available                       :       10 calls, 10.000000 freq, 0 count
+IPA summary for PWBio_Deinit/9 is missing.
+IPA summary for PWBio_RunTests/8 is missing.
+IPA summary for PWBio_ReadAuxSwitch/7 is missing.
+IPA summary for PWBio_UnsetCdeSwitch/6 is missing.
+IPA summary for PWBio_SetCdeSwitch/5 is missing.
+IPA summary for PWBio_Init/4 is missing.
+Symbol table:
+
+COM_debugTestReq/14 (COM_debugTestReq) @0683f828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBio_RunTests/8 (read)PWBio_RunTests/8 (read)
+  Availability: not_available
+  Varpool flags:
+Dio_ReadChannel/13 (Dio_ReadChannel) @0683d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_ReadAuxSwitch/7 PWBio_ReadAuxSwitch/7 
+  Calls: 
+Pwm_SetPeriodAndDuty/12 (Pwm_SetPeriodAndDuty) @0683d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 PWBio_SetCdeSwitch/5 
+  Calls: 
+Dio_WriteChannel/11 (Dio_WriteChannel) @0683d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBio_UnsetCdeSwitch/6 PWBio_SetCdeSwitch/5 
+  Calls: 
+PAR_paramConfig/10 (PAR_paramConfig) @06834e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBio_SetCdeSwitch/5 (read)PWBio_SetCdeSwitch/5 (read)PWBio_UnsetCdeSwitch/6 (read)PWBio_UnsetCdeSwitch/6 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_Deinit/9 (PWBio_Deinit) @06836700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_RunTests/8 (PWBio_RunTests) @068360e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/14 (read)COM_debugTestReq/14 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)PWBio_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/7 PWBio_SetCdeSwitch/5 PWBio_UnsetCdeSwitch/6 
+PWBio_ReadAuxSwitch/7 (PWBio_ReadAuxSwitch) @06836e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Dio_ReadChannel/13 Dio_ReadChannel/13 
+PWBio_UnsetCdeSwitch/6 (PWBio_UnsetCdeSwitch) @06836b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_SetCdeSwitch/5 (PWBio_SetCdeSwitch) @068368c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/10 (read)PAR_paramConfig/10 (read)PWBio_LowerDutyCycleS2/1 (read)PWBio_LowerDutyCycleS3/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBio_RunTests/8 
+  Calls: Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Pwm_SetPeriodAndDuty/12 Dio_WriteChannel/11 
+PWBio_Init/4 (PWBio_Init) @06836620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBio_cmdResults/0 (write)PWBio_LowerDutyCycleS2/1 (write)PWBio_LowerDutyCycleS3/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS3/2 (PWBio_LowerDutyCycleS3) @065fea68
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+PWBio_LowerDutyCycleS2/1 (PWBio_LowerDutyCycleS2) @065fea20
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_UnsetCdeSwitch/6 (write)PWBio_RunTests/8 (write)PWBio_Init/4 (write)PWBio_SetCdeSwitch/5 (read)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+PWBio_cmdResults/0 (PWBio_cmdResults) @065fe9d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBio_Init/4 (write)PWBio_RunTests/8 (write)PWBio_Deinit/9 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function PWBio_Init (PWBio_Init, funcdef_no=1, decl_uid=5432, cgraph_uid=2, symbol_order=4)
+
+PWBio_Init ()
+{
+  <bb 2> :
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+
+
+;; Function PWBio_SetCdeSwitch (PWBio_SetCdeSwitch, funcdef_no=2, decl_uid=5434, cgraph_uid=3, symbol_order=5)
+
+PWBio_SetCdeSwitch (PWB_CdeSwitchIdE switchId)
+{
+  uint32_t CdeS3Freq;
+  uint32_t CdeS2Freq;
+  _Bool PWBio_LowerDutyCycleS2.0_1;
+  short unsigned int _2;
+  short unsigned int _3;
+  _Bool PWBio_LowerDutyCycleS3.1_4;
+  short unsigned int _5;
+  short unsigned int _6;
+
+  <bb 2> :
+  CdeS2Freq_11 = PAR_paramConfig[49].realVal.unsignedVal;
+  CdeS3Freq_12 = PAR_paramConfig[48].realVal.unsignedVal;
+  switch (switchId_13(D)) <default: <L9> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Dio_WriteChannel (128, 1);
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  PWBio_LowerDutyCycleS2.0_1 = PWBio_LowerDutyCycleS2;
+  if (PWBio_LowerDutyCycleS2.0_1 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (short unsigned int) CdeS2Freq_11;
+  Pwm_SetPeriodAndDuty (11, _2, 32768);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = (short unsigned int) CdeS2Freq_11;
+  Pwm_SetPeriodAndDuty (11, _3, 32768);
+
+  <bb 7> :
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L5>:
+  PWBio_LowerDutyCycleS3.1_4 = PWBio_LowerDutyCycleS3;
+  if (PWBio_LowerDutyCycleS3.1_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _5 = (short unsigned int) CdeS3Freq_12;
+  Pwm_SetPeriodAndDuty (12, _5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _6 = (short unsigned int) CdeS3Freq_12;
+  Pwm_SetPeriodAndDuty (12, _6, 32768);
+
+  <bb 11> :
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  return;
+
+}
+
+
+
+;; Function PWBio_UnsetCdeSwitch (PWBio_UnsetCdeSwitch, funcdef_no=3, decl_uid=5436, cgraph_uid=4, symbol_order=6)
+
+PWBio_UnsetCdeSwitch (PWB_CdeSwitchIdE switchId)
+{
+  uint32_t CdeS3Freq;
+  uint32_t CdeS2Freq;
+  short unsigned int _1;
+  short unsigned int _2;
+
+  <bb 2> :
+  CdeS2Freq_5 = PAR_paramConfig[49].realVal.unsignedVal;
+  CdeS3Freq_6 = PAR_paramConfig[48].realVal.unsignedVal;
+  switch (switchId_7(D)) <default: <L3> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  Dio_WriteChannel (128, 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _1 = (short unsigned int) CdeS2Freq_5;
+  Pwm_SetPeriodAndDuty (11, _1, 0);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _2 = (short unsigned int) CdeS3Freq_6;
+  Pwm_SetPeriodAndDuty (12, _2, 0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+
+
+;; Function PWBio_ReadAuxSwitch (PWBio_ReadAuxSwitch, funcdef_no=4, decl_uid=5438, cgraph_uid=5, symbol_order=7)
+
+PWBio_ReadAuxSwitch (PWB_AuxSwitchIdE auxId)
+{
+  boolean result;
+  boolean D.6883;
+  unsigned char _1;
+  unsigned char _2;
+  boolean _12;
+
+  <bb 2> :
+  switch (auxId_5(D)) <default: <L2> [INV], case 1: <L0> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = Dio_ReadChannel (73);
+  result_10 = _1 != 0;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = Dio_ReadChannel (75);
+  result_8 = _2 != 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  result_11 = 0;
+
+  <bb 6> :
+  # result_3 = PHI <result_10(3), result_8(4), result_11(5)>
+  _12 = result_3;
+
+  <bb 7> :
+<L4>:
+  return _12;
+
+}
+
+
+
+;; Function PWBio_RunTests (PWBio_RunTests, funcdef_no=5, decl_uid=5440, cgraph_uid=6, symbol_order=8)
+
+PWBio_RunTests ()
+{
+  uint8_t auxSwitchId;
+  uint8_t relayCmd;
+  uint8_t relayId;
+  int _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+  _Bool _5;
+
+  <bb 2> :
+  relayId_8 = COM_debugTestReq.relaySwitchId;
+  auxSwitchId_9 = relayId_8 + 255;
+  relayCmd_10 = COM_debugTestReq.relaySwitchCmd;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  _1 = (int) relayCmd_10;
+  switch (_1) <default: <L3> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = (<unnamed type>) relayId_8;
+  PWBio_UnsetCdeSwitch (_2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = (<unnamed type>) relayId_8;
+  PWBio_SetCdeSwitch (_3);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = (<unnamed type>) auxSwitchId_9;
+  _5 = PWBio_ReadAuxSwitch (_4);
+  PWBio_cmdResults.SwitchReadCmdResult = _5;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function PWBio_Deinit (PWBio_Deinit, funcdef_no=6, decl_uid=5442, cgraph_uid=7, symbol_order=9)
+
+PWBio_Deinit ()
+{
+  <bb 2> :
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+

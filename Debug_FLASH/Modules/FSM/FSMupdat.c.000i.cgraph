@@ -1,0 +1,1131 @@
+Trivially needed symbols: fsm_ManageInternalMode fsm_CheckS3ModeExit fsm_CheckShutdownModeExit fsm_CheckMaintenanceModeExit fsm_CheckEmergencyModeExit fsm_CheckBuckModeExit fsm_CheckBoostModeExit fsm_CheckStandbyModeExit fsm_CheckPBitModeExit fsm_CheckInitModeExit FSM_Update fsm_pbit_timeout_counter
+
+
+Initial Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not-ready
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckMaintenanceModeExit/8 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de80e0
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de8d20
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de8a80
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de87e0
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de8540
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de82a0
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05de8000
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05dcca80
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05dccee0
+  References: COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05dccc40
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05dcc9a0
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not-ready
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckMaintenanceModeExit/8 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not-ready
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckMaintenanceModeExit/8 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not-ready
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckMaintenanceModeExit/8 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: FSM_Update/1 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not-ready
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/12 (read)
+  Referring: 
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not_available
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBuckModeExit/6 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not_available
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckMaintenanceModeExit/8 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)
+  Availability: not_available
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckS3ModeExit/10 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckMaintenanceModeExit/8 (read)FSM_Update/1 (read)
+  Availability: not_available
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: fsm_pbit_timeout_counter
+Removing variables:
+
+Final Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

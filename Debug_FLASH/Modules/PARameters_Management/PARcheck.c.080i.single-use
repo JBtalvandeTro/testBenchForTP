@@ -1,0 +1,295 @@
+par_IsValidParamIndex (PAR_ParamE param)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6530;
+  PAR_ErrorsE _5;
+
+  <bb 2> :
+  if (param_2(D) <= 67)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  error_4 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  error_3 = 3;
+
+  <bb 5> :
+  # error_1 = PHI <error_4(3), error_3(4)>
+  _5 = error_1;
+
+  <bb 6> :
+<L3>:
+  return _5;
+
+}
+
+
+par_IsValidRange (PAR_ParamE param, union PAR_ValueU paramValue)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6525;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long int _6;
+  long int _7;
+  long int _8;
+  long int _9;
+  float _10;
+  float _11;
+  float _12;
+  float _13;
+  PAR_ErrorsE _26;
+
+  <bb 2> :
+  error_21 = par_IsValidParamIndex (param_19(D));
+  if (error_21 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 3> :
+  _1 = PAR_paramConfig[param_19(D)].type;
+  switch (_1) <default: <L17> [INV], case 0: <L1> [INV], case 1: <L7> [INV], case 2: <L1> [INV], case 3: <L7> [INV], case 4: <L1> [INV], case 5: <L7> [INV], case 6: <L13> [INV]>
+
+  <bb 4> :
+<L1>:
+  _2 = paramValue.unsignedVal;
+  _3 = PAR_paramConfig[param_19(D)].min.unsignedVal;
+  if (_2 < _3)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _4 = paramValue.unsignedVal;
+  _5 = PAR_paramConfig[param_19(D)].max.unsignedVal;
+  if (_4 > _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  error_24 = 13;
+
+  <bb 7> :
+  # error_14 = PHI <error_21(5), error_24(6)>
+  goto <bb 17>; [INV]
+
+  <bb 8> :
+<L7>:
+  _6 = paramValue.signedVal;
+  _7 = PAR_paramConfig[param_19(D)].min.signedVal;
+  if (_6 < _7)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _8 = paramValue.signedVal;
+  _9 = PAR_paramConfig[param_19(D)].max.signedVal;
+  if (_8 > _9)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  error_23 = 13;
+
+  <bb 11> :
+  # error_15 = PHI <error_21(9), error_23(10)>
+  goto <bb 17>; [INV]
+
+  <bb 12> :
+<L13>:
+  _10 = paramValue.floatVal;
+  _11 = PAR_paramConfig[param_19(D)].min.floatVal;
+  if (_10 < _11)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _12 = paramValue.floatVal;
+  _13 = PAR_paramConfig[param_19(D)].max.floatVal;
+  if (_12 > _13)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  error_22 = 13;
+
+  <bb 15> :
+  # error_16 = PHI <error_21(13), error_22(14)>
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+<L17>:
+  error_25 = 10;
+
+  <bb 17> :
+  # error_17 = PHI <error_21(2), error_14(7), error_15(11), error_16(15), error_25(16)>
+  _26 = error_17;
+
+  <bb 18> :
+<L20>:
+  return _26;
+
+}
+
+
+PAR_IsValidAccess (PAR_ParamE param, PAR_AccessE access)
+{
+  boolean rejected;
+  PAR_AccessRightE paramAccessRights;
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6512;
+  <unnamed type> PAR_right.0_1;
+  <unnamed type> PAR_right.1_2;
+  <unnamed type> PAR_right.2_3;
+  _Bool _4;
+  PAR_ErrorsE _27;
+
+  <bb 2> :
+  error_13 = par_IsValidParamIndex (param_11(D));
+  if (error_13 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 3> :
+  if (access_14(D) == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  paramAccessRights_16 = PAR_paramConfig[param_11(D)].readAccessRight;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  paramAccessRights_15 = PAR_paramConfig[param_11(D)].writeAccessRight;
+
+  <bb 6> :
+  # paramAccessRights_6 = PHI <paramAccessRights_16(4), paramAccessRights_15(5)>
+  switch (paramAccessRights_6) <default: <L15> [INV], case 0: <L4> [INV], case 1: <L5> [INV], case 2: <L6> [INV], case 4: <L11> [INV]>
+
+  <bb 7> :
+<L4>:
+  rejected_22 = 1;
+  goto <bb 19>; [INV]
+
+  <bb 8> :
+<L5>:
+  rejected_21 = 0;
+  goto <bb 19>; [INV]
+
+  <bb 9> :
+<L6>:
+  PAR_right.0_1 = PAR_right;
+  if (PAR_right.0_1 != 2)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  PAR_right.1_2 = PAR_right;
+  if (PAR_right.1_2 != 4)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  rejected_19 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  rejected_20 = 0;
+
+  <bb 13> :
+  # rejected_7 = PHI <rejected_19(11), rejected_20(12)>
+  goto <bb 19>; [INV]
+
+  <bb 14> :
+<L11>:
+  PAR_right.2_3 = PAR_right;
+  if (PAR_right.2_3 != 4)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  rejected_18 = 1;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  rejected_17 = 0;
+
+  <bb 17> :
+  # rejected_8 = PHI <rejected_18(15), rejected_17(16)>
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+<L15>:
+  rejected_23 = 1;
+
+  <bb 19> :
+  # rejected_9 = PHI <rejected_22(7), rejected_21(8), rejected_7(13), rejected_8(17), rejected_23(18)>
+  _4 = ~rejected_9;
+  if (_4 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  error_26 = 0;
+  goto <bb 24>; [INV]
+
+  <bb 21> :
+  if (access_14(D) == 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  error_25 = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  error_24 = 2;
+
+  <bb 24> :
+  # error_5 = PHI <error_13(2), error_26(20), error_25(22), error_24(23)>
+  _27 = error_5;
+
+  <bb 25> :
+<L24>:
+  return _27;
+
+}
+
+
+PAR_CheckIsValueAllowed (PAR_ParamE param, union PAR_ValueU paramValue)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6492;
+  PAR_ErrorsE _5;
+
+  <bb 2> :
+  error_4 = par_IsValidRange (param_2(D), paramValue);
+  _5 = error_4;
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+

@@ -1,0 +1,347 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Lpit_Icu_Ip_DisableNotification Lpit_Icu_Ip_EnableNotification Lpit_Icu_Ip_DisableDetectionMode Lpit_Icu_Ip_EnableEdgeDetection Lpit_Icu_Ip_DisableInterrupt Lpit_Icu_Ip_EnableInterrupt Lpit_Icu_Ip_Init
+
+
+Marking externally visible variables: channelsState lpitBase
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Lpit_Icu_Ip_DisableNotification/8 (Lpit_Icu_Ip_DisableNotification) @065e3700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: channelsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpit_Icu_Ip_EnableNotification/7 (Lpit_Icu_Ip_EnableNotification) @065e3460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: channelsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpit_Icu_Ip_DisableDetectionMode/6 (Lpit_Icu_Ip_DisableDetectionMode) @065e31c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: channelsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Icu_Ip_DisableInterrupt/4 
+Lpit_Icu_Ip_EnableEdgeDetection/5 (Lpit_Icu_Ip_EnableEdgeDetection) @06622e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: channelsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Icu_Ip_EnableInterrupt/3 
+Lpit_Icu_Ip_DisableInterrupt/4 (Lpit_Icu_Ip_DisableInterrupt) @066228c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpit_Icu_Ip_DisableDetectionMode/6 
+  Calls: 
+Lpit_Icu_Ip_EnableInterrupt/3 (Lpit_Icu_Ip_EnableInterrupt) @06622d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpit_Icu_Ip_EnableEdgeDetection/5 
+  Calls: 
+Lpit_Icu_Ip_Init/2 (Lpit_Icu_Ip_Init) @06622a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: channelsState/1 (write)channelsState/1 (write)channelsState/1 (write)channelsState/1 (write)channelsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+channelsState/1 (channelsState) @0661ac60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Lpit_Icu_Ip_Init/2 (write)Lpit_Icu_Ip_Init/2 (write)Lpit_Icu_Ip_Init/2 (write)Lpit_Icu_Ip_Init/2 (write)Lpit_Icu_Ip_Init/2 (write)Lpit_Icu_Ip_EnableEdgeDetection/5 (write)Lpit_Icu_Ip_DisableDetectionMode/6 (write)Lpit_Icu_Ip_EnableNotification/7 (write)Lpit_Icu_Ip_DisableNotification/8 (write)
+  Availability: available
+  Varpool flags:
+lpitBase/0 (lpitBase) @0661ab88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Lpit_Icu_Ip_DisableNotification (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = (int) hwChannel;
+  channelsState[_1][_2].notificationEnable = 0;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableNotification (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = (int) hwChannel;
+  channelsState[_1][_2].notificationEnable = 1;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_DisableDetectionMode (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  Lpit_Icu_Ip_DisableInterrupt (instance, hwChannel);
+  _1 = (int) instance;
+  _2 = (int) hwChannel;
+  channelsState[_1][_2].measurementMode = 0;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableEdgeDetection (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  Lpit_Icu_Ip_EnableInterrupt (instance, hwChannel);
+  _1 = (int) instance;
+  _2 = (int) hwChannel;
+  channelsState[_1][_2].measurementMode = 1;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_DisableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MIER;
+  _4 = (long unsigned int) hwChannel;
+  _5 = 1 << _4;
+  _6 = ~_5;
+  _7 = (int) instance;
+  _8 = 1073967104B;
+  _9 = _3 & _6;
+  _8->MIER = _9;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MSR;
+  _4 = (long unsigned int) hwChannel;
+  _5 = 1 << _4;
+  _6 = (int) instance;
+  _7 = 1073967104B;
+  _8 = _3 | _5;
+  _7->MSR = _8;
+  _9 = (int) instance;
+  _10 = 1073967104B;
+  _11 = _10->MIER;
+  _12 = (long unsigned int) hwChannel;
+  _13 = 1 << _12;
+  _14 = (int) instance;
+  _15 = 1073967104B;
+  _16 = _11 | _13;
+  _15->MIER = _16;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_Init (uint8 instance, const struct Lpit_Icu_Ip_ConfigType * userConfig)
+{
+  uint8 counter;
+  const struct Lpit_Icu_Ip_ChannelConfigType * lpitChConfig;
+  Lpit_Icu_Ip_StatusType D.5675;
+  long unsigned int iftmp.0;
+
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MCR;
+  _4 = (int) instance;
+  _5 = 1073967104B;
+  _6 = _3 | 1;
+  _5->MCR = _6;
+  counter = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _7 = userConfig->pChannelsConfig;
+  _8 = (int) counter;
+  lpitChConfig = &*_7[_8];
+  _9 = (int) instance;
+  _10 = 1073967104B;
+  _11 = lpitChConfig->hwChannel;
+  _12 = (int) _11;
+  _13 = _10->TMR[_12].TCTRL;
+  _14 = (int) instance;
+  _15 = 1073967104B;
+  _16 = lpitChConfig->hwChannel;
+  _17 = (int) _16;
+  _18 = _13 | 1;
+  _15->TMR[_17].TCTRL = _18;
+  _19 = (int) instance;
+  _20 = 1073967104B;
+  _21 = _20->MIER;
+  _22 = lpitChConfig->hwChannel;
+  _23 = (long unsigned int) _22;
+  _24 = 1 << _23;
+  _25 = ~_24;
+  _26 = (int) instance;
+  _27 = 1073967104B;
+  _28 = _21 & _25;
+  _27->MIER = _28;
+  _29 = (int) instance;
+  _30 = 1073967104B;
+  _31 = _30->MSR;
+  _32 = lpitChConfig->hwChannel;
+  _33 = (long unsigned int) _32;
+  _34 = 1 << _33;
+  _35 = (int) instance;
+  _36 = 1073967104B;
+  _37 = _31 | _34;
+  _36->MSR = _37;
+  _38 = (int) instance;
+  _39 = 1073967104B;
+  _40 = _39->MCR;
+  _41 = (int) instance;
+  _42 = 1073967104B;
+  _43 = _40 | 4;
+  _42->MCR = _43;
+  _44 = (int) instance;
+  _45 = 1073967104B;
+  _46 = _45->MCR;
+  _47 = userConfig->debugState;
+  if (_47 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.0 = 8;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.0 = 0;
+
+  <bb 6> :
+  _48 = (int) instance;
+  _49 = 1073967104B;
+  _50 = iftmp.0 | _46;
+  _49->MCR = _50;
+  _51 = (int) instance;
+  _52 = 1073967104B;
+  _53 = lpitChConfig->hwChannel;
+  _54 = (int) _53;
+  _55 = _52->TMR[_54].TCTRL;
+  _56 = lpitChConfig->triggerSource;
+  _57 = (long unsigned int) _56;
+  _58 = _57 << 23;
+  _59 = (int) instance;
+  _60 = 1073967104B;
+  _61 = lpitChConfig->hwChannel;
+  _62 = (int) _61;
+  _63 = _55 | _58;
+  _60->TMR[_62].TCTRL = _63;
+  _64 = (int) instance;
+  _65 = 1073967104B;
+  _66 = lpitChConfig->hwChannel;
+  _67 = (int) _66;
+  _68 = _65->TMR[_67].TCTRL;
+  _69 = lpitChConfig->triggerSelect;
+  _70 = (long unsigned int) _69;
+  _71 = _70 << 24;
+  _72 = (int) instance;
+  _73 = 1073967104B;
+  _74 = lpitChConfig->hwChannel;
+  _75 = (int) _74;
+  _76 = _68 | _71;
+  _73->TMR[_75].TCTRL = _76;
+  _77 = (int) instance;
+  _78 = 1073967104B;
+  _79 = lpitChConfig->hwChannel;
+  _80 = (int) _79;
+  _81 = _78->TMR[_80].TCTRL;
+  _82 = (int) instance;
+  _83 = 1073967104B;
+  _84 = lpitChConfig->hwChannel;
+  _85 = (int) _84;
+  _86 = _81 | 12;
+  _83->TMR[_85].TCTRL = _86;
+  _87 = (int) instance;
+  _88 = lpitChConfig->hwChannel;
+  _89 = (int) _88;
+  channelsState[_87][_89].initState = 1;
+  _90 = (int) instance;
+  _91 = lpitChConfig->hwChannel;
+  _92 = (int) _91;
+  _93 = lpitChConfig->callback;
+  channelsState[_90][_92].callback = _93;
+  _94 = (int) instance;
+  _95 = lpitChConfig->hwChannel;
+  _96 = (int) _95;
+  _97 = lpitChConfig->callbackParams;
+  channelsState[_94][_96].callbackParams = _97;
+  _98 = (int) instance;
+  _99 = lpitChConfig->hwChannel;
+  _100 = (int) _99;
+  _101 = lpitChConfig->lpitChannelNotify;
+  channelsState[_98][_100].lpitChannelNotify = _101;
+  _102 = (int) instance;
+  _103 = lpitChConfig->hwChannel;
+  _104 = (int) _103;
+  _105 = lpitChConfig->logicChStateCallback;
+  channelsState[_102][_104].logicChStateCallback = _105;
+  counter.1_106 = counter;
+  counter = counter.1_106 + 1;
+
+  <bb 7> :
+  _107 = userConfig->numberOfChannels;
+  if (counter < _107)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  D.5675 = 0;
+
+  <bb 9> :
+<L6>:
+  return D.5675;
+
+}
+
+

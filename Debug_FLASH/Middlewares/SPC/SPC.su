@@ -1,0 +1,10 @@
+SPC.c:33:6:SPC_Init	16	static
+SPC.c:51:6:SPC_GetLvVoltageMeasures	8	static
+SPC.c:66:6:SPC_GetHvTemperaturesMeasures	8	static
+SPC.c:74:6:SPC_GetHvVoltageMeasures	8	static
+SPC.c:81:6:SPC_GetHvCurrentMeasures	8	static
+SPC.c:92:6:SPC_Deinit	0	static
+SPC.c:101:6:spc_RxGetLowVoltageMeasures	0	static
+SPC.c:111:6:spc_RxGetHvVoltageMeasures	0	static
+SPC.c:121:6:spc_RxGetHvCurrentMeasures	0	static
+SPC.c:131:6:spc_RxGetHvTemperaturesMeasures	0	static

@@ -1,0 +1,491 @@
+Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma0_Error_IrqHandler ()
+{
+  <bb 2> :
+  Dma_Ch0_Ch15_ErrorIrqDispatcher (2, 0);
+  return;
+
+}
+
+
+Dma_Ch0_Ch15_ErrorIrqDispatcher (const uint32 LocHwVers, const uint32 LocHwInst)
+{
+  volatile uint32 chErrEnable;
+  volatile uint32 chErrStatus;
+  uint32 TmpHwCh;
+  uint32 LocHwCh;
+  struct Dma_Ip_Hwv2InstRegType * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  struct Dma_Ip_Hwv2InstRegType * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int chErrStatus.0_7;
+  long unsigned int chErrEnable.1_8;
+  struct Dma_Ip_Hwv2InstRegType * _9;
+  unsigned char _10;
+
+  <bb 2> :
+  LocHwCh_15 = 0;
+  TmpHwCh_16 = 0;
+  chErrStatus ={v} 0;
+  chErrEnable ={v} 0;
+  LocHwCh_20 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  TmpHwCh_21 = 1 << LocHwCh_11;
+  _1 = 1073774592B;
+  _2 ={v} _1->reg_ERR;
+  _3 = TmpHwCh_21 & _2;
+  chErrStatus ={v} _3;
+  _4 = 1073774592B;
+  _5 ={v} _4->reg_EEI;
+  _6 = TmpHwCh_21 & _5;
+  chErrEnable ={v} _6;
+  chErrStatus.0_7 ={v} chErrStatus;
+  if (chErrStatus.0_7 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  chErrEnable.1_8 ={v} chErrEnable;
+  if (chErrEnable.1_8 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Dma_Ip_ErrorIrqHandler (LocHwVers_24(D), LocHwInst_25(D), LocHwCh_11);
+
+  <bb 6> :
+  _9 = 1073774592B;
+  _10 = (unsigned char) LocHwCh_11;
+  _9->reg_CERR ={v} _10;
+
+  <bb 7> :
+  LocHwCh_28 = LocHwCh_11 + 1;
+
+  <bb 8> :
+  # LocHwCh_11 = PHI <LocHwCh_20(2), LocHwCh_28(7)>
+  if (LocHwCh_11 <= 15)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  return;
+
+}
+
+
+Dma0_Ch15_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 15);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch14_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 14);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch13_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 13);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch12_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 12);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch11_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 11);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch10_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 10);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch9_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 9);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch8_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 8);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch7_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 7);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch6_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 6);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch5_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 5);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch4_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 4);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch3_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 3);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch2_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 2);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch1_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 1);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Dma0_Ch0_IRQHandler ()
+{
+  <bb 2> :
+  IntIrqDispatcher (2, 0, 0);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+IntIrqDispatcher (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  uint32 chIntEnable;
+  uint32 chIntStatus;
+  struct Dma_Ip_Hwv2InstRegType * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  struct Dma_Ip_Hwv2TcdArrayType * _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  struct Dma_Ip_Hwv2InstRegType * _7;
+  unsigned char _8;
+
+  <bb 2> :
+  _1 = 1073774592B;
+  _2 ={v} _1->reg_INT;
+  _3 = 1 << LocHwCh_11(D);
+  chIntStatus_12 = _2 & _3;
+  _4 = 1073778688B;
+  _5 = _4->TCD_RSV[LocHwCh_11(D)].tChTcdReg.tTcdReg.reg_CSR;
+  _6 = (long unsigned int) _5;
+  chIntEnable_13 = _6 & 6;
+  if (chIntStatus_12 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _7 = 1073774592B;
+  _8 = (unsigned char) LocHwCh_11(D);
+  _7->reg_CINT ={v} _8;
+  if (chIntEnable_13 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Dma_Ip_IntIrqHandler (LocHwVers_15(D), LocHwInst_16(D), LocHwCh_11(D));
+
+  <bb 5> :
+  return;
+
+}
+
+

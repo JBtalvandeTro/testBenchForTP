@@ -1,0 +1,2109 @@
+Trivially needed symbols: Pwm_UnMaskOutputs Pwm_MaskOutputs Pwm_SetDutyPhaseShift Pwm_SetPhaseShift Pwm_SyncUpdate Pwm_GetChannelState Pwm_SetPeriodAndDuty Pwm_SetDutyCycle Pwm_DeInit Pwm_Init Pwm_ValidateGlobalConfigCall Pwm_aState
+
+
+Initial Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_UnMaskOutputs/22 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_MaskOutputs/21 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPhaseShift/11 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateModuleId/10 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SyncUpdate/18 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_GetChannelState/17 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPeriodClass/9 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPeriodAndDuty/16 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateModuleId/10 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamDuty/8 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateGlobalConfigCall/3 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_UnMaskOutputs/41 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5b60
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_MaskOutputs/40 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5620
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetDutyPhaseShift/38 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d50e0
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPhaseShift/36 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_SyncUpdate/34 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5a80
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_GetChannelState/33 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d57e0
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPeriodAndDuty/31 Pwm_ValidateParamDuty/8 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5540
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Det_ReportError/23 Pwm_Ipw_SetDutyCycle/28 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d52a0
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_DeInitInstance/27 Pwm_Ipw_DeInit/26 Pwm_ValidateGlobalConfigCall/3 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069d5000
+  References: Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_Init/25 Pwm_Ipw_InitInstance/24 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d5620
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d50e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShiftParams/37 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d5d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateModuleId/35 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d57e0
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 Pwm_SetPeriodAndDuty/16 
+  Calls: Det_ReportError/23 Pwm_Ipw_GetMaxPeriodValue/32 Det_ReportError/23 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069c82a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @068fec40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_Init/13 
+  Calls: Det_ReportError/23 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d5540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @068feb60
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateUpdateSynchronous/30 Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShift/29 Det_ReportError/23 Pwm_GetPartitionChannelIdx/2 Det_ReportError/23 Det_ReportError/23 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069d5000
+  References: Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069c8b60
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: Det_ReportError/23 Det_ReportError/23 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @069c87e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068fee00
+  References: 
+  Referring: Pwm_ValidateGlobalConfigCall/3 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (write)Pwm_DeInit/14 (write)Pwm_SetDutyCycle/15 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_ValidateParamsPeriodClass/9 (read)Pwm_GetChannelState/17 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetDutyPhaseShift/20 (read)Pwm_ValidateParamsDutyPhaseShift/12 (read)Pwm_MaskOutputs/21 (read)Pwm_MaskOutputs/21 (read)Pwm_UnMaskOutputs/22 (read)Pwm_UnMaskOutputs/22 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/0 (DevAssert) @06661380
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_UnMaskOutputs/22 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_MaskOutputs/21 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPhaseShift/11 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateModuleId/10 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SyncUpdate/18 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_GetChannelState/17 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPeriodClass/9 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPeriodAndDuty/16 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateModuleId/10 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamDuty/8 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateGlobalConfigCall/3 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_UnMaskOutputs/41 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_MaskOutputs/40 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetDutyPhaseShift/38 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPhaseShift/36 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_SyncUpdate/34 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_GetChannelState/33 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPeriodAndDuty/31 Pwm_ValidateParamDuty/8 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Det_ReportError/23 Pwm_Ipw_SetDutyCycle/28 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_DeInitInstance/27 Pwm_Ipw_DeInit/26 Pwm_ValidateGlobalConfigCall/3 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_Init/25 Pwm_Ipw_InitInstance/24 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShiftParams/37 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateModuleId/35 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 Pwm_SetPeriodAndDuty/16 
+  Calls: Det_ReportError/23 Pwm_Ipw_GetMaxPeriodValue/32 Det_ReportError/23 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_Init/13 
+  Calls: Det_ReportError/23 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateUpdateSynchronous/30 Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShift/29 Det_ReportError/23 Pwm_GetPartitionChannelIdx/2 Det_ReportError/23 Det_ReportError/23 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: Det_ReportError/23 Det_ReportError/23 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Pwm_ValidateGlobalConfigCall/3 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (write)Pwm_DeInit/14 (write)Pwm_SetDutyCycle/15 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_ValidateParamsPeriodClass/9 (read)Pwm_GetChannelState/17 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetDutyPhaseShift/20 (read)Pwm_ValidateParamsDutyPhaseShift/12 (read)Pwm_MaskOutputs/21 (read)Pwm_MaskOutputs/21 (read)Pwm_UnMaskOutputs/22 (read)Pwm_UnMaskOutputs/22 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_UnMaskOutputs/22 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_MaskOutputs/21 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPhaseShift/11 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateModuleId/10 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SyncUpdate/18 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_GetChannelState/17 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPeriodClass/9 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPeriodAndDuty/16 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateModuleId/10 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamDuty/8 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateGlobalConfigCall/3 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_UnMaskOutputs/41 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_MaskOutputs/40 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetDutyPhaseShift/38 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPhaseShift/36 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_SyncUpdate/34 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_GetChannelState/33 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPeriodAndDuty/31 Pwm_ValidateParamDuty/8 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Det_ReportError/23 Pwm_Ipw_SetDutyCycle/28 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_DeInitInstance/27 Pwm_Ipw_DeInit/26 Pwm_ValidateGlobalConfigCall/3 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_Init/25 Pwm_Ipw_InitInstance/24 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShiftParams/37 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateModuleId/35 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 Pwm_SetPeriodAndDuty/16 
+  Calls: Det_ReportError/23 Pwm_Ipw_GetMaxPeriodValue/32 Det_ReportError/23 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_Init/13 
+  Calls: Det_ReportError/23 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateUpdateSynchronous/30 Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShift/29 Det_ReportError/23 Pwm_GetPartitionChannelIdx/2 Det_ReportError/23 Det_ReportError/23 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: Det_ReportError/23 Det_ReportError/23 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Pwm_ValidateGlobalConfigCall/3 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (write)Pwm_DeInit/14 (write)Pwm_SetDutyCycle/15 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_ValidateParamsPeriodClass/9 (read)Pwm_GetChannelState/17 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetDutyPhaseShift/20 (read)Pwm_ValidateParamsDutyPhaseShift/12 (read)Pwm_MaskOutputs/21 (read)Pwm_MaskOutputs/21 (read)Pwm_UnMaskOutputs/22 (read)Pwm_UnMaskOutputs/22 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_UnMaskOutputs/22 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_MaskOutputs/21 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPhaseShift/11 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateModuleId/10 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SyncUpdate/18 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_GetChannelState/17 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsPeriodClass/9 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetPeriodAndDuty/16 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateModuleId/10 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamDuty/8 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateGlobalConfigCall/3 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_UnMaskOutputs/41 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_MaskOutputs/40 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetDutyPhaseShift/38 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPhaseShift/36 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_SyncUpdate/34 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_GetChannelState/33 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPeriodAndDuty/31 Pwm_ValidateParamDuty/8 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Det_ReportError/23 Pwm_Ipw_SetDutyCycle/28 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_DeInitInstance/27 Pwm_Ipw_DeInit/26 Pwm_ValidateGlobalConfigCall/3 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_Init/25 Pwm_Ipw_InitInstance/24 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShiftParams/37 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateModuleId/35 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetPhaseShift/19 Pwm_SetPeriodAndDuty/16 
+  Calls: Det_ReportError/23 Pwm_Ipw_GetMaxPeriodValue/32 Det_ReportError/23 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_Init/13 
+  Calls: Det_ReportError/23 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateUpdateSynchronous/30 Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShift/29 Det_ReportError/23 Pwm_GetPartitionChannelIdx/2 Det_ReportError/23 Det_ReportError/23 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: Det_ReportError/23 Det_ReportError/23 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_ValidateChannelConfigCall/5 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Pwm_ValidateGlobalConfigCall/3 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (write)Pwm_DeInit/14 (write)Pwm_SetDutyCycle/15 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_ValidateParamsPeriodClass/9 (read)Pwm_GetChannelState/17 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetDutyPhaseShift/20 (read)Pwm_ValidateParamsDutyPhaseShift/12 (read)Pwm_MaskOutputs/21 (read)Pwm_MaskOutputs/21 (read)Pwm_UnMaskOutputs/22 (read)Pwm_UnMaskOutputs/22 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_UnMaskOutputs/22 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_MaskOutputs/21 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateParamsDutyPhaseShift/12 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateParamsPhaseShift/11 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateModuleId/10 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SyncUpdate/18 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_GetChannelState/17 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateParamsPeriodClass/9 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SetPeriodAndDuty/16 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_DeInit/14 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_Init/13 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Pwm_SetDutyCycle/15 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateGlobalConfigCall/3 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateModuleId/10 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateParamsPeriodClass/9 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateChannelConfigCall/5 Pwm_ValidateParamDuty/8 Pwm_ValidateParamPtrInit/7 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_UnMaskOutputs/41 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_MaskOutputs/40 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetDutyPhaseShift/38 Pwm_ValidateParamsDutyPhaseShift/12 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPhaseShift/36 Pwm_ValidateParamsPhaseShift/11 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_SyncUpdate/34 Pwm_ValidateModuleId/10 Pwm_ValidateGlobalConfigCall/3 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_GetChannelState/33 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Pwm_Ipw_SetPeriodAndDuty/31 Pwm_ValidateParamDuty/8 Pwm_ValidateParamsPeriodClass/9 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateChannelConfigCall/6 Det_ReportError/23 Pwm_Ipw_SetDutyCycle/28 Pwm_ValidateParamDuty/8 Pwm_GetPartitionChannelIdx/2 Pwm_ValidateChannelConfigCall/5 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_DeInitInstance/27 Pwm_Ipw_DeInit/26 Pwm_ValidateGlobalConfigCall/3 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (write)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_EndValidateGlobalConfigCall/4 Pwm_Ipw_Init/25 Pwm_Ipw_InitInstance/24 Pwm_ValidateParamPtrInit/7 Pwm_ValidateGlobalConfigCall/3 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetDutyPhaseShift/20 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetPhaseShift/19 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShiftParams/37 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateModuleId/35 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetPhaseShift/19 Pwm_SetPeriodAndDuty/16 
+  Calls: Det_ReportError/23 Pwm_Ipw_GetMaxPeriodValue/32 Det_ReportError/23 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_Init/13 
+  Calls: Det_ReportError/23 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)Pwm_aState/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 
+  Calls: Det_ReportError/23 Pwm_Ipw_ValidateUpdateSynchronous/30 Det_ReportError/23 Pwm_Ipw_ValidateSetPhaseShift/29 Det_ReportError/23 Pwm_GetPartitionChannelIdx/2 Det_ReportError/23 Det_ReportError/23 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Pwm_aState/1 (write)Pwm_aState/1 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Pwm_aState/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Pwm_UnMaskOutputs/22 Pwm_MaskOutputs/21 Pwm_SyncUpdate/18 Pwm_DeInit/14 Pwm_Init/13 
+  Calls: Det_ReportError/23 Det_ReportError/23 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Pwm_SetDutyPhaseShift/20 Pwm_SetPhaseShift/19 Pwm_GetChannelState/17 Pwm_SetPeriodAndDuty/16 Pwm_SetDutyCycle/15 Pwm_ValidateChannelConfigCall/5 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Pwm_ValidateParamsPeriodClass/9 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_GetChannelState/17 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_Init/13 (read)Pwm_Init/13 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_ValidateParamsDutyPhaseShift/12 (read)Pwm_SetPhaseShift/19 (read)Pwm_SetDutyPhaseShift/20 (read)Pwm_Init/13 (write)Pwm_Init/13 (read)Pwm_Init/13 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateChannelConfigCall/5 (read)Pwm_ValidateGlobalConfigCall/3 (read)Pwm_Init/13 (read)Pwm_SetPeriodAndDuty/16 (read)Pwm_SetPhaseShift/19 (read)Pwm_MaskOutputs/21 (read)Pwm_MaskOutputs/21 (read)Pwm_Init/13 (read)Pwm_DeInit/14 (write)Pwm_EndValidateGlobalConfigCall/4 (write)Pwm_SetDutyCycle/15 (read)Pwm_DeInit/14 (write)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_DeInit/14 (read)Pwm_UnMaskOutputs/22 (read)Pwm_UnMaskOutputs/22 (read)
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Pwm_aState
+Removing variables:
+
+Final Symbol table:
+
+Pwm_Ipw_UnMaskOutputs/41 (Pwm_Ipw_UnMaskOutputs) @069eb7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_MaskOutputs/40 (Pwm_Ipw_MaskOutputs) @069eb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_ValidateSetDutyPhaseShiftParams/39 (Pwm_Ipw_ValidateSetDutyPhaseShiftParams) @069eb460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_SetDutyPhaseShift/38 (Pwm_Ipw_SetDutyPhaseShift) @069eb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShiftParams/37 (Pwm_Ipw_ValidateSetPhaseShiftParams) @069eb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_SetPhaseShift/36 (Pwm_Ipw_SetPhaseShift) @06292ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_ValidateModuleId/35 (Pwm_Ipw_ValidateModuleId) @06292d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_SyncUpdate/34 (Pwm_Ipw_SyncUpdate) @06292b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_GetChannelState/33 (Pwm_Ipw_GetChannelState) @062929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_GetMaxPeriodValue/32 (Pwm_Ipw_GetMaxPeriodValue) @062927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_SetPeriodAndDuty/31 (Pwm_Ipw_SetPeriodAndDuty) @06292620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_ValidateUpdateSynchronous/30 (Pwm_Ipw_ValidateUpdateSynchronous) @062921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_ValidateSetPhaseShift/29 (Pwm_Ipw_ValidateSetPhaseShift) @062920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_SetDutyCycle/28 (Pwm_Ipw_SetDutyCycle) @069e1e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_DeInitInstance/27 (Pwm_Ipw_DeInitInstance) @069e1b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_DeInit/26 (Pwm_Ipw_DeInit) @069e1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_Init/25 (Pwm_Ipw_Init) @069e1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Ipw_InitInstance/24 (Pwm_Ipw_InitInstance) @069e1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportError/23 (Det_ReportError) @069e1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_UnMaskOutputs/22 (Pwm_UnMaskOutputs) @069d5b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_MaskOutputs/21 (Pwm_MaskOutputs) @069d5620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SetDutyPhaseShift/20 (Pwm_SetDutyPhaseShift) @069d50e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SetPhaseShift/19 (Pwm_SetPhaseShift) @069d5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SyncUpdate/18 (Pwm_SyncUpdate) @069d5a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_GetChannelState/17 (Pwm_GetChannelState) @069d57e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SetPeriodAndDuty/16 (Pwm_SetPeriodAndDuty) @069d5540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_SetDutyCycle/15 (Pwm_SetDutyCycle) @069d52a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_DeInit/14 (Pwm_DeInit) @069d5000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_Init/13 (Pwm_Init) @069c8b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_ValidateParamsDutyPhaseShift/12 (Pwm_ValidateParamsDutyPhaseShift) @069c8620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateParamsPhaseShift/11 (Pwm_ValidateParamsPhaseShift) @069c80e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateModuleId/10 (Pwm_ValidateModuleId) @069c8d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateParamsPeriodClass/9 (Pwm_ValidateParamsPeriodClass) @069c8a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateParamDuty/8 (Pwm_ValidateParamDuty) @069c87e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateParamPtrInit/7 (Pwm_ValidateParamPtrInit) @069c8540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_EndValidateChannelConfigCall/6 (Pwm_EndValidateChannelConfigCall) @069c82a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateChannelConfigCall/5 (Pwm_ValidateChannelConfigCall) @069c8000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_EndValidateGlobalConfigCall/4 (Pwm_EndValidateGlobalConfigCall) @068fec40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_ValidateGlobalConfigCall/3 (Pwm_ValidateGlobalConfigCall) @068fee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Pwm_GetPartitionChannelIdx/2 (Pwm_GetPartitionChannelIdx) @068feb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Pwm_aState/1 (Pwm_aState) @068f7870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

@@ -1,0 +1,593 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: INI_DeinitModules INI_DeinitLibrairies INI_DeinitMiddlewares INI_DeinitDrivers INI_InitModules INI_InitLibrairies INI_InitMiddlewares INI_InitDrivers
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+ACT_Deinit/73 (ACT_Deinit) @09369a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 
+  Calls: 
+SCH_Deinit/72 (SCH_Deinit) @093699a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 
+  Calls: 
+CNV_Deinit/71 (CNV_Deinit) @093698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 
+  Calls: 
+MPM_Deinit/70 (MPM_Deinit) @093697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 
+  Calls: 
+FSM_Deinit/69 (FSM_Deinit) @09369700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 
+  Calls: 
+CBU_Deinit/68 (CBU_Deinit) @09369460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitMiddlewares/28 
+  Calls: 
+FSM_Update/67 (FSM_Update) @093691c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+DBG_Init/66 (DBG_Init) @093690e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+PWB_Init/65 (PWB_Init) @09369000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+CTB_Init/64 (CTB_Init) @09365ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+CNV_Init/63 (CNV_Init) @09365e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_DeinitModules/30 INI_InitModules/26 
+  Calls: 
+COM_Init/62 (COM_Init) @09365d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+MPM_Init/61 (MPM_Init) @09365c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+FSM_Init/60 (FSM_Init) @09365b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+PAR_Init/59 (PAR_Init) @09365a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+ACT_Init/58 (ACT_Init) @093659a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 
+  Calls: 
+FLA_Init/57 (FLA_Init) @09365700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitMiddlewares/24 
+  Calls: 
+Pwm_SetPeriodAndDuty/56 (Pwm_SetPeriodAndDuty) @09365540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 INI_InitDrivers/23 INI_InitDrivers/23 INI_InitDrivers/23 INI_InitDrivers/23 INI_InitDrivers/23 
+  Calls: 
+Dio_WriteChannel/55 (Dio_WriteChannel) @09365460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitModules/26 INI_InitDrivers/23 
+  Calls: 
+Crc_xConfigInit/54 (Crc_xConfigInit) @093638b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Crc_Init/53 (Crc_Init) @09365380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Pwm_Config_Init/52 (Pwm_Config_Init) @09363828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Pwm_Init/51 (Pwm_Init) @093652a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Icu_Config_Init/50 (Icu_Config_Init) @09363798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Icu_Init/49 (Icu_Init) @093651c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Can_Config_Init/48 (Can_Config_Init) @09363708
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Can_Init/47 (Can_Init) @09365000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Spi_SetAsyncMode/46 (Spi_SetAsyncMode) @093620e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Spi_Config_Init/45 (Spi_Config_Init) @09363630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Spi_Init/44 (Spi_Init) @09362ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Gpt_Config_Init/43 (Gpt_Config_Init) @093635a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Init/42 (Gpt_Init) @09362e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Platform_Init/41 (Platform_Init) @09362d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Port_Config_Init/40 (Port_Config_Init) @093634c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Port_Init/39 (Port_Init) @09362c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcl_Config_INIT/38 (Mcl_Config_INIT) @09363438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Mcl_Init/37 (Mcl_Init) @09362b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcu_SetMode/36 (Mcu_SetMode) @09362a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcu_DistributePllClock/35 (Mcu_DistributePllClock) @093629a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcu_GetPllStatus/34 (Mcu_GetPllStatus) @093628c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcu_InitClock/33 (Mcu_InitClock) @093627e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+Mcu_Config_Init/32 (Mcu_Config_Init) @09363288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: INI_InitDrivers/23 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Mcu_Init/31 (Mcu_Init) @09362700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: INI_InitDrivers/23 
+  Calls: 
+INI_DeinitModules/30 (INI_DeinitModules) @093622a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: ACT_Deinit/73 SCH_Deinit/72 CNV_Deinit/71 CNV_Init/63 MPM_Deinit/70 FSM_Deinit/69 
+INI_DeinitLibrairies/29 (INI_DeinitLibrairies) @09362000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+INI_DeinitMiddlewares/28 (INI_DeinitMiddlewares) @092c3c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_Deinit/68 
+INI_DeinitDrivers/27 (INI_DeinitDrivers) @092c3700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+INI_InitModules/26 (INI_InitModules) @092c3e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 Dio_WriteChannel/55 FSM_Update/67 DBG_Init/66 PWB_Init/65 CTB_Init/64 CNV_Init/63 COM_Init/62 MPM_Init/61 FSM_Init/60 PAR_Init/59 ACT_Init/58 
+INI_InitLibrairies/25 (INI_InitLibrairies) @092c3b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+INI_InitMiddlewares/24 (INI_InitMiddlewares) @092c38c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FLA_Init/57 
+INI_InitDrivers/23 (INI_InitDrivers) @092c3620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcu_Config_Init/32 (addr)Mcl_Config_INIT/38 (addr)Port_Config_Init/40 (addr)Gpt_Config_Init/43 (addr)Spi_Config_Init/45 (addr)Can_Config_Init/48 (addr)Icu_Config_Init/50 (addr)Pwm_Config_Init/52 (addr)Crc_xConfigInit/54 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_SetPeriodAndDuty/56 Pwm_SetPeriodAndDuty/56 Pwm_SetPeriodAndDuty/56 Pwm_SetPeriodAndDuty/56 Pwm_SetPeriodAndDuty/56 Pwm_SetPeriodAndDuty/56 Dio_WriteChannel/55 Crc_Init/53 Pwm_Init/51 Icu_Init/49 Can_Init/47 Spi_SetAsyncMode/46 Spi_Init/44 Gpt_Init/42 Platform_Init/41 Port_Init/39 Mcl_Init/37 Mcu_SetMode/36 Mcu_DistributePllClock/35 Mcu_GetPllStatus/34 Mcu_InitClock/33 Mcu_Init/31 
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @0640d240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+INI_DeinitModules ()
+{
+  <bb 2> :
+  FSM_Deinit ();
+  MPM_Deinit ();
+  CNV_Init ();
+  CNV_Deinit ();
+  SCH_Deinit ();
+  ACT_Deinit ();
+  return;
+
+}
+
+
+INI_DeinitLibrairies ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_DeinitMiddlewares ()
+{
+  <bb 2> :
+  CBU_Deinit ();
+  return;
+
+}
+
+
+INI_DeinitDrivers ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_InitModules ()
+{
+  <bb 2> :
+  ACT_Init ();
+  PAR_Init ();
+  FSM_Init ();
+  MPM_Init ();
+  COM_Init ();
+  CNV_Init ();
+  CTB_Init ();
+  PWB_Init ();
+  DBG_Init ();
+  FSM_Update ();
+  Dio_WriteChannel (87, 1);
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Dio_WriteChannel (122, 1);
+  Dio_WriteChannel (124, 1);
+  return;
+
+}
+
+
+INI_InitLibrairies ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_InitMiddlewares ()
+{
+  <bb 2> :
+  FLA_Init ();
+  return;
+
+}
+
+
+INI_InitDrivers ()
+{
+  <bb 2> :
+  Mcu_Init (&Mcu_Config_Init);
+  Mcu_InitClock (0);
+
+  <bb 3> :
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  Mcu_DistributePllClock ();
+  Mcu_SetMode (0);
+  Mcl_Init (&Mcl_Config_INIT);
+  Port_Init (&Port_Config_Init);
+  Platform_Init (0B);
+  Gpt_Init (&Gpt_Config_Init);
+  Spi_Init (&Spi_Config_Init);
+  Spi_SetAsyncMode (1);
+  Can_Init (&Can_Config_Init);
+  Icu_Init (&Icu_Config_Init);
+  Pwm_Init (&Pwm_Config_Init);
+  Crc_Init (&Crc_xConfigInit);
+  Dio_WriteChannel (87, 1);
+  Pwm_SetPeriodAndDuty (0, 60241, 16384);
+  Pwm_SetPeriodAndDuty (1, 60241, 16384);
+  Pwm_SetPeriodAndDuty (2, 60241, 16384);
+  Pwm_SetPeriodAndDuty (3, 60241, 16384);
+  Pwm_SetPeriodAndDuty (4, 60241, 16384);
+  Pwm_SetPeriodAndDuty (5, 60241, 16384);
+  return;
+
+}
+
+

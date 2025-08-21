@@ -1,0 +1,9 @@
+COMrx.c:43:6:COM_RxTask	8	static
+COMrx.c:62:16:com_GetFrameIndex	24	static
+COMrx.c:115:13:com_UpdateErrors	8	static
+COMrx.c:171:13:com_ReceivedManagement	304	static
+COMrx.c:259:13:com_ControlReceivedManagement	32	static
+COMrx.c:334:13:com_InternalReceivedManagement	24	static
+COMrx.c:424:13:com_MaintenanceReceivedManagement	152	static
+COMrx.c:462:13:com_HandleMaintenanceEquipmentTestRequest	48	static
+COMrx.c:523:13:com_HandleMaintenanceParameterRequest	16	static

@@ -1,0 +1,74 @@
+
+
+PS : this design was based on these documents with the following versions : 
+	- 50147TRS001_01
+	- 50147ICD001-03
+	- 50147SWAD001-01
+	
+# Design of CTB module.
+
+the power board management is an application module that performs a PBIT, CBIT and IOs tests and commands located on interface power board.
+the PWB management should be executed each 1ms.
+
+## Inputs DATA / Services :
+
+	- PWB_Req : Request to command GPO, measurements.
+  	- GPI_Status : the Status of monitored GPI. (Ps_Valid, Aux_S1, Aux_S2)
+
+## Outputs DATA / Services : 
+
+	- flags : contains the relays status and the Pbit/Cbit results
+	- GPO cmd, (Cde_S1, Cde_S2, Cde_S3, Mux address A3..A0 )
+	- manage Raw and Calibrated measurements.
+	- for the Pbit : 
+		* test Temperatures consistency (by comparison with Power Core)
+		* test (CLOSE / OPEN) S3 HV coupler relay only if V_HV < PAR_HVCOUPLER_RELAY_TEST_CONDITION
+		* test precharge sequence only if V_LV > PAR_LVPRECHARGE_RELAY_TEST_CONDITION
+	- for the Cbit :
+		* check HV & LV relays ‘consistency (position vs command)
+		* read and check HV and LV measurements (Voltage, Current and Temperature)
+		* check consistency between measurements done at Control & COMETI levels
+		* monitor COMETI units and check their status 
+		
+## Dependencies : 
+
+the CTB module needs the following : 
+
+### MCAL :
+	- PORT Driver GPIO Configuration
+	- DIO Driver GPIO set/unset/read
+	- SPI Driver SPI Measurements
+
+### MiddleWare : 
+	- CBU
+	
+### Application Layer : 
+	- Scheduler 
+	- FSM
+	- CAN Communication
+	- DBG
+	
+## Pseudo Code :
+the PWB Module should have the following functions :
+	- Init function : 
+	- Deinit function :
+	- PWB_Management :
+
+these functions are classified as sub-modules : a sub-module to manage all the PBIT opertaions and an other to manage CBIT opration and a submodule to manage the GPIO.
+
+	- these functions are called in a switch case statement in main function (PWB_Management) that takes a PWB_req as a input.
+	- during this main function we update the PWB_flags
+
+file structure : 
+	- PWB.h : declaring all the functions and variables needed to integrate all the functions
+	- PWB.c : implementing all the functions and variables needed to integrate all the functions
+	- PWBPbit.h : declaring all the functions and variables needed for the PBIT state
+	- PWBPbit.c : implementing all the functions needed for the PBIT state
+	- PWBCbit.h : declaring all the functions and variables needed for the CBIT operations
+	- PWBCbit.c : implementing all the functions needed for the CBIT operations
+	- PWBio.h : declaring all the functions and variables needed for the GPIO operations
+	- PWBio.c : implementing all the functions needed for the GPIO operations
+
+
+
+

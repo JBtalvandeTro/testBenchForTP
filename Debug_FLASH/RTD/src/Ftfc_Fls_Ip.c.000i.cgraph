@@ -1,0 +1,3114 @@
+Trivially needed symbols: Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram Ftfc_Fls_Ip_FlashAccessCalloutFinish Ftfc_Fls_Ip_FlashAccessCalloutStart Ftfc_Fls_Ip_SetAsyncMode Ftfc_Fls_Ip_InvalidPrefetchBuff Ftfc_Fls_Ip_GetBlockNumberFromAddress Ftfc_Fls_Ip_ConvertSysToFTFEAddr Ftfc_Fls_Ip_LoadFCCOBParams Ftfc_Fls_Ip_ClearErrorFlags Ftfc_Fls_Ip_ControllerBusy Ftfc_Fls_Ip_CtrlStatus Ftfc_Fls_Flash_AbortSuspended Ftfc_Fls_Ip_WriteStatus Ftfc_Fls_Ip_Write Ftfc_Fls_Ip_WritePreCheck Ftfc_Fls_Ip_SectorEraseStatus Ftfc_Fls_Ip_SectorErase Ftfc_Fls_Ip_SectorErasePreCheck Ftfc_Fls_Ip_EraseVerify Ftfc_Fls_Ip_ProgramVerify Ftfc_Fls_Ip_Compare Ftfc_Fls_Ip_ComparePreCheck Ftfc_Fls_Ip_ReadStatus Ftfc_Fls_Ip_Read Ftfc_Fls_Ip_ReadPreCheck Ftfc_Fls_Ip_CheckValidRange Ftfc_Fls_Ip_ReadData Ftfc_Fls_ComputeReadSize Ftfc_Fls_SynchronizeCache Ftfc_Fls_Ip_WaitForOperationFinish Ftfc_Fls_Ip_Abort Ftfc_Fls_Ip_Init Ftfc_Fls_Ip_CheckFProtReg Ftfc_Fls_Ip_CalculateDFlashBitSize FTFx_BaseAddress Ftfc_Fls_Ip_Async Ftfc_Fls_Ip_pConfigPtr Ftfc_Fls_Ip_eEraseStatus Ftfc_Fls_Ip_eWriteStatus Ftfc_Fls_Ip_eReadStatus Ftfc_Fls_Ip_u32ErasedSectorAddress Ftfc_Fls_Ip_pProgrammedData Ftfc_Fls_Ip_u32ProgrammedLength Ftfc_Fls_Ip_u32ProgrammedAddress Ftfc_Fls_Ip_u32CurrentTicks Ftfc_Fls_Ip_u32TimeoutTicks Ftfc_Fls_Ip_u32ElapsedTicks Ftfc_Fls_Ip_u32DFlashBitSizeProt g_ptLmemBasePtrArray
+
+
+Initial Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_CtrlStatus/57 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b6ca80
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b6c2a0
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b6c000
+  References: Ftfc_Fls_Ip_Async/29 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b64b60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b64620
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b640e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_LoadFCCOBParams/60 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b64d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b64a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b647e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b64540
+  References: Ftfc_Fls_Ip_u32CurrentTicks/20 (addr)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: OsIf_GetElapsed/70 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b642a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b64000
+  References: Ftfc_Fls_Ip_eWriteStatus/26 (read)Ftfc_Fls_Ip_u32ProgrammedAddress/21 (read)Ftfc_Fls_Ip_pProgrammedData/23 (read)Ftfc_Fls_Ip_u32ProgrammedLength/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05e7f9a0
+  References: Ftfc_Fls_Ip_u32ProgrammedAddress/21 (write)Ftfc_Fls_Ip_u32ProgrammedLength/22 (write)Ftfc_Fls_Ip_pProgrammedData/23 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eWriteStatus/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e7f2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05e7fb60
+  References: Ftfc_Fls_Ip_eEraseStatus/27 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05e7f8c0
+  References: Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eEraseStatus/27 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_SectorErasePreCheck/50 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e7f620
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e7f1c0
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e76a80
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05e76460
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ComparePreCheck/46 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e76ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e76c40
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05e769a0
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData/41 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ReadPreCheck/43 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e76700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e76380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_ComparePreCheck/46 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_ReadPreCheck/43 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05e760e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05e760e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bef2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05befee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05bef7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05bef9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 
+  Calls: Cache_Ip_InvalidateByAddr/15 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05bef700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Flash_AbortSuspended/56 Ftfc_Fls_Ip_Abort/34 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bef460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bef1c0
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 DevAssert/0 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be8ee0
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be8e00
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Init/33 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05be8b60
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2cf0
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_SetAsyncMode/64 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2ca8
+  References: 
+  Referring: Ftfc_Fls_Ip_Init/33 (write)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2c18
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2b88
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2af8
+  References: 
+  Referring: Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_ProgramVerify/48 (write)Ftfc_Fls_Ip_EraseVerify/49 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2a68
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2990
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2900
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2870
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05be27e0
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (addr)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05be2750
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05be2708
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be26c0
+  References: 
+  Referring: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (write)Ftfc_Fls_Ip_CheckFProtReg/32 (read)Ftfc_Fls_Ip_CheckFProtReg/32 (read)
+  Availability: not-ready
+  Varpool flags:
+Cache_Ip_CleanByAddr/16 (Cache_Ip_CleanByAddr) @05bd8620
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_InvalidateByAddr/15 (Cache_Ip_InvalidateByAddr) @05bd8380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bef9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 
+Cache_Ip_Clean/14 (Cache_Ip_Clean) @05bd80e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Invalidate/13 (Cache_Ip_Invalidate) @05bbae00
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Disable/12 (Cache_Ip_Disable) @05bbab60
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Enable/11 (Cache_Ip_Enable) @05bba8c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheCleanByAddr/10 (hwAcc_Lmem_ProcessorCodeCacheCleanByAddr) @05bba1c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 (hwAcc_Lmem_ProcessorCodeInvalidateByAddr) @05bb4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bef9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 
+hwAcc_Lmem_ProcessorCodeClean/8 (hwAcc_Lmem_ProcessorCodeClean) @05bb49a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeInvalidate/7 (hwAcc_Lmem_ProcessorCodeInvalidate) @05bb4700
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheDisable/6 (hwAcc_Lmem_ProcessorCodeCacheDisable) @05bb4460
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheEnable/5 (hwAcc_Lmem_ProcessorCodeCacheEnable) @05bb41c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_AddressReg/4 (hwAcc_Lmem_AddressReg) @05baeee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bef9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+hwAcc_Lmem_LineControlReg/3 (hwAcc_Lmem_LineControlReg) @05baec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05baeee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+hwAcc_Lmem_ControlReg/2 (hwAcc_Lmem_ControlReg) @05bae9a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05be2678
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bef1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Init/33 
+  Calls: 
+
+Removing unused symbols: Cache_Ip_CleanByAddr Cache_Ip_Clean Cache_Ip_Invalidate Cache_Ip_Disable Cache_Ip_Enable hwAcc_Lmem_ProcessorCodeCacheCleanByAddr hwAcc_Lmem_ProcessorCodeClean hwAcc_Lmem_ProcessorCodeInvalidate hwAcc_Lmem_ProcessorCodeCacheDisable hwAcc_Lmem_ProcessorCodeCacheEnable hwAcc_Lmem_ControlReg
+
+Reclaimed Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_CtrlStatus/57 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_Async/29 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_LoadFCCOBParams/60 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32CurrentTicks/20 (addr)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: OsIf_GetElapsed/70 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eWriteStatus/26 (read)Ftfc_Fls_Ip_u32ProgrammedAddress/21 (read)Ftfc_Fls_Ip_pProgrammedData/23 (read)Ftfc_Fls_Ip_u32ProgrammedLength/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ProgrammedAddress/21 (write)Ftfc_Fls_Ip_u32ProgrammedLength/22 (write)Ftfc_Fls_Ip_pProgrammedData/23 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eWriteStatus/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eEraseStatus/27 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eEraseStatus/27 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_SectorErasePreCheck/50 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ComparePreCheck/46 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData/41 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ReadPreCheck/43 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_ComparePreCheck/46 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_ReadPreCheck/43 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 
+  Calls: Cache_Ip_InvalidateByAddr/15 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Flash_AbortSuspended/56 Ftfc_Fls_Ip_Abort/34 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 DevAssert/0 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Init/33 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_SetAsyncMode/64 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Init/33 (write)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_ProgramVerify/48 (write)Ftfc_Fls_Ip_EraseVerify/49 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (addr)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (write)Ftfc_Fls_Ip_CheckFProtReg/32 (read)Ftfc_Fls_Ip_CheckFProtReg/32 (read)
+  Availability: not-ready
+  Varpool flags:
+Cache_Ip_InvalidateByAddr/15 (Cache_Ip_InvalidateByAddr) @05bd8380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 (hwAcc_Lmem_ProcessorCodeInvalidateByAddr) @05bb4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 
+hwAcc_Lmem_AddressReg/4 (hwAcc_Lmem_AddressReg) @05baeee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+hwAcc_Lmem_LineControlReg/3 (hwAcc_Lmem_LineControlReg) @05baec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Init/33 
+  Calls: 
+
+
+Initial Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_CtrlStatus/57 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_Async/29 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_LoadFCCOBParams/60 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32CurrentTicks/20 (addr)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: OsIf_GetElapsed/70 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eWriteStatus/26 (read)Ftfc_Fls_Ip_u32ProgrammedAddress/21 (read)Ftfc_Fls_Ip_pProgrammedData/23 (read)Ftfc_Fls_Ip_u32ProgrammedLength/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ProgrammedAddress/21 (write)Ftfc_Fls_Ip_u32ProgrammedLength/22 (write)Ftfc_Fls_Ip_pProgrammedData/23 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eWriteStatus/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eEraseStatus/27 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eEraseStatus/27 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_SectorErasePreCheck/50 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ComparePreCheck/46 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData/41 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ReadPreCheck/43 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_ComparePreCheck/46 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_ReadPreCheck/43 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 
+  Calls: Cache_Ip_InvalidateByAddr/15 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Flash_AbortSuspended/56 Ftfc_Fls_Ip_Abort/34 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 DevAssert/0 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Init/33 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_SetAsyncMode/64 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Init/33 (write)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_ProgramVerify/48 (write)Ftfc_Fls_Ip_EraseVerify/49 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (addr)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (write)Ftfc_Fls_Ip_CheckFProtReg/32 (read)Ftfc_Fls_Ip_CheckFProtReg/32 (read)
+  Availability: not-ready
+  Varpool flags:
+Cache_Ip_InvalidateByAddr/15 (Cache_Ip_InvalidateByAddr) @05bd8380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 (hwAcc_Lmem_ProcessorCodeInvalidateByAddr) @05bb4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 
+hwAcc_Lmem_AddressReg/4 (hwAcc_Lmem_AddressReg) @05baeee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+hwAcc_Lmem_LineControlReg/3 (hwAcc_Lmem_LineControlReg) @05baec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Init/33 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_CtrlStatus/57 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_Async/29 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_LoadFCCOBParams/60 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32CurrentTicks/20 (addr)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: OsIf_GetElapsed/70 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eWriteStatus/26 (read)Ftfc_Fls_Ip_u32ProgrammedAddress/21 (read)Ftfc_Fls_Ip_pProgrammedData/23 (read)Ftfc_Fls_Ip_u32ProgrammedLength/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ProgrammedAddress/21 (write)Ftfc_Fls_Ip_u32ProgrammedLength/22 (write)Ftfc_Fls_Ip_pProgrammedData/23 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eWriteStatus/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eEraseStatus/27 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eEraseStatus/27 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_SectorErasePreCheck/50 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ComparePreCheck/46 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData/41 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ReadPreCheck/43 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_ComparePreCheck/46 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_ReadPreCheck/43 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 
+  Calls: Cache_Ip_InvalidateByAddr/15 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Flash_AbortSuspended/56 Ftfc_Fls_Ip_Abort/34 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 DevAssert/0 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (write)
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Init/33 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_SetAsyncMode/64 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Init/33 (write)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_ProgramVerify/48 (write)Ftfc_Fls_Ip_EraseVerify/49 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (addr)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)
+  Availability: not-ready
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (write)Ftfc_Fls_Ip_CheckFProtReg/32 (read)Ftfc_Fls_Ip_CheckFProtReg/32 (read)
+  Availability: not-ready
+  Varpool flags:
+Cache_Ip_InvalidateByAddr/15 (Cache_Ip_InvalidateByAddr) @05bd8380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 (hwAcc_Lmem_ProcessorCodeInvalidateByAddr) @05bb4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Cache_Ip_InvalidateByAddr/15 
+  Calls: hwAcc_Lmem_AddressReg/4 hwAcc_Lmem_LineControlReg/3 
+hwAcc_Lmem_AddressReg/4 (hwAcc_Lmem_AddressReg) @05baeee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+hwAcc_Lmem_LineControlReg/3 (hwAcc_Lmem_LineControlReg) @05baec40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: hwAcc_Lmem_ProcessorCodeInvalidateByAddr/9 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Init/33 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftfc_Fls_SynchronizeCache/36 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftfc_Fls_Ip_CtrlStatus/57 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_WaitForOperationFinish/35 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (read)Ftfc_Fls_Ip_pConfigPtr/28 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+   Indirect call
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_Async/29 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_LoadFCCOBParams/60 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_u32CurrentTicks/20 (addr)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32ElapsedTicks/18 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: OsIf_GetElapsed/70 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_eWriteStatus/26 (read)Ftfc_Fls_Ip_u32ProgrammedAddress/21 (read)Ftfc_Fls_Ip_pProgrammedData/23 (read)Ftfc_Fls_Ip_u32ProgrammedLength/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_u32ProgrammedAddress/21 (write)Ftfc_Fls_Ip_u32ProgrammedLength/22 (write)Ftfc_Fls_Ip_pProgrammedData/23 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eWriteStatus/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_eEraseStatus/27 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_CtrlStatus/57 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32ElapsedTicks/18 (write)Ftfc_Fls_Ip_u32CurrentTicks/20 (write)Ftfc_Fls_Ip_Async/29 (read)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_u32TimeoutTicks/19 (write)Ftfc_Fls_Ip_eEraseStatus/27 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: OsIf_MicrosToTicks/68 OsIf_MicrosToTicks/68 OsIf_GetCounter/69 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_Ip_ClearErrorFlags/59 Ftfc_Fls_Ip_LoadFCCOBParams/60 Ftfc_Fls_Ip_SectorErasePreCheck/50 Ftfc_Fls_Flash_AbortSuspended/56 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_SectorErase/51 
+  Calls: Ftfc_Fls_Ip_ControllerBusy/58 Ftfc_Fls_Ip_CheckFProtReg/32 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_ReadData32/38 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WriteStatus/55 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_SectorEraseStatus/52 
+  Calls: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ComparePreCheck/46 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (write)Ftfc_Fls_Ip_eReadStatus/25 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_ReadStatus/45 Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 Ftfc_Fls_Ip_ReadData/41 Ftfc_Fls_Ip_FlashAccessCalloutStart/65 Ftfc_Fls_ComputeReadSize/37 Ftfc_Fls_Ip_InvalidPrefetchBuff/63 Ftfc_Fls_SynchronizeCache/36 Ftfc_Fls_Ip_ReadPreCheck/43 DevAssert/0 Ftfc_Fls_Ip_CheckValidRange/42 DevAssert/0 DevAssert/0 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_CheckValidRange/42 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_ComparePreCheck/46 Ftfc_Fls_Ip_ReadPreCheck/43 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Read/44 
+  Calls: Ftfc_Fls_Ip_ReadData8/40 Ftfc_Fls_Ip_ReadData16/39 Ftfc_Fls_Ip_ReadData32/38 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_ReadData/41 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_EraseVerify/49 Ftfc_Fls_Ip_ProgramVerify/48 Ftfc_Fls_Ip_Read/44 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Flash_AbortSuspended/56 Ftfc_Fls_Ip_Abort/34 
+  Calls: OsIf_GetElapsed/70 OsIf_GetCounter/69 OsIf_MicrosToTicks/68 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_WaitForOperationFinish/35 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftfc_Fls_Ip_pConfigPtr/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 DevAssert/0 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_WritePreCheck/53 Ftfc_Fls_Ip_SectorErasePreCheck/50 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftfc_Fls_Ip_Init/33 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_SetAsyncMode/64 (write)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_SectorErase/51 (read)Ftfc_Fls_Ip_Write/54 (read)Ftfc_Fls_Ip_Write/54 (read)
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Init/33 (write)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (read)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_ProgramVerify/48 (write)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_EraseVerify/49 (write)Ftfc_Fls_Ip_ReadStatus/45 (write)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (read)Ftfc_Fls_Ip_Read/44 (write)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)Ftfc_Fls_Ip_Compare/47 (write)Ftfc_Fls_Ip_Compare/47 (read)
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)Ftfc_Fls_Ip_SectorEraseStatus/52 (read)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_WriteStatus/55 (read)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_CtrlStatus/57 (addr)Ftfc_Fls_Ip_Write/54 (write)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_Write/54 (write)Ftfc_Fls_Ip_Write/54 (write)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftfc_Fls_Ip_SectorErase/51 (write)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (read)Ftfc_Fls_Ip_CtrlStatus/57 (write)Ftfc_Fls_Ip_Write/54 (write)
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (write)Ftfc_Fls_Ip_CheckFProtReg/32 (read)Ftfc_Fls_Ip_CheckFProtReg/32 (read)
+  Availability: available
+  Varpool flags:
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Write/54 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Compare/47 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_Read/44 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_SectorErase/51 Ftfc_Fls_Ip_Init/33 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: FTFx_BaseAddress Ftfc_Fls_Ip_Async Ftfc_Fls_Ip_pConfigPtr Ftfc_Fls_Ip_eEraseStatus Ftfc_Fls_Ip_eWriteStatus Ftfc_Fls_Ip_eReadStatus Ftfc_Fls_Ip_u32ErasedSectorAddress Ftfc_Fls_Ip_pProgrammedData Ftfc_Fls_Ip_u32ProgrammedLength Ftfc_Fls_Ip_u32ProgrammedAddress Ftfc_Fls_Ip_u32CurrentTicks Ftfc_Fls_Ip_u32TimeoutTicks Ftfc_Fls_Ip_u32ElapsedTicks Ftfc_Fls_Ip_u32DFlashBitSizeProt g_ptLmemBasePtrArray
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17/72 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17/71 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17) @049fd700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_GetElapsed/70 (OsIf_GetElapsed) @049fd460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_GetCounter/69 (OsIf_GetCounter) @049fd380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_MicrosToTicks/68 (OsIf_MicrosToTicks) @049fd2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram/67 (Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram) @05b6ca80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutFinish/66 (Ftfc_Fls_Ip_FlashAccessCalloutFinish) @05b6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_FlashAccessCalloutStart/65 (Ftfc_Fls_Ip_FlashAccessCalloutStart) @05b6c000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_SetAsyncMode/64 (Ftfc_Fls_Ip_SetAsyncMode) @05b64b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_InvalidPrefetchBuff/63 (Ftfc_Fls_Ip_InvalidPrefetchBuff) @05b64620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/62 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05b640e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr/61 (Ftfc_Fls_Ip_ConvertSysToFTFEAddr) @05b64d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_LoadFCCOBParams/60 (Ftfc_Fls_Ip_LoadFCCOBParams) @05b64a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ClearErrorFlags/59 (Ftfc_Fls_Ip_ClearErrorFlags) @05b647e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ControllerBusy/58 (Ftfc_Fls_Ip_ControllerBusy) @05b64540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_CtrlStatus/57 (Ftfc_Fls_Ip_CtrlStatus) @05b642a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Flash_AbortSuspended/56 (Ftfc_Fls_Flash_AbortSuspended) @05b64000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_WriteStatus/55 (Ftfc_Fls_Ip_WriteStatus) @05e7f9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_Write/54 (Ftfc_Fls_Ip_Write) @05e7f2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_WritePreCheck/53 (Ftfc_Fls_Ip_WritePreCheck) @05e7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_SectorEraseStatus/52 (Ftfc_Fls_Ip_SectorEraseStatus) @05e7f8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_SectorErase/51 (Ftfc_Fls_Ip_SectorErase) @05e7f620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_SectorErasePreCheck/50 (Ftfc_Fls_Ip_SectorErasePreCheck) @05e7f1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_EraseVerify/49 (Ftfc_Fls_Ip_EraseVerify) @05e76a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ProgramVerify/48 (Ftfc_Fls_Ip_ProgramVerify) @05e76460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_Compare/47 (Ftfc_Fls_Ip_Compare) @05e76ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ComparePreCheck/46 (Ftfc_Fls_Ip_ComparePreCheck) @05e76c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadStatus/45 (Ftfc_Fls_Ip_ReadStatus) @05e769a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_Read/44 (Ftfc_Fls_Ip_Read) @05e76700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadPreCheck/43 (Ftfc_Fls_Ip_ReadPreCheck) @05e76380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_CheckValidRange/42 (Ftfc_Fls_Ip_CheckValidRange) @05e760e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadData/41 (Ftfc_Fls_Ip_ReadData) @05bef7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadData8/40 (Ftfc_Fls_Ip_ReadData8) @05bef2a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadData16/39 (Ftfc_Fls_Ip_ReadData16) @05befee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_ReadData32/38 (Ftfc_Fls_Ip_ReadData32) @05befc40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Ftfc_Fls_ComputeReadSize/37 (Ftfc_Fls_ComputeReadSize) @05bef9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_SynchronizeCache/36 (Ftfc_Fls_SynchronizeCache) @05bef700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_WaitForOperationFinish/35 (Ftfc_Fls_Ip_WaitForOperationFinish) @05bef460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_Abort/34 (Ftfc_Fls_Ip_Abort) @05bef1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_Init/33 (Ftfc_Fls_Ip_Init) @05be8ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_CheckFProtReg/32 (Ftfc_Fls_Ip_CheckFProtReg) @05be8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Ftfc_Fls_Ip_CalculateDFlashBitSize/31 (Ftfc_Fls_Ip_CalculateDFlashBitSize) @05be8b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+FTFx_BaseAddress/30 (FTFx_BaseAddress) @05be2cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Ftfc_Fls_Ip_Async/29 (Ftfc_Fls_Ip_Async) @05be2ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2cf0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_pConfigPtr/28 (Ftfc_Fls_Ip_pConfigPtr) @05be2c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2ca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_eEraseStatus/27 (Ftfc_Fls_Ip_eEraseStatus) @05be2b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2c18
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eWriteStatus/26 (Ftfc_Fls_Ip_eWriteStatus) @05be2af8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_eReadStatus/25 (Ftfc_Fls_Ip_eReadStatus) @05be2a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2af8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Ftfc_Fls_Ip_u32ErasedSectorAddress/24 (Ftfc_Fls_Ip_u32ErasedSectorAddress) @05be2990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2a68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_pProgrammedData/23 (Ftfc_Fls_Ip_pProgrammedData) @05be2900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2990
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedLength/22 (Ftfc_Fls_Ip_u32ProgrammedLength) @05be2870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2900
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ProgrammedAddress/21 (Ftfc_Fls_Ip_u32ProgrammedAddress) @05be27e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2870
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32CurrentTicks/20 (Ftfc_Fls_Ip_u32CurrentTicks) @05be2750
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05be27e0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32TimeoutTicks/19 (Ftfc_Fls_Ip_u32TimeoutTicks) @05be2708
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05be2750
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32ElapsedTicks/18 (Ftfc_Fls_Ip_u32ElapsedTicks) @05be26c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05be2708
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Ftfc_Fls_Ip_u32DFlashBitSizeProt/17 (Ftfc_Fls_Ip_u32DFlashBitSizeProt) @05be2678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be26c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+g_ptLmemBasePtrArray/1 (g_ptLmemBasePtrArray) @05bac558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05be2678
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05a6e1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

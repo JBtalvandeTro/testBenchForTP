@@ -1,0 +1,1023 @@
+Crc_Ip_SwCalculate (const struct Crc_Ip_LogicChannelStateType * pxLogicChannelState, const uint8 * DataPtr, const uint32 Length, const uint64 InitialSeedStartValue)
+{
+  uint64 LocResult;
+  uint64 D.5870;
+  _Bool _1;
+  _Bool _2;
+  const struct Crc_Ip_CrcProtocolInfoType * _3;
+  <unnamed type> _4;
+  const struct Crc_Ip_CrcProtocolInfoType * _5;
+  unsigned char _6;
+  unsigned char _7;
+  const struct Crc_Ip_CrcProtocolInfoType * _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  const struct Crc_Ip_CrcProtocolInfoType * _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  const struct Crc_Ip_CrcProtocolInfoType * _14;
+  uint64 _34;
+
+  <bb 2> :
+  LocResult_17 = 0;
+  _1 = pxLogicChannelState_18(D) != 0B;
+  Crc_Ip_DevAssert (_1);
+  _2 = DataPtr_21(D) != 0B;
+  Crc_Ip_DevAssert (_2);
+  _3 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  _4 = _3->Width;
+  switch (_4) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  _5 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  _6 = (unsigned char) InitialSeedStartValue_24(D);
+  _7 = Crc_Ip_SwCalculateCRC8 (_5, DataPtr_21(D), Length_23(D), _6);
+  LocResult_32 = (uint64) _7;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  _8 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  _9 = (short unsigned int) InitialSeedStartValue_24(D);
+  _10 = Crc_Ip_SwCalculateCRC16 (_8, DataPtr_21(D), Length_23(D), _9);
+  LocResult_30 = (uint64) _10;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  _11 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  _12 = (long unsigned int) InitialSeedStartValue_24(D);
+  _13 = Crc_Ip_SwCalculateCRC32 (_11, DataPtr_21(D), Length_23(D), _12);
+  LocResult_28 = (uint64) _13;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  _14 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  LocResult_26 = Crc_Ip_SwCalculateCRC64 (_14, DataPtr_21(D), Length_23(D), InitialSeedStartValue_24(D));
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  Crc_Ip_DevAssert (0);
+
+  <bb 8> :
+  # LocResult_15 = PHI <LocResult_32(3), LocResult_30(4), LocResult_28(5), LocResult_26(6), LocResult_17(7)>
+  _34 = LocResult_15;
+
+  <bb 9> :
+<L6>:
+  return _34;
+
+}
+
+
+Crc_Ip_SwCalculateCRC64 (const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint64 StartValue64)
+{
+  uint64 CrcValue;
+  uint64 CrcData;
+  uint32 LengthIdx;
+  uint32 BitsIdx;
+  uint64 D.5868;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  signed long long CrcValue.3_9;
+  long long unsigned int _10;
+  long long unsigned int _11;
+  <unnamed type> _12;
+  unsigned char _13;
+  _Bool _14;
+  _Bool _15;
+  _Bool _16;
+  uint64 _36;
+
+  <bb 2> :
+  BitsIdx_24 = 0;
+  LengthIdx_25 = 0;
+  CrcData_26 = 0;
+  CrcValue_28 = StartValue64_27(D);
+  LengthIdx_29 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_37(D) + LengthIdx_18;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_32(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_32(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_32(D)->WriteByteSwap;
+  CrcData_39 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  _8 = CrcData_39 << 56;
+  CrcValue_40 = CrcValue_21 ^ _8;
+  BitsIdx_41 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  CrcValue.3_9 = (signed long long) CrcValue_20;
+  if (CrcValue.3_9 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _10 = CrcValue_20 << 1;
+  _11 = pxCrcProtocolInfo_32(D)->PolynomValue;
+  CrcValue_44 = _10 ^ _11;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  CrcValue_43 = CrcValue_20 << 1;
+
+  <bb 7> :
+  # CrcValue_19 = PHI <CrcValue_44(5), CrcValue_43(6)>
+  BitsIdx_45 = BitsIdx_17 + 1;
+
+  <bb 8> :
+  # BitsIdx_17 = PHI <BitsIdx_41(3), BitsIdx_45(7)>
+  # CrcValue_20 = PHI <CrcValue_40(3), CrcValue_19(7)>
+  if (BitsIdx_17 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  LengthIdx_42 = LengthIdx_18 + 1;
+
+  <bb 10> :
+  # LengthIdx_18 = PHI <LengthIdx_29(2), LengthIdx_42(9)>
+  # CrcValue_21 = PHI <CrcValue_28(2), CrcValue_20(9)>
+  if (LengthIdx_18 < Length_31(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _12 = pxCrcProtocolInfo_32(D)->Width;
+  _13 = (unsigned char) _12;
+  _14 = pxCrcProtocolInfo_32(D)->ReadBitSwap;
+  _15 = pxCrcProtocolInfo_32(D)->ReadByteSwap;
+  CrcValue_34 = Crc_Ip_LibTranspose (CrcValue_21, _13, _14, _15);
+  _16 = pxCrcProtocolInfo_32(D)->InverseEnable;
+  if (_16 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  CrcValue_35 = ~CrcValue_34;
+
+  <bb 13> :
+  # CrcValue_22 = PHI <CrcValue_34(11), CrcValue_35(12)>
+  _36 = CrcValue_22;
+
+  <bb 14> :
+<L11>:
+  return _36;
+
+}
+
+
+Crc_Ip_SwCalculateCRC32 (const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint32 StartValue32)
+{
+  uint32 u32CrcValue;
+  uint32 u32CrcData;
+  uint32 LengthIdx;
+  uint32 BitsIdx;
+  uint32 D.5861;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  long unsigned int _9;
+  signed int u32CrcValue.2_10;
+  long unsigned int _11;
+  long long unsigned int _12;
+  long unsigned int _13;
+  long long unsigned int _14;
+  <unnamed type> _15;
+  unsigned char _16;
+  _Bool _17;
+  _Bool _18;
+  long long unsigned int _19;
+  _Bool _20;
+  uint32 _40;
+
+  <bb 2> :
+  BitsIdx_28 = 0;
+  LengthIdx_29 = 0;
+  u32CrcData_30 = 0;
+  u32CrcValue_32 = StartValue32_31(D);
+  LengthIdx_33 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_41(D) + LengthIdx_22;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_36(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_36(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_36(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  u32CrcData_43 = (uint32) _8;
+  _9 = u32CrcData_43 << 24;
+  u32CrcValue_44 = u32CrcValue_25 ^ _9;
+  BitsIdx_45 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  u32CrcValue.2_10 = (signed int) u32CrcValue_24;
+  if (u32CrcValue.2_10 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _11 = u32CrcValue_24 << 1;
+  _12 = pxCrcProtocolInfo_36(D)->PolynomValue;
+  _13 = (long unsigned int) _12;
+  u32CrcValue_48 = _11 ^ _13;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  u32CrcValue_47 = u32CrcValue_24 << 1;
+
+  <bb 7> :
+  # u32CrcValue_23 = PHI <u32CrcValue_48(5), u32CrcValue_47(6)>
+  BitsIdx_49 = BitsIdx_21 + 1;
+
+  <bb 8> :
+  # BitsIdx_21 = PHI <BitsIdx_45(3), BitsIdx_49(7)>
+  # u32CrcValue_24 = PHI <u32CrcValue_44(3), u32CrcValue_23(7)>
+  if (BitsIdx_21 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  LengthIdx_46 = LengthIdx_22 + 1;
+
+  <bb 10> :
+  # LengthIdx_22 = PHI <LengthIdx_33(2), LengthIdx_46(9)>
+  # u32CrcValue_25 = PHI <u32CrcValue_32(2), u32CrcValue_24(9)>
+  if (LengthIdx_22 < Length_35(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _14 = (long long unsigned int) u32CrcValue_25;
+  _15 = pxCrcProtocolInfo_36(D)->Width;
+  _16 = (unsigned char) _15;
+  _17 = pxCrcProtocolInfo_36(D)->ReadBitSwap;
+  _18 = pxCrcProtocolInfo_36(D)->ReadByteSwap;
+  _19 = Crc_Ip_LibTranspose (_14, _16, _17, _18);
+  u32CrcValue_38 = (uint32) _19;
+  _20 = pxCrcProtocolInfo_36(D)->InverseEnable;
+  if (_20 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  u32CrcValue_39 = ~u32CrcValue_38;
+
+  <bb 13> :
+  # u32CrcValue_26 = PHI <u32CrcValue_38(11), u32CrcValue_39(12)>
+  _40 = u32CrcValue_26;
+
+  <bb 14> :
+<L11>:
+  return _40;
+
+}
+
+
+Crc_Ip_SwCalculateCRC16 (const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint16 StartValue16)
+{
+  uint16 u16CrcValue;
+  uint32 u32CrcData;
+  uint32 LengthIdx;
+  uint32 BitsIdx;
+  uint16 D.5854;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  signed short u16CrcValue.1_11;
+  short unsigned int _12;
+  long long unsigned int _13;
+  short unsigned int _14;
+  long long unsigned int _15;
+  <unnamed type> _16;
+  unsigned char _17;
+  _Bool _18;
+  _Bool _19;
+  long long unsigned int _20;
+  _Bool _21;
+  uint16 _41;
+
+  <bb 2> :
+  BitsIdx_29 = 0;
+  LengthIdx_30 = 0;
+  u32CrcData_31 = 0;
+  u16CrcValue_33 = StartValue16_32(D);
+  LengthIdx_34 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_42(D) + LengthIdx_23;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_37(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_37(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_37(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  u32CrcData_44 = (uint32) _8;
+  _9 = (short unsigned int) u32CrcData_44;
+  _10 = _9 << 8;
+  u16CrcValue_45 = u16CrcValue_26 ^ _10;
+  BitsIdx_46 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  u16CrcValue.1_11 = (signed short) u16CrcValue_25;
+  if (u16CrcValue.1_11 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _12 = u16CrcValue_25 << 1;
+  _13 = pxCrcProtocolInfo_37(D)->PolynomValue;
+  _14 = (short unsigned int) _13;
+  u16CrcValue_49 = _12 ^ _14;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  u16CrcValue_48 = u16CrcValue_25 << 1;
+
+  <bb 7> :
+  # u16CrcValue_24 = PHI <u16CrcValue_49(5), u16CrcValue_48(6)>
+  BitsIdx_50 = BitsIdx_22 + 1;
+
+  <bb 8> :
+  # BitsIdx_22 = PHI <BitsIdx_46(3), BitsIdx_50(7)>
+  # u16CrcValue_25 = PHI <u16CrcValue_45(3), u16CrcValue_24(7)>
+  if (BitsIdx_22 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  LengthIdx_47 = LengthIdx_23 + 1;
+
+  <bb 10> :
+  # LengthIdx_23 = PHI <LengthIdx_34(2), LengthIdx_47(9)>
+  # u16CrcValue_26 = PHI <u16CrcValue_33(2), u16CrcValue_25(9)>
+  if (LengthIdx_23 < Length_36(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _15 = (long long unsigned int) u16CrcValue_26;
+  _16 = pxCrcProtocolInfo_37(D)->Width;
+  _17 = (unsigned char) _16;
+  _18 = pxCrcProtocolInfo_37(D)->ReadBitSwap;
+  _19 = pxCrcProtocolInfo_37(D)->ReadByteSwap;
+  _20 = Crc_Ip_LibTranspose (_15, _17, _18, _19);
+  u16CrcValue_39 = (uint16) _20;
+  _21 = pxCrcProtocolInfo_37(D)->InverseEnable;
+  if (_21 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  u16CrcValue_40 = ~u16CrcValue_39;
+
+  <bb 13> :
+  # u16CrcValue_27 = PHI <u16CrcValue_39(11), u16CrcValue_40(12)>
+  _41 = u16CrcValue_27;
+
+  <bb 14> :
+<L11>:
+  return _41;
+
+}
+
+
+Crc_Ip_SwCalculateCRC8 (const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint8 StartValue8)
+{
+  uint8 u8CrcValue;
+  uint32 u32CrcData;
+  uint32 LengthIdx;
+  uint32 BitsIdx;
+  uint8 D.5806;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  unsigned char _9;
+  signed char u8CrcValue.0_10;
+  unsigned char _11;
+  long long unsigned int _12;
+  unsigned char _13;
+  long long unsigned int _14;
+  <unnamed type> _15;
+  unsigned char _16;
+  _Bool _17;
+  _Bool _18;
+  long long unsigned int _19;
+  _Bool _20;
+  uint8 _40;
+
+  <bb 2> :
+  BitsIdx_28 = 0;
+  LengthIdx_29 = 0;
+  u32CrcData_30 = 0;
+  u8CrcValue_32 = StartValue8_31(D);
+  LengthIdx_33 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_41(D) + LengthIdx_22;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_36(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_36(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_36(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  u32CrcData_43 = (uint32) _8;
+  _9 = (unsigned char) u32CrcData_43;
+  u8CrcValue_44 = u8CrcValue_25 ^ _9;
+  BitsIdx_45 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  u8CrcValue.0_10 = (signed char) u8CrcValue_24;
+  if (u8CrcValue.0_10 < 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _11 = u8CrcValue_24 << 1;
+  _12 = pxCrcProtocolInfo_36(D)->PolynomValue;
+  _13 = (unsigned char) _12;
+  u8CrcValue_48 = _11 ^ _13;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  u8CrcValue_47 = u8CrcValue_24 << 1;
+
+  <bb 7> :
+  # u8CrcValue_23 = PHI <u8CrcValue_48(5), u8CrcValue_47(6)>
+  BitsIdx_49 = BitsIdx_21 + 1;
+
+  <bb 8> :
+  # BitsIdx_21 = PHI <BitsIdx_45(3), BitsIdx_49(7)>
+  # u8CrcValue_24 = PHI <u8CrcValue_44(3), u8CrcValue_23(7)>
+  if (BitsIdx_21 <= 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  LengthIdx_46 = LengthIdx_22 + 1;
+
+  <bb 10> :
+  # LengthIdx_22 = PHI <LengthIdx_33(2), LengthIdx_46(9)>
+  # u8CrcValue_25 = PHI <u8CrcValue_32(2), u8CrcValue_24(9)>
+  if (LengthIdx_22 < Length_35(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _14 = (long long unsigned int) u8CrcValue_25;
+  _15 = pxCrcProtocolInfo_36(D)->Width;
+  _16 = (unsigned char) _15;
+  _17 = pxCrcProtocolInfo_36(D)->ReadBitSwap;
+  _18 = pxCrcProtocolInfo_36(D)->ReadByteSwap;
+  _19 = Crc_Ip_LibTranspose (_14, _16, _17, _18);
+  u8CrcValue_38 = (uint8) _19;
+  _20 = pxCrcProtocolInfo_36(D)->InverseEnable;
+  if (_20 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  u8CrcValue_39 = ~u8CrcValue_38;
+
+  <bb 13> :
+  # u8CrcValue_26 = PHI <u8CrcValue_38(11), u8CrcValue_39(12)>
+  _40 = u8CrcValue_26;
+
+  <bb 14> :
+<L11>:
+  return _40;
+
+}
+
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  _Bool x.4_1;
+
+  <bb 2> :
+  x.4_1 ={v} x;
+  if (x.4_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+Crc_Ip_LibTranspose (const uint64 InputData, const uint8 CrcWidth, const boolean BitSwap, const boolean ByteSwap)
+{
+  uint64 Result;
+  uint64 D.5833;
+  long unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  uint64 _35;
+
+  <bb 2> :
+  Result_16 = InputData_15(D);
+  if (BitSwap_17(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Result_27 = Crc_Ip_LibBitSwap64U (Result_16);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _1 = (long unsigned int) Result_16;
+  _2 = Crc_Ip_LibBitSwap32U (_1);
+  Result_25 = (uint64) _2;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _3 = (short unsigned int) Result_16;
+  _4 = Crc_Ip_LibBitSwap16U (_3);
+  Result_23 = (uint64) _4;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (CrcWidth_19(D) == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _5 = (unsigned char) Result_16;
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Result_21 = (uint64) _6;
+
+  <bb 11> :
+  # Result_11 = PHI <Result_16(2), Result_27(4), Result_25(6), Result_23(8), Result_16(9), Result_21(10)>
+  if (ByteSwap_28(D) != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 12> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  Result_34 = Crc_Ip_LibByteSwap64U (Result_11);
+  goto <bb 18>; [INV]
+
+  <bb 14> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _7 = (long unsigned int) Result_11;
+  _8 = Crc_Ip_LibByteSwap32U (_7);
+  Result_32 = (uint64) _8;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _9 = (short unsigned int) Result_11;
+  _10 = Crc_Ip_LibByteSwap16U (_9);
+  Result_30 = (uint64) _10;
+
+  <bb 18> :
+  # Result_12 = PHI <Result_11(11), Result_34(13), Result_32(15), Result_11(16), Result_30(17)>
+  _35 = Result_12;
+
+  <bb 19> :
+<L25>:
+  return _35;
+
+}
+
+
+Crc_Ip_LibByteSwap16U (const uint16 InputData)
+{
+  uint16 D.5847;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint16 _7;
+
+  <bb 2> :
+  _1 = (long unsigned int) InputData_4(D);
+  _2 = Crc_Ip_LibByteSwap32U (_1);
+  _3 = _2 >> 16;
+  _7 = (uint16) _3;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+Crc_Ip_LibByteSwap32U (const uint32 InputData)
+{
+  uint32 D.5845;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  uint32 _12;
+
+  <bb 2> :
+  _1 = InputData_11(D) >> 24;
+  _2 = InputData_11(D) >> 16;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_11(D) >> 8;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_11(D) << 24;
+  _12 = _9 | _10;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+Crc_Ip_LibByteSwap64U (const uint64 InputData)
+{
+  uint64 D.5843;
+  long long unsigned int _1;
+  long long unsigned int _2;
+  long long unsigned int _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  long long unsigned int _6;
+  long long unsigned int _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  long long unsigned int _10;
+  long long unsigned int _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  long long unsigned int _14;
+  long long unsigned int _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  long long unsigned int _18;
+  long long unsigned int _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  long long unsigned int _22;
+  long long unsigned int _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  long long unsigned int _26;
+  uint64 _28;
+
+  <bb 2> :
+  _1 = InputData_27(D) >> 56;
+  _2 = InputData_27(D) >> 48;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_27(D) >> 40;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_27(D) >> 32;
+  _11 = _10 << 24;
+  _12 = _11 & 4294967295;
+  _13 = _9 | _12;
+  _14 = InputData_27(D) >> 24;
+  _15 = _14 << 32;
+  _16 = _15 & 1095216660480;
+  _17 = _13 | _16;
+  _18 = InputData_27(D) >> 16;
+  _19 = _18 << 40;
+  _20 = _19 & 280375465082880;
+  _21 = _17 | _20;
+  _22 = InputData_27(D) >> 8;
+  _23 = _22 << 48;
+  _24 = _23 & 71776119061217280;
+  _25 = _21 | _24;
+  _26 = InputData_27(D) << 56;
+  _28 = _25 | _26;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+Crc_Ip_LibBitSwap64U (const uint64 InputData)
+{
+  uint64 ReturnValue;
+  uint64 ReturnValue34;
+  uint64 ReturnValue12;
+  uint64 ReturnValue4;
+  uint64 ReturnValue3;
+  uint64 ReturnValue2;
+  uint64 ReturnValue1;
+  uint64 Tmp8;
+  uint64 Tmp7;
+  uint64 Tmp6;
+  uint64 Tmp5;
+  uint64 Tmp4;
+  uint64 Tmp3;
+  uint64 Tmp2;
+  uint64 Tmp1;
+  uint64 D.5835;
+  long long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  unsigned char _18;
+  unsigned char _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  unsigned char _22;
+  unsigned char _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  unsigned char _26;
+  unsigned char _27;
+  long long unsigned int _28;
+  unsigned char _29;
+  unsigned char _30;
+  uint64 _56;
+
+  <bb 2> :
+  _1 = InputData_31(D) >> 56;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long long unsigned int) _3;
+  Tmp1_34 = _4 << 56;
+  _5 = InputData_31(D) >> 48;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long long unsigned int) _7;
+  Tmp2_36 = _8 << 48;
+  _9 = InputData_31(D) >> 40;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long long unsigned int) _11;
+  Tmp3_38 = _12 << 40;
+  _13 = InputData_31(D) >> 32;
+  _14 = (unsigned char) _13;
+  _15 = Crc_Ip_LibBitSwap8U (_14);
+  _16 = (long long unsigned int) _15;
+  Tmp4_40 = _16 << 32;
+  _17 = InputData_31(D) >> 24;
+  _18 = (unsigned char) _17;
+  _19 = Crc_Ip_LibBitSwap8U (_18);
+  _20 = (long long unsigned int) _19;
+  Tmp5_42 = _20 << 24;
+  _21 = InputData_31(D) >> 16;
+  _22 = (unsigned char) _21;
+  _23 = Crc_Ip_LibBitSwap8U (_22);
+  _24 = (long long unsigned int) _23;
+  Tmp6_44 = _24 << 16;
+  _25 = InputData_31(D) >> 8;
+  _26 = (unsigned char) _25;
+  _27 = Crc_Ip_LibBitSwap8U (_26);
+  _28 = (long long unsigned int) _27;
+  Tmp7_46 = _28 << 8;
+  _29 = (unsigned char) InputData_31(D);
+  _30 = Crc_Ip_LibBitSwap8U (_29);
+  Tmp8_48 = (uint64) _30;
+  ReturnValue1_49 = Tmp1_34 | Tmp2_36;
+  ReturnValue2_50 = Tmp3_38 | Tmp4_40;
+  ReturnValue3_51 = Tmp5_42 | Tmp6_44;
+  ReturnValue4_52 = Tmp7_46 | Tmp8_48;
+  ReturnValue12_53 = ReturnValue1_49 | ReturnValue2_50;
+  ReturnValue34_54 = ReturnValue3_51 | ReturnValue4_52;
+  ReturnValue_55 = ReturnValue12_53 | ReturnValue34_54;
+  _56 = ReturnValue_55;
+
+  <bb 3> :
+<L0>:
+  return _56;
+
+}
+
+
+Crc_Ip_LibBitSwap32U (const uint32 InputData)
+{
+  uint32 ReturnValue;
+  uint32 ReturnValue2;
+  uint32 ReturnValue1;
+  uint32 Tmp4;
+  uint32 Tmp3;
+  uint32 Tmp2;
+  uint32 Tmp1;
+  uint32 D.5837;
+  long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  unsigned char _13;
+  unsigned char _14;
+  uint32 _28;
+
+  <bb 2> :
+  _1 = InputData_15(D) >> 24;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long unsigned int) _3;
+  Tmp1_18 = _4 << 24;
+  _5 = InputData_15(D) >> 16;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long unsigned int) _7;
+  Tmp2_20 = _8 << 16;
+  _9 = InputData_15(D) >> 8;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long unsigned int) _11;
+  Tmp3_22 = _12 << 8;
+  _13 = (unsigned char) InputData_15(D);
+  _14 = Crc_Ip_LibBitSwap8U (_13);
+  Tmp4_24 = (uint32) _14;
+  ReturnValue1_25 = Tmp1_18 | Tmp2_20;
+  ReturnValue2_26 = Tmp3_22 | Tmp4_24;
+  ReturnValue_27 = ReturnValue1_25 | ReturnValue2_26;
+  _28 = ReturnValue_27;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+Crc_Ip_LibBitSwap16U (const uint16 InputData)
+{
+  uint16 ReturnValue;
+  uint16 Tmp2;
+  uint16 Tmp1;
+  uint16 D.5839;
+  short unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  uint16 _14;
+
+  <bb 2> :
+  _1 = InputData_7(D) >> 8;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (short unsigned int) _3;
+  Tmp1_10 = _4 << 8;
+  _5 = (unsigned char) InputData_7(D);
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Tmp2_12 = (uint16) _6;
+  ReturnValue_13 = Tmp1_10 | Tmp2_12;
+  _14 = ReturnValue_13;
+
+  <bb 3> :
+<L0>:
+  return _14;
+
+}
+
+
+Crc_Ip_LibBitSwap8U (const uint8 InputData)
+{
+  uint8 D.5841;
+  int _1;
+  uint8 _4;
+
+  <bb 2> :
+  _1 = (int) InputData_2(D);
+  _4 = Crc_Ip_au8BitSwapArray[_1];
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+

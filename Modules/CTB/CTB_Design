@@ -1,0 +1,71 @@
+PS : this design was based on these documents with the following versions : 
+	- 50147TRS001_01
+	- 50147ICD001-03
+	- 50147SWAD001-01
+	
+# Design of CTB module.
+
+the control board management is an application module that performs a PBIT, CBIT and IOs tests and commands located on interface control board.
+the CTB management should be executed each 1ms.
+
+## Inputs DATA / Services :
+
+	- CTB_Req : Request to command DSI, DSO and LEDs.
+  	- DSI_Status : the Status of monitored DSI. (address HPPs, EMER_STOP, Maintenance HPP)
+
+
+## Outputs DATA / Services : 
+
+	- flags : contains the DSI/DSO status and HPP address and the EMER_STOP and Maint_HPP and HEALTH
+	- DSI_CMD DSO_CMD and LED_CMD.
+	- in the module we should retrieve the BB-AUX own address at PBIT state from the HPP2-HPP1 pins 
+	- the HPP pins should be monitored in CBIT state and any change should raise a flag 
+	- EMER_STOP is monitored => trigger actions 
+	- Maint_HPP should be monitored => trigger actions 
+	- control the Health DSO 
+	- DSI new state is taken into account after a 50ms confirmation period (do we need a function in sch_Run50msTasks)
+	- Test the DSI pins 
+	- control the LEDs based on the state 
+
+## Dependencies : 
+
+the CTB module needs the following : 
+
+### MCAL :
+	- PORT Driver DSI/DSO Configuration
+	- PWM Driver DSI/DSO Configuration 
+	- ICU Driver Configuration 
+	- Platform Driver Configuration
+
+### MiddleWare : 
+	- ??? 
+	
+### Application Layer : 
+	- Scheduler 
+	- FSM
+	- CAN Communication
+	
+## Pseudo Code :
+the CTB Module should have the following functions :
+	- Init function : 
+	- Deinit function :
+	- CTB_Update :
+
+these functions are classified as sub-modules : a sub-module to manage all the PBIT opertaions and an other to manage CBIT operation.
+
+	- these functions are called in a switch case statement in main function (CTB_management) that takes a CTB_req as a input.
+	- during this main function we update the CTB_flags
+
+file structure : 
+	- CTB.h : declaring all the functions and variables needed to integrate all the functions
+	- CTB.c : implementing all the functions and variables needed to integrate all the functions
+	- CTBPbit.h : declaring all the functions and variables needed for the PBIT state
+	- CTBPbit.c : implementing all the functions needed for the PBIT state
+	- CTBCbit.h : declaring all the functions and variables needed for the CBIT operations
+	- CTBCbit.c : implementing all the functions needed for the CBIT operations
+	- CTBio.h : declaring all the functions and variables needed for the LED operations
+	- CTBio.c : implementing all the functions needed for the LED operations
+
+
+
+

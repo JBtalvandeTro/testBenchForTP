@@ -1,0 +1,16 @@
+SCH.c:79:6:SCH_Init	8	static
+SCH.c:126:6:SCH_Deinit	8	static
+SCH.c:146:6:SCH_MainLoop	8	static
+SCH.c:229:13:sch_Run1msTasks	16	static
+SCH.c:278:13:sch_Run5msTasks	0	static
+SCH.c:287:13:sch_Run10msTasks	8	static
+SCH.c:306:13:sch_Run20msTasks	8	static
+SCH.c:316:13:sch_Run50msTasks	0	static
+SCH.c:325:13:sch_Run100msTasks	8	static
+SCH.c:336:13:sch_Run500msTasks	0	static
+SCH.c:345:13:sch_Run1sTasks	8	static
+SCH.c:358:13:sch_Run10sTasks	0	static
+SCH.c:369:13:sch_UpdateLoadMeasures	8	static
+SCH.c:405:6:sch_Interruption	8	static
+SCH.c:425:13:sch_EnterLowPower	8	static
+SCH.c:483:13:sch_ExitLowPower	8	static

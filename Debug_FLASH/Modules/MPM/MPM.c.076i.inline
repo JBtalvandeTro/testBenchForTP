@@ -1,0 +1,126 @@
+IPA summary for MPM_Deinit/5 is missing.
+IPA summary for MPM_Management/4 is missing.
+IPA summary for MPM_Init/3 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        1 calls, 1.000000 freq, 0 count
+IPA summary for MPM_Deinit/5 is missing.
+IPA summary for MPM_Management/4 is missing.
+IPA summary for MPM_Init/3 is missing.
+Symbol table:
+
+Mcu_GetPllStatus/6 (Mcu_GetPllStatus) @0637b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: MPM_Management/4 
+  Calls: 
+MPM_Deinit/5 (MPM_Deinit) @06371ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: MPM_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+MPM_Management/4 (MPM_Management) @06371c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: MPM_flags/0 (write)MPM_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcu_GetPllStatus/6 
+MPM_Init/3 (MPM_Init) @063719a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: MPM_flags/0 (write)MPM_lowVoltageFlag/1 (write)MPM_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+MPM_lowVoltageFlag/1 (MPM_lowVoltageFlag) @059c3b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: MPM_Init/3 (write)
+  Availability: available
+  Varpool flags:
+MPM_flags/0 (MPM_flags) @059c3b40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: MPM_Management/4 (write)MPM_Init/3 (write)MPM_Init/3 (write)MPM_Management/4 (write)MPM_Deinit/5 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function MPM_Init (MPM_Init, funcdef_no=1, decl_uid=5595, cgraph_uid=2, symbol_order=3)
+
+MPM_Init ()
+{
+  <bb 2> :
+  MPM_flags.all = 0;
+  MPM_lowVoltageFlag = 0;
+  MPM_flags.moduleFlags.status.flags.moduleInitialized = 1;
+  return;
+
+}
+
+
+
+;; Function MPM_Management (MPM_Management, funcdef_no=2, decl_uid=5599, cgraph_uid=3, symbol_order=4)
+
+MPM_Management ()
+{
+  <unnamed type> _1;
+
+  <bb 2> :
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  MPM_flags.moduleFlags.faults.flags.mcu_PllUnlocked = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  MPM_flags.moduleFlags.faults.flags.mcu_PllUnlocked = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function MPM_Deinit (MPM_Deinit, funcdef_no=3, decl_uid=5597, cgraph_uid=4, symbol_order=5)
+
+MPM_Deinit ()
+{
+  <bb 2> :
+  MPM_flags.moduleFlags.status.flags.moduleInitialized = 0;
+  return;
+
+}
+
+

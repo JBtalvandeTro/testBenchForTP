@@ -1,0 +1,1109 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+FSM_mode/22 (FSM_mode) @05ed3438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_ManageInternalMode/11 (read)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)fsm_ManageInternalMode/11 (write)
+  Availability: not_available
+  Varpool flags:
+Mcu_PerformReset/21 (Mcu_PerformReset) @05ebd540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: fsm_CheckS3ModeExit/10 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBuckModeExit/6 fsm_CheckBoostModeExit/5 fsm_CheckStandbyModeExit/4 
+  Calls: 
+ACT_errors/20 (ACT_errors) @05ec3240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBuckModeExit/6 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_relayCurrentState/19 (PWB_relayCurrentState) @05ec31f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_mode/18 (COM_mode) @05ec31b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @05ec3168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckStandbyModeExit/4 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_dsiState/16 (CTB_dsiState) @05df1990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/15 (PWB_Flags) @05df1948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckBoostModeExit/5 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckStandbyModeExit/4 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckShutdownModeExit/9 (read)fsm_CheckS3ModeExit/10 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/14 (CTB_Flags) @05df1900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: not_available
+  Varpool flags:
+FSM_errors/13 (FSM_errors) @05df1120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckMaintenanceModeExit/8 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckBuckModeExit/6 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckBoostModeExit/5 (write)fsm_CheckMaintenanceModeExit/8 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)FSM_Update/1 (write)
+  Availability: not_available
+  Varpool flags:
+COM_flags/12 (COM_flags) @05df10d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: fsm_CheckMaintenanceModeExit/8 (read)fsm_CheckEmergencyModeExit/7 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckS3ModeExit/10 (read)fsm_CheckBuckModeExit/6 (read)fsm_CheckInitModeExit/2 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckBoostModeExit/5 (read)fsm_CheckStandbyModeExit/4 (read)fsm_CheckMaintenanceModeExit/8 (read)FSM_Update/1 (read)
+  Availability: not_available
+  Varpool flags:
+fsm_ManageInternalMode/11 (fsm_ManageInternalMode) @05de80e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/22 (read)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)FSM_mode/22 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: FSM_Update/1 
+  Calls: fsm_CheckS3ModeExit/10 fsm_CheckShutdownModeExit/9 fsm_CheckMaintenanceModeExit/8 fsm_CheckEmergencyModeExit/7 fsm_CheckBoostModeExit/5 fsm_CheckBuckModeExit/6 fsm_CheckStandbyModeExit/4 fsm_CheckPBitModeExit/3 fsm_CheckInitModeExit/2 
+fsm_CheckS3ModeExit/10 (fsm_CheckS3ModeExit) @05de8d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_mode/18 (read)PWB_Flags/15 (read)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckShutdownModeExit/9 (fsm_CheckShutdownModeExit) @05de8a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)PWB_Flags/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckMaintenanceModeExit/8 (fsm_CheckMaintenanceModeExit) @05de87e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_dsiState/16 (read)COM_flags/12 (read)COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckEmergencyModeExit/7 (fsm_CheckEmergencyModeExit) @05de8540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)CTB_dsiState/16 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBuckModeExit/6 (fsm_CheckBuckModeExit) @05de82a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckBoostModeExit/5 (fsm_CheckBoostModeExit) @05de8000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/15 (read)COM_flags/12 (read)PWB_Flags/15 (read)ACT_errors/20 (read)FSM_errors/13 (write)FSM_errors/13 (write)COM_flags/12 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckStandbyModeExit/4 (fsm_CheckStandbyModeExit) @05dcca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_measures/17 (read)COM_mode/18 (read)PWB_relayCurrentState/19 (read)COM_flags/12 (read)COM_flags/12 (read)CTB_dsiState/16 (read)ACT_errors/20 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)COM_flags/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: Mcu_PerformReset/21 
+fsm_CheckPBitModeExit/3 (fsm_CheckPBitModeExit) @05dccee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/14 (read)PWB_Flags/15 (read)CTB_dsiState/16 (read)PWB_Flags/15 (read)CTB_Flags/14 (read)fsm_pbit_timeout_counter/0 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)PWB_Flags/15 (write)CTB_Flags/14 (write)FSM_errors/13 (write)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (read)fsm_pbit_timeout_counter/0 (write)fsm_pbit_timeout_counter/0 (write)CTB_dsiState/16 (read)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+fsm_CheckInitModeExit/2 (fsm_CheckInitModeExit) @05dccc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: fsm_ManageInternalMode/11 
+  Calls: 
+FSM_Update/1 (FSM_Update) @05dcc9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/12 (read)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)FSM_errors/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: fsm_ManageInternalMode/11 
+fsm_pbit_timeout_counter/0 (fsm_pbit_timeout_counter) @05dcb5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (read)fsm_CheckPBitModeExit/3 (write)fsm_CheckPBitModeExit/3 (write)
+  Availability: available
+  Varpool flags: initialized
+fsm_ManageInternalMode ()
+{
+  <unnamed type> FSM_mode.2_1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+  <unnamed type> _5;
+  <unnamed type> _6;
+  <unnamed type> _7;
+  <unnamed type> _8;
+  <unnamed type> _9;
+  <unnamed type> _10;
+
+  <bb 2> :
+  FSM_mode.2_1 = FSM_mode;
+  switch (FSM_mode.2_1) <default: <L9> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L4> [INV], case 4: <L3> [INV], case 5: <L7> [INV], case 6: <L5> [INV], case 7: <L6> [INV], case 8: <L8> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = fsm_CheckInitModeExit ();
+  FSM_mode = _2;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = fsm_CheckPBitModeExit ();
+  FSM_mode = _3;
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = fsm_CheckStandbyModeExit ();
+  FSM_mode = _4;
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+<L3>:
+  _5 = fsm_CheckBuckModeExit ();
+  FSM_mode = _5;
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+<L4>:
+  _6 = fsm_CheckBoostModeExit ();
+  FSM_mode = _6;
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L5>:
+  _7 = fsm_CheckEmergencyModeExit ();
+  FSM_mode = _7;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+<L6>:
+  _8 = fsm_CheckMaintenanceModeExit ();
+  FSM_mode = _8;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+<L7>:
+  _9 = fsm_CheckShutdownModeExit ();
+  FSM_mode = _9;
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+<L8>:
+  _10 = fsm_CheckS3ModeExit ();
+  FSM_mode = _10;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  return;
+
+}
+
+
+fsm_CheckS3ModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7374;
+  _Bool _1;
+  _Bool _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  short unsigned int _7;
+  unsigned char _8;
+  unsigned char _9;
+  FSM_ModesE _21;
+
+  <bb 2> :
+  tempMode_12 = 8;
+  _1 = COM_mode.S3ModeReq;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  tempMode_15 = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_14 = 8;
+
+  <bb 5> :
+  _3 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _4 = _3 & 2;
+  if (_4 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _5 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _6 = _5 & 128;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  tempMode_17 = 5;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  tempMode_16 = 8;
+
+  <bb 9> :
+  _7 = ACT_errors.fastPowerDown.all;
+  if (_7 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  tempMode_19 = 6;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  tempMode_18 = 8;
+
+  <bb 12> :
+  # tempMode_10 = PHI <tempMode_19(10), tempMode_18(11)>
+  _8 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _9 = _8 & 2;
+  if (_9 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  Mcu_PerformReset ();
+
+  <bb 14> :
+  _21 = tempMode_10;
+
+  <bb 15> :
+<L13>:
+  return _21;
+
+}
+
+
+fsm_CheckShutdownModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7359;
+  unsigned char _1;
+  unsigned char _2;
+  _Bool _3;
+  _Bool _4;
+  FSM_ModesE _10;
+
+  <bb 2> :
+  tempMode_6 = 5;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _2 = _1 & 4;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = PWB_Flags.faults.flags.powerSupplyDown;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_8 = 2;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  tempMode_9 = 5;
+
+  <bb 6> :
+  # tempMode_5 = PHI <tempMode_8(4), tempMode_9(5)>
+  _10 = tempMode_5;
+
+  <bb 7> :
+<L4>:
+  return _10;
+
+}
+
+
+fsm_CheckMaintenanceModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7353;
+  _Bool _1;
+  _Bool _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  FSM_ModesE _14;
+
+  <bb 2> :
+  tempMode_9 = 7;
+  _1 = CTB_dsiState.Maint_DSI_State;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mcu_PerformReset ();
+
+  <bb 4> :
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 16;
+  if (_4 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _5 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _6 = _5 & 32;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  FSM_errors.bbAuxInMaintMode = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  FSM_errors.bbAuxInMaintMode = 0;
+
+  <bb 8> :
+  _14 = tempMode_9;
+
+  <bb 9> :
+<L7>:
+  return _14;
+
+}
+
+
+fsm_CheckEmergencyModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7344;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  short unsigned int _9;
+  FSM_ModesE _20;
+
+  <bb 2> :
+  tempMode_14 = 6;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 128;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_16 = 5;
+
+  <bb 5> :
+  # tempMode_10 = PHI <tempMode_14(3), tempMode_16(4)>
+  _5 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _6 = _5 & 2;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Mcu_PerformReset ();
+
+  <bb 7> :
+  _7 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _8 = _7 & 1;
+  if (_8 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  tempMode_18 = 7;
+
+  <bb 9> :
+  # tempMode_11 = PHI <tempMode_10(7), tempMode_18(8)>
+  _9 = ACT_errors.fastPowerDown.all;
+  if (_9 == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  tempMode_19 = 2;
+
+  <bb 11> :
+  # tempMode_12 = PHI <tempMode_11(9), tempMode_19(10)>
+  _20 = tempMode_12;
+
+  <bb 12> :
+<L12>:
+  return _20;
+
+}
+
+
+fsm_CheckBuckModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7330;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  short unsigned int _11;
+  unsigned char _12;
+  unsigned char _13;
+  FSM_ModesE _29;
+
+  <bb 2> :
+  tempMode_20 = 4;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 128;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_22 = 5;
+
+  <bb 5> :
+  # tempMode_14 = PHI <tempMode_20(3), tempMode_22(4)>
+  _5 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _6 = _5 & 128;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _7 = BIT_FIELD_REF <ACT_errors.warningsMask.warningsFlags, 8, 8>;
+  _8 = _7 & 32;
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  tempMode_23 = 2;
+  FSM_errors.autonomousBuckEnd = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  FSM_errors.autonomousBuckEnd = 0;
+
+  <bb 9> :
+  # tempMode_15 = PHI <tempMode_23(7), tempMode_14(8)>
+  _9 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _10 = _9 & 64;
+  if (_10 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  tempMode_26 = 2;
+
+  <bb 11> :
+  # tempMode_16 = PHI <tempMode_15(9), tempMode_26(10)>
+  _11 = ACT_errors.fastPowerDown.all;
+  if (_11 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  tempMode_27 = 6;
+
+  <bb 13> :
+  # tempMode_17 = PHI <tempMode_16(11), tempMode_27(12)>
+  _12 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _13 = _12 & 2;
+  if (_13 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Mcu_PerformReset ();
+
+  <bb 15> :
+  _29 = tempMode_17;
+
+  <bb 16> :
+<L15>:
+  return _29;
+
+}
+
+
+fsm_CheckBoostModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7313;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  short unsigned int _11;
+  unsigned char _12;
+  unsigned char _13;
+  FSM_ModesE _29;
+
+  <bb 2> :
+  tempMode_20 = 3;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 128;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_22 = 5;
+
+  <bb 5> :
+  # tempMode_14 = PHI <tempMode_20(3), tempMode_22(4)>
+  _5 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _7 = BIT_FIELD_REF <ACT_errors.warningsMask.warningsFlags, 8, 8>;
+  _8 = _7 & 16;
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  tempMode_23 = 2;
+  FSM_errors.autonomousBoostEnd = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  FSM_errors.autonomousBoostEnd = 0;
+
+  <bb 9> :
+  # tempMode_15 = PHI <tempMode_23(7), tempMode_14(8)>
+  _9 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _10 = _9 & 64;
+  if (_10 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  tempMode_26 = 2;
+
+  <bb 11> :
+  # tempMode_16 = PHI <tempMode_15(9), tempMode_26(10)>
+  _11 = ACT_errors.fastPowerDown.all;
+  if (_11 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  tempMode_27 = 6;
+
+  <bb 13> :
+  # tempMode_17 = PHI <tempMode_16(11), tempMode_27(12)>
+  _12 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _13 = _12 & 2;
+  if (_13 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Mcu_PerformReset ();
+
+  <bb 15> :
+  _29 = tempMode_17;
+
+  <bb 16> :
+<L15>:
+  return _29;
+
+}
+
+
+fsm_CheckStandbyModeExit ()
+{
+  boolean ignoreBoost;
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7296;
+  long unsigned int _1;
+  _Bool _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  _Bool _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  short unsigned int _12;
+  unsigned char _13;
+  unsigned char _14;
+  unsigned char _15;
+  unsigned char _16;
+  unsigned char _17;
+  unsigned char _18;
+  FSM_ModesE _40;
+
+  <bb 2> :
+  tempMode_27 = 2;
+  ignoreBoost_28 = 0;
+  _1 = PWB_measures.Hv_Voltage;
+  if (_1 <= 9)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _2 = COM_mode.S3ModeReq;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_31 = 8;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  tempMode_30 = 2;
+
+  <bb 6> :
+  # tempMode_19 = PHI <tempMode_27(2), tempMode_31(4), tempMode_30(5)>
+  _3 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentState);
+  _4 = _3 & 2;
+  if (_4 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ignoreBoost_33 = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  ignoreBoost_32 = 0;
+
+  <bb 9> :
+  # ignoreBoost_25 = PHI <ignoreBoost_33(7), ignoreBoost_32(8)>
+  _5 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _6 = _5 & 16;
+  if (_6 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  _7 = ~ignoreBoost_25;
+  if (_7 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  tempMode_34 = 3;
+
+  <bb 12> :
+  # tempMode_20 = PHI <tempMode_19(9), tempMode_19(10), tempMode_34(11)>
+  _8 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _9 = _8 & 32;
+  if (_9 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  tempMode_35 = 4;
+
+  <bb 14> :
+  # tempMode_21 = PHI <tempMode_20(12), tempMode_35(13)>
+  _10 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _11 = _10 & 1;
+  if (_11 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  tempMode_36 = 7;
+
+  <bb 16> :
+  # tempMode_22 = PHI <tempMode_21(14), tempMode_36(15)>
+  _12 = ACT_errors.fastPowerDown.all;
+  if (_12 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  tempMode_37 = 6;
+
+  <bb 18> :
+  # tempMode_23 = PHI <tempMode_22(16), tempMode_37(17)>
+  _13 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _14 = _13 & 2;
+  if (_14 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  Mcu_PerformReset ();
+
+  <bb 20> :
+  _15 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 8>;
+  _16 = _15 & 2;
+  if (_16 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 21> :
+  _17 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _18 = _17 & 128;
+  if (_18 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  tempMode_39 = 5;
+
+  <bb 23> :
+  # tempMode_24 = PHI <tempMode_23(21), tempMode_39(22)>
+  _40 = tempMode_24;
+
+  <bb 24> :
+<L28>:
+  return _40;
+
+}
+
+
+fsm_CheckPBitModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7266;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  _Bool _5;
+  _Bool _6;
+  _Bool _7;
+  _Bool _8;
+  long unsigned int fsm_pbit_timeout_counter.0_9;
+  long unsigned int fsm_pbit_timeout_counter.1_10;
+  long unsigned int _11;
+  unsigned char _12;
+  unsigned char _13;
+  FSM_ModesE _35;
+
+  <bb 2> :
+  tempMode_20 = 1;
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.status.flags);
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  _3 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _4 = _3 & 1;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  _5 = CTB_dsiState.EMERSTOP_DSI_State;
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 5> :
+  _7 = PWB_Flags.resultPBit;
+  if (_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _8 = CTB_Flags.resultPBit;
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  tempMode_22 = 2;
+  fsm_pbit_timeout_counter = 0;
+  PWB_Flags.status.flags.pbitDone = 0;
+  CTB_Flags.status.flags.pbitDone = 0;
+  PWB_Flags.resultPBit = 0;
+  CTB_Flags.resultPBit = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  tempMode_28 = 6;
+  FSM_errors.failedPbit = 1;
+  fsm_pbit_timeout_counter = 0;
+
+  <bb 9> :
+  # tempMode_14 = PHI <tempMode_22(7), tempMode_28(8)>
+
+  <bb 10> :
+  # tempMode_15 = PHI <tempMode_20(2), tempMode_20(3), tempMode_20(4), tempMode_14(9)>
+  fsm_pbit_timeout_counter.0_9 = fsm_pbit_timeout_counter;
+  if (fsm_pbit_timeout_counter.0_9 <= 4998)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  fsm_pbit_timeout_counter.1_10 = fsm_pbit_timeout_counter;
+  _11 = fsm_pbit_timeout_counter.1_10 + 1;
+  fsm_pbit_timeout_counter = _11;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  fsm_pbit_timeout_counter = 0;
+
+  <bb 13> :
+  _12 = BIT_FIELD_REF <CTB_dsiState, 8, 0>;
+  _13 = _12 & 1;
+  if (_13 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  FSM_errors.EnterMaintModeNotMet = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  FSM_errors.EnterMaintModeNotMet = 0;
+
+  <bb 16> :
+  _35 = tempMode_15;
+
+  <bb 17> :
+<L17>:
+  return _35;
+
+}
+
+
+fsm_CheckInitModeExit ()
+{
+  FSM_ModesE tempMode;
+  FSM_ModesE D.7247;
+  unsigned char _1;
+  unsigned char _2;
+  FSM_ModesE _7;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 0>;
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  tempMode_6 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  tempMode_5 = 6;
+
+  <bb 5> :
+  # tempMode_3 = PHI <tempMode_6(3), tempMode_5(4)>
+  _7 = tempMode_3;
+
+  <bb 6> :
+<L3>:
+  return _7;
+
+}
+
+
+FSM_Update ()
+{
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  fsm_ManageInternalMode ();
+  _1 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  FSM_errors.EnterMaintModeNotMet = 0;
+  FSM_errors.autonomousBoostEnd = 0;
+  FSM_errors.autonomousBuckEnd = 0;
+  FSM_errors.bbAuxInMaintMode = 0;
+  FSM_errors.failedPbit = 0;
+
+  <bb 4> :
+  return;
+
+}
+
+

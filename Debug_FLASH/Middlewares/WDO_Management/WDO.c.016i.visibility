@@ -1,0 +1,225 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: WDO_Refresh WDO_Management WDO_Deinit WDO_Init
+
+
+Marking externally visible variables: WDO_ExternalStateFlag WDO_InternalStateFlag WDO_WindowCounter
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Wdg_43_Instance0_Service/11 (Wdg_43_Instance0_Service) @06658b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WDO_Refresh/6 
+  Calls: 
+Wdg_43_Instance0_SetMode/10 (Wdg_43_Instance0_SetMode) @066588c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WDO_Management/5 WDO_Deinit/4 
+  Calls: 
+Wdg_Config_0_INIT/9 (Wdg_Config_0_INIT) @06654a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: WDO_Init/3 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Wdg_43_Instance0_Init/8 (Wdg_43_Instance0_Init) @06658700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WDO_Init/3 
+  Calls: 
+Dio_WriteChannel/7 (Dio_WriteChannel) @06658620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: WDO_Refresh/6 WDO_Refresh/6 WDO_Management/5 WDO_Deinit/4 WDO_Deinit/4 WDO_Init/3 WDO_Init/3 
+  Calls: 
+WDO_Refresh/6 (WDO_Refresh) @066581c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: WDO_WindowCounter/0 (read)WDO_WindowCounter/0 (write)WDO_WindowCounter/0 (read)WDO_WindowCounter/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_43_Instance0_Service/11 Dio_WriteChannel/7 Dio_WriteChannel/7 
+WDO_Management/5 (WDO_Management) @066528c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_43_Instance0_SetMode/10 Dio_WriteChannel/7 
+WDO_Deinit/4 (WDO_Deinit) @06652620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: WDO_ExternalStateFlag/2 (write)WDO_WindowCounter/0 (write)WDO_InternalStateFlag/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_43_Instance0_SetMode/10 Dio_WriteChannel/7 Dio_WriteChannel/7 
+WDO_Init/3 (WDO_Init) @066520e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: WDO_ExternalStateFlag/2 (write)Wdg_Config_0_INIT/9 (addr)WDO_WindowCounter/0 (write)WDO_InternalStateFlag/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_43_Instance0_Init/8 Dio_WriteChannel/7 Dio_WriteChannel/7 
+WDO_ExternalStateFlag/2 (WDO_ExternalStateFlag) @065d19d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WDO_Init/3 (write)WDO_Deinit/4 (write)
+  Availability: available
+  Varpool flags:
+WDO_InternalStateFlag/1 (WDO_InternalStateFlag) @065d1990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WDO_Init/3 (write)WDO_Deinit/4 (write)
+  Availability: available
+  Varpool flags:
+WDO_WindowCounter/0 (WDO_WindowCounter) @065d1948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: WDO_Init/3 (write)WDO_Deinit/4 (write)WDO_Refresh/6 (read)WDO_Refresh/6 (write)WDO_Refresh/6 (read)WDO_Refresh/6 (write)
+  Availability: available
+  Varpool flags:
+WDO_Refresh (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (2, 1);
+  Dio_WriteChannel (2, 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  WDO_WindowCounter.0_1 = WDO_WindowCounter;
+  if (WDO_WindowCounter.0_1 > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Wdg_43_Instance0_Service ();
+  WDO_WindowCounter = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  WDO_WindowCounter.1_2 = WDO_WindowCounter;
+  WDO_WindowCounter.2_3 = WDO_WindowCounter.1_2;
+  _4 = WDO_WindowCounter.2_3 + 1;
+  WDO_WindowCounter = _4;
+
+  <bb 7> :
+  return;
+
+}
+
+
+WDO_Management (boolean enable, boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) enable;
+  Dio_WriteChannel (14, _1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_SetMode (1);
+
+  <bb 5> :
+  return;
+
+}
+
+
+WDO_Deinit (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (14, 0);
+  Dio_WriteChannel (2, 0);
+  WDO_ExternalStateFlag = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_SetMode (0);
+  WDO_WindowCounter = 0;
+  WDO_InternalStateFlag = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+WDO_Init (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (14, 0);
+  Dio_WriteChannel (2, 0);
+  WDO_ExternalStateFlag = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_Init (&Wdg_Config_0_INIT);
+  WDO_WindowCounter = 0;
+  WDO_InternalStateFlag = 1;
+
+  <bb 5> :
+  return;
+
+}
+
+

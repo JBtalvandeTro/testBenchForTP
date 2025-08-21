@@ -1,0 +1,51 @@
+__attribute__((section (".acfls_code_rom")))
+Ftfc_Fls_Ip_AccessCode (void (*<T490>) (void) CallBack)
+{
+  uint32 u32WaitedTicks;
+  uint32 u32ValueTimeOut;
+
+  <bb 2> :
+  u32ValueTimeOut = Ftfc_Fls_Ip_u32TimeoutTicks;
+  FTFx_BaseAddress.0_1 = FTFx_BaseAddress;
+  FTFx_BaseAddress.0_1->FSTAT = 128;
+  goto <bb 5>; [INV]
+
+  <bb 3> :
+  u32ValueTimeOut = u32ValueTimeOut + 4294967295;
+  if (CallBack != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CallBack ();
+
+  <bb 5> :
+  FTFx_BaseAddress.1_2 = FTFx_BaseAddress;
+  _3 = FTFx_BaseAddress.1_2->FSTAT;
+  _4 = (signed char) _3;
+  if (_4 >= 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (u32ValueTimeOut != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  Ftfc_Fls_Ip_u32TimeoutTicks.2_5 = Ftfc_Fls_Ip_u32TimeoutTicks;
+  u32WaitedTicks = Ftfc_Fls_Ip_u32TimeoutTicks.2_5 - u32ValueTimeOut;
+  Ftfc_Fls_Ip_u32ElapsedTicks.3_6 = Ftfc_Fls_Ip_u32ElapsedTicks;
+  _7 = u32WaitedTicks + Ftfc_Fls_Ip_u32ElapsedTicks.3_6;
+  Ftfc_Fls_Ip_u32ElapsedTicks = _7;
+  Ftfc_Fls_Ip_u32CurrentTicks.4_8 = Ftfc_Fls_Ip_u32CurrentTicks;
+  _9 = u32WaitedTicks + Ftfc_Fls_Ip_u32CurrentTicks.4_8;
+  Ftfc_Fls_Ip_u32CurrentTicks = _9;
+  return;
+
+}
+
+

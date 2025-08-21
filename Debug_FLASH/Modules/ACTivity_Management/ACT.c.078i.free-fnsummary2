@@ -1,0 +1,33 @@
+ACT_Deinit ()
+{
+  <bb 2> :
+  ACT_readyForLowPower = 0;
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+  ACT_errors.origin.all = 0;
+  ACT_errors.severity = 0;
+  ACT_errors.fastPowerDownMask.all = 65535;
+  ACT_errors.slowPowerDownMask.all = 4294967295;
+  return;
+
+}
+
+
+ACT_Init ()
+{
+  <bb 2> :
+  ACT_readyForLowPower = 0;
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+  ACT_errors.origin.all = 0;
+  ACT_errors.severity = 0;
+  ACT_errors.fastPowerDownMask.all = 65535;
+  ACT_errors.slowPowerDownMask.all = 4294967295;
+  ACT_errors.warningsMask.all = 65535;
+  return;
+
+}
+
+

@@ -1,0 +1,552 @@
+Symbol table:
+
+Port_Ci_Icu_Ip_DisableNotification/10 (Port_Ci_Icu_Ip_DisableNotification) @05aa2540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Port_Ci_Icu_Ip_u32ChState/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Port_Ci_Icu_Ip_EnableNotification/9 (Port_Ci_Icu_Ip_EnableNotification) @05aa22a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Port_Ci_Icu_Ip_u32ChState/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Port_Ci_Icu_Ip_DisableDetection/8 (Port_Ci_Icu_Ip_DisableDetection) @05aa2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_DisableInterrupt/4 
+Port_Ci_Icu_Ip_EnableEdgeDetection/7 (Port_Ci_Icu_Ip_EnableEdgeDetection) @05a77b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_EnableInterrupt/3 
+Port_Ci_Icu_Ip_SetActivationCondition/6 (Port_Ci_Icu_Ip_SetActivationCondition) @05a77620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)Port_Ci_Icu_Ip_aChActivationMode/1 (write)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)Port_Ci_Icu_Ip_aChActivationMode/1 (write)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)Port_Ci_Icu_Ip_aChActivationMode/1 (write)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)Port_Ci_Icu_Ip_aChActivationMode/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_Init/5 
+  Calls: 
+Port_Ci_Icu_Ip_Init/5 (Port_Ci_Icu_Ip_Init) @05a77d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Port_Ci_Icu_Ip_u32ChState/2 (write)Port_Ci_Icu_Ip_u32ChState/2 (write)Port_Ci_Icu_Ip_u32ChState/2 (write)Port_Ci_Icu_Ip_u32ChState/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_SetActivationCondition/6 Port_Ci_Icu_Ip_DisableInterrupt/4 
+Port_Ci_Icu_Ip_DisableInterrupt/4 (Port_Ci_Icu_Ip_DisableInterrupt) @05a77a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_DisableDetection/8 Port_Ci_Icu_Ip_Init/5 
+  Calls: 
+Port_Ci_Icu_Ip_EnableInterrupt/3 (Port_Ci_Icu_Ip_EnableInterrupt) @05a777e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Port_Ci_Icu_Ip_aChActivationMode/1 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)Port_Ci_Icu_Ip_aChActivationMode/1 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)s_Port_Ci_Base/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_EnableEdgeDetection/7 
+  Calls: 
+Port_Ci_Icu_Ip_u32ChState/2 (Port_Ci_Icu_Ip_u32ChState) @05a73ab0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Port_Ci_Icu_Ip_EnableNotification/9 (write)Port_Ci_Icu_Ip_Init/5 (write)Port_Ci_Icu_Ip_Init/5 (write)Port_Ci_Icu_Ip_Init/5 (write)Port_Ci_Icu_Ip_Init/5 (write)Port_Ci_Icu_Ip_DisableNotification/10 (write)
+  Availability: available
+  Varpool flags:
+Port_Ci_Icu_Ip_aChActivationMode/1 (Port_Ci_Icu_Ip_aChActivationMode) @05a73a20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (write)Port_Ci_Icu_Ip_SetActivationCondition/6 (write)Port_Ci_Icu_Ip_SetActivationCondition/6 (write)Port_Ci_Icu_Ip_SetActivationCondition/6 (write)
+  Availability: available
+  Varpool flags:
+s_Port_Ci_Base/0 (s_Port_Ci_Base) @05a73990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_EnableInterrupt/3 (read)Port_Ci_Icu_Ip_DisableInterrupt/4 (read)Port_Ci_Icu_Ip_DisableInterrupt/4 (read)Port_Ci_Icu_Ip_DisableInterrupt/4 (read)Port_Ci_Icu_Ip_DisableInterrupt/4 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)Port_Ci_Icu_Ip_SetActivationCondition/6 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Port_Ci_Icu_Ip_DisableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  Port_Ci_Icu_Ip_u32ChState[_1][_2].notificationEnable = 0;
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_EnableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  Port_Ci_Icu_Ip_u32ChState[_1][_2].notificationEnable = 1;
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_DisableDetection (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  Port_Ci_Icu_Ip_DisableInterrupt (instance_2(D), hwChannel_3(D));
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_EnableEdgeDetection (uint8 instance, uint8 hwChannel)
+{
+  <bb 2> :
+  Port_Ci_Icu_Ip_EnableInterrupt (instance_2(D), hwChannel_3(D));
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_SetActivationCondition (uint8 instance, uint8 hwChannel, Port_Ci_Icu_Ip_EdgeType activation)
+{
+  int _1;
+  struct PORT_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct PORT_Type * _6;
+  int _7;
+  long unsigned int _8;
+  int _9;
+  struct PORT_Type * _10;
+  int _11;
+  long unsigned int _12;
+  int _13;
+  struct PORT_Type * _14;
+  int _15;
+  long unsigned int _16;
+  int _17;
+  int _18;
+  struct PORT_Type * _19;
+  int _20;
+  long unsigned int _21;
+  int _22;
+  struct PORT_Type * _23;
+  int _24;
+  long unsigned int _25;
+  int _26;
+  struct PORT_Type * _27;
+  int _28;
+  long unsigned int _29;
+  int _30;
+  struct PORT_Type * _31;
+  int _32;
+  long unsigned int _33;
+  int _34;
+  int _35;
+  struct PORT_Type * _36;
+  int _37;
+  long unsigned int _38;
+  int _39;
+  struct PORT_Type * _40;
+  int _41;
+  long unsigned int _42;
+  int _43;
+  int _44;
+  struct PORT_Type * _45;
+  int _46;
+  long unsigned int _47;
+  int _48;
+  struct PORT_Type * _49;
+  int _50;
+  long unsigned int _51;
+  int _52;
+
+  <bb 2> :
+  switch (activation_54(D)) <default: <L3> [INV], case 1: <L1> [INV], case 2: <L0> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = (int) instance_55(D);
+  _2 = s_Port_Ci_Base[_1];
+  _3 = (int) hwChannel_57(D);
+  _4 ={v} _2->PCR[_3];
+  _5 = (int) instance_55(D);
+  _6 = s_Port_Ci_Base[_5];
+  _7 = (int) hwChannel_57(D);
+  _8 = _4 & 4294311935;
+  _6->PCR[_7] ={v} _8;
+  _9 = (int) instance_55(D);
+  _10 = s_Port_Ci_Base[_9];
+  _11 = (int) hwChannel_57(D);
+  _12 ={v} _10->PCR[_11];
+  _13 = (int) instance_55(D);
+  _14 = s_Port_Ci_Base[_13];
+  _15 = (int) hwChannel_57(D);
+  _16 = _12 | 589824;
+  _14->PCR[_15] ={v} _16;
+  _17 = (int) hwChannel_57(D);
+  Port_Ci_Icu_Ip_aChActivationMode[_17] = 1;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _18 = (int) instance_55(D);
+  _19 = s_Port_Ci_Base[_18];
+  _20 = (int) hwChannel_57(D);
+  _21 ={v} _19->PCR[_20];
+  _22 = (int) instance_55(D);
+  _23 = s_Port_Ci_Base[_22];
+  _24 = (int) hwChannel_57(D);
+  _25 = _21 & 4294377471;
+  _23->PCR[_24] ={v} _25;
+  _26 = (int) instance_55(D);
+  _27 = s_Port_Ci_Base[_26];
+  _28 = (int) hwChannel_57(D);
+  _29 ={v} _27->PCR[_28];
+  _30 = (int) instance_55(D);
+  _31 = s_Port_Ci_Base[_30];
+  _32 = (int) hwChannel_57(D);
+  _33 = _29 | 655360;
+  _31->PCR[_32] ={v} _33;
+  _34 = (int) hwChannel_57(D);
+  Port_Ci_Icu_Ip_aChActivationMode[_34] = 2;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _35 = (int) instance_55(D);
+  _36 = s_Port_Ci_Base[_35];
+  _37 = (int) hwChannel_57(D);
+  _38 ={v} _36->PCR[_37];
+  _39 = (int) instance_55(D);
+  _40 = s_Port_Ci_Base[_39];
+  _41 = (int) hwChannel_57(D);
+  _42 = _38 | 720896;
+  _40->PCR[_41] ={v} _42;
+  _43 = (int) hwChannel_57(D);
+  Port_Ci_Icu_Ip_aChActivationMode[_43] = 3;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  _44 = (int) instance_55(D);
+  _45 = s_Port_Ci_Base[_44];
+  _46 = (int) hwChannel_57(D);
+  _47 ={v} _45->PCR[_46];
+  _48 = (int) instance_55(D);
+  _49 = s_Port_Ci_Base[_48];
+  _50 = (int) hwChannel_57(D);
+  _51 = _47 & 4294246399;
+  _49->PCR[_50] ={v} _51;
+  _52 = (int) hwChannel_57(D);
+  Port_Ci_Icu_Ip_aChActivationMode[_52] = 0;
+
+  <bb 7> :
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_Init (uint8 instance, const struct Port_Ci_Icu_Ip_ConfigType * userConfig)
+{
+  uint8 hwChannel;
+  uint8 nCounter;
+  Port_Ci_Icu_Ip_StatusType D.5706;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType[<unknown>] * _1;
+  int _2;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType[<unknown>] * _3;
+  int _4;
+  <unnamed type> _5;
+  int _6;
+  int _7;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType[<unknown>] * _8;
+  int _9;
+  int _10;
+  int _11;
+  void (*<T49e>) (uint16, boolean) _12;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType[<unknown>] * _13;
+  int _14;
+  unsigned char _15;
+  int _16;
+  int _17;
+  short unsigned int _18;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType[<unknown>] * _19;
+  int _20;
+  int _21;
+  int _22;
+  void (*<T49a>) (void) _23;
+  unsigned char nCounter.0_24;
+  unsigned char _25;
+  Port_Ci_Icu_Ip_StatusType _31;
+
+  <bb 2> :
+  nCounter_28 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = userConfig_30(D)->pChannelsConfig;
+  _2 = (int) nCounter_26;
+  hwChannel_32 = *_1[_2].pinId;
+  Port_Ci_Icu_Ip_DisableInterrupt (instance_33(D), hwChannel_32);
+  _3 = userConfig_30(D)->pChannelsConfig;
+  _4 = (int) nCounter_26;
+  _5 = *_3[_4].nDefaultStartEdge;
+  Port_Ci_Icu_Ip_SetActivationCondition (instance_33(D), hwChannel_32, _5);
+  _6 = (int) instance_33(D);
+  _7 = (int) hwChannel_32;
+  Port_Ci_Icu_Ip_u32ChState[_6][_7].chInit = 1;
+  _8 = userConfig_30(D)->pChannelsConfig;
+  _9 = (int) nCounter_26;
+  _10 = (int) instance_33(D);
+  _11 = (int) hwChannel_32;
+  _12 = *_8[_9].callback;
+  Port_Ci_Icu_Ip_u32ChState[_10][_11].callback = _12;
+  _13 = userConfig_30(D)->pChannelsConfig;
+  _14 = (int) nCounter_26;
+  _15 = *_13[_14].callbackParam;
+  _16 = (int) instance_33(D);
+  _17 = (int) hwChannel_32;
+  _18 = (short unsigned int) _15;
+  Port_Ci_Icu_Ip_u32ChState[_16][_17].callbackParam = _18;
+  _19 = userConfig_30(D)->pChannelsConfig;
+  _20 = (int) nCounter_26;
+  _21 = (int) instance_33(D);
+  _22 = (int) hwChannel_32;
+  _23 = *_19[_20].PortCiChannelNotification;
+  Port_Ci_Icu_Ip_u32ChState[_21][_22].PortCiChannelNotification = _23;
+  nCounter.0_24 = nCounter_26;
+  nCounter_40 = nCounter.0_24 + 1;
+
+  <bb 4> :
+  # nCounter_26 = PHI <nCounter_28(2), nCounter_40(3)>
+  _25 = userConfig_30(D)->nNumChannels;
+  if (nCounter_26 < _25)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _31 = 0;
+
+  <bb 6> :
+<L3>:
+  return _31;
+
+}
+
+
+Port_Ci_Icu_Ip_DisableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  uint32 u32pinMask;
+  long unsigned int _1;
+  int _2;
+  struct PORT_Type * _3;
+  int _4;
+  long unsigned int _5;
+  int _6;
+  struct PORT_Type * _7;
+  int _8;
+  long unsigned int _9;
+  int _10;
+  struct PORT_Type * _11;
+  long unsigned int _12;
+  int _13;
+  struct PORT_Type * _14;
+  long unsigned int _15;
+
+  <bb 2> :
+  _1 = (long unsigned int) hwChannel_16(D);
+  u32pinMask_17 = 1 << _1;
+  _2 = (int) instance_18(D);
+  _3 = s_Port_Ci_Base[_2];
+  _4 = (int) hwChannel_16(D);
+  _5 ={v} _3->PCR[_4];
+  _6 = (int) instance_18(D);
+  _7 = s_Port_Ci_Base[_6];
+  _8 = (int) hwChannel_16(D);
+  _9 = _5 & 4293984255;
+  _7->PCR[_8] ={v} _9;
+  _10 = (int) instance_18(D);
+  _11 = s_Port_Ci_Base[_10];
+  _12 ={v} _11->ISFR;
+  _13 = (int) instance_18(D);
+  _14 = s_Port_Ci_Base[_13];
+  _15 = u32pinMask_17 | _12;
+  _14->ISFR ={v} _15;
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_EnableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  uint32 u32pinMask;
+  long unsigned int _1;
+  int _2;
+  unsigned char _3;
+  int _4;
+  struct PORT_Type * _5;
+  int _6;
+  long unsigned int _7;
+  int _8;
+  struct PORT_Type * _9;
+  int _10;
+  long unsigned int _11;
+  int _12;
+  struct PORT_Type * _13;
+  int _14;
+  long unsigned int _15;
+  int _16;
+  struct PORT_Type * _17;
+  int _18;
+  long unsigned int _19;
+  int _20;
+  unsigned char _21;
+  int _22;
+  struct PORT_Type * _23;
+  int _24;
+  long unsigned int _25;
+  int _26;
+  struct PORT_Type * _27;
+  int _28;
+  long unsigned int _29;
+  int _30;
+  struct PORT_Type * _31;
+  int _32;
+  long unsigned int _33;
+  int _34;
+  struct PORT_Type * _35;
+  int _36;
+  long unsigned int _37;
+  int _38;
+  struct PORT_Type * _39;
+  int _40;
+  long unsigned int _41;
+  int _42;
+  struct PORT_Type * _43;
+  int _44;
+  long unsigned int _45;
+  int _46;
+  struct PORT_Type * _47;
+  long unsigned int _48;
+  int _49;
+  struct PORT_Type * _50;
+  long unsigned int _51;
+
+  <bb 2> :
+  _1 = (long unsigned int) hwChannel_53(D);
+  u32pinMask_54 = 1 << _1;
+  _2 = (int) hwChannel_53(D);
+  _3 = Port_Ci_Icu_Ip_aChActivationMode[_2];
+  if (_3 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = (int) instance_56(D);
+  _5 = s_Port_Ci_Base[_4];
+  _6 = (int) hwChannel_53(D);
+  _7 ={v} _5->PCR[_6];
+  _8 = (int) instance_56(D);
+  _9 = s_Port_Ci_Base[_8];
+  _10 = (int) hwChannel_53(D);
+  _11 = _7 & 4294377471;
+  _9->PCR[_10] ={v} _11;
+  _12 = (int) instance_56(D);
+  _13 = s_Port_Ci_Base[_12];
+  _14 = (int) hwChannel_53(D);
+  _15 ={v} _13->PCR[_14];
+  _16 = (int) instance_56(D);
+  _17 = s_Port_Ci_Base[_16];
+  _18 = (int) hwChannel_53(D);
+  _19 = _15 | 655360;
+  _17->PCR[_18] ={v} _19;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _20 = (int) hwChannel_53(D);
+  _21 = Port_Ci_Icu_Ip_aChActivationMode[_20];
+  if (_21 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _22 = (int) instance_56(D);
+  _23 = s_Port_Ci_Base[_22];
+  _24 = (int) hwChannel_53(D);
+  _25 ={v} _23->PCR[_24];
+  _26 = (int) instance_56(D);
+  _27 = s_Port_Ci_Base[_26];
+  _28 = (int) hwChannel_53(D);
+  _29 = _25 & 4294311935;
+  _27->PCR[_28] ={v} _29;
+  _30 = (int) instance_56(D);
+  _31 = s_Port_Ci_Base[_30];
+  _32 = (int) hwChannel_53(D);
+  _33 ={v} _31->PCR[_32];
+  _34 = (int) instance_56(D);
+  _35 = s_Port_Ci_Base[_34];
+  _36 = (int) hwChannel_53(D);
+  _37 = _33 | 589824;
+  _35->PCR[_36] ={v} _37;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _38 = (int) instance_56(D);
+  _39 = s_Port_Ci_Base[_38];
+  _40 = (int) hwChannel_53(D);
+  _41 ={v} _39->PCR[_40];
+  _42 = (int) instance_56(D);
+  _43 = s_Port_Ci_Base[_42];
+  _44 = (int) hwChannel_53(D);
+  _45 = _41 | 720896;
+  _43->PCR[_44] ={v} _45;
+
+  <bb 7> :
+  _46 = (int) instance_56(D);
+  _47 = s_Port_Ci_Base[_46];
+  _48 ={v} _47->ISFR;
+  _49 = (int) instance_56(D);
+  _50 = s_Port_Ci_Base[_49];
+  _51 = u32pinMask_54 | _48;
+  _50->ISFR ={v} _51;
+  return;
+
+}
+
+

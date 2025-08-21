@@ -1,0 +1,358 @@
+IPA summary for Rm_Mpu_GetErrorDetails/8 is missing.
+IPA summary for Rm_Mpu_SetAccessMode/7 is missing.
+IPA summary for Rm_Mpu_EnableRegion/6 is missing.
+IPA summary for Rm_Mpu_SetRegionConfig/5 is missing.
+IPA summary for Rm_Init/4 is missing.
+IPA summary for Rm_ValidatePtrInit/3 is missing.
+IPA summary for Rm_ValidateGlobalCall/2 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        2 calls, 2.000000 freq, 0 count
+function body not available                       :        8 calls, 8.000000 freq, 0 count
+IPA summary for Rm_Mpu_GetErrorDetails/8 is missing.
+IPA summary for Rm_Mpu_SetAccessMode/7 is missing.
+IPA summary for Rm_Mpu_EnableRegion/6 is missing.
+IPA summary for Rm_Mpu_SetRegionConfig/5 is missing.
+IPA summary for Rm_Init/4 is missing.
+IPA summary for Rm_ValidatePtrInit/3 is missing.
+IPA summary for Rm_ValidateGlobalCall/2 is missing.
+Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: available
+  Varpool flags: initialized
+
+;; Function Rm_ValidateGlobalCall (Rm_ValidateGlobalCall, funcdef_no=1, decl_uid=5779, cgraph_uid=2, symbol_order=2)
+
+Rm_ValidateGlobalCall (uint8 u8ServiceId)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5827;
+  const struct Rm_ConfigType * Rm_pConfig.0_1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  valid_4 = 1;
+  Rm_pConfig.0_1 = Rm_pConfig;
+  if (Rm_pConfig.0_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (u8ServiceId_6(D) == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Det_ReportError (255, 0, u8ServiceId_6(D), 2);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  valid_9 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  if (u8ServiceId_6(D) == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  valid_8 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Det_ReportError (255, 0, u8ServiceId_6(D), 3);
+
+  <bb 9> :
+  # valid_2 = PHI <valid_9(5), valid_8(7), valid_4(8), valid_4(4)>
+  _11 = valid_2;
+
+  <bb 10> :
+<L9>:
+  return _11;
+
+}
+
+
+
+;; Function Rm_ValidatePtrInit (Rm_ValidatePtrInit, funcdef_no=2, decl_uid=5781, cgraph_uid=3, symbol_order=3)
+
+Rm_ValidatePtrInit (const struct Rm_ConfigType * ConfigPtr)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5832;
+  Std_ReturnType _8;
+
+  <bb 2> :
+  valid_3 = 0;
+  if (ConfigPtr_4(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  valid_6 = 1;
+  Det_ReportError (255, 0, 0, 4);
+
+  <bb 4> :
+  # valid_1 = PHI <valid_3(2), valid_6(3)>
+  _8 = valid_1;
+
+  <bb 5> :
+<L3>:
+  return _8;
+
+}
+
+
+
+;; Function Rm_Init (Rm_Init, funcdef_no=3, decl_uid=5733, cgraph_uid=4, symbol_order=4)
+
+Rm_Init (const struct Rm_ConfigType * ConfigPtr)
+{
+  Std_ReturnType valid;
+  const struct Rm_ConfigType * Rm_pConfig.1_1;
+  const struct Rm_Ipw_ConfigType * _2;
+
+  <bb 2> :
+  valid_6 = Rm_ValidateGlobalCall (0);
+  if (valid_6 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  valid_9 = Rm_ValidatePtrInit (ConfigPtr_7(D));
+  if (valid_9 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Rm_pConfig = &Rm_Config;
+  Rm_pConfig.1_1 = Rm_pConfig;
+  _2 = Rm_pConfig.1_1->Rm_pIpwConfig;
+  Rm_Ipw_Mpu_Init (_2);
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Rm_Mpu_SetRegionConfig (Rm_Mpu_SetRegionConfig, funcdef_no=4, decl_uid=5736, cgraph_uid=5, symbol_order=5)
+
+Rm_Mpu_SetRegionConfig (uint8 u8RegionNum, const struct Rm_Mpu_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_SetRegionConfig (u8RegionNum_2(D), pUserConfigPtr_3(D));
+  return;
+
+}
+
+
+
+;; Function Rm_Mpu_EnableRegion (Rm_Mpu_EnableRegion, funcdef_no=5, decl_uid=5739, cgraph_uid=6, symbol_order=6)
+
+Rm_Mpu_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_EnableRegion (u8RegionNum_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+
+;; Function Rm_Mpu_SetAccessMode (Rm_Mpu_SetAccessMode, funcdef_no=6, decl_uid=5744, cgraph_uid=7, symbol_order=7)
+
+Rm_Mpu_SetAccessMode (uint8 u8RegionNum, Rm_Mpu_MasterType eMaster, Rm_Mpu_SupervisorAccessModeType eSupervisorMode, Rm_Mpu_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_SetAccessMode (u8RegionNum_2(D), eMaster_3(D), eSupervisorMode_4(D), eUserMode_5(D));
+  return;
+
+}
+
+
+
+;; Function Rm_Mpu_GetErrorDetails (Rm_Mpu_GetErrorDetails, funcdef_no=7, decl_uid=5746, cgraph_uid=8, symbol_order=8)
+
+Rm_Mpu_GetErrorDetails (struct Rm_Mpu_ErrorDetailsType * pErrorDetails)
+{
+  boolean bErr;
+  Std_ReturnType retval;
+  Std_ReturnType D.5841;
+  Std_ReturnType _9;
+
+  <bb 2> :
+  retval_2 = 1;
+  bErr_6 = Rm_Ipw_Mpu_GetErrorDetails (pErrorDetails_4(D));
+  if (bErr_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  retval_8 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retval_7 = 1;
+
+  <bb 5> :
+  # retval_1 = PHI <retval_8(3), retval_7(4)>
+  _9 = retval_1;
+
+  <bb 6> :
+<L3>:
+  return _9;
+
+}
+
+

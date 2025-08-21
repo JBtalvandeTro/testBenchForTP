@@ -1,0 +1,1277 @@
+IPA summary for Crc_Ip_LookupTablesCalculate/21 is missing.
+IPA summary for Crc_TableCalculateCRC64/20 is missing.
+IPA summary for Crc_TableCalculateCRC32/19 is missing.
+IPA summary for Crc_TableCalculateCRC16/18 is missing.
+IPA summary for Crc_TableCalculateCRC8/17 is missing.
+IPA summary for Crc_Ip_DevAssert/9 is missing.
+IPA summary for Crc_Ip_LibTranspose/8 is missing.
+IPA summary for Crc_Ip_LibByteSwap16U/7 is missing.
+IPA summary for Crc_Ip_LibByteSwap32U/6 is missing.
+IPA summary for Crc_Ip_LibByteSwap64U/5 is missing.
+IPA summary for Crc_Ip_LibBitSwap64U/4 is missing.
+IPA summary for Crc_Ip_LibBitSwap32U/3 is missing.
+IPA summary for Crc_Ip_LibBitSwap16U/2 is missing.
+IPA summary for Crc_Ip_LibBitSwap8U/1 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       40 calls, 40.000000 freq, 0 count
+IPA summary for Crc_Ip_LookupTablesCalculate/21 is missing.
+IPA summary for Crc_TableCalculateCRC64/20 is missing.
+IPA summary for Crc_TableCalculateCRC32/19 is missing.
+IPA summary for Crc_TableCalculateCRC16/18 is missing.
+IPA summary for Crc_TableCalculateCRC8/17 is missing.
+IPA summary for Crc_Ip_DevAssert/9 is missing.
+IPA summary for Crc_Ip_LibTranspose/8 is missing.
+IPA summary for Crc_Ip_LibByteSwap16U/7 is missing.
+IPA summary for Crc_Ip_LibByteSwap32U/6 is missing.
+IPA summary for Crc_Ip_LibByteSwap64U/5 is missing.
+IPA summary for Crc_Ip_LibBitSwap64U/4 is missing.
+IPA summary for Crc_Ip_LibBitSwap32U/3 is missing.
+IPA summary for Crc_Ip_LibBitSwap16U/2 is missing.
+IPA summary for Crc_Ip_LibBitSwap8U/1 is missing.
+Symbol table:
+
+Crc_Ip_LookupTablesCalculate/21 (Crc_Ip_LookupTablesCalculate) @05c671c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_TableCalculateCRC64/20 Crc_TableCalculateCRC32/19 Crc_TableCalculateCRC16/18 Crc_TableCalculateCRC8/17 Crc_Ip_DevAssert/9 Crc_Ip_DevAssert/9 
+Crc_TableCalculateCRC64/20 (Crc_TableCalculateCRC64) @05aeee00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Crc_u64CrcTable/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_LookupTablesCalculate/21 
+  Calls: Crc_Ip_LibTranspose/8 Crc_Ip_DevAssert/9 Crc_Ip_LibTranspose/8 
+Crc_TableCalculateCRC32/19 (Crc_TableCalculateCRC32) @05aee8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: s_TableCrc32/14 (read)s_TableCrc32P4/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_LookupTablesCalculate/21 
+  Calls: Crc_Ip_LibTranspose/8 Crc_Ip_DevAssert/9 Crc_Ip_LibTranspose/8 
+Crc_TableCalculateCRC16/18 (Crc_TableCalculateCRC16) @05aeed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: s_TableCrc16/12 (read)s_TableCrc16ARC/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_LookupTablesCalculate/21 
+  Calls: Crc_Ip_LibTranspose/8 Crc_Ip_DevAssert/9 Crc_Ip_LibTranspose/8 
+Crc_TableCalculateCRC8/17 (Crc_TableCalculateCRC8) @05aeea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: s_TableCrc8/10 (read)s_TableCrc8H2F/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_LookupTablesCalculate/21 
+  Calls: Crc_Ip_LibTranspose/8 Crc_Ip_DevAssert/9 Crc_Ip_LibTranspose/8 
+Crc_u64CrcTable/16 (Crc_u64CrcTable) @05ac3cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC64/20 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc32P4/15 (s_TableCrc32P4) @05ac3b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC32/19 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc32/14 (s_TableCrc32) @05ac3ee8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC32/19 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc16ARC/13 (s_TableCrc16ARC) @05ac3e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC16/18 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc16/12 (s_TableCrc16) @05ac3d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC16/18 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc8H2F/11 (s_TableCrc8H2F) @05ac3c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC8/17 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_TableCrc8/10 (s_TableCrc8) @05ac3b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_TableCalculateCRC8/17 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/9 (Crc_Ip_DevAssert) @05ac9540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LookupTablesCalculate/21 Crc_Ip_LookupTablesCalculate/21 Crc_TableCalculateCRC64/20 Crc_TableCalculateCRC32/19 Crc_TableCalculateCRC16/18 Crc_TableCalculateCRC8/17 
+  Calls: 
+Crc_Ip_LibTranspose/8 (Crc_Ip_LibTranspose) @05ac90e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_TableCalculateCRC64/20 Crc_TableCalculateCRC64/20 Crc_TableCalculateCRC32/19 Crc_TableCalculateCRC32/19 Crc_TableCalculateCRC16/18 Crc_TableCalculateCRC16/18 Crc_TableCalculateCRC8/17 Crc_TableCalculateCRC8/17 
+  Calls: Crc_Ip_LibByteSwap16U/7 Crc_Ip_LibByteSwap32U/6 Crc_Ip_LibByteSwap64U/5 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap16U/2 Crc_Ip_LibBitSwap32U/3 Crc_Ip_LibBitSwap64U/4 
+Crc_Ip_LibByteSwap16U/7 (Crc_Ip_LibByteSwap16U) @05b06e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 
+  Calls: Crc_Ip_LibByteSwap32U/6 
+Crc_Ip_LibByteSwap32U/6 (Crc_Ip_LibByteSwap32U) @05b06b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 Crc_Ip_LibByteSwap16U/7 
+  Calls: 
+Crc_Ip_LibByteSwap64U/5 (Crc_Ip_LibByteSwap64U) @05b068c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 
+  Calls: 
+Crc_Ip_LibBitSwap64U/4 (Crc_Ip_LibBitSwap64U) @05b06620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 
+  Calls: Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 
+Crc_Ip_LibBitSwap32U/3 (Crc_Ip_LibBitSwap32U) @05b06380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 
+  Calls: Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 
+Crc_Ip_LibBitSwap16U/2 (Crc_Ip_LibBitSwap16U) @05b060e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 
+  Calls: Crc_Ip_LibBitSwap8U/1 Crc_Ip_LibBitSwap8U/1 
+Crc_Ip_LibBitSwap8U/1 (Crc_Ip_LibBitSwap8U) @05a9eee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crc_Ip_au8BitSwapArray/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/8 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap64U/4 Crc_Ip_LibBitSwap32U/3 Crc_Ip_LibBitSwap32U/3 Crc_Ip_LibBitSwap32U/3 Crc_Ip_LibBitSwap32U/3 Crc_Ip_LibBitSwap16U/2 Crc_Ip_LibBitSwap16U/2 
+  Calls: 
+Crc_Ip_au8BitSwapArray/0 (Crc_Ip_au8BitSwapArray) @05afbaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/1 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+
+;; Function Crc_Ip_LibBitSwap8U (Crc_Ip_LibBitSwap8U, funcdef_no=0, decl_uid=5644, cgraph_uid=1, symbol_order=1)
+
+Crc_Ip_LibBitSwap8U (const uint8 InputData)
+{
+  uint8 D.5850;
+  int _1;
+  uint8 _4;
+
+  <bb 2> :
+  _1 = (int) InputData_2(D);
+  _4 = Crc_Ip_au8BitSwapArray[_1];
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+
+;; Function Crc_Ip_LibBitSwap16U (Crc_Ip_LibBitSwap16U, funcdef_no=1, decl_uid=5647, cgraph_uid=2, symbol_order=2)
+
+Crc_Ip_LibBitSwap16U (const uint16 InputData)
+{
+  uint16 ReturnValue;
+  uint16 Tmp2;
+  uint16 Tmp1;
+  uint16 D.5848;
+  short unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  uint16 _14;
+
+  <bb 2> :
+  _1 = InputData_7(D) >> 8;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (short unsigned int) _3;
+  Tmp1_10 = _4 << 8;
+  _5 = (unsigned char) InputData_7(D);
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Tmp2_12 = (uint16) _6;
+  ReturnValue_13 = Tmp1_10 | Tmp2_12;
+  _14 = ReturnValue_13;
+
+  <bb 3> :
+<L0>:
+  return _14;
+
+}
+
+
+
+;; Function Crc_Ip_LibBitSwap32U (Crc_Ip_LibBitSwap32U, funcdef_no=2, decl_uid=5653, cgraph_uid=3, symbol_order=3)
+
+Crc_Ip_LibBitSwap32U (const uint32 InputData)
+{
+  uint32 ReturnValue;
+  uint32 ReturnValue2;
+  uint32 ReturnValue1;
+  uint32 Tmp4;
+  uint32 Tmp3;
+  uint32 Tmp2;
+  uint32 Tmp1;
+  uint32 D.5846;
+  long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  unsigned char _13;
+  unsigned char _14;
+  uint32 _28;
+
+  <bb 2> :
+  _1 = InputData_15(D) >> 24;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long unsigned int) _3;
+  Tmp1_18 = _4 << 24;
+  _5 = InputData_15(D) >> 16;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long unsigned int) _7;
+  Tmp2_20 = _8 << 16;
+  _9 = InputData_15(D) >> 8;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long unsigned int) _11;
+  Tmp3_22 = _12 << 8;
+  _13 = (unsigned char) InputData_15(D);
+  _14 = Crc_Ip_LibBitSwap8U (_13);
+  Tmp4_24 = (uint32) _14;
+  ReturnValue1_25 = Tmp1_18 | Tmp2_20;
+  ReturnValue2_26 = Tmp3_22 | Tmp4_24;
+  ReturnValue_27 = ReturnValue1_25 | ReturnValue2_26;
+  _28 = ReturnValue_27;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+
+;; Function Crc_Ip_LibBitSwap64U (Crc_Ip_LibBitSwap64U, funcdef_no=3, decl_uid=5663, cgraph_uid=4, symbol_order=4)
+
+Crc_Ip_LibBitSwap64U (const uint64 InputData)
+{
+  uint64 ReturnValue;
+  uint64 ReturnValue34;
+  uint64 ReturnValue12;
+  uint64 ReturnValue4;
+  uint64 ReturnValue3;
+  uint64 ReturnValue2;
+  uint64 ReturnValue1;
+  uint64 Tmp8;
+  uint64 Tmp7;
+  uint64 Tmp6;
+  uint64 Tmp5;
+  uint64 Tmp4;
+  uint64 Tmp3;
+  uint64 Tmp2;
+  uint64 Tmp1;
+  uint64 D.5844;
+  long long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  unsigned char _18;
+  unsigned char _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  unsigned char _22;
+  unsigned char _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  unsigned char _26;
+  unsigned char _27;
+  long long unsigned int _28;
+  unsigned char _29;
+  unsigned char _30;
+  uint64 _56;
+
+  <bb 2> :
+  _1 = InputData_31(D) >> 56;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long long unsigned int) _3;
+  Tmp1_34 = _4 << 56;
+  _5 = InputData_31(D) >> 48;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long long unsigned int) _7;
+  Tmp2_36 = _8 << 48;
+  _9 = InputData_31(D) >> 40;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long long unsigned int) _11;
+  Tmp3_38 = _12 << 40;
+  _13 = InputData_31(D) >> 32;
+  _14 = (unsigned char) _13;
+  _15 = Crc_Ip_LibBitSwap8U (_14);
+  _16 = (long long unsigned int) _15;
+  Tmp4_40 = _16 << 32;
+  _17 = InputData_31(D) >> 24;
+  _18 = (unsigned char) _17;
+  _19 = Crc_Ip_LibBitSwap8U (_18);
+  _20 = (long long unsigned int) _19;
+  Tmp5_42 = _20 << 24;
+  _21 = InputData_31(D) >> 16;
+  _22 = (unsigned char) _21;
+  _23 = Crc_Ip_LibBitSwap8U (_22);
+  _24 = (long long unsigned int) _23;
+  Tmp6_44 = _24 << 16;
+  _25 = InputData_31(D) >> 8;
+  _26 = (unsigned char) _25;
+  _27 = Crc_Ip_LibBitSwap8U (_26);
+  _28 = (long long unsigned int) _27;
+  Tmp7_46 = _28 << 8;
+  _29 = (unsigned char) InputData_31(D);
+  _30 = Crc_Ip_LibBitSwap8U (_29);
+  Tmp8_48 = (uint64) _30;
+  ReturnValue1_49 = Tmp1_34 | Tmp2_36;
+  ReturnValue2_50 = Tmp3_38 | Tmp4_40;
+  ReturnValue3_51 = Tmp5_42 | Tmp6_44;
+  ReturnValue4_52 = Tmp7_46 | Tmp8_48;
+  ReturnValue12_53 = ReturnValue1_49 | ReturnValue2_50;
+  ReturnValue34_54 = ReturnValue3_51 | ReturnValue4_52;
+  ReturnValue_55 = ReturnValue12_53 | ReturnValue34_54;
+  _56 = ReturnValue_55;
+
+  <bb 3> :
+<L0>:
+  return _56;
+
+}
+
+
+
+;; Function Crc_Ip_LibByteSwap64U (Crc_Ip_LibByteSwap64U, funcdef_no=4, decl_uid=5681, cgraph_uid=5, symbol_order=5)
+
+Crc_Ip_LibByteSwap64U (const uint64 InputData)
+{
+  uint64 D.5852;
+  long long unsigned int _1;
+  long long unsigned int _2;
+  long long unsigned int _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  long long unsigned int _6;
+  long long unsigned int _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  long long unsigned int _10;
+  long long unsigned int _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  long long unsigned int _14;
+  long long unsigned int _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  long long unsigned int _18;
+  long long unsigned int _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  long long unsigned int _22;
+  long long unsigned int _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  long long unsigned int _26;
+  uint64 _28;
+
+  <bb 2> :
+  _1 = InputData_27(D) >> 56;
+  _2 = InputData_27(D) >> 48;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_27(D) >> 40;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_27(D) >> 32;
+  _11 = _10 << 24;
+  _12 = _11 & 4294967295;
+  _13 = _9 | _12;
+  _14 = InputData_27(D) >> 24;
+  _15 = _14 << 32;
+  _16 = _15 & 1095216660480;
+  _17 = _13 | _16;
+  _18 = InputData_27(D) >> 16;
+  _19 = _18 << 40;
+  _20 = _19 & 280375465082880;
+  _21 = _17 | _20;
+  _22 = InputData_27(D) >> 8;
+  _23 = _22 << 48;
+  _24 = _23 & 71776119061217280;
+  _25 = _21 | _24;
+  _26 = InputData_27(D) << 56;
+  _28 = _25 | _26;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+
+;; Function Crc_Ip_LibByteSwap32U (Crc_Ip_LibByteSwap32U, funcdef_no=5, decl_uid=5684, cgraph_uid=6, symbol_order=6)
+
+Crc_Ip_LibByteSwap32U (const uint32 InputData)
+{
+  uint32 D.5854;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  uint32 _12;
+
+  <bb 2> :
+  _1 = InputData_11(D) >> 24;
+  _2 = InputData_11(D) >> 16;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_11(D) >> 8;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_11(D) << 24;
+  _12 = _9 | _10;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+
+;; Function Crc_Ip_LibByteSwap16U (Crc_Ip_LibByteSwap16U, funcdef_no=6, decl_uid=5687, cgraph_uid=7, symbol_order=7)
+
+Crc_Ip_LibByteSwap16U (const uint16 InputData)
+{
+  uint16 D.5856;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint16 _7;
+
+  <bb 2> :
+  _1 = (long unsigned int) InputData_4(D);
+  _2 = Crc_Ip_LibByteSwap32U (_1);
+  _3 = _2 >> 16;
+  _7 = (uint16) _3;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+
+;; Function Crc_Ip_LibTranspose (Crc_Ip_LibTranspose, funcdef_no=7, decl_uid=5693, cgraph_uid=8, symbol_order=8)
+
+Crc_Ip_LibTranspose (const uint64 InputData, const uint8 CrcWidth, const boolean BitSwap, const boolean ByteSwap)
+{
+  uint64 Result;
+  uint64 D.5842;
+  long unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  uint64 _35;
+
+  <bb 2> :
+  Result_16 = InputData_15(D);
+  if (BitSwap_17(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Result_27 = Crc_Ip_LibBitSwap64U (Result_16);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _1 = (long unsigned int) Result_16;
+  _2 = Crc_Ip_LibBitSwap32U (_1);
+  Result_25 = (uint64) _2;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _3 = (short unsigned int) Result_16;
+  _4 = Crc_Ip_LibBitSwap16U (_3);
+  Result_23 = (uint64) _4;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (CrcWidth_19(D) == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _5 = (unsigned char) Result_16;
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Result_21 = (uint64) _6;
+
+  <bb 11> :
+  # Result_11 = PHI <Result_16(2), Result_27(4), Result_25(6), Result_23(8), Result_16(9), Result_21(10)>
+  if (ByteSwap_28(D) != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 12> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  Result_34 = Crc_Ip_LibByteSwap64U (Result_11);
+  goto <bb 18>; [INV]
+
+  <bb 14> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _7 = (long unsigned int) Result_11;
+  _8 = Crc_Ip_LibByteSwap32U (_7);
+  Result_32 = (uint64) _8;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _9 = (short unsigned int) Result_11;
+  _10 = Crc_Ip_LibByteSwap16U (_9);
+  Result_30 = (uint64) _10;
+
+  <bb 18> :
+  # Result_12 = PHI <Result_11(11), Result_34(13), Result_32(15), Result_11(16), Result_30(17)>
+  _35 = Result_12;
+
+  <bb 19> :
+<L25>:
+  return _35;
+
+}
+
+
+
+;; Function Crc_Ip_DevAssert (Crc_Ip_DevAssert, funcdef_no=8, decl_uid=5697, cgraph_uid=9, symbol_order=9)
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  _Bool x.0_1;
+
+  <bb 2> :
+  x.0_1 ={v} x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+
+;; Function Crc_TableCalculateCRC8 (Crc_TableCalculateCRC8, funcdef_no=9, decl_uid=5712, cgraph_uid=10, symbol_order=17)
+
+Crc_TableCalculateCRC8 (const Crc_Ip_ProtocolType Protocol, const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint8 StartValue8)
+{
+  uint8 CrcValue;
+  uint8 CrcDataU8;
+  uint32 CrcDataU32;
+  uint32 LengthIdx;
+  uint8 D.5812;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  unsigned char _9;
+  int _10;
+  unsigned char _11;
+  int _12;
+  long long unsigned int _13;
+  <unnamed type> _14;
+  unsigned char _15;
+  _Bool _16;
+  _Bool _17;
+  long long unsigned int _18;
+  _Bool _19;
+  uint8 _38;
+
+  <bb 2> :
+  LengthIdx_26 = 0;
+  CrcDataU32_27 = 0;
+  CrcDataU8_28 = 0;
+  CrcValue_30 = StartValue8_29(D);
+  LengthIdx_31 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_39(D) + LengthIdx_20;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_34(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_34(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_34(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  CrcDataU32_41 = (uint32) _8;
+  CrcDataU8_42 = (uint8) CrcDataU32_41;
+  if (Protocol_43(D) == 5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _9 = CrcValue_22 ^ CrcDataU8_42;
+  _10 = (int) _9;
+  CrcValue_46 = s_TableCrc8[_10];
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (Protocol_43(D) == 4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _11 = CrcValue_22 ^ CrcDataU8_42;
+  _12 = (int) _11;
+  CrcValue_45 = s_TableCrc8H2F[_12];
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 8> :
+  # CrcValue_21 = PHI <CrcValue_46(4), CrcValue_45(6), CrcValue_22(7)>
+  LengthIdx_47 = LengthIdx_20 + 1;
+
+  <bb 9> :
+  # LengthIdx_20 = PHI <LengthIdx_31(2), LengthIdx_47(8)>
+  # CrcValue_22 = PHI <CrcValue_30(2), CrcValue_21(8)>
+  if (LengthIdx_20 < Length_33(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _13 = (long long unsigned int) CrcValue_22;
+  _14 = pxCrcProtocolInfo_34(D)->Width;
+  _15 = (unsigned char) _14;
+  _16 = pxCrcProtocolInfo_34(D)->ReadBitSwap;
+  _17 = pxCrcProtocolInfo_34(D)->ReadByteSwap;
+  _18 = Crc_Ip_LibTranspose (_13, _15, _16, _17);
+  CrcValue_36 = (uint8) _18;
+  _19 = pxCrcProtocolInfo_34(D)->InverseEnable;
+  if (_19 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CrcValue_37 = ~CrcValue_36;
+
+  <bb 12> :
+  # CrcValue_23 = PHI <CrcValue_36(10), CrcValue_37(11)>
+  _38 = CrcValue_23;
+
+  <bb 13> :
+<L11>:
+  return _38;
+
+}
+
+
+
+;; Function Crc_TableCalculateCRC16 (Crc_TableCalculateCRC16, funcdef_no=10, decl_uid=5718, cgraph_uid=11, symbol_order=18)
+
+Crc_TableCalculateCRC16 (const Crc_Ip_ProtocolType Protocol, const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint16 StartValue16)
+{
+  uint16 CrcValue;
+  uint32 CrcData;
+  uint32 LengthIdx;
+  uint8 TableIndex;
+  uint16 D.5866;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  short unsigned int _11;
+  int _12;
+  short unsigned int _13;
+  int _14;
+  short unsigned int _15;
+  long long unsigned int _16;
+  <unnamed type> _17;
+  unsigned char _18;
+  _Bool _19;
+  _Bool _20;
+  long long unsigned int _21;
+  _Bool _22;
+  uint16 _41;
+
+  <bb 2> :
+  TableIndex_29 = 0;
+  LengthIdx_30 = 0;
+  CrcData_31 = 0;
+  CrcValue_33 = StartValue16_32(D);
+  LengthIdx_34 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_42(D) + LengthIdx_23;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_37(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_37(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_37(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  CrcData_44 = (uint32) _8;
+  _9 = (short unsigned int) CrcData_44;
+  _10 = _9 << 8;
+  CrcValue_45 = CrcValue_25 ^ _10;
+  _11 = CrcValue_45 >> 8;
+  TableIndex_46 = (uint8) _11;
+  CrcValue_47 = CrcValue_45 << 8;
+  if (Protocol_48(D) == 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _12 = (int) TableIndex_46;
+  _13 = s_TableCrc16[_12];
+  CrcValue_51 = CrcValue_47 ^ _13;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (Protocol_48(D) == 6)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _14 = (int) TableIndex_46;
+  _15 = s_TableCrc16ARC[_14];
+  CrcValue_50 = CrcValue_47 ^ _15;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 8> :
+  # CrcValue_24 = PHI <CrcValue_51(4), CrcValue_50(6), CrcValue_47(7)>
+  LengthIdx_52 = LengthIdx_23 + 1;
+
+  <bb 9> :
+  # LengthIdx_23 = PHI <LengthIdx_34(2), LengthIdx_52(8)>
+  # CrcValue_25 = PHI <CrcValue_33(2), CrcValue_24(8)>
+  if (LengthIdx_23 < Length_36(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _16 = (long long unsigned int) CrcValue_25;
+  _17 = pxCrcProtocolInfo_37(D)->Width;
+  _18 = (unsigned char) _17;
+  _19 = pxCrcProtocolInfo_37(D)->ReadBitSwap;
+  _20 = pxCrcProtocolInfo_37(D)->ReadByteSwap;
+  _21 = Crc_Ip_LibTranspose (_16, _18, _19, _20);
+  CrcValue_39 = (uint16) _21;
+  _22 = pxCrcProtocolInfo_37(D)->InverseEnable;
+  if (_22 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CrcValue_40 = ~CrcValue_39;
+
+  <bb 12> :
+  # CrcValue_26 = PHI <CrcValue_39(10), CrcValue_40(11)>
+  _41 = CrcValue_26;
+
+  <bb 13> :
+<L11>:
+  return _41;
+
+}
+
+
+
+;; Function Crc_TableCalculateCRC32 (Crc_TableCalculateCRC32, funcdef_no=11, decl_uid=5724, cgraph_uid=12, symbol_order=19)
+
+Crc_TableCalculateCRC32 (const Crc_Ip_ProtocolType Protocol, const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint32 StartValue32)
+{
+  uint32 CrcValue;
+  uint32 CrcData;
+  uint32 LengthIdx;
+  uint8 TableIndex;
+  uint32 D.5876;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  int _11;
+  long unsigned int _12;
+  int _13;
+  long unsigned int _14;
+  long long unsigned int _15;
+  <unnamed type> _16;
+  unsigned char _17;
+  _Bool _18;
+  _Bool _19;
+  long long unsigned int _20;
+  _Bool _21;
+  uint32 _40;
+
+  <bb 2> :
+  TableIndex_28 = 0;
+  LengthIdx_29 = 0;
+  CrcData_30 = 0;
+  CrcValue_32 = StartValue32_31(D);
+  LengthIdx_33 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_41(D) + LengthIdx_22;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_36(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_36(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_36(D)->WriteByteSwap;
+  _8 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  CrcData_43 = (uint32) _8;
+  _9 = CrcData_43 << 24;
+  CrcValue_44 = CrcValue_24 ^ _9;
+  _10 = CrcValue_44 >> 24;
+  TableIndex_45 = (uint8) _10;
+  CrcValue_46 = CrcValue_44 << 8;
+  if (Protocol_47(D) == 9)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _11 = (int) TableIndex_45;
+  _12 = s_TableCrc32[_11];
+  CrcValue_50 = CrcValue_46 ^ _12;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (Protocol_47(D) == 8)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _13 = (int) TableIndex_45;
+  _14 = s_TableCrc32P4[_13];
+  CrcValue_49 = CrcValue_46 ^ _14;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 8> :
+  # CrcValue_23 = PHI <CrcValue_50(4), CrcValue_49(6), CrcValue_46(7)>
+  LengthIdx_51 = LengthIdx_22 + 1;
+
+  <bb 9> :
+  # LengthIdx_22 = PHI <LengthIdx_33(2), LengthIdx_51(8)>
+  # CrcValue_24 = PHI <CrcValue_32(2), CrcValue_23(8)>
+  if (LengthIdx_22 < Length_35(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _15 = (long long unsigned int) CrcValue_24;
+  _16 = pxCrcProtocolInfo_36(D)->Width;
+  _17 = (unsigned char) _16;
+  _18 = pxCrcProtocolInfo_36(D)->ReadBitSwap;
+  _19 = pxCrcProtocolInfo_36(D)->ReadByteSwap;
+  _20 = Crc_Ip_LibTranspose (_15, _17, _18, _19);
+  CrcValue_38 = (uint32) _20;
+  _21 = pxCrcProtocolInfo_36(D)->InverseEnable;
+  if (_21 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CrcValue_39 = ~CrcValue_38;
+
+  <bb 12> :
+  # CrcValue_25 = PHI <CrcValue_38(10), CrcValue_39(11)>
+  _40 = CrcValue_25;
+
+  <bb 13> :
+<L11>:
+  return _40;
+
+}
+
+
+
+;; Function Crc_TableCalculateCRC64 (Crc_TableCalculateCRC64, funcdef_no=12, decl_uid=5730, cgraph_uid=13, symbol_order=20)
+
+Crc_TableCalculateCRC64 (const Crc_Ip_ProtocolType Protocol, const struct Crc_Ip_CrcProtocolInfoType * pxCrcProtocolInfo, const uint8 * DataPtr, const uint32 Length, const uint64 StartValue64)
+{
+  uint64 CrcValue;
+  uint64 CrcData;
+  uint32 LengthIdx;
+  uint8 TableIndex;
+  uint64 D.5883;
+  const uint8 * _1;
+  unsigned char _2;
+  long long unsigned int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  int _10;
+  long long unsigned int _11;
+  <unnamed type> _12;
+  unsigned char _13;
+  _Bool _14;
+  _Bool _15;
+  _Bool _16;
+  uint64 _35;
+
+  <bb 2> :
+  TableIndex_23 = 0;
+  LengthIdx_24 = 0;
+  CrcData_25 = 0;
+  CrcValue_27 = StartValue64_26(D);
+  LengthIdx_28 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = DataPtr_36(D) + LengthIdx_17;
+  _2 = *_1;
+  _3 = (long long unsigned int) _2;
+  _4 = pxCrcProtocolInfo_31(D)->Width;
+  _5 = (unsigned char) _4;
+  _6 = pxCrcProtocolInfo_31(D)->WriteBitSwap;
+  _7 = pxCrcProtocolInfo_31(D)->WriteByteSwap;
+  CrcData_38 = Crc_Ip_LibTranspose (_3, _5, _6, _7);
+  _8 = CrcData_38 << 56;
+  CrcValue_39 = CrcValue_19 ^ _8;
+  _9 = CrcValue_39 >> 56;
+  TableIndex_40 = (uint8) _9;
+  CrcValue_41 = CrcValue_39 << 8;
+  if (Protocol_42(D) == 10)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _10 = (int) TableIndex_40;
+  _11 = Crc_u64CrcTable[_10];
+  CrcValue_44 = CrcValue_41 ^ _11;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 6> :
+  # CrcValue_18 = PHI <CrcValue_44(4), CrcValue_41(5)>
+  LengthIdx_45 = LengthIdx_17 + 1;
+
+  <bb 7> :
+  # LengthIdx_17 = PHI <LengthIdx_28(2), LengthIdx_45(6)>
+  # CrcValue_19 = PHI <CrcValue_27(2), CrcValue_18(6)>
+  if (LengthIdx_17 < Length_30(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  _12 = pxCrcProtocolInfo_31(D)->Width;
+  _13 = (unsigned char) _12;
+  _14 = pxCrcProtocolInfo_31(D)->ReadBitSwap;
+  _15 = pxCrcProtocolInfo_31(D)->ReadByteSwap;
+  CrcValue_33 = Crc_Ip_LibTranspose (CrcValue_19, _13, _14, _15);
+  _16 = pxCrcProtocolInfo_31(D)->InverseEnable;
+  if (_16 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CrcValue_34 = ~CrcValue_33;
+
+  <bb 10> :
+  # CrcValue_20 = PHI <CrcValue_33(8), CrcValue_34(9)>
+  _35 = CrcValue_20;
+
+  <bb 11> :
+<L8>:
+  return _35;
+
+}
+
+
+
+;; Function Crc_Ip_LookupTablesCalculate (Crc_Ip_LookupTablesCalculate, funcdef_no=13, decl_uid=5641, cgraph_uid=14, symbol_order=21)
+
+Crc_Ip_LookupTablesCalculate (const struct Crc_Ip_LogicChannelStateType * pxLogicChannelState, const uint8 * DataPtr, const uint32 Length, const uint64 InitialSeedStartValue)
+{
+  uint64 LocResult;
+  uint64 D.5885;
+  _Bool _1;
+  _Bool _2;
+  const struct Crc_Ip_CrcProtocolInfoType * _3;
+  <unnamed type> _4;
+  <unnamed type> _5;
+  const struct Crc_Ip_CrcProtocolInfoType * _6;
+  unsigned char _7;
+  unsigned char _8;
+  <unnamed type> _9;
+  const struct Crc_Ip_CrcProtocolInfoType * _10;
+  short unsigned int _11;
+  short unsigned int _12;
+  <unnamed type> _13;
+  const struct Crc_Ip_CrcProtocolInfoType * _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  <unnamed type> _17;
+  const struct Crc_Ip_CrcProtocolInfoType * _18;
+  uint64 _37;
+
+  <bb 2> :
+  LocResult_21 = 0;
+  _1 = pxLogicChannelState_22(D) != 0B;
+  Crc_Ip_DevAssert (_1);
+  _2 = DataPtr_25(D) != 0B;
+  Crc_Ip_DevAssert (_2);
+  _3 = pxLogicChannelState_22(D)->CrcProtocolInfo;
+  _4 = _3->Width;
+  switch (_4) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  _5 = pxLogicChannelState_22(D)->Protocol;
+  _6 = pxLogicChannelState_22(D)->CrcProtocolInfo;
+  _7 = (unsigned char) InitialSeedStartValue_28(D);
+  _8 = Crc_TableCalculateCRC8 (_5, _6, DataPtr_25(D), Length_27(D), _7);
+  LocResult_36 = (uint64) _8;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  _9 = pxLogicChannelState_22(D)->Protocol;
+  _10 = pxLogicChannelState_22(D)->CrcProtocolInfo;
+  _11 = (short unsigned int) InitialSeedStartValue_28(D);
+  _12 = Crc_TableCalculateCRC16 (_9, _10, DataPtr_25(D), Length_27(D), _11);
+  LocResult_34 = (uint64) _12;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  _13 = pxLogicChannelState_22(D)->Protocol;
+  _14 = pxLogicChannelState_22(D)->CrcProtocolInfo;
+  _15 = (long unsigned int) InitialSeedStartValue_28(D);
+  _16 = Crc_TableCalculateCRC32 (_13, _14, DataPtr_25(D), Length_27(D), _15);
+  LocResult_32 = (uint64) _16;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  _17 = pxLogicChannelState_22(D)->Protocol;
+  _18 = pxLogicChannelState_22(D)->CrcProtocolInfo;
+  LocResult_30 = Crc_TableCalculateCRC64 (_17, _18, DataPtr_25(D), Length_27(D), InitialSeedStartValue_28(D));
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  # LocResult_19 = PHI <LocResult_36(3), LocResult_34(4), LocResult_32(5), LocResult_30(6), LocResult_21(7)>
+  _37 = LocResult_19;
+
+  <bb 9> :
+<L6>:
+  return _37;
+
+}
+
+

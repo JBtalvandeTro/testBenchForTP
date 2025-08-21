@@ -1,0 +1,919 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: available
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: available
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CanIf_ControllerBusOff/4 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: available
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CBU_Init/9 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: available
+  Varpool flags:
+CBU_CheckLength (uint8_t length)
+{
+  uint8_t frameLength;
+  uint8_t D.7659;
+  uint8_t _5;
+
+  <bb 2> :
+  frameLength_2 = 0;
+  if (length_3(D) <= 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  frameLength_4 = length_3(D);
+
+  <bb 4> :
+  # frameLength_1 = PHI <frameLength_4(3), frameLength_2(2)>
+  _5 = frameLength_1;
+
+  <bb 5> :
+<L8>:
+  return _5;
+
+}
+
+
+CBU_SetBitrate (uint8_t canPort, uint16_t bitrate, uint32_t finalState)
+{
+  const struct Can_ControllerConfigType * l_controller;
+  Std_ReturnType ret;
+  uint16_t bitrate_value;
+  const struct Can_ControllerConfigType * const * _1;
+  const struct Can_ControllerConfigType * const * _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Can_ControllerConfigType * const * _5;
+  short unsigned int _6;
+  unsigned char _7;
+  int _8;
+
+  <bb 2> :
+  bitrate_value_16 = bitrate_15(D);
+  _1 = Can_Config_Init.Can_ppController;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 3> :
+  _2 = Can_Config_Init.Can_ppController;
+  _3 = (unsigned int) canPort_18(D);
+  _4 = _3 * 4;
+  _5 = _2 + _4;
+  l_controller_19 = *_5;
+  _6 = l_controller_19->Can_u16BaudrateConfigCount;
+  if (bitrate_value_16 >= _6)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  bitrate_value_20 = 0;
+
+  <bb 5> :
+  # bitrate_value_9 = PHI <bitrate_value_16(3), bitrate_value_20(4)>
+  _7 = Can_SetControllerMode (canPort_18(D), 2);
+  if (_7 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 6> :
+  Can_SetBaudrate (canPort_18(D), bitrate_value_9);
+  ret_25 = Can_SetControllerMode (canPort_18(D), finalState_23(D));
+  _8 = (int) canPort_18(D);
+  switch (_8) <default: <L19> [INV], case 0: <L4> [INV], case 1: <L9> [INV], case 2: <L14> [INV]>
+
+  <bb 7> :
+<L4>:
+  if (ret_25 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  if (finalState_23(D) != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CBU_flags.status.canCInitialized = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  CBU_flags.status.canCInitialized = 0;
+
+  <bb 11> :
+  goto <bb 23>; [INV]
+
+  <bb 12> :
+<L9>:
+  if (ret_25 == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 13> :
+  if (finalState_23(D) != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  CBU_flags.status.canIInitialized = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  CBU_flags.status.canIInitialized = 0;
+
+  <bb 16> :
+  goto <bb 23>; [INV]
+
+  <bb 17> :
+<L14>:
+  if (ret_25 == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 18> :
+  if (finalState_23(D) != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  CBU_flags.status.canMInitialized = 1;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  CBU_flags.status.canMInitialized = 0;
+
+  <bb 21> :
+  goto <bb 23>; [INV]
+
+  <bb 22> :
+<L19>:
+
+  <bb 23> :
+
+  <bb 24> :
+  return;
+
+}
+
+
+CanIf_CurrentIcomConfiguration (uint8 ControllerId, IcomConfigIdType ConfigurationId, IcomSwitch_ErrorType Error)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CBU_SendFrame (struct Can_PduType pdu, uint8_t mailbox)
+{
+  short unsigned int _1;
+
+  <bb 2> :
+  _1 = (short unsigned int) mailbox_2(D);
+  Can_Write (_1, &pdu);
+  return;
+
+}
+
+
+CBU_ClearPendingFlag (uint16_t mailbox)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) mailbox_2(D);
+  CBU_framesStatus[_1].isPending = 0;
+  return;
+
+}
+
+
+CBU_CheckErrors ()
+{
+  uint8_t local_controller;
+  Can_ErrorStateType errors[3];
+  int _1;
+  Can_ErrorStateType * _2;
+  unsigned char local_controller.4_3;
+  <unnamed type> _4;
+  <unnamed type> _5;
+  <unnamed type> _6;
+
+  <bb 2> :
+  errors = {};
+  local_controller_14 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) local_controller_7;
+  _2 = &errors[_1];
+  Can_GetControllerErrorState (local_controller_7, _2);
+  local_controller.4_3 = local_controller_7;
+  local_controller_23 = local_controller.4_3 + 1;
+
+  <bb 4> :
+  # local_controller_7 = PHI <local_controller_14(2), local_controller_23(3)>
+  if (local_controller_7 <= 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _4 = errors[0];
+  if (_4 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  CBU_flags.status.canCComLost = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_flags.status.canCComLost = 0;
+
+  <bb 8> :
+  _5 = errors[1];
+  if (_5 == 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CBU_flags.status.canIComLost = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  CBU_flags.status.canIComLost = 0;
+
+  <bb 11> :
+  _6 = errors[2];
+  if (_6 == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  CBU_flags.status.canMComLost = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  CBU_flags.status.canMComLost = 0;
+
+  <bb 14> :
+  errors ={v} {CLOBBER};
+  return;
+
+}
+
+
+CBU_Deinit ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  _1 = Can_SetControllerMode (0, 2);
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _2 = Can_SetControllerMode (1, 2);
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _3 = Can_SetControllerMode (2, 2);
+  if (_3 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CBU_flags.status.middlewareInitialized = 0;
+
+  <bb 6> :
+  return;
+
+}
+
+
+CBU_Init (boolean cStart, boolean iStart, boolean mStart)
+{
+  Can_ControllerStateType state;
+  uint16_t hwObject;
+  uint16_t mailbox;
+  uint8_t local_controller;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  const struct Can_ControllerConfigType * const * _4;
+  unsigned int _5;
+  unsigned int _6;
+  const struct Can_ControllerConfigType * const * _7;
+  const struct Can_ControllerConfigType * _8;
+  const struct Can_HwObjectConfigType * const * _9;
+  unsigned int _10;
+  unsigned int _11;
+  const struct Can_HwObjectConfigType * const * _12;
+  const struct Can_HwObjectConfigType * _13;
+  int _14;
+  const struct Can_ControllerConfigType * const * _15;
+  unsigned int _16;
+  unsigned int _17;
+  const struct Can_ControllerConfigType * const * _18;
+  const struct Can_ControllerConfigType * _19;
+  const struct Can_HwObjectConfigType * const * _20;
+  unsigned int _21;
+  unsigned int _22;
+  const struct Can_HwObjectConfigType * const * _23;
+  const struct Can_HwObjectConfigType * _24;
+  const struct Can_HwFilterType * _25;
+  int _26;
+  long unsigned int _27;
+  const struct Can_ControllerConfigType * const * _28;
+  unsigned int _29;
+  unsigned int _30;
+  const struct Can_ControllerConfigType * const * _31;
+  const struct Can_ControllerConfigType * _32;
+  const struct Can_HwObjectConfigType * const * _33;
+  unsigned int _34;
+  unsigned int _35;
+  const struct Can_HwObjectConfigType * const * _36;
+  const struct Can_HwObjectConfigType * _37;
+  int _38;
+  <unnamed type> _39;
+  int _40;
+  int _41;
+  short unsigned int mailbox.2_42;
+  const struct Can_ControllerConfigType * const * _43;
+  unsigned int _44;
+  unsigned int _45;
+  const struct Can_ControllerConfigType * const * _46;
+  const struct Can_ControllerConfigType * _47;
+  unsigned char _48;
+  short unsigned int _49;
+  unsigned char local_controller.3_50;
+
+  <bb 2> :
+  local_controller_61 = 0;
+  CBU_flags.all = 0;
+  if (cStart_64(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  state_66 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  state_65 = 2;
+
+  <bb 5> :
+  # state_53 = PHI <state_66(3), state_65(4)>
+  _1 = Can_SetControllerMode (0, state_53);
+  if (_1 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  CBU_flags.status.canCInitialized = cStart_64(D);
+  CBU_flags.status.middlewareInitialized = cStart_64(D);
+
+  <bb 7> :
+  if (iStart_70(D) != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  state_72 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  state_71 = 2;
+
+  <bb 10> :
+  # state_54 = PHI <state_72(8), state_71(9)>
+  _2 = Can_SetControllerMode (1, state_54);
+  if (_2 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CBU_flags.status.canIInitialized = iStart_70(D);
+  CBU_flags.status.middlewareInitialized = iStart_70(D);
+
+  <bb 12> :
+  if (mStart_76(D) != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  state_78 = 1;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  state_77 = 2;
+
+  <bb 15> :
+  # state_55 = PHI <state_78(13), state_77(14)>
+  _3 = Can_SetControllerMode (2, state_55);
+  if (_3 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  CBU_flags.status.canMInitialized = mStart_76(D);
+  CBU_flags.status.middlewareInitialized = mStart_76(D);
+
+  <bb 17> :
+  local_controller_82 = 0;
+  goto <bb 22>; [INV]
+
+  <bb 18> :
+  mailbox_84 = 0;
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+  _4 = Can_Config_Init.Can_ppController;
+  _5 = (unsigned int) local_controller_51;
+  _6 = _5 * 4;
+  _7 = _4 + _6;
+  _8 = *_7;
+  _9 = _8->Can_ppHwObject;
+  _10 = (unsigned int) mailbox_52;
+  _11 = _10 * 4;
+  _12 = _9 + _11;
+  _13 = *_12;
+  hwObject_86 = _13->Can_HwObjectID;
+  _14 = (int) hwObject_86;
+  CBU_framesStatus[_14].idController = local_controller_51;
+  _15 = Can_Config_Init.Can_ppController;
+  _16 = (unsigned int) local_controller_51;
+  _17 = _16 * 4;
+  _18 = _15 + _17;
+  _19 = *_18;
+  _20 = _19->Can_ppHwObject;
+  _21 = (unsigned int) mailbox_52;
+  _22 = _21 * 4;
+  _23 = _20 + _22;
+  _24 = *_23;
+  _25 = _24->Can_pHwFilterConfig;
+  _26 = (int) hwObject_86;
+  _27 = _25->Can_u32HwFilterCode;
+  CBU_framesStatus[_26].frameId = _27;
+  _28 = Can_Config_Init.Can_ppController;
+  _29 = (unsigned int) local_controller_51;
+  _30 = _29 * 4;
+  _31 = _28 + _30;
+  _32 = *_31;
+  _33 = _32->Can_ppHwObject;
+  _34 = (unsigned int) mailbox_52;
+  _35 = _34 * 4;
+  _36 = _33 + _35;
+  _37 = *_36;
+  _38 = (int) hwObject_86;
+  _39 = _37->Can_HohType;
+  CBU_framesStatus[_38].frameDir = _39;
+  _40 = (int) hwObject_86;
+  CBU_framesStatus[_40].isPending = 0;
+  _41 = (int) hwObject_86;
+  CBU_framesStatus[_41].frameLength = 0;
+  mailbox.2_42 = mailbox_52;
+  mailbox_92 = mailbox.2_42 + 1;
+
+  <bb 20> :
+  # mailbox_52 = PHI <mailbox_84(18), mailbox_92(19)>
+  _43 = Can_Config_Init.Can_ppController;
+  _44 = (unsigned int) local_controller_51;
+  _45 = _44 * 4;
+  _46 = _43 + _45;
+  _47 = *_46;
+  _48 = _47->Can_u8HwObjectRefCount;
+  _49 = (short unsigned int) _48;
+  if (mailbox_52 < _49)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 21> :
+  local_controller.3_50 = local_controller_51;
+  local_controller_85 = local_controller.3_50 + 1;
+
+  <bb 22> :
+  # local_controller_51 = PHI <local_controller_82(17), local_controller_85(21)>
+  if (local_controller_51 <= 2)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 23> :
+  CBU_Address = 0;
+  return;
+
+}
+
+
+CBU_CreatePduInfo (Can_IdType id, PduIdType swPduHandle, uint8 length, uint8 * sdu, struct Can_PduType * pduInfoPtr)
+{
+  <bb 2> :
+  pduInfoPtr_2(D)->id = id_3(D);
+  pduInfoPtr_2(D)->swPduHandle = swPduHandle_5(D);
+  pduInfoPtr_2(D)->length = length_7(D);
+  pduInfoPtr_2(D)->sdu = sdu_9(D);
+  return;
+
+}
+
+
+CanIf_RxIndication (const struct Can_HwType * Mailbox, const struct PduInfoType * PduInfoPtr)
+{
+  uint16_t index;
+  short unsigned int _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned char CBU_Address.0_6;
+  long unsigned int _7;
+  short unsigned int _8;
+  int _9;
+  unsigned char _10;
+  short unsigned int _11;
+  int _12;
+  unsigned char _13;
+  short unsigned int _14;
+  int _15;
+  long unsigned int _16;
+  short unsigned int _17;
+  int _18;
+  uint8 * _19;
+  sizetype _20;
+  uint8 * _21;
+  short unsigned int _22;
+  int _23;
+  int _24;
+  unsigned char _25;
+  short unsigned int index.1_26;
+  long unsigned int _27;
+  short unsigned int _28;
+  int _29;
+  long unsigned int _30;
+  short unsigned int _31;
+  int _32;
+  unsigned char _33;
+  long unsigned int _34;
+  short unsigned int _35;
+  short unsigned int _36;
+
+  <bb 2> :
+  _1 = Mailbox_41(D)->Hoh;
+  _2 = (int) _1;
+  _3 = CBU_framesStatus[_2].idController;
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = Mailbox_41(D)->CanId;
+  _5 = _4 & 3;
+  CBU_Address.0_6 = CBU_Address;
+  _7 = (long unsigned int) CBU_Address.0_6;
+  if (_5 == _7)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _8 = Mailbox_41(D)->Hoh;
+  _9 = (int) _8;
+  _10 = CBU_framesStatus[_9].idController;
+  if (_10 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _11 = Mailbox_41(D)->Hoh;
+  _12 = (int) _11;
+  _13 = CBU_framesStatus[_12].idController;
+  if (_13 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _14 = Mailbox_41(D)->Hoh;
+  _15 = (int) _14;
+  _16 = PduInfoPtr_42(D)->SduLength;
+  CBU_framesStatus[_15].frameLength = _16;
+  _17 = Mailbox_41(D)->Hoh;
+  _18 = (int) _17;
+  CBU_framesStatus[_18].isPending = 1;
+  index_45 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _19 = PduInfoPtr_42(D)->SduDataPtr;
+  _20 = (sizetype) index_37;
+  _21 = _19 + _20;
+  _22 = Mailbox_41(D)->Hoh;
+  _23 = (int) _22;
+  _24 = (int) index_37;
+  _25 = *_21;
+  CBU_framesStatus[_23].buffer[_24] = _25;
+  index.1_26 = index_37;
+  index_48 = index.1_26 + 1;
+
+  <bb 8> :
+  # index_37 = PHI <index_45(6), index_48(7)>
+  _27 = (long unsigned int) index_37;
+  _28 = Mailbox_41(D)->Hoh;
+  _29 = (int) _28;
+  _30 = CBU_framesStatus[_29].frameLength;
+  if (_27 < _30)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _31 = Mailbox_41(D)->Hoh;
+  _32 = (int) _31;
+  _33 = CBU_framesStatus[_32].idController;
+  if (_33 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _34 = Mailbox_41(D)->CanId;
+  _35 = (short unsigned int) _34;
+  _36 = _35 & 255;
+  CBU_powerCoreAdd = _36;
+
+  <bb 11> :
+  return;
+
+}
+
+
+CanIf_TxConfirmation (PduIdType CanTxPduId)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CanIf_ControllerModeIndication (uint8 ControllerId, Can_ControllerStateType ControllerMode)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CanIf_ControllerBusOff (uint8 ControllerId)
+{
+  <bb 2> :
+  if (ControllerId_2(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CBU_flags.status.canCComLost = 1;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  if (ControllerId_2(D) == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CBU_flags.status.canIComLost = 1;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (ControllerId_2(D) == 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_flags.status.canMComLost = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+

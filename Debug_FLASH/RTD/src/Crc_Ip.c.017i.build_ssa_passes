@@ -1,0 +1,1000 @@
+Crc_Ip_GetChannelResult (const uint32 LogicChannel)
+{
+  uint64 LocResult;
+  uint64 D.5975;
+
+  <bb 2> :
+  LocResult = 0;
+  _1 = LogicChannel <= 1;
+  Crc_Ip_DevAssert (_1);
+  s_ppaxLogicChannelInit.19_2 = s_ppaxLogicChannelInit;
+  _3 = LogicChannel * 4;
+  _4 = s_ppaxLogicChannelInit.19_2 + _3;
+  _5 = *_4;
+  _6 = _5->CalculationType;
+  switch (_6) <default: <L3> [INV], case 0 ... 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  LocResult = s_axLogicChannelState[LogicChannel].CrcResult;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L2>:
+  s_ppaxLogicChannelInit.20_7 = s_ppaxLogicChannelInit;
+  _8 = LogicChannel * 4;
+  _9 = s_ppaxLogicChannelInit.20_7 + _8;
+  _10 = *_9;
+  _11 = _10->HwInst;
+  s_ppaxLogicChannelInit.21_12 = s_ppaxLogicChannelInit;
+  _13 = LogicChannel * 4;
+  _14 = s_ppaxLogicChannelInit.21_12 + _13;
+  _15 = *_14;
+  _16 = _15->HwChannel;
+  LocResult = Crc_Ip_HwGetLocResult (_11, _16);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L3>:
+
+  <bb 6> :
+  D.5975 = LocResult;
+
+  <bb 7> :
+<L5>:
+  return D.5975;
+
+}
+
+
+Crc_Ip_SetChannelCalculate (const uint32 LogicChannel, const uint8 * DataPtr, const uint32 Length, const uint64 StartValue, const boolean IsFirstCall)
+{
+  const struct Crc_Ip_CrcProtocolInfoType * pxLocProtocolInfo;
+  uint64 LocInitialSeedStartValue;
+  uint64 LocResult;
+  uint64 D.5932;
+
+  <bb 2> :
+  LocResult = 0;
+  LocInitialSeedStartValue = StartValue;
+  pxLocProtocolInfo = s_axLogicChannelState[LogicChannel].CrcProtocolInfo;
+  _1 = LogicChannel <= 1;
+  Crc_Ip_DevAssert (_1);
+  _2 = DataPtr != 0B;
+  Crc_Ip_DevAssert (_2);
+  s_ppaxLogicChannelInit.16_3 = s_ppaxLogicChannelInit;
+  _4 = LogicChannel * 4;
+  _5 = s_ppaxLogicChannelInit.16_3 + _4;
+  _6 = *_5;
+  _7 = _6->CalculationType;
+  _8 = s_axLogicChannelState[LogicChannel].Protocol;
+  Static_Crc_Ip_ValidateProtocol (_7, _8);
+  if (IsFirstCall != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _9 = s_axLogicChannelState[LogicChannel].Protocol;
+  if (_9 <= 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  LocInitialSeedStartValue = StartValue;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L5>:
+  LocInitialSeedStartValue = pxLocProtocolInfo->InitialSeedValue;
+
+  <bb 6> :
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _10 = pxLocProtocolInfo->InverseEnable;
+  if (_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  LocInitialSeedStartValue = ~StartValue;
+
+  <bb 9> :
+  _11 = pxLocProtocolInfo->Width;
+  _12 = (unsigned char) _11;
+  _13 = pxLocProtocolInfo->ReadBitSwap;
+  _14 = pxLocProtocolInfo->ReadByteSwap;
+  LocInitialSeedStartValue = Crc_Ip_LibTranspose (LocInitialSeedStartValue, _12, _13, _14);
+
+  <bb 10> :
+  s_ppaxLogicChannelInit.17_15 = s_ppaxLogicChannelInit;
+  _16 = LogicChannel * 4;
+  _17 = s_ppaxLogicChannelInit.17_15 + _16;
+  _18 = *_17;
+  _19 = _18->CalculationType;
+  switch (_19) <default: <L14> [INV], case 0: <L12> [INV], case 1: <L11> [INV], case 2: <L13> [INV]>
+
+  <bb 11> :
+<L11>:
+  _20 = &s_axLogicChannelState[LogicChannel];
+  LocResult = Crc_Ip_LookupTablesCalculate (_20, DataPtr, Length, LocInitialSeedStartValue);
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+<L12>:
+  _21 = &s_axLogicChannelState[LogicChannel];
+  LocResult = Crc_Ip_SwCalculate (_21, DataPtr, Length, LocInitialSeedStartValue);
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+<L13>:
+  s_ppaxLogicChannelInit.18_22 = s_ppaxLogicChannelInit;
+  _23 = LogicChannel * 4;
+  _24 = s_ppaxLogicChannelInit.18_22 + _23;
+  _25 = *_24;
+  LocResult = Crc_Ip_HwCalculate (_25, DataPtr, Length, LocInitialSeedStartValue);
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+<L14>:
+
+  <bb 15> :
+  s_axLogicChannelState[LogicChannel].CrcResult = LocResult;
+  D.5932 = LocResult;
+
+  <bb 16> :
+<L16>:
+  return D.5932;
+
+}
+
+
+Crc_Ip_SetChannelConfig (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  const struct Crc_Ip_LogicChannelConfigType * LogicChannelConfig;
+
+  <bb 2> :
+  _1 = LogicChannel <= 1;
+  Crc_Ip_DevAssert (_1);
+  if (pxLocLogicChannelConfig != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  LogicChannelConfig = pxLocLogicChannelConfig;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_ppaxLogicChannelInit.14_2 = s_ppaxLogicChannelInit;
+  _3 = LogicChannel * 4;
+  _4 = s_ppaxLogicChannelInit.14_2 + _3;
+  _5 = *_4;
+  LogicChannelConfig = _5->LogicChannelConfig;
+
+  <bb 5> :
+  s_ppaxLogicChannelInit.15_6 = s_ppaxLogicChannelInit;
+  _7 = LogicChannel * 4;
+  _8 = s_ppaxLogicChannelInit.15_6 + _7;
+  _9 = *_8;
+  _10 = _9->CalculationType;
+  _11 = LogicChannelConfig->Protocol;
+  Static_Crc_Ip_ValidateProtocol (_10, _11);
+  Static_Crc_Ip_SetChannelState (LogicChannel, LogicChannelConfig);
+  return;
+
+}
+
+
+Crc_Ip_Init (const struct Crc_Ip_InitType * const pxCrcIpInit)
+{
+  uint32 LocChannelIndex;
+
+  <bb 2> :
+  LocChannelIndex = 0;
+  _1 = pxCrcIpInit != 0B;
+  Crc_Ip_DevAssert (_1);
+  _2 = pxCrcIpInit->LogicChannelConfigList;
+  _3 = _2 != 0B;
+  Crc_Ip_DevAssert (_3);
+  _4 = pxCrcIpInit->LogicChannelConfigList;
+  s_ppaxLogicChannelInit = _4;
+  LocChannelIndex = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  s_ppaxLogicChannelInit.12_5 = s_ppaxLogicChannelInit;
+  _6 = LocChannelIndex * 4;
+  _7 = s_ppaxLogicChannelInit.12_5 + _6;
+  _8 = *_7;
+  _9 = _8->LogicChannelConfig;
+  if (_9 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_ppaxLogicChannelInit.13_10 = s_ppaxLogicChannelInit;
+  _11 = LocChannelIndex * 4;
+  _12 = s_ppaxLogicChannelInit.13_10 + _11;
+  _13 = *_12;
+  _14 = _13->LogicChannelConfig;
+  Static_Crc_Ip_SetChannelState (LocChannelIndex, _14);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 6> :
+  LocChannelIndex = LocChannelIndex + 1;
+
+  <bb 7> :
+  if (LocChannelIndex <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Static_Crc_Ip_ValidateProtocol (const Crc_Ip_CalculationType CalculationType, const Crc_Ip_ProtocolType Protocol)
+{
+  uint8 Tmp;
+  uint8 iftmp.11;
+  uint8 iftmp.10;
+  uint8 iftmp.9;
+  uint8 iftmp.8;
+  uint8 iftmp.7;
+  uint8 iftmp.6;
+
+  <bb 2> :
+  Tmp = 1;
+  if (CalculationType == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (Protocol != 5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 4> :
+  if (Protocol != 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 5> :
+  if (Protocol != 7)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 6> :
+  if (Protocol != 6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 7> :
+  if (Protocol != 9)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 8> :
+  if (Protocol != 8)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 9> :
+  if (Protocol != 10)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 10> :
+  Crc_Ip_DevAssert (0);
+  goto <bb 32>; [INV]
+
+  <bb 11> :
+  if (CalculationType == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 12> :
+  if (Protocol != 7)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.6 = 1;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.6 = 0;
+
+  <bb 15> :
+  Tmp = iftmp.6 & Tmp;
+  if (Protocol != 6)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.7 = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.7 = 0;
+
+  <bb 18> :
+  Tmp = iftmp.7 & Tmp;
+  if (Protocol != 9)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  iftmp.8 = 1;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.8 = 0;
+
+  <bb 21> :
+  Tmp = iftmp.8 & Tmp;
+  if (Protocol != 8)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  iftmp.9 = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  iftmp.9 = 0;
+
+  <bb 24> :
+  Tmp = iftmp.9 & Tmp;
+  if (Protocol != 1)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  iftmp.10 = 1;
+  goto <bb 27>; [INV]
+
+  <bb 26> :
+  iftmp.10 = 0;
+
+  <bb 27> :
+  Tmp = iftmp.10 & Tmp;
+  if (Protocol != 2)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  iftmp.11 = 1;
+  goto <bb 30>; [INV]
+
+  <bb 29> :
+  iftmp.11 = 0;
+
+  <bb 30> :
+  Tmp = iftmp.11 & Tmp;
+  if (Tmp == 1)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 31> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 32> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelState (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static void (*<T51e>) (const uint32, const struct Crc_Ip_LogicChannelConfigType *) fpCrc_Ip_SetChannelProtocol[12] = {Static_Crc_Ip_SetChannelProtocol_8BitCustom, Static_Crc_Ip_SetChannelProtocol_16BitCustom, Static_Crc_Ip_SetChannelProtocol_32BitCustom, Static_Crc_Ip_SetChannelProtocol_64BitCustom, Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar, Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar, Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar, Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar, Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar, Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar, Static_Crc_Ip_SetChannelProtocol_64BitAutosar, Static_Crc_Ip_SetChannelProtocol_Invalid};
+
+  <bb 2> :
+  _1 = pxLocLogicChannelConfig->Protocol;
+  _2 = fpCrc_Ip_SetChannelProtocol[_1];
+  _2 (LogicChannel, pxLocLogicChannelConfig);
+  _3 = pxLocLogicChannelConfig->Protocol;
+  _4 = _3 <= 10;
+  Crc_Ip_DevAssert (_4);
+  _5 = pxLocLogicChannelConfig->Protocol;
+  s_axLogicChannelState[LogicChannel].Protocol = _5;
+  s_ppaxLogicChannelInit.3_6 = s_ppaxLogicChannelInit;
+  _7 = LogicChannel * 4;
+  _8 = s_ppaxLogicChannelInit.3_6 + _7;
+  _9 = *_8;
+  _10 = _9->CalculationType;
+  if (_10 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_ppaxLogicChannelInit.4_11 = s_ppaxLogicChannelInit;
+  _12 = LogicChannel * 4;
+  _13 = s_ppaxLogicChannelInit.4_11 + _12;
+  _14 = *_13;
+  _15 = _14->HwInst;
+  s_ppaxLogicChannelInit.5_16 = s_ppaxLogicChannelInit;
+  _17 = LogicChannel * 4;
+  _18 = s_ppaxLogicChannelInit.5_16 + _17;
+  _19 = *_18;
+  _20 = _19->HwChannel;
+  _21 = &s_axLogicChannelState[LogicChannel];
+  Crc_Ip_HwSetConfig (_15, _20, _21);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_Invalid (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Crc_Ip_DevAssert (0);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol64Bit_AUTOSAR = {.Width=3, .PolynomValue=4823603603198064275, .InitialSeedValue=18446744073709551615, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol64Bit_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_E2E_P4_AUTOSAR = {.Width=2, .PolynomValue=4104977171, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol32Bit_E2E_P4_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_ETHERNET_HARDWARE = {.Width=2, .PolynomValue=79764919, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_ETHERNET_AUTOSAR = {.Width=2, .PolynomValue=79764919, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+
+  <bb 2> :
+  s_ppaxLogicChannelInit.1_1 = s_ppaxLogicChannelInit;
+  _2 = LogicChannel * 4;
+  _3 = s_ppaxLogicChannelInit.1_1 + _2;
+  _4 = *_3;
+  _5 = _4->CalculationType;
+  if (_5 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol32Bit_ETHERNET_HARDWARE;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol32Bit_ETHERNET_AUTOSAR;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_ARC_AUTOSAR = {.Width=1, .PolynomValue=32773, .InitialSeedValue=0, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=0};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol16Bit_ARC_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_CCITT_FALSE_HARDWARE = {.Width=1, .PolynomValue=4129, .InitialSeedValue=65535, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=0};
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_CCITT_FALSE_AUTOSAR = {.Width=1, .PolynomValue=4129, .InitialSeedValue=65535, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=0};
+
+  <bb 2> :
+  s_ppaxLogicChannelInit.0_1 = s_ppaxLogicChannelInit;
+  _2 = LogicChannel * 4;
+  _3 = s_ppaxLogicChannelInit.0_1 + _2;
+  _4 = *_3;
+  _5 = _4->CalculationType;
+  if (_5 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol16Bit_CCITT_FALSE_HARDWARE;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol16Bit_CCITT_FALSE_AUTOSAR;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol8Bit_H2F_AUTOSAR = {.Width=0, .PolynomValue=47, .InitialSeedValue=255, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol8Bit_H2F_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol8Bit_SAE_J1850_AUTOSAR = {.Width=0, .PolynomValue=29, .InitialSeedValue=255, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = &s_Protocol8Bit_SAE_J1850_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_64BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel, pxLocLogicChannelConfig, 3);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel, pxLocLogicChannelConfig, 2);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel, pxLocLogicChannelConfig, 1);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel, pxLocLogicChannelConfig, 0);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelCustomProtocol (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig, Crc_Ip_CrcWidthType LocWidth)
+{
+  <bb 2> :
+  s_axLogicChannelCustomProtocol[LogicChannel].Width = LocWidth;
+  _1 = pxLocLogicChannelConfig->PolynomValue;
+  s_axLogicChannelCustomProtocol[LogicChannel].PolynomValue = _1;
+  _2 = pxLocLogicChannelConfig->WriteBitSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel].WriteBitSwap = _2;
+  _3 = pxLocLogicChannelConfig->WriteByteSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel].WriteByteSwap = _3;
+  _4 = pxLocLogicChannelConfig->ReadBitSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel].ReadBitSwap = _4;
+  _5 = pxLocLogicChannelConfig->ReadByteSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel].ReadByteSwap = _5;
+  _6 = pxLocLogicChannelConfig->InverseEnable;
+  s_axLogicChannelCustomProtocol[LogicChannel].InverseEnable = _6;
+  _7 = &s_axLogicChannelCustomProtocol[LogicChannel];
+  s_axLogicChannelState[LogicChannel].CrcProtocolInfo = _7;
+  return;
+
+}
+
+
+Crc_Ip_LibTranspose (const uint64 InputData, const uint8 CrcWidth, const boolean BitSwap, const boolean ByteSwap)
+{
+  uint64 Result;
+  uint64 D.5959;
+
+  <bb 2> :
+  Result = InputData;
+  if (BitSwap != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (CrcWidth == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Result = Crc_Ip_LibBitSwap64U (Result);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  if (CrcWidth == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _1 = (long unsigned int) Result;
+  _2 = Crc_Ip_LibBitSwap32U (_1);
+  Result = (uint64) _2;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (CrcWidth == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _3 = (short unsigned int) Result;
+  _4 = Crc_Ip_LibBitSwap16U (_3);
+  Result = (uint64) _4;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (CrcWidth == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _5 = (unsigned char) Result;
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Result = (uint64) _6;
+
+  <bb 11> :
+  if (ByteSwap != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 12> :
+  if (CrcWidth == 3)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  Result = Crc_Ip_LibByteSwap64U (Result);
+  goto <bb 18>; [INV]
+
+  <bb 14> :
+  if (CrcWidth == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _7 = (long unsigned int) Result;
+  _8 = Crc_Ip_LibByteSwap32U (_7);
+  Result = (uint64) _8;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+  if (CrcWidth == 1)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _9 = (short unsigned int) Result;
+  _10 = Crc_Ip_LibByteSwap16U (_9);
+  Result = (uint64) _10;
+
+  <bb 18> :
+  D.5959 = Result;
+
+  <bb 19> :
+<L25>:
+  return D.5959;
+
+}
+
+
+Crc_Ip_LibByteSwap16U (const uint16 InputData)
+{
+  uint16 D.5973;
+
+  <bb 2> :
+  _1 = (long unsigned int) InputData;
+  _2 = Crc_Ip_LibByteSwap32U (_1);
+  _3 = _2 >> 16;
+  D.5973 = (uint16) _3;
+
+  <bb 3> :
+<L0>:
+  return D.5973;
+
+}
+
+
+Crc_Ip_LibByteSwap32U (const uint32 InputData)
+{
+  uint32 D.5971;
+
+  <bb 2> :
+  _1 = InputData >> 24;
+  _2 = InputData >> 16;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData >> 8;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData << 24;
+  D.5971 = _9 | _10;
+
+  <bb 3> :
+<L0>:
+  return D.5971;
+
+}
+
+
+Crc_Ip_LibByteSwap64U (const uint64 InputData)
+{
+  uint64 D.5969;
+
+  <bb 2> :
+  _1 = InputData >> 56;
+  _2 = InputData >> 48;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData >> 40;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData >> 32;
+  _11 = _10 << 24;
+  _12 = _11 & 4294967295;
+  _13 = _9 | _12;
+  _14 = InputData >> 24;
+  _15 = _14 << 32;
+  _16 = _15 & 1095216660480;
+  _17 = _13 | _16;
+  _18 = InputData >> 16;
+  _19 = _18 << 40;
+  _20 = _19 & 280375465082880;
+  _21 = _17 | _20;
+  _22 = InputData >> 8;
+  _23 = _22 << 48;
+  _24 = _23 & 71776119061217280;
+  _25 = _21 | _24;
+  _26 = InputData << 56;
+  D.5969 = _25 | _26;
+
+  <bb 3> :
+<L0>:
+  return D.5969;
+
+}
+
+
+Crc_Ip_LibBitSwap64U (const uint64 InputData)
+{
+  uint64 ReturnValue;
+  uint64 ReturnValue34;
+  uint64 ReturnValue12;
+  uint64 ReturnValue4;
+  uint64 ReturnValue3;
+  uint64 ReturnValue2;
+  uint64 ReturnValue1;
+  uint64 Tmp8;
+  uint64 Tmp7;
+  uint64 Tmp6;
+  uint64 Tmp5;
+  uint64 Tmp4;
+  uint64 Tmp3;
+  uint64 Tmp2;
+  uint64 Tmp1;
+  uint64 D.5961;
+
+  <bb 2> :
+  _1 = InputData >> 56;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long long unsigned int) _3;
+  Tmp1 = _4 << 56;
+  _5 = InputData >> 48;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long long unsigned int) _7;
+  Tmp2 = _8 << 48;
+  _9 = InputData >> 40;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long long unsigned int) _11;
+  Tmp3 = _12 << 40;
+  _13 = InputData >> 32;
+  _14 = (unsigned char) _13;
+  _15 = Crc_Ip_LibBitSwap8U (_14);
+  _16 = (long long unsigned int) _15;
+  Tmp4 = _16 << 32;
+  _17 = InputData >> 24;
+  _18 = (unsigned char) _17;
+  _19 = Crc_Ip_LibBitSwap8U (_18);
+  _20 = (long long unsigned int) _19;
+  Tmp5 = _20 << 24;
+  _21 = InputData >> 16;
+  _22 = (unsigned char) _21;
+  _23 = Crc_Ip_LibBitSwap8U (_22);
+  _24 = (long long unsigned int) _23;
+  Tmp6 = _24 << 16;
+  _25 = InputData >> 8;
+  _26 = (unsigned char) _25;
+  _27 = Crc_Ip_LibBitSwap8U (_26);
+  _28 = (long long unsigned int) _27;
+  Tmp7 = _28 << 8;
+  _29 = (unsigned char) InputData;
+  _30 = Crc_Ip_LibBitSwap8U (_29);
+  Tmp8 = (uint64) _30;
+  ReturnValue1 = Tmp1 | Tmp2;
+  ReturnValue2 = Tmp3 | Tmp4;
+  ReturnValue3 = Tmp5 | Tmp6;
+  ReturnValue4 = Tmp7 | Tmp8;
+  ReturnValue12 = ReturnValue1 | ReturnValue2;
+  ReturnValue34 = ReturnValue3 | ReturnValue4;
+  ReturnValue = ReturnValue12 | ReturnValue34;
+  D.5961 = ReturnValue;
+
+  <bb 3> :
+<L0>:
+  return D.5961;
+
+}
+
+
+Crc_Ip_LibBitSwap32U (const uint32 InputData)
+{
+  uint32 ReturnValue;
+  uint32 ReturnValue2;
+  uint32 ReturnValue1;
+  uint32 Tmp4;
+  uint32 Tmp3;
+  uint32 Tmp2;
+  uint32 Tmp1;
+  uint32 D.5963;
+
+  <bb 2> :
+  _1 = InputData >> 24;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long unsigned int) _3;
+  Tmp1 = _4 << 24;
+  _5 = InputData >> 16;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long unsigned int) _7;
+  Tmp2 = _8 << 16;
+  _9 = InputData >> 8;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long unsigned int) _11;
+  Tmp3 = _12 << 8;
+  _13 = (unsigned char) InputData;
+  _14 = Crc_Ip_LibBitSwap8U (_13);
+  Tmp4 = (uint32) _14;
+  ReturnValue1 = Tmp1 | Tmp2;
+  ReturnValue2 = Tmp3 | Tmp4;
+  ReturnValue = ReturnValue1 | ReturnValue2;
+  D.5963 = ReturnValue;
+
+  <bb 3> :
+<L0>:
+  return D.5963;
+
+}
+
+
+Crc_Ip_LibBitSwap16U (const uint16 InputData)
+{
+  uint16 ReturnValue;
+  uint16 Tmp2;
+  uint16 Tmp1;
+  uint16 D.5965;
+
+  <bb 2> :
+  _1 = InputData >> 8;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (short unsigned int) _3;
+  Tmp1 = _4 << 8;
+  _5 = (unsigned char) InputData;
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Tmp2 = (uint16) _6;
+  ReturnValue = Tmp1 | Tmp2;
+  D.5965 = ReturnValue;
+
+  <bb 3> :
+<L0>:
+  return D.5965;
+
+}
+
+
+Crc_Ip_LibBitSwap8U (const uint8 InputData)
+{
+  uint8 D.5967;
+
+  <bb 2> :
+  _1 = (int) InputData;
+  D.5967 = Crc_Ip_au8BitSwapArray[_1];
+
+  <bb 3> :
+<L0>:
+  return D.5967;
+
+}
+
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  x.2_1 = x;
+  if (x.2_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+

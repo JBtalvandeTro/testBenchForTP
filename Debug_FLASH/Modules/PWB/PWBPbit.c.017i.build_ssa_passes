@@ -1,0 +1,106 @@
+PWBPbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+PWBPbit_testLvPrechargeRelay ()
+{
+  boolean currentStateS2;
+  boolean testResult;
+  boolean D.5486;
+
+  <bb 2> :
+  PWBio_UnsetCdeSwitch (1);
+  testResult = 0;
+  _1 = PWBio_ReadAuxSwitch (1);
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  currentStateS2 = (boolean) _5;
+  _6 = ~currentStateS2;
+  if (_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  testResult = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  testResult = 0;
+
+  <bb 5> :
+  D.5486 = testResult;
+
+  <bb 6> :
+<L3>:
+  return D.5486;
+
+}
+
+
+PWBPbit_testHvCouplerRelay ()
+{
+  boolean currentStateS3;
+  boolean testResult;
+  boolean D.5481;
+
+  <bb 2> :
+  PWBio_UnsetCdeSwitch (2);
+  testResult = 0;
+  _1 = PWBio_ReadAuxSwitch (2);
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  currentStateS3 = (boolean) _5;
+  _6 = ~currentStateS3;
+  if (_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  testResult = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  testResult = 0;
+
+  <bb 5> :
+  D.5481 = testResult;
+
+  <bb 6> :
+<L3>:
+  return D.5481;
+
+}
+
+
+PWBPbit_testTempConsis ()
+{
+  boolean D.5476;
+
+  <bb 2> :
+  D.5476 = 1;
+
+  <bb 3> :
+<L0>:
+  return D.5476;
+
+}
+
+
+PWBPbit_Init ()
+{
+  <bb 2> :
+  return;
+
+}
+
+

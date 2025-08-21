@@ -1,0 +1,532 @@
+Trivially needed symbols: dbg_executeLvMeasureTest dbg_executeHvMeasureTest dbg_executeRelaySwitchTest dbg_executeLedsTest dbg_executeDiscreteIosTest DBG_Deinit DBG_Update DBG_Init DBG_Flags
+
+
+Initial Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not-ready
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0596ab60
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0596a620
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0596a0e0
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0596ad20
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0596aa80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0596a7e0
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0596a540
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0596a2a0
+  References: 
+  Referring: DBG_Init/1 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeRelaySwitchTest/6 (write)dbg_executeHvMeasureTest/7 (write)dbg_executeLvMeasureTest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not-ready
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: DBG_Init/1 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeRelaySwitchTest/6 (write)dbg_executeHvMeasureTest/7 (write)dbg_executeLvMeasureTest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not-ready
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: DBG_Init/1 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeRelaySwitchTest/6 (write)dbg_executeHvMeasureTest/7 (write)dbg_executeLvMeasureTest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not-ready
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: DBG_Init/1 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeRelaySwitchTest/6 (write)dbg_executeHvMeasureTest/7 (write)dbg_executeLvMeasureTest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not_available
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: dbg_executeRelaySwitchTest/6 (write)dbg_executeLvMeasureTest/8 (write)DBG_Init/1 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeHvMeasureTest/7 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: DBG_Flags
+Removing variables:
+
+Final Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

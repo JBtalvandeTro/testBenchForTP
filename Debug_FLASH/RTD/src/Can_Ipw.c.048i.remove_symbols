@@ -1,0 +1,2864 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+CanIf_PduInfo.7246/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: available
+  Varpool flags:
+CanIf_Mailbox.7245/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: available
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_EnableControllerInterrupts/18 (write)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_Init/11 (write)
+  Availability: available
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)Can_Ipw_Init/11 (write)
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: available
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_ProcessRxMesgBuffer (const struct Can_ControllerConfigType * Can_pControllerConfig, const struct Can_HwObjectConfigType * Can_pHwObjectConfig, uint8 u8MbIdx)
+{
+  struct Flexcan_Ip_MsgBuffType * pReceivedDataBuffer;
+  const struct Can_HwObjectConfigType * Can_pHwObject;
+  static struct PduInfoType CanIf_PduInfo;
+  static struct Can_HwType CanIf_Mailbox;
+  Can_HwHandleType u8HwObjectID;
+  unsigned char _1;
+  int _2;
+  int _3;
+  unsigned int _4;
+  unsigned int _5;
+  const struct Can_HwObjectConfigType * _6;
+  _Bool _7;
+  _Bool _8;
+  unsigned int _9;
+  unsigned int _10;
+  <unnamed type> _11;
+  unsigned char _12;
+  int _13;
+  struct Flexcan_Ip_StateType * _14;
+  unsigned char _15;
+  int _16;
+  unsigned char _17;
+  unsigned char _18;
+  _Bool _19;
+  <unnamed type> _20;
+  void (*<T6c9>) (void) _21;
+  void (*<T6c9>) (void) _22;
+  void (*<T6c9>) (void) _23;
+  void (*<T6c9>) (void) _24;
+  unsigned char _25;
+  int _26;
+  struct Flexcan_Ip_StateType * _27;
+  unsigned char _28;
+  int _29;
+  unsigned char _30;
+
+  <bb 2> :
+  u8HwObjectID_32 = 0;
+  Can_pHwObject_33 = 0B;
+  pReceivedDataBuffer_34 = 0B;
+  _1 = Can_pControllerConfig_36(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = (int) u8MbIdx_37(D);
+  u8HwObjectID_38 = Can_Ipw_au16MbIdxToObjIDMap[_2][_3];
+  if (u8HwObjectID_38 != 65535)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 3> :
+  _4 = (unsigned int) u8HwObjectID_38;
+  _5 = _4 * 36;
+  _6 = Can_pHwObjectConfig_39(D) + _5;
+  _7 = _6->Can_bHwObjectUsesPolling;
+  _8 = ~_7;
+  if (_8 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 4> :
+  _9 = (unsigned int) u8HwObjectID_38;
+  _10 = _9 * 36;
+  Can_pHwObject_40 = Can_pHwObjectConfig_39(D) + _10;
+  _11 = Can_pHwObject_40->Can_eReceiveType;
+  if (_11 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _12 = Can_pControllerConfig_36(D)->Can_u8ControllerID;
+  _13 = (int) _12;
+  _14 = Can_Ipw_apxStatus[_13];
+  _15 = Can_pHwObject_40->Can_u8HwBufferIndex;
+  _16 = (int) _15;
+  pReceivedDataBuffer_47 = _14->mbs[_16].pMBmessage;
+  Can_Ipw_ParseData (&CanIf_Mailbox, &CanIf_PduInfo, pReceivedDataBuffer_47, Can_pControllerConfig_36(D), Can_pHwObject_40);
+  _17 = Can_pControllerConfig_36(D)->Can_u8ControllerOffset;
+  _18 = Can_pHwObject_40->Can_u8HwBufferIndex;
+  _19 = Can_pHwObject_40->Can_bHwObjectUsesPolling;
+  FlexCAN_Ip_Receive (_17, _18, 0B, _19);
+  goto <bb 14>; [INV]
+
+  <bb 6> :
+  _20 = Can_pHwObject_40->Can_eReceiveType;
+  if (_20 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 7> :
+  if (u8MbIdx_37(D) == 7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  Det_ReportRuntimeError (80, 0, 8, 1);
+  _21 = Can_pControllerConfig_36(D)->Can_pLegacyFiFoOvfNotif;
+  if (_21 != 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 9> :
+  _22 = Can_pControllerConfig_36(D)->Can_pLegacyFiFoOvfNotif;
+  _22 ();
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+  if (u8MbIdx_37(D) == 6)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  _23 = Can_pControllerConfig_36(D)->Can_pLegacyFiFoWarnNotif;
+  if (_23 != 0B)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  _24 = Can_pControllerConfig_36(D)->Can_pLegacyFiFoWarnNotif;
+  _24 ();
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  _25 = Can_pControllerConfig_36(D)->Can_u8ControllerID;
+  _26 = (int) _25;
+  _27 = Can_Ipw_apxStatus[_26];
+  _28 = Can_pHwObject_40->Can_u8HwBufferIndex;
+  _29 = (int) _28;
+  pReceivedDataBuffer_41 = _27->mbs[_29].pMBmessage;
+  Can_Ipw_ParseData (&CanIf_Mailbox, &CanIf_PduInfo, pReceivedDataBuffer_41, Can_pControllerConfig_36(D), Can_pHwObject_40);
+  _30 = Can_pControllerConfig_36(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_RxFifo (_30, 0B);
+
+  <bb 14> :
+  return;
+
+}
+
+
+Can_Ipw_ProcessTxMesgBuffer (const struct Can_ControllerConfigType * Can_pControllerConfig, const struct Can_HwObjectConfigType * Can_pHwObjectConfig, uint8 u8MbIdx)
+{
+  Can_HwHandleType u8HwObjectID;
+  unsigned char _1;
+  int _2;
+  int _3;
+  unsigned int _4;
+  unsigned int _5;
+  const struct Can_HwObjectConfigType * _6;
+  _Bool _7;
+  _Bool _8;
+  unsigned int _9;
+  unsigned int _10;
+  const struct Can_HwObjectConfigType * _11;
+  <unnamed type> _12;
+  unsigned char _13;
+  int _14;
+  int _15;
+  short unsigned int _16;
+
+  <bb 2> :
+  u8HwObjectID_18 = 0;
+  _1 = Can_pControllerConfig_20(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = (int) u8MbIdx_21(D);
+  u8HwObjectID_22 = Can_Ipw_au16MbIdxToObjIDMap[_2][_3];
+  if (u8HwObjectID_22 != 65535)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _4 = (unsigned int) u8HwObjectID_22;
+  _5 = _4 * 36;
+  _6 = Can_pHwObjectConfig_23(D) + _5;
+  _7 = _6->Can_bHwObjectUsesPolling;
+  _8 = ~_7;
+  if (_8 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _9 = (unsigned int) u8HwObjectID_22;
+  _10 = _9 * 36;
+  _11 = Can_pHwObjectConfig_23(D) + _10;
+  _12 = _11->Can_eReceiveType;
+  if (_12 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _13 = Can_pControllerConfig_20(D)->Can_u8ControllerID;
+  _14 = (int) _13;
+  _15 = (int) u8MbIdx_21(D);
+  _16 = Can_Ipw_au16TxPduId[_14][_15];
+  CanIf_TxConfirmation (_16);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Can_Ipw_MainFunction_Mode (const struct Can_ControllerConfigType * Can_pControllerConfig, Can_ControllerStateType * Can_pControllerState)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  _Bool _3;
+  _Bool _4;
+  unsigned char _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  _Bool _8;
+  unsigned char _9;
+
+  <bb 2> :
+  _1 = *Can_pControllerState_12(D);
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _2 = Can_pControllerConfig_13(D)->Can_u8ControllerOffset;
+  _3 = FlexCAN_Ip_GetStartMode_Privileged (_2);
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  *Can_pControllerState_12(D) = 2;
+  _5 = Can_pControllerConfig_13(D)->Can_u8AbstControllerID;
+  CanIf_ControllerModeIndication (_5, 2);
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _6 = *Can_pControllerState_12(D);
+  if (_6 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _7 = Can_pControllerConfig_13(D)->Can_u8ControllerOffset;
+  _8 = FlexCAN_Ip_GetStartMode_Privileged (_7);
+  if (_8 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  *Can_pControllerState_12(D) = 1;
+  _9 = Can_pControllerConfig_13(D)->Can_u8AbstControllerID;
+  CanIf_ControllerModeIndication (_9, 1);
+
+  <bb 8> :
+  return;
+
+}
+
+
+Can_Ipw_InitRx (const struct Can_ControllerConfigType * Can_pController)
+{
+  struct Flexcan_Ip_DataInfoType DataInfo;
+  const struct Can_HwObjectConfigType * Can_pHwObject;
+  uint8 u8HwObjRefIdx;
+  unsigned char _1;
+  const struct Can_HwObjectConfigType * const * _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Can_HwObjectConfigType * const * _5;
+  <unnamed type> _6;
+  <unnamed type> _7;
+  unsigned char _8;
+  unsigned char _9;
+  const struct Can_HwFilterType * _10;
+  long unsigned int _11;
+  unsigned char _12;
+  unsigned char _13;
+  const struct Can_HwFilterType * _14;
+  long unsigned int _15;
+  <unnamed type> _16;
+  unsigned char u8HwObjRefIdx.10_17;
+  unsigned char _18;
+
+  <bb 2> :
+  u8HwObjRefIdx_24 = 0;
+  _1 = Can_pController_26(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetRxMaskType_Privileged (_1, 1);
+  u8HwObjRefIdx_28 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 3> :
+  _2 = Can_pController_26(D)->Can_ppHwObject;
+  _3 = (unsigned int) u8HwObjRefIdx_19;
+  _4 = _3 * 4;
+  _5 = _2 + _4;
+  Can_pHwObject_30 = *_5;
+  _6 = Can_pHwObject_30->Can_eReceiveType;
+  if (_6 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  DataInfo.fd_enable = 0;
+  DataInfo.data_length = 0;
+  _7 = Can_pHwObject_30->Can_IdMessage;
+  if (_7 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  DataInfo.msg_id_type = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  DataInfo.msg_id_type = 0;
+
+  <bb 7> :
+  _8 = Can_pController_26(D)->Can_u8ControllerOffset;
+  _9 = Can_pHwObject_30->Can_u8HwBufferIndex;
+  _10 = Can_pHwObject_30->Can_pHwFilterConfig;
+  _11 = _10->Can_u32HwFilterCode;
+  FlexCAN_Ip_ConfigRxMb (_8, _9, &DataInfo, _11);
+  _12 = Can_pController_26(D)->Can_u8ControllerOffset;
+  _13 = Can_pHwObject_30->Can_u8HwBufferIndex;
+  _14 = Can_pHwObject_30->Can_pHwFilterConfig;
+  _15 = _14->Can_u32HwFilterMask;
+  FlexCAN_Ip_SetRxIndividualMask_Privileged (_12, _13, _15);
+
+  <bb 8> :
+  _16 = Can_pHwObject_30->Can_eReceiveType;
+  if (_16 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Can_Ipw_InitLegacyFifoFilter (Can_pController_26(D), Can_pHwObject_30);
+
+  <bb 10> :
+  u8HwObjRefIdx.10_17 = u8HwObjRefIdx_19;
+  u8HwObjRefIdx_38 = u8HwObjRefIdx.10_17 + 1;
+
+  <bb 11> :
+  # u8HwObjRefIdx_19 = PHI <u8HwObjRefIdx_28(2), u8HwObjRefIdx_38(10)>
+  _18 = Can_pController_26(D)->Can_u8HwObjectRefCount;
+  if (u8HwObjRefIdx_19 < _18)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  DataInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+Can_Ipw_Write (const struct Can_ControllerConfigType * Can_pControllerConfig, const struct Can_HwObjectConfigType * Can_pHwObjectConfig, const struct Can_PduType * PduInfo)
+{
+  uint8 u8ObjIdx;
+  struct Flexcan_Ip_DataInfoType DataInfo;
+  Flexcan_Ip_StatusType eRetVal;
+  Std_ReturnType iftmp.9;
+  Std_ReturnType D.7357;
+  <unnamed type> _1;
+  long unsigned int _2;
+  unsigned int _3;
+  unsigned char _4;
+  long unsigned int _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  int _9;
+  int _10;
+  _Bool _11;
+  const struct Can_BaudrateConfigType * _12;
+  unsigned char _13;
+  int _14;
+  short unsigned int _15;
+  unsigned int _16;
+  unsigned int _17;
+  const struct Can_BaudrateConfigType * _18;
+  _Bool _19;
+  _Bool _20;
+  unsigned char _21;
+  unsigned char _22;
+  unsigned char _23;
+  unsigned char _24;
+  int _25;
+  unsigned char _26;
+  int _27;
+  int _28;
+  int _29;
+  short unsigned int _30;
+  unsigned char _31;
+  unsigned char _32;
+  unsigned char _33;
+  long unsigned int _34;
+  uint8 * _35;
+  unsigned char u8ObjIdx.8_36;
+  unsigned char _37;
+  Std_ReturnType iftmp.9_42;
+  Std_ReturnType iftmp.9_73;
+  Std_ReturnType iftmp.9_74;
+  Std_ReturnType _75;
+
+  <bb 2> :
+  eRetVal_46 = 1;
+  u8ObjIdx_47 = 0;
+  DataInfo.msg_id_type = 0;
+  DataInfo.data_length = 0;
+  DataInfo.fd_padding = 0;
+  DataInfo.fd_enable = 0;
+  DataInfo.enable_brs = 0;
+  DataInfo.is_remote = 0;
+  DataInfo.is_polling = 0;
+  _1 = Can_pHwObjectConfig_56(D)->Can_eReceiveType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = PduInfo_57(D)->id;
+  _3 = _2 >> 31;
+  DataInfo.msg_id_type = _3;
+  _4 = PduInfo_57(D)->length;
+  _5 = (long unsigned int) _4;
+  DataInfo.data_length = _5;
+  _6 = Can_pHwObjectConfig_56(D)->Can_u8PaddingValue;
+  DataInfo.fd_padding = _6;
+  _7 = PduInfo_57(D)->id;
+  _8 = _7 >> 30;
+  _9 = (int) _8;
+  _10 = _9 & 1;
+  _11 = _10 != 0;
+  DataInfo.fd_enable = _11;
+  _12 = Can_pControllerConfig_62(D)->Can_pBaudrateConfig;
+  _13 = Can_pControllerConfig_62(D)->Can_u8ControllerID;
+  _14 = (int) _13;
+  _15 = Can_au16ControllerBaudRateSel[_14];
+  _16 = (unsigned int) _15;
+  _17 = _16 * 24;
+  _18 = _12 + _17;
+  _19 = _18->Can_bBitRateSwitch;
+  DataInfo.enable_brs = _19;
+  DataInfo.is_remote = 0;
+  _20 = Can_pHwObjectConfig_56(D)->Can_bHwObjectUsesPolling;
+  DataInfo.is_polling = _20;
+
+  <bb 4> :
+  # u8ObjIdx_41 = PHI <u8ObjIdx_47(3), u8ObjIdx_71(7)>
+  _21 = Can_pControllerConfig_62(D)->Can_u8ControllerOffset;
+  _22 = Can_pHwObjectConfig_56(D)->Can_u8HwBufferIndex;
+  _23 = u8ObjIdx_41 + _22;
+  eRetVal_67 = FlexCAN_Ip_GetTransferStatus (_21, _23);
+  if (eRetVal_67 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _24 = Can_pControllerConfig_62(D)->Can_u8ControllerID;
+  _25 = (int) _24;
+  _26 = Can_pHwObjectConfig_56(D)->Can_u8HwBufferIndex;
+  _27 = (int) _26;
+  _28 = (int) u8ObjIdx_41;
+  _29 = _27 + _28;
+  _30 = PduInfo_57(D)->swPduHandle;
+  Can_Ipw_au16TxPduId[_25][_29] = _30;
+  _31 = Can_pControllerConfig_62(D)->Can_u8ControllerOffset;
+  _32 = Can_pHwObjectConfig_56(D)->Can_u8HwBufferIndex;
+  _33 = u8ObjIdx_41 + _32;
+  _34 = PduInfo_57(D)->id;
+  _35 = PduInfo_57(D)->sdu;
+  eRetVal_70 = FlexCAN_Ip_Send (_31, _33, &DataInfo, _34, _35);
+
+  <bb 6> :
+  # eRetVal_38 = PHI <eRetVal_67(4), eRetVal_70(5)>
+  u8ObjIdx.8_36 = u8ObjIdx_41;
+  u8ObjIdx_71 = u8ObjIdx.8_36 + 1;
+  _37 = Can_pHwObjectConfig_56(D)->Can_u8ObjectCount;
+  if (u8ObjIdx_71 < _37)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  if (eRetVal_38 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # eRetVal_39 = PHI <eRetVal_46(2), eRetVal_38(6), eRetVal_38(7)>
+  if (eRetVal_39 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (eRetVal_39 != 2)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  eRetVal_72 = 1;
+
+  <bb 11> :
+  # eRetVal_40 = PHI <eRetVal_39(8), eRetVal_39(9), eRetVal_72(10)>
+  if (eRetVal_40 != 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.9_74 = (Std_ReturnType) eRetVal_40;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.9_73 = 2;
+
+  <bb 14> :
+  # iftmp.9_42 = PHI <iftmp.9_74(12), iftmp.9_73(13)>
+  _75 = iftmp.9_42;
+  DataInfo ={v} {CLOBBER};
+
+  <bb 15> :
+<L15>:
+  return _75;
+
+}
+
+
+Can_Ipw_GetControllerRxErrorCounter (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  uint8 D.7346;
+  unsigned char _1;
+  uint8 _5;
+
+  <bb 2> :
+  _1 = Can_pControllerConfig_3(D)->Can_u8ControllerOffset;
+  _5 = FlexCAN_Ip_GetControllerRxErrorCounter (_1);
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+
+Can_Ipw_GetControllerTxErrorCounter (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  uint8 D.7344;
+  unsigned char _1;
+  uint8 _5;
+
+  <bb 2> :
+  _1 = Can_pControllerConfig_3(D)->Can_u8ControllerOffset;
+  _5 = FlexCAN_Ip_GetControllerTxErrorCounter (_1);
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+
+Can_Ipw_GetControllerErrorState (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  uint32 Error;
+  uint8 D.7342;
+  unsigned char _1;
+  long unsigned int _2;
+  unsigned char _3;
+  uint8 _9;
+
+  <bb 2> :
+  Error_4 = 0;
+  _1 = Can_pControllerConfig_6(D)->Can_u8ControllerOffset;
+  Error_8 = FlexCAN_Ip_GetErrorStatus (_1);
+  _2 = Error_8 >> 4;
+  _3 = (unsigned char) _2;
+  _9 = _3 & 3;
+
+  <bb 3> :
+<L0>:
+  return _9;
+
+}
+
+
+Can_Ipw_EnableControllerInterrupts (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  unsigned char _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  unsigned char _5;
+  _Bool _6;
+  unsigned char _7;
+  unsigned char _8;
+  _Bool _9;
+  _Bool _10;
+  unsigned char _11;
+  unsigned char _12;
+  int _13;
+
+  <bb 2> :
+  _1 = Can_pControllerConfig_18(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = Can_Ipw_abIsInterruptEnabled[_2];
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _5 = Can_pControllerConfig_18(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_EnableInterrupts_Privileged (_5);
+  _6 = Can_pControllerConfig_18(D)->bErrEn;
+  if (_6 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = Can_pControllerConfig_18(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_7, 2, 1);
+  _8 = Can_pControllerConfig_18(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_8, 3, 1);
+
+  <bb 5> :
+  _9 = Can_pControllerConfig_18(D)->Can_bBusOffUsesPolling;
+  _10 = ~_9;
+  if (_10 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _11 = Can_pControllerConfig_18(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_11, 4, 1);
+
+  <bb 7> :
+  _12 = Can_pControllerConfig_18(D)->Can_u8ControllerID;
+  _13 = (int) _12;
+  Can_Ipw_abIsInterruptEnabled[_13] = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+Can_Ipw_DisableControllerInterrupts (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  unsigned char _1;
+  int _2;
+  _Bool _3;
+  unsigned char _4;
+  unsigned char _5;
+  int _6;
+  _Bool _7;
+  unsigned char _8;
+  unsigned char _9;
+  _Bool _10;
+  _Bool _11;
+  unsigned char _12;
+
+  <bb 2> :
+  _1 = Can_pControllerConfig_16(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = Can_Ipw_abIsInterruptEnabled[_2];
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _4 = Can_pControllerConfig_16(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_DisableInterrupts_Privileged (_4);
+  _5 = Can_pControllerConfig_16(D)->Can_u8ControllerID;
+  _6 = (int) _5;
+  Can_Ipw_abIsInterruptEnabled[_6] = 0;
+  _7 = Can_pControllerConfig_16(D)->bErrEn;
+  if (_7 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = Can_pControllerConfig_16(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_8, 2, 0);
+  _9 = Can_pControllerConfig_16(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_9, 3, 0);
+
+  <bb 5> :
+  _10 = Can_pControllerConfig_16(D)->Can_bBusOffUsesPolling;
+  _11 = ~_10;
+  if (_11 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _12 = Can_pControllerConfig_16(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_12, 4, 0);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Can_Ipw_SetControllerToStopMode (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  uint8 u8Idx;
+  const struct Can_HwObjectConfigType * Can_pHwObject;
+  uint8 u8HwObjRefIdx;
+  Std_ReturnType eReturnValue;
+  Std_ReturnType D.7328;
+  unsigned char _1;
+  <unnamed type> _2;
+  unsigned char _3;
+  int _4;
+  _Bool _5;
+  unsigned char _6;
+  _Bool _7;
+  unsigned char _8;
+  unsigned char _9;
+  _Bool _10;
+  _Bool _11;
+  unsigned char _12;
+  const struct Can_HwObjectConfigType * const * _13;
+  unsigned int _14;
+  unsigned int _15;
+  const struct Can_HwObjectConfigType * const * _16;
+  <unnamed type> _17;
+  unsigned char _18;
+  unsigned char _19;
+  unsigned char _20;
+  unsigned char u8Idx.6_21;
+  unsigned char _22;
+  unsigned char _23;
+  unsigned char _24;
+  unsigned char u8HwObjRefIdx.7_25;
+  unsigned char _26;
+  unsigned char _27;
+  <unnamed type> _28;
+  Std_ReturnType _57;
+
+  <bb 2> :
+  u8HwObjRefIdx_38 = 0;
+  u8Idx_39 = 0;
+  _1 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  _2 = FlexCAN_Ip_EnterFreezeMode_Privileged (_1);
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 3> :
+  _3 = Can_pControllerConfig_41(D)->Can_u8ControllerID;
+  _4 = (int) _3;
+  _5 = Can_Ipw_abIsInterruptEnabled[_4];
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  _6 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_DisableInterrupts_Privileged (_6);
+  _7 = Can_pControllerConfig_41(D)->bErrEn;
+  if (_7 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_8, 2, 0);
+  _9 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_9, 3, 0);
+
+  <bb 6> :
+  _10 = Can_pControllerConfig_41(D)->Can_bBusOffUsesPolling;
+  _11 = ~_10;
+  if (_11 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _12 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_12, 4, 0);
+
+  <bb 8> :
+  u8HwObjRefIdx_48 = 0;
+  goto <bb 14>; [INV]
+
+  <bb 9> :
+  _13 = Can_pControllerConfig_41(D)->Can_ppHwObject;
+  _14 = (unsigned int) u8HwObjRefIdx_30;
+  _15 = _14 * 4;
+  _16 = _13 + _15;
+  Can_pHwObject_51 = *_16;
+  _17 = Can_pHwObject_51->Can_eReceiveType;
+  if (_17 == 3)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  u8Idx_53 = 0;
+
+  <bb 11> :
+  # u8Idx_31 = PHI <u8Idx_53(10), u8Idx_55(11)>
+  _18 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  _19 = Can_pHwObject_51->Can_u8HwBufferIndex;
+  _20 = u8Idx_31 + _19;
+  FlexCAN_Ip_AbortTransfer (_18, _20);
+  u8Idx.6_21 = u8Idx_31;
+  u8Idx_55 = u8Idx.6_21 + 1;
+  _22 = Can_pHwObject_51->Can_u8ObjectCount;
+  if (u8Idx_55 < _22)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _23 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  _24 = Can_pHwObject_51->Can_u8HwBufferIndex;
+  FlexCAN_Ip_AbortTransfer (_23, _24);
+
+  <bb 13> :
+  u8HwObjRefIdx.7_25 = u8HwObjRefIdx_30;
+  u8HwObjRefIdx_56 = u8HwObjRefIdx.7_25 + 1;
+
+  <bb 14> :
+  # u8HwObjRefIdx_30 = PHI <u8HwObjRefIdx_48(8), u8HwObjRefIdx_56(13)>
+  _26 = Can_pControllerConfig_41(D)->Can_u8HwObjectRefCount;
+  if (u8HwObjRefIdx_30 < _26)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  _27 = Can_pControllerConfig_41(D)->Can_u8ControllerOffset;
+  _28 = FlexCAN_Ip_SetStopMode_Privileged (_27);
+  eReturnValue_50 = (Std_ReturnType) _28;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  eReturnValue_43 = 1;
+
+  <bb 17> :
+  # eReturnValue_29 = PHI <eReturnValue_50(15), eReturnValue_43(16)>
+  _57 = eReturnValue_29;
+
+  <bb 18> :
+<L17>:
+  return _57;
+
+}
+
+
+Can_Ipw_SetControllerToStartMode (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  Flexcan_Ip_StatusType eRetVal;
+  const struct Can_HwObjectConfigType * Can_pHwObject;
+  uint8 u8HwObjRefIdx;
+  Std_ReturnType D.7314;
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  struct Flexcan_Ip_StateType * _4;
+  const struct Can_Ipw_HwChannelConfigType * _5;
+  const struct Flexcan_Ip_ConfigType * _6;
+  unsigned char _7;
+  const struct Can_HwObjectConfigType * const * _8;
+  unsigned int _9;
+  unsigned int _10;
+  const struct Can_HwObjectConfigType * const * _11;
+  _Bool _12;
+  _Bool _13;
+  <unnamed type> _14;
+  unsigned char _15;
+  unsigned char _16;
+  _Bool _17;
+  unsigned char _18;
+  unsigned char u8HwObjRefIdx.5_19;
+  unsigned char _20;
+  unsigned char _21;
+  _Bool _22;
+  Std_ReturnType _44;
+
+  <bb 2> :
+  u8HwObjRefIdx_28 = 0;
+  Can_pHwObject_29 = 0B;
+  _1 = Can_pControllerConfig_31(D)->Can_u8ControllerOffset;
+  _2 = Can_pControllerConfig_31(D)->Can_u8ControllerID;
+  _3 = (int) _2;
+  _4 = Can_Ipw_apxStatus[_3];
+  _5 = Can_pControllerConfig_31(D)->HwChannelIpConfig;
+  _6 = _5->pFlexcanIpHwConfig;
+  eRetVal_33 = FlexCAN_Ip_Init_Privileged (_1, _4, _6);
+  if (eRetVal_33 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _7 = Can_pControllerConfig_31(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_DisableInterrupts_Privileged (_7);
+  Can_Ipw_InitBaudrate (Can_pControllerConfig_31(D));
+  Can_Ipw_InitRx (Can_pControllerConfig_31(D));
+  u8HwObjRefIdx_37 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  _8 = Can_pControllerConfig_31(D)->Can_ppHwObject;
+  _9 = (unsigned int) u8HwObjRefIdx_23;
+  _10 = _9 * 4;
+  _11 = _8 + _10;
+  Can_pHwObject_40 = *_11;
+  _12 = Can_pHwObject_40->Can_bHwObjectUsesPolling;
+  _13 = ~_12;
+  if (_13 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  _14 = Can_pHwObject_40->Can_eReceiveType;
+  switch (_14) <default: <L6> [INV], case 0: <L3> [INV], case 1 ... 2: <L4> [INV]>
+
+  <bb 6> :
+<L3>:
+  _15 = Can_pControllerConfig_31(D)->Can_u8ControllerOffset;
+  _16 = Can_pHwObject_40->Can_u8HwBufferIndex;
+  _17 = Can_pHwObject_40->Can_bHwObjectUsesPolling;
+  FlexCAN_Ip_Receive (_15, _16, 0B, _17);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  _18 = Can_pControllerConfig_31(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_RxFifo (_18, 0B);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L6>:
+
+  <bb 9> :
+  u8HwObjRefIdx.5_19 = u8HwObjRefIdx_23;
+  u8HwObjRefIdx_43 = u8HwObjRefIdx.5_19 + 1;
+
+  <bb 10> :
+  # u8HwObjRefIdx_23 = PHI <u8HwObjRefIdx_37(3), u8HwObjRefIdx_43(9)>
+  _20 = Can_pControllerConfig_31(D)->Can_u8HwObjectRefCount;
+  if (u8HwObjRefIdx_23 < _20)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _21 = Can_Ipw_SetControlerErrorInit (Can_pControllerConfig_31(D));
+  _22 = _21 != 0;
+  eRetVal_39 = (Flexcan_Ip_StatusType) _22;
+
+  <bb 12> :
+  # eRetVal_24 = PHI <eRetVal_33(2), eRetVal_39(11)>
+  _44 = (Std_ReturnType) eRetVal_24;
+
+  <bb 13> :
+<L12>:
+  return _44;
+
+}
+
+
+Can_Ipw_SetControlerErrorInit (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  Flexcan_Ip_StatusType eRetVal;
+  Std_ReturnType D.7308;
+  unsigned char _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  unsigned char _5;
+  unsigned char _6;
+  _Bool _7;
+  _Bool _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  Std_ReturnType _24;
+
+  <bb 2> :
+  eRetVal_15 = 0;
+  _1 = Can_pControllerConfig_17(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = Can_Ipw_abIsInterruptEnabled[_2];
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _4 = Can_pControllerConfig_17(D)->bErrEn;
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = Can_pControllerConfig_17(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_5, 2, 1);
+  _6 = Can_pControllerConfig_17(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_6, 3, 1);
+
+  <bb 5> :
+  _7 = Can_pControllerConfig_17(D)->Can_bBusOffUsesPolling;
+  _8 = ~_7;
+  if (_8 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = Can_pControllerConfig_17(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetErrorInt_Privileged (_9, 4, 1);
+
+  <bb 7> :
+  _10 = Can_pControllerConfig_17(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_EnableInterrupts_Privileged (_10);
+
+  <bb 8> :
+  _11 = Can_pControllerConfig_17(D)->Can_u8ControllerOffset;
+  eRetVal_23 = FlexCAN_Ip_SetStartMode_Privileged (_11);
+  _24 = (Std_ReturnType) eRetVal_23;
+
+  <bb 9> :
+<L6>:
+  return _24;
+
+}
+
+
+Can_Ipw_SetBaudrate (const struct Can_ControllerConfigType * Can_pControllerConfig, uint16 BaudRateConfigID)
+{
+  struct Flexcan_Ip_TimeSegmentType FlexCANTimeSeg;
+  Flexcan_Ip_StatusType eRetVal;
+  Std_ReturnType D.7299;
+  unsigned char _1;
+  const struct Can_BaudrateConfigType * _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Can_BaudrateConfigType * _5;
+  short unsigned int _6;
+  long unsigned int _7;
+  const struct Can_BaudrateConfigType * _8;
+  unsigned int _9;
+  unsigned int _10;
+  const struct Can_BaudrateConfigType * _11;
+  unsigned char _12;
+  long unsigned int _13;
+  const struct Can_BaudrateConfigType * _14;
+  unsigned int _15;
+  unsigned int _16;
+  const struct Can_BaudrateConfigType * _17;
+  unsigned char _18;
+  long unsigned int _19;
+  const struct Can_BaudrateConfigType * _20;
+  unsigned int _21;
+  unsigned int _22;
+  const struct Can_BaudrateConfigType * _23;
+  unsigned char _24;
+  long unsigned int _25;
+  const struct Can_BaudrateConfigType * _26;
+  unsigned int _27;
+  unsigned int _28;
+  const struct Can_BaudrateConfigType * _29;
+  unsigned char _30;
+  long unsigned int _31;
+  unsigned char _32;
+  const struct Can_BaudrateConfigType * _33;
+  unsigned int _34;
+  unsigned int _35;
+  const struct Can_BaudrateConfigType * _36;
+  _Bool _37;
+  const struct Can_BaudrateConfigType * _38;
+  unsigned int _39;
+  unsigned int _40;
+  const struct Can_BaudrateConfigType * _41;
+  short unsigned int _42;
+  long unsigned int _43;
+  const struct Can_BaudrateConfigType * _44;
+  unsigned int _45;
+  unsigned int _46;
+  const struct Can_BaudrateConfigType * _47;
+  _Bool _48;
+  const struct Can_BaudrateConfigType * _49;
+  unsigned int _50;
+  unsigned int _51;
+  const struct Can_BaudrateConfigType * _52;
+  unsigned char _53;
+  long unsigned int _54;
+  const struct Can_BaudrateConfigType * _55;
+  unsigned int _56;
+  unsigned int _57;
+  const struct Can_BaudrateConfigType * _58;
+  unsigned char _59;
+  long unsigned int _60;
+  const struct Can_BaudrateConfigType * _61;
+  unsigned int _62;
+  unsigned int _63;
+  const struct Can_BaudrateConfigType * _64;
+  unsigned char _65;
+  long unsigned int _66;
+  const struct Can_BaudrateConfigType * _67;
+  unsigned int _68;
+  unsigned int _69;
+  const struct Can_BaudrateConfigType * _70;
+  unsigned char _71;
+  long unsigned int _72;
+  unsigned char _73;
+  const struct Can_BaudrateConfigType * _74;
+  unsigned int _75;
+  unsigned int _76;
+  const struct Can_BaudrateConfigType * _77;
+  _Bool _78;
+  unsigned char _79;
+  const struct Can_BaudrateConfigType * _80;
+  unsigned int _81;
+  unsigned int _82;
+  const struct Can_BaudrateConfigType * _83;
+  _Bool _84;
+  const struct Can_BaudrateConfigType * _85;
+  unsigned int _86;
+  unsigned int _87;
+  const struct Can_BaudrateConfigType * _88;
+  unsigned char _89;
+  unsigned char _90;
+  const struct Can_BaudrateConfigType * _91;
+  unsigned int _92;
+  unsigned int _93;
+  const struct Can_BaudrateConfigType * _94;
+  unsigned char _95;
+  unsigned char _96;
+  unsigned char _97;
+  int _98;
+  _Bool _99;
+  Std_ReturnType _126;
+
+  <bb 2> :
+  eRetVal_103 = 1;
+  _1 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  eRetVal_107 = FlexCAN_Ip_EnterFreezeMode_Privileged (_1);
+  if (eRetVal_107 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _2 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _3 = (unsigned int) BaudRateConfigID_108(D);
+  _4 = _3 * 24;
+  _5 = _2 + _4;
+  _6 = _5->Can_NominalBitRate.Can_u16Prescaler;
+  _7 = (long unsigned int) _6;
+  FlexCANTimeSeg.preDivider = _7;
+  _8 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _9 = (unsigned int) BaudRateConfigID_108(D);
+  _10 = _9 * 24;
+  _11 = _8 + _10;
+  _12 = _11->Can_NominalBitRate.Can_u8PropSeg;
+  _13 = (long unsigned int) _12;
+  FlexCANTimeSeg.propSeg = _13;
+  _14 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _15 = (unsigned int) BaudRateConfigID_108(D);
+  _16 = _15 * 24;
+  _17 = _14 + _16;
+  _18 = _17->Can_NominalBitRate.Can_u8PhaseSeg1;
+  _19 = (long unsigned int) _18;
+  FlexCANTimeSeg.phaseSeg1 = _19;
+  _20 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _21 = (unsigned int) BaudRateConfigID_108(D);
+  _22 = _21 * 24;
+  _23 = _20 + _22;
+  _24 = _23->Can_NominalBitRate.Can_u8PhaseSeg2;
+  _25 = (long unsigned int) _24;
+  FlexCANTimeSeg.phaseSeg2 = _25;
+  _26 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _27 = (unsigned int) BaudRateConfigID_108(D);
+  _28 = _27 * 24;
+  _29 = _26 + _28;
+  _30 = _29->Can_NominalBitRate.Can_u8ResyncJumpWidth;
+  _31 = (long unsigned int) _30;
+  FlexCANTimeSeg.rJumpwidth = _31;
+  _32 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  _33 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _34 = (unsigned int) BaudRateConfigID_108(D);
+  _35 = _34 * 24;
+  _36 = _33 + _35;
+  _37 = _36->Can_bEnhanceCBTEnable;
+  FlexCAN_Ip_SetBitrate_Privileged (_32, &FlexCANTimeSeg, _37);
+  _38 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _39 = (unsigned int) BaudRateConfigID_108(D);
+  _40 = _39 * 24;
+  _41 = _38 + _40;
+  _42 = _41->Can_DataBitRate.Can_u16Prescaler;
+  _43 = (long unsigned int) _42;
+  FlexCANTimeSeg.preDivider = _43;
+  _44 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _45 = (unsigned int) BaudRateConfigID_108(D);
+  _46 = _45 * 24;
+  _47 = _44 + _46;
+  _48 = _47->Can_bFDFrame;
+  if (_48 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _49 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _50 = (unsigned int) BaudRateConfigID_108(D);
+  _51 = _50 * 24;
+  _52 = _49 + _51;
+  _53 = _52->Can_DataBitRate.Can_u8PropSeg;
+  _54 = (long unsigned int) _53;
+  FlexCANTimeSeg.propSeg = _54;
+  _55 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _56 = (unsigned int) BaudRateConfigID_108(D);
+  _57 = _56 * 24;
+  _58 = _55 + _57;
+  _59 = _58->Can_DataBitRate.Can_u8PhaseSeg1;
+  _60 = (long unsigned int) _59;
+  FlexCANTimeSeg.phaseSeg1 = _60;
+  _61 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _62 = (unsigned int) BaudRateConfigID_108(D);
+  _63 = _62 * 24;
+  _64 = _61 + _63;
+  _65 = _64->Can_DataBitRate.Can_u8PhaseSeg2;
+  _66 = (long unsigned int) _65;
+  FlexCANTimeSeg.phaseSeg2 = _66;
+  _67 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _68 = (unsigned int) BaudRateConfigID_108(D);
+  _69 = _68 * 24;
+  _70 = _67 + _69;
+  _71 = _70->Can_DataBitRate.Can_u8ResyncJumpWidth;
+  _72 = (long unsigned int) _71;
+  FlexCANTimeSeg.rJumpwidth = _72;
+  _73 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  _74 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _75 = (unsigned int) BaudRateConfigID_108(D);
+  _76 = _75 * 24;
+  _77 = _74 + _76;
+  _78 = _77->Can_bBitRateSwitch;
+  FlexCAN_Ip_SetBitrateCbt_Privileged (_73, &FlexCANTimeSeg, _78);
+  _79 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  _80 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _81 = (unsigned int) BaudRateConfigID_108(D);
+  _82 = _81 * 24;
+  _83 = _80 + _82;
+  _84 = _83->Can_bTrcvDelayEnable;
+  _85 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _86 = (unsigned int) BaudRateConfigID_108(D);
+  _87 = _86 * 24;
+  _88 = _85 + _87;
+  _89 = _88->Can_u8TrcvDelayCompOffset;
+  FlexCAN_Ip_SetTDCOffset_Privileged (_79, _84, _89);
+
+  <bb 5> :
+  _90 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  _91 = Can_pControllerConfig_105(D)->Can_pBaudrateConfig;
+  _92 = (unsigned int) BaudRateConfigID_108(D);
+  _93 = _92 * 24;
+  _94 = _91 + _93;
+  _95 = _94->Can_u8TxArbitrationStartDelay;
+  FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged (_90, _95);
+  _96 = Can_pControllerConfig_105(D)->Can_u8ControllerOffset;
+  eRetVal_124 = FlexCAN_Ip_SetStopMode_Privileged (_96);
+  if (eRetVal_124 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _97 = Can_pControllerConfig_105(D)->Can_u8ControllerID;
+  _98 = (int) _97;
+  Can_au16ControllerBaudRateSel[_98] = BaudRateConfigID_108(D);
+
+  <bb 7> :
+  # eRetVal_100 = PHI <eRetVal_107(2), eRetVal_124(5), eRetVal_124(6)>
+  _99 = eRetVal_100 != 0;
+  _126 = (Std_ReturnType) _99;
+  FlexCANTimeSeg ={v} {CLOBBER};
+
+  <bb 8> :
+<L7>:
+  return _126;
+
+}
+
+
+Can_Ipw_DeInit (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = Can_pControllerConfig_3(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_Deinit_Privileged (_1);
+  return;
+
+}
+
+
+Can_Ipw_Init (const struct Can_ControllerConfigType * Can_pControllerConfig)
+{
+  uint8 u8HwBufferCount;
+  const struct Can_HwObjectConfigType * Can_pHwObject;
+  uint8 u8ObjIdx;
+  uint8 u8HwObjRefIdx;
+  Std_ReturnType eRetVal;
+  Std_ReturnType D.7291;
+  unsigned char _1;
+  int _2;
+  short unsigned int _3;
+  unsigned char _4;
+  unsigned char _5;
+  int _6;
+  struct Flexcan_Ip_StateType * _7;
+  const struct Can_Ipw_HwChannelConfigType * _8;
+  const struct Flexcan_Ip_ConfigType * _9;
+  <unnamed type> _10;
+  unsigned char _11;
+  int _12;
+  unsigned char _13;
+  const struct Can_BaudrateConfigType * _14;
+  short unsigned int _15;
+  unsigned int _16;
+  unsigned int _17;
+  const struct Can_BaudrateConfigType * _18;
+  _Bool _19;
+  unsigned char _20;
+  const struct Can_BaudrateConfigType * _21;
+  short unsigned int _22;
+  unsigned int _23;
+  unsigned int _24;
+  const struct Can_BaudrateConfigType * _25;
+  _Bool _26;
+  const struct Can_BaudrateConfigType * _27;
+  short unsigned int _28;
+  unsigned int _29;
+  unsigned int _30;
+  const struct Can_BaudrateConfigType * _31;
+  unsigned char _32;
+  unsigned char _33;
+  const struct Can_BaudrateConfigType * _34;
+  short unsigned int _35;
+  unsigned int _36;
+  unsigned int _37;
+  const struct Can_BaudrateConfigType * _38;
+  unsigned char _39;
+  unsigned char _40;
+  int _41;
+  int _42;
+  unsigned char u8HwBufferCount.2_43;
+  const struct Can_HwObjectConfigType * const * _44;
+  unsigned int _45;
+  unsigned int _46;
+  const struct Can_HwObjectConfigType * const * _47;
+  <unnamed type> _48;
+  unsigned char _49;
+  int _50;
+  unsigned char _51;
+  int _52;
+  int _53;
+  int _54;
+  short unsigned int _55;
+  unsigned char u8ObjIdx.3_56;
+  unsigned char _57;
+  unsigned char _58;
+  int _59;
+  unsigned char _60;
+  int _61;
+  short unsigned int _62;
+  unsigned char _63;
+  int _64;
+  unsigned char _65;
+  int _66;
+  short unsigned int _67;
+  unsigned char _68;
+  int _69;
+  short unsigned int _70;
+  unsigned char _71;
+  int _72;
+  short unsigned int _73;
+  unsigned char u8HwObjRefIdx.4_74;
+  unsigned char _75;
+  unsigned char _76;
+  <unnamed type> _77;
+  Std_ReturnType _106;
+
+  <bb 2> :
+  eRetVal_87 = 1;
+  u8HwObjRefIdx_88 = 0;
+  u8ObjIdx_89 = 0;
+  Can_pHwObject_90 = 0B;
+  u8HwBufferCount_91 = 0;
+  _1 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  _3 = Can_pControllerConfig_93(D)->Can_u16DefaultBaudrateID;
+  Can_au16ControllerBaudRateSel[_2] = _3;
+  _4 = Can_pControllerConfig_93(D)->Can_u8ControllerOffset;
+  _5 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _6 = (int) _5;
+  _7 = Can_Ipw_apxStatus[_6];
+  _8 = Can_pControllerConfig_93(D)->HwChannelIpConfig;
+  _9 = _8->pFlexcanIpHwConfig;
+  _10 = FlexCAN_Ip_Init_Privileged (_4, _7, _9);
+  eRetVal_96 = (Std_ReturnType) _10;
+  _11 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _12 = (int) _11;
+  Can_Ipw_abIsInterruptEnabled[_12] = 1;
+  if (eRetVal_96 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _13 = Can_pControllerConfig_93(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_DisableInterrupts_Privileged (_13);
+  _14 = Can_pControllerConfig_93(D)->Can_pBaudrateConfig;
+  _15 = Can_pControllerConfig_93(D)->Can_u16DefaultBaudrateID;
+  _16 = (unsigned int) _15;
+  _17 = _16 * 24;
+  _18 = _14 + _17;
+  _19 = _18->Can_bFDFrame;
+  if (_19 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _20 = Can_pControllerConfig_93(D)->Can_u8ControllerOffset;
+  _21 = Can_pControllerConfig_93(D)->Can_pBaudrateConfig;
+  _22 = Can_pControllerConfig_93(D)->Can_u16DefaultBaudrateID;
+  _23 = (unsigned int) _22;
+  _24 = _23 * 24;
+  _25 = _21 + _24;
+  _26 = _25->Can_bTrcvDelayEnable;
+  _27 = Can_pControllerConfig_93(D)->Can_pBaudrateConfig;
+  _28 = Can_pControllerConfig_93(D)->Can_u16DefaultBaudrateID;
+  _29 = (unsigned int) _28;
+  _30 = _29 * 24;
+  _31 = _27 + _30;
+  _32 = _31->Can_u8TrcvDelayCompOffset;
+  FlexCAN_Ip_SetTDCOffset_Privileged (_20, _26, _32);
+
+  <bb 5> :
+  _33 = Can_pControllerConfig_93(D)->Can_u8ControllerOffset;
+  _34 = Can_pControllerConfig_93(D)->Can_pBaudrateConfig;
+  _35 = Can_pControllerConfig_93(D)->Can_u16DefaultBaudrateID;
+  _36 = (unsigned int) _35;
+  _37 = _36 * 24;
+  _38 = _34 + _37;
+  _39 = _38->Can_u8TxArbitrationStartDelay;
+  FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged (_33, _39);
+  Can_Ipw_InitRx (Can_pControllerConfig_93(D));
+
+  <bb 6> :
+  u8HwBufferCount_102 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _40 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _41 = (int) _40;
+  _42 = (int) u8HwBufferCount_80;
+  Can_Ipw_au16MbIdxToObjIDMap[_41][_42] = 65535;
+  u8HwBufferCount.2_43 = u8HwBufferCount_80;
+  u8HwBufferCount_117 = u8HwBufferCount.2_43 + 1;
+
+  <bb 8> :
+  # u8HwBufferCount_80 = PHI <u8HwBufferCount_102(6), u8HwBufferCount_117(7)>
+  if (u8HwBufferCount_80 <= 31)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  u8HwObjRefIdx_103 = 0;
+  goto <bb 19>; [INV]
+
+  <bb 10> :
+  _44 = Can_pControllerConfig_93(D)->Can_ppHwObject;
+  _45 = (unsigned int) u8HwObjRefIdx_78;
+  _46 = _45 * 4;
+  _47 = _44 + _46;
+  Can_pHwObject_107 = *_47;
+  _48 = Can_pHwObject_107->Can_eReceiveType;
+  switch (_48) <default: <L14> [INV], case 0: <L12> [INV], case 1: <L13> [INV], case 3: <L8> [INV]>
+
+  <bb 11> :
+<L8>:
+  u8ObjIdx_108 = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  _49 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _50 = (int) _49;
+  _51 = Can_pHwObject_107->Can_u8HwBufferIndex;
+  _52 = (int) _51;
+  _53 = (int) u8ObjIdx_79;
+  _54 = _52 + _53;
+  _55 = Can_pHwObject_107->Can_HwObjectID;
+  Can_Ipw_au16MbIdxToObjIDMap[_50][_54] = _55;
+  u8ObjIdx.3_56 = u8ObjIdx_79;
+  u8ObjIdx_110 = u8ObjIdx.3_56 + 1;
+
+  <bb 13> :
+  # u8ObjIdx_79 = PHI <u8ObjIdx_108(11), u8ObjIdx_110(12)>
+  _57 = Can_pHwObject_107->Can_u8ObjectCount;
+  if (u8ObjIdx_79 < _57)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  goto <bb 18>; [INV]
+
+  <bb 15> :
+<L12>:
+  _58 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _59 = (int) _58;
+  _60 = Can_pHwObject_107->Can_u8HwBufferIndex;
+  _61 = (int) _60;
+  _62 = Can_pHwObject_107->Can_HwObjectID;
+  Can_Ipw_au16MbIdxToObjIDMap[_59][_61] = _62;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+<L13>:
+  _63 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _64 = (int) _63;
+  _65 = Can_pHwObject_107->Can_u8HwBufferIndex;
+  _66 = (int) _65;
+  _67 = Can_pHwObject_107->Can_HwObjectID;
+  Can_Ipw_au16MbIdxToObjIDMap[_64][_66] = _67;
+  _68 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _69 = (int) _68;
+  _70 = Can_pHwObject_107->Can_HwObjectID;
+  Can_Ipw_au16MbIdxToObjIDMap[_69][6] = _70;
+  _71 = Can_pControllerConfig_93(D)->Can_u8ControllerID;
+  _72 = (int) _71;
+  _73 = Can_pHwObject_107->Can_HwObjectID;
+  Can_Ipw_au16MbIdxToObjIDMap[_72][7] = _73;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+<L14>:
+
+  <bb 18> :
+  u8HwObjRefIdx.4_74 = u8HwObjRefIdx_78;
+  u8HwObjRefIdx_115 = u8HwObjRefIdx.4_74 + 1;
+
+  <bb 19> :
+  # u8HwObjRefIdx_78 = PHI <u8HwObjRefIdx_103(9), u8HwObjRefIdx_115(18)>
+  _75 = Can_pControllerConfig_93(D)->Can_u8HwObjectRefCount;
+  if (u8HwObjRefIdx_78 < _75)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  _76 = Can_pControllerConfig_93(D)->Can_u8ControllerOffset;
+  _77 = FlexCAN_Ip_SetStopMode_Privileged (_76);
+  eRetVal_105 = (Std_ReturnType) _77;
+  _106 = eRetVal_105;
+
+  <bb 21> :
+<L18>:
+  return _106;
+
+}
+
+
+Can_Ipw_InitBaudrate (const struct Can_ControllerConfigType * ControllerConfig)
+{
+  struct Flexcan_Ip_TimeSegmentType FlexCANTimeSeg;
+  uint16 BaudRateConfigID;
+  unsigned char _1;
+  int _2;
+  const struct Can_BaudrateConfigType * _3;
+  unsigned int _4;
+  unsigned int _5;
+  const struct Can_BaudrateConfigType * _6;
+  short unsigned int _7;
+  long unsigned int _8;
+  const struct Can_BaudrateConfigType * _9;
+  unsigned int _10;
+  unsigned int _11;
+  const struct Can_BaudrateConfigType * _12;
+  unsigned char _13;
+  long unsigned int _14;
+  const struct Can_BaudrateConfigType * _15;
+  unsigned int _16;
+  unsigned int _17;
+  const struct Can_BaudrateConfigType * _18;
+  unsigned char _19;
+  long unsigned int _20;
+  const struct Can_BaudrateConfigType * _21;
+  unsigned int _22;
+  unsigned int _23;
+  const struct Can_BaudrateConfigType * _24;
+  unsigned char _25;
+  long unsigned int _26;
+  const struct Can_BaudrateConfigType * _27;
+  unsigned int _28;
+  unsigned int _29;
+  const struct Can_BaudrateConfigType * _30;
+  unsigned char _31;
+  long unsigned int _32;
+  unsigned char _33;
+  const struct Can_BaudrateConfigType * _34;
+  unsigned int _35;
+  unsigned int _36;
+  const struct Can_BaudrateConfigType * _37;
+  _Bool _38;
+  const struct Can_BaudrateConfigType * _39;
+  unsigned int _40;
+  unsigned int _41;
+  const struct Can_BaudrateConfigType * _42;
+  _Bool _43;
+  const struct Can_BaudrateConfigType * _44;
+  unsigned int _45;
+  unsigned int _46;
+  const struct Can_BaudrateConfigType * _47;
+  short unsigned int _48;
+  long unsigned int _49;
+  const struct Can_BaudrateConfigType * _50;
+  unsigned int _51;
+  unsigned int _52;
+  const struct Can_BaudrateConfigType * _53;
+  unsigned char _54;
+  long unsigned int _55;
+  const struct Can_BaudrateConfigType * _56;
+  unsigned int _57;
+  unsigned int _58;
+  const struct Can_BaudrateConfigType * _59;
+  unsigned char _60;
+  long unsigned int _61;
+  const struct Can_BaudrateConfigType * _62;
+  unsigned int _63;
+  unsigned int _64;
+  const struct Can_BaudrateConfigType * _65;
+  unsigned char _66;
+  long unsigned int _67;
+  const struct Can_BaudrateConfigType * _68;
+  unsigned int _69;
+  unsigned int _70;
+  const struct Can_BaudrateConfigType * _71;
+  unsigned char _72;
+  long unsigned int _73;
+  unsigned char _74;
+  const struct Can_BaudrateConfigType * _75;
+  unsigned int _76;
+  unsigned int _77;
+  const struct Can_BaudrateConfigType * _78;
+  _Bool _79;
+  unsigned char _80;
+  const struct Can_BaudrateConfigType * _81;
+  unsigned int _82;
+  unsigned int _83;
+  const struct Can_BaudrateConfigType * _84;
+  _Bool _85;
+  const struct Can_BaudrateConfigType * _86;
+  unsigned int _87;
+  unsigned int _88;
+  const struct Can_BaudrateConfigType * _89;
+  unsigned char _90;
+  unsigned char _91;
+  const struct Can_BaudrateConfigType * _92;
+  unsigned int _93;
+  unsigned int _94;
+  const struct Can_BaudrateConfigType * _95;
+  unsigned char _96;
+
+  <bb 2> :
+  BaudRateConfigID_100 = ControllerConfig_99(D)->Can_u16DefaultBaudrateID;
+  _1 = ControllerConfig_99(D)->Can_u8ControllerID;
+  _2 = (int) _1;
+  BaudRateConfigID_101 = Can_au16ControllerBaudRateSel[_2];
+  _3 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _4 = (unsigned int) BaudRateConfigID_101;
+  _5 = _4 * 24;
+  _6 = _3 + _5;
+  _7 = _6->Can_NominalBitRate.Can_u16Prescaler;
+  _8 = (long unsigned int) _7;
+  FlexCANTimeSeg.preDivider = _8;
+  _9 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _10 = (unsigned int) BaudRateConfigID_101;
+  _11 = _10 * 24;
+  _12 = _9 + _11;
+  _13 = _12->Can_NominalBitRate.Can_u8PropSeg;
+  _14 = (long unsigned int) _13;
+  FlexCANTimeSeg.propSeg = _14;
+  _15 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _16 = (unsigned int) BaudRateConfigID_101;
+  _17 = _16 * 24;
+  _18 = _15 + _17;
+  _19 = _18->Can_NominalBitRate.Can_u8PhaseSeg1;
+  _20 = (long unsigned int) _19;
+  FlexCANTimeSeg.phaseSeg1 = _20;
+  _21 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _22 = (unsigned int) BaudRateConfigID_101;
+  _23 = _22 * 24;
+  _24 = _21 + _23;
+  _25 = _24->Can_NominalBitRate.Can_u8PhaseSeg2;
+  _26 = (long unsigned int) _25;
+  FlexCANTimeSeg.phaseSeg2 = _26;
+  _27 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _28 = (unsigned int) BaudRateConfigID_101;
+  _29 = _28 * 24;
+  _30 = _27 + _29;
+  _31 = _30->Can_NominalBitRate.Can_u8ResyncJumpWidth;
+  _32 = (long unsigned int) _31;
+  FlexCANTimeSeg.rJumpwidth = _32;
+  _33 = ControllerConfig_99(D)->Can_u8ControllerOffset;
+  _34 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _35 = (unsigned int) BaudRateConfigID_101;
+  _36 = _35 * 24;
+  _37 = _34 + _36;
+  _38 = _37->Can_bEnhanceCBTEnable;
+  FlexCAN_Ip_SetBitrate_Privileged (_33, &FlexCANTimeSeg, _38);
+  _39 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _40 = (unsigned int) BaudRateConfigID_101;
+  _41 = _40 * 24;
+  _42 = _39 + _41;
+  _43 = _42->Can_bFDFrame;
+  if (_43 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _44 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _45 = (unsigned int) BaudRateConfigID_101;
+  _46 = _45 * 24;
+  _47 = _44 + _46;
+  _48 = _47->Can_DataBitRate.Can_u16Prescaler;
+  _49 = (long unsigned int) _48;
+  FlexCANTimeSeg.preDivider = _49;
+  _50 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _51 = (unsigned int) BaudRateConfigID_101;
+  _52 = _51 * 24;
+  _53 = _50 + _52;
+  _54 = _53->Can_DataBitRate.Can_u8PropSeg;
+  _55 = (long unsigned int) _54;
+  FlexCANTimeSeg.propSeg = _55;
+  _56 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _57 = (unsigned int) BaudRateConfigID_101;
+  _58 = _57 * 24;
+  _59 = _56 + _58;
+  _60 = _59->Can_DataBitRate.Can_u8PhaseSeg1;
+  _61 = (long unsigned int) _60;
+  FlexCANTimeSeg.phaseSeg1 = _61;
+  _62 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _63 = (unsigned int) BaudRateConfigID_101;
+  _64 = _63 * 24;
+  _65 = _62 + _64;
+  _66 = _65->Can_DataBitRate.Can_u8PhaseSeg2;
+  _67 = (long unsigned int) _66;
+  FlexCANTimeSeg.phaseSeg2 = _67;
+  _68 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _69 = (unsigned int) BaudRateConfigID_101;
+  _70 = _69 * 24;
+  _71 = _68 + _70;
+  _72 = _71->Can_DataBitRate.Can_u8ResyncJumpWidth;
+  _73 = (long unsigned int) _72;
+  FlexCANTimeSeg.rJumpwidth = _73;
+  _74 = ControllerConfig_99(D)->Can_u8ControllerOffset;
+  _75 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _76 = (unsigned int) BaudRateConfigID_101;
+  _77 = _76 * 24;
+  _78 = _75 + _77;
+  _79 = _78->Can_bBitRateSwitch;
+  FlexCAN_Ip_SetBitrateCbt_Privileged (_74, &FlexCANTimeSeg, _79);
+  _80 = ControllerConfig_99(D)->Can_u8ControllerOffset;
+  _81 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _82 = (unsigned int) BaudRateConfigID_101;
+  _83 = _82 * 24;
+  _84 = _81 + _83;
+  _85 = _84->Can_bTrcvDelayEnable;
+  _86 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _87 = (unsigned int) BaudRateConfigID_101;
+  _88 = _87 * 24;
+  _89 = _86 + _88;
+  _90 = _89->Can_u8TrcvDelayCompOffset;
+  FlexCAN_Ip_SetTDCOffset_Privileged (_80, _85, _90);
+
+  <bb 4> :
+  _91 = ControllerConfig_99(D)->Can_u8ControllerOffset;
+  _92 = ControllerConfig_99(D)->Can_pBaudrateConfig;
+  _93 = (unsigned int) BaudRateConfigID_101;
+  _94 = _93 * 24;
+  _95 = _92 + _94;
+  _96 = _95->Can_u8TxArbitrationStartDelay;
+  FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged (_91, _96);
+  FlexCANTimeSeg ={v} {CLOBBER};
+  return;
+
+}
+
+
+Can_Ipw_InitLegacyFifoFilter (const struct Can_ControllerConfigType * Can_pController, const struct Can_HwObjectConfigType * Can_pHwObject)
+{
+  struct Flexcan_Ip_IdTableType RxFifoFilters[128];
+  Flexcan_Ip_RxFifoIdElementFormatType eElementFormat;
+  uint8 u8FiFoFilterIndvCount;
+  uint32 u32HwFilterMask;
+  uint8 u8HwFilterCount;
+  uint8 u8FilterIdx;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  <unnamed type> _7;
+  <unnamed type> _8;
+  const struct Can_HwFilterType * _9;
+  unsigned int _10;
+  unsigned int _11;
+  const struct Can_HwFilterType * _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  const struct Can_HwFilterType * _15;
+  unsigned int _16;
+  unsigned int _17;
+  const struct Can_HwFilterType * _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  <unnamed type> _21;
+  unsigned char _22;
+  <unnamed type> _23;
+  const struct Can_HwFilterType * _24;
+  unsigned int _25;
+  unsigned int _26;
+  const struct Can_HwFilterType * _27;
+  long unsigned int _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  const struct Can_HwFilterType * _31;
+  unsigned int _32;
+  unsigned int _33;
+  sizetype _34;
+  const struct Can_HwFilterType * _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  const struct Can_HwFilterType * _38;
+  unsigned int _39;
+  unsigned int _40;
+  const struct Can_HwFilterType * _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  const struct Can_HwFilterType * _44;
+  unsigned int _45;
+  unsigned int _46;
+  sizetype _47;
+  const struct Can_HwFilterType * _48;
+  long unsigned int _49;
+  long unsigned int _50;
+  unsigned char _51;
+  <unnamed type> _52;
+  const struct Can_HwFilterType * _53;
+  unsigned int _54;
+  unsigned int _55;
+  const struct Can_HwFilterType * _56;
+  long unsigned int _57;
+  long unsigned int _58;
+  long unsigned int _59;
+  const struct Can_HwFilterType * _60;
+  unsigned int _61;
+  unsigned int _62;
+  sizetype _63;
+  const struct Can_HwFilterType * _64;
+  long unsigned int _65;
+  long unsigned int _66;
+  long unsigned int _67;
+  const struct Can_HwFilterType * _68;
+  unsigned int _69;
+  unsigned int _70;
+  sizetype _71;
+  const struct Can_HwFilterType * _72;
+  long unsigned int _73;
+  long unsigned int _74;
+  long unsigned int _75;
+  const struct Can_HwFilterType * _76;
+  unsigned int _77;
+  unsigned int _78;
+  sizetype _79;
+  const struct Can_HwFilterType * _80;
+  long unsigned int _81;
+  long unsigned int _82;
+  const struct Can_HwFilterType * _83;
+  unsigned int _84;
+  unsigned int _85;
+  const struct Can_HwFilterType * _86;
+  long unsigned int _87;
+  long unsigned int _88;
+  long unsigned int _89;
+  const struct Can_HwFilterType * _90;
+  unsigned int _91;
+  unsigned int _92;
+  sizetype _93;
+  const struct Can_HwFilterType * _94;
+  long unsigned int _95;
+  long unsigned int _96;
+  long unsigned int _97;
+  const struct Can_HwFilterType * _98;
+  unsigned int _99;
+  unsigned int _100;
+  sizetype _101;
+  const struct Can_HwFilterType * _102;
+  long unsigned int _103;
+  long unsigned int _104;
+  long unsigned int _105;
+  const struct Can_HwFilterType * _106;
+  unsigned int _107;
+  unsigned int _108;
+  sizetype _109;
+  const struct Can_HwFilterType * _110;
+  long unsigned int _111;
+  long unsigned int _112;
+  unsigned char _113;
+  unsigned char u8FilterIdx.0_114;
+  unsigned char _115;
+  unsigned char _116;
+  long unsigned int _117;
+  const struct Can_HwFilterType * _118;
+  unsigned int _119;
+  unsigned int _120;
+  const struct Can_HwFilterType * _121;
+  int _122;
+  long unsigned int _123;
+  <unnamed type> _124;
+  int _125;
+  int _126;
+  int _127;
+  unsigned char u8FilterIdx.1_128;
+  unsigned char _129;
+
+  <bb 2> :
+  u8FilterIdx_141 = 0;
+  u8HwFilterCount_142 = 0;
+  u32HwFilterMask_143 = 0;
+  u8FiFoFilterIndvCount_144 = 0;
+  eElementFormat_145 = 0;
+  _1 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  _2 = _1 / 4;
+  _3 = (unsigned int) _2;
+  _4 = _3 + 6;
+  if (_4 <= 32)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _5 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  _6 = _5 / 4;
+  u8FiFoFilterIndvCount_149 = _6 + 6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  u8FiFoFilterIndvCount_148 = 32;
+
+  <bb 5> :
+  # u8FiFoFilterIndvCount_135 = PHI <u8FiFoFilterIndvCount_149(3), u8FiFoFilterIndvCount_148(4)>
+  u8FilterIdx_150 = 0;
+  goto <bb 18>; [INV]
+
+  <bb 6> :
+  _7 = Can_pController_151(D)->Can_eLegacyAcceptanceMode;
+  if (_7 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  u8HwFilterCount_170 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  u32HwFilterMask_171 = 3221225472;
+  eElementFormat_172 = 0;
+  _8 = Can_pHwObject_147(D)->Can_IdMessage;
+  if (_8 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _9 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _10 = (unsigned int) u8FilterIdx_130;
+  _11 = _10 * 8;
+  _12 = _9 + _11;
+  _13 = _12->Can_u32HwFilterMask;
+  _14 = _13 << 1;
+  u32HwFilterMask_174 = u32HwFilterMask_171 | _14;
+  goto <bb 17>; [INV]
+
+  <bb 9> :
+  _15 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _16 = (unsigned int) u8FilterIdx_130;
+  _17 = _16 * 8;
+  _18 = _15 + _17;
+  _19 = _18->Can_u32HwFilterMask;
+  _20 = _19 << 19;
+  u32HwFilterMask_173 = u32HwFilterMask_171 | _20;
+  goto <bb 17>; [INV]
+
+  <bb 10> :
+  _21 = Can_pController_151(D)->Can_eLegacyAcceptanceMode;
+  if (_21 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 11> :
+  _22 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  u8HwFilterCount_163 = _22 * 2;
+  u32HwFilterMask_164 = 3221274624;
+  eElementFormat_165 = 1;
+  _23 = Can_pHwObject_147(D)->Can_IdMessage;
+  if (_23 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _24 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _25 = (unsigned int) u8FilterIdx_130;
+  _26 = _25 * 16;
+  _27 = _24 + _26;
+  _28 = _27->Can_u32HwFilterMask;
+  _29 = _28 >> 15;
+  _30 = _29 << 16;
+  u32HwFilterMask_168 = u32HwFilterMask_164 | _30;
+  _31 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _32 = (unsigned int) u8FilterIdx_130;
+  _33 = _32 * 16;
+  _34 = _33 + 8;
+  _35 = _31 + _34;
+  _36 = _35->Can_u32HwFilterMask;
+  _37 = _36 >> 15;
+  u32HwFilterMask_169 = u32HwFilterMask_168 | _37;
+  goto <bb 17>; [INV]
+
+  <bb 13> :
+  _38 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _39 = (unsigned int) u8FilterIdx_130;
+  _40 = _39 * 16;
+  _41 = _38 + _40;
+  _42 = _41->Can_u32HwFilterMask;
+  _43 = _42 << 19;
+  u32HwFilterMask_166 = u32HwFilterMask_164 | _43;
+  _44 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _45 = (unsigned int) u8FilterIdx_130;
+  _46 = _45 * 16;
+  _47 = _46 + 8;
+  _48 = _44 + _47;
+  _49 = _48->Can_u32HwFilterMask;
+  _50 = _49 << 3;
+  u32HwFilterMask_167 = u32HwFilterMask_166 | _50;
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  _51 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  u8HwFilterCount_152 = _51 * 4;
+  u32HwFilterMask_153 = 0;
+  eElementFormat_154 = 2;
+  _52 = Can_pHwObject_147(D)->Can_IdMessage;
+  if (_52 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _53 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _54 = (unsigned int) u8FilterIdx_130;
+  _55 = _54 * 32;
+  _56 = _53 + _55;
+  _57 = _56->Can_u32HwFilterMask;
+  _58 = _57 >> 21;
+  _59 = _58 << 24;
+  u32HwFilterMask_159 = u32HwFilterMask_153 | _59;
+  _60 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _61 = (unsigned int) u8FilterIdx_130;
+  _62 = _61 * 32;
+  _63 = _62 + 8;
+  _64 = _60 + _63;
+  _65 = _64->Can_u32HwFilterMask;
+  _66 = _65 >> 21;
+  _67 = _66 << 16;
+  u32HwFilterMask_160 = u32HwFilterMask_159 | _67;
+  _68 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _69 = (unsigned int) u8FilterIdx_130;
+  _70 = _69 * 32;
+  _71 = _70 + 16;
+  _72 = _68 + _71;
+  _73 = _72->Can_u32HwFilterMask;
+  _74 = _73 >> 21;
+  _75 = _74 << 8;
+  u32HwFilterMask_161 = u32HwFilterMask_160 | _75;
+  _76 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _77 = (unsigned int) u8FilterIdx_130;
+  _78 = _77 * 32;
+  _79 = _78 + 24;
+  _80 = _76 + _79;
+  _81 = _80->Can_u32HwFilterMask;
+  _82 = _81 >> 21;
+  u32HwFilterMask_162 = u32HwFilterMask_161 | _82;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  _83 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _84 = (unsigned int) u8FilterIdx_130;
+  _85 = _84 * 32;
+  _86 = _83 + _85;
+  _87 = _86->Can_u32HwFilterMask;
+  _88 = _87 >> 3;
+  _89 = _88 << 24;
+  u32HwFilterMask_155 = u32HwFilterMask_153 | _89;
+  _90 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _91 = (unsigned int) u8FilterIdx_130;
+  _92 = _91 * 32;
+  _93 = _92 + 8;
+  _94 = _90 + _93;
+  _95 = _94->Can_u32HwFilterMask;
+  _96 = _95 >> 3;
+  _97 = _96 << 16;
+  u32HwFilterMask_156 = u32HwFilterMask_155 | _97;
+  _98 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _99 = (unsigned int) u8FilterIdx_130;
+  _100 = _99 * 32;
+  _101 = _100 + 16;
+  _102 = _98 + _101;
+  _103 = _102->Can_u32HwFilterMask;
+  _104 = _103 >> 3;
+  _105 = _104 << 8;
+  u32HwFilterMask_157 = u32HwFilterMask_156 | _105;
+  _106 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _107 = (unsigned int) u8FilterIdx_130;
+  _108 = _107 * 32;
+  _109 = _108 + 24;
+  _110 = _106 + _109;
+  _111 = _110->Can_u32HwFilterMask;
+  _112 = _111 >> 3;
+  u32HwFilterMask_158 = u32HwFilterMask_157 | _112;
+
+  <bb 17> :
+  # u8HwFilterCount_132 = PHI <u8HwFilterCount_170(9), u8HwFilterCount_163(13), u8HwFilterCount_152(15), u8HwFilterCount_152(16), u8HwFilterCount_170(8), u8HwFilterCount_163(12)>
+  # u32HwFilterMask_134 = PHI <u32HwFilterMask_173(9), u32HwFilterMask_167(13), u32HwFilterMask_162(15), u32HwFilterMask_158(16), u32HwFilterMask_174(8), u32HwFilterMask_169(12)>
+  # eElementFormat_136 = PHI <eElementFormat_172(9), eElementFormat_165(13), eElementFormat_154(15), eElementFormat_154(16), eElementFormat_172(8), eElementFormat_165(12)>
+  _113 = Can_pController_151(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_SetRxIndividualMask_Privileged (_113, u8FilterIdx_130, u32HwFilterMask_134);
+  u8FilterIdx.0_114 = u8FilterIdx_130;
+  u8FilterIdx_176 = u8FilterIdx.0_114 + 1;
+
+  <bb 18> :
+  # u8FilterIdx_130 = PHI <u8FilterIdx_150(5), u8FilterIdx_176(17)>
+  # u8HwFilterCount_133 = PHI <u8HwFilterCount_142(5), u8HwFilterCount_132(17)>
+  # eElementFormat_137 = PHI <eElementFormat_145(5), eElementFormat_136(17)>
+  if (u8FilterIdx_130 < u8FiFoFilterIndvCount_135)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  _115 = Can_pHwObject_147(D)->Can_u8HwFilterCount;
+  if (u8FilterIdx_130 < _115)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  _116 = Can_pController_151(D)->Can_u8ControllerOffset;
+  _117 = Can_pController_151(D)->Can_u32LegacyGlobalMask;
+  FlexCAN_Ip_SetRxFifoGlobalMask_Privileged (_116, _117);
+  u8FilterIdx_178 = 0;
+  goto <bb 25>; [INV]
+
+  <bb 21> :
+  _118 = Can_pHwObject_147(D)->Can_pHwFilterConfig;
+  _119 = (unsigned int) u8FilterIdx_131;
+  _120 = _119 * 8;
+  _121 = _118 + _120;
+  _122 = (int) u8FilterIdx_131;
+  _123 = _121->Can_u32HwFilterCode;
+  RxFifoFilters[_122].id = _123;
+  _124 = Can_pHwObject_147(D)->Can_IdMessage;
+  if (_124 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  _125 = (int) u8FilterIdx_131;
+  RxFifoFilters[_125].isExtendedFrame = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  _126 = (int) u8FilterIdx_131;
+  RxFifoFilters[_126].isExtendedFrame = 0;
+
+  <bb 24> :
+  _127 = (int) u8FilterIdx_131;
+  RxFifoFilters[_127].isRemoteFrame = 0;
+  u8FilterIdx.1_128 = u8FilterIdx_131;
+  u8FilterIdx_185 = u8FilterIdx.1_128 + 1;
+
+  <bb 25> :
+  # u8FilterIdx_131 = PHI <u8FilterIdx_178(20), u8FilterIdx_185(24)>
+  if (u8FilterIdx_131 < u8HwFilterCount_133)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 26> :
+  _129 = Can_pController_151(D)->Can_u8ControllerOffset;
+  FlexCAN_Ip_ConfigRxFifo_Privileged (_129, eElementFormat_137, &RxFifoFilters[0]);
+  RxFifoFilters ={v} {CLOBBER};
+  return;
+
+}
+
+
+Can_Ipw_ParseData (struct Can_HwType * CanIf_Mailbox, struct PduInfoType * CanIf_PduInfo, struct Flexcan_Ip_MsgBuffType * pReceivedDataBuffer, const struct Can_ControllerConfigType * Can_pControllerConfig, const struct Can_HwObjectConfigType * Can_pHwObjectConfig)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  <unnamed type> _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  <unnamed type> _9;
+  long unsigned int _10;
+  signed int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  short unsigned int _14;
+  unsigned char _15;
+  unsigned char _16;
+  long unsigned int _17;
+  uint8 * _18;
+
+  <bb 2> :
+  _1 = pReceivedDataBuffer_23(D)->msgId;
+  CanIf_Mailbox_24(D)->CanId = _1;
+  _2 = pReceivedDataBuffer_23(D)->cs;
+  _3 = _2 & 2097152;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = CanIf_Mailbox_24(D)->CanId;
+  _5 = _4 | 2147483648;
+  CanIf_Mailbox_24(D)->CanId = _5;
+
+  <bb 4> :
+  _6 = Can_pHwObjectConfig_27(D)->Can_eReceiveType;
+  if (_6 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  _7 = pReceivedDataBuffer_23(D)->cs;
+  _8 = _7 & 251658240;
+  if (_8 == 100663296)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Det_ReportRuntimeError (80, 0, 8, 1);
+
+  <bb 7> :
+  _9 = Can_pHwObjectConfig_27(D)->Can_eReceiveType;
+  if (_9 != 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  _10 = pReceivedDataBuffer_23(D)->cs;
+  _11 = (signed int) _10;
+  if (_11 < 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _12 = CanIf_Mailbox_24(D)->CanId;
+  _13 = _12 | 1073741824;
+  CanIf_Mailbox_24(D)->CanId = _13;
+
+  <bb 10> :
+  _14 = Can_pHwObjectConfig_27(D)->Can_HwObjectID;
+  CanIf_Mailbox_24(D)->Hoh = _14;
+  _15 = Can_pControllerConfig_31(D)->Can_u8AbstControllerID;
+  CanIf_Mailbox_24(D)->ControllerId = _15;
+  _16 = pReceivedDataBuffer_23(D)->dataLen;
+  _17 = (long unsigned int) _16;
+  CanIf_PduInfo_33(D)->SduLength = _17;
+  _18 = &pReceivedDataBuffer_23(D)->data[0];
+  CanIf_PduInfo_33(D)->SduDataPtr = _18;
+  CanIf_RxIndication (CanIf_Mailbox_24(D), CanIf_PduInfo_33(D));
+  return;
+
+}
+
+

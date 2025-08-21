@@ -1,0 +1,1261 @@
+
+Marking local functions: Ftm_Icu_Ip_StopChannel Ftm_Icu_Ip_ClearInterruptFlags
+
+
+Marking externally visible functions: Ftm_Icu_Ip_DisableNotification Ftm_Icu_Ip_EnableNotification Ftm_Icu_Ip_GetEdgeNumbers Ftm_Icu_Ip_DisableEdgeCount Ftm_Icu_Ip_EnableEdgeCount Ftm_Icu_Ip_ResetEdgeCount Ftm_Icu_Ip_DisableInterrupt Ftm_Icu_Ip_EnableInterrupt Ftm_Icu_Ip_DisableEdgeDetection Ftm_Icu_Ip_EnableEdgeDetection Ftm_Icu_Ip_SetActivationCondition Ftm_Icu_Ip_Init
+
+
+Marking externally visible variables: ftmIcuBase Ftm_Icu_Ip_InsState Ftm_Icu_Ip_ChState
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_16/35 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_16) @06814460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_StopChannel/5 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_16/34 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_16) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_StopChannel/5 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_27/33 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_27) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_DisableEdgeCount/16 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_27/32 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_27) @068140e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_DisableEdgeCount/16 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_26/31 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_26) @066a90e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_EnableEdgeCount/15 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_26/30 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_26) @066a9000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_EnableEdgeCount/15 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_24/29 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_24) @066a9b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_DisableEdgeDetection/11 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_24/28 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_24) @066a9a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_DisableEdgeDetection/11 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_15/27 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_15) @066a98c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_ClearInterruptFlags/4 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_15/26 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_15) @066a97e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_ClearInterruptFlags/4 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_23/25 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_23) @066a9620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_EnableEdgeDetection/10 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_23/24 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_23) @066a9540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_EnableEdgeDetection/10 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_19/23 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_19) @066a9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_SetActivationCondition/9 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_19/22 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_19) @066a92a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_SetActivationCondition/9 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_17/21 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_17) @0669e2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_GlobalConfiguration/6 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_17/20 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_17) @0669e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Ftm_Icu_Ip_GlobalConfiguration/6 
+  Calls: 
+Ftm_Icu_Ip_DisableNotification/19 (Ftm_Icu_Ip_DisableNotification) @0669e9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_EnableNotification/18 (Ftm_Icu_Ip_EnableNotification) @0669e700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_GetEdgeNumbers/17 (Ftm_Icu_Ip_GetEdgeNumbers) @0669e460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_DisableEdgeCount/16 (Ftm_Icu_Ip_DisableEdgeCount) @0669e1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_27/33 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_27/32 Ftm_Icu_Ip_StopChannel/5 
+Ftm_Icu_Ip_EnableEdgeCount/15 (Ftm_Icu_Ip_EnableEdgeCount) @06692ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (write)ftmIcuBase/2 (read)ftmIcuBase/2 (read)Ftm_Icu_Ip_ChState/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftm_Icu_Ip_SetActivationCondition/9 SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_26/31 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_26/30 Ftm_Icu_Ip_ClearInterruptFlags/4 
+Ftm_Icu_Ip_ResetEdgeCount/14 (Ftm_Icu_Ip_ResetEdgeCount) @066929a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_DisableInterrupt/13 (Ftm_Icu_Ip_DisableInterrupt) @06692460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_EnableInterrupt/12 (Ftm_Icu_Ip_EnableInterrupt) @06692e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Ftm_Icu_Ip_DisableEdgeDetection/11 (Ftm_Icu_Ip_DisableEdgeDetection) @06692b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_24/29 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_24/28 
+Ftm_Icu_Ip_EnableEdgeDetection/10 (Ftm_Icu_Ip_EnableEdgeDetection) @066928c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_23/25 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_23/24 Ftm_Icu_Ip_SetActivationCondition/9 Ftm_Icu_Ip_ClearInterruptFlags/4 
+Ftm_Icu_Ip_SetActivationCondition/9 (Ftm_Icu_Ip_SetActivationCondition) @06692620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Ftm_Icu_Ip_ChState/0 (write)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftm_Icu_Ip_EnableEdgeCount/15 Ftm_Icu_Ip_EnableEdgeDetection/10 Ftm_Icu_Ip_Init/8 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_19/23 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_19/22 
+Ftm_Icu_Ip_Init/8 (Ftm_Icu_Ip_Init) @06692380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ftmIcuBase/2 (read)Ftm_Icu_Ip_InsState/1 (read)Ftm_Icu_Ip_InsState/1 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (read)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_ChState/0 (write)Ftm_Icu_Ip_InsState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftm_Icu_Ip_SetClock/7 Ftm_Icu_Ip_SetActivationCondition/9 Ftm_Icu_Ip_SetChnInputCaptureFilter/3 Ftm_Icu_Ip_GlobalConfiguration/6 
+Ftm_Icu_Ip_SetClock/7 (Ftm_Icu_Ip_SetClock) @06692000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftm_Icu_Ip_Init/8 
+  Calls: 
+Ftm_Icu_Ip_GlobalConfiguration/6 (Ftm_Icu_Ip_GlobalConfiguration) @0668ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftm_Icu_Ip_Init/8 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_17/21 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_17/20 
+Ftm_Icu_Ip_StopChannel/5 (Ftm_Icu_Ip_StopChannel) @0668a8c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftm_Icu_Ip_DisableEdgeCount/16 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_16/35 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_16/34 
+Ftm_Icu_Ip_ClearInterruptFlags/4 (Ftm_Icu_Ip_ClearInterruptFlags) @0668a620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)ftmIcuBase/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Ftm_Icu_Ip_EnableEdgeCount/15 Ftm_Icu_Ip_EnableEdgeDetection/10 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_15/27 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_15/26 
+Ftm_Icu_Ip_SetChnInputCaptureFilter/3 (Ftm_Icu_Ip_SetChnInputCaptureFilter) @0668a380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Ftm_Icu_Ip_Init/8 
+  Calls: 
+ftmIcuBase/2 (ftmIcuBase) @066864c8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_EnableEdgeDetection/10 (read)Ftm_Icu_Ip_EnableEdgeDetection/10 (read)Ftm_Icu_Ip_DisableEdgeDetection/11 (read)Ftm_Icu_Ip_DisableEdgeDetection/11 (read)Ftm_Icu_Ip_EnableInterrupt/12 (read)Ftm_Icu_Ip_EnableInterrupt/12 (read)Ftm_Icu_Ip_SetActivationCondition/9 (read)Ftm_Icu_Ip_SetActivationCondition/9 (read)Ftm_Icu_Ip_ClearInterruptFlags/4 (read)Ftm_Icu_Ip_ClearInterruptFlags/4 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_ClearInterruptFlags/4 (read)Ftm_Icu_Ip_ClearInterruptFlags/4 (read)Ftm_Icu_Ip_StopChannel/5 (read)Ftm_Icu_Ip_StopChannel/5 (read)Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_SetActivationCondition/9 (read)Ftm_Icu_Ip_DisableInterrupt/13 (read)Ftm_Icu_Ip_DisableInterrupt/13 (read)Ftm_Icu_Ip_EnableEdgeCount/15 (read)Ftm_Icu_Ip_EnableEdgeCount/15 (read)Ftm_Icu_Ip_SetActivationCondition/9 (read)Ftm_Icu_Ip_Init/8 (read)Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_GlobalConfiguration/6 (read)Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_SetClock/7 (read)Ftm_Icu_Ip_EnableInterrupt/12 (read)Ftm_Icu_Ip_EnableInterrupt/12 (read)Ftm_Icu_Ip_DisableEdgeCount/16 (read)Ftm_Icu_Ip_DisableEdgeCount/16 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Ftm_Icu_Ip_InsState/1 (Ftm_Icu_Ip_InsState) @066863f0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftm_Icu_Ip_Init/8 (read)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)
+  Availability: available
+  Varpool flags:
+Ftm_Icu_Ip_ChState/0 (Ftm_Icu_Ip_ChState) @06686360
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Ftm_Icu_Ip_EnableEdgeCount/15 (read)Ftm_Icu_Ip_EnableNotification/18 (write)Ftm_Icu_Ip_GetEdgeNumbers/17 (read)Ftm_Icu_Ip_SetActivationCondition/9 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_EnableEdgeDetection/10 (read)Ftm_Icu_Ip_ResetEdgeCount/14 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (write)Ftm_Icu_Ip_Init/8 (read)Ftm_Icu_Ip_EnableEdgeCount/15 (write)Ftm_Icu_Ip_DisableNotification/19 (write)
+  Availability: available
+  Varpool flags:
+Ftm_Icu_Ip_DisableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  Ftm_Icu_Ip_ChState[_1][_2].notificationEnable = 0;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_EnableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  Ftm_Icu_Ip_ChState[_1][_2].notificationEnable = 1;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_GetEdgeNumbers (uint8 instance, uint8 hwChannel)
+{
+  uint16 D.6041;
+  int _1;
+  int _2;
+  uint16 _6;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  _6 = Ftm_Icu_Ip_ChState[_1][_2].edgeNumbers;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+Ftm_Icu_Ip_DisableEdgeCount (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  Ftm_Icu_Ip_StopChannel (instance_10(D), hwChannel_11(D));
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_27 ();
+  _1 = (int) instance_10(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_11(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_10(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_11(D);
+  _8 = _4 & 4294967231;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_27 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_EnableEdgeCount (uint8 instance, uint8 hwChannel)
+{
+  Ftm_Icu_Ip_StatusType D.6039;
+  int _1;
+  int _2;
+  int _3;
+  struct FTM_Type * _4;
+  int _5;
+  long unsigned int _6;
+  int _7;
+  struct FTM_Type * _8;
+  int _9;
+  long unsigned int _10;
+  int _11;
+  int _12;
+  <unnamed type> _13;
+  Ftm_Icu_Ip_StatusType _23;
+
+  <bb 2> :
+  _1 = (int) instance_14(D);
+  _2 = (int) hwChannel_15(D);
+  Ftm_Icu_Ip_ChState[_1][_2].edgeNumbers = 0;
+  Ftm_Icu_Ip_ClearInterruptFlags (instance_14(D), hwChannel_15(D));
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_26 ();
+  _3 = (int) instance_14(D);
+  _4 = ftmIcuBase[_3];
+  _5 = (int) hwChannel_15(D);
+  _6 ={v} _4->CONTROLS[_5].CSC;
+  _7 = (int) instance_14(D);
+  _8 = ftmIcuBase[_7];
+  _9 = (int) hwChannel_15(D);
+  _10 = _6 | 64;
+  _8->CONTROLS[_9].CSC ={v} _10;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_26 ();
+  _11 = (int) instance_14(D);
+  _12 = (int) hwChannel_15(D);
+  _13 = Ftm_Icu_Ip_ChState[_11][_12].edgeTrigger;
+  Ftm_Icu_Ip_SetActivationCondition (instance_14(D), hwChannel_15(D), _13);
+  _23 = 0;
+
+  <bb 3> :
+<L0>:
+  return _23;
+
+}
+
+
+Ftm_Icu_Ip_ResetEdgeCount (uint8 instance, uint8 hwchannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwchannel_4(D);
+  Ftm_Icu_Ip_ChState[_1][_2].edgeNumbers = 0;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_DisableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  _1 = (int) instance_9(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_11(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_9(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_11(D);
+  _8 = _4 & 4294967103;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_EnableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+  int _9;
+  struct FTM_Type * _10;
+  int _11;
+  long unsigned int _12;
+  int _13;
+  struct FTM_Type * _14;
+  int _15;
+  long unsigned int _16;
+
+  <bb 2> :
+  _1 = (int) instance_17(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_19(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_17(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_19(D);
+  _8 = _4 & 4294967103;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  _9 = (int) instance_17(D);
+  _10 = ftmIcuBase[_9];
+  _11 = (int) hwChannel_19(D);
+  _12 ={v} _10->CONTROLS[_11].CSC;
+  _13 = (int) instance_17(D);
+  _14 = ftmIcuBase[_13];
+  _15 = (int) hwChannel_19(D);
+  _16 = _12 | 64;
+  _14->CONTROLS[_15].CSC ={v} _16;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_DisableEdgeDetection (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_24 ();
+  _1 = (int) instance_11(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_12(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_11(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_12(D);
+  _8 = _4 & 4294967231;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_24 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_EnableEdgeDetection (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+  <unnamed type> _3;
+  int _4;
+  struct FTM_Type * _5;
+  int _6;
+  long unsigned int _7;
+  int _8;
+  struct FTM_Type * _9;
+  int _10;
+  long unsigned int _11;
+
+  <bb 2> :
+  Ftm_Icu_Ip_ClearInterruptFlags (instance_13(D), hwChannel_14(D));
+  _1 = (int) instance_13(D);
+  _2 = (int) hwChannel_14(D);
+  _3 = Ftm_Icu_Ip_ChState[_1][_2].edgeTrigger;
+  Ftm_Icu_Ip_SetActivationCondition (instance_13(D), hwChannel_14(D), _3);
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_23 ();
+  _4 = (int) instance_13(D);
+  _5 = ftmIcuBase[_4];
+  _6 = (int) hwChannel_14(D);
+  _7 ={v} _5->CONTROLS[_6].CSC;
+  _8 = (int) instance_13(D);
+  _9 = ftmIcuBase[_8];
+  _10 = (int) hwChannel_14(D);
+  _11 = _7 | 64;
+  _9->CONTROLS[_10].CSC ={v} _11;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_23 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_SetActivationCondition (uint8 instance, uint8 hwChannel, Ftm_Icu_Ip_EdgeType activation)
+{
+  int _1;
+  int _2;
+  int _3;
+  struct FTM_Type * _4;
+  int _5;
+  long unsigned int _6;
+  int _7;
+  struct FTM_Type * _8;
+  int _9;
+  long unsigned int _10;
+  int _11;
+  struct FTM_Type * _12;
+  int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  int _17;
+  struct FTM_Type * _18;
+  int _19;
+  long unsigned int _20;
+
+  <bb 2> :
+  _1 = (int) instance_21(D);
+  _2 = (int) hwChannel_22(D);
+  Ftm_Icu_Ip_ChState[_1][_2].edgeTrigger = activation_24(D);
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_19 ();
+  _3 = (int) instance_21(D);
+  _4 = ftmIcuBase[_3];
+  _5 = (int) hwChannel_22(D);
+  _6 ={v} _4->CONTROLS[_5].CSC;
+  _7 = (int) instance_21(D);
+  _8 = ftmIcuBase[_7];
+  _9 = (int) hwChannel_22(D);
+  _10 = _6 & 4294967283;
+  _8->CONTROLS[_9].CSC ={v} _10;
+  _11 = (int) instance_21(D);
+  _12 = ftmIcuBase[_11];
+  _13 = (int) hwChannel_22(D);
+  _14 ={v} _12->CONTROLS[_13].CSC;
+  _15 = activation_24(D) << 2;
+  _16 = _15 & 12;
+  _17 = (int) instance_21(D);
+  _18 = ftmIcuBase[_17];
+  _19 = (int) hwChannel_22(D);
+  _20 = _14 | _16;
+  _18->CONTROLS[_19].CSC ={v} _20;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_19 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_Init (uint8 instance, const struct Ftm_Icu_Ip_ConfigType * userConfig)
+{
+  Ftm_Icu_Ip_StatusType retStatus;
+  struct FTM_Type * ftmBase;
+  Ftm_Icu_Ip_ModeType ipMeasurementMode;
+  uint8 hwChannel;
+  uint8 index;
+  Ftm_Icu_Ip_StatusType D.6037;
+  int _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  const struct Ftm_Icu_Ip_InstanceConfigType * _5;
+  short unsigned int _6;
+  const struct Ftm_Icu_Ip_InstanceConfigType * _7;
+  int _8;
+  unsigned char _9;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _10;
+  int _11;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _12;
+  int _13;
+  int _14;
+  int _15;
+  void (*<T4a8>) (void) _16;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _17;
+  int _18;
+  int _19;
+  int _20;
+  void (*<T4a8>) (void) _21;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _22;
+  int _23;
+  int _24;
+  int _25;
+  void (*<T4ae>) (uint16, boolean) _26;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _27;
+  int _28;
+  unsigned char _29;
+  int _30;
+  int _31;
+  short unsigned int _32;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _33;
+  int _34;
+  int _35;
+  int _36;
+  <unnamed type> _37;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _38;
+  int _39;
+  int _40;
+  int _41;
+  <unnamed type> _42;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _43;
+  int _44;
+  int _45;
+  int _46;
+  void (*<T4b3>) (uint16, uint8, boolean) _47;
+  int _48;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _49;
+  int _50;
+  unsigned char _51;
+  int _52;
+  int _53;
+  <unnamed type> _54;
+  const struct Ftm_Icu_Ip_ChannelConfigType[<unknown>] * _55;
+  int _56;
+  long unsigned int _57;
+  unsigned char _58;
+  long unsigned int _59;
+  long unsigned int _60;
+  long unsigned int _61;
+  long unsigned int _62;
+  long unsigned int _63;
+  int _64;
+  long unsigned int _65;
+  int _66;
+  long unsigned int _67;
+  int _68;
+  int _69;
+  int _70;
+  int _71;
+  unsigned char index.1_72;
+  unsigned char _73;
+  long unsigned int _74;
+  const struct Ftm_Icu_Ip_InstanceConfigType * _75;
+  <unnamed type> _76;
+  long unsigned int _77;
+  long unsigned int _78;
+  const struct Ftm_Icu_Ip_InstanceConfigType * _79;
+  <unnamed type> _80;
+  const struct Ftm_Icu_Ip_InstanceConfigType * _81;
+  unsigned char _82;
+  int _83;
+  Ftm_Icu_Ip_StatusType _119;
+
+  <bb 2> :
+  _1 = (int) instance_90(D);
+  ftmBase_92 = ftmIcuBase[_1];
+  retStatus_93 = 0;
+  _2 = (int) instance_90(D);
+  _3 = Ftm_Icu_Ip_InsState[_2].instInit;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 3> :
+  _5 = userConfig_95(D)->pInstanceConfig;
+  _6 = _5->maxCountValue;
+  Ftm_Icu_Ip_GlobalConfiguration (instance_90(D), _6);
+  _7 = userConfig_95(D)->pInstanceConfig;
+  _8 = (int) instance_90(D);
+  _9 = _7->cfgPrescaler;
+  Ftm_Icu_Ip_InsState[_8].prescaler = _9;
+  index_98 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  _10 = userConfig_95(D)->pChannelsConfig;
+  _11 = (int) index_84;
+  hwChannel_102 = *_10[_11].hwChannel;
+  _12 = userConfig_95(D)->pChannelsConfig;
+  _13 = (int) index_84;
+  _14 = (int) instance_90(D);
+  _15 = (int) hwChannel_102;
+  _16 = *_12[_13].ftmChannelNotification;
+  Ftm_Icu_Ip_ChState[_14][_15].ftmChannelNotification = _16;
+  _17 = userConfig_95(D)->pChannelsConfig;
+  _18 = (int) index_84;
+  _19 = (int) instance_90(D);
+  _20 = (int) hwChannel_102;
+  _21 = *_17[_18].ftmOverflowNotification;
+  Ftm_Icu_Ip_ChState[_19][_20].ftmOverflowNotification = _21;
+  _22 = userConfig_95(D)->pChannelsConfig;
+  _23 = (int) index_84;
+  _24 = (int) instance_90(D);
+  _25 = (int) hwChannel_102;
+  _26 = *_22[_23].callback;
+  Ftm_Icu_Ip_ChState[_24][_25].callback = _26;
+  _27 = userConfig_95(D)->pChannelsConfig;
+  _28 = (int) index_84;
+  _29 = *_27[_28].callbackParams;
+  _30 = (int) instance_90(D);
+  _31 = (int) hwChannel_102;
+  _32 = (short unsigned int) _29;
+  Ftm_Icu_Ip_ChState[_30][_31].callbackParam = _32;
+  _33 = userConfig_95(D)->pChannelsConfig;
+  _34 = (int) index_84;
+  _35 = (int) instance_90(D);
+  _36 = (int) hwChannel_102;
+  _37 = *_33[_34].edgeAlignement;
+  Ftm_Icu_Ip_ChState[_35][_36].edgeTrigger = _37;
+  _38 = userConfig_95(D)->pChannelsConfig;
+  _39 = (int) index_84;
+  _40 = (int) instance_90(D);
+  _41 = (int) hwChannel_102;
+  _42 = *_38[_39].chSubMode;
+  Ftm_Icu_Ip_ChState[_40][_41].dmaMode = _42;
+  _43 = userConfig_95(D)->pChannelsConfig;
+  _44 = (int) index_84;
+  _45 = (int) instance_90(D);
+  _46 = (int) hwChannel_102;
+  _47 = *_43[_44].logicChStateCallback;
+  Ftm_Icu_Ip_ChState[_45][_46].logicChStateCallback = _47;
+  _48 = (int) hwChannel_102;
+  ftmBase_92->CONTROLS[_48].CSC ={v} 0;
+  if (hwChannel_102 <= 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _49 = userConfig_95(D)->pChannelsConfig;
+  _50 = (int) index_84;
+  _51 = *_49[_50].filterValue;
+  Ftm_Icu_Ip_SetChnInputCaptureFilter (ftmBase_92, hwChannel_102, _51);
+
+  <bb 6> :
+  _52 = (int) instance_90(D);
+  _53 = (int) hwChannel_102;
+  _54 = Ftm_Icu_Ip_ChState[_52][_53].edgeTrigger;
+  Ftm_Icu_Ip_SetActivationCondition (instance_90(D), hwChannel_102, _54);
+  _55 = userConfig_95(D)->pChannelsConfig;
+  _56 = (int) index_84;
+  ipMeasurementMode_113 = *_55[_56].chMode;
+  switch (ipMeasurementMode_113) <default: <L6> [INV], case 1: <L4> [INV], case 8: <L5> [INV]>
+
+  <bb 7> :
+<L4>:
+  _57 ={v} ftmBase_92->COMBINE;
+  _58 = hwChannel_102 >> 1;
+  _59 = (long unsigned int) _58;
+  _60 = _59 * 8;
+  _61 = 1 << _60;
+  _62 = ~_61;
+  _63 = _57 & _62;
+  ftmBase_92->COMBINE ={v} _63;
+  _64 = (int) hwChannel_102;
+  _65 ={v} ftmBase_92->CONTROLS[_64].CSC;
+  _66 = (int) hwChannel_102;
+  _67 = _65 & 4294967247;
+  ftmBase_92->CONTROLS[_66].CSC ={v} _67;
+  _68 = (int) instance_90(D);
+  _69 = (int) hwChannel_102;
+  Ftm_Icu_Ip_ChState[_68][_69].channelMode = 1;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  _70 = (int) instance_90(D);
+  _71 = (int) hwChannel_102;
+  Ftm_Icu_Ip_ChState[_70][_71].channelMode = 8;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  index.1_72 = index_84;
+  index_118 = index.1_72 + 1;
+
+  <bb 11> :
+  # index_84 = PHI <index_98(3), index_118(10)>
+  _73 = userConfig_95(D)->nNumChannels;
+  if (index_84 < _73)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  _74 ={v} ftmBase_92->CONF;
+  _75 = userConfig_95(D)->pInstanceConfig;
+  _76 = _75->debugMode;
+  _77 = _76 << 6;
+  _78 = _74 | _77;
+  ftmBase_92->CONF ={v} _78;
+  _79 = userConfig_95(D)->pInstanceConfig;
+  _80 = _79->cfgClkSrc;
+  _81 = userConfig_95(D)->pInstanceConfig;
+  _82 = _81->cfgPrescaler;
+  Ftm_Icu_Ip_SetClock (instance_90(D), _80, _82);
+  _83 = (int) instance_90(D);
+  Ftm_Icu_Ip_InsState[_83].instInit = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  retStatus_94 = 1;
+
+  <bb 14> :
+  # retStatus_85 = PHI <retStatus_93(12), retStatus_94(13)>
+  _119 = retStatus_85;
+
+  <bb 15> :
+<L12>:
+  return _119;
+
+}
+
+
+Ftm_Icu_Ip_SetClock (uint8 instance, Ftm_Icu_Ip_ClockSourceType clockSource, uint8 prescaler)
+{
+  uint8 psValue;
+  int _1;
+  int _2;
+  int _3;
+  unsigned char psValue.0_4;
+  int _5;
+  struct FTM_Type * _6;
+  long unsigned int _7;
+  int _8;
+  struct FTM_Type * _9;
+  long unsigned int _10;
+  int _11;
+  struct FTM_Type * _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  int _16;
+  struct FTM_Type * _17;
+  long unsigned int _18;
+  int _19;
+  struct FTM_Type * _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  int _25;
+  struct FTM_Type * _26;
+  long unsigned int _27;
+
+  <bb 2> :
+  psValue_29 = 0;
+  psValue_30 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = (int) prescaler_31(D);
+  _2 = (int) psValue_28;
+  _3 = 1 << _2;
+  if (_1 == _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  psValue.0_4 = psValue_28;
+  psValue_32 = psValue.0_4 + 1;
+
+  <bb 6> :
+  # psValue_28 = PHI <psValue_30(2), psValue_32(5)>
+  if (psValue_28 <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _5 = (int) instance_33(D);
+  _6 = ftmIcuBase[_5];
+  _7 ={v} _6->SC;
+  _8 = (int) instance_33(D);
+  _9 = ftmIcuBase[_8];
+  _10 = _7 & 4294967288;
+  _9->SC ={v} _10;
+  _11 = (int) instance_33(D);
+  _12 = ftmIcuBase[_11];
+  _13 ={v} _12->SC;
+  _14 = (long unsigned int) psValue_28;
+  _15 = _14 & 7;
+  _16 = (int) instance_33(D);
+  _17 = ftmIcuBase[_16];
+  _18 = _13 | _15;
+  _17->SC ={v} _18;
+  _19 = (int) instance_33(D);
+  _20 = ftmIcuBase[_19];
+  _21 ={v} _20->SC;
+  _22 = _21 & 4294967271;
+  _23 = clockSource_37(D) << 3;
+  _24 = _23 & 24;
+  _25 = (int) instance_33(D);
+  _26 = ftmIcuBase[_25];
+  _27 = _22 | _24;
+  _26->SC ={v} _27;
+  return;
+
+}
+
+
+Ftm_Icu_Ip_GlobalConfiguration (uint8 instance, uint16 maxCountValue)
+{
+  int _1;
+  struct FTM_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  long unsigned int _7;
+  int _8;
+  struct FTM_Type * _9;
+  long unsigned int _10;
+  int _11;
+  struct FTM_Type * _12;
+  long unsigned int _13;
+  int _14;
+  struct FTM_Type * _15;
+  long unsigned int _16;
+  int _17;
+  struct FTM_Type * _18;
+  long unsigned int _19;
+  int _20;
+  struct FTM_Type * _21;
+  int _22;
+  struct FTM_Type * _23;
+  long unsigned int _24;
+  int _25;
+  struct FTM_Type * _26;
+  long unsigned int _27;
+  int _28;
+  struct FTM_Type * _29;
+  long unsigned int _30;
+  int _31;
+  struct FTM_Type * _32;
+  long unsigned int _33;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_17 ();
+  _1 = (int) instance_37(D);
+  _2 = ftmIcuBase[_1];
+  _3 ={v} _2->FMS;
+  _4 = _3 & 64;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _5 = (int) instance_37(D);
+  _6 = ftmIcuBase[_5];
+  _7 ={v} _6->MODE;
+  _8 = (int) instance_37(D);
+  _9 = ftmIcuBase[_8];
+  _10 = _7 | 4;
+  _9->MODE ={v} _10;
+
+  <bb 4> :
+  _11 = (int) instance_37(D);
+  _12 = ftmIcuBase[_11];
+  _13 ={v} _12->SC;
+  _14 = (int) instance_37(D);
+  _15 = ftmIcuBase[_14];
+  _16 = _13 & 4294967271;
+  _15->SC ={v} _16;
+  _17 = (int) instance_37(D);
+  _18 = ftmIcuBase[_17];
+  _19 = (long unsigned int) maxCountValue_40(D);
+  _18->MOD ={v} _19;
+  _20 = (int) instance_37(D);
+  _21 = ftmIcuBase[_20];
+  _21->CNTIN ={v} 0;
+  _22 = (int) instance_37(D);
+  _23 = ftmIcuBase[_22];
+  _24 ={v} _23->SC;
+  _25 = (int) instance_37(D);
+  _26 = ftmIcuBase[_25];
+  _27 = _24 & 4294966783;
+  _26->SC ={v} _27;
+  _28 = (int) instance_37(D);
+  _29 = ftmIcuBase[_28];
+  _30 ={v} _29->MODE;
+  _31 = (int) instance_37(D);
+  _32 = ftmIcuBase[_31];
+  _33 = _30 | 1;
+  _32->MODE ={v} _33;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_17 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_StopChannel (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_16 ();
+  _1 = (int) instance_11(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_12(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_11(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_12(D);
+  _8 = _4 & 4294967283;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_16 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_ClearInterruptFlags (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct FTM_Type * _2;
+  int _3;
+  long unsigned int _4;
+  int _5;
+  struct FTM_Type * _6;
+  int _7;
+  long unsigned int _8;
+  int _9;
+  struct FTM_Type * _10;
+  long unsigned int _11;
+  int _12;
+  struct FTM_Type * _13;
+  long unsigned int _14;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_15 ();
+  _1 = (int) instance_17(D);
+  _2 = ftmIcuBase[_1];
+  _3 = (int) hwChannel_18(D);
+  _4 ={v} _2->CONTROLS[_3].CSC;
+  _5 = (int) instance_17(D);
+  _6 = ftmIcuBase[_5];
+  _7 = (int) hwChannel_18(D);
+  _8 = _4 & 4294967103;
+  _6->CONTROLS[_7].CSC ={v} _8;
+  _9 = (int) instance_17(D);
+  _10 = ftmIcuBase[_9];
+  _11 ={v} _10->SC;
+  _12 = (int) instance_17(D);
+  _13 = ftmIcuBase[_12];
+  _14 = _11 & 4294966783;
+  _13->SC ={v} _14;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_15 ();
+  return;
+
+}
+
+
+Ftm_Icu_Ip_SetChnInputCaptureFilter (struct FTM_Type * const ftmBase, uint8 hwChannel, uint8 value)
+{
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+
+  <bb 2> :
+  _1 = (int) hwChannel_30(D);
+  switch (_1) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 ={v} ftmBase_32(D)->FILTER;
+  _3 = _2 & 4294967280;
+  ftmBase_32(D)->FILTER ={v} _3;
+  _4 ={v} ftmBase_32(D)->FILTER;
+  _5 = (long unsigned int) value_34(D);
+  _6 = _5 & 15;
+  _7 = _4 | _6;
+  ftmBase_32(D)->FILTER ={v} _7;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  _8 ={v} ftmBase_32(D)->FILTER;
+  _9 = _8 & 4294967055;
+  ftmBase_32(D)->FILTER ={v} _9;
+  _10 ={v} ftmBase_32(D)->FILTER;
+  _11 = (long unsigned int) value_34(D);
+  _12 = _11 << 4;
+  _13 = _12 & 255;
+  _14 = _10 | _13;
+  ftmBase_32(D)->FILTER ={v} _14;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  _15 ={v} ftmBase_32(D)->FILTER;
+  _16 = _15 & 4294963455;
+  ftmBase_32(D)->FILTER ={v} _16;
+  _17 ={v} ftmBase_32(D)->FILTER;
+  _18 = (long unsigned int) value_34(D);
+  _19 = _18 << 8;
+  _20 = _19 & 3840;
+  _21 = _17 | _20;
+  ftmBase_32(D)->FILTER ={v} _21;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  _22 ={v} ftmBase_32(D)->FILTER;
+  _23 = _22 & 4294905855;
+  ftmBase_32(D)->FILTER ={v} _23;
+  _24 ={v} ftmBase_32(D)->FILTER;
+  _25 = (long unsigned int) value_34(D);
+  _26 = _25 << 12;
+  _27 = _26 & 65535;
+  _28 = _24 | _27;
+  ftmBase_32(D)->FILTER ={v} _28;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  return;
+
+}
+
+

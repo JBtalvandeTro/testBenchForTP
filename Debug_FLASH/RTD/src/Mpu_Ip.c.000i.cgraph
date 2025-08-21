@@ -1,0 +1,1153 @@
+Trivially needed symbols: Mpu_Ip_GetErrorDetails Mpu_Ip_SetAccessMode Mpu_Ip_EnableRegion Mpu_Ip_Deinit Mpu_Ip_SetRegionConfig Mpu_Ip_Init Mpu_Ip_ConvertErrorAccessToEnum Mpu_Ip_ConvertErrorAttributeToEnum Mpu_Ip_ConvertErrorMasterToEnum Mpu_Ip_GetErrorDetails_Privileged Mpu_Ip_SetAccessMode_Privileged Mpu_Ip_EnableRegion_Privileged Mpu_Ip_Deinit_Privileged Mpu_Ip_SetRegionConfig_Privileged Mpu_Ip_Init_Privileged Mpu_Ip_pBase
+
+
+Initial Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails_Privileged/7 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066980e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode_Privileged/6 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06698d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion_Privileged/5 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06698a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066987e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06698540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init_Privileged/2 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @066982a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06698000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0668ea80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0668eee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails/16 
+  Calls: Mpu_Ip_ConvertErrorAccessToEnum/10 Mpu_Ip_ConvertErrorAttributeToEnum/9 Mpu_Ip_ConvertErrorMasterToEnum/8 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0668ec40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetAccessMode/15 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0668e9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_EnableRegion/14 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0668e000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Deinit/13 Mpu_Ip_Init_Privileged/2 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06667ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetRegionConfig/12 Mpu_Ip_Init_Privileged/2 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06667c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Init/11 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06667700
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065c51c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails_Privileged/7 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode_Privileged/6 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion_Privileged/5 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init_Privileged/2 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails/16 
+  Calls: Mpu_Ip_ConvertErrorAccessToEnum/10 Mpu_Ip_ConvertErrorAttributeToEnum/9 Mpu_Ip_ConvertErrorMasterToEnum/8 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetAccessMode/15 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_EnableRegion/14 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Deinit/13 Mpu_Ip_Init_Privileged/2 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetRegionConfig/12 Mpu_Ip_Init_Privileged/2 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Init/11 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails_Privileged/7 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode_Privileged/6 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion_Privileged/5 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init_Privileged/2 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails/16 
+  Calls: Mpu_Ip_ConvertErrorAccessToEnum/10 Mpu_Ip_ConvertErrorAttributeToEnum/9 Mpu_Ip_ConvertErrorMasterToEnum/8 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetAccessMode/15 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_EnableRegion/14 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Deinit/13 Mpu_Ip_Init_Privileged/2 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetRegionConfig/12 Mpu_Ip_Init_Privileged/2 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Init/11 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails_Privileged/7 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode_Privileged/6 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion_Privileged/5 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init_Privileged/2 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails/16 
+  Calls: Mpu_Ip_ConvertErrorAccessToEnum/10 Mpu_Ip_ConvertErrorAttributeToEnum/9 Mpu_Ip_ConvertErrorMasterToEnum/8 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetAccessMode/15 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_EnableRegion/14 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Deinit/13 Mpu_Ip_Init_Privileged/2 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_SetRegionConfig/12 Mpu_Ip_Init_Privileged/2 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Mpu_Ip_Init/11 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 Mpu_Ip_SetAccessMode_Privileged/6 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_EnableRegion_Privileged/5 Mpu_Ip_EnableRegion_Privileged/5 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_SetRegionConfig_Privileged/3 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails_Privileged/7 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode_Privileged/6 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion_Privileged/5 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init_Privileged/2 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails_Privileged/7 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_GetErrorDetails/16 
+  Calls: Mpu_Ip_ConvertErrorAccessToEnum/10 Mpu_Ip_ConvertErrorAttributeToEnum/9 Mpu_Ip_ConvertErrorMasterToEnum/8 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_SetAccessMode/15 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_EnableRegion/14 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_Deinit/13 Mpu_Ip_Init_Privileged/2 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_SetRegionConfig/12 Mpu_Ip_Init_Privileged/2 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mpu_Ip_Init/11 
+  Calls: Mpu_Ip_SetRegionConfig_Privileged/3 Mpu_Ip_Deinit_Privileged/4 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Mpu_Ip_pBase
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/22 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @066b67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/21 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @066b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/20 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @066b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/19 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @066b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/18 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @066b61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/17 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @066b60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_GetErrorDetails/16 (Mpu_Ip_GetErrorDetails) @066980e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_SetAccessMode/15 (Mpu_Ip_SetAccessMode) @06698d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_EnableRegion/14 (Mpu_Ip_EnableRegion) @06698a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_Deinit/13 (Mpu_Ip_Deinit) @066987e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_SetRegionConfig/12 (Mpu_Ip_SetRegionConfig) @06698540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_Init/11 (Mpu_Ip_Init) @066982a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_ConvertErrorAccessToEnum/10 (Mpu_Ip_ConvertErrorAccessToEnum) @06698000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_ConvertErrorAttributeToEnum/9 (Mpu_Ip_ConvertErrorAttributeToEnum) @0668ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_ConvertErrorMasterToEnum/8 (Mpu_Ip_ConvertErrorMasterToEnum) @0668eee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_GetErrorDetails_Privileged/7 (Mpu_Ip_GetErrorDetails_Privileged) @0668ec40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_SetAccessMode_Privileged/6 (Mpu_Ip_SetAccessMode_Privileged) @0668e9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_EnableRegion_Privileged/5 (Mpu_Ip_EnableRegion_Privileged) @0668e000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_Deinit_Privileged/4 (Mpu_Ip_Deinit_Privileged) @06667ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_SetRegionConfig_Privileged/3 (Mpu_Ip_SetRegionConfig_Privileged) @06667c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_Init_Privileged/2 (Mpu_Ip_Init_Privileged) @06667700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Mpu_Ip_pBase/1 (Mpu_Ip_pBase) @066641b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

@@ -1,0 +1,51 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/5 (Wdog_Ip_FastModeSettings_INIT) @059e0870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_Ipw_FastModeSettings_0_INIT/2 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Wdog_Ip_SlowModeSettings_INIT/4 (Wdog_Ip_SlowModeSettings_INIT) @059e0828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_Ipw_SlowModeSettings_0_INIT/1 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Wdog_Ip_OffModeSettings_INIT/3 (Wdog_Ip_OffModeSettings_INIT) @059e07e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_Ipw_OffModeSettings_0_INIT/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Wdg_Ipw_FastModeSettings_0_INIT/2 (Wdg_Ipw_FastModeSettings_0_INIT) @059e06c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_FastModeSettings_INIT/5 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_Ipw_SlowModeSettings_0_INIT/1 (Wdg_Ipw_SlowModeSettings_0_INIT) @059e0678
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_SlowModeSettings_INIT/4 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_Ipw_OffModeSettings_0_INIT/0 (Wdg_Ipw_OffModeSettings_0_INIT) @059e0630
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_OffModeSettings_INIT/3 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

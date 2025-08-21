@@ -1,0 +1,736 @@
+Mcl_SetTrgMuxLock (const uint32 Trigger)
+{
+  <bb 2> :
+  Trgmux_Ip_SetLock (Trigger_2(D));
+  return;
+
+}
+
+
+Mcl_SetTrgMuxInput (const uint32 Trigger, const uint32 Input)
+{
+  <bb 2> :
+  Trgmux_Ip_SetInput (Trigger_2(D), Input_3(D));
+  return;
+
+}
+
+
+Mcl_SetDmaChannelScatterGatherConfig (const uint32 Channel, const uint32 Element)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  if (Channel_4(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_4(D);
+  Det_ReportError (255, _1, 9, 3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetStatus_8 = Dma_Ip_SetLogicChannelScatterGatherConfig (Channel_4(D), Element_6(D));
+  _2 = (unsigned char) Channel_4(D);
+  Mcl_DmaReturnCheck (_2, 9, RetStatus_8);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mcl_GetDmaChannelParam (const uint32 Channel, const Mcl_DmaChannelInfoParamType Param, uint32 * const Value)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Channel_5(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _1, 8, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Param_6(D) > 7)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _2, 8, 5);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_10 = Dma_Ip_GetLogicChannelParam (Channel_5(D), Param_6(D), Value_8(D));
+  _3 = (unsigned char) Channel_5(D);
+  Mcl_DmaReturnCheck (_3, 8, RetStatus_10);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_SetDmaChannelScatterGatherList (const uint32 Channel, const uint32 Element, const struct Mcl_DmaChannelScatterGatherListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelScatterGatherListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.10_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 7, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 26)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 7, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 25)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 7, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.10_8 = Idx_12;
+  Idx_30 = Idx.10_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_35 = Dma_Ip_SetLogicChannelScatterGatherList (Channel_21(D), Element_33(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 7, RetStatus_35);
+
+  <bb 13> :
+  return;
+
+}
+
+
+Mcl_SetDmaChannelTransferList (const uint32 Channel, const struct Mcl_DmaChannelTransferListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelTransferListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.9_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 6, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 26)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 6, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 25)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 6, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.9_8 = Idx_12;
+  Idx_30 = Idx.9_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_34 = Dma_Ip_SetLogicChannelTransferList (Channel_21(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 6, RetStatus_34);
+
+  <bb 13> :
+  return;
+
+}
+
+
+Mcl_SetDmaChannelGlobalList (const uint32 Channel, const struct Mcl_DmaChannelGlobalListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelGlobalListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.8_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 5, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 11)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 5, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 10)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 5, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.8_8 = Idx_12;
+  Idx_30 = Idx.8_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_34 = Dma_Ip_SetLogicChannelGlobalList (Channel_21(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 5, RetStatus_34);
+
+  <bb 13> :
+  return;
+
+}
+
+
+Mcl_GetDmaChannelStatus (const uint32 Channel, struct Mcl_DmaChannelStatusType * const Status)
+{
+  struct Dma_Ip_LogicChannelStatusType LocChStatus;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  <unnamed type> _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _6;
+  unsigned char _7;
+
+  <bb 2> :
+  if (Channel_9(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_9(D);
+  Det_ReportError (255, _1, 4, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Status_10(D) == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_9(D);
+  Det_ReportError (255, _2, 4, 1);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_13 = Dma_Ip_GetLogicChannelStatus (Channel_9(D), &LocChStatus);
+  _3 = LocChStatus.ChStateValue;
+  Status_10(D)->ChannelState = _3;
+  _4 = LocChStatus.Errors;
+  Status_10(D)->Errors = _4;
+  _5 = LocChStatus.Active;
+  Status_10(D)->Active = _5;
+  _6 = LocChStatus.Done;
+  Status_10(D)->Done = _6;
+  _7 = (unsigned char) Channel_9(D);
+  Mcl_DmaReturnCheck (_7, 4, RetStatus_13);
+
+  <bb 7> :
+  LocChStatus ={v} {CLOBBER};
+  return;
+
+}
+
+
+Mcl_SetDmaChannelCommand (const uint32 Channel, const Mcl_DmaChannelCmdType Command)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Channel_5(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _1, 3, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Command_6(D) > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _2, 3, 4);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_9 = Dma_Ip_SetLogicChannelCommand (Channel_5(D), Command_6(D));
+  _3 = (unsigned char) Channel_5(D);
+  Mcl_DmaReturnCheck (_3, 3, RetStatus_9);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_GetDmaInstanceStatus (const uint32 Instance, struct Mcl_DmaInstanceStatusType * const Status)
+{
+  struct Dma_Ip_LogicInstanceStatusType LocInstStatus;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  unsigned char _4;
+  _Bool _5;
+  unsigned char _6;
+
+  <bb 2> :
+  LocInstStatus.Errors = 0;
+  LocInstStatus.ActiveId = 0;
+  LocInstStatus.Active = 0;
+  if (Instance_12(D) > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_12(D);
+  Det_ReportError (255, _1, 2, 2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Status_13(D) == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Instance_12(D);
+  Det_ReportError (255, _2, 2, 1);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_15 = Dma_Ip_GetLogicInstanceStatus (Instance_12(D), &LocInstStatus);
+  _3 = LocInstStatus.Errors;
+  Status_13(D)->Errors = _3;
+  _4 = LocInstStatus.ActiveId;
+  Status_13(D)->ActiveId = _4;
+  _5 = LocInstStatus.Active;
+  Status_13(D)->Active = _5;
+  _6 = (unsigned char) Instance_12(D);
+  Mcl_DmaReturnCheck (_6, 2, RetStatus_15);
+
+  <bb 7> :
+  LocInstStatus ={v} {CLOBBER};
+  return;
+
+}
+
+
+Mcl_SetDmaInstanceCommand (const uint32 Instance, const Mcl_DmaInstanceCmdType Command)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Instance_5(D) > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_5(D);
+  Det_ReportError (255, _1, 1, 2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Command_6(D) > 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Instance_5(D);
+  Det_ReportError (255, _2, 1, 4);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_9 = Dma_Ip_SetLogicInstanceCommand (Instance_5(D), Command_6(D));
+  _3 = (unsigned char) Instance_5(D);
+  Mcl_DmaReturnCheck (_3, 1, RetStatus_9);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_DeInit ()
+{
+  Dma_Ip_ReturnType RetStatus;
+  const struct Mcl_ConfigType * Mcl_pxConfig.6_1;
+  const struct Mcl_ConfigType * Mcl_pxConfig.7_2;
+  const struct Dma_Ip_InitType * _3;
+
+  <bb 2> :
+  Mcl_pxConfig.6_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.6_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig.7_2 = Mcl_pxConfig;
+  _3 = Mcl_pxConfig.7_2->pxDmaInitType;
+  if (_3 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetStatus_9 = Dma_Ip_Deinit ();
+  Mcl_DmaReturnCheck (0, 11, RetStatus_9);
+
+  <bb 5> :
+  Mcl_pxConfig = 0B;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Det_ReportError (255, 0, 11, 0);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_Init (const struct Mcl_ConfigType * const ConfigPtr)
+{
+  Mcl_ReturnType ValidPtr;
+  Trgmux_Ip_StatusType TrgmuxIpStatus;
+  Dma_Ip_ReturnType DmaIpStatus;
+  const struct Mcl_ConfigType * Mcl_pxConfig.0_1;
+  const struct Mcl_ConfigType * Mcl_pxConfig.1_2;
+  const struct Mcl_ConfigType * Mcl_pxConfig.2_3;
+  const struct Dma_Ip_InitType * _4;
+  const struct Mcl_ConfigType * Mcl_pxConfig.3_5;
+  const struct Dma_Ip_InitType * _6;
+  const struct Mcl_ConfigType * Mcl_pxConfig.4_7;
+  const struct Trgmux_Ip_InitType * _8;
+  const struct Mcl_ConfigType * Mcl_pxConfig.5_9;
+  const struct Trgmux_Ip_InitType * _10;
+
+  <bb 2> :
+  ValidPtr_16 = Mcl_ValidatePtrInit (ConfigPtr_14(D));
+  if (ValidPtr_16 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig.0_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.0_1 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 4> :
+  Mcl_pxConfig = ConfigPtr_14(D);
+  Mcl_pxConfig.1_2 = Mcl_pxConfig;
+  if (Mcl_pxConfig.1_2 != 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 5> :
+  Mcl_pxConfig.2_3 = Mcl_pxConfig;
+  _4 = Mcl_pxConfig.2_3->pxDmaInitType;
+  if (_4 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  Mcl_pxConfig.3_5 = Mcl_pxConfig;
+  _6 = Mcl_pxConfig.3_5->pxDmaInitType;
+  DmaIpStatus_20 = Dma_Ip_Init (_6);
+  if (DmaIpStatus_20 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Det_ReportError (255, 0, 0, 0);
+
+  <bb 8> :
+  Mcl_pxConfig.4_7 = Mcl_pxConfig;
+  _8 = Mcl_pxConfig.4_7->pxTrgmuxInitType;
+  if (_8 != 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 9> :
+  Mcl_pxConfig.5_9 = Mcl_pxConfig;
+  _10 = Mcl_pxConfig.5_9->pxTrgmuxInitType;
+  TrgmuxIpStatus_23 = Trgmux_Ip_Init (_10);
+  if (TrgmuxIpStatus_23 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  Det_ReportError (255, 0, 0, 0);
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  Det_ReportError (255, 0, 0, 0);
+
+  <bb 12> :
+  return;
+
+}
+
+
+Mcl_DmaReturnCheck (const uint8 Channel, const uint8 Function, const Dma_Ip_ReturnType RetStatus)
+{
+  <bb 2> :
+  switch (RetStatus_2(D)) <default: <L3> [INV], case 0: <L2> [INV], case 1: <L0> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  Det_ReportError (255, Channel_4(D), Function_5(D), 7);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  Det_ReportError (255, Channel_4(D), Function_5(D), 6);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+Mcl_ValidatePtrInit (const struct Mcl_ConfigType * const ConfigPtr)
+{
+  Mcl_ReturnType Valid;
+  Mcl_ReturnType D.6710;
+  Mcl_ReturnType _8;
+
+  <bb 2> :
+  Valid_3 = 0;
+  if (ConfigPtr_4(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Valid_6 = 1;
+  Det_ReportError (255, 0, 0, 11);
+
+  <bb 4> :
+  # Valid_1 = PHI <Valid_3(2), Valid_6(3)>
+  _8 = Valid_1;
+
+  <bb 5> :
+<L3>:
+  return _8;
+
+}
+
+

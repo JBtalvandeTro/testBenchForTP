@@ -1,0 +1,2035 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: PWB_Deinit PWB_Update PWB_Init
+
+
+Marking externally visible variables: PWB_numberAvailableCOMETi PWB_relayCurrentState PWB_relayCurrentCmd PWB_measures PWB_Flags
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not_available
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not_available
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not_available
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_prechargeWaiting/36 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not_available
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: available
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: available
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: available
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: available
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: available
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: available
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: available
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Update/25 (write)PWB_Update/25 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)
+  Availability: available
+  Varpool flags:
+pwb_CalculateMeasurementAverage (uint32_t * array, uint32_t size)
+{
+  size_t i;
+  int sum;
+  uint32_t D.7604;
+
+  <bb 2> :
+  if (array == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (size == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.7604 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  sum = 0;
+  i = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _1 = i * 4;
+  _2 = array + _1;
+  _3 = *_2;
+  sum.70_4 = (long unsigned int) sum;
+  _5 = _3 + sum.70_4;
+  sum = (int) _5;
+  i = i + 1;
+
+  <bb 7> :
+  if (i < size)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  sum.71_6 = (long unsigned int) sum;
+  D.7604 = sum.71_6 / size;
+
+  <bb 9> :
+<L6>:
+  return D.7604;
+
+}
+
+
+pwb_CheckVoltageConsistency ()
+{
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _3 = PWB_measures.Lv_Voltage;
+  _4 = PWB_measures.VLv_Cometi;
+  _5 = _4 + 20;
+  if (_3 >= _5)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _6 = PWB_measures.Lv_Voltage;
+  _7 = PWB_measures.VLv_Cometi;
+  _8 = _7 + 4294967276;
+  if (_6 <= _8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  PWB_Flags.faults.flags.lvVoltMeas = 1;
+
+  <bb 6> :
+  FSM_mode.69_9 = FSM_mode;
+  if (FSM_mode.69_9 == 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 7> :
+  _10 = PWB_measures.Hv_Current;
+  if (_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  _11 = PWB_measures.Hv_Voltage;
+  _12 = PWB_measures.VHv_Cometi;
+  _13 = _12 + 20;
+  if (_11 >= _13)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _14 = PWB_measures.Hv_Voltage;
+  _15 = PWB_measures.VHv_Cometi;
+  _16 = _15 + 4294967276;
+  if (_14 <= _16)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  PWB_Flags.faults.flags.hvVoltMeas = 1;
+
+  <bb 11> :
+  return;
+
+}
+
+
+pwb_CheckRelayConsitency ()
+{
+  <bb 2> :
+  _1 = PWBio_ReadAuxSwitch (1);
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  _6 = (_Bool) _5;
+  PWB_relayCurrentState.stateSwitchS2 = _6;
+  _7 = PWBio_ReadAuxSwitch (2);
+  _8 = (int) _7;
+  _9 = _8 != 0;
+  _10 = ~_9;
+  _11 = (int) _10;
+  _12 = (_Bool) _11;
+  PWB_relayCurrentState.stateSwitchS3 = _12;
+  _13 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentCmd);
+  _14 = _13 & 2;
+  if (_14 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _15 = PWB_relayCurrentState.stateSwitchS2;
+  _16 = ~_15;
+  if (_16 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  PWB_Flags.faults.flags.lvRelayNok = 1;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  _17 = PWB_relayCurrentCmd.commandSwitchS2;
+  _18 = ~_17;
+  if (_18 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _19 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentState);
+  _20 = _19 & 1;
+  if (_20 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  PWB_Flags.faults.flags.relayCmdWarning = 1;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  _21 = PWB_relayCurrentCmd.commandSwitchS2;
+  _22 = PWB_relayCurrentState.stateSwitchS2;
+  if (_21 == _22)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  PWB_Flags.faults.flags.relayCmdWarning = 0;
+
+  <bb 10> :
+  _23 = PWB_relayCurrentCmd.commandSwitchS3;
+  _24 = ~_23;
+  if (_24 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 11> :
+  _25 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentState);
+  _26 = _25 & 2;
+  if (_26 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 12> :
+  FSM_mode.68_27 = FSM_mode;
+  if (FSM_mode.68_27 == 3)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  PWB_Flags.faults.flags.hvRelayNok = 1;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  PWB_Flags.faults.flags.relayCmdWarning = 1;
+
+  <bb 15> :
+  goto <bb 21>; [INV]
+
+  <bb 16> :
+  _28 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentCmd);
+  _29 = _28 & 4;
+  if (_29 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 17> :
+  _30 = PWB_relayCurrentState.stateSwitchS3;
+  _31 = ~_30;
+  if (_31 != 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  PWB_Flags.faults.flags.relayCmdWarning = 1;
+  goto <bb 21>; [INV]
+
+  <bb 19> :
+  _32 = PWB_relayCurrentCmd.commandSwitchS3;
+  _33 = PWB_relayCurrentState.stateSwitchS3;
+  if (_32 == _33)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  PWB_Flags.faults.flags.relayCmdWarning = 0;
+
+  <bb 21> :
+  return;
+
+}
+
+
+pwb_CheckCometiUnits ()
+{
+  uint32_t buckAutoEndTimeOut;
+  uint32_t buckminVoltage;
+  uint32_t boostEndDelta;
+  uint32_t currentThresholdHV;
+  uint32_t currentThresholdLV;
+
+  <bb 2> :
+  currentThresholdLV = 0;
+  currentThresholdHV = 0;
+  FSM_mode.58_1 = FSM_mode;
+  switch (FSM_mode.58_1) <default: <L2> [INV], case 3: <L0> [INV], case 4: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  currentThresholdLV = PAR_paramConfig[61].realVal.unsignedVal;
+  currentThresholdHV = PAR_paramConfig[59].realVal.unsignedVal;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  currentThresholdLV = PAR_paramConfig[60].realVal.unsignedVal;
+  currentThresholdHV = PAR_paramConfig[58].realVal.unsignedVal;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  _2 = PWB_measures.IHv_Cometi;
+  if (currentThresholdHV < _2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _3 = PWB_measures.ILv_Cometi;
+  if (currentThresholdLV < _3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  PWB_Flags.faults.flags.overCurrent = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  PWB_Flags.faults.flags.overCurrent = 0;
+
+  <bb 10> :
+  PWB_numberAvailableCOMETi = 0;
+  _4 = CNV_powercoreUnitTable[0].regulInfo.softMode;
+  if (_4 == 1)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _5 = CNV_powercoreUnitTable[0].regulInfo.softMode;
+  if (_5 == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  PWB_numberAvailableCOMETi.59_6 = PWB_numberAvailableCOMETi;
+  PWB_numberAvailableCOMETi.60_7 = PWB_numberAvailableCOMETi.59_6;
+  _8 = PWB_numberAvailableCOMETi.60_7 + 1;
+  PWB_numberAvailableCOMETi = _8;
+
+  <bb 13> :
+  _9 = CNV_powercoreUnitTable[1].regulInfo.softMode;
+  if (_9 == 1)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  _10 = CNV_powercoreUnitTable[1].regulInfo.softMode;
+  if (_10 == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  PWB_numberAvailableCOMETi.61_11 = PWB_numberAvailableCOMETi;
+  PWB_numberAvailableCOMETi.62_12 = PWB_numberAvailableCOMETi.61_11;
+  _13 = PWB_numberAvailableCOMETi.62_12 + 1;
+  PWB_numberAvailableCOMETi = _13;
+
+  <bb 16> :
+  PWB_numberAvailableCOMETi.63_14 = PWB_numberAvailableCOMETi;
+  if (PWB_numberAvailableCOMETi.63_14 == 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  PWB_Flags.faults.flags.unavailableCometi = 1;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  PWB_Flags.faults.flags.unavailableCometi = 0;
+
+  <bb 19> :
+  FSM_mode.64_15 = FSM_mode;
+  if (FSM_mode.64_15 == 3)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 20> :
+  boostEndDelta = PAR_paramConfig[17].realVal.unsignedVal;
+  _16 = PWB_measures.Hv_Voltage;
+  _17 = PWB_measures.VHv_Cometi;
+  _18 = boostEndDelta + _17;
+  if (_16 > _18)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  PWB_Flags.faults.flags.stopBoostConversion = 1;
+  goto <bb 24>; [INV]
+
+  <bb 22> :
+  PWB_Flags.faults.flags.stopBoostConversion = 0;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  PWB_Flags.faults.flags.stopBoostConversion = 0;
+
+  <bb 24> :
+  FSM_mode.65_19 = FSM_mode;
+  if (FSM_mode.65_19 == 4)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 25> :
+  buckminVoltage = PAR_paramConfig[55].realVal.unsignedVal;
+  buckAutoEndTimeOut = PAR_paramConfig[54].realVal.unsignedVal;
+  buckminVoltage = buckminVoltage * 10;
+  _20 = PWB_measures.VLv_Cometi;
+  if (buckminVoltage > _20)
+    goto <bb 26>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 26> :
+  buck_AutoStopTimer.66_21 = buck_AutoStopTimer;
+  _22 = buck_AutoStopTimer.66_21 + 5;
+  buck_AutoStopTimer = _22;
+  goto <bb 28>; [INV]
+
+  <bb 27> :
+  buck_AutoStopTimer = 0;
+
+  <bb 28> :
+  buck_AutoStopTimer.67_23 = buck_AutoStopTimer;
+  if (buckAutoEndTimeOut <= buck_AutoStopTimer.67_23)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 30>; [INV]
+
+  <bb 29> :
+  PWB_Flags.faults.flags.stopBuckConversion = 1;
+  goto <bb 32>; [INV]
+
+  <bb 30> :
+  PWB_Flags.faults.flags.stopBuckConversion = 0;
+  goto <bb 32>; [INV]
+
+  <bb 31> :
+  PWB_Flags.faults.flags.stopBuckConversion = 0;
+
+  <bb 32> :
+  return;
+
+}
+
+
+pwb_PilotDutyCycleSwitch2And3 ()
+{
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentCmd);
+  _2 = _1 & 4;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  timerPwmS3.54_3 = timerPwmS3;
+  if (timerPwmS3.54_3 > 999)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  PWBio_LowerDutyCycleS3 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  timerPwmS3.55_4 = timerPwmS3;
+  _5 = timerPwmS3.55_4 + 1;
+  timerPwmS3 = _5;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  PWBio_LowerDutyCycleS3 = 0;
+  timerPwmS3 = 0;
+
+  <bb 7> :
+  _6 = VIEW_CONVERT_EXPR<unsigned char>(PWB_relayCurrentCmd);
+  _7 = _6 & 2;
+  if (_7 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  timerPwmS2.56_8 = timerPwmS2;
+  if (timerPwmS2.56_8 > 999)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  PWBio_LowerDutyCycleS2 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+  timerPwmS2.57_9 = timerPwmS2;
+  _10 = timerPwmS2.57_9 + 1;
+  timerPwmS2 = _10;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  PWBio_LowerDutyCycleS2 = 0;
+  timerPwmS2 = 0;
+
+  <bb 12> :
+  return;
+
+}
+
+
+pwb_PilotSwitch3 ()
+{
+  uint32_t parHvBypassStopCondition;
+  uint32_t parHvBypassStartCondition;
+
+  <bb 2> :
+  parHvBypassStartCondition = 0;
+  parHvBypassStartCondition = PAR_paramConfig[40].realVal.unsignedVal;
+  parHvBypassStopCondition = 0;
+  parHvBypassStopCondition = PAR_paramConfig[41].realVal.unsignedVal;
+  FSM_mode.50_1 = FSM_mode;
+  if (FSM_mode.50_1 == 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _2 = COM_mode.S3ModeReq;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  PWBio_SetCdeSwitch (3);
+  PWB_relayCurrentCmd.commandSwitchS3 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+  PWBio_UnsetCdeSwitch (3);
+  PWB_relayCurrentCmd.commandSwitchS3 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+  _3 = PWB_measures.Hv_Voltage;
+  if (parHvBypassStartCondition < _3)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 7> :
+  FSM_mode.51_4 = FSM_mode;
+  if (FSM_mode.51_4 != 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  timerSdeS3.52_5 = timerSdeS3;
+  if (timerSdeS3.52_5 > 199)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  PWBio_SetCdeSwitch (3);
+  PWB_relayCurrentCmd.commandSwitchS3 = 1;
+  timerSdeS3 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  timerSdeS3.53_6 = timerSdeS3;
+  _7 = timerSdeS3.53_6 + 1;
+  timerSdeS3 = _7;
+
+  <bb 11> :
+  _8 = PWB_measures.Hv_Voltage;
+  if (parHvBypassStopCondition > _8)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  PWBio_UnsetCdeSwitch (3);
+  PWB_relayCurrentCmd.commandSwitchS3 = 0;
+
+  <bb 13> :
+  return;
+
+}
+
+
+pwb_prechargeWaiting ()
+{
+  uint32_t timerParam;
+
+  <bb 2> :
+  PWBio_SetCdeSwitch (1);
+  PWB_relayCurrentCmd.commandSwitchS1 = 1;
+  PWB_Flags.status.flags.prechargeDone = 0;
+  timerParam = PAR_paramConfig[67].realVal.unsignedVal;
+  timerPrechargeAbort.48_1 = timerPrechargeAbort;
+  if (timerParam <= timerPrechargeAbort.48_1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PWB_Flags.status.flags.prechargeAborted = 1;
+  timerPrechargeAbort = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  timerPrechargeAbort.49_2 = timerPrechargeAbort;
+  _3 = timerPrechargeAbort.49_2 + 1;
+  timerPrechargeAbort = _3;
+  PWB_Flags.status.flags.prechargeAborted = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+pwb_prechargeExe ()
+{
+  <bb 2> :
+  timerSdeS2.43_1 = timerSdeS2;
+  if (timerSdeS2.43_1 > 9)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PWBio_SetCdeSwitch (2);
+  PWB_relayCurrentCmd.commandSwitchS2 = 1;
+  timerSdeS2 = 0;
+  startTimerSdeS1 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  timerSdeS2.44_2 = timerSdeS2;
+  _3 = timerSdeS2.44_2 + 1;
+  timerSdeS2 = _3;
+
+  <bb 5> :
+  startTimerSdeS1.45_4 = startTimerSdeS1;
+  if (startTimerSdeS1.45_4 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  timerSdeS1.46_5 = timerSdeS1;
+  if (timerSdeS1.46_5 > 9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  PWBio_UnsetCdeSwitch (1);
+  PWB_relayCurrentCmd.commandSwitchS1 = 0;
+  PWB_Flags.status.flags.prechargeDone = 1;
+  timerSdeS1 = 0;
+  startTimerSdeS1 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  timerSdeS1.47_6 = timerSdeS1;
+  _7 = timerSdeS1.47_6 + 1;
+  timerSdeS1 = _7;
+
+  <bb 9> :
+  return;
+
+}
+
+
+pwb_GetStateBattery ()
+{
+  uint32_t parPrechargeStartCondition;
+  boolean D.7495;
+
+  <bb 2> :
+  parPrechargeStartCondition = 0;
+  parPrechargeStartCondition = PAR_paramConfig[42].realVal.unsignedVal;
+  _1 = PWB_measures.Lv_Voltage;
+  if (parPrechargeStartCondition <= _1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.7495 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  D.7495 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 5> :
+<L2>:
+  return D.7495;
+
+}
+
+
+pwb_PilotSwitch1and2 ()
+{
+  uint32_t tempVlvCometi;
+  uint32_t parPrechargeStopDelta;
+  boolean batteryPlugged;
+
+  <bb 2> :
+  batteryPlugged = pwb_GetStateBattery ();
+  parPrechargeStopDelta = 0;
+  parPrechargeStopDelta = PAR_paramConfig[43].realVal.unsignedVal;
+  tempVlvCometi = PWB_measures.VLv_Cometi;
+  if (batteryPlugged != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  FSM_mode.40_1 = FSM_mode;
+  if (FSM_mode.40_1 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  FSM_mode.41_2 = FSM_mode;
+  if (FSM_mode.41_2 == 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 5> :
+  _3 = PWB_Flags.status.flags.prechargeAborted;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _5 = PWB_measures.Lv_Voltage;
+  _6 = tempVlvCometi - parPrechargeStopDelta;
+  if (_5 > _6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  _7 = PWB_measures.Lv_Voltage;
+  _8 = tempVlvCometi + parPrechargeStopDelta;
+  if (_7 < _8)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  pwb_prechargeExe ();
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  pwb_prechargeWaiting ();
+
+  <bb 10> :
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+  FSM_mode.42_9 = FSM_mode;
+  if (FSM_mode.42_9 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  PWBio_SetCdeSwitch (2);
+  PWB_relayCurrentCmd.commandSwitchS2 = 1;
+  PWBio_UnsetCdeSwitch (1);
+  PWB_relayCurrentCmd.commandSwitchS1 = 0;
+  PWB_Flags.status.flags.prechargeDone = 1;
+
+  <bb 13> :
+  return;
+
+}
+
+
+pwb_ControlManagement ()
+{
+  <bb 2> :
+  pwb_taskCounter.20_1 = pwb_taskCounter;
+  if (pwb_taskCounter.20_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  PWBCbit_GetHvMeasures (0);
+  _2 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  if (_2 < 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  HvCurrentArrayIndex.21_3 = HvCurrentArrayIndex;
+  HvCurrentArray[HvCurrentArrayIndex.21_3] = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _4 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  HvCurrentArrayIndex.22_5 = HvCurrentArrayIndex;
+  _6 = (long unsigned int) _4;
+  HvCurrentArray[HvCurrentArrayIndex.22_5] = _6;
+
+  <bb 6> :
+  HvCurrentArrayIndex.23_7 = HvCurrentArrayIndex;
+  if (HvCurrentArrayIndex.23_7 == 29)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = pwb_CalculateMeasurementAverage (&HvCurrentArray, 30);
+  PWB_measures.Hv_Current = _8;
+  HvCurrentArrayIndex = 0;
+  goto <bb 28>; [INV]
+
+  <bb 8> :
+  HvCurrentArrayIndex.24_9 = HvCurrentArrayIndex;
+  _10 = HvCurrentArrayIndex.24_9 + 1;
+  HvCurrentArrayIndex = _10;
+  goto <bb 28>; [INV]
+
+  <bb 9> :
+  pwb_taskCounter.25_11 = pwb_taskCounter;
+  if (pwb_taskCounter.25_11 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 10> :
+  PWBCbit_GetHvMeasures (1);
+  _12 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  HvVoltageArrayIndex.26_13 = HvVoltageArrayIndex;
+  _14 = (long unsigned int) _12;
+  HvVoltageArray[HvVoltageArrayIndex.26_13] = _14;
+  HvVoltageArrayIndex.27_15 = HvVoltageArrayIndex;
+  if (HvVoltageArrayIndex.27_15 == 29)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _16 = pwb_CalculateMeasurementAverage (&HvVoltageArray, 30);
+  PWB_measures.Hv_Voltage = _16;
+  HvVoltageArrayIndex = 0;
+  goto <bb 28>; [INV]
+
+  <bb 12> :
+  HvVoltageArrayIndex.28_17 = HvVoltageArrayIndex;
+  _18 = HvVoltageArrayIndex.28_17 + 1;
+  HvVoltageArrayIndex = _18;
+  goto <bb 28>; [INV]
+
+  <bb 13> :
+  pwb_taskCounter.29_19 = pwb_taskCounter;
+  if (pwb_taskCounter.29_19 == 2)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 14> :
+  PWBCbit_GetHvMeasures (2);
+  _20 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  if (_20 < 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  HvTempArrayIndex.30_21 = HvTempArrayIndex;
+  HvTempArray[HvTempArrayIndex.30_21] = 0;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  _22 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  HvTempArrayIndex.31_23 = HvTempArrayIndex;
+  _24 = (long unsigned int) _22;
+  HvTempArray[HvTempArrayIndex.31_23] = _24;
+
+  <bb 17> :
+  HvTempArrayIndex.32_25 = HvTempArrayIndex;
+  if (HvTempArrayIndex.32_25 == 29)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  _26 = pwb_CalculateMeasurementAverage (&HvTempArray, 30);
+  PWB_measures.Hv_Temp = _26;
+  HvTempArrayIndex = 0;
+  goto <bb 28>; [INV]
+
+  <bb 19> :
+  HvTempArrayIndex.33_27 = HvTempArrayIndex;
+  _28 = HvTempArrayIndex.33_27 + 1;
+  HvTempArrayIndex = _28;
+  goto <bb 28>; [INV]
+
+  <bb 20> :
+  pwb_taskCounter.34_29 = pwb_taskCounter;
+  if (pwb_taskCounter.34_29 == 3)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 21> :
+  PWBCbit_GetLvMeasures (0);
+  _30 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  LvVoltageArrayIndex.35_31 = LvVoltageArrayIndex;
+  _32 = (long unsigned int) _30;
+  LvVoltageArray[LvVoltageArrayIndex.35_31] = _32;
+  LvVoltageArrayIndex.36_33 = LvVoltageArrayIndex;
+  if (LvVoltageArrayIndex.36_33 == 29)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  _34 = pwb_CalculateMeasurementAverage (&LvVoltageArray, 30);
+  PWB_measures.Lv_Voltage = _34;
+  LvVoltageArrayIndex = 0;
+  goto <bb 28>; [INV]
+
+  <bb 23> :
+  LvVoltageArrayIndex.37_35 = LvVoltageArrayIndex;
+  _36 = LvVoltageArrayIndex.37_35 + 1;
+  LvVoltageArrayIndex = _36;
+  goto <bb 28>; [INV]
+
+  <bb 24> :
+  pwb_taskCounter.38_37 = pwb_taskCounter;
+  if (pwb_taskCounter.38_37 == 4)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  _38 = CNV_powercoreUnitTable[0].powerMeas.vBus2;
+  _39 = (int) _38;
+  _40 = CNV_powercoreUnitTable[1].powerMeas.vBus2;
+  _41 = (int) _40;
+  _42 = _39 + _41;
+  _43 = (unsigned int) _42;
+  _44 = _43 / 2;
+  PWB_measures.VLv_Cometi = _44;
+  _45 = CNV_powercoreUnitTable[0].powerMeas.vBus1;
+  _46 = (int) _45;
+  _47 = CNV_powercoreUnitTable[1].powerMeas.vBus1;
+  _48 = (int) _47;
+  _49 = _46 + _48;
+  _50 = (unsigned int) _49;
+  _51 = _50 / 2;
+  PWB_measures.VHv_Cometi = _51;
+  _52 = CNV_powercoreUnitTable[0].powerMeas.iBus2;
+  _53 = (int) _52;
+  _54 = CNV_powercoreUnitTable[1].powerMeas.iBus2;
+  _55 = (int) _54;
+  _56 = _53 + _55;
+  _57 = (long unsigned int) _56;
+  PWB_measures.ILv_Cometi = _57;
+  _58 = CNV_powercoreUnitTable[0].powerMeas.iBus1;
+  _59 = (int) _58;
+  _60 = CNV_powercoreUnitTable[1].powerMeas.iBus1;
+  _61 = (int) _60;
+  _62 = _59 + _61;
+  _63 = (long unsigned int) _62;
+  PWB_measures.IHv_Cometi = _63;
+  goto <bb 28>; [INV]
+
+  <bb 26> :
+  pwb_taskCounter.39_64 = pwb_taskCounter;
+  if (pwb_taskCounter.39_64 == 5)
+    goto <bb 27>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 27> :
+  pwb_PilotSwitch1and2 ();
+  pwb_PilotSwitch3 ();
+  pwb_PilotDutyCycleSwitch2And3 ();
+
+  <bb 28> :
+  return;
+
+}
+
+
+pwb_CbitManagement ()
+{
+  uint32_t parPsvalid_Timeout;
+  uint32_t voltageThreshold;
+  uint32_t voltageThreshold;
+  uint32_t currentThreshold;
+
+  <bb 2> :
+  pwb_taskCounter.4_1 = pwb_taskCounter;
+  if (pwb_taskCounter.4_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  currentThreshold = 0;
+  FSM_mode.5_2 = FSM_mode;
+  switch (FSM_mode.5_2) <default: <L3> [INV], case 3: <L1> [INV], case 4: <L2> [INV]>
+
+  <bb 4> :
+<L1>:
+  currentThreshold = PAR_paramConfig[57].realVal.unsignedVal;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  currentThreshold = PAR_paramConfig[56].realVal.unsignedVal;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  _3 = PWB_measures.Hv_Current;
+  if (currentThreshold < _3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  PWB_Flags.faults.flags.overCurrent = 1;
+  goto <bb 42>; [INV]
+
+  <bb 9> :
+  PWB_Flags.faults.flags.overCurrent = 0;
+  goto <bb 42>; [INV]
+
+  <bb 10> :
+  pwb_taskCounter.6_4 = pwb_taskCounter;
+  if (pwb_taskCounter.6_4 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 11> :
+  voltageThreshold = 0;
+  FSM_mode.7_5 = FSM_mode;
+  switch (FSM_mode.7_5) <default: <L12> [INV], case 3: <L10> [INV], case 4: <L11> [INV]>
+
+  <bb 12> :
+<L10>:
+  voltageThreshold = PAR_paramConfig[63].realVal.unsignedVal;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+<L11>:
+  voltageThreshold = PAR_paramConfig[62].realVal.unsignedVal;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+<L12>:
+
+  <bb 15> :
+  _6 = PWB_measures.Hv_Voltage;
+  if (voltageThreshold < _6)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 16> :
+  FSM_mode.8_7 = FSM_mode;
+  if (FSM_mode.8_7 == 3)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  FSM_mode.9_8 = FSM_mode;
+  if (FSM_mode.9_8 == 4)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  PWB_Flags.faults.flags.overVolt = 1;
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+  PWB_Flags.faults.flags.overVolt = 0;
+
+  <bb 20> :
+  goto <bb 42>; [INV]
+
+  <bb 21> :
+  pwb_taskCounter.10_9 = pwb_taskCounter;
+  if (pwb_taskCounter.10_9 == 2)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  pwb_CheckCometiUnits ();
+  pwb_CheckVoltageConsistency ();
+  goto <bb 42>; [INV]
+
+  <bb 23> :
+  pwb_taskCounter.11_10 = pwb_taskCounter;
+  if (pwb_taskCounter.11_10 == 3)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 34>; [INV]
+
+  <bb 24> :
+  voltageThreshold = 0;
+  FSM_mode.12_11 = FSM_mode;
+  switch (FSM_mode.12_11) <default: <L25> [INV], case 3: <L23> [INV], case 4: <L24> [INV]>
+
+  <bb 25> :
+<L23>:
+  voltageThreshold = PAR_paramConfig[65].realVal.unsignedVal;
+  goto <bb 28>; [INV]
+
+  <bb 26> :
+<L24>:
+  voltageThreshold = PAR_paramConfig[64].realVal.unsignedVal;
+  goto <bb 28>; [INV]
+
+  <bb 27> :
+<L25>:
+
+  <bb 28> :
+  _12 = PWB_measures.Lv_Voltage;
+  if (voltageThreshold < _12)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 29> :
+  FSM_mode.13_13 = FSM_mode;
+  if (FSM_mode.13_13 == 3)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 30>; [INV]
+
+  <bb 30> :
+  FSM_mode.14_14 = FSM_mode;
+  if (FSM_mode.14_14 == 4)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 31> :
+  PWB_Flags.faults.flags.overVolt = 1;
+  goto <bb 33>; [INV]
+
+  <bb 32> :
+  PWB_Flags.faults.flags.overVolt = 0;
+
+  <bb 33> :
+  goto <bb 42>; [INV]
+
+  <bb 34> :
+  pwb_taskCounter.15_15 = pwb_taskCounter;
+  if (pwb_taskCounter.15_15 == 4)
+    goto <bb 35>; [INV]
+  else
+    goto <bb 36>; [INV]
+
+  <bb 35> :
+  pwb_CheckRelayConsitency ();
+  goto <bb 42>; [INV]
+
+  <bb 36> :
+  pwb_taskCounter.16_16 = pwb_taskCounter;
+  if (pwb_taskCounter.16_16 == 5)
+    goto <bb 37>; [INV]
+  else
+    goto <bb 42>; [INV]
+
+  <bb 37> :
+  PWBCBit_UpdatePsValidState ();
+  parPsvalid_Timeout = PAR_paramConfig[50].realVal.unsignedVal;
+  PWB_psValidState.17_17 = PWB_psValidState;
+  _18 = ~PWB_psValidState.17_17;
+  if (_18 != 0)
+    goto <bb 38>; [INV]
+  else
+    goto <bb 41>; [INV]
+
+  <bb 38> :
+  psValidTimer.18_19 = psValidTimer;
+  if (parPsvalid_Timeout <= psValidTimer.18_19)
+    goto <bb 39>; [INV]
+  else
+    goto <bb 40>; [INV]
+
+  <bb 39> :
+  PWB_Flags.faults.flags.powerSupplyDown = 0;
+  PWB_Flags.faults.flags.activityextensionTimerElapsed = 1;
+  goto <bb 42>; [INV]
+
+  <bb 40> :
+  psValidTimer.19_20 = psValidTimer;
+  _21 = psValidTimer.19_20 + 5;
+  psValidTimer = _21;
+  goto <bb 42>; [INV]
+
+  <bb 41> :
+  PWB_Flags.faults.flags.powerSupplyDown = 0;
+  psValidTimer = 0;
+
+  <bb 42> :
+  return;
+
+}
+
+
+pwb_PbitManagement ()
+{
+  boolean testLvPrecharge;
+  boolean testHvCoupler;
+  boolean testTempConsistency;
+
+  <bb 2> :
+  testTempConsistency = PWBPbit_testTempConsis ();
+  testHvCoupler = PWBPbit_testHvCouplerRelay ();
+  testLvPrecharge = PWBPbit_testLvPrechargeRelay ();
+  if (testHvCoupler != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (testLvPrecharge != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (testTempConsistency != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  PWB_Flags.resultPBit = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  PWB_Flags.resultPBit = 0;
+  PWB_Flags.faults.flags.hvRelayNok = testHvCoupler;
+  PWB_Flags.faults.flags.lvRelayNok = testLvPrecharge;
+
+  <bb 7> :
+  PWB_Flags.status.flags.pbitDone = 1;
+  return;
+
+}
+
+
+pwb_MaintManagement ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <DBG_Flags.Reqflags, 8, 0>;
+  _2 = _1 & 4;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PWBio_RunTests ();
+  pwb_UpdateRelayResults ();
+  DBG_Flags.Reqflags.relaySwitchTest = 0;
+
+  <bb 4> :
+  _3 = BIT_FIELD_REF <DBG_Flags.Reqflags, 8, 0>;
+  _4 = _3 & 8;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = COM_debugTestReq.muxAddress;
+  PWBCbit_GetHvMeasures (_5);
+  pwb_UpdateMeasResults ();
+  DBG_Flags.Reqflags.HvMeasure = 0;
+
+  <bb 6> :
+  _6 = BIT_FIELD_REF <DBG_Flags.Reqflags, 8, 0>;
+  _7 = _6 & 16;
+  if (_7 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = COM_debugTestReq.muxAddress;
+  PWBCbit_GetLvMeasures (_8);
+  pwb_UpdateMeasResults ();
+  DBG_Flags.Reqflags.LvMeasure = 0;
+
+  <bb 8> :
+  return;
+
+}
+
+
+pwb_UpdateMeasResults ()
+{
+  <bb 2> :
+  _1 = PWBCbit_cmdResults.ReadMeasResultHMI;
+  _2 = (long unsigned int) _1;
+  COM_debugTestReq.hmiMeasure = _2;
+  _3 = PWBCbit_cmdResults.ReadMeasResultRaw;
+  _4 = (long unsigned int) _3;
+  COM_debugTestReq.rawMeasure = _4;
+  return;
+
+}
+
+
+pwb_UpdateRelayResults ()
+{
+  <bb 2> :
+  _1 = PWBio_cmdResults.SwitchReadCmdResult;
+  _2 = ~_1;
+  _3 = (unsigned char) _2;
+  COM_debugTestReq.relaySwitchResult = _3;
+  return;
+
+}
+
+
+PWB_Deinit ()
+{
+  <bb 2> :
+  PWBio_Deinit ();
+  PWBCbit_Deinit ();
+  PWBPbit_Deinit ();
+  return;
+
+}
+
+
+PWB_Update ()
+{
+  <bb 2> :
+  FSM_mode.0_1 = FSM_mode;
+  if (FSM_mode.0_1 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  pwb_MaintManagement ();
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  FSM_mode.1_2 = FSM_mode;
+  if (FSM_mode.1_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  pwb_PbitManagement ();
+
+  <bb 6> :
+  pwb_ControlManagement ();
+  pwb_CbitManagement ();
+  pwb_taskCounter.2_3 = pwb_taskCounter;
+  if (pwb_taskCounter.2_3 <= 5)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  pwb_taskCounter.3_4 = pwb_taskCounter;
+  _5 = pwb_taskCounter.3_4 + 1;
+  pwb_taskCounter = _5;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  pwb_taskCounter = 0;
+
+  <bb 9> :
+  _6 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _7 = _6 & 8;
+  if (_7 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  PWB_Flags.faults.all = 0;
+  PWB_Flags.status.flags.prechargeAborted = 0;
+
+  <bb 11> :
+  return;
+
+}
+
+
+PWB_Init ()
+{
+  <bb 2> :
+  PWBio_Init ();
+  PWBCbit_Init ();
+  PWBPbit_Init ();
+  PWB_Flags.resultCBit = 0;
+  PWB_Flags.resultPBit = 0;
+  PWB_Flags.faults.all = 0;
+  PWB_Flags.status.all = 0;
+  PWB_measures.VHv_Cometi = 0;
+  PWB_measures.VLv_Cometi = 0;
+  PWB_measures.Hv_Current = 0;
+  PWB_measures.Hv_Temp = 0;
+  PWB_measures.Hv_Voltage = 0;
+  PWB_measures.Lv_Voltage = 0;
+  PWB_relayCurrentCmd.commandSwitchS1 = 0;
+  PWB_relayCurrentCmd.commandSwitchS2 = 0;
+  PWB_relayCurrentCmd.commandSwitchS3 = 0;
+  PWB_relayCurrentState.stateSwitchS2 = 0;
+  PWB_relayCurrentState.stateSwitchS3 = 0;
+  PWB_numberAvailableCOMETi = 0;
+  return;
+
+}
+
+

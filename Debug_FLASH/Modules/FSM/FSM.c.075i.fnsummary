@@ -1,0 +1,56 @@
+Symbol table:
+
+FSM_Deinit/3 (FSM_Deinit) @0664d620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+FSM_Init/2 (FSM_Init) @0664dee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/0 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+FSM_errors/1 (FSM_errors) @06649dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)
+  Availability: available
+  Varpool flags:
+FSM_mode/0 (FSM_mode) @06649d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: FSM_Init/2 (write)
+  Availability: available
+  Varpool flags:
+FSM_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+FSM_Init ()
+{
+  <bb 2> :
+  FSM_mode = 0;
+  FSM_errors.EnterMaintModeNotMet = 0;
+  FSM_errors.bbAuxInMaintMode = 0;
+  FSM_errors.autonomousBoostEnd = 0;
+  FSM_errors.autonomousBuckEnd = 0;
+  FSM_errors.failedPbit = 0;
+  return;
+
+}
+
+

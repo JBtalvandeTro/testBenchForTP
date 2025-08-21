@@ -1,0 +1,39 @@
+
+Marking local functions:
+
+
+Marking externally visible functions:
+
+
+Marking externally visible variables: LPIT_0_ChannelConfig_PB_Init LPIT_0_InitConfig_PB_Init
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Gpt_ProcessCommonInterrupt/2 (Gpt_ProcessCommonInterrupt) @05abc380
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: LPIT_0_ChannelConfig_PB_Init/1 (addr)LPIT_0_ChannelConfig_PB_Init/1 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LPIT_0_ChannelConfig_PB_Init/1 (LPIT_0_ChannelConfig_PB_Init) @05a4bd38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Gpt_ProcessCommonInterrupt/2 (addr)Gpt_ProcessCommonInterrupt/2 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+LPIT_0_InitConfig_PB_Init/0 (LPIT_0_InitConfig_PB_Init) @05a4bcf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

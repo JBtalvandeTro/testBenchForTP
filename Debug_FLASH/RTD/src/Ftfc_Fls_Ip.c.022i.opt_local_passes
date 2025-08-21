@@ -1,0 +1,2358 @@
+Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram ()
+{
+  uint32 u32RegMscmOcmdr;
+  struct MSCM_Type * _1;
+  long unsigned int _2;
+  struct MSCM_Type * _3;
+  long unsigned int _4;
+  struct MSCM_Type * _5;
+  struct MSCM_Type * _6;
+  long unsigned int _7;
+  struct MSCM_Type * _8;
+  long unsigned int _9;
+  struct MSCM_Type * _10;
+
+  <bb 2> :
+  _1 = 1073745920B;
+  u32RegMscmOcmdr_14 ={v} _1->OCMDR[0];
+  _2 = u32RegMscmOcmdr_14 & 32;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = 1073745920B;
+  _4 = u32RegMscmOcmdr_14 | 32;
+  _3->OCMDR[0] ={v} _4;
+  _5 = 1073745920B;
+  _5->OCMDR[0] ={v} u32RegMscmOcmdr_14;
+
+  <bb 4> :
+  _6 = 1073745920B;
+  u32RegMscmOcmdr_17 ={v} _6->OCMDR[1];
+  _7 = u32RegMscmOcmdr_17 & 32;
+  if (_7 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = 1073745920B;
+  _9 = u32RegMscmOcmdr_17 | 32;
+  _8->OCMDR[1] ={v} _9;
+  _10 = 1073745920B;
+  _10->OCMDR[1] ={v} u32RegMscmOcmdr_17;
+
+  <bb 6> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_FlashAccessCalloutFinish ()
+{
+  const struct Ftfc_ConfigType * Ftfc_Fls_Ip_pConfigPtr.61_1;
+  void (*<T490>) (void) _2;
+  const struct Ftfc_ConfigType * Ftfc_Fls_Ip_pConfigPtr.62_3;
+  void (*<T490>) (void) _4;
+
+  <bb 2> :
+  Ftfc_Fls_Ip_pConfigPtr.61_1 = Ftfc_Fls_Ip_pConfigPtr;
+  _2 = Ftfc_Fls_Ip_pConfigPtr.61_1->finishedFlashAccessNotifPtr;
+  if (_2 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Ftfc_Fls_Ip_pConfigPtr.62_3 = Ftfc_Fls_Ip_pConfigPtr;
+  _4 = Ftfc_Fls_Ip_pConfigPtr.62_3->finishedFlashAccessNotifPtr;
+  _4 ();
+
+  <bb 4> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_FlashAccessCalloutStart ()
+{
+  const struct Ftfc_ConfigType * Ftfc_Fls_Ip_pConfigPtr.59_1;
+  void (*<T490>) (void) _2;
+  const struct Ftfc_ConfigType * Ftfc_Fls_Ip_pConfigPtr.60_3;
+  void (*<T490>) (void) _4;
+
+  <bb 2> :
+  Ftfc_Fls_Ip_pConfigPtr.59_1 = Ftfc_Fls_Ip_pConfigPtr;
+  _2 = Ftfc_Fls_Ip_pConfigPtr.59_1->startFlashAccessNotifPtr;
+  if (_2 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Ftfc_Fls_Ip_pConfigPtr.60_3 = Ftfc_Fls_Ip_pConfigPtr;
+  _4 = Ftfc_Fls_Ip_pConfigPtr.60_3->startFlashAccessNotifPtr;
+  _4 ();
+
+  <bb 4> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_SetAsyncMode (const boolean Async)
+{
+  <bb 2> :
+  Ftfc_Fls_Ip_Async = Async_2(D);
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_InvalidPrefetchBuff ()
+{
+  <bb 2> :
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  Ftfc_Fls_Ip_InvalidPrefetchBuff_Ram ();
+  Ftfc_Fls_Ip_FlashAccessCalloutFinish ();
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_GetBlockNumberFromAddress (uint32 u32TargetAddress)
+{
+  Ftfc_Fls_Ip_FlashBlocksNumberType blockNumber;
+  Ftfc_Fls_Ip_FlashBlocksNumberType D.6674;
+  Ftfc_Fls_Ip_FlashBlocksNumberType _8;
+
+  <bb 2> :
+  if (u32TargetAddress_2(D) <= 524287)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  blockNumber_7 = 0;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+  if (u32TargetAddress_2(D) <= 1048575)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  blockNumber_6 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+  if (u32TargetAddress_2(D) <= 1572863)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  blockNumber_5 = 2;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  if (u32TargetAddress_2(D) > 268435455)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (u32TargetAddress_2(D) <= 268959743)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  blockNumber_3 = 4;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  blockNumber_4 = 255;
+
+  <bb 12> :
+  # blockNumber_1 = PHI <blockNumber_7(3), blockNumber_6(5), blockNumber_5(7), blockNumber_3(10), blockNumber_4(11)>
+  _8 = blockNumber_1;
+
+  <bb 13> :
+<L13>:
+  return _8;
+
+}
+
+
+Ftfc_Fls_Ip_ConvertSysToFTFEAddr (uint32 u32SystemAddress)
+{
+  uint32 u32FTFEAddr;
+  uint32 D.6659;
+  uint32 _6;
+
+  <bb 2> :
+  u32FTFEAddr_2 = 0;
+  if (u32SystemAddress_3(D) <= 1572863)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  u32FTFEAddr_5 = u32SystemAddress_3(D);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (u32SystemAddress_3(D) > 268435455)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  if (u32SystemAddress_3(D) <= 268959743)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  u32FTFEAddr_4 = u32SystemAddress_3(D) + 4034920448;
+
+  <bb 7> :
+  # u32FTFEAddr_1 = PHI <u32FTFEAddr_5(3), u32FTFEAddr_2(4), u32FTFEAddr_2(5), u32FTFEAddr_4(6)>
+  _6 = u32FTFEAddr_1;
+
+  <bb 8> :
+<L8>:
+  return _6;
+
+}
+
+
+Ftfc_Fls_Ip_LoadFCCOBParams (const uint32 u32PhysicAddr, const uint8 * pDataAddr, const uint8 u8FCCOBCmdId)
+{
+  uint32 u32FTFEAddr;
+  struct FTFC_Type * FTFx_BaseAddress.47_1;
+  long unsigned int _2;
+  struct FTFC_Type * FTFx_BaseAddress.48_3;
+  unsigned char _4;
+  long unsigned int _5;
+  struct FTFC_Type * FTFx_BaseAddress.49_6;
+  unsigned char _7;
+  struct FTFC_Type * FTFx_BaseAddress.50_8;
+  unsigned char _9;
+  struct FTFC_Type * FTFx_BaseAddress.51_10;
+  unsigned char _11;
+  struct FTFC_Type * FTFx_BaseAddress.52_12;
+  unsigned char _13;
+  struct FTFC_Type * FTFx_BaseAddress.53_14;
+  unsigned char _15;
+  struct FTFC_Type * FTFx_BaseAddress.54_16;
+  unsigned char _17;
+  struct FTFC_Type * FTFx_BaseAddress.55_18;
+  unsigned char _19;
+  struct FTFC_Type * FTFx_BaseAddress.56_20;
+  unsigned char _21;
+  struct FTFC_Type * FTFx_BaseAddress.57_22;
+  unsigned char _23;
+  struct FTFC_Type * FTFx_BaseAddress.58_24;
+  unsigned char _25;
+
+  <bb 2> :
+  u32FTFEAddr_27 = 0;
+  u32FTFEAddr_31 = Ftfc_Fls_Ip_ConvertSysToFTFEAddr (u32PhysicAddr_29(D));
+  FTFx_BaseAddress.47_1 = 1073872896B;
+  FTFx_BaseAddress.47_1->FCCOB[3] ={v} u8FCCOBCmdId_32(D);
+  _2 = u32FTFEAddr_31 >> 16;
+  FTFx_BaseAddress.48_3 = 1073872896B;
+  _4 = (unsigned char) _2;
+  FTFx_BaseAddress.48_3->FCCOB[2] ={v} _4;
+  _5 = u32FTFEAddr_31 >> 8;
+  FTFx_BaseAddress.49_6 = 1073872896B;
+  _7 = (unsigned char) _5;
+  FTFx_BaseAddress.49_6->FCCOB[1] ={v} _7;
+  FTFx_BaseAddress.50_8 = 1073872896B;
+  _9 = (unsigned char) u32FTFEAddr_31;
+  FTFx_BaseAddress.50_8->FCCOB[0] ={v} _9;
+  if (pDataAddr_37(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  FTFx_BaseAddress.51_10 = 1073872896B;
+  _11 = MEM[(const uint8 *)pDataAddr_37(D) + 3B];
+  FTFx_BaseAddress.51_10->FCCOB[7] ={v} _11;
+  FTFx_BaseAddress.52_12 = 1073872896B;
+  _13 = MEM[(const uint8 *)pDataAddr_37(D) + 2B];
+  FTFx_BaseAddress.52_12->FCCOB[6] ={v} _13;
+  FTFx_BaseAddress.53_14 = 1073872896B;
+  _15 = MEM[(const uint8 *)pDataAddr_37(D) + 1B];
+  FTFx_BaseAddress.53_14->FCCOB[5] ={v} _15;
+  FTFx_BaseAddress.54_16 = 1073872896B;
+  _17 = *pDataAddr_37(D);
+  FTFx_BaseAddress.54_16->FCCOB[4] ={v} _17;
+  FTFx_BaseAddress.55_18 = 1073872896B;
+  _19 = MEM[(const uint8 *)pDataAddr_37(D) + 7B];
+  FTFx_BaseAddress.55_18->FCCOB[11] ={v} _19;
+  FTFx_BaseAddress.56_20 = 1073872896B;
+  _21 = MEM[(const uint8 *)pDataAddr_37(D) + 6B];
+  FTFx_BaseAddress.56_20->FCCOB[10] ={v} _21;
+  FTFx_BaseAddress.57_22 = 1073872896B;
+  _23 = MEM[(const uint8 *)pDataAddr_37(D) + 5B];
+  FTFx_BaseAddress.57_22->FCCOB[9] ={v} _23;
+  FTFx_BaseAddress.58_24 = 1073872896B;
+  _25 = MEM[(const uint8 *)pDataAddr_37(D) + 4B];
+  FTFx_BaseAddress.58_24->FCCOB[8] ={v} _25;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_ClearErrorFlags ()
+{
+  struct FTFC_Type * FTFx_BaseAddress.46_1;
+
+  <bb 2> :
+  FTFx_BaseAddress.46_1 = 1073872896B;
+  FTFx_BaseAddress.46_1->FSTAT ={v} 112;
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_ControllerBusy ()
+{
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6647;
+  struct FTFC_Type * FTFx_BaseAddress.45_1;
+  unsigned char _2;
+  signed char _3;
+  Ftfc_Fls_Ip_StatusType _8;
+
+  <bb 2> :
+  FTFx_BaseAddress.45_1 = 1073872896B;
+  _2 ={v} FTFx_BaseAddress.45_1->FSTAT;
+  _3 = (signed char) _2;
+  if (_3 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eRetVal_7 = 23205;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal_6 = 59202;
+
+  <bb 5> :
+  # eRetVal_4 = PHI <eRetVal_7(3), eRetVal_6(4)>
+  _8 = eRetVal_4;
+
+  <bb 6> :
+<L3>:
+  return _8;
+
+}
+
+
+Ftfc_Fls_Ip_CtrlStatus ()
+{
+  uint8 errorFlags;
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6642;
+  long unsigned int D.6638;
+  struct FTFC_Type * FTFx_BaseAddress.39_1;
+  unsigned char _2;
+  signed char _3;
+  struct FTFC_Type * FTFx_BaseAddress.40_4;
+  unsigned char _5;
+  struct FTFC_Type * FTFx_BaseAddress.41_6;
+  long unsigned int Ftfc_Fls_Ip_u32ElapsedTicks.42_7;
+  long unsigned int _8;
+  long unsigned int Ftfc_Fls_Ip_u32ElapsedTicks.43_9;
+  long unsigned int Ftfc_Fls_Ip_u32TimeoutTicks.44_10;
+  long unsigned int _15;
+  Ftfc_Fls_Ip_StatusType _23;
+
+  <bb 2> :
+  FTFx_BaseAddress.39_1 = 1073872896B;
+  _2 ={v} FTFx_BaseAddress.39_1->FSTAT;
+  _3 = (signed char) _2;
+  if (_3 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  FTFx_BaseAddress.40_4 = 1073872896B;
+  _5 ={v} FTFx_BaseAddress.40_4->FSTAT;
+  errorFlags_19 = _5 & 113;
+  if (errorFlags_19 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal_22 = 23205;
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  FTFx_BaseAddress.41_6 = 1073872896B;
+  FTFx_BaseAddress.41_6->FSTAT ={v} errorFlags_19;
+  eRetVal_21 = 10212;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _15 = OsIf_GetElapsed (&Ftfc_Fls_Ip_u32CurrentTicks, 0);
+  Ftfc_Fls_Ip_u32ElapsedTicks.42_7 = Ftfc_Fls_Ip_u32ElapsedTicks;
+  _8 = _15 + Ftfc_Fls_Ip_u32ElapsedTicks.42_7;
+  Ftfc_Fls_Ip_u32ElapsedTicks = _8;
+  Ftfc_Fls_Ip_u32ElapsedTicks.43_9 = Ftfc_Fls_Ip_u32ElapsedTicks;
+  Ftfc_Fls_Ip_u32TimeoutTicks.44_10 = Ftfc_Fls_Ip_u32TimeoutTicks;
+  if (Ftfc_Fls_Ip_u32ElapsedTicks.43_9 >= Ftfc_Fls_Ip_u32TimeoutTicks.44_10)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  eRetVal_18 = 11220;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  eRetVal_17 = 59202;
+
+  <bb 9> :
+  # eRetVal_11 = PHI <eRetVal_21(5), eRetVal_18(7), eRetVal_17(8), eRetVal_22(4)>
+  _23 = eRetVal_11;
+
+  <bb 10> :
+<L9>:
+  return _23;
+
+}
+
+
+Ftfc_Fls_Flash_AbortSuspended ()
+{
+  uint8 tempValueFCNFG_Flags;
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6630;
+  struct FTFC_Type * FTFx_BaseAddress.33_1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  struct FTFC_Type * FTFx_BaseAddress.34_5;
+  unsigned char _6;
+  signed char _7;
+  struct FTFC_Type * FTFx_BaseAddress.35_8;
+  struct FTFC_Type * FTFx_BaseAddress.36_9;
+  unsigned char _10;
+  <unnamed type> _11;
+  struct FTFC_Type * FTFx_BaseAddress.37_12;
+  struct FTFC_Type * FTFx_BaseAddress.38_13;
+  unsigned char _14;
+  Ftfc_Fls_Ip_StatusType _25;
+
+  <bb 2> :
+  eRetVal_17 = 23205;
+  FTFx_BaseAddress.33_1 = 1073872896B;
+  _2 ={v} FTFx_BaseAddress.33_1->FCNFG;
+  _3 = (unsigned int) _2;
+  _4 = _3 & 16;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  FTFx_BaseAddress.34_5 = 1073872896B;
+  _6 ={v} FTFx_BaseAddress.34_5->FSTAT;
+  _7 = (signed char) _6;
+  if (_7 < 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  FTFx_BaseAddress.35_8 = 1073872896B;
+  tempValueFCNFG_Flags_23 ={v} FTFx_BaseAddress.35_8->FCNFG;
+  FTFx_BaseAddress.36_9 = 1073872896B;
+  _10 = tempValueFCNFG_Flags_23 & 239;
+  FTFx_BaseAddress.36_9->FCNFG ={v} _10;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _11 = Ftfc_Fls_Ip_WaitForOperationFinish ();
+  if (_11 == 23205)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  FTFx_BaseAddress.37_12 = 1073872896B;
+  tempValueFCNFG_Flags_21 ={v} FTFx_BaseAddress.37_12->FCNFG;
+  FTFx_BaseAddress.38_13 = 1073872896B;
+  _14 = tempValueFCNFG_Flags_21 & 239;
+  FTFx_BaseAddress.38_13->FCNFG ={v} _14;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  eRetVal_20 = 10212;
+
+  <bb 8> :
+  # eRetVal_15 = PHI <eRetVal_17(2), eRetVal_17(6), eRetVal_17(4), eRetVal_20(7)>
+  _25 = eRetVal_15;
+
+  <bb 9> :
+<L9>:
+  return _25;
+
+}
+
+
+Ftfc_Fls_Ip_WriteStatus ()
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6619;
+  <unnamed type> Ftfc_Fls_Ip_eWriteStatus.29_1;
+  long unsigned int Ftfc_Fls_Ip_u32ProgrammedAddress.30_2;
+  const uint8 * Ftfc_Fls_Ip_pProgrammedData.31_3;
+  long unsigned int Ftfc_Fls_Ip_u32ProgrammedLength.32_4;
+  Ftfc_Fls_Ip_StatusType _14;
+
+  <bb 2> :
+  Ftfc_Fls_Ip_eWriteStatus.29_1 = Ftfc_Fls_Ip_eWriteStatus;
+  if (Ftfc_Fls_Ip_eWriteStatus.29_1 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  eReturnCode_10 = Ftfc_Fls_Ip_CtrlStatus ();
+  if (eReturnCode_10 == 23205)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  Ftfc_Fls_Ip_u32ProgrammedAddress.30_2 = Ftfc_Fls_Ip_u32ProgrammedAddress;
+  Ftfc_Fls_Ip_pProgrammedData.31_3 = Ftfc_Fls_Ip_pProgrammedData;
+  Ftfc_Fls_Ip_u32ProgrammedLength.32_4 = Ftfc_Fls_Ip_u32ProgrammedLength;
+  eReturnCode_12 = Ftfc_Fls_Ip_Compare (Ftfc_Fls_Ip_u32ProgrammedAddress.30_2, Ftfc_Fls_Ip_pProgrammedData.31_3, Ftfc_Fls_Ip_u32ProgrammedLength.32_4);
+  if (eReturnCode_12 != 23205)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  eReturnCode_13 = 13260;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  eReturnCode_8 = 10212;
+
+  <bb 7> :
+  # eReturnCode_5 = PHI <eReturnCode_12(4), eReturnCode_8(6), eReturnCode_10(3), eReturnCode_13(5)>
+  _14 = eReturnCode_5;
+
+  <bb 8> :
+<L7>:
+  return _14;
+
+}
+
+
+Ftfc_Fls_Ip_Write (uint32 u32DestAddress, const uint8 * pSourceAddressPtr, uint32 u32Length)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6610;
+  _Bool _1;
+  long unsigned int _2;
+  _Bool _3;
+  _Bool _4;
+  _Bool _5;
+  _Bool Ftfc_Fls_Ip_Async.26_6;
+  struct FTFC_Type * FTFx_BaseAddress.27_7;
+  long unsigned int _8;
+  _Bool Ftfc_Fls_Ip_Async.28_9;
+  _Bool _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  Ftfc_Fls_Ip_StatusType _50;
+
+  <bb 2> :
+  _1 = Ftfc_Fls_Ip_CheckValidRange (u32DestAddress_20(D), u32Length_21(D));
+  DevAssert (_1);
+  _2 = u32DestAddress_20(D) & 7;
+  _3 = _2 == 0;
+  DevAssert (_3);
+  _4 = u32Length_21(D) == 8;
+  DevAssert (_4);
+  _5 = pSourceAddressPtr_26(D) != 0B;
+  DevAssert (_5);
+  eReturnCode_29 = Ftfc_Fls_Flash_AbortSuspended ();
+  if (eReturnCode_29 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eReturnCode_31 = Ftfc_Fls_Ip_WritePreCheck (u32DestAddress_20(D), pSourceAddressPtr_26(D), u32Length_21(D));
+
+  <bb 4> :
+  # eReturnCode_13 = PHI <eReturnCode_29(2), eReturnCode_31(3)>
+  if (eReturnCode_13 == 23205)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  eReturnCode_33 = Ftfc_Fls_Ip_Compare (u32DestAddress_20(D), 0B, u32Length_21(D));
+  if (eReturnCode_33 != 23205)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  eReturnCode_34 = 11892;
+
+  <bb 7> :
+  # eReturnCode_14 = PHI <eReturnCode_13(4), eReturnCode_33(5), eReturnCode_34(6)>
+  if (eReturnCode_14 == 23205)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 8> :
+  Ftfc_Fls_Ip_u32ProgrammedAddress = u32DestAddress_20(D);
+  Ftfc_Fls_Ip_u32ProgrammedLength = u32Length_21(D);
+  Ftfc_Fls_Ip_pProgrammedData = pSourceAddressPtr_26(D);
+  Ftfc_Fls_Ip_LoadFCCOBParams (u32DestAddress_20(D), pSourceAddressPtr_26(D), 7);
+  Ftfc_Fls_Ip_ClearErrorFlags ();
+  Ftfc_Fls_Ip_Async.26_6 = Ftfc_Fls_Ip_Async;
+  if (Ftfc_Fls_Ip_Async.26_6 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  FTFx_BaseAddress.27_7 = 1073872896B;
+  FTFx_BaseAddress.27_7->FSTAT ={v} 128;
+
+  <bb 10> :
+  Ftfc_Fls_Ip_u32ElapsedTicks = 0;
+  _8 = OsIf_GetCounter (0);
+  Ftfc_Fls_Ip_u32CurrentTicks = _8;
+  Ftfc_Fls_Ip_Async.28_9 = Ftfc_Fls_Ip_Async;
+  _10 = ~Ftfc_Fls_Ip_Async.28_9;
+  if (_10 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _11 = OsIf_MicrosToTicks (2147483647, 0);
+  Ftfc_Fls_Ip_u32TimeoutTicks = _11;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  _12 = OsIf_MicrosToTicks (2147483647, 0);
+  Ftfc_Fls_Ip_u32TimeoutTicks = _12;
+
+  <bb 13> :
+  Ftfc_Fls_Ip_eWriteStatus = eReturnCode_14;
+  _50 = eReturnCode_14;
+
+  <bb 14> :
+<L13>:
+  return _50;
+
+}
+
+
+Ftfc_Fls_Ip_WritePreCheck (uint32 u32DestAddress, const uint8 * pSourceAddressPtr, uint32 u32Length)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6595;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _3;
+  Ftfc_Fls_Ip_StatusType _22;
+
+  <bb 2> :
+  eReturnCode_11 = 23205;
+  _1 = u32DestAddress_12(D) & 7;
+  if (_1 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (u32Length_14(D) != 8)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (pSourceAddressPtr_15(D) == 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _2 = Ftfc_Fls_Ip_CheckValidRange (u32DestAddress_12(D), u32Length_14(D));
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  eReturnCode_17 = 11700;
+
+  <bb 7> :
+  # eReturnCode_4 = PHI <eReturnCode_11(5), eReturnCode_17(6)>
+  if (eReturnCode_4 == 23205)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  eReturnCode_19 = Ftfc_Fls_Ip_CheckFProtReg (u32DestAddress_12(D));
+
+  <bb 9> :
+  # eReturnCode_5 = PHI <eReturnCode_4(7), eReturnCode_19(8)>
+  if (eReturnCode_5 == 23205)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  eReturnCode_21 = Ftfc_Fls_Ip_ControllerBusy ();
+
+  <bb 11> :
+  # eReturnCode_6 = PHI <eReturnCode_5(9), eReturnCode_21(10)>
+  _22 = eReturnCode_6;
+
+  <bb 12> :
+<L9>:
+  return _22;
+
+}
+
+
+Ftfc_Fls_Ip_SectorEraseStatus ()
+{
+  uint32 u32Length;
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6584;
+  <unnamed type> Ftfc_Fls_Ip_eEraseStatus.23_1;
+  long unsigned int Ftfc_Fls_Ip_u32ErasedSectorAddress.24_2;
+  long unsigned int Ftfc_Fls_Ip_u32ErasedSectorAddress.25_3;
+  Ftfc_Fls_Ip_StatusType _17;
+
+  <bb 2> :
+  u32Length_7 = 0;
+  Ftfc_Fls_Ip_eEraseStatus.23_1 = Ftfc_Fls_Ip_eEraseStatus;
+  if (Ftfc_Fls_Ip_eEraseStatus.23_1 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  eReturnCode_11 = Ftfc_Fls_Ip_CtrlStatus ();
+  if (eReturnCode_11 == 23205)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  Ftfc_Fls_Ip_u32ErasedSectorAddress.24_2 = Ftfc_Fls_Ip_u32ErasedSectorAddress;
+  if (Ftfc_Fls_Ip_u32ErasedSectorAddress.24_2 > 268435455)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  u32Length_13 = 4096;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  u32Length_12 = 4096;
+
+  <bb 7> :
+  # u32Length_5 = PHI <u32Length_13(5), u32Length_12(6)>
+  Ftfc_Fls_Ip_u32ErasedSectorAddress.25_3 = Ftfc_Fls_Ip_u32ErasedSectorAddress;
+  eReturnCode_15 = Ftfc_Fls_Ip_Compare (Ftfc_Fls_Ip_u32ErasedSectorAddress.25_3, 0B, u32Length_5);
+  if (eReturnCode_15 != 23205)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  eReturnCode_16 = 11892;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  eReturnCode_9 = 10212;
+
+  <bb 10> :
+  # eReturnCode_4 = PHI <eReturnCode_15(7), eReturnCode_9(9), eReturnCode_11(3), eReturnCode_16(8)>
+  _17 = eReturnCode_4;
+
+  <bb 11> :
+<L10>:
+  return _17;
+
+}
+
+
+Ftfc_Fls_Ip_SectorErase (uint32 u32SectorStartAddress)
+{
+  boolean bSectorAligned;
+  boolean bAddressValid;
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6572;
+  int iftmp.19;
+  long unsigned int _1;
+  _Bool Ftfc_Fls_Ip_Async.20_2;
+  struct FTFC_Type * FTFx_BaseAddress.21_3;
+  long unsigned int _4;
+  _Bool Ftfc_Fls_Ip_Async.22_5;
+  _Bool _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  int iftmp.19_10;
+  int iftmp.19_15;
+  int iftmp.19_16;
+  Ftfc_Fls_Ip_StatusType _39;
+
+  <bb 2> :
+  if (u32SectorStartAddress_14(D) <= 1572863)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (u32SectorStartAddress_14(D) > 268435455)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (u32SectorStartAddress_14(D) <= 268959743)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.19_16 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.19_15 = 0;
+
+  <bb 7> :
+  # iftmp.19_10 = PHI <iftmp.19_16(5), iftmp.19_15(6)>
+  bAddressValid_17 = (boolean) iftmp.19_10;
+  _1 = u32SectorStartAddress_14(D) & 4095;
+  bSectorAligned_18 = _1 == 0;
+  DevAssert (bAddressValid_17);
+  DevAssert (bSectorAligned_18);
+  eRetVal_23 = Ftfc_Fls_Flash_AbortSuspended ();
+  if (eRetVal_23 == 23205)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  eRetVal_25 = Ftfc_Fls_Ip_SectorErasePreCheck (u32SectorStartAddress_14(D));
+
+  <bb 9> :
+  # eRetVal_9 = PHI <eRetVal_23(7), eRetVal_25(8)>
+  if (eRetVal_9 == 23205)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 10> :
+  Ftfc_Fls_Ip_u32ErasedSectorAddress = u32SectorStartAddress_14(D);
+  Ftfc_Fls_Ip_LoadFCCOBParams (u32SectorStartAddress_14(D), 0B, 9);
+  Ftfc_Fls_Ip_ClearErrorFlags ();
+  Ftfc_Fls_Ip_Async.20_2 = Ftfc_Fls_Ip_Async;
+  if (Ftfc_Fls_Ip_Async.20_2 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  FTFx_BaseAddress.21_3 = 1073872896B;
+  FTFx_BaseAddress.21_3->FSTAT ={v} 128;
+
+  <bb 12> :
+  Ftfc_Fls_Ip_u32ElapsedTicks = 0;
+  _4 = OsIf_GetCounter (0);
+  Ftfc_Fls_Ip_u32CurrentTicks = _4;
+  Ftfc_Fls_Ip_Async.22_5 = Ftfc_Fls_Ip_Async;
+  _6 = ~Ftfc_Fls_Ip_Async.22_5;
+  if (_6 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _7 = OsIf_MicrosToTicks (2147483647, 0);
+  Ftfc_Fls_Ip_u32TimeoutTicks = _7;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  _8 = OsIf_MicrosToTicks (2147483647, 0);
+  Ftfc_Fls_Ip_u32TimeoutTicks = _8;
+
+  <bb 15> :
+  Ftfc_Fls_Ip_eEraseStatus = eRetVal_9;
+  _39 = eRetVal_9;
+
+  <bb 16> :
+<L15>:
+  return _39;
+
+}
+
+
+Ftfc_Fls_Ip_SectorErasePreCheck (uint32 u32SectorStartAddress)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6554;
+  int iftmp.18;
+  _Bool _1;
+  _Bool _2;
+  long unsigned int _3;
+  int iftmp.18_7;
+  int iftmp.18_12;
+  int iftmp.18_13;
+  Ftfc_Fls_Ip_StatusType _20;
+
+  <bb 2> :
+  eReturnCode_10 = 23205;
+  if (u32SectorStartAddress_11(D) <= 1572863)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (u32SectorStartAddress_11(D) > 268435455)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (u32SectorStartAddress_11(D) <= 268959743)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.18_13 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.18_12 = 0;
+
+  <bb 7> :
+  # iftmp.18_7 = PHI <iftmp.18_13(5), iftmp.18_12(6)>
+  _1 = (_Bool) iftmp.18_7;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  _3 = u32SectorStartAddress_11(D) & 4095;
+  if (_3 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  eReturnCode_14 = 11700;
+
+  <bb 10> :
+  # eReturnCode_4 = PHI <eReturnCode_10(8), eReturnCode_14(9)>
+  if (eReturnCode_4 == 23205)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  eReturnCode_17 = Ftfc_Fls_Ip_CheckFProtReg (u32SectorStartAddress_11(D));
+
+  <bb 12> :
+  # eReturnCode_5 = PHI <eReturnCode_4(10), eReturnCode_17(11)>
+  if (eReturnCode_5 == 23205)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  eReturnCode_19 = Ftfc_Fls_Ip_ControllerBusy ();
+
+  <bb 14> :
+  # eReturnCode_6 = PHI <eReturnCode_5(12), eReturnCode_19(13)>
+  _20 = eReturnCode_6;
+
+  <bb 15> :
+<L12>:
+  return _20;
+
+}
+
+
+Ftfc_Fls_Ip_EraseVerify (uint32 address, uint32 size)
+{
+  boolean compareStatus;
+  Ftfc_Fls_Ip_StatusType status;
+  uint32 readSize;
+  uint32 verifySize;
+  uint32 verifyAddress;
+  long unsigned int _1;
+  short unsigned int _2;
+  unsigned char _3;
+
+  <bb 2> :
+  verifyAddress_16 = address_15(D);
+  verifySize_18 = size_17(D);
+  compareStatus_19 = 1;
+
+  <bb 3> :
+  # verifyAddress_4 = PHI <verifyAddress_16(2), verifyAddress_34(16)>
+  # verifySize_5 = PHI <verifySize_18(2), verifySize_35(16)>
+  # compareStatus_7 = PHI <compareStatus_19(2), compareStatus_11(16)>
+  Ftfc_Fls_Ip_InvalidPrefetchBuff ();
+  readSize_23 = Ftfc_Fls_ComputeReadSize (verifyAddress_4, 0, verifySize_5);
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  switch (readSize_23) <default: <L10> [INV], case 1: <L7> [INV], case 2: <L4> [INV], case 4: <L1> [INV]>
+
+  <bb 4> :
+<L1>:
+  _1 = Ftfc_Fls_Ip_ReadData32 (verifyAddress_4);
+  if (_1 != 4294967295)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  compareStatus_26 = 0;
+
+  <bb 6> :
+  # compareStatus_8 = PHI <compareStatus_7(4), compareStatus_26(5)>
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  _2 = Ftfc_Fls_Ip_ReadData16 (verifyAddress_4);
+  if (_2 != 65535)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  compareStatus_28 = 0;
+
+  <bb 9> :
+  # compareStatus_9 = PHI <compareStatus_7(7), compareStatus_28(8)>
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+<L7>:
+  _3 = Ftfc_Fls_Ip_ReadData8 (verifyAddress_4);
+  if (_3 != 255)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  compareStatus_30 = 0;
+
+  <bb 12> :
+  # compareStatus_10 = PHI <compareStatus_7(10), compareStatus_30(11)>
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L10>:
+
+  <bb 14> :
+  # compareStatus_11 = PHI <compareStatus_8(6), compareStatus_9(9), compareStatus_10(12), compareStatus_7(13)>
+  Ftfc_Fls_Ip_FlashAccessCalloutFinish ();
+  status_33 = Ftfc_Fls_Ip_ReadStatus (compareStatus_11);
+  if (status_33 != 23205)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  verifyAddress_34 = verifyAddress_4 + readSize_23;
+  verifySize_35 = verifySize_5 - readSize_23;
+  if (verifySize_35 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # verifySize_6 = PHI <verifySize_5(15), verifySize_35(16)>
+  if (verifySize_6 == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  Ftfc_Fls_Ip_eReadStatus = 23205;
+
+  <bb 19> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_ProgramVerify (uint32 address, const uint8 * data, uint32 size)
+{
+  boolean compareStatus;
+  Ftfc_Fls_Ip_StatusType status;
+  uint32 readSize;
+  uint32 verifySize;
+  uint32 verifyData;
+  uint32 verifyAddress;
+  long unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+
+  <bb 2> :
+  verifyAddress_20 = address_19(D);
+  verifyData_22 = (uint32) data_21(D);
+  verifySize_24 = size_23(D);
+  compareStatus_25 = 1;
+
+  <bb 3> :
+  # verifyAddress_7 = PHI <verifyAddress_20(2), verifyAddress_43(16)>
+  # verifyData_8 = PHI <verifyData_22(2), verifyData_44(16)>
+  # verifySize_9 = PHI <verifySize_24(2), verifySize_45(16)>
+  # compareStatus_11 = PHI <compareStatus_25(2), compareStatus_15(16)>
+  Ftfc_Fls_Ip_InvalidPrefetchBuff ();
+  readSize_29 = Ftfc_Fls_ComputeReadSize (verifyAddress_7, verifyData_8, verifySize_9);
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  switch (readSize_29) <default: <L10> [INV], case 1: <L7> [INV], case 2: <L4> [INV], case 4: <L1> [INV]>
+
+  <bb 4> :
+<L1>:
+  _1 = Ftfc_Fls_Ip_ReadData32 (verifyData_8);
+  _2 = Ftfc_Fls_Ip_ReadData32 (verifyAddress_7);
+  if (_1 != _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  compareStatus_33 = 0;
+
+  <bb 6> :
+  # compareStatus_12 = PHI <compareStatus_11(4), compareStatus_33(5)>
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  _3 = Ftfc_Fls_Ip_ReadData16 (verifyData_8);
+  _4 = Ftfc_Fls_Ip_ReadData16 (verifyAddress_7);
+  if (_3 != _4)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  compareStatus_36 = 0;
+
+  <bb 9> :
+  # compareStatus_13 = PHI <compareStatus_11(7), compareStatus_36(8)>
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+<L7>:
+  _5 = Ftfc_Fls_Ip_ReadData8 (verifyData_8);
+  _6 = Ftfc_Fls_Ip_ReadData8 (verifyAddress_7);
+  if (_5 != _6)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  compareStatus_39 = 0;
+
+  <bb 12> :
+  # compareStatus_14 = PHI <compareStatus_11(10), compareStatus_39(11)>
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L10>:
+
+  <bb 14> :
+  # compareStatus_15 = PHI <compareStatus_12(6), compareStatus_13(9), compareStatus_14(12), compareStatus_11(13)>
+  Ftfc_Fls_Ip_FlashAccessCalloutFinish ();
+  status_42 = Ftfc_Fls_Ip_ReadStatus (compareStatus_15);
+  if (status_42 != 23205)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  verifyAddress_43 = verifyAddress_7 + readSize_29;
+  verifyData_44 = verifyData_8 + readSize_29;
+  verifySize_45 = verifySize_9 - readSize_29;
+  if (verifySize_45 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # verifySize_10 = PHI <verifySize_9(15), verifySize_45(16)>
+  if (verifySize_10 == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  Ftfc_Fls_Ip_eReadStatus = 23205;
+
+  <bb 19> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_Compare (Ftfc_Fls_Ip_AddressType u32SrcAddress, const uint8 * pCompareAddressPtr, Ftfc_Fls_Ip_LengthType u32Length)
+{
+  uint32 srcAddress;
+  Ftfc_Fls_Ip_StatusType D.6519;
+  _Bool _1;
+  _Bool _2;
+  <unnamed type> _3;
+  <unnamed type> Ftfc_Fls_Ip_eReadStatus.17_4;
+  Ftfc_Fls_Ip_StatusType _20;
+
+  <bb 2> :
+  srcAddress_7 = u32SrcAddress_6(D);
+  _1 = u32Length_8(D) != 0;
+  DevAssert (_1);
+  _2 = Ftfc_Fls_Ip_CheckValidRange (u32SrcAddress_6(D), u32Length_8(D));
+  DevAssert (_2);
+  _3 = Ftfc_Fls_Ip_ComparePreCheck (u32SrcAddress_6(D), u32Length_8(D));
+  Ftfc_Fls_Ip_eReadStatus = _3;
+  Ftfc_Fls_Ip_eReadStatus.17_4 = Ftfc_Fls_Ip_eReadStatus;
+  if (Ftfc_Fls_Ip_eReadStatus.17_4 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Ftfc_Fls_Ip_eReadStatus = 59202;
+  Ftfc_Fls_SynchronizeCache (srcAddress_7, u32Length_8(D));
+  if (pCompareAddressPtr_17(D) != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Ftfc_Fls_Ip_ProgramVerify (srcAddress_7, pCompareAddressPtr_17(D), u32Length_8(D));
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Ftfc_Fls_Ip_EraseVerify (srcAddress_7, u32Length_8(D));
+
+  <bb 6> :
+  _20 = Ftfc_Fls_Ip_eReadStatus;
+
+  <bb 7> :
+<L5>:
+  return _20;
+
+}
+
+
+Ftfc_Fls_Ip_ComparePreCheck (uint32 u32SrcAddress, uint32 u32Length)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6512;
+  _Bool _1;
+  _Bool _2;
+  Ftfc_Fls_Ip_StatusType _11;
+
+  <bb 2> :
+  eReturnCode_5 = 11700;
+  if (u32Length_6(D) == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _1 = Ftfc_Fls_Ip_CheckValidRange (u32SrcAddress_8(D), u32Length_6(D));
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  eReturnCode_10 = 23205;
+
+  <bb 5> :
+  # eReturnCode_3 = PHI <eReturnCode_5(2), eReturnCode_5(3), eReturnCode_10(4)>
+  _11 = eReturnCode_3;
+
+  <bb 6> :
+<L6>:
+  return _11;
+
+}
+
+
+Ftfc_Fls_Ip_ReadStatus (boolean compareStatus)
+{
+  uint8 errorFlags;
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6504;
+  struct FTFC_Type * FTFx_BaseAddress.15_1;
+  unsigned char _2;
+  struct FTFC_Type * FTFx_BaseAddress.16_3;
+  _Bool _4;
+  Ftfc_Fls_Ip_StatusType _15;
+
+  <bb 2> :
+  eRetVal_7 = 10212;
+  FTFx_BaseAddress.15_1 = 1073872896B;
+  _2 ={v} FTFx_BaseAddress.15_1->FSTAT;
+  errorFlags_9 = _2 & 112;
+  if (errorFlags_9 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  FTFx_BaseAddress.16_3 = 1073872896B;
+  FTFx_BaseAddress.16_3->FSTAT ={v} errorFlags_9;
+  Ftfc_Fls_Ip_eReadStatus = 10212;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _4 = ~compareStatus_10(D);
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Ftfc_Fls_Ip_eReadStatus = 13260;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  eRetVal_11 = 23205;
+
+  <bb 7> :
+  # eRetVal_5 = PHI <eRetVal_7(3), eRetVal_7(5), eRetVal_11(6)>
+  _15 = eRetVal_5;
+
+  <bb 8> :
+<L6>:
+  return _15;
+
+}
+
+
+Ftfc_Fls_Ip_Read (Ftfc_Fls_Ip_AddressType u32SrcAddress, uint8 * pDestAddressPtr, Ftfc_Fls_Ip_LengthType u32Length)
+{
+  Ftfc_Fls_Ip_StatusType readStatus;
+  uint32 readSize;
+  uint32 bytesRemain;
+  uint8 * desAddressPtr;
+  uint32 desAddress;
+  uint32 readAddress;
+  Ftfc_Fls_Ip_StatusType D.6496;
+  _Bool _1;
+  _Bool _2;
+  _Bool _3;
+  <unnamed type> _4;
+  <unnamed type> Ftfc_Fls_Ip_eReadStatus.14_5;
+  Ftfc_Fls_Ip_StatusType _42;
+
+  <bb 2> :
+  readAddress_14 = u32SrcAddress_13(D);
+  desAddress_16 = (uint32) pDestAddressPtr_15(D);
+  desAddressPtr_17 = pDestAddressPtr_15(D);
+  bytesRemain_19 = u32Length_18(D);
+  _1 = u32Length_18(D) != 0;
+  DevAssert (_1);
+  _2 = pDestAddressPtr_15(D) != 0B;
+  DevAssert (_2);
+  _3 = Ftfc_Fls_Ip_CheckValidRange (u32SrcAddress_13(D), u32Length_18(D));
+  DevAssert (_3);
+  _4 = Ftfc_Fls_Ip_ReadPreCheck (u32SrcAddress_13(D), pDestAddressPtr_15(D), u32Length_18(D));
+  Ftfc_Fls_Ip_eReadStatus = _4;
+  Ftfc_Fls_Ip_eReadStatus.14_5 = Ftfc_Fls_Ip_eReadStatus;
+  if (Ftfc_Fls_Ip_eReadStatus.14_5 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  Ftfc_Fls_Ip_eReadStatus = 59202;
+  Ftfc_Fls_SynchronizeCache (readAddress_14, bytesRemain_19);
+
+  <bb 4> :
+  # readAddress_6 = PHI <readAddress_14(3), readAddress_37(6)>
+  # desAddress_7 = PHI <desAddress_16(3), desAddress_38(6)>
+  # desAddressPtr_8 = PHI <desAddressPtr_17(3), desAddressPtr_39(6)>
+  # bytesRemain_9 = PHI <bytesRemain_19(3), bytesRemain_40(6)>
+  Ftfc_Fls_Ip_InvalidPrefetchBuff ();
+  readSize_31 = Ftfc_Fls_ComputeReadSize (readAddress_6, desAddress_7, bytesRemain_9);
+  Ftfc_Fls_Ip_FlashAccessCalloutStart ();
+  Ftfc_Fls_Ip_ReadData (readSize_31, readAddress_6, desAddress_7, desAddressPtr_8);
+  Ftfc_Fls_Ip_FlashAccessCalloutFinish ();
+  readStatus_36 = Ftfc_Fls_Ip_ReadStatus (1);
+  if (readStatus_36 != 23205)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  readAddress_37 = readAddress_6 + readSize_31;
+  desAddress_38 = desAddress_7 + readSize_31;
+  desAddressPtr_39 = desAddressPtr_8 + readSize_31;
+  bytesRemain_40 = bytesRemain_9 - readSize_31;
+  if (bytesRemain_40 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # bytesRemain_10 = PHI <bytesRemain_9(5), bytesRemain_40(6)>
+  if (bytesRemain_10 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Ftfc_Fls_Ip_eReadStatus = 23205;
+
+  <bb 9> :
+  _42 = Ftfc_Fls_Ip_eReadStatus;
+
+  <bb 10> :
+<L8>:
+  return _42;
+
+}
+
+
+Ftfc_Fls_Ip_ReadPreCheck (uint32 u32SrcAddress, const uint8 * pDestAddressPtr, uint32 u32Length)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Ftfc_Fls_Ip_StatusType D.6488;
+  _Bool _1;
+  _Bool _2;
+  Ftfc_Fls_Ip_StatusType _12;
+
+  <bb 2> :
+  eReturnCode_5 = 11700;
+  if (pDestAddressPtr_6(D) == 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (u32Length_8(D) == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _1 = Ftfc_Fls_Ip_CheckValidRange (u32SrcAddress_9(D), u32Length_8(D));
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  eReturnCode_11 = 23205;
+
+  <bb 6> :
+  # eReturnCode_3 = PHI <eReturnCode_5(2), eReturnCode_5(3), eReturnCode_5(4), eReturnCode_11(5)>
+  _12 = eReturnCode_3;
+
+  <bb 7> :
+<L9>:
+  return _12;
+
+}
+
+
+Ftfc_Fls_Ip_CheckValidRange (uint32 startAddress, uint32 length)
+{
+  uint32 endAddress;
+  boolean bRetVal;
+  boolean D.6477;
+  int iftmp.13;
+  int iftmp.12;
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _3;
+  int iftmp.12_5;
+  int iftmp.13_6;
+  int iftmp.12_11;
+  int iftmp.12_12;
+  int iftmp.13_13;
+  int iftmp.13_14;
+  boolean _16;
+
+  <bb 2> :
+  bRetVal_7 = 0;
+  _1 = startAddress_8(D) + length_9(D);
+  endAddress_10 = _1 + 4294967295;
+  if (startAddress_8(D) <= 1572863)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  if (endAddress_10 <= 1572863)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (startAddress_8(D) > 268435455)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  if (startAddress_8(D) <= 268959743)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.12_11 = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.12_12 = 0;
+
+  <bb 8> :
+  # iftmp.12_5 = PHI <iftmp.12_11(6), iftmp.12_12(7)>
+  _2 = (_Bool) iftmp.12_5;
+  if (_2 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 9> :
+  if (endAddress_10 > 268435455)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  if (endAddress_10 <= 268959743)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  iftmp.13_13 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.13_14 = 0;
+
+  <bb 13> :
+  # iftmp.13_6 = PHI <iftmp.13_13(11), iftmp.13_14(12)>
+  _3 = (_Bool) iftmp.13_6;
+  if (_3 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  bRetVal_15 = 1;
+
+  <bb 15> :
+  # bRetVal_4 = PHI <bRetVal_7(8), bRetVal_7(13), bRetVal_15(14)>
+  _16 = bRetVal_4;
+
+  <bb 16> :
+<L13>:
+  return _16;
+
+}
+
+
+Ftfc_Fls_Ip_ReadData (uint32 readSize, uint32 readAddress, uint32 desAddress, uint8 * desAddressPtr)
+{
+  uint32 * desAddress.7_1;
+  long unsigned int _2;
+  uint16 * desAddress.8_3;
+  short unsigned int _4;
+  unsigned char _5;
+
+  <bb 2> :
+  switch (readSize_7(D)) <default: <L3> [INV], case 1: <L2> [INV], case 2: <L1> [INV], case 4: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  desAddress.7_1 = (uint32 *) desAddress_8(D);
+  _2 = Ftfc_Fls_Ip_ReadData32 (readAddress_10(D));
+  *desAddress.7_1 = _2;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  desAddress.8_3 = (uint16 *) desAddress_8(D);
+  _4 = Ftfc_Fls_Ip_ReadData16 (readAddress_10(D));
+  *desAddress.8_3 = _4;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _5 = Ftfc_Fls_Ip_ReadData8 (readAddress_10(D));
+  *desAddressPtr_16(D) = _5;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_ReadData8 (uint32 address)
+{
+  uint8 D.6460;
+  uint8 * address.11_1;
+  uint8 _4;
+
+  <bb 2> :
+  address.11_1 = (uint8 *) address_2(D);
+  _4 = *address.11_1;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Ftfc_Fls_Ip_ReadData16 (uint32 address)
+{
+  uint16 D.6458;
+  uint16 * address.10_1;
+  uint16 _4;
+
+  <bb 2> :
+  address.10_1 = (uint16 *) address_2(D);
+  _4 = *address.10_1;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Ftfc_Fls_Ip_ReadData32 (uint32 address)
+{
+  uint32 D.6456;
+  uint32 * address.9_1;
+  uint32 _4;
+
+  <bb 2> :
+  address.9_1 = (uint32 *) address_2(D);
+  _4 = *address.9_1;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Ftfc_Fls_ComputeReadSize (uint32 srcAddress, uint32 desAddress, uint32 byteRemain)
+{
+  uint32 combinedAddress;
+  uint32 readSize;
+  uint32 D.6454;
+  long unsigned int _1;
+  long unsigned int _2;
+  uint32 _12;
+
+  <bb 2> :
+  readSize_4 = 1;
+  combinedAddress_7 = srcAddress_5(D) | desAddress_6(D);
+  _1 = combinedAddress_7 & 3;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  if (byteRemain_8(D) > 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  readSize_11 = 4;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  if (byteRemain_8(D) > 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 6> :
+  readSize_10 = 2;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _2 = combinedAddress_7 & 1;
+  if (_2 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  if (byteRemain_8(D) > 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  readSize_9 = 2;
+
+  <bb 10> :
+  # readSize_3 = PHI <readSize_4(5), readSize_4(7), readSize_9(9), readSize_11(4), readSize_10(6), readSize_4(8)>
+  _12 = readSize_3;
+
+  <bb 11> :
+<L15>:
+  return _12;
+
+}
+
+
+Ftfc_Fls_SynchronizeCache (uint32 address, uint32 length)
+{
+  <bb 2> :
+  if (address_2(D) <= 1572863)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Cache_Ip_InvalidateByAddr (0, address_2(D), length_4(D));
+
+  <bb 4> :
+  return;
+
+}
+
+
+Ftfc_Fls_Ip_WaitForOperationFinish ()
+{
+  uint32 u32CurrentAbortTicks;
+  uint32 u32TimeoutAbortTicks;
+  uint32 u32ElapsedAbortTicks;
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6411;
+  long unsigned int D.6406;
+  long unsigned int _1;
+  struct FTFC_Type * FTFx_BaseAddress.5_2;
+  unsigned char _3;
+  signed char _4;
+  struct FTFC_Type * FTFx_BaseAddress.6_5;
+  unsigned char _6;
+  signed char _7;
+  long unsigned int _18;
+  Ftfc_Fls_Ip_StatusType _22;
+
+  <bb 2> :
+  u32ElapsedAbortTicks_11 = 0;
+  u32TimeoutAbortTicks_14 = OsIf_MicrosToTicks (32767, 0);
+  _1 = OsIf_GetCounter (0);
+  u32CurrentAbortTicks = _1;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _18 = OsIf_GetElapsed (&u32CurrentAbortTicks, 0);
+  u32ElapsedAbortTicks_19 = _18 + u32ElapsedAbortTicks_9;
+
+  <bb 4> :
+  # u32ElapsedAbortTicks_9 = PHI <u32ElapsedAbortTicks_11(2), u32ElapsedAbortTicks_19(3)>
+  FTFx_BaseAddress.5_2 = 1073872896B;
+  _3 ={v} FTFx_BaseAddress.5_2->FSTAT;
+  _4 = (signed char) _3;
+  if (_4 >= 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (u32ElapsedAbortTicks_9 < u32TimeoutAbortTicks_14)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  FTFx_BaseAddress.6_5 = 1073872896B;
+  _6 ={v} FTFx_BaseAddress.6_5->FSTAT;
+  _7 = (signed char) _6;
+  if (_7 < 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  eRetVal_21 = 23205;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  eRetVal_20 = 10212;
+
+  <bb 9> :
+  # eRetVal_8 = PHI <eRetVal_21(7), eRetVal_20(8)>
+  _22 = eRetVal_8;
+  u32CurrentAbortTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L8>:
+  return _22;
+
+}
+
+
+Ftfc_Fls_Ip_Abort ()
+{
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  Ftfc_Fls_Ip_StatusType D.6404;
+  <unnamed type> _1;
+  Ftfc_Fls_Ip_StatusType _7;
+
+  <bb 2> :
+  _1 = Ftfc_Fls_Ip_WaitForOperationFinish ();
+  if (_1 == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eRetVal_6 = 23205;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  eRetVal_5 = 10212;
+
+  <bb 5> :
+  # eRetVal_2 = PHI <eRetVal_6(3), eRetVal_5(4)>
+  _7 = eRetVal_2;
+
+  <bb 6> :
+<L3>:
+  return _7;
+
+}
+
+
+Ftfc_Fls_Ip_Init (const struct Ftfc_ConfigType * Ftfc_Fls_Ip_pInitConfig)
+{
+  Ftfc_Fls_Ip_StatusType D.6396;
+  _Bool _1;
+  Ftfc_Fls_Ip_StatusType _7;
+
+  <bb 2> :
+  _1 = Ftfc_Fls_Ip_pInitConfig_2(D) != 0B;
+  DevAssert (_1);
+  Ftfc_Fls_Ip_pConfigPtr = Ftfc_Fls_Ip_pInitConfig_2(D);
+  Ftfc_Fls_Ip_CalculateDFlashBitSize ();
+  _7 = 23205;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+Ftfc_Fls_Ip_CheckFProtReg (uint32 u32SectStartAddr)
+{
+  Ftfc_Fls_Ip_StatusType eRetVal;
+  uint8 u8RegProtNo;
+  uint8 u8SecRegProtBitPos;
+  uint32 u32PFlashRegSize;
+  uint32 u32PFlashBitSize;
+  Ftfc_Fls_Ip_StatusType D.6394;
+  long unsigned int Ftfc_Fls_Ip_u32DFlashBitSizeProt.0_1;
+  long unsigned int _2;
+  long unsigned int Ftfc_Fls_Ip_u32DFlashBitSizeProt.1_3;
+  long unsigned int _4;
+  struct FTFC_Type * FTFx_BaseAddress.2_5;
+  unsigned char _6;
+  long unsigned int _7;
+  int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  struct FTFC_Type * FTFx_BaseAddress.3_14;
+  int _15;
+  unsigned char _16;
+  long unsigned int _17;
+  int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  Ftfc_Fls_Ip_StatusType _35;
+
+  <bb 2> :
+  eRetVal_23 = 23205;
+  if (u32SectStartAddr_24(D) > 1572863)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (u32SectStartAddr_24(D) <= 268435455)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (u32SectStartAddr_24(D) > 268959743)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  eRetVal_34 = 11700;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  Ftfc_Fls_Ip_u32DFlashBitSizeProt.0_1 = Ftfc_Fls_Ip_u32DFlashBitSizeProt;
+  if (Ftfc_Fls_Ip_u32DFlashBitSizeProt.0_1 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  _2 = u32SectStartAddr_24(D) + 4026531840;
+  Ftfc_Fls_Ip_u32DFlashBitSizeProt.1_3 = Ftfc_Fls_Ip_u32DFlashBitSizeProt;
+  _4 = _2 / Ftfc_Fls_Ip_u32DFlashBitSizeProt.1_3;
+  u8SecRegProtBitPos_32 = (uint8) _4;
+  FTFx_BaseAddress.2_5 = 1073872896B;
+  _6 ={v} FTFx_BaseAddress.2_5->FDPROT;
+  _7 = (long unsigned int) _6;
+  _8 = (int) u8SecRegProtBitPos_32;
+  _9 = _7 >> _8;
+  _10 = _9 & 1;
+  if (_10 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  eRetVal_33 = 10212;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  eRetVal_31 = 10212;
+
+  <bb 10> :
+  # eRetVal_21 = PHI <eRetVal_34(5), eRetVal_33(8), eRetVal_31(9), eRetVal_23(7)>
+  goto <bb 14>; [INV]
+
+  <bb 11> :
+  u32PFlashRegSize_25 = 524288;
+  u32PFlashBitSize_26 = 65536;
+  _11 = u32SectStartAddr_24(D) / u32PFlashRegSize_25;
+  u8RegProtNo_27 = (uint8) _11;
+  _12 = u32SectStartAddr_24(D) % u32PFlashRegSize_25;
+  _13 = _12 / u32PFlashBitSize_26;
+  u8SecRegProtBitPos_28 = (uint8) _13;
+  if (u8RegProtNo_27 <= 3)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  FTFx_BaseAddress.3_14 = 1073872896B;
+  _15 = (int) u8RegProtNo_27;
+  _16 ={v} FTFx_BaseAddress.3_14->FPROT[_15];
+  _17 = (long unsigned int) _16;
+  _18 = (int) u8SecRegProtBitPos_28;
+  _19 = _17 >> _18;
+  _20 = _19 & 1;
+  if (_20 == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  eRetVal_30 = 10212;
+
+  <bb 14> :
+  # eRetVal_22 = PHI <eRetVal_21(10), eRetVal_23(11), eRetVal_30(13), eRetVal_23(12)>
+  _35 = eRetVal_22;
+
+  <bb 15> :
+<L17>:
+  return _35;
+
+}
+
+
+Ftfc_Fls_Ip_CalculateDFlashBitSize ()
+{
+  uint32 u32FlexNvmPartSize;
+  uint32 u32RegSimFcfg1;
+  uint32 u32DFlashSize;
+  struct SIM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  _1 = 1074036736B;
+  u32RegSimFcfg1_6 ={v} _1->FCFG1;
+  _2 = u32RegSimFcfg1_6 >> 12;
+  u32FlexNvmPartSize_7 = _2 & 15;
+  if (u32FlexNvmPartSize_7 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (u32FlexNvmPartSize_7 == 15)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  u32DFlashSize_10 = 524288;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (u32FlexNvmPartSize_7 == 4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  u32DFlashSize_9 = 458752;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  u32DFlashSize_8 = 0;
+
+  <bb 8> :
+  # u32DFlashSize_4 = PHI <u32DFlashSize_10(4), u32DFlashSize_9(6), u32DFlashSize_8(7)>
+  _3 = u32DFlashSize_4 >> 3;
+  Ftfc_Fls_Ip_u32DFlashBitSizeProt = _3;
+  return;
+
+}
+
+
+__attribute__((always_inline))
+Cache_Ip_InvalidateByAddr (const Cache_Ip_Type CacheType, const uint32 Addr, const uint32 Length)
+{
+  Std_ReturnType Status;
+  Std_ReturnType D.6416;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  Status_3 = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  switch (CacheType_6(D)) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  Status_10 = hwAcc_Lmem_ProcessorCodeInvalidateByAddr (Addr_7(D), Length_8(D));
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  # Status_1 = PHI <Status_10(3), Status_3(4), Status_3(5), Status_3(6)>
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_17 ();
+  _12 = Status_1;
+
+  <bb 8> :
+<L5>:
+  return _12;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr (const uint32 addr, const uint32 length)
+{
+  uint32 locEndAddr;
+  uint32 locStartAddr;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.6419;
+  struct LMEM_Type * _1;
+  struct LMEM_Type * _2;
+  Std_ReturnType _17;
+
+  <bb 2> :
+  locStatus_6 = 0;
+  locStartAddr_8 = addr_7(D) & 4294967280;
+  locEndAddr_10 = addr_7(D) + length_9(D);
+  _1 = 3758628864B;
+  locStatus_13 = hwAcc_Lmem_LineControlReg (_1, 83951616, 0);
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = 3758628864B;
+  locStatus_15 = hwAcc_Lmem_AddressReg (_2, locStartAddr_4, 1);
+  locStartAddr_16 = locStartAddr_4 + 16;
+
+  <bb 4> :
+  # locStatus_3 = PHI <locStatus_13(2), locStatus_15(3)>
+  # locStartAddr_4 = PHI <locStartAddr_8(2), locStartAddr_16(3)>
+  if (locStartAddr_4 < locEndAddr_10)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (locStatus_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _17 = locStatus_3;
+
+  <bb 7> :
+<L4>:
+  return _17;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_AddressReg (struct LMEM_Type * pInst, uint32 Address, uint32 GoMask)
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.6436;
+  long unsigned int D.6432;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _25;
+  Std_ReturnType _28;
+
+  <bb 2> :
+  locStatus_10 = 0;
+  locTimeoutTicks_13 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_16 = 0;
+  locReg_18 ={v} pInst_17(D)->PCCSAR;
+  locReg_19 = locReg_18 & 3;
+  _2 = Address_20(D) & 4294967292;
+  _3 = GoMask_21(D) | _2;
+  locReg_22 = locReg_19 | _3;
+  pInst_17(D)->PCCSAR ={v} locReg_22;
+  if (GoMask_21(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _25 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_26 = _25 + locElapsedTicks_7;
+
+  <bb 5> :
+  # locElapsedTicks_7 = PHI <locElapsedTicks_16(3), locElapsedTicks_26(4)>
+  _4 ={v} pInst_17(D)->PCCSAR;
+  _5 = GoMask_21(D) & _4;
+  if (GoMask_21(D) == _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_7 < locTimeoutTicks_13)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (locElapsedTicks_7 >= locTimeoutTicks_13)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  locStatus_27 = 1;
+
+  <bb 9> :
+  # locStatus_6 = PHI <locStatus_10(2), locStatus_10(7), locStatus_27(8)>
+  _28 = locStatus_6;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return _28;
+
+}
+
+
+__attribute__((always_inline))
+hwAcc_Lmem_LineControlReg (struct LMEM_Type * pInst, uint32 LineControlMask, uint32 GoMask)
+{
+  uint32 locReg;
+  uint32 locElapsedTicks;
+  uint32 locCurrentTicks;
+  uint32 locTimeoutTicks;
+  Std_ReturnType locStatus;
+  Std_ReturnType D.6427;
+  long unsigned int D.6423;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _25;
+  Std_ReturnType _28;
+
+  <bb 2> :
+  locStatus_10 = 0;
+  locTimeoutTicks_13 = OsIf_MicrosToTicks (0, 0);
+  _1 = OsIf_GetCounter (0);
+  locCurrentTicks = _1;
+  locElapsedTicks_16 = 0;
+  locReg_18 ={v} pInst_17(D)->PCCLCR;
+  _2 = ~LineControlMask_19(D);
+  locReg_20 = locReg_18 & _2;
+  _3 = LineControlMask_19(D) | GoMask_21(D);
+  locReg_22 = locReg_20 | _3;
+  pInst_17(D)->PCCLCR ={v} locReg_22;
+  if (GoMask_21(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _25 = OsIf_GetElapsed (&locCurrentTicks, 0);
+  locElapsedTicks_26 = _25 + locElapsedTicks_7;
+
+  <bb 5> :
+  # locElapsedTicks_7 = PHI <locElapsedTicks_16(3), locElapsedTicks_26(4)>
+  _4 ={v} pInst_17(D)->PCCLCR;
+  _5 = GoMask_21(D) & _4;
+  if (GoMask_21(D) == _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (locElapsedTicks_7 < locTimeoutTicks_13)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (locElapsedTicks_7 >= locTimeoutTicks_13)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  locStatus_27 = 1;
+
+  <bb 9> :
+  # locStatus_6 = PHI <locStatus_10(2), locStatus_10(7), locStatus_27(8)>
+  _28 = locStatus_6;
+  locCurrentTicks ={v} {CLOBBER};
+
+  <bb 10> :
+<L9>:
+  return _28;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  _Bool x.4_1;
+
+  <bb 2> :
+  x.4_1 ={v} x;
+  if (x.4_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  __asm__ __volatile__("BKPT #0");
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+

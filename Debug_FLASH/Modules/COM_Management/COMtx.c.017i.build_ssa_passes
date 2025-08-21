@@ -1,0 +1,987 @@
+getLimitationType ()
+{
+  COM_LimitationTypeValuesE returnVal;
+  CNV_LimitationTypeValuesE limitationTypeCOMETi2;
+  CNV_LimitationTypeValuesE limitationTypeCOMETi1;
+  COM_LimitationTypeValuesE D.8864;
+
+  <bb 2> :
+  limitationTypeCOMETi1 = 0;
+  limitationTypeCOMETi2 = 0;
+  returnVal = 0;
+  limitationTypeCOMETi1 = CNV_powercoreUnitTable[0].regulInfo.limitationType;
+  limitationTypeCOMETi2 = CNV_powercoreUnitTable[1].regulInfo.limitationType;
+  if (limitationTypeCOMETi1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (limitationTypeCOMETi2 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  returnVal = 1;
+
+  <bb 5> :
+  if (limitationTypeCOMETi1 == 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (limitationTypeCOMETi2 == 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  returnVal = 2;
+
+  <bb 8> :
+  if (limitationTypeCOMETi1 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (limitationTypeCOMETi2 == 4)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  returnVal = 3;
+
+  <bb 11> :
+  if (limitationTypeCOMETi1 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  if (limitationTypeCOMETi2 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  returnVal = 3;
+
+  <bb 14> :
+  if (limitationTypeCOMETi1 == 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  if (limitationTypeCOMETi2 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  returnVal = 0;
+
+  <bb 17> :
+  D.8864 = returnVal;
+
+  <bb 18> :
+<L18>:
+  return D.8864;
+
+}
+
+
+com_ComposeControlStatusInfo ()
+{
+  uint32_t setpointPAR;
+  uint32_t tempCurrentLimit;
+
+  <bb 2> :
+  tempCurrentLimit = 0;
+  setpointPAR = 0;
+  FSM_mode.4_1 = FSM_mode;
+  if (FSM_mode.4_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = PAR_paramConfig[16].realVal.unsignedVal;
+  setpointPAR = _2 * 10;
+  _3 = PAR_paramConfig[66].realVal.unsignedVal;
+  tempCurrentLimit = _3 * 10;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  FSM_mode.5_4 = FSM_mode;
+  if (FSM_mode.5_4 == 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = CNV_powercoreUnitTable[0].regulInfo.setpoint;
+  _6 = CNV_powercoreUnitTable[1].regulInfo.setpoint;
+  setpointPAR = _5 + _6;
+  _7 = CNV_powercoreUnitTable[0].controlInfo.currentLimit;
+  _8 = (int) _7;
+  _9 = CNV_powercoreUnitTable[1].controlInfo.currentLimit;
+  _10 = (int) _9;
+  _11 = _8 + _10;
+  tempCurrentLimit = (uint32_t) _11;
+
+  <bb 6> :
+  _12 = (short unsigned int) tempCurrentLimit;
+  COM_controlStatusInfo.currentLimit = _12;
+  COM_controlStatusInfo.setpoint = setpointPAR;
+  PWB_numberAvailableCOMETi.6_13 = PWB_numberAvailableCOMETi;
+  COM_controlStatusInfo.powercoreUnitsNb = PWB_numberAvailableCOMETi.6_13;
+  _14 = PWB_relayCurrentState.stateSwitchS2;
+  _15 = (<unnamed type>) _14;
+  COM_controlStatusInfo.lvPrechargeStatus = _15;
+  _16 = PWB_relayCurrentState.stateSwitchS3;
+  _17 = (<unnamed type>) _16;
+  COM_controlStatusInfo.hvCouplerStatus1 = _17;
+  _18 = CTB_dsoState.Health_State;
+  COM_controlStatusInfo.healthStatus = _18;
+  _19 = CTB_dsiState.EMERSTOP_DSI_State;
+  COM_controlStatusInfo.emerstopStatus = _19;
+  FSM_mode.7_20 = FSM_mode;
+  COM_controlStatusInfo.dcdcState = FSM_mode.7_20;
+  _21 = getLimitationType ();
+  COM_controlStatusInfo.limitationType = _21;
+  CNV_buckType.8_22 = CNV_buckType;
+  COM_controlStatusInfo.buckType = CNV_buckType.8_22;
+  return;
+
+}
+
+
+com_ComposeFaults ()
+{
+  <bb 2> :
+  _1 = ACT_errors.fastPowerDown.all;
+  _2 = ACT_errors.slowPowerDown.all;
+  _3 = (short unsigned int) _2;
+  _4 = _1 + _3;
+  COM_errorsAndWarnings.bbauxErrors = _4;
+  _5 = ACT_errors.warnings.all;
+  COM_errorsAndWarnings.bbauxWarnings = _5;
+  _6 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  _7 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  _8 = _6 | _7;
+  COM_errorsAndWarnings.powercoreErrors = _8;
+  _9 = CNV_powercoreUnitTable[0].flags.moduleFlags.warns.all;
+  _10 = CNV_powercoreUnitTable[1].flags.moduleFlags.warns.all;
+  _11 = _9 | _10;
+  COM_errorsAndWarnings.powercoreWarnings = _11;
+  _12 = ACT_errors.origin.all;
+  COM_errorsAndWarnings.faultOrigin = _12;
+  _13 = ACT_errors.severity;
+  COM_errorsAndWarnings.severity = _13;
+  return;
+
+}
+
+
+com_ComposeVoltageMeasures ()
+{
+  size_t i;
+  uint32_t tempVoltageMeas2;
+  uint32_t tempVoltageMeas1;
+
+  <bb 2> :
+  tempVoltageMeas1 = 0;
+  tempVoltageMeas2 = 0;
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[i].powerMeas.vBus1;
+  _2 = (long unsigned int) _1;
+  tempVoltageMeas1 = tempVoltageMeas1 + _2;
+  _3 = CNV_powercoreUnitTable[i].powerMeas.vBus2;
+  _4 = (long unsigned int) _3;
+  tempVoltageMeas2 = tempVoltageMeas2 + _4;
+  i = i + 1;
+
+  <bb 4> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  tempVoltageMeas1 = tempVoltageMeas1 / 2;
+  tempVoltageMeas2 = tempVoltageMeas2 / 2;
+  _5 = PWB_measures.Hv_Voltage;
+  _6 = (short unsigned int) _5;
+  COM_powerMeasures.uBusHv = _6;
+  _7 = PWB_measures.Lv_Voltage;
+  _8 = (short unsigned int) _7;
+  COM_powerMeasures.uBusLv = _8;
+  _9 = (short unsigned int) tempVoltageMeas1;
+  COM_powerMeasures.uBusHvAux = _9;
+  return;
+
+}
+
+
+com_ComposeTemperatureMeasures ()
+{
+  uint32_t tempHvTemp;
+  uint32_t tempTempCometi2;
+  uint32_t tempTempCometi1;
+
+  <bb 2> :
+  tempTempCometi1 = 0;
+  tempTempCometi2 = 0;
+  _1 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  tempTempCometi1 = (uint32_t) _1;
+  _2 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  tempTempCometi2 = (uint32_t) _2;
+  tempHvTemp = 0;
+  _3 = PWB_measures.Hv_Temp;
+  tempHvTemp = _3 + 50;
+  tempHvTemp = tempHvTemp / 10;
+  _4 = (unsigned char) tempHvTemp;
+  COM_tempMeasures.tempHvCoupler = _4;
+  _5 = (unsigned char) tempTempCometi1;
+  _6 = _5 + 50;
+  COM_tempMeasures.temp1Cometi = _6;
+  _7 = (unsigned char) tempTempCometi2;
+  _8 = _7 + 50;
+  COM_tempMeasures.temp2Cometi = _8;
+  ACT_tempSeverity.3_9 = ACT_tempSeverity;
+  COM_tempMeasures.tempNotif = ACT_tempSeverity.3_9;
+  return;
+
+}
+
+
+com_ComposePowerMeasures ()
+{
+  size_t i;
+  uint32_t tempPowerMeasure2;
+  uint32_t tempPowerMeasure1;
+
+  <bb 2> :
+  tempPowerMeasure1 = 0;
+  tempPowerMeasure2 = 0;
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[i].powerMeas.pBus1;
+  tempPowerMeasure1 = tempPowerMeasure1 + _1;
+  _2 = CNV_powercoreUnitTable[i].powerMeas.pBus2;
+  tempPowerMeasure2 = tempPowerMeasure2 + _2;
+  i = i + 1;
+
+  <bb 4> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  COM_powerMeasures.pBusHv = tempPowerMeasure1;
+  COM_powerMeasures.pBusLv = tempPowerMeasure2;
+  return;
+
+}
+
+
+com_ComposeCurrentMeasures ()
+{
+  size_t i;
+  uint32_t tempIBusHv;
+  const uint16_t currentOffset;
+  uint32_t tempCurrentMeasure2;
+  uint32_t tempCurrentMeasure1;
+
+  <bb 2> :
+  tempCurrentMeasure1 = 0;
+  tempCurrentMeasure2 = 0;
+  currentOffset = 32768;
+  _1 = (long unsigned int) currentOffset;
+  tempCurrentMeasure1 = tempCurrentMeasure1 + _1;
+  _2 = (long unsigned int) currentOffset;
+  tempCurrentMeasure2 = tempCurrentMeasure2 + _2;
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = CNV_powercoreUnitTable[i].powerMeas.iBus1;
+  _4 = (long unsigned int) _3;
+  tempCurrentMeasure1 = tempCurrentMeasure1 + _4;
+  _5 = CNV_powercoreUnitTable[i].powerMeas.iBus2;
+  _6 = (long unsigned int) _5;
+  tempCurrentMeasure2 = tempCurrentMeasure2 + _6;
+  i = i + 1;
+
+  <bb 4> :
+  if (i <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  tempIBusHv = 0;
+  tempIBusHv = PWB_measures.Hv_Current;
+  _7 = (short unsigned int) tempIBusHv;
+  COM_powerMeasures.iBusHv = _7;
+  _8 = (short unsigned int) tempCurrentMeasure2;
+  COM_powerMeasures.iBusLv = _8;
+  return;
+
+}
+
+
+com_UpdatePbitResult ()
+{
+  <bb 2> :
+  _1 = PAR_paramConfig[0].realVal.unsignedVal;
+  COM_pbitResultsInfo.softwareVersion = _1;
+  _2 = PWB_Flags.resultPBit;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = CTB_Flags.resultPBit;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  COM_pbitResultsInfo.pbitStatus = 2;
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+  _4 = PWB_Flags.status.flags.pbitDone;
+  _5 = ~_4;
+  if (_5 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _6 = CTB_Flags.status.flags.pbitDone;
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  COM_pbitResultsInfo.pbitStatus = 1;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  _8 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _9 = _8 & 1;
+  if (_9 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  _10 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.status.flags);
+  _11 = _10 & 1;
+  if (_11 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  COM_pbitResultsInfo.pbitStatus = 3;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  COM_pbitResultsInfo.pbitStatus = 0;
+
+  <bb 12> :
+  _12 = PWB_Flags.faults.flags.hvRelayNok;
+  _13 = (<unnamed type>) _12;
+  COM_pbitResultsInfo.hvCouplerStatus = _13;
+  _14 = PWB_Flags.faults.flags.lvRelayNok;
+  _15 = (<unnamed type>) _14;
+  COM_pbitResultsInfo.lvPrechargeStatus = _15;
+  _16 = CTB_Flags.dsiResults.all;
+  _17 = ~_16;
+  COM_pbitResultsInfo.dsioStatus = _17;
+  return;
+
+}
+
+
+com_UpdateMeasures ()
+{
+  <bb 2> :
+  com_ComposeCurrentMeasures ();
+  com_ComposePowerMeasures ();
+  com_ComposeTemperatureMeasures ();
+  com_ComposeVoltageMeasures ();
+  com_ComposeFaults ();
+  com_ComposeControlStatusInfo ();
+  return;
+
+}
+
+
+com_isInternalFrameReadyToBeSent (COM_FramesControlNameE frame, boolean hasNewValues)
+{
+  COM_FrameGroupE D.8828;
+  COM_FrameGroupE frameGroup;
+  boolean check;
+  boolean D.8826;
+
+  <bb 2> :
+  check = 0;
+  frameGroup = COM_framesInternal[frame].group;
+  if (frame <= 16)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _1 = COM_framesInternal[frame].dir;
+  if (_1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  D.8828 = frameGroup + 4294967293;
+  if (D.8828 <= 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  _2 = COM_txPeriodInternal[frameGroup];
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _3 = COM_txDelayCounterInternal[frameGroup];
+  _4 = COM_framesInternal[frame].offset;
+  if (_3 == _4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  check = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  check = hasNewValues;
+
+  <bb 9> :
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L9>:
+
+  <bb 11> :
+
+  <bb 12> :
+  D.8826 = check;
+
+  <bb 13> :
+<L14>:
+  return D.8826;
+
+}
+
+
+com_isControlFrameReadyToBeSent (COM_FramesControlNameE frame, boolean hasNewValues)
+{
+  COM_FrameGroupE frameGroup;
+  boolean check;
+  boolean D.8814;
+
+  <bb 2> :
+  check = 0;
+  frameGroup = COM_framesControl[frame].group;
+  if (frame <= 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _1 = COM_framesControl[frame].dir;
+  if (_1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  switch (frameGroup) <default: <L11> [INV], case 1 ... 2: <L2> [INV], case 5 ... 6: <L2> [INV]>
+
+  <bb 5> :
+<L2>:
+  _2 = COM_txPeriodControl[frameGroup];
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _3 = COM_txDelayCounterControl[frameGroup];
+  _4 = COM_framesControl[frame].offset;
+  if (_3 == _4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  check = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  check = hasNewValues;
+
+  <bb 9> :
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L11>:
+
+  <bb 11> :
+
+  <bb 12> :
+  D.8814 = check;
+
+  <bb 13> :
+<L16>:
+  return D.8814;
+
+}
+
+
+com_ManageInternalTx ()
+{
+  uint32_t i;
+
+  <bb 2> :
+  _1 = com_isInternalFrameReadyToBeSent (0, 0);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  _2 = VIEW_CONVERT_EXPR<unsigned char>(CNV_flags.moduleFlags.status.flags);
+  _3 = _2 & 64;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65534, 65534);
+  CBU_SendInternalDisableAlarmsRequest (1, 65534, 65534);
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _4 = VIEW_CONVERT_EXPR<unsigned char>(CNV_flags.moduleFlags.status.flags);
+  _5 = _4 & 32;
+  if (_5 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65531, 65531);
+  CBU_SendInternalDisableAlarmsRequest (1, 65531, 65531);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65535, 65535);
+  CBU_SendInternalDisableAlarmsRequest (1, 65535, 65535);
+
+  <bb 8> :
+  CBU_SendInternalControlRequestFrameCOMETiUnits (0);
+
+  <bb 9> :
+  _6 = com_isInternalFrameReadyToBeSent (2, 0);
+  if (_6 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  CBU_SendInternalControlRequestFrameCOMETiUnits (1);
+
+  <bb 11> :
+  _7 = com_isInternalFrameReadyToBeSent (1, 0);
+  if (_7 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  CBU_SendInternalModeRequestFrameCOMETiUnits (0);
+
+  <bb 13> :
+  _8 = com_isInternalFrameReadyToBeSent (3, 0);
+  if (_8 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  CBU_SendInternalModeRequestFrameCOMETiUnits (1);
+
+  <bb 15> :
+  i = 0;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  _9 = COM_txDelayCounterInternal[i];
+  _10 = _9 + 1;
+  COM_txDelayCounterInternal[i] = _10;
+  _11 = COM_txDelayCounterInternal[i];
+  _12 = COM_txPeriodInternal[i];
+  _13 = _11 % _12;
+  COM_txDelayCounterInternal[i] = _13;
+  i = i + 1;
+
+  <bb 17> :
+  if (i <= 6)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  return;
+
+}
+
+
+com_ManageControlTx ()
+{
+  uint32_t i;
+
+  <bb 2> :
+  _1 = com_isControlFrameReadyToBeSent (0, 0);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CBU_SendControlCurrentMeasuresFrame ();
+
+  <bb 4> :
+  _2 = com_isControlFrameReadyToBeSent (1, 0);
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CBU_SendControlPowerMeasuresFrame ();
+
+  <bb 6> :
+  _3 = com_isControlFrameReadyToBeSent (2, 0);
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_SendControlTemperatureMeasuresFrame ();
+
+  <bb 8> :
+  _4 = com_isControlFrameReadyToBeSent (3, 0);
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CBU_SendControlVoltageMeasuresFrame ();
+
+  <bb 10> :
+  _5 = COM_controlStatusInfo.hasNewValues;
+  _6 = com_isControlFrameReadyToBeSent (4, _5);
+  if (_6 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CBU_SendControlControlStatusFrame ();
+
+  <bb 12> :
+  _7 = COM_errorsAndWarnings.hasNewValuesErr;
+  _8 = com_isControlFrameReadyToBeSent (5, _7);
+  if (_8 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  CBU_SendControlErrorsWarningsFrame ();
+
+  <bb 14> :
+  FSM_mode.2_9 = FSM_mode;
+  if (FSM_mode.2_9 == 1)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  _10 = com_isControlFrameReadyToBeSent (6, 0);
+  if (_10 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  CBU_SendControlPbitResultsFrame ();
+
+  <bb 17> :
+  i = 0;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  _11 = COM_txDelayCounterControl[i];
+  _12 = _11 + 1;
+  COM_txDelayCounterControl[i] = _12;
+  _13 = COM_txDelayCounterControl[i];
+  _14 = COM_txPeriodControl[i];
+  _15 = _13 % _14;
+  COM_txDelayCounterControl[i] = _15;
+  i = i + 1;
+
+  <bb 19> :
+  if (i <= 6)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  return;
+
+}
+
+
+com_ManageTx ()
+{
+  <bb 2> :
+  com_ManageControlTx ();
+  com_ManageInternalTx ();
+  COM_UpdatePeriodParams ();
+  FSM_mode.1_1 = FSM_mode;
+  if (FSM_mode.1_1 == 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CBU_SendControlControlStatusFrame ();
+  Can_SetControllerMode (0, 2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Can_SetControllerMode (0, 1);
+
+  <bb 5> :
+  return;
+
+}
+
+
+COM_TxRequestedTasks ()
+{
+  uint32_t parReadValue;
+  uint32_t parValueLocal;
+  uint16_t parIndex;
+  boolean status;
+
+  <bb 2> :
+  status = 0;
+  parIndex = PAR_paramReq.index;
+  parValueLocal = PAR_paramReq.value.unsignedVal;
+  parReadValue = PAR_paramReq.readValue.unsignedVal;
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(DBG_Flags.proccesingFlags);
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  FSM_mode.0_3 = FSM_mode;
+  if (FSM_mode.0_3 == 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CBU_SendMaintenanceEquipmentTestResponse ();
+
+  <bb 5> :
+  DBG_Flags.proccesingFlags.processed = 0;
+  _4 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  COM_debugTestReq.relaySwitchTestRequest = 0;
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+
+  <bb 7> :
+  _6 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _7 = _6 & 2;
+  if (_7 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  COM_debugTestReq.hvMeasuresTestRequest = 0;
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  COM_debugTestReq.hmiMeasure = 0;
+  COM_debugTestReq.rawMeasure = 0;
+
+  <bb 9> :
+  _8 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _9 = _8 & 4;
+  if (_9 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  COM_debugTestReq.lvMeasuresTestRequest = 0;
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  COM_debugTestReq.hmiMeasure = 0;
+  COM_debugTestReq.rawMeasure = 0;
+
+  <bb 11> :
+  _10 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _11 = _10 & 8;
+  if (_11 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  COM_debugTestReq.discreteIosTestRequest = 0;
+  ctb_DSI_TestResult.HPP_1_TestResult = 0;
+  ctb_DSI_TestResult.HPP_2_TestResult = 0;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = 0;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = 0;
+
+  <bb 13> :
+  _12 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _13 = _12 & 16;
+  if (_13 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  COM_debugTestReq.ledsTestRequest = 0;
+
+  <bb 15> :
+  _14 = PAR_paramReq.lastError;
+  if (_14 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  status = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  status = 0;
+
+  <bb 18> :
+  _15 = BIT_FIELD_REF <PAR_paramReq, 8, 0>;
+  _16 = _15 & 1;
+  if (_16 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 19> :
+  _17 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _18 = _17 & 1;
+  if (_18 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  CBU_SendMaintenanceParameterResponse (parIndex, parReadValue, status);
+  COM_paramReq.readRequest = 0;
+  goto <bb 25>; [INV]
+
+  <bb 21> :
+  _19 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _20 = _19 & 2;
+  if (_20 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  CBU_SendMaintenanceParameterResponse (parIndex, parValueLocal, status);
+  COM_paramReq.changeRequest = 0;
+  goto <bb 25>; [INV]
+
+  <bb 23> :
+  _21 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _22 = _21 & 4;
+  if (_22 != 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  CBU_SendMaintenanceParameterResponse (65535, 0, status);
+  COM_paramReq.saveRequest = 0;
+
+  <bb 25> :
+  return;
+
+}
+
+
+COM_TxScheduledTasks ()
+{
+  <bb 2> :
+  com_UpdateMeasures ();
+  CBU_CheckErrors ();
+  com_UpdatePbitResult ();
+  CNV_ManageInternalErrorResetRequestFrame ();
+  com_ManageTx ();
+  return;
+
+}
+
+

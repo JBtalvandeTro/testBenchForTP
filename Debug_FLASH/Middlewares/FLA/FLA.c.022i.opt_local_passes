@@ -1,0 +1,411 @@
+fla_CacheSetup ()
+{
+  struct LMEM_Type * _1;
+  long unsigned int _2;
+  struct LMEM_Type * _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  _1 = 3758628864B;
+  _2 ={v} _1->PCCRMR;
+  _3 = 3758628864B;
+  _4 = _2 & 4093640703;
+  _3->PCCRMR ={v} _4;
+  return;
+
+}
+
+
+fla_ExecuteJob ()
+{
+  MemIf_JobResultType result;
+  MemIf_StatusType memStatus;
+  FLA_StatusE retStatus;
+  FLA_StatusE D.6291;
+  FLA_StatusE _12;
+
+  <bb 2> :
+  retStatus_3 = 1;
+
+  <bb 3> :
+  Fls_MainFunction ();
+  memStatus_7 = Fls_GetStatus ();
+  if (memStatus_7 != 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  result_9 = Fls_GetJobResult ();
+  if (result_9 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  retStatus_11 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  retStatus_10 = 1;
+
+  <bb 7> :
+  # retStatus_1 = PHI <retStatus_11(5), retStatus_10(6)>
+  _12 = retStatus_1;
+
+  <bb 8> :
+<L5>:
+  return _12;
+
+}
+
+
+fla_CheckAddressRange (FLA_PartitionIdE partition, uint32_t addressOffset, uint32_t size)
+{
+  uint32_t endAdd;
+  uint32_t startAdd;
+  FLA_StatusE check;
+  FLA_StatusE D.6286;
+  long unsigned int _1;
+  long unsigned int _2;
+  FLA_StatusE _14;
+
+  <bb 2> :
+  check_4 = 0;
+  check_8 = fla_CheckPartitionId (partition_6(D));
+  if (check_8 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  startAdd_9 = fla_PartitionsTable[partition_6(D)].startAddress;
+  endAdd_10 = fla_PartitionsTable[partition_6(D)].endAddress;
+  _1 = startAdd_9 + addressOffset_11(D);
+  _2 = size_12(D) + _1;
+  if (endAdd_10 < _2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  check_13 = 1;
+
+  <bb 5> :
+  # check_3 = PHI <check_8(2), check_8(3), check_13(4)>
+  _14 = check_3;
+
+  <bb 6> :
+<L6>:
+  return _14;
+
+}
+
+
+fla_CheckPartitionId (FLA_PartitionIdE partition)
+{
+  FLA_StatusE check;
+  FLA_StatusE D.6278;
+  FLA_StatusE _5;
+
+  <bb 2> :
+  check_2 = 0;
+  if (partition_3(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  check_4 = 1;
+
+  <bb 4> :
+  # check_1 = PHI <check_2(2), check_4(3)>
+  _5 = check_1;
+
+  <bb 5> :
+<L2>:
+  return _5;
+
+}
+
+
+FLA_Read (FLA_PartitionIdE partition, uint32_t offset, uint8 * dataBuffer, uint32_t size)
+{
+  Std_ReturnType status;
+  uint32_t startAdd;
+  FLA_StatusE retStatus;
+  FLA_StatusE D.6274;
+  _Bool FLA_Initialized.3_1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  FLA_StatusE _18;
+
+  <bb 2> :
+  retStatus_6 = 1;
+  FLA_Initialized.3_1 = FLA_Initialized;
+  if (FLA_Initialized.3_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _2 = fla_CheckAddressRange (partition_8(D), offset_9(D), size_10(D));
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _3 = fla_PartitionsTable[partition_8(D)].startAddress;
+  startAdd_12 = offset_9(D) + _3;
+  status_15 = Fls_Read (startAdd_12, dataBuffer_13(D), size_10(D));
+  if (status_15 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  retStatus_17 = fla_ExecuteJob ();
+
+  <bb 6> :
+  # retStatus_4 = PHI <retStatus_6(2), retStatus_17(5), retStatus_6(3), retStatus_6(4)>
+  _18 = retStatus_4;
+
+  <bb 7> :
+<L9>:
+  return _18;
+
+}
+
+
+FLA_Write (FLA_PartitionIdE partition, uint32_t offset, const uint8 * dataBuffer, uint32_t size)
+{
+  Std_ReturnType status;
+  uint32_t startAdd;
+  FLA_StatusE retStatus;
+  FLA_StatusE D.6263;
+  _Bool FLA_Initialized.2_1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  FLA_StatusE _18;
+
+  <bb 2> :
+  retStatus_6 = 1;
+  FLA_Initialized.2_1 = FLA_Initialized;
+  if (FLA_Initialized.2_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _2 = fla_CheckAddressRange (partition_8(D), offset_9(D), size_10(D));
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _3 = fla_PartitionsTable[partition_8(D)].startAddress;
+  startAdd_12 = offset_9(D) + _3;
+  status_15 = Fls_Write (startAdd_12, dataBuffer_13(D), size_10(D));
+  if (status_15 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  retStatus_17 = fla_ExecuteJob ();
+
+  <bb 6> :
+  # retStatus_4 = PHI <retStatus_6(2), retStatus_17(5), retStatus_6(3), retStatus_6(4)>
+  _18 = retStatus_4;
+
+  <bb 7> :
+<L9>:
+  return _18;
+
+}
+
+
+FLA_Erase (FLA_PartitionIdE partition)
+{
+  FLA_StatusE check;
+  Std_ReturnType status;
+  uint32_t size;
+  uint32_t startAdd;
+  FLA_StatusE retStatus;
+  FLA_StatusE D.6252;
+  _Bool FLA_Initialized.1_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  FLA_StatusE _17;
+
+  <bb 2> :
+  retStatus_6 = 1;
+  FLA_Initialized.1_1 = FLA_Initialized;
+  if (FLA_Initialized.1_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  check_10 = fla_CheckPartitionId (partition_8(D));
+  if (check_10 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  startAdd_11 = fla_PartitionsTable[partition_8(D)].startAddress;
+  _2 = fla_PartitionsTable[partition_8(D)].endAddress;
+  _3 = _2 - startAdd_11;
+  size_12 = _3 + 1;
+  status_14 = Fls_Erase (startAdd_11, size_12);
+  if (status_14 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  retStatus_16 = fla_ExecuteJob ();
+
+  <bb 6> :
+  # retStatus_4 = PHI <retStatus_6(2), retStatus_16(5), retStatus_6(3), retStatus_6(4)>
+  _17 = retStatus_4;
+
+  <bb 7> :
+<L9>:
+  return _17;
+
+}
+
+
+Fla_GetPartitionSize (FLA_PartitionIdE partition, uint32_t * size)
+{
+  FLA_StatusE check;
+  FLA_StatusE D.6241;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  FLA_StatusE _12;
+
+  <bb 2> :
+  check_9 = fla_CheckPartitionId (partition_7(D));
+  if (check_9 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = fla_PartitionsTable[partition_7(D)].endAddress;
+  _2 = fla_PartitionsTable[partition_7(D)].startAddress;
+  _3 = _1 - _2;
+  _4 = _3 + 1;
+  *size_10(D) = _4;
+
+  <bb 4> :
+  _12 = check_9;
+
+  <bb 5> :
+<L2>:
+  return _12;
+
+}
+
+
+FLA_Deinit ()
+{
+  <bb 2> :
+  FLA_Initialized = 0;
+  return;
+
+}
+
+
+FLA_Init ()
+{
+  const Fls_AddressType * endAdresses;
+  MemIf_StatusType status;
+  uint8_t i;
+  long unsigned int _1;
+  long unsigned int _2;
+  sizetype _3;
+  sizetype _4;
+  sizetype _5;
+  const Fls_AddressType * _6;
+  long unsigned int _7;
+  int _8;
+  long unsigned int _9;
+  unsigned int _10;
+  unsigned int _11;
+  const Fls_AddressType * _12;
+  int _13;
+  long unsigned int _14;
+  unsigned char i.0_15;
+
+  <bb 2> :
+  endAdresses_20 = Fls_Config_Init.paSectorEndAddr;
+  FLA_Initialized = 0;
+  _1 = Fls_Config_Init.u32SectorCount;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  if (endAdresses_20 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 4> :
+  fla_CacheSetup ();
+  fla_PartitionsTable[0].startAddress = 0;
+  _2 = *endAdresses_20;
+  fla_PartitionsTable[0].endAddress = _2;
+  i_25 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (sizetype) i_16;
+  _4 = _3 + 1073741823;
+  _5 = _4 * 4;
+  _6 = endAdresses_20 + _5;
+  _7 = *_6;
+  _8 = (int) i_16;
+  _9 = _7 + 1;
+  fla_PartitionsTable[_8].startAddress = _9;
+  _10 = (unsigned int) i_16;
+  _11 = _10 * 4;
+  _12 = endAdresses_20 + _11;
+  _13 = (int) i_16;
+  _14 = *_12;
+  fla_PartitionsTable[_13].endAddress = _14;
+  i.0_15 = i_16;
+  i_32 = i.0_15 + 1;
+
+  <bb 6> :
+  # i_16 = PHI <i_25(4), i_32(5)>
+  if (i_16 <= 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  Fls_Init (&Fls_Config_Init);
+  status_28 = Fls_GetStatus ();
+  if (status_28 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  FLA_Initialized = 1;
+
+  <bb 9> :
+  return;
+
+}
+
+

@@ -1,0 +1,14 @@
+Crc_Ip_Lib.h:147:21:Crc_Ip_LibBitSwap8U	8	static
+Crc_Ip_Lib.h:159:22:Crc_Ip_LibBitSwap16U	24	static
+Crc_Ip_Lib.h:174:22:Crc_Ip_LibBitSwap32U	48	static
+Crc_Ip_Lib.h:193:22:Crc_Ip_LibBitSwap64U	192	static
+Crc_Ip_Lib.h:220:22:Crc_Ip_LibByteSwap64U	128	static
+Crc_Ip_Lib.h:235:22:Crc_Ip_LibByteSwap32U	8	static
+Crc_Ip_Lib.h:248:22:Crc_Ip_LibByteSwap16U	16	static
+Crc_Ip_Lib.h:261:22:Crc_Ip_LibTranspose	32	static
+Crc_Ip_Devassert.h:110:24:Crc_Ip_DevAssert	8	static
+Crc_Ip_Lookup_Tables.c:442:14:Crc_TableCalculateCRC8	48	static
+Crc_Ip_Lookup_Tables.c:503:15:Crc_TableCalculateCRC16	48	static
+Crc_Ip_Lookup_Tables.c:568:15:Crc_TableCalculateCRC32	48	static
+Crc_Ip_Lookup_Tables.c:632:15:Crc_TableCalculateCRC64	88	static
+Crc_Ip_Lookup_Tables.c:692:8:Crc_Ip_LookupTablesCalculate	40	static

@@ -1,0 +1,1660 @@
+Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol.5812/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR.5801/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR.5785/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR.5774/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: fpCrc_Ip_SetChannelProtocol.5812/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR.5801/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR.5785/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR.5774/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: available
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_GetChannelResult/31 (read)
+  Availability: available
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_Init/28 (write)Crc_Ip_SetChannelConfig/29 (read)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: available
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 Crc_Ip_LibByteSwap16U/8 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+Crc_Ip_GetChannelResult (const uint32 LogicChannel)
+{
+  uint64 LocResult;
+  uint64 D.5975;
+  _Bool _1;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.19_2;
+  long unsigned int _3;
+  const struct Crc_Ip_LogicChannelType * const * _4;
+  const struct Crc_Ip_LogicChannelType * _5;
+  <unnamed type> _6;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.20_7;
+  long unsigned int _8;
+  const struct Crc_Ip_LogicChannelType * const * _9;
+  const struct Crc_Ip_LogicChannelType * _10;
+  unsigned char _11;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.21_12;
+  long unsigned int _13;
+  const struct Crc_Ip_LogicChannelType * const * _14;
+  const struct Crc_Ip_LogicChannelType * _15;
+  unsigned char _16;
+  uint64 _26;
+
+  <bb 2> :
+  LocResult_19 = 0;
+  _1 = LogicChannel_20(D) <= 1;
+  Crc_Ip_DevAssert (_1);
+  s_ppaxLogicChannelInit.19_2 = s_ppaxLogicChannelInit;
+  _3 = LogicChannel_20(D) * 4;
+  _4 = s_ppaxLogicChannelInit.19_2 + _3;
+  _5 = *_4;
+  _6 = _5->CalculationType;
+  switch (_6) <default: <L3> [INV], case 0 ... 1: <L0> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  LocResult_25 = s_axLogicChannelState[LogicChannel_20(D)].CrcResult;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L2>:
+  s_ppaxLogicChannelInit.20_7 = s_ppaxLogicChannelInit;
+  _8 = LogicChannel_20(D) * 4;
+  _9 = s_ppaxLogicChannelInit.20_7 + _8;
+  _10 = *_9;
+  _11 = _10->HwInst;
+  s_ppaxLogicChannelInit.21_12 = s_ppaxLogicChannelInit;
+  _13 = LogicChannel_20(D) * 4;
+  _14 = s_ppaxLogicChannelInit.21_12 + _13;
+  _15 = *_14;
+  _16 = _15->HwChannel;
+  LocResult_24 = Crc_Ip_HwGetLocResult (_11, _16);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L3>:
+
+  <bb 6> :
+  # LocResult_17 = PHI <LocResult_25(3), LocResult_24(4), LocResult_19(5)>
+  _26 = LocResult_17;
+
+  <bb 7> :
+<L5>:
+  return _26;
+
+}
+
+
+Crc_Ip_SetChannelCalculate (const uint32 LogicChannel, const uint8 * DataPtr, const uint32 Length, const uint64 StartValue, const boolean IsFirstCall)
+{
+  const struct Crc_Ip_CrcProtocolInfoType * pxLocProtocolInfo;
+  uint64 LocInitialSeedStartValue;
+  uint64 LocResult;
+  uint64 D.5932;
+  _Bool _1;
+  _Bool _2;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.16_3;
+  long unsigned int _4;
+  const struct Crc_Ip_LogicChannelType * const * _5;
+  const struct Crc_Ip_LogicChannelType * _6;
+  <unnamed type> _7;
+  <unnamed type> _8;
+  <unnamed type> _9;
+  _Bool _10;
+  <unnamed type> _11;
+  unsigned char _12;
+  _Bool _13;
+  _Bool _14;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.17_15;
+  long unsigned int _16;
+  const struct Crc_Ip_LogicChannelType * const * _17;
+  const struct Crc_Ip_LogicChannelType * _18;
+  <unnamed type> _19;
+  struct Crc_Ip_LogicChannelStateType * _20;
+  struct Crc_Ip_LogicChannelStateType * _21;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.18_22;
+  long unsigned int _23;
+  const struct Crc_Ip_LogicChannelType * const * _24;
+  const struct Crc_Ip_LogicChannelType * _25;
+  uint64 _56;
+
+  <bb 2> :
+  LocResult_32 = 0;
+  LocInitialSeedStartValue_34 = StartValue_33(D);
+  pxLocProtocolInfo_37 = s_axLogicChannelState[LogicChannel_36(D)].CrcProtocolInfo;
+  _1 = LogicChannel_36(D) <= 1;
+  Crc_Ip_DevAssert (_1);
+  _2 = DataPtr_39(D) != 0B;
+  Crc_Ip_DevAssert (_2);
+  s_ppaxLogicChannelInit.16_3 = s_ppaxLogicChannelInit;
+  _4 = LogicChannel_36(D) * 4;
+  _5 = s_ppaxLogicChannelInit.16_3 + _4;
+  _6 = *_5;
+  _7 = _6->CalculationType;
+  _8 = s_axLogicChannelState[LogicChannel_36(D)].Protocol;
+  Static_Crc_Ip_ValidateProtocol (_7, _8);
+  if (IsFirstCall_42(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _9 = s_axLogicChannelState[LogicChannel_36(D)].Protocol;
+  if (_9 <= 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  LocInitialSeedStartValue_46 = StartValue_33(D);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L5>:
+  LocInitialSeedStartValue_47 = pxLocProtocolInfo_37->InitialSeedValue;
+
+  <bb 6> :
+  # LocInitialSeedStartValue_27 = PHI <LocInitialSeedStartValue_46(4), LocInitialSeedStartValue_47(5)>
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _10 = pxLocProtocolInfo_37->InverseEnable;
+  if (_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  LocInitialSeedStartValue_43 = ~StartValue_33(D);
+
+  <bb 9> :
+  # LocInitialSeedStartValue_28 = PHI <LocInitialSeedStartValue_34(7), LocInitialSeedStartValue_43(8)>
+  _11 = pxLocProtocolInfo_37->Width;
+  _12 = (unsigned char) _11;
+  _13 = pxLocProtocolInfo_37->ReadBitSwap;
+  _14 = pxLocProtocolInfo_37->ReadByteSwap;
+  LocInitialSeedStartValue_45 = Crc_Ip_LibTranspose (LocInitialSeedStartValue_28, _12, _13, _14);
+
+  <bb 10> :
+  # LocInitialSeedStartValue_29 = PHI <LocInitialSeedStartValue_27(6), LocInitialSeedStartValue_45(9)>
+  s_ppaxLogicChannelInit.17_15 = s_ppaxLogicChannelInit;
+  _16 = LogicChannel_36(D) * 4;
+  _17 = s_ppaxLogicChannelInit.17_15 + _16;
+  _18 = *_17;
+  _19 = _18->CalculationType;
+  switch (_19) <default: <L14> [INV], case 0: <L12> [INV], case 1: <L11> [INV], case 2: <L13> [INV]>
+
+  <bb 11> :
+<L11>:
+  _20 = &s_axLogicChannelState[LogicChannel_36(D)];
+  LocResult_52 = Crc_Ip_LookupTablesCalculate (_20, DataPtr_39(D), Length_48(D), LocInitialSeedStartValue_29);
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+<L12>:
+  _21 = &s_axLogicChannelState[LogicChannel_36(D)];
+  LocResult_54 = Crc_Ip_SwCalculate (_21, DataPtr_39(D), Length_48(D), LocInitialSeedStartValue_29);
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+<L13>:
+  s_ppaxLogicChannelInit.18_22 = s_ppaxLogicChannelInit;
+  _23 = LogicChannel_36(D) * 4;
+  _24 = s_ppaxLogicChannelInit.18_22 + _23;
+  _25 = *_24;
+  LocResult_50 = Crc_Ip_HwCalculate (_25, DataPtr_39(D), Length_48(D), LocInitialSeedStartValue_29);
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+<L14>:
+
+  <bb 15> :
+  # LocResult_26 = PHI <LocResult_52(11), LocResult_54(12), LocResult_50(13), LocResult_32(14)>
+  s_axLogicChannelState[LogicChannel_36(D)].CrcResult = LocResult_26;
+  _56 = LocResult_26;
+
+  <bb 16> :
+<L16>:
+  return _56;
+
+}
+
+
+Crc_Ip_SetChannelConfig (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  const struct Crc_Ip_LogicChannelConfigType * LogicChannelConfig;
+  _Bool _1;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.14_2;
+  long unsigned int _3;
+  const struct Crc_Ip_LogicChannelType * const * _4;
+  const struct Crc_Ip_LogicChannelType * _5;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.15_6;
+  long unsigned int _7;
+  const struct Crc_Ip_LogicChannelType * const * _8;
+  const struct Crc_Ip_LogicChannelType * _9;
+  <unnamed type> _10;
+  <unnamed type> _11;
+
+  <bb 2> :
+  _1 = LogicChannel_13(D) <= 1;
+  Crc_Ip_DevAssert (_1);
+  if (pxLocLogicChannelConfig_16(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  LogicChannelConfig_18 = pxLocLogicChannelConfig_16(D);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_ppaxLogicChannelInit.14_2 = s_ppaxLogicChannelInit;
+  _3 = LogicChannel_13(D) * 4;
+  _4 = s_ppaxLogicChannelInit.14_2 + _3;
+  _5 = *_4;
+  LogicChannelConfig_17 = _5->LogicChannelConfig;
+
+  <bb 5> :
+  # LogicChannelConfig_12 = PHI <LogicChannelConfig_18(3), LogicChannelConfig_17(4)>
+  s_ppaxLogicChannelInit.15_6 = s_ppaxLogicChannelInit;
+  _7 = LogicChannel_13(D) * 4;
+  _8 = s_ppaxLogicChannelInit.15_6 + _7;
+  _9 = *_8;
+  _10 = _9->CalculationType;
+  _11 = LogicChannelConfig_12->Protocol;
+  Static_Crc_Ip_ValidateProtocol (_10, _11);
+  Static_Crc_Ip_SetChannelState (LogicChannel_13(D), LogicChannelConfig_12);
+  return;
+
+}
+
+
+Crc_Ip_Init (const struct Crc_Ip_InitType * const pxCrcIpInit)
+{
+  uint32 LocChannelIndex;
+  _Bool _1;
+  const struct Crc_Ip_LogicChannelType * const * _2;
+  _Bool _3;
+  const struct Crc_Ip_LogicChannelType * const * _4;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.12_5;
+  long unsigned int _6;
+  const struct Crc_Ip_LogicChannelType * const * _7;
+  const struct Crc_Ip_LogicChannelType * _8;
+  struct Crc_Ip_LogicChannelConfigType * _9;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.13_10;
+  long unsigned int _11;
+  const struct Crc_Ip_LogicChannelType * const * _12;
+  const struct Crc_Ip_LogicChannelType * _13;
+  struct Crc_Ip_LogicChannelConfigType * _14;
+
+  <bb 2> :
+  LocChannelIndex_18 = 0;
+  _1 = pxCrcIpInit_19(D) != 0B;
+  Crc_Ip_DevAssert (_1);
+  _2 = pxCrcIpInit_19(D)->LogicChannelConfigList;
+  _3 = _2 != 0B;
+  Crc_Ip_DevAssert (_3);
+  _4 = pxCrcIpInit_19(D)->LogicChannelConfigList;
+  s_ppaxLogicChannelInit = _4;
+  LocChannelIndex_24 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  s_ppaxLogicChannelInit.12_5 = s_ppaxLogicChannelInit;
+  _6 = LocChannelIndex_15 * 4;
+  _7 = s_ppaxLogicChannelInit.12_5 + _6;
+  _8 = *_7;
+  _9 = _8->LogicChannelConfig;
+  if (_9 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_ppaxLogicChannelInit.13_10 = s_ppaxLogicChannelInit;
+  _11 = LocChannelIndex_15 * 4;
+  _12 = s_ppaxLogicChannelInit.13_10 + _11;
+  _13 = *_12;
+  _14 = _13->LogicChannelConfig;
+  Static_Crc_Ip_SetChannelState (LocChannelIndex_15, _14);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 6> :
+  LocChannelIndex_27 = LocChannelIndex_15 + 1;
+
+  <bb 7> :
+  # LocChannelIndex_15 = PHI <LocChannelIndex_24(2), LocChannelIndex_27(6)>
+  if (LocChannelIndex_15 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Static_Crc_Ip_ValidateProtocol (const Crc_Ip_CalculationType CalculationType, const Crc_Ip_ProtocolType Protocol)
+{
+  uint8 Tmp;
+  uint8 iftmp.11;
+  uint8 iftmp.10;
+  uint8 iftmp.9;
+  uint8 iftmp.8;
+  uint8 iftmp.7;
+  uint8 iftmp.6;
+  uint8 iftmp.6_1;
+  uint8 iftmp.7_2;
+  uint8 iftmp.8_3;
+  uint8 iftmp.9_4;
+  uint8 iftmp.10_5;
+  uint8 iftmp.11_6;
+  uint8 iftmp.6_12;
+  uint8 iftmp.6_13;
+  uint8 iftmp.7_15;
+  uint8 iftmp.7_16;
+  uint8 iftmp.8_18;
+  uint8 iftmp.8_19;
+  uint8 iftmp.9_21;
+  uint8 iftmp.9_22;
+  uint8 iftmp.10_24;
+  uint8 iftmp.10_25;
+  uint8 iftmp.11_27;
+  uint8 iftmp.11_28;
+
+  <bb 2> :
+  Tmp_8 = 1;
+  if (CalculationType_9(D) == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (Protocol_11(D) != 5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 4> :
+  if (Protocol_11(D) != 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 5> :
+  if (Protocol_11(D) != 7)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 6> :
+  if (Protocol_11(D) != 6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 7> :
+  if (Protocol_11(D) != 9)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 8> :
+  if (Protocol_11(D) != 8)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 9> :
+  if (Protocol_11(D) != 10)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 10> :
+  Crc_Ip_DevAssert (0);
+  goto <bb 32>; [INV]
+
+  <bb 11> :
+  if (CalculationType_9(D) == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 12> :
+  if (Protocol_11(D) != 7)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.6_13 = 1;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.6_12 = 0;
+
+  <bb 15> :
+  # iftmp.6_1 = PHI <iftmp.6_13(13), iftmp.6_12(14)>
+  Tmp_14 = iftmp.6_1 & Tmp_8;
+  if (Protocol_11(D) != 6)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.7_16 = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.7_15 = 0;
+
+  <bb 18> :
+  # iftmp.7_2 = PHI <iftmp.7_16(16), iftmp.7_15(17)>
+  Tmp_17 = iftmp.7_2 & Tmp_14;
+  if (Protocol_11(D) != 9)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  iftmp.8_19 = 1;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.8_18 = 0;
+
+  <bb 21> :
+  # iftmp.8_3 = PHI <iftmp.8_19(19), iftmp.8_18(20)>
+  Tmp_20 = iftmp.8_3 & Tmp_17;
+  if (Protocol_11(D) != 8)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  iftmp.9_22 = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  iftmp.9_21 = 0;
+
+  <bb 24> :
+  # iftmp.9_4 = PHI <iftmp.9_22(22), iftmp.9_21(23)>
+  Tmp_23 = iftmp.9_4 & Tmp_20;
+  if (Protocol_11(D) != 1)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  iftmp.10_25 = 1;
+  goto <bb 27>; [INV]
+
+  <bb 26> :
+  iftmp.10_24 = 0;
+
+  <bb 27> :
+  # iftmp.10_5 = PHI <iftmp.10_25(25), iftmp.10_24(26)>
+  Tmp_26 = iftmp.10_5 & Tmp_23;
+  if (Protocol_11(D) != 2)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  iftmp.11_28 = 1;
+  goto <bb 30>; [INV]
+
+  <bb 29> :
+  iftmp.11_27 = 0;
+
+  <bb 30> :
+  # iftmp.11_6 = PHI <iftmp.11_28(28), iftmp.11_27(29)>
+  Tmp_29 = iftmp.11_6 & Tmp_26;
+  if (Tmp_29 == 1)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 31> :
+  Crc_Ip_DevAssert (0);
+
+  <bb 32> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelState (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static void (*<T51e>) (const uint32, const struct Crc_Ip_LogicChannelConfigType *) fpCrc_Ip_SetChannelProtocol[12] = {Static_Crc_Ip_SetChannelProtocol_8BitCustom, Static_Crc_Ip_SetChannelProtocol_16BitCustom, Static_Crc_Ip_SetChannelProtocol_32BitCustom, Static_Crc_Ip_SetChannelProtocol_64BitCustom, Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar, Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar, Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar, Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar, Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar, Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar, Static_Crc_Ip_SetChannelProtocol_64BitAutosar, Static_Crc_Ip_SetChannelProtocol_Invalid};
+  <unnamed type> _1;
+  void (*<T51a>) (const uint32, const struct Crc_Ip_LogicChannelConfigType *) _2;
+  <unnamed type> _3;
+  _Bool _4;
+  <unnamed type> _5;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.3_6;
+  long unsigned int _7;
+  const struct Crc_Ip_LogicChannelType * const * _8;
+  const struct Crc_Ip_LogicChannelType * _9;
+  <unnamed type> _10;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.4_11;
+  long unsigned int _12;
+  const struct Crc_Ip_LogicChannelType * const * _13;
+  const struct Crc_Ip_LogicChannelType * _14;
+  unsigned char _15;
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.5_16;
+  long unsigned int _17;
+  const struct Crc_Ip_LogicChannelType * const * _18;
+  const struct Crc_Ip_LogicChannelType * _19;
+  unsigned char _20;
+  struct Crc_Ip_LogicChannelStateType * _21;
+
+  <bb 2> :
+  _1 = pxLocLogicChannelConfig_24(D)->Protocol;
+  _2 = fpCrc_Ip_SetChannelProtocol[_1];
+  _2 (LogicChannel_25(D), pxLocLogicChannelConfig_24(D));
+  _3 = pxLocLogicChannelConfig_24(D)->Protocol;
+  _4 = _3 <= 10;
+  Crc_Ip_DevAssert (_4);
+  _5 = pxLocLogicChannelConfig_24(D)->Protocol;
+  s_axLogicChannelState[LogicChannel_25(D)].Protocol = _5;
+  s_ppaxLogicChannelInit.3_6 = s_ppaxLogicChannelInit;
+  _7 = LogicChannel_25(D) * 4;
+  _8 = s_ppaxLogicChannelInit.3_6 + _7;
+  _9 = *_8;
+  _10 = _9->CalculationType;
+  if (_10 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_ppaxLogicChannelInit.4_11 = s_ppaxLogicChannelInit;
+  _12 = LogicChannel_25(D) * 4;
+  _13 = s_ppaxLogicChannelInit.4_11 + _12;
+  _14 = *_13;
+  _15 = _14->HwInst;
+  s_ppaxLogicChannelInit.5_16 = s_ppaxLogicChannelInit;
+  _17 = LogicChannel_25(D) * 4;
+  _18 = s_ppaxLogicChannelInit.5_16 + _17;
+  _19 = *_18;
+  _20 = _19->HwChannel;
+  _21 = &s_axLogicChannelState[LogicChannel_25(D)];
+  Crc_Ip_HwSetConfig (_15, _20, _21);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_Invalid (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Crc_Ip_DevAssert (0);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol64Bit_AUTOSAR = {.Width=3, .PolynomValue=4823603603198064275, .InitialSeedValue=18446744073709551615, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel_2(D)].CrcProtocolInfo = &s_Protocol64Bit_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_E2E_P4_AUTOSAR = {.Width=2, .PolynomValue=4104977171, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel_2(D)].CrcProtocolInfo = &s_Protocol32Bit_E2E_P4_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_ETHERNET_HARDWARE = {.Width=2, .PolynomValue=79764919, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol32Bit_ETHERNET_AUTOSAR = {.Width=2, .PolynomValue=79764919, .InitialSeedValue=4294967295, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=1};
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.1_1;
+  long unsigned int _2;
+  const struct Crc_Ip_LogicChannelType * const * _3;
+  const struct Crc_Ip_LogicChannelType * _4;
+  <unnamed type> _5;
+
+  <bb 2> :
+  s_ppaxLogicChannelInit.1_1 = s_ppaxLogicChannelInit;
+  _2 = LogicChannel_8(D) * 4;
+  _3 = s_ppaxLogicChannelInit.1_1 + _2;
+  _4 = *_3;
+  _5 = _4->CalculationType;
+  if (_5 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_axLogicChannelState[LogicChannel_8(D)].CrcProtocolInfo = &s_Protocol32Bit_ETHERNET_HARDWARE;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_axLogicChannelState[LogicChannel_8(D)].CrcProtocolInfo = &s_Protocol32Bit_ETHERNET_AUTOSAR;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_ARC_AUTOSAR = {.Width=1, .PolynomValue=32773, .InitialSeedValue=0, .WriteBitSwap=1, .WriteByteSwap=0, .ReadBitSwap=1, .ReadByteSwap=1, .InverseEnable=0};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel_2(D)].CrcProtocolInfo = &s_Protocol16Bit_ARC_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_CCITT_FALSE_HARDWARE = {.Width=1, .PolynomValue=4129, .InitialSeedValue=65535, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=0};
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol16Bit_CCITT_FALSE_AUTOSAR = {.Width=1, .PolynomValue=4129, .InitialSeedValue=65535, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=0};
+  const struct Crc_Ip_LogicChannelType * const * s_ppaxLogicChannelInit.0_1;
+  long unsigned int _2;
+  const struct Crc_Ip_LogicChannelType * const * _3;
+  const struct Crc_Ip_LogicChannelType * _4;
+  <unnamed type> _5;
+
+  <bb 2> :
+  s_ppaxLogicChannelInit.0_1 = s_ppaxLogicChannelInit;
+  _2 = LogicChannel_8(D) * 4;
+  _3 = s_ppaxLogicChannelInit.0_1 + _2;
+  _4 = *_3;
+  _5 = _4->CalculationType;
+  if (_5 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  s_axLogicChannelState[LogicChannel_8(D)].CrcProtocolInfo = &s_Protocol16Bit_CCITT_FALSE_HARDWARE;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_axLogicChannelState[LogicChannel_8(D)].CrcProtocolInfo = &s_Protocol16Bit_CCITT_FALSE_AUTOSAR;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol8Bit_H2F_AUTOSAR = {.Width=0, .PolynomValue=47, .InitialSeedValue=255, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel_2(D)].CrcProtocolInfo = &s_Protocol8Bit_H2F_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  static const struct Crc_Ip_CrcProtocolInfoType s_Protocol8Bit_SAE_J1850_AUTOSAR = {.Width=0, .PolynomValue=29, .InitialSeedValue=255, .WriteBitSwap=0, .WriteByteSwap=0, .ReadBitSwap=0, .ReadByteSwap=0, .InverseEnable=1};
+
+  <bb 2> :
+  s_axLogicChannelState[LogicChannel_2(D)].CrcProtocolInfo = &s_Protocol8Bit_SAE_J1850_AUTOSAR;
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_64BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel_2(D), pxLocLogicChannelConfig_3(D), 3);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_32BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel_2(D), pxLocLogicChannelConfig_3(D), 2);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_16BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel_2(D), pxLocLogicChannelConfig_3(D), 1);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelProtocol_8BitCustom (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig)
+{
+  <bb 2> :
+  Static_Crc_Ip_SetChannelCustomProtocol (LogicChannel_2(D), pxLocLogicChannelConfig_3(D), 0);
+  return;
+
+}
+
+
+Static_Crc_Ip_SetChannelCustomProtocol (const uint32 LogicChannel, const struct Crc_Ip_LogicChannelConfigType * pxLocLogicChannelConfig, Crc_Ip_CrcWidthType LocWidth)
+{
+  long long unsigned int _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  _Bool _5;
+  _Bool _6;
+  struct Crc_Ip_CrcProtocolInfoType * _7;
+
+  <bb 2> :
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].Width = LocWidth_10(D);
+  _1 = pxLocLogicChannelConfig_12(D)->PolynomValue;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].PolynomValue = _1;
+  _2 = pxLocLogicChannelConfig_12(D)->WriteBitSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].WriteBitSwap = _2;
+  _3 = pxLocLogicChannelConfig_12(D)->WriteByteSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].WriteByteSwap = _3;
+  _4 = pxLocLogicChannelConfig_12(D)->ReadBitSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].ReadBitSwap = _4;
+  _5 = pxLocLogicChannelConfig_12(D)->ReadByteSwap;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].ReadByteSwap = _5;
+  _6 = pxLocLogicChannelConfig_12(D)->InverseEnable;
+  s_axLogicChannelCustomProtocol[LogicChannel_9(D)].InverseEnable = _6;
+  _7 = &s_axLogicChannelCustomProtocol[LogicChannel_9(D)];
+  s_axLogicChannelState[LogicChannel_9(D)].CrcProtocolInfo = _7;
+  return;
+
+}
+
+
+Crc_Ip_LibTranspose (const uint64 InputData, const uint8 CrcWidth, const boolean BitSwap, const boolean ByteSwap)
+{
+  uint64 Result;
+  uint64 D.5959;
+  long unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  uint64 _35;
+
+  <bb 2> :
+  Result_16 = InputData_15(D);
+  if (BitSwap_17(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Result_27 = Crc_Ip_LibBitSwap64U (Result_16);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _1 = (long unsigned int) Result_16;
+  _2 = Crc_Ip_LibBitSwap32U (_1);
+  Result_25 = (uint64) _2;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _3 = (short unsigned int) Result_16;
+  _4 = Crc_Ip_LibBitSwap16U (_3);
+  Result_23 = (uint64) _4;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (CrcWidth_19(D) == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _5 = (unsigned char) Result_16;
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Result_21 = (uint64) _6;
+
+  <bb 11> :
+  # Result_11 = PHI <Result_16(2), Result_27(4), Result_25(6), Result_23(8), Result_16(9), Result_21(10)>
+  if (ByteSwap_28(D) != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 12> :
+  if (CrcWidth_19(D) == 3)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  Result_34 = Crc_Ip_LibByteSwap64U (Result_11);
+  goto <bb 18>; [INV]
+
+  <bb 14> :
+  if (CrcWidth_19(D) == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  _7 = (long unsigned int) Result_11;
+  _8 = Crc_Ip_LibByteSwap32U (_7);
+  Result_32 = (uint64) _8;
+  goto <bb 18>; [INV]
+
+  <bb 16> :
+  if (CrcWidth_19(D) == 1)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _9 = (short unsigned int) Result_11;
+  _10 = Crc_Ip_LibByteSwap16U (_9);
+  Result_30 = (uint64) _10;
+
+  <bb 18> :
+  # Result_12 = PHI <Result_11(11), Result_34(13), Result_32(15), Result_11(16), Result_30(17)>
+  _35 = Result_12;
+
+  <bb 19> :
+<L25>:
+  return _35;
+
+}
+
+
+Crc_Ip_LibByteSwap16U (const uint16 InputData)
+{
+  uint16 D.5973;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint16 _7;
+
+  <bb 2> :
+  _1 = (long unsigned int) InputData_4(D);
+  _2 = Crc_Ip_LibByteSwap32U (_1);
+  _3 = _2 >> 16;
+  _7 = (uint16) _3;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+Crc_Ip_LibByteSwap32U (const uint32 InputData)
+{
+  uint32 D.5971;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  uint32 _12;
+
+  <bb 2> :
+  _1 = InputData_11(D) >> 24;
+  _2 = InputData_11(D) >> 16;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_11(D) >> 8;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_11(D) << 24;
+  _12 = _9 | _10;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+Crc_Ip_LibByteSwap64U (const uint64 InputData)
+{
+  uint64 D.5969;
+  long long unsigned int _1;
+  long long unsigned int _2;
+  long long unsigned int _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  long long unsigned int _6;
+  long long unsigned int _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  long long unsigned int _10;
+  long long unsigned int _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  long long unsigned int _14;
+  long long unsigned int _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  long long unsigned int _18;
+  long long unsigned int _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  long long unsigned int _22;
+  long long unsigned int _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  long long unsigned int _26;
+  uint64 _28;
+
+  <bb 2> :
+  _1 = InputData_27(D) >> 56;
+  _2 = InputData_27(D) >> 48;
+  _3 = _2 << 8;
+  _4 = _3 & 65535;
+  _5 = _1 | _4;
+  _6 = InputData_27(D) >> 40;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = _5 | _8;
+  _10 = InputData_27(D) >> 32;
+  _11 = _10 << 24;
+  _12 = _11 & 4294967295;
+  _13 = _9 | _12;
+  _14 = InputData_27(D) >> 24;
+  _15 = _14 << 32;
+  _16 = _15 & 1095216660480;
+  _17 = _13 | _16;
+  _18 = InputData_27(D) >> 16;
+  _19 = _18 << 40;
+  _20 = _19 & 280375465082880;
+  _21 = _17 | _20;
+  _22 = InputData_27(D) >> 8;
+  _23 = _22 << 48;
+  _24 = _23 & 71776119061217280;
+  _25 = _21 | _24;
+  _26 = InputData_27(D) << 56;
+  _28 = _25 | _26;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+Crc_Ip_LibBitSwap64U (const uint64 InputData)
+{
+  uint64 ReturnValue;
+  uint64 ReturnValue34;
+  uint64 ReturnValue12;
+  uint64 ReturnValue4;
+  uint64 ReturnValue3;
+  uint64 ReturnValue2;
+  uint64 ReturnValue1;
+  uint64 Tmp8;
+  uint64 Tmp7;
+  uint64 Tmp6;
+  uint64 Tmp5;
+  uint64 Tmp4;
+  uint64 Tmp3;
+  uint64 Tmp2;
+  uint64 Tmp1;
+  uint64 D.5961;
+  long long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long long unsigned int _4;
+  long long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long long unsigned int _8;
+  long long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long long unsigned int _12;
+  long long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+  long long unsigned int _16;
+  long long unsigned int _17;
+  unsigned char _18;
+  unsigned char _19;
+  long long unsigned int _20;
+  long long unsigned int _21;
+  unsigned char _22;
+  unsigned char _23;
+  long long unsigned int _24;
+  long long unsigned int _25;
+  unsigned char _26;
+  unsigned char _27;
+  long long unsigned int _28;
+  unsigned char _29;
+  unsigned char _30;
+  uint64 _56;
+
+  <bb 2> :
+  _1 = InputData_31(D) >> 56;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long long unsigned int) _3;
+  Tmp1_34 = _4 << 56;
+  _5 = InputData_31(D) >> 48;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long long unsigned int) _7;
+  Tmp2_36 = _8 << 48;
+  _9 = InputData_31(D) >> 40;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long long unsigned int) _11;
+  Tmp3_38 = _12 << 40;
+  _13 = InputData_31(D) >> 32;
+  _14 = (unsigned char) _13;
+  _15 = Crc_Ip_LibBitSwap8U (_14);
+  _16 = (long long unsigned int) _15;
+  Tmp4_40 = _16 << 32;
+  _17 = InputData_31(D) >> 24;
+  _18 = (unsigned char) _17;
+  _19 = Crc_Ip_LibBitSwap8U (_18);
+  _20 = (long long unsigned int) _19;
+  Tmp5_42 = _20 << 24;
+  _21 = InputData_31(D) >> 16;
+  _22 = (unsigned char) _21;
+  _23 = Crc_Ip_LibBitSwap8U (_22);
+  _24 = (long long unsigned int) _23;
+  Tmp6_44 = _24 << 16;
+  _25 = InputData_31(D) >> 8;
+  _26 = (unsigned char) _25;
+  _27 = Crc_Ip_LibBitSwap8U (_26);
+  _28 = (long long unsigned int) _27;
+  Tmp7_46 = _28 << 8;
+  _29 = (unsigned char) InputData_31(D);
+  _30 = Crc_Ip_LibBitSwap8U (_29);
+  Tmp8_48 = (uint64) _30;
+  ReturnValue1_49 = Tmp1_34 | Tmp2_36;
+  ReturnValue2_50 = Tmp3_38 | Tmp4_40;
+  ReturnValue3_51 = Tmp5_42 | Tmp6_44;
+  ReturnValue4_52 = Tmp7_46 | Tmp8_48;
+  ReturnValue12_53 = ReturnValue1_49 | ReturnValue2_50;
+  ReturnValue34_54 = ReturnValue3_51 | ReturnValue4_52;
+  ReturnValue_55 = ReturnValue12_53 | ReturnValue34_54;
+  _56 = ReturnValue_55;
+
+  <bb 3> :
+<L0>:
+  return _56;
+
+}
+
+
+Crc_Ip_LibBitSwap32U (const uint32 InputData)
+{
+  uint32 ReturnValue;
+  uint32 ReturnValue2;
+  uint32 ReturnValue1;
+  uint32 Tmp4;
+  uint32 Tmp3;
+  uint32 Tmp2;
+  uint32 Tmp1;
+  uint32 D.5963;
+  long unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  unsigned char _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  unsigned char _13;
+  unsigned char _14;
+  uint32 _28;
+
+  <bb 2> :
+  _1 = InputData_15(D) >> 24;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (long unsigned int) _3;
+  Tmp1_18 = _4 << 24;
+  _5 = InputData_15(D) >> 16;
+  _6 = (unsigned char) _5;
+  _7 = Crc_Ip_LibBitSwap8U (_6);
+  _8 = (long unsigned int) _7;
+  Tmp2_20 = _8 << 16;
+  _9 = InputData_15(D) >> 8;
+  _10 = (unsigned char) _9;
+  _11 = Crc_Ip_LibBitSwap8U (_10);
+  _12 = (long unsigned int) _11;
+  Tmp3_22 = _12 << 8;
+  _13 = (unsigned char) InputData_15(D);
+  _14 = Crc_Ip_LibBitSwap8U (_13);
+  Tmp4_24 = (uint32) _14;
+  ReturnValue1_25 = Tmp1_18 | Tmp2_20;
+  ReturnValue2_26 = Tmp3_22 | Tmp4_24;
+  ReturnValue_27 = ReturnValue1_25 | ReturnValue2_26;
+  _28 = ReturnValue_27;
+
+  <bb 3> :
+<L0>:
+  return _28;
+
+}
+
+
+Crc_Ip_LibBitSwap16U (const uint16 InputData)
+{
+  uint16 ReturnValue;
+  uint16 Tmp2;
+  uint16 Tmp1;
+  uint16 D.5965;
+  short unsigned int _1;
+  unsigned char _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  uint16 _14;
+
+  <bb 2> :
+  _1 = InputData_7(D) >> 8;
+  _2 = (unsigned char) _1;
+  _3 = Crc_Ip_LibBitSwap8U (_2);
+  _4 = (short unsigned int) _3;
+  Tmp1_10 = _4 << 8;
+  _5 = (unsigned char) InputData_7(D);
+  _6 = Crc_Ip_LibBitSwap8U (_5);
+  Tmp2_12 = (uint16) _6;
+  ReturnValue_13 = Tmp1_10 | Tmp2_12;
+  _14 = ReturnValue_13;
+
+  <bb 3> :
+<L0>:
+  return _14;
+
+}
+
+
+Crc_Ip_LibBitSwap8U (const uint8 InputData)
+{
+  uint8 D.5967;
+  int _1;
+  uint8 _4;
+
+  <bb 2> :
+  _1 = (int) InputData_2(D);
+  _4 = Crc_Ip_au8BitSwapArray[_1];
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  _Bool x.2_1;
+
+  <bb 2> :
+  x.2_1 ={v} x;
+  if (x.2_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+

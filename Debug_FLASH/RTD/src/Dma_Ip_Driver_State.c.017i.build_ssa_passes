@@ -1,0 +1,182 @@
+Dma_Ip_SetHwChannelStatePointer (uint32 LocHwVers, uint32 LocHwInst, uint32 LocHwCh, struct Dma_Ip_HwChannelStateType * StatePointer)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh] = StatePointer;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_GetHwChannelStatePointer (uint32 LocHwVers, uint32 LocHwInst, uint32 LocHwCh)
+{
+  struct Dma_Ip_HwChannelStateType * PtStatePtr;
+  struct Dma_Ip_HwChannelStateType * D.6078;
+
+  <bb 2> :
+  PtStatePtr = 0B;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  PtStatePtr = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+
+  <bb 4> :
+  D.6078 = PtStatePtr;
+
+  <bb 5> :
+<L2>:
+  return D.6078;
+
+}
+
+
+Dma_Ip_GetHwChannelState (uint32 LocHwVers, uint32 LocHwInst, uint32 LocHwCh)
+{
+  Dma_Ip_HwChannelStateValueType StateValue;
+  Dma_Ip_HwChannelStateValueType D.6074;
+
+  <bb 2> :
+  StateValue = 0;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  StateValue = _1->StateValue;
+
+  <bb 4> :
+  D.6074 = StateValue;
+
+  <bb 5> :
+<L2>:
+  return D.6074;
+
+}
+
+
+Dma_Ip_SetHwChannelState (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const Dma_Ip_HwChannelEventValueEnum EventValue)
+{
+  Dma_Ip_HwChannelStateValueType StateValue;
+  static void (*<T585>) (const uint32, const uint32, const uint32) fpa_Dma_Ip_HwChannelState[5][5] = {{Dma_Ip_SetHwChannel_ResetEvent, Dma_Ip_SetHwChannel_ReadyEvent, Dma_Ip_SetHwChannel_ErrorEvent, Dma_Ip_SetHwChannel_ErrorEvent, Dma_Ip_SetHwChannel_ErrorEvent}, {Dma_Ip_SetHwChannel_ResetEvent, Dma_Ip_SetHwChannel_ReadyEvent, Dma_Ip_SetHwChannel_TransferEvent, Dma_Ip_SetHwChannel_ScatterGatherEvent, Dma_Ip_SetHwChannel_ErrorEvent}, {Dma_Ip_SetHwChannel_ResetEvent, Dma_Ip_SetHwChannel_ReadyEvent, Dma_Ip_SetHwChannel_TransferEvent, Dma_Ip_SetHwChannel_ScatterGatherEvent, Dma_Ip_SetHwChannel_ErrorEvent}, {Dma_Ip_SetHwChannel_ResetEvent, Dma_Ip_SetHwChannel_ReadyEvent, Dma_Ip_SetHwChannel_TransferEvent, Dma_Ip_SetHwChannel_ScatterGatherEvent, Dma_Ip_SetHwChannel_ErrorEvent}, {Dma_Ip_SetHwChannel_ResetEvent, Dma_Ip_SetHwChannel_ReadyEvent, Dma_Ip_SetHwChannel_ErrorEvent, Dma_Ip_SetHwChannel_ErrorEvent, Dma_Ip_SetHwChannel_ErrorEvent}};
+
+  <bb 2> :
+  StateValue = 0;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  StateValue = _1->StateValue;
+  _2 = fpa_Dma_Ip_HwChannelState[StateValue][EventValue];
+  _2 (LocHwVers, LocHwInst, LocHwCh);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_SetHwChannel_ErrorEvent (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  _1->StateValue = 4;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_SetHwChannel_ScatterGatherEvent (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  _1->StateValue = 3;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_SetHwChannel_TransferEvent (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  _1->StateValue = 2;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_SetHwChannel_ReadyEvent (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  _1->StateValue = 1;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Dma_Ip_SetHwChannel_ResetEvent (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = Dma_Ip_xHwState.ptHwChV2StateArray[LocHwInst][LocHwCh];
+  _1->StateValue = 0;
+
+  <bb 4> :
+  return;
+
+}
+
+

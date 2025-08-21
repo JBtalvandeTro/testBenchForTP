@@ -1,0 +1,54 @@
+Rm_Ipw_Mpu_GetErrorDetails (struct Rm_Mpu_ErrorDetailsType * pErrorDetails)
+{
+  boolean D.5755;
+  boolean _4;
+
+  <bb 2> :
+  _4 = Mpu_Ip_GetErrorDetails (pErrorDetails_2(D));
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Rm_Ipw_Mpu_SetAccessMode (uint8 u8RegionNum, Rm_Mpu_MasterType eMaster, Rm_Mpu_SupervisorAccessModeType eSupervisorMode, Rm_Mpu_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  Mpu_Ip_SetAccessMode (u8RegionNum_2(D), eMaster_3(D), eSupervisorMode_4(D), eUserMode_5(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  Mpu_Ip_EnableRegion (u8RegionNum_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_SetRegionConfig (uint8 u8RegionNum, const struct Rm_Mpu_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  Mpu_Ip_SetRegionConfig (u8RegionNum_2(D), pUserConfigPtr_3(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_Init (const struct Rm_Ipw_ConfigType * pIpwConfig)
+{
+  const struct Mpu_Ip_ConfigType * _1;
+
+  <bb 2> :
+  _1 = pIpwConfig_3(D)->Rm_Ipw_pMpuConfig;
+  Mpu_Ip_Init (_1);
+  return;
+
+}
+
+

@@ -1,0 +1,141 @@
+Mcu_Ipw_SleepOnExit (Mcu_SleepOnExitType SleepOnExit)
+{
+  <bb 2> :
+  if (SleepOnExit == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Power_Ip_DisableSleepOnExit ();
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Power_Ip_EnableSleepOnExit ();
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mcu_Ipw_GetResetRawValue ()
+{
+  Mcu_RawResetType D.6150;
+
+  <bb 2> :
+  D.6150 = Power_Ip_GetResetRawValue ();
+
+  <bb 3> :
+<L0>:
+  return D.6150;
+
+}
+
+
+Mcu_Ipw_GetResetReason ()
+{
+  Mcu_ResetType D.6148;
+
+  <bb 2> :
+  D.6148 = Power_Ip_GetResetReason ();
+
+  <bb 3> :
+<L0>:
+  return D.6148;
+
+}
+
+
+Mcu_Ipw_PerformReset (const struct Mcu_HwIPsConfigType * HwIPsConfigPtr)
+{
+  <bb 2> :
+  Power_Ip_PerformReset (HwIPsConfigPtr);
+  return;
+
+}
+
+
+Mcu_Ipw_SetMode (const struct Mcu_ModeConfigType * ModeConfigPtr)
+{
+  <bb 2> :
+  Power_Ip_SetMode (ModeConfigPtr);
+  return;
+
+}
+
+
+MCU_Ipw_GetClockFrequency (Clock_Ip_NameType ClockName)
+{
+  uint32 D.6146;
+
+  <bb 2> :
+  D.6146 = Clock_Ip_GetClockFrequency (ClockName);
+
+  <bb 3> :
+<L0>:
+  return D.6146;
+
+}
+
+
+Mcu_Ipw_GetPllStatus ()
+{
+  Mcu_PllStatusType PllStatus;
+  Mcu_PllStatusType D.6144;
+
+  <bb 2> :
+  _1 = Clock_Ip_GetPllStatus ();
+  switch (_1) <default: <L2> [INV], case 0: <L0> [INV], case 1: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  PllStatus = 51;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  PllStatus = 204;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  PllStatus = 90;
+
+  <bb 6> :
+  D.6144 = PllStatus;
+
+  <bb 7> :
+<L5>:
+  return D.6144;
+
+}
+
+
+Mcu_Ipw_DistributePllClock ()
+{
+  <bb 2> :
+  Clock_Ip_DistributePll ();
+  return;
+
+}
+
+
+Mcu_Ipw_InitClock (const struct Mcu_ClockConfigType * ClockConfigPtr)
+{
+  <bb 2> :
+  Clock_Ip_InitClock (ClockConfigPtr);
+  return;
+
+}
+
+
+Mcu_Ipw_Init (const struct Mcu_HwIPsConfigType * HwIPsConfigPtr)
+{
+  <bb 2> :
+  Power_Ip_Init (HwIPsConfigPtr);
+  return;
+
+}
+
+

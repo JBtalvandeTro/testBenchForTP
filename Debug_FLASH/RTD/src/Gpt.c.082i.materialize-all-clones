@@ -1,0 +1,699 @@
+Gpt_ProcessCommonInterrupt (uint8 channel)
+{
+  uint8 ChannelIndex;
+  uint32 coreID;
+  const struct Gpt_ConfigType * _1;
+  const struct Gpt_ConfigType * _2;
+  const uint8[<unknown>] * _3;
+  int _4;
+  const struct Gpt_ConfigType * _5;
+  const struct Gpt_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  <unnamed type> _8;
+  int _9;
+  <unnamed type> Gpt_eMode.6_10;
+  int _11;
+  _Bool _12;
+  const struct Gpt_ConfigType * _13;
+  const struct Gpt_ChannelConfigType[<unknown>] * _14;
+  int _15;
+  void (*<T544>) (void) _16;
+
+  <bb 2> :
+  coreID_19 = 0;
+  _1 = Gpt_pConfig[coreID_19];
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = Gpt_pConfig[coreID_19];
+  _3 = _2->u8GptChannelIdToIndexMap;
+  _4 = (int) channel_21(D);
+  ChannelIndex_22 = *_3[_4];
+  _5 = Gpt_pConfig[coreID_19];
+  _6 = _5->Gpt_pChannelConfig;
+  _7 = (int) ChannelIndex_22;
+  _8 = *_6[_7].Gpt_eChannelMode;
+  if (_8 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _9 = (int) channel_21(D);
+  Gpt_aChannelInfo[_9].eChannelStatus = 3;
+
+  <bb 5> :
+  Gpt_eMode.6_10 ={v} Gpt_eMode;
+  if (Gpt_eMode.6_10 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _11 = (int) channel_21(D);
+  _12 = Gpt_aChannelInfo[_11].bNotificationEnabled;
+  if (_12 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _13 = Gpt_pConfig[coreID_19];
+  _14 = _13->Gpt_pChannelConfig;
+  _15 = (int) ChannelIndex_22;
+  _16 = *_14[_15].Gpt_pfNotification;
+  _16 ();
+
+  <bb 8> :
+
+  <bb 9> :
+<L8>:
+  return;
+
+}
+
+
+Gpt_DisableNotification (Gpt_ChannelType channel)
+{
+  uint8 ChannelIndex;
+  uint32 coreID;
+  const struct Gpt_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  int _4;
+  <unnamed type> Gpt_eMode.5_5;
+  const struct Gpt_ConfigType * _6;
+  const struct Gpt_ChannelConfigType[<unknown>] * _7;
+  int _8;
+  <unnamed type> _9;
+  int _10;
+  <unnamed type> _11;
+  const struct Gpt_ConfigType * _12;
+  const struct Gpt_ChannelConfigType[<unknown>] * _13;
+  int _14;
+  struct Gpt_Ipw_HwChannelConfigType * _15;
+
+  <bb 2> :
+  coreID_17 = 0;
+  _1 = Gpt_pConfig[coreID_17];
+  _2 = _1->u8GptChannelIdToIndexMap;
+  _3 = (int) channel_19(D);
+  ChannelIndex_20 = *_2[_3];
+  _4 = (int) channel_19(D);
+  Gpt_aChannelInfo[_4].bNotificationEnabled = 0;
+  Gpt_eMode.5_5 ={v} Gpt_eMode;
+  if (Gpt_eMode.5_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _6 = Gpt_pConfig[coreID_17];
+  _7 = _6->Gpt_pChannelConfig;
+  _8 = (int) ChannelIndex_20;
+  _9 = *_7[_8].Gpt_eChannelMode;
+  if (_9 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _10 = (int) channel_19(D);
+  _11 = Gpt_aChannelInfo[_10].eChannelStatus;
+  if (_11 != 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _12 = Gpt_pConfig[coreID_17];
+  _13 = _12->Gpt_pChannelConfig;
+  _14 = (int) ChannelIndex_20;
+  _15 = *_13[_14].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_DisableInterrupt (_15);
+
+  <bb 6> :
+
+  <bb 7> :
+<L5>:
+  return;
+
+}
+
+
+Gpt_EnableNotification (Gpt_ChannelType channel)
+{
+  uint8 ChannelIndex;
+  uint32 coreID;
+  const struct Gpt_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  int _4;
+  <unnamed type> Gpt_eMode.4_5;
+  const struct Gpt_ConfigType * _6;
+  const struct Gpt_ChannelConfigType[<unknown>] * _7;
+  int _8;
+  struct Gpt_Ipw_HwChannelConfigType * _9;
+
+  <bb 2> :
+  coreID_11 = 0;
+  _1 = Gpt_pConfig[coreID_11];
+  _2 = _1->u8GptChannelIdToIndexMap;
+  _3 = (int) channel_13(D);
+  ChannelIndex_14 = *_2[_3];
+  _4 = (int) channel_13(D);
+  Gpt_aChannelInfo[_4].bNotificationEnabled = 1;
+  Gpt_eMode.4_5 ={v} Gpt_eMode;
+  if (Gpt_eMode.4_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = Gpt_pConfig[coreID_11];
+  _7 = _6->Gpt_pChannelConfig;
+  _8 = (int) ChannelIndex_14;
+  _9 = *_7[_8].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_EnableInterrupt (_9);
+
+  <bb 4> :
+
+  <bb 5> :
+<L2>:
+  return;
+
+}
+
+
+Gpt_StopTimer (Gpt_ChannelType channel)
+{
+  Gpt_ValueType uElapsedTime;
+  static struct Gpt_HwChannelInfoType returnHwChannelInfo;
+  uint8 ChannelIndex;
+  uint32 coreID;
+  const struct Gpt_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  const struct Gpt_ConfigType * _4;
+  const struct Gpt_ChannelConfigType[<unknown>] * _5;
+  int _6;
+  struct Gpt_Ipw_HwChannelConfigType * _7;
+  int _8;
+  <unnamed type> _9;
+  const struct Gpt_ConfigType * _10;
+  const struct Gpt_ChannelConfigType[<unknown>] * _11;
+  int _12;
+  struct Gpt_Ipw_HwChannelConfigType * _13;
+  _Bool _14;
+  const struct Gpt_ConfigType * _15;
+  const struct Gpt_ChannelConfigType[<unknown>] * _16;
+  int _17;
+  <unnamed type> _18;
+  int _19;
+  int _20;
+  int _21;
+
+  <bb 2> :
+  returnHwChannelInfo.bChannelRollover = 0;
+  returnHwChannelInfo.uTargetTime = 0;
+  coreID_26 = 0;
+  _1 = Gpt_pConfig[coreID_26];
+  _2 = _1->u8GptChannelIdToIndexMap;
+  _3 = (int) channel_27(D);
+  ChannelIndex_28 = *_2[_3];
+  _4 = Gpt_pConfig[coreID_26];
+  _5 = _4->Gpt_pChannelConfig;
+  _6 = (int) ChannelIndex_28;
+  _7 = *_5[_6].Gpt_Ipw_HwChannelConfig;
+  uElapsedTime_30 = Gpt_Ipw_GetTimeElapsed (_7, &returnHwChannelInfo);
+  _8 = (int) channel_27(D);
+  _9 = Gpt_aChannelInfo[_8].eChannelStatus;
+  if (_9 == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _10 = Gpt_pConfig[coreID_26];
+  _11 = _10->Gpt_pChannelConfig;
+  _12 = (int) ChannelIndex_28;
+  _13 = *_11[_12].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_StopTimer (_13);
+  _14 = returnHwChannelInfo.bChannelRollover;
+  if (_14 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _15 = Gpt_pConfig[coreID_26];
+  _16 = _15->Gpt_pChannelConfig;
+  _17 = (int) ChannelIndex_28;
+  _18 = *_16[_17].Gpt_eChannelMode;
+  if (_18 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _19 = (int) channel_27(D);
+  Gpt_aChannelInfo[_19].eChannelStatus = 3;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _20 = (int) channel_27(D);
+  Gpt_aStopTime[_20] ={v} uElapsedTime_30;
+  _21 = (int) channel_27(D);
+  Gpt_aChannelInfo[_21].eChannelStatus = 2;
+
+  <bb 7> :
+
+  <bb 8> :
+<L6>:
+  return;
+
+}
+
+
+Gpt_StartTimer (Gpt_ChannelType channel, Gpt_ValueType value)
+{
+  Std_ReturnType returnValue;
+  uint8 ChannelIndex;
+  uint32 coreID;
+  unsigned char _1;
+  const struct Gpt_ConfigType * _2;
+  const uint8[<unknown>] * _3;
+  int _4;
+  const struct Gpt_ConfigType * _5;
+  const struct Gpt_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  <unnamed type> _8;
+  const struct Gpt_ConfigType * _9;
+  const struct Gpt_ChannelConfigType[<unknown>] * _10;
+  int _11;
+  struct Gpt_Ipw_HwChannelConfigType * _12;
+  int _13;
+  const struct Gpt_ConfigType * _14;
+  const struct Gpt_ChannelConfigType[<unknown>] * _15;
+  int _16;
+  struct Gpt_Ipw_HwChannelConfigType * _17;
+
+  <bb 2> :
+  coreID_20 = 0;
+  _1 = Gpt_ValidateChannelStatus (5, channel_22(D), coreID_20);
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _2 = Gpt_pConfig[coreID_20];
+  _3 = _2->u8GptChannelIdToIndexMap;
+  _4 = (int) channel_22(D);
+  ChannelIndex_24 = *_3[_4];
+  _5 = Gpt_pConfig[coreID_20];
+  _6 = _5->Gpt_pChannelConfig;
+  _7 = (int) ChannelIndex_24;
+  _8 = *_6[_7].Gpt_eChannelMode;
+  if (_8 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _9 = Gpt_pConfig[coreID_20];
+  _10 = _9->Gpt_pChannelConfig;
+  _11 = (int) ChannelIndex_24;
+  _12 = *_10[_11].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_EnableInterrupt (_12);
+
+  <bb 5> :
+  _13 = (int) channel_22(D);
+  Gpt_aChannelInfo[_13].eChannelStatus = 4;
+  _14 = Gpt_pConfig[coreID_20];
+  _15 = _14->Gpt_pChannelConfig;
+  _16 = (int) ChannelIndex_24;
+  _17 = *_15[_16].Gpt_Ipw_HwChannelConfig;
+  returnValue_29 = Gpt_Ipw_StartTimer (_17, value_27(D));
+  if (returnValue_29 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Det_ReportRuntimeError (100, 0, 5, 43);
+
+  <bb 7> :
+
+  <bb 8> :
+<L6>:
+  return;
+
+}
+
+
+Gpt_GetTimeElapsed (Gpt_ChannelType channel)
+{
+  Gpt_ValueType returnValue;
+  uint8 ChannelIndex;
+  uint32 coreID;
+  static struct Gpt_HwChannelInfoType returnHwChannelInfo;
+  Gpt_ValueType D.6302;
+  const struct Gpt_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  const struct Gpt_ConfigType * _4;
+  const struct Gpt_ChannelConfigType[<unknown>] * _5;
+  int _6;
+  struct Gpt_Ipw_HwChannelConfigType * _7;
+  int _8;
+  <unnamed type> _9;
+  _Bool _10;
+  const struct Gpt_ConfigType * _11;
+  const struct Gpt_ChannelConfigType[<unknown>] * _12;
+  int _13;
+  <unnamed type> _14;
+  int _15;
+  Gpt_ValueType _31;
+
+  <bb 2> :
+  returnValue_18 = 0;
+  returnHwChannelInfo.bChannelRollover = 0;
+  returnHwChannelInfo.uTargetTime = 0;
+  coreID_22 = 0;
+  _1 = Gpt_pConfig[coreID_22];
+  _2 = _1->u8GptChannelIdToIndexMap;
+  _3 = (int) channel_23(D);
+  ChannelIndex_24 = *_2[_3];
+  _4 = Gpt_pConfig[coreID_22];
+  _5 = _4->Gpt_pChannelConfig;
+  _6 = (int) ChannelIndex_24;
+  _7 = *_5[_6].Gpt_Ipw_HwChannelConfig;
+  returnValue_26 = Gpt_Ipw_GetTimeElapsed (_7, &returnHwChannelInfo);
+  _8 = (int) channel_23(D);
+  _9 = Gpt_aChannelInfo[_8].eChannelStatus;
+  switch (_9) <default: <L8> [INV], case 1: <L5> [INV], case 2: <L6> [INV], case 3: <L7> [INV], case 4: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  _10 = returnHwChannelInfo.bChannelRollover;
+  if (_10 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _11 = Gpt_pConfig[coreID_22];
+  _12 = _11->Gpt_pChannelConfig;
+  _13 = (int) ChannelIndex_24;
+  _14 = *_12[_13].Gpt_eChannelMode;
+  if (_14 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  returnValue_27 = returnHwChannelInfo.uTargetTime;
+
+  <bb 6> :
+  # returnValue_16 = PHI <returnValue_26(3), returnValue_26(4), returnValue_27(5)>
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+<L5>:
+  returnValue_30 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+<L6>:
+  _15 = (int) channel_23(D);
+  returnValue_29 ={v} Gpt_aStopTime[_15];
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+<L7>:
+  returnValue_28 = returnHwChannelInfo.uTargetTime;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L8>:
+
+  <bb 11> :
+  # returnValue_17 = PHI <returnValue_16(6), returnValue_30(7), returnValue_29(8), returnValue_28(9), returnValue_26(10)>
+  _31 = returnValue_17;
+
+  <bb 12> :
+<L10>:
+  return _31;
+
+}
+
+
+Gpt_DeInit ()
+{
+  uint32 coreID;
+  Std_ReturnType allChannelStatus;
+  Gpt_ChannelType ChannelIndex;
+  Gpt_ChannelType channel;
+  unsigned char _1;
+  unsigned char ChannelIndex.2_2;
+  const struct Gpt_ConfigType * _3;
+  unsigned char _4;
+  int _5;
+  int _6;
+  int _7;
+  const struct Gpt_ConfigType * _8;
+  const struct Gpt_ChannelConfigType[<unknown>] * _9;
+  int _10;
+  struct Gpt_Ipw_HwChannelConfigType * _11;
+  unsigned char ChannelIndex.3_12;
+  const struct Gpt_ConfigType * _13;
+  unsigned char _14;
+
+  <bb 2> :
+  allChannelStatus_22 = 0;
+  coreID_23 = 0;
+  ChannelIndex_24 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  channel_27 = Gpt_ConvertChannelIndexToChannel (ChannelIndex_15, coreID_23);
+  _1 = Gpt_ValidateChannelStatus (2, channel_27, coreID_23);
+  if (_1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  allChannelStatus_30 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  ChannelIndex.2_2 = ChannelIndex_15;
+  ChannelIndex_29 = ChannelIndex.2_2 + 1;
+
+  <bb 6> :
+  # ChannelIndex_15 = PHI <ChannelIndex_24(2), ChannelIndex_29(5)>
+  _3 = Gpt_pConfig[coreID_23];
+  _4 = _3->channelCount;
+  if (ChannelIndex_15 < _4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # allChannelStatus_17 = PHI <allChannelStatus_30(4), allChannelStatus_22(6)>
+  if (allChannelStatus_17 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  ChannelIndex_31 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  channel_34 = Gpt_ConvertChannelIndexToChannel (ChannelIndex_16, coreID_23);
+  _5 = (int) channel_34;
+  Gpt_aChannelInfo[_5].bNotificationEnabled = 0;
+  _6 = (int) channel_34;
+  Gpt_aChannelInfo[_6].eChannelStatus = 0;
+  _7 = (int) channel_34;
+  Gpt_aStopTime[_7] ={v} 0;
+  _8 = Gpt_pConfig[coreID_23];
+  _9 = _8->Gpt_pChannelConfig;
+  _10 = (int) ChannelIndex_16;
+  _11 = *_9[_10].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_DeInit (_11);
+  ChannelIndex.3_12 = ChannelIndex_16;
+  ChannelIndex_39 = ChannelIndex.3_12 + 1;
+
+  <bb 10> :
+  # ChannelIndex_16 = PHI <ChannelIndex_31(8), ChannelIndex_39(9)>
+  _13 = Gpt_pConfig[coreID_23];
+  _14 = _13->channelCount;
+  if (ChannelIndex_16 < _14)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  Gpt_pConfig[coreID_23] = 0B;
+
+  <bb 12> :
+
+  <bb 13> :
+<L10>:
+  return;
+
+}
+
+
+Gpt_Init (const struct Gpt_ConfigType * configPtr)
+{
+  Gpt_ChannelType channel;
+  Gpt_ChannelType ChannelIndex;
+  uint32 coreID;
+  const struct Gpt_ConfigType * _1;
+  int _2;
+  int _3;
+  int _4;
+  const struct Gpt_ConfigType * _5;
+  const struct Gpt_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  struct Gpt_Ipw_HwChannelConfigType * _8;
+  unsigned char ChannelIndex.0_9;
+  const struct Gpt_ConfigType * _10;
+  unsigned char _11;
+
+  <bb 2> :
+  coreID_14 = 0;
+  Gpt_pConfig[coreID_14] = configPtr_16(D);
+  _1 = Gpt_pConfig[coreID_14];
+  Gpt_Ipw_InitInstances (_1);
+  ChannelIndex_19 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  channel_22 = Gpt_ConvertChannelIndexToChannel (ChannelIndex_12, coreID_14);
+  _2 = (int) channel_22;
+  Gpt_aChannelInfo[_2].bNotificationEnabled = 0;
+  _3 = (int) channel_22;
+  Gpt_aChannelInfo[_3].eChannelStatus = 1;
+  _4 = (int) channel_22;
+  Gpt_aStopTime[_4] ={v} 0;
+  _5 = Gpt_pConfig[coreID_14];
+  _6 = _5->Gpt_pChannelConfig;
+  _7 = (int) ChannelIndex_12;
+  _8 = *_6[_7].Gpt_Ipw_HwChannelConfig;
+  Gpt_Ipw_Init (_8);
+  ChannelIndex.0_9 = ChannelIndex_12;
+  ChannelIndex_27 = ChannelIndex.0_9 + 1;
+
+  <bb 4> :
+  # ChannelIndex_12 = PHI <ChannelIndex_19(2), ChannelIndex_27(3)>
+  _10 = Gpt_pConfig[coreID_14];
+  _11 = _10->channelCount;
+  if (ChannelIndex_12 < _11)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  Gpt_eMode ={v} 0;
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_ConvertChannelIndexToChannel (Gpt_ChannelType ChannelIndex, uint32 coreID)
+{
+  Gpt_ChannelType Channel;
+  Gpt_ChannelType D.6286;
+  const struct Gpt_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  unsigned char Channel.1_5;
+  Gpt_ChannelType _13;
+
+  <bb 2> :
+  Channel_7 = 2;
+  Channel_8 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Gpt_pConfig[coreID_10(D)];
+  _2 = _1->u8GptChannelIdToIndexMap;
+  _3 = (int) Channel_6;
+  _4 = *_2[_3];
+  if (ChannelIndex_11(D) == _4)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  Channel.1_5 = Channel_6;
+  Channel_12 = Channel.1_5 + 1;
+
+  <bb 6> :
+  # Channel_6 = PHI <Channel_8(2), Channel_12(5)>
+  if (Channel_6 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _13 = Channel_6;
+
+  <bb 8> :
+<L5>:
+  return _13;
+
+}
+
+
+Gpt_ValidateChannelStatus (uint8 u8ServiceId, Gpt_ChannelType channel, uint32 coreID)
+{
+  Std_ReturnType returnValue;
+  Std_ReturnType D.6296;
+  int _1;
+  <unnamed type> _2;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  returnValue_5 = 1;
+  _1 = (int) channel_6(D);
+  _2 = Gpt_aChannelInfo[_1].eChannelStatus;
+  if (_2 == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportRuntimeError (100, 0, u8ServiceId_9(D), 11);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  returnValue_8 = 0;
+
+  <bb 5> :
+  # returnValue_3 = PHI <returnValue_5(3), returnValue_8(4)>
+  _11 = returnValue_3;
+
+  <bb 6> :
+<L3>:
+  return _11;
+
+}
+
+

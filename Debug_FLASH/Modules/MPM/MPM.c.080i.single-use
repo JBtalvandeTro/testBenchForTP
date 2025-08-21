@@ -1,0 +1,44 @@
+MPM_Deinit ()
+{
+  <bb 2> :
+  MPM_flags.moduleFlags.status.flags.moduleInitialized = 0;
+  return;
+
+}
+
+
+MPM_Management ()
+{
+  <unnamed type> _1;
+
+  <bb 2> :
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  MPM_flags.moduleFlags.faults.flags.mcu_PllUnlocked = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  MPM_flags.moduleFlags.faults.flags.mcu_PllUnlocked = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+MPM_Init ()
+{
+  <bb 2> :
+  MPM_flags.all = 0;
+  MPM_lowVoltageFlag = 0;
+  MPM_flags.moduleFlags.status.flags.moduleInitialized = 1;
+  return;
+
+}
+
+

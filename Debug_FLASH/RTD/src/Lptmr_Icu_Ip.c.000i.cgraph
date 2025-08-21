@@ -1,0 +1,1093 @@
+Trivially needed symbols: Lptmr_Icu_Ip_DisableNotification Lptmr_Icu_Ip_EnableNotification Lptmr_Icu_Ip_DisableInterrupt Lptmr_Icu_Ip_EnableInterrupt Lptmr_Icu_Ip_GetEdgeNumbers Lptmr_Icu_Ip_DisableEdgeCount Lptmr_Icu_Ip_EnableEdgeCount Lptmr_Icu_Ip_ResetEdgeCount Lptmr_Icu_Ip_DisableDetection Lptmr_Icu_Ip_EnableEdgeDetection Lptmr_Icu_Ip_SetActivationCondition Lptmr_Icu_Ip_Init Lptmr_Icu_aChConfig s_lptmrBase
+
+
+Initial Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b7cb60
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b7c8c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b7c620
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b7c380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b7c0e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b789a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78700
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b0b1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b0bb60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b0b7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b78000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b0b540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b0bee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06b78700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b78380
+  References: 
+  Referring: Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: not-ready
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06b03ea0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: not-ready
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: not-ready
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: not-ready
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: available
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Lptmr_Icu_aChConfig s_lptmrBase
+Removing variables:
+
+Final Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06b03ea0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

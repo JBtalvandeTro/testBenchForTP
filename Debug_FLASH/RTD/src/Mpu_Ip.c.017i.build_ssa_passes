@@ -1,0 +1,603 @@
+Mpu_Ip_GetErrorDetails (struct Mpu_Ip_ErrorDetailsType * pErrorDetails)
+{
+  boolean D.5861;
+
+  <bb 2> :
+  D.5861 = Mpu_Ip_GetErrorDetails_Privileged (pErrorDetails);
+
+  <bb 3> :
+<L0>:
+  return D.5861;
+
+}
+
+
+Mpu_Ip_SetAccessMode (uint8 u8RegionNum, Mpu_Ip_MasterType eMaster, Mpu_Ip_SupervisorAccessModeType eSupervisorMode, Mpu_Ip_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  Mpu_Ip_SetAccessMode_Privileged (u8RegionNum, eMaster, eSupervisorMode, eUserMode);
+  return;
+
+}
+
+
+Mpu_Ip_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  Mpu_Ip_EnableRegion_Privileged (u8RegionNum, bEnable);
+  return;
+
+}
+
+
+Mpu_Ip_Deinit ()
+{
+  <bb 2> :
+  Mpu_Ip_Deinit_Privileged ();
+  return;
+
+}
+
+
+Mpu_Ip_SetRegionConfig (uint8 u8RegionNum, const struct Mpu_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  Mpu_Ip_SetRegionConfig_Privileged (u8RegionNum, pUserConfigPtr);
+  return;
+
+}
+
+
+Mpu_Ip_Init (const struct Mpu_Ip_ConfigType * pConfig)
+{
+  <bb 2> :
+  Mpu_Ip_Init_Privileged (pConfig);
+  return;
+
+}
+
+
+Mpu_Ip_ConvertErrorAccessToEnum (uint32 errorAccess)
+{
+  Mpu_Ip_AccessType eErrorAccess;
+  Mpu_Ip_AccessType D.5859;
+
+  <bb 2> :
+  eErrorAccess = 0;
+  switch (errorAccess) <default: <L2> [INV], case 0: <L0> [INV], case 1: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  eErrorAccess = 0;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  eErrorAccess = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  D.5859 = eErrorAccess;
+
+  <bb 7> :
+<L4>:
+  return D.5859;
+
+}
+
+
+Mpu_Ip_ConvertErrorAttributeToEnum (uint32 errorAttribute)
+{
+  Mpu_Ip_ErrorAttributesType eErrorAttribute;
+  Mpu_Ip_ErrorAttributesType D.5857;
+
+  <bb 2> :
+  eErrorAttribute = 0;
+  switch (errorAttribute) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  eErrorAttribute = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  eErrorAttribute = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  eErrorAttribute = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  eErrorAttribute = 3;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  D.5857 = eErrorAttribute;
+
+  <bb 9> :
+<L6>:
+  return D.5857;
+
+}
+
+
+Mpu_Ip_ConvertErrorMasterToEnum (uint32 errorMaster)
+{
+  Mpu_Ip_MasterType eErrorMaster;
+  Mpu_Ip_MasterType D.5855;
+
+  <bb 2> :
+  eErrorMaster = 0;
+  switch (errorMaster) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  eErrorMaster = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  eErrorMaster = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  eErrorMaster = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  eErrorMaster = 3;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  D.5855 = eErrorMaster;
+
+  <bb 9> :
+<L6>:
+  return D.5855;
+
+}
+
+
+Mpu_Ip_GetErrorDetails_Privileged (struct Mpu_Ip_ErrorDetailsType * pErrorDetails)
+{
+  uint32 errorAccess;
+  uint32 errorAttribute;
+  uint32 errorMaster;
+  uint32 RegCESR;
+  uint32 errorEDR;
+  uint32 ErrorSlavePortNumber;
+  boolean result;
+  boolean D.5853;
+
+  <bb 2> :
+  Mpu_Ip_pBase.37_1 = 1073795072B;
+  RegCESR = Mpu_Ip_pBase.37_1->CESR;
+  RegCESR.38_2 = (signed int) RegCESR;
+  if (RegCESR.38_2 < 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ErrorSlavePortNumber = 0;
+  _3 = RegCESR & 1;
+  Mpu_Ip_pBase.39_4 = 1073795072B;
+  _5 = _3 | 2147483648;
+  Mpu_Ip_pBase.39_4->CESR = _5;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+  _6 = RegCESR & 1073741824;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ErrorSlavePortNumber = 1;
+  _7 = RegCESR & 1;
+  Mpu_Ip_pBase.40_8 = 1073795072B;
+  _9 = _7 | 1073741824;
+  Mpu_Ip_pBase.40_8->CESR = _9;
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+  _10 = RegCESR & 536870912;
+  if (_10 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ErrorSlavePortNumber = 2;
+  _11 = RegCESR & 1;
+  Mpu_Ip_pBase.41_12 = 1073795072B;
+  _13 = _11 | 536870912;
+  Mpu_Ip_pBase.41_12->CESR = _13;
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+  _14 = RegCESR & 268435456;
+  if (_14 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  ErrorSlavePortNumber = 3;
+  _15 = RegCESR & 1;
+  Mpu_Ip_pBase.42_16 = 1073795072B;
+  _17 = _15 | 268435456;
+  Mpu_Ip_pBase.42_16->CESR = _17;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  _18 = RegCESR & 134217728;
+  if (_18 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  ErrorSlavePortNumber = 4;
+  _19 = RegCESR & 1;
+  Mpu_Ip_pBase.43_20 = 1073795072B;
+  _21 = _19 | 134217728;
+  Mpu_Ip_pBase.43_20->CESR = _21;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  ErrorSlavePortNumber = 255;
+
+  <bb 13> :
+  if (ErrorSlavePortNumber != 255)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Mpu_Ip_pBase.44_22 = 1073795072B;
+  errorEDR = Mpu_Ip_pBase.44_22->EAR_EDR[ErrorSlavePortNumber].EDR;
+  Mpu_Ip_pBase.45_23 = 1073795072B;
+  _24 = Mpu_Ip_pBase.45_23->EAR_EDR[ErrorSlavePortNumber].EAR;
+  pErrorDetails->u32Address = _24;
+  Mpu_Ip_pBase.46_25 = 1073795072B;
+  _26 = Mpu_Ip_pBase.46_25->EAR_EDR[ErrorSlavePortNumber].EDR;
+  _27 = _26 >> 16;
+  _28 = (short unsigned int) _27;
+  pErrorDetails->u16EACD = _28;
+  _29 = errorEDR >> 4;
+  errorMaster = _29 & 15;
+  _30 = Mpu_Ip_ConvertErrorMasterToEnum (errorMaster);
+  pErrorDetails->eMaster = _30;
+  _31 = errorEDR >> 1;
+  errorAttribute = _31 & 7;
+  _32 = Mpu_Ip_ConvertErrorAttributeToEnum (errorAttribute);
+  pErrorDetails->eErrorAttribute = _32;
+  errorAccess = errorEDR & 1;
+  _33 = Mpu_Ip_ConvertErrorAccessToEnum (errorAccess);
+  pErrorDetails->eErrorAccess = _33;
+  result = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  result = 0;
+
+  <bb 16> :
+  D.5853 = result;
+
+  <bb 17> :
+<L18>:
+  return D.5853;
+
+}
+
+
+Mpu_Ip_SetAccessMode_Privileged (uint8 u8RegionNum, Mpu_Ip_MasterType eMaster, Mpu_Ip_SupervisorAccessModeType eSupervisorMode, Mpu_Ip_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  switch (eMaster) <default: <L4> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06 ();
+  Mpu_Ip_pBase.21_1 = 1073795072B;
+  _2 = (int) u8RegionNum;
+  _3 = Mpu_Ip_pBase.21_1->RGDAAC[_2];
+  Mpu_Ip_pBase.22_4 = 1073795072B;
+  _5 = (int) u8RegionNum;
+  _6 = _3 & 4294967264;
+  Mpu_Ip_pBase.22_4->RGDAAC[_5] = _6;
+  Mpu_Ip_pBase.23_7 = 1073795072B;
+  _8 = (int) u8RegionNum;
+  _9 = Mpu_Ip_pBase.23_7->RGDAAC[_8];
+  _10 = eSupervisorMode << 3;
+  _11 = _10 & 24;
+  _12 = eUserMode & 7;
+  _13 = _11 | _12;
+  Mpu_Ip_pBase.24_14 = 1073795072B;
+  _15 = (int) u8RegionNum;
+  _16 = _9 | _13;
+  Mpu_Ip_pBase.24_14->RGDAAC[_15] = _16;
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06 ();
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06 ();
+  Mpu_Ip_pBase.25_17 = 1073795072B;
+  _18 = (int) u8RegionNum;
+  _19 = Mpu_Ip_pBase.25_17->RGDAAC[_18];
+  Mpu_Ip_pBase.26_20 = 1073795072B;
+  _21 = (int) u8RegionNum;
+  _22 = _19 & 4294965311;
+  Mpu_Ip_pBase.26_20->RGDAAC[_21] = _22;
+  Mpu_Ip_pBase.27_23 = 1073795072B;
+  _24 = (int) u8RegionNum;
+  _25 = Mpu_Ip_pBase.27_23->RGDAAC[_24];
+  _26 = eSupervisorMode << 9;
+  _27 = _26 & 1536;
+  _28 = eUserMode << 6;
+  _29 = _28 & 448;
+  _30 = _27 | _29;
+  Mpu_Ip_pBase.28_31 = 1073795072B;
+  _32 = (int) u8RegionNum;
+  _33 = _25 | _30;
+  Mpu_Ip_pBase.28_31->RGDAAC[_32] = _33;
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06 ();
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06 ();
+  Mpu_Ip_pBase.29_34 = 1073795072B;
+  _35 = (int) u8RegionNum;
+  _36 = Mpu_Ip_pBase.29_34->RGDAAC[_35];
+  Mpu_Ip_pBase.30_37 = 1073795072B;
+  _38 = (int) u8RegionNum;
+  _39 = _36 & 4294840319;
+  Mpu_Ip_pBase.30_37->RGDAAC[_38] = _39;
+  Mpu_Ip_pBase.31_40 = 1073795072B;
+  _41 = (int) u8RegionNum;
+  _42 = Mpu_Ip_pBase.31_40->RGDAAC[_41];
+  _43 = eSupervisorMode << 15;
+  _44 = _43 & 98304;
+  _45 = eUserMode << 12;
+  _46 = _45 & 28672;
+  _47 = _44 | _46;
+  Mpu_Ip_pBase.32_48 = 1073795072B;
+  _49 = (int) u8RegionNum;
+  _50 = _42 | _47;
+  Mpu_Ip_pBase.32_48->RGDAAC[_49] = _50;
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06 ();
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06 ();
+  Mpu_Ip_pBase.33_51 = 1073795072B;
+  _52 = (int) u8RegionNum;
+  _53 = Mpu_Ip_pBase.33_51->RGDAAC[_52];
+  Mpu_Ip_pBase.34_54 = 1073795072B;
+  _55 = (int) u8RegionNum;
+  _56 = _53 & 4286840831;
+  Mpu_Ip_pBase.34_54->RGDAAC[_55] = _56;
+  Mpu_Ip_pBase.35_57 = 1073795072B;
+  _58 = (int) u8RegionNum;
+  _59 = Mpu_Ip_pBase.35_57->RGDAAC[_58];
+  _60 = eSupervisorMode << 21;
+  _61 = _60 & 6291456;
+  _62 = eUserMode << 18;
+  _63 = _62 & 1835008;
+  _64 = _61 | _63;
+  Mpu_Ip_pBase.36_65 = 1073795072B;
+  _66 = (int) u8RegionNum;
+  _67 = _59 | _64;
+  Mpu_Ip_pBase.36_65->RGDAAC[_66] = _67;
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06 ();
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  return;
+
+}
+
+
+Mpu_Ip_EnableRegion_Privileged (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  if (bEnable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05 ();
+  Mpu_Ip_pBase.17_1 = 1073795072B;
+  _2 = (int) u8RegionNum;
+  _3 = Mpu_Ip_pBase.17_1->RGD[_2].WORD3;
+  Mpu_Ip_pBase.18_4 = 1073795072B;
+  _5 = (int) u8RegionNum;
+  _6 = _3 | 1;
+  Mpu_Ip_pBase.18_4->RGD[_5].WORD3 = _6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05 ();
+  Mpu_Ip_pBase.19_7 = 1073795072B;
+  _8 = (int) u8RegionNum;
+  _9 = Mpu_Ip_pBase.19_7->RGD[_8].WORD3;
+  Mpu_Ip_pBase.20_10 = 1073795072B;
+  _11 = (int) u8RegionNum;
+  _12 = _9 & 4294967294;
+  Mpu_Ip_pBase.20_10->RGD[_11].WORD3 = _12;
+
+  <bb 5> :
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05 ();
+  return;
+
+}
+
+
+Mpu_Ip_Deinit_Privileged ()
+{
+  uint8 region;
+
+  <bb 2> :
+  __asm__ __volatile__(" DSB");
+  __asm__ __volatile__(" ISB");
+  Mpu_Ip_pBase.8_1 = 1073795072B;
+  _2 = Mpu_Ip_pBase.8_1->CESR;
+  Mpu_Ip_pBase.9_3 = 1073795072B;
+  _4 = _2 & 4294967294;
+  Mpu_Ip_pBase.9_3->CESR = _4;
+  __asm__ __volatile__(" DSB");
+  __asm__ __volatile__(" ISB");
+  Mpu_Ip_pBase.10_5 = 1073795072B;
+  Mpu_Ip_pBase.10_5->RGDAAC[0] = 6420447;
+  region = 1;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mpu_Ip_pBase.11_6 = 1073795072B;
+  _7 = (int) region;
+  Mpu_Ip_pBase.11_6->RGD[_7].WORD0 = 0;
+  Mpu_Ip_pBase.12_8 = 1073795072B;
+  _9 = (int) region;
+  Mpu_Ip_pBase.12_8->RGD[_9].WORD1 = 0;
+  Mpu_Ip_pBase.13_10 = 1073795072B;
+  _11 = (int) region;
+  Mpu_Ip_pBase.13_10->RGD[_11].WORD2 = 0;
+  Mpu_Ip_pBase.14_12 = 1073795072B;
+  _13 = (int) region;
+  Mpu_Ip_pBase.14_12->RGD[_13].WORD3 = 0;
+  Mpu_Ip_pBase.15_14 = 1073795072B;
+  _15 = (int) region;
+  Mpu_Ip_pBase.15_14->RGDAAC[_15] = 0;
+  region.16_16 = region;
+  region = region.16_16 + 1;
+
+  <bb 4> :
+  if (region <= 15)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mpu_Ip_SetRegionConfig_Privileged (uint8 regionNumber, const struct Mpu_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  if (regionNumber == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04 ();
+  Mpu_Ip_pBase.3_1 = 1073795072B;
+  _2 = (int) regionNumber;
+  _3 = pUserConfigPtr->u32Word2;
+  Mpu_Ip_pBase.3_1->RGDAAC[_2] = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04 ();
+  Mpu_Ip_pBase.4_4 = 1073795072B;
+  _5 = (int) regionNumber;
+  _6 = pUserConfigPtr->u32StartAddr;
+  Mpu_Ip_pBase.4_4->RGD[_5].WORD0 = _6;
+  Mpu_Ip_pBase.5_7 = 1073795072B;
+  _8 = (int) regionNumber;
+  _9 = pUserConfigPtr->u32EndAddr;
+  Mpu_Ip_pBase.5_7->RGD[_8].WORD1 = _9;
+  Mpu_Ip_pBase.6_10 = 1073795072B;
+  _11 = (int) regionNumber;
+  _12 = pUserConfigPtr->u32Word2;
+  Mpu_Ip_pBase.6_10->RGD[_11].WORD2 = _12;
+  _13 = pUserConfigPtr->u32Pid;
+  _14 = _13 << 24;
+  _15 = pUserConfigPtr->u32PidMask;
+  _16 = _15 << 16;
+  _17 = _16 & 16711680;
+  _18 = _14 | _17;
+  Mpu_Ip_pBase.7_19 = 1073795072B;
+  _20 = (int) regionNumber;
+  _21 = _18 | 1;
+  Mpu_Ip_pBase.7_19->RGD[_20].WORD3 = _21;
+
+  <bb 5> :
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04 ();
+  return;
+
+}
+
+
+Mpu_Ip_Init_Privileged (const struct Mpu_Ip_ConfigType * pConfig)
+{
+  uint8 regionNumber;
+  const struct Mpu_Ip_RegionConfigType * regionCfg;
+  uint8 regionIt;
+
+  <bb 2> :
+  Mpu_Ip_Deinit_Privileged ();
+  regionIt = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = pConfig->pRegionConfigArr;
+  _2 = (unsigned int) regionIt;
+  _3 = _2 * 20;
+  regionCfg = _1 + _3;
+  _4 = pConfig->pRegionNumberArr;
+  _5 = (sizetype) regionIt;
+  _6 = _4 + _5;
+  regionNumber = *_6;
+  Mpu_Ip_SetRegionConfig_Privileged (regionNumber, regionCfg);
+  regionIt.0_7 = regionIt;
+  regionIt = regionIt.0_7 + 1;
+
+  <bb 4> :
+  _8 = pConfig->u8RegionCnt;
+  if (regionIt < _8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  __asm__ __volatile__(" DSB");
+  __asm__ __volatile__(" ISB");
+  Mpu_Ip_pBase.1_9 = 1073795072B;
+  _10 = Mpu_Ip_pBase.1_9->CESR;
+  Mpu_Ip_pBase.2_11 = 1073795072B;
+  _12 = _10 | 1;
+  Mpu_Ip_pBase.2_11->CESR = _12;
+  __asm__ __volatile__(" DSB");
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+

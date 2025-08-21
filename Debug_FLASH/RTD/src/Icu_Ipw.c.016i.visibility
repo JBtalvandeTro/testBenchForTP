@@ -1,0 +1,1043 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Icu_Ipw_DisableNotification Icu_Ipw_EnableNotification Icu_Ipw_DisableEdgeDetection Icu_Ipw_EnableEdgeDetection Icu_Ipw_GetEdgeNumbers Icu_Ipw_DisableEdgeCount Icu_Ipw_EnableEdgeCount Icu_Ipw_ResetEdgeCount Icu_Ipw_SetActivationCondition Icu_Ipw_Init
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Port_Ci_Icu_Ip_DisableNotification/46 (Port_Ci_Icu_Ip_DisableNotification) @06e34c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableNotification/9 
+  Calls: 
+Lptmr_Icu_Ip_DisableNotification/45 (Lptmr_Icu_Ip_DisableNotification) @06e34b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableNotification/9 
+  Calls: 
+Lpit_Icu_Ip_DisableNotification/44 (Lpit_Icu_Ip_DisableNotification) @06e34a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableNotification/9 
+  Calls: 
+Ftm_Icu_Ip_DisableNotification/43 (Ftm_Icu_Ip_DisableNotification) @06e349a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableNotification/9 
+  Calls: 
+Port_Ci_Icu_Ip_EnableNotification/42 (Port_Ci_Icu_Ip_EnableNotification) @06e347e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableNotification/8 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/41 (Lptmr_Icu_Ip_EnableNotification) @06e34700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableNotification/8 
+  Calls: 
+Lpit_Icu_Ip_EnableNotification/40 (Lpit_Icu_Ip_EnableNotification) @06e34620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableNotification/8 
+  Calls: 
+Ftm_Icu_Ip_EnableNotification/39 (Ftm_Icu_Ip_EnableNotification) @06e34540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableNotification/8 
+  Calls: 
+Cmp_Ip_DisableNotification/38 (Cmp_Ip_DisableNotification) @06e34380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableNotification/9 Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Cmp_Ip_DisableInterrupt/37 (Cmp_Ip_DisableInterrupt) @06e342a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Port_Ci_Icu_Ip_DisableDetection/36 (Port_Ci_Icu_Ip_DisableDetection) @06e341c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Lptmr_Icu_Ip_DisableDetection/35 (Lptmr_Icu_Ip_DisableDetection) @06e340e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Lpit_Icu_Ip_DisableDetectionMode/34 (Lpit_Icu_Ip_DisableDetectionMode) @06e34000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Ftm_Icu_Ip_DisableEdgeDetection/33 (Ftm_Icu_Ip_DisableEdgeDetection) @06d67ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeDetection/7 
+  Calls: 
+Cmp_Ip_EnableNotification/32 (Cmp_Ip_EnableNotification) @06d67d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableNotification/8 Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Cmp_Ip_EnableInterrupt/31 (Cmp_Ip_EnableInterrupt) @06d67c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Port_Ci_Icu_Ip_EnableEdgeDetection/30 (Port_Ci_Icu_Ip_EnableEdgeDetection) @06d67b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Lptmr_Icu_Ip_EnableEdgeDetection/29 (Lptmr_Icu_Ip_EnableEdgeDetection) @06d67a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Lpit_Icu_Ip_EnableEdgeDetection/28 (Lpit_Icu_Ip_EnableEdgeDetection) @06d679a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Ftm_Icu_Ip_EnableEdgeDetection/27 (Ftm_Icu_Ip_EnableEdgeDetection) @06d678c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeDetection/6 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/26 (Lptmr_Icu_Ip_GetEdgeNumbers) @06d67700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_GetEdgeNumbers/5 
+  Calls: 
+Ftm_Icu_Ip_GetEdgeNumbers/25 (Ftm_Icu_Ip_GetEdgeNumbers) @06d67620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_GetEdgeNumbers/5 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/24 (Lptmr_Icu_Ip_DisableEdgeCount) @06d67460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeCount/4 
+  Calls: 
+Ftm_Icu_Ip_DisableEdgeCount/23 (Ftm_Icu_Ip_DisableEdgeCount) @06d67380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_DisableEdgeCount/4 
+  Calls: 
+Lptmr_Icu_Ip_EnableEdgeCount/22 (Lptmr_Icu_Ip_EnableEdgeCount) @06d671c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeCount/3 
+  Calls: 
+Ftm_Icu_Ip_EnableEdgeCount/21 (Ftm_Icu_Ip_EnableEdgeCount) @06d670e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_EnableEdgeCount/3 
+  Calls: 
+Lptmr_Icu_Ip_ResetEdgeCount/20 (Lptmr_Icu_Ip_ResetEdgeCount) @06c27ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_ResetEdgeCount/2 
+  Calls: 
+Ftm_Icu_Ip_ResetEdgeCount/19 (Ftm_Icu_Ip_ResetEdgeCount) @06c27e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_ResetEdgeCount/2 
+  Calls: 
+Cmp_Ip_SetInterruptActivation/18 (Cmp_Ip_SetInterruptActivation) @06c27c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 
+  Calls: 
+Lptmr_Icu_Ip_SetActivationCondition/17 (Lptmr_Icu_Ip_SetActivationCondition) @06c27b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 
+  Calls: 
+Port_Ci_Icu_Ip_SetActivationCondition/16 (Port_Ci_Icu_Ip_SetActivationCondition) @06c27a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 
+  Calls: 
+Ftm_Icu_Ip_SetActivationCondition/15 (Ftm_Icu_Ip_SetActivationCondition) @06c279a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 Icu_Ipw_SetActivationCondition/1 
+  Calls: 
+Cmp_Ip_Init/14 (Cmp_Ip_Init) @06c27620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_Init/0 
+  Calls: 
+Port_Ci_Icu_Ip_Init/13 (Port_Ci_Icu_Ip_Init) @06c27540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_Init/0 
+  Calls: 
+Lptmr_Icu_Ip_Init/12 (Lptmr_Icu_Ip_Init) @06c27460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_Init/0 
+  Calls: 
+Lpit_Icu_Ip_Init/11 (Lpit_Icu_Ip_Init) @06c27380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_Init/0 
+  Calls: 
+Ftm_Icu_Ip_Init/10 (Ftm_Icu_Ip_Init) @06c272a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Ipw_Init/0 
+  Calls: 
+Icu_Ipw_DisableNotification/9 (Icu_Ipw_DisableNotification) @06c1d7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_DisableNotification/38 Port_Ci_Icu_Ip_DisableNotification/46 Lptmr_Icu_Ip_DisableNotification/45 Lpit_Icu_Ip_DisableNotification/44 Ftm_Icu_Ip_DisableNotification/43 
+Icu_Ipw_EnableNotification/8 (Icu_Ipw_EnableNotification) @06c1d2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_EnableNotification/32 Port_Ci_Icu_Ip_EnableNotification/42 Lptmr_Icu_Ip_EnableNotification/41 Lpit_Icu_Ip_EnableNotification/40 Ftm_Icu_Ip_EnableNotification/39 
+Icu_Ipw_DisableEdgeDetection/7 (Icu_Ipw_DisableEdgeDetection) @06c1dee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_DisableNotification/38 Cmp_Ip_DisableInterrupt/37 Port_Ci_Icu_Ip_DisableDetection/36 Lptmr_Icu_Ip_DisableDetection/35 Lpit_Icu_Ip_DisableDetectionMode/34 Ftm_Icu_Ip_DisableEdgeDetection/33 
+Icu_Ipw_EnableEdgeDetection/6 (Icu_Ipw_EnableEdgeDetection) @06c1dc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_EnableNotification/32 Cmp_Ip_EnableInterrupt/31 Port_Ci_Icu_Ip_EnableEdgeDetection/30 Lptmr_Icu_Ip_EnableEdgeDetection/29 Lpit_Icu_Ip_EnableEdgeDetection/28 Ftm_Icu_Ip_EnableEdgeDetection/27 
+Icu_Ipw_GetEdgeNumbers/5 (Icu_Ipw_GetEdgeNumbers) @06c1d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_GetEdgeNumbers/26 Ftm_Icu_Ip_GetEdgeNumbers/25 
+Icu_Ipw_DisableEdgeCount/4 (Icu_Ipw_DisableEdgeCount) @06c1d700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableEdgeCount/24 Ftm_Icu_Ip_DisableEdgeCount/23 
+Icu_Ipw_EnableEdgeCount/3 (Icu_Ipw_EnableEdgeCount) @06c1d460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableEdgeCount/22 Ftm_Icu_Ip_EnableEdgeCount/21 
+Icu_Ipw_ResetEdgeCount/2 (Icu_Ipw_ResetEdgeCount) @06c1d1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_ResetEdgeCount/20 Ftm_Icu_Ip_ResetEdgeCount/19 
+Icu_Ipw_SetActivationCondition/1 (Icu_Ipw_SetActivationCondition) @06c11ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_SetInterruptActivation/18 Cmp_Ip_SetInterruptActivation/18 Cmp_Ip_SetInterruptActivation/18 Cmp_Ip_SetInterruptActivation/18 Lptmr_Icu_Ip_SetActivationCondition/17 Lptmr_Icu_Ip_SetActivationCondition/17 Port_Ci_Icu_Ip_SetActivationCondition/16 Port_Ci_Icu_Ip_SetActivationCondition/16 Port_Ci_Icu_Ip_SetActivationCondition/16 Port_Ci_Icu_Ip_SetActivationCondition/16 Ftm_Icu_Ip_SetActivationCondition/15 Ftm_Icu_Ip_SetActivationCondition/15 Ftm_Icu_Ip_SetActivationCondition/15 Ftm_Icu_Ip_SetActivationCondition/15 
+Icu_Ipw_Init/0 (Icu_Ipw_Init) @06c11e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Cmp_Ip_Init/14 Port_Ci_Icu_Ip_Init/13 Lptmr_Icu_Ip_Init/12 Lpit_Icu_Ip_Init/11 Ftm_Icu_Ip_Init/10 
+Icu_Ipw_DisableNotification (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+
+  <bb 2> :
+  module = ChannelConfig->instanceNo;
+  ipType = ChannelConfig->channelIp;
+  switch (ipType) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig->pFtmHwChannelConfig;
+  channel = _1->hwChannel;
+  Ftm_Icu_Ip_DisableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig->pLpitHwChannelConfig;
+  channel = _2->hwChannel;
+  Lpit_Icu_Ip_DisableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_DisableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig->pPortCiHwChannelConfig;
+  channel = _3->pinId;
+  Port_Ci_Icu_Ip_DisableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_DisableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableNotification (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+
+  <bb 2> :
+  module = ChannelConfig->instanceNo;
+  ipType = ChannelConfig->channelIp;
+  switch (ipType) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig->pFtmHwChannelConfig;
+  channel = _1->hwChannel;
+  Ftm_Icu_Ip_EnableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig->pLpitHwChannelConfig;
+  channel = _2->hwChannel;
+  Lpit_Icu_Ip_EnableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_EnableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig->pPortCiHwChannelConfig;
+  channel = _3->pinId;
+  Port_Ci_Icu_Ip_EnableNotification (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_EnableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_DisableEdgeDetection (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+
+  <bb 2> :
+  module = ChannelConfig->instanceNo;
+  ipType = ChannelConfig->channelIp;
+  switch (ipType) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig->pFtmHwChannelConfig;
+  channel = _1->hwChannel;
+  Ftm_Icu_Ip_DisableEdgeDetection (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig->pLpitHwChannelConfig;
+  channel = _2->hwChannel;
+  Lpit_Icu_Ip_DisableDetectionMode (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_DisableDetection (module);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig->pPortCiHwChannelConfig;
+  channel = _3->pinId;
+  Port_Ci_Icu_Ip_DisableDetection (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_DisableInterrupt (module);
+  Cmp_Ip_DisableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableEdgeDetection (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+
+  <bb 2> :
+  module = ChannelConfig->instanceNo;
+  ipType = ChannelConfig->channelIp;
+  switch (ipType) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig->pFtmHwChannelConfig;
+  channel = _1->hwChannel;
+  Ftm_Icu_Ip_EnableEdgeDetection (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig->pLpitHwChannelConfig;
+  channel = _2->hwChannel;
+  Lpit_Icu_Ip_EnableEdgeDetection (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_EnableEdgeDetection (module);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig->pPortCiHwChannelConfig;
+  channel = _3->pinId;
+  Port_Ci_Icu_Ip_EnableEdgeDetection (module, channel);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_EnableInterrupt (module);
+  Cmp_Ip_EnableNotification (module);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_GetEdgeNumbers (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  uint16 edgeNumber;
+  uint16 D.7252;
+
+  <bb 2> :
+  edgeNumber = 0;
+  _1 = ChannelConfig->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig->instanceNo;
+  _3 = ChannelConfig->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  edgeNumber = Ftm_Icu_Ip_GetEdgeNumbers (_2, _4);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig->instanceNo;
+  edgeNumber = Lptmr_Icu_Ip_GetEdgeNumbers (_6);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  edgeNumber = 0;
+
+  <bb 7> :
+  D.7252 = edgeNumber;
+
+  <bb 8> :
+<L6>:
+  return D.7252;
+
+}
+
+
+Icu_Ipw_DisableEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <bb 2> :
+  _1 = ChannelConfig->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig->instanceNo;
+  _3 = ChannelConfig->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_DisableEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig->instanceNo;
+  Lptmr_Icu_Ip_DisableEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <bb 2> :
+  _1 = ChannelConfig->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig->instanceNo;
+  _3 = ChannelConfig->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_EnableEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig->instanceNo;
+  Lptmr_Icu_Ip_EnableEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_ResetEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <bb 2> :
+  _1 = ChannelConfig->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig->instanceNo;
+  _3 = ChannelConfig->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_ResetEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig->instanceNo;
+  Lptmr_Icu_Ip_ResetEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_SetActivationCondition (Icu_ActivationType activation, const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+
+  <bb 2> :
+  module = ChannelConfig->instanceNo;
+  ipType = ChannelConfig->channelIp;
+  switch (ipType) <default: <L34> [INV], case 0: <L0> [INV], case 2: <L20> [INV], case 3: <L10> [INV], case 4: <L24> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig->pFtmHwChannelConfig;
+  channel = _1->hwChannel;
+  if (activation == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Ftm_Icu_Ip_SetActivationCondition (module, channel, 2);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  if (activation == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Ftm_Icu_Ip_SetActivationCondition (module, channel, 1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (activation == 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Ftm_Icu_Ip_SetActivationCondition (module, channel, 3);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Ftm_Icu_Ip_SetActivationCondition (module, channel, 0);
+
+  <bb 10> :
+  goto <bb 32>; [INV]
+
+  <bb 11> :
+<L10>:
+  _2 = ChannelConfig->pPortCiHwChannelConfig;
+  channel = _2->pinId;
+  if (activation == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module, channel, 1);
+  goto <bb 18>; [INV]
+
+  <bb 13> :
+  if (activation == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module, channel, 2);
+  goto <bb 18>; [INV]
+
+  <bb 15> :
+  if (activation == 3)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module, channel, 3);
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module, channel, 0);
+
+  <bb 18> :
+  goto <bb 32>; [INV]
+
+  <bb 19> :
+<L20>:
+  if (activation == 2)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  Lptmr_Icu_Ip_SetActivationCondition (module, 1);
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  Lptmr_Icu_Ip_SetActivationCondition (module, 0);
+
+  <bb 22> :
+  goto <bb 32>; [INV]
+
+  <bb 23> :
+<L24>:
+  if (activation == 2)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  Cmp_Ip_SetInterruptActivation (module, 1);
+  goto <bb 30>; [INV]
+
+  <bb 25> :
+  if (activation == 1)
+    goto <bb 26>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 26> :
+  Cmp_Ip_SetInterruptActivation (module, 2);
+  goto <bb 30>; [INV]
+
+  <bb 27> :
+  if (activation == 3)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  Cmp_Ip_SetInterruptActivation (module, 3);
+  goto <bb 30>; [INV]
+
+  <bb 29> :
+  Cmp_Ip_SetInterruptActivation (module, 0);
+
+  <bb 30> :
+  goto <bb 32>; [INV]
+
+  <bb 31> :
+<L34>:
+
+  <bb 32> :
+  return;
+
+}
+
+
+Icu_Ipw_Init (uint8 count, const struct Icu_Ipw_IpConfigType[<unknown>] * pIpConfig)
+{
+  uint8 index;
+
+  <bb 2> :
+  index = 0;
+  goto <bb 14>; [INV]
+
+  <bb 3> :
+  _1 = (int) index;
+  _2 = *pIpConfig[_1].instanceIp;
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = (int) index;
+  _4 = *pIpConfig[_3].instanceNo;
+  _5 = (int) index;
+  _6 = *pIpConfig[_5].pFtmHwIpConfig;
+  Ftm_Icu_Ip_Init (_4, _6);
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+  _7 = (int) index;
+  _8 = *pIpConfig[_7].instanceIp;
+  if (_8 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = (int) index;
+  _10 = *pIpConfig[_9].instanceNo;
+  _11 = (int) index;
+  _12 = *pIpConfig[_11].pLpitHwInstanceConfig;
+  Lpit_Icu_Ip_Init (_10, _12);
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+  _13 = (int) index;
+  _14 = *pIpConfig[_13].instanceIp;
+  if (_14 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _15 = (int) index;
+  _16 = *pIpConfig[_15].instanceNo;
+  _17 = (int) index;
+  _18 = *pIpConfig[_17].pLptmrHwIpConfig;
+  Lptmr_Icu_Ip_Init (_16, _18);
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  _19 = (int) index;
+  _20 = *pIpConfig[_19].instanceIp;
+  if (_20 == 3)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _21 = (int) index;
+  _22 = *pIpConfig[_21].instanceNo;
+  _23 = (int) index;
+  _24 = *pIpConfig[_23].pPortCiHwIpConfig;
+  Port_Ci_Icu_Ip_Init (_22, _24);
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+  _25 = (int) index;
+  _26 = *pIpConfig[_25].instanceIp;
+  if (_26 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _27 = (int) index;
+  _28 = *pIpConfig[_27].instanceNo;
+  _29 = (int) index;
+  _30 = *pIpConfig[_29].pCmpHwIpConfig;
+  Cmp_Ip_Init (_28, _30);
+
+  <bb 13> :
+  index.0_31 = index;
+  index = index.0_31 + 1;
+
+  <bb 14> :
+  if (index < count)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  return;
+
+}
+
+

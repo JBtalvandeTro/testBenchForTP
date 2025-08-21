@@ -1,0 +1,201 @@
+PWBio_Deinit ()
+{
+  <bb 2> :
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+
+PWBio_RunTests ()
+{
+  uint8_t auxSwitchId;
+  uint8_t relayCmd;
+  uint8_t relayId;
+
+  <bb 2> :
+  relayId = COM_debugTestReq.relaySwitchId;
+  auxSwitchId = relayId + 255;
+  relayCmd = COM_debugTestReq.relaySwitchCmd;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  _1 = (int) relayCmd;
+  switch (_1) <default: <L3> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = (<unnamed type>) relayId;
+  PWBio_UnsetCdeSwitch (_2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = (<unnamed type>) relayId;
+  PWBio_SetCdeSwitch (_3);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = (<unnamed type>) auxSwitchId;
+  _5 = PWBio_ReadAuxSwitch (_4);
+  PWBio_cmdResults.SwitchReadCmdResult = _5;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+PWBio_ReadAuxSwitch (PWB_AuxSwitchIdE auxId)
+{
+  boolean result;
+  boolean D.6883;
+
+  <bb 2> :
+  switch (auxId) <default: <L2> [INV], case 1: <L0> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = Dio_ReadChannel (73);
+  result = _1 != 0;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = Dio_ReadChannel (75);
+  result = _2 != 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  result = 0;
+
+  <bb 6> :
+  D.6883 = result;
+
+  <bb 7> :
+<L4>:
+  return D.6883;
+
+}
+
+
+PWBio_UnsetCdeSwitch (PWB_CdeSwitchIdE switchId)
+{
+  uint32_t CdeS3Freq;
+  uint32_t CdeS2Freq;
+
+  <bb 2> :
+  CdeS2Freq = PAR_paramConfig[49].realVal.unsignedVal;
+  CdeS3Freq = PAR_paramConfig[48].realVal.unsignedVal;
+  switch (switchId) <default: <L3> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  Dio_WriteChannel (128, 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _1 = (short unsigned int) CdeS2Freq;
+  Pwm_SetPeriodAndDuty (11, _1, 0);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _2 = (short unsigned int) CdeS3Freq;
+  Pwm_SetPeriodAndDuty (12, _2, 0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+
+PWBio_SetCdeSwitch (PWB_CdeSwitchIdE switchId)
+{
+  uint32_t CdeS3Freq;
+  uint32_t CdeS2Freq;
+
+  <bb 2> :
+  CdeS2Freq = PAR_paramConfig[49].realVal.unsignedVal;
+  CdeS3Freq = PAR_paramConfig[48].realVal.unsignedVal;
+  switch (switchId) <default: <L9> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Dio_WriteChannel (128, 1);
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  PWBio_LowerDutyCycleS2.0_1 = PWBio_LowerDutyCycleS2;
+  if (PWBio_LowerDutyCycleS2.0_1 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (short unsigned int) CdeS2Freq;
+  Pwm_SetPeriodAndDuty (11, _2, 32768);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = (short unsigned int) CdeS2Freq;
+  Pwm_SetPeriodAndDuty (11, _3, 32768);
+
+  <bb 7> :
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L5>:
+  PWBio_LowerDutyCycleS3.1_4 = PWBio_LowerDutyCycleS3;
+  if (PWBio_LowerDutyCycleS3.1_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _5 = (short unsigned int) CdeS3Freq;
+  Pwm_SetPeriodAndDuty (12, _5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _6 = (short unsigned int) CdeS3Freq;
+  Pwm_SetPeriodAndDuty (12, _6, 32768);
+
+  <bb 11> :
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  return;
+
+}
+
+
+PWBio_Init ()
+{
+  <bb 2> :
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+  PWBio_LowerDutyCycleS2 = 0;
+  PWBio_LowerDutyCycleS3 = 0;
+  return;
+
+}
+
+

@@ -1,0 +1,175 @@
+hwAcc_GetLockForOutput (const struct TRGMUX_Type * const pTrgmux, const uint32 Output)
+{
+  boolean Status;
+  boolean D.5638;
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  boolean _13;
+
+  <bb 2> :
+  _1 = (unsigned char) Output_8(D);
+  _2 = _1 / 4;
+  _3 = (int) _2;
+  _4 ={v} pTrgmux_10(D)->TRGMUXn[_3];
+  _5 = _4 >> 31;
+  _6 = _5 & 1;
+  if (_6 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status_12 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status_11 = 0;
+
+  <bb 5> :
+  # Status_7 = PHI <Status_12(3), Status_11(4)>
+  _13 = Status_7;
+
+  <bb 6> :
+<L3>:
+  return _13;
+
+}
+
+
+hwAcc_SetLockForOutput (struct TRGMUX_Type * const pTrgmux, const uint32 Output)
+{
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  long unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  int _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  _1 = (unsigned char) Output_9(D);
+  _2 = _1 / 4;
+  _3 = (int) _2;
+  _4 ={v} pTrgmux_11(D)->TRGMUXn[_3];
+  _5 = (unsigned char) Output_9(D);
+  _6 = _5 / 4;
+  _7 = (int) _6;
+  _8 = _4 | 2147483648;
+  pTrgmux_11(D)->TRGMUXn[_7] ={v} _8;
+  return;
+
+}
+
+
+hwAcc_SetInputForOutput (struct TRGMUX_Type * const pTrgmux, const uint32 Input, const uint32 Output)
+{
+  uint32 RegValue;
+  unsigned char _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  unsigned int _5;
+  unsigned int _6;
+  unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  unsigned char _10;
+  unsigned char _11;
+  unsigned char _12;
+  int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  unsigned char _16;
+  int _17;
+
+  <bb 2> :
+  _1 = (unsigned char) Output_18(D);
+  _2 = _1 / 4;
+  _3 = (int) _2;
+  RegValue_21 ={v} pTrgmux_20(D)->TRGMUXn[_3];
+  _4 = (unsigned char) Output_18(D);
+  _5 = (unsigned int) _4;
+  _6 = _5 & 3;
+  _7 = _6 * 8;
+  _8 = 127 << _7;
+  _9 = ~_8;
+  RegValue_22 = RegValue_21 & _9;
+  _10 = (unsigned char) Output_18(D);
+  _11 = _10 & 3;
+  _12 = _11 * 8;
+  _13 = (int) _12;
+  _14 = Input_23(D) << _13;
+  RegValue_24 = RegValue_22 | _14;
+  _15 = (unsigned char) Output_18(D);
+  _16 = _15 / 4;
+  _17 = (int) _16;
+  pTrgmux_20(D)->TRGMUXn[_17] ={v} RegValue_24;
+  return;
+
+}
+
+
+hwAcc_Init (struct TRGMUX_Type * const pTrgmux)
+{
+  Trgmux_Ip_StatusType Status;
+  uint32 RegValue;
+  uint32 RegIdx;
+  Trgmux_Ip_StatusType D.5633;
+  long unsigned int _1;
+  long unsigned int _2;
+  Trgmux_Ip_StatusType _11;
+
+  <bb 2> :
+  Status_8 = 0;
+  RegIdx_9 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  if (Status_5 != 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  _1 ={v} pTrgmux_12(D)->TRGMUXn[RegIdx_3];
+  RegValue_13 = _1 & 2147483648;
+  if (RegValue_13 == 2147483648)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Status_15 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _2 ={v} pTrgmux_12(D)->TRGMUXn[RegIdx_3];
+  pTrgmux_12(D)->TRGMUXn[RegIdx_3] ={v} _2;
+
+  <bb 7> :
+  # Status_4 = PHI <Status_5(3), Status_5(6), Status_15(5)>
+  RegIdx_16 = RegIdx_3 + 1;
+
+  <bb 8> :
+  # RegIdx_3 = PHI <RegIdx_9(2), RegIdx_16(7)>
+  # Status_5 = PHI <Status_8(2), Status_4(7)>
+  if (RegIdx_3 <= 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _11 = Status_5;
+
+  <bb 10> :
+<L9>:
+  return _11;
+
+}
+
+

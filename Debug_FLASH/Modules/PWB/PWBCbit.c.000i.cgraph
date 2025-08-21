@@ -1,0 +1,913 @@
+Trivially needed symbols: PWBCBit_UpdatePsValidState pwbCbit_getOffSetCalibration pwbCbit_getGainCalibration PWBCbit_Deinit PWBCbit_GetHvMeasures PWBCbit_GetLvMeasures PWBCbit_Init psValidDebounceBuffer PWB_psValidState PWBCbit_cmdResults
+
+
+Initial Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not-ready
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0678f000
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06783c40
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06783700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06783e00
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06783b60
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067838c0
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06783620
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06782360
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0654f990
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not-ready
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not-ready
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not-ready
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not-ready
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCBit_UpdatePsValidState/9 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetLvMeasures/4 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getGainCalibration/7 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)pwbCbit_getOffSetCalibration/8 (read)
+  Availability: not_available
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWBCbit_GetLvMeasures/4 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)PWBCbit_GetHvMeasures/5 (read)
+  Availability: not_available
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetLvMeasures/4 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetHvMeasures/5 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 PWBCbit_GetLvMeasures/4 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: psValidDebounceBuffer/2 (read)psValidDebounceBuffer/2 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)psValidDebounceBuffer/2 (read)PWB_psValidState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_ReadChannel/17 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWBCbit_GetHvMeasures/5 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)Spc_returnMeasures/12 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: pwbCbit_getOffSetCalibration/8 pwbCbit_getGainCalibration/7 SPC_GetHvVoltageMeasures/16 SPC_GetHvTemperaturesMeasures/15 SPC_GetHvCurrentMeasures/14 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spc_returnMeasures/12 (read)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SPC_GetLvVoltageMeasures/11 Dio_WriteChannel/10 Dio_WriteChannel/10 Dio_WriteChannel/10 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWBCbit_cmdResults/0 (write)PWBCbit_cmdResults/0 (write)PWB_psValidState/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (read)PWBCBit_UpdatePsValidState/9 (read)
+  Availability: available
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCBit_UpdatePsValidState/9 (write)PWBCBit_UpdatePsValidState/9 (write)
+  Availability: available
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWBCbit_Init/3 (write)PWBCbit_Init/3 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetLvMeasures/4 (write)PWBCbit_GetHvMeasures/5 (write)PWBCbit_GetHvMeasures/5 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: psValidDebounceBuffer PWB_psValidState PWBCbit_cmdResults
+Removing variables:
+
+Final Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @0678fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SPC_GetHvVoltageMeasures/16 (SPC_GetHvVoltageMeasures) @0678f9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SPC_GetHvTemperaturesMeasures/15 (SPC_GetHvTemperaturesMeasures) @0678f8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SPC_GetHvCurrentMeasures/14 (SPC_GetHvCurrentMeasures) @0678f7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @06782e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Spc_returnMeasures/12 (Spc_returnMeasures) @06782e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+SPC_GetLvVoltageMeasures/11 (SPC_GetLvVoltageMeasures) @0678f620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dio_WriteChannel/10 (Dio_WriteChannel) @0678f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCBit_UpdatePsValidState/9 (PWBCBit_UpdatePsValidState) @0678f000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwbCbit_getOffSetCalibration/8 (pwbCbit_getOffSetCalibration) @06783c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwbCbit_getGainCalibration/7 (pwbCbit_getGainCalibration) @06783700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_Deinit/6 (PWBCbit_Deinit) @06783e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/5 (PWBCbit_GetHvMeasures) @06783b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_GetLvMeasures/4 (PWBCbit_GetLvMeasures) @067838c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_Init/3 (PWBCbit_Init) @06783620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+psValidDebounceBuffer/2 (psValidDebounceBuffer) @06782360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+PWB_psValidState/1 (PWB_psValidState) @0654f990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06782360
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWBCbit_cmdResults/0 (PWBCbit_cmdResults) @0654f948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0654f990
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

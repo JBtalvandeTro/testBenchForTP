@@ -1,0 +1,1884 @@
+Trivially needed symbols: Crypto_Ipw_SheMPCompression Crypto_Ipw_SheDebugAuth Crypto_Ipw_SheDebugChal Crypto_Ipw_SheGetId Crypto_Ipw_SheGetStatus Crypto_Ipw_SheSetBootStatus Crypto_Ipw_SetSynchronousRequestsTimeout Crypto_Ipw_MainFunction Crypto_Ipw_CancelJob Crypto_Ipw_ProcessJob Crypto_Ipw_Init Crypto_Ipw_TranslateCsecResponse Crypto_Ipw_ProcessOperation Crypto_Ipw_ProcessAsyncCsecResponse Crypto_Ipw_State
+
+
+Initial Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba4d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba4a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba47e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba4540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba42a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05ba4000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b9ab60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b9a620
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b9a0e0
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b9ad20
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05b9a540
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b9aa80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_Random/5 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b9a540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05b9a2a0
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05b9a2a0
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b30ee0
+  References: 
+  Referring: Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_Init/6 (write)Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_Random/5 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_Init/6 (write)Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_Random/5 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_Init/6 (write)Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_Random/5 Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_Init/6 (write)Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not_available
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not_available
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_ProcessAsyncCsecResponse/1 Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_Init/6 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Crypto_Ipw_State
+Removing variables:
+
+Final Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

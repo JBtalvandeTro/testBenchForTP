@@ -1,0 +1,16 @@
+
+
+- need to do : 
+	* get the errors from the power core from the CNV errors 
+	* determn the severty of th error 
+	* raise the falgs of the correspoding error 
+- need to have : 
+variables wise :
+	* a struct for fast errors of bb-aux.
+	* a struct for slow errors of bb-aux.
+	* a struct for warnings of bb-aux. 
+
+functions wise :
+	* a function that sets the BB-AUX errors and warnings depending on the COMETi error (static function called when we want to update the errors)
+	* a function that set the serverty and the origin of the error (static function called when needed)
+	* a function that determs the serverty of the faults (Operating and Critical) 

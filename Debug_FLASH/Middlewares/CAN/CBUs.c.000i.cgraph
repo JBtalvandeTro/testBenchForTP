@@ -1,0 +1,1119 @@
+Trivially needed symbols: CBU_CheckLength CBU_SetBitrate CanIf_CurrentIcomConfiguration CBU_SendFrame CBU_ClearPendingFlag CBU_CheckErrors CBU_Deinit CBU_Init CBU_CreatePduInfo CanIf_RxIndication CanIf_TxConfirmation CanIf_ControllerModeIndication CanIf_ControllerBusOff CBU_powerCoreAdd CBU_Address CBU_flags CBU_framesStatus
+
+
+Initial Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2ed20
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2ea80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2e7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2e540
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2e2a0
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d2e000
+  References: CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10a80
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10ee0
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d109a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10700
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d10460
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d06c18
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d06bd0
+  References: 
+  Referring: CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d06b88
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SetBitrate/15 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendFrame/13 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_CheckErrors/11 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_Init/9 (read)CBU_SetBitrate/15 (read)CBU_SetBitrate/15 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SetBitrate/15 CBU_SetBitrate/15 CBU_Deinit/10 CBU_Deinit/10 CBU_Deinit/10 CBU_Init/9 CBU_Init/9 CBU_Init/9 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Config_Init/18 (read)Can_Config_Init/18 (read)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetBaudrate/21 Can_SetControllerMode/17 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_Write/20 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_framesStatus/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_GetControllerErrorState/19 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)Can_Config_Init/18 (read)CBU_Address/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_SetControllerMode/17 Can_SetControllerMode/17 Can_SetControllerMode/17 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_framesStatus/0 (read)CBU_Address/2 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (write)CBU_framesStatus/0 (read)CBU_framesStatus/0 (read)CBU_powerCoreAdd/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CBU_flags/1 (write)CBU_flags/1 (write)CBU_flags/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (write)
+  Availability: available
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CanIf_RxIndication/7 (read)CBU_Init/9 (write)
+  Availability: available
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CBU_Init/9 (write)CBU_Init/9 (write)CBU_Deinit/10 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CanIf_ControllerBusOff/4 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CBU_CheckErrors/11 (write)CanIf_ControllerBusOff/4 (write)CanIf_ControllerBusOff/4 (write)CBU_Init/9 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)CBU_SetBitrate/15 (write)
+  Availability: available
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CBU_Init/9 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (write)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CanIf_RxIndication/7 (read)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_Init/9 (write)CBU_ClearPendingFlag/12 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: CBU_powerCoreAdd CBU_Address CBU_flags CBU_framesStatus
+Removing variables:
+
+Final Symbol table:
+
+Can_SetBaudrate/21 (Can_SetBaudrate) @06d4be00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Write/20 (Can_Write) @06d4ba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_GetControllerErrorState/19 (Can_GetControllerErrorState) @06d4b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Config_Init/18 (Can_Config_Init) @06d46f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Can_SetControllerMode/17 (Can_SetControllerMode) @06d4b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_CheckLength/16 (CBU_CheckLength) @06d2ed20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SetBitrate/15 (CBU_SetBitrate) @06d2ea80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_CurrentIcomConfiguration/14 (CanIf_CurrentIcomConfiguration) @06d2e7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendFrame/13 (CBU_SendFrame) @06d2e540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_ClearPendingFlag/12 (CBU_ClearPendingFlag) @06d2e2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_CheckErrors/11 (CBU_CheckErrors) @06d2e000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_Deinit/10 (CBU_Deinit) @06d10a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_Init/9 (CBU_Init) @06d10540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_CreatePduInfo/8 (CBU_CreatePduInfo) @06d10ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_RxIndication/7 (CanIf_RxIndication) @06d10c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_TxConfirmation/6 (CanIf_TxConfirmation) @06d109a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/5 (CanIf_ControllerModeIndication) @06d10700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_ControllerBusOff/4 (CanIf_ControllerBusOff) @06d10460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/3 (CBU_powerCoreAdd) @06d06c18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CBU_Address/2 (CBU_Address) @06d06bd0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06d06c18
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CBU_flags/1 (CBU_flags) @06d06b88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06d06bd0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CBU_framesStatus/0 (CBU_framesStatus) @06d06b40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06d06b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

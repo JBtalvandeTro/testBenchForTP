@@ -1,0 +1,151 @@
+IPA summary for Wdg_43_Instance0_GetVersionInfo/3 is missing.
+IPA summary for Wdg_43_Instance0_Service/2 is missing.
+IPA summary for Wdg_43_Instance0_SetMode/1 is missing.
+IPA summary for Wdg_43_Instance0_Init/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        4 calls, 4.000000 freq, 0 count
+IPA summary for Wdg_43_Instance0_GetVersionInfo/3 is missing.
+IPA summary for Wdg_43_Instance0_Service/2 is missing.
+IPA summary for Wdg_43_Instance0_SetMode/1 is missing.
+IPA summary for Wdg_43_Instance0_Init/0 is missing.
+Symbol table:
+
+Wdg_ChannelGetVersionInfo/7 (Wdg_ChannelGetVersionInfo) @05c8b380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_43_Instance0_GetVersionInfo/3 
+  Calls: 
+Wdg_ChannelService/6 (Wdg_ChannelService) @05c8b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_43_Instance0_Service/2 
+  Calls: 
+Wdg_ChannelSetMode/5 (Wdg_ChannelSetMode) @05c8b000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_43_Instance0_SetMode/1 
+  Calls: 
+Wdg_ChannelInit/4 (Wdg_ChannelInit) @05b4a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_43_Instance0_Init/0 
+  Calls: 
+Wdg_43_Instance0_GetVersionInfo/3 (Wdg_43_Instance0_GetVersionInfo) @05b4ac40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelGetVersionInfo/7 
+Wdg_43_Instance0_Service/2 (Wdg_43_Instance0_Service) @05b4a9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelService/6 
+Wdg_43_Instance0_SetMode/1 (Wdg_43_Instance0_SetMode) @05b4a700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelSetMode/5 
+Wdg_43_Instance0_Init/0 (Wdg_43_Instance0_Init) @05b4a460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelInit/4 
+
+;; Function Wdg_43_Instance0_Init (Wdg_43_Instance0_Init, funcdef_no=0, decl_uid=5650, cgraph_uid=1, symbol_order=0)
+
+Wdg_43_Instance0_Init (const struct Wdg_ConfigType * ConfigPtr)
+{
+  <bb 2> :
+  Wdg_ChannelInit (0, ConfigPtr_2(D));
+  return;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_SetMode (Wdg_43_Instance0_SetMode, funcdef_no=1, decl_uid=5652, cgraph_uid=2, symbol_order=1)
+
+Wdg_43_Instance0_SetMode (WdgIf_ModeType Mode)
+{
+  Std_ReturnType D.5684;
+  Std_ReturnType _4;
+
+  <bb 2> :
+  _4 = Wdg_ChannelSetMode (0, Mode_2(D));
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_Service (Wdg_43_Instance0_Service, funcdef_no=2, decl_uid=5654, cgraph_uid=3, symbol_order=2)
+
+Wdg_43_Instance0_Service ()
+{
+  <bb 2> :
+  Wdg_ChannelService (0);
+  return;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_GetVersionInfo (Wdg_43_Instance0_GetVersionInfo, funcdef_no=3, decl_uid=5656, cgraph_uid=4, symbol_order=3)
+
+Wdg_43_Instance0_GetVersionInfo (struct Std_VersionInfoType * Versioninfo)
+{
+  <bb 2> :
+  Wdg_ChannelGetVersionInfo (0, Versioninfo_2(D));
+  return;
+
+}
+
+

@@ -1,0 +1,541 @@
+Wdg_ChannelService (const Wdg_Ipw_InstanceType Instance)
+{
+  <bb 2> :
+  Wdg_Ipw_Service (Instance);
+  return;
+
+}
+
+
+Wdg_ChannelGetVersionInfo (const Wdg_Ipw_InstanceType Instance, struct Std_VersionInfoType * VersionInfo)
+{
+  Std_ReturnType Valid;
+
+  <bb 2> :
+  Valid = 1;
+  Valid = Wdg_ValidatePtrVersion (VersionInfo, Instance);
+  if (Valid == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  VersionInfo->vendorID = 43;
+  VersionInfo->moduleID = 102;
+  VersionInfo->sw_major_version = 1;
+  VersionInfo->sw_minor_version = 0;
+  VersionInfo->sw_patch_version = 1;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Wdg_ChannelSetMode (const Wdg_Ipw_InstanceType Instance, WdgIf_ModeType Mode)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5947;
+
+  <bb 2> :
+  Ret = 1;
+  Valid = 1;
+  Valid = Wdg_ChannelValidateGlobalCall (1, Instance);
+  if (Valid == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Valid = Wdg_ChannelValidateMode (Mode, 1, 17, Instance);
+  if (Valid == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Valid = Wdg_DoChannelSetMode (Instance, Mode);
+  Ret = Wdg_VadidateDoChannelSetMode (Instance, Mode, Valid);
+
+  <bb 5> :
+  Wdg_ChannelEndValidateGlobalCall (Valid, Instance);
+  D.5947 = Ret;
+
+  <bb 6> :
+<L4>:
+  return D.5947;
+
+}
+
+
+Wdg_ChannelInit (const Wdg_Ipw_InstanceType Instance, const struct Wdg_ConfigType * ConfigPtr)
+{
+  Std_ReturnType Valid;
+
+  <bb 2> :
+  Valid = 1;
+  Valid = Wdg_ChannelValidateGlobalCall (0, Instance);
+  if (Valid == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  Valid = Wdg_ValidatePtrInit (ConfigPtr, Instance);
+  if (Valid == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 4> :
+  Wdg_apConfigPtr[Instance] = ConfigPtr;
+  _1 = Wdg_aePreviousMode[Instance];
+  if (_1 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = Wdg_apConfigPtr[Instance];
+  _3 = _2->Wdg_DefaultMode;
+  Valid = Wdg_ChannelValidateMode (_3, 0, 17, Instance);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Valid = 1;
+
+  <bb 7> :
+  Valid = Wdg_InitialHardware (Instance, Valid);
+  Valid = Wdg_VadidateHardwareSetting (Instance, Valid);
+  if (Valid == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+  _4 = Wdg_apConfigPtr[Instance];
+  _5 = _4->Wdg_DefaultMode;
+  Wdg_aePreviousMode[Instance] = _5;
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+
+  <bb 9> :
+  Wdg_ChannelEndValidateGlobalCall (Valid, Instance);
+  return;
+
+}
+
+
+Wdg_VadidateDoChannelSetMode (const Wdg_Ipw_InstanceType Instance, const WdgIf_ModeType Mode, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5966;
+
+  <bb 2> :
+  Valid = Status;
+  if (Valid == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance;
+  Det_ReportError (102, _1, 1, 17);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Valid = 0;
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+  Wdg_aePreviousMode[Instance] = Mode;
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+
+  <bb 5> :
+  D.5966 = Valid;
+
+  <bb 6> :
+<L3>:
+  return D.5966;
+
+}
+
+
+Wdg_DoChannelSetMode (const Wdg_Ipw_InstanceType Instance, const WdgIf_ModeType Mode)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5961;
+
+  <bb 2> :
+  Valid = 0;
+  if (Mode == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Wdg_Ipw_StopTimer (Instance);
+  if (_1 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _2 = Wdg_apConfigPtr[Instance];
+  _3 = _2->Wdg_ModeSettings[Mode];
+  _4 = _3->Wdg_Ipw_pConfig;
+  Valid = Wdg_Ipw_SetMode (Instance, _4);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  Valid = 1;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  _5 = Wdg_aePreviousMode[Instance];
+  if (_5 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  _6 = Wdg_apConfigPtr[Instance];
+  _7 = _6->Wdg_ModeSettings[Mode];
+  _8 = _7->Wdg_Ipw_pConfig;
+  _9 = Wdg_Ipw_SetMode (Instance, _8);
+  if (_9 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Valid = Wdg_Ipw_StartTimer (Instance);
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Valid = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _10 = Wdg_apConfigPtr[Instance];
+  _11 = _10->Wdg_ModeSettings[Mode];
+  _12 = _11->Wdg_Ipw_pConfig;
+  Valid = Wdg_Ipw_SetMode (Instance, _12);
+
+  <bb 11> :
+  D.5961 = Valid;
+
+  <bb 12> :
+<L12>:
+  return D.5961;
+
+}
+
+
+Wdg_VadidateHardwareSetting (const Wdg_Ipw_InstanceType Instance, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5932;
+
+  <bb 2> :
+  Valid = Status;
+  if (Valid == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance;
+  Det_ReportError (102, _1, 0, 17);
+  Wdg_apConfigPtr[Instance] = 0B;
+
+  <bb 4> :
+  D.5932 = Valid;
+
+  <bb 5> :
+<L3>:
+  return D.5932;
+
+}
+
+
+Wdg_InitialHardware (const Wdg_Ipw_InstanceType Instance, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5927;
+
+  <bb 2> :
+  Valid = Status;
+  if (Valid == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Wdg_apConfigPtr[Instance];
+  _2 = _1->Wdg_DefaultMode;
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = Wdg_apConfigPtr[Instance];
+  _4 = Wdg_apConfigPtr[Instance];
+  _5 = _4->Wdg_DefaultMode;
+  _6 = _3->Wdg_ModeSettings[_5];
+  _7 = _6->Wdg_Ipw_pConfig;
+  Valid = Wdg_Ipw_SetMode (Instance, _7);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = Wdg_apConfigPtr[Instance];
+  _9 = Wdg_apConfigPtr[Instance];
+  _10 = _9->Wdg_DefaultMode;
+  _11 = _8->Wdg_ModeSettings[_10];
+  _12 = _11->Wdg_Ipw_pConfig;
+  Valid = Wdg_Ipw_Init (Instance, _12);
+
+  <bb 6> :
+  D.5927 = Valid;
+
+  <bb 7> :
+<L5>:
+  return D.5927;
+
+}
+
+
+Wdg_ChannelValidateMode (WdgIf_ModeType Wdg_Mode, Wdg_ServiceIdType ServiceId, Wdg_ErrorIdType ErrorId, const Wdg_Ipw_InstanceType Instance)
+{
+  boolean ModeFailedErrActive;
+  boolean DisableRejectedErrActive;
+  Std_ReturnType Valid;
+  Std_ReturnType D.5920;
+
+  <bb 2> :
+  Valid = 0;
+  DisableRejectedErrActive = 0;
+  ModeFailedErrActive = 0;
+  if (Wdg_Mode != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (Wdg_Mode != 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  if (Wdg_Mode != 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _1 = Wdg_apConfigPtr[Instance];
+  _2 = _1->Wdg_ModeSettings[Wdg_Mode];
+  if (_2 == 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = (unsigned char) Instance;
+  _4 = (unsigned char) ServiceId;
+  _5 = (unsigned char) ErrorId;
+  Det_ReportError (102, _3, _4, _5);
+  ModeFailedErrActive = 1;
+  Valid = 1;
+
+  <bb 7> :
+  D.5920 = Valid;
+
+  <bb 8> :
+<L5>:
+  return D.5920;
+
+}
+
+
+Wdg_ValidatePtrVersion (const struct Std_VersionInfoType * VersionInfo, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5972;
+
+  <bb 2> :
+  valid = 0;
+  if (VersionInfo == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance;
+  Det_ReportError (102, _1, 4, 20);
+  valid = 1;
+
+  <bb 4> :
+  D.5972 = valid;
+
+  <bb 5> :
+<L2>:
+  return D.5972;
+
+}
+
+
+Wdg_ValidatePtrInit (const struct Wdg_ConfigType * const ConfigPtr, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5913;
+
+  <bb 2> :
+  valid = 0;
+  if (ConfigPtr == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance;
+  Det_ReportError (102, _1, 0, 21);
+  valid = 1;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _2 = ConfigPtr->Wdg_Instance;
+  if (Instance != _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance;
+  Det_ReportError (102, _3, 0, 21);
+  valid = 1;
+
+  <bb 6> :
+  D.5913 = valid;
+
+  <bb 7> :
+<L6>:
+  return D.5913;
+
+}
+
+
+Wdg_ChannelEndValidateGlobalCall (Std_ReturnType Validation, const Wdg_Ipw_InstanceType Instance)
+{
+  <bb 2> :
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  if (Validation == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Wdg_aeStatus[Instance] = 2;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  _1 = Wdg_aeStatus[Instance];
+  if (_1 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Wdg_aeStatus[Instance] = 2;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _2 = Wdg_apConfigPtr[Instance];
+  if (_2 == 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Wdg_aeStatus[Instance] = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Wdg_aeStatus[Instance] = 2;
+
+  <bb 9> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  return;
+
+}
+
+
+Wdg_ChannelValidateGlobalCall (const Wdg_ServiceIdType ServiceId, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5905;
+
+  <bb 2> :
+  Valid = 0;
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  _1 = Wdg_aeStatus[Instance];
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  if (ServiceId != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _2 = Wdg_aeStatus[Instance];
+  if (_2 == 4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _3 = Wdg_aeStatus[Instance];
+  if (_3 == 3)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  _4 = (unsigned char) Instance;
+  _5 = (unsigned char) ServiceId;
+  Det_ReportError (102, _4, _5, 16);
+  Valid = 1;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (ServiceId == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Wdg_aeStatus[Instance] = 4;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Wdg_aeStatus[Instance] = 3;
+
+  <bb 10> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+
+  <bb 11> :
+  D.5905 = Valid;
+
+  <bb 12> :
+<L9>:
+  return D.5905;
+
+}
+
+

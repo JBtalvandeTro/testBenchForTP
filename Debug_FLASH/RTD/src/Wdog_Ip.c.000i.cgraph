@@ -1,0 +1,1299 @@
+Trivially needed symbols: Wdog_Ip_IrqHandler Wdog_Ip_StopTimer Wdog_Ip_StartTimer Wdog_Ip_Config Wdog_Ip_SetTimeout Wdog_Ip_Service Wdog_Ip_DeInit Wdog_Ip_Init Wdog_Ip_HwConfig Wdog_Ip_HwDeInit Wdog_Ip_IsReconfigurationComplete Wdog_Ip_Unlock Wdog_Ip_apCallbackPtr Wdog_Ip_sBase
+
+
+Initial Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Wdog_Ip_apCallbackPtr/2 (read)Wdog_Ip_apCallbackPtr/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsIntEnabled/6 Wdog_Ip_ClearIntFlag/9 Wdog_Ip_GetIntFlag/5 DevAssert/0 
+   Indirect call
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067f1000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066959a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06695460
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06695ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06695c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Trigger/4 DevAssert/0 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066958c0
+  References: Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_HwDeInit/12 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06695620
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06695380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06695000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_DeInit/15 
+  Calls: Wdog_Ip_Trigger/4 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0668cc40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06695620
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06687b60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: Wdog_Ip_Unlock/8 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0668c9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_ClearIntFlag/9 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 Wdog_Ip_UnlockCmd/7 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0668c9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0668c460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06695000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Service/16 Wdog_Ip_HwDeInit/12 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @065efe00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0668c0e0
+  References: 
+  Referring: Wdog_Ip_Init/14 (write)Wdog_Ip_Init/14 (write)Wdog_Ip_DeInit/15 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_IrqHandler/21 (read)Wdog_Ip_IrqHandler/21 (read)
+  Availability: not-ready
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06615510
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0668c700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_Service/16 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_Init/14 Wdog_Ip_Init/14 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (read)Wdog_Ip_apCallbackPtr/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsIntEnabled/6 Wdog_Ip_ClearIntFlag/9 Wdog_Ip_GetIntFlag/5 DevAssert/0 
+   Indirect call
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Trigger/4 DevAssert/0 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_HwDeInit/12 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_DeInit/15 
+  Calls: Wdog_Ip_Trigger/4 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: Wdog_Ip_Unlock/8 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_ClearIntFlag/9 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 Wdog_Ip_UnlockCmd/7 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Service/16 Wdog_Ip_HwDeInit/12 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdog_Ip_Init/14 (write)Wdog_Ip_Init/14 (write)Wdog_Ip_DeInit/15 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_IrqHandler/21 (read)Wdog_Ip_IrqHandler/21 (read)
+  Availability: not-ready
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_Service/16 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_Init/14 Wdog_Ip_Init/14 
+  Calls: 
+
+
+Initial Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (read)Wdog_Ip_apCallbackPtr/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsIntEnabled/6 Wdog_Ip_ClearIntFlag/9 Wdog_Ip_GetIntFlag/5 DevAssert/0 
+   Indirect call
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Trigger/4 DevAssert/0 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_HwDeInit/12 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_DeInit/15 
+  Calls: Wdog_Ip_Trigger/4 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: Wdog_Ip_Unlock/8 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_ClearIntFlag/9 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 Wdog_Ip_UnlockCmd/7 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Service/16 Wdog_Ip_HwDeInit/12 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdog_Ip_Init/14 (write)Wdog_Ip_Init/14 (write)Wdog_Ip_DeInit/15 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_IrqHandler/21 (read)Wdog_Ip_IrqHandler/21 (read)
+  Availability: not-ready
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_Service/16 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_Init/14 Wdog_Ip_Init/14 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (read)Wdog_Ip_apCallbackPtr/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsIntEnabled/6 Wdog_Ip_ClearIntFlag/9 Wdog_Ip_GetIntFlag/5 DevAssert/0 
+   Indirect call
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Trigger/4 DevAssert/0 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_HwDeInit/12 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_DeInit/15 
+  Calls: Wdog_Ip_Trigger/4 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: Wdog_Ip_Unlock/8 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_ClearIntFlag/9 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 Wdog_Ip_UnlockCmd/7 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_Service/16 Wdog_Ip_HwDeInit/12 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdog_Ip_Init/14 (write)Wdog_Ip_Init/14 (write)Wdog_Ip_DeInit/15 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_IrqHandler/21 (read)Wdog_Ip_IrqHandler/21 (read)
+  Availability: not-ready
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdog_Ip_IrqHandler/21 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_Service/16 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_Init/14 Wdog_Ip_Init/14 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (read)Wdog_Ip_apCallbackPtr/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsIntEnabled/6 Wdog_Ip_ClearIntFlag/9 Wdog_Ip_GetIntFlag/5 DevAssert/0 
+   Indirect call
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_Trigger/4 DevAssert/0 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_HwDeInit/12 Wdog_Ip_Unlock/8 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdog_Ip_apCallbackPtr/2 (write)Wdog_Ip_apCallbackPtr/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdog_Ip_IsReconfigurationComplete/11 Wdog_Ip_Unlock/8 Wdog_Ip_HwConfig/13 Wdog_Ip_IsUpdateEnabled/10 DevAssert/0 Wdog_Ip_IsEnabled/3 DevAssert/0 DevAssert/0 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Wdog_Ip_DeInit/15 
+  Calls: Wdog_Ip_Trigger/4 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: OsIf_GetElapsed/24 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: Wdog_Ip_Unlock/8 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_ClearIntFlag/9 
+  Calls: OsIf_GetElapsed/24 Wdog_Ip_UnlockCmd/7 OsIf_GetCounter/23 OsIf_MicrosToTicks/22 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_Unlock/8 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_IrqHandler/21 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_Service/16 Wdog_Ip_HwDeInit/12 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Init/14 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdog_Ip_Init/14 (write)Wdog_Ip_DeInit/15 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Config/18 (write)Wdog_Ip_Init/14 (write)Wdog_Ip_IrqHandler/21 (read)Wdog_Ip_IrqHandler/21 (read)
+  Availability: available
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdog_Ip_IrqHandler/21 Wdog_Ip_StopTimer/20 Wdog_Ip_StartTimer/19 Wdog_Ip_Config/18 Wdog_Ip_Config/18 Wdog_Ip_SetTimeout/17 Wdog_Ip_Service/16 Wdog_Ip_DeInit/15 Wdog_Ip_Init/14 Wdog_Ip_Init/14 Wdog_Ip_Init/14 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdog_Ip_apCallbackPtr Wdog_Ip_sBase
+Removing variables:
+
+Final Symbol table:
+
+OsIf_GetElapsed/24 (OsIf_GetElapsed) @067f1700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_GetCounter/23 (OsIf_GetCounter) @067f1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+OsIf_MicrosToTicks/22 (OsIf_MicrosToTicks) @067f1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_IrqHandler/21 (Wdog_Ip_IrqHandler) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_StopTimer/20 (Wdog_Ip_StopTimer) @066959a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_StartTimer/19 (Wdog_Ip_StartTimer) @06695460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_Config/18 (Wdog_Ip_Config) @06695ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_SetTimeout/17 (Wdog_Ip_SetTimeout) @06695c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_Service/16 (Wdog_Ip_Service) @066958c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_DeInit/15 (Wdog_Ip_DeInit) @06695620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_Init/14 (Wdog_Ip_Init) @06695380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_HwConfig/13 (Wdog_Ip_HwConfig) @06695000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_HwDeInit/12 (Wdog_Ip_HwDeInit) @0668cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_IsReconfigurationComplete/11 (Wdog_Ip_IsReconfigurationComplete) @0668c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_IsUpdateEnabled/10 (Wdog_Ip_IsUpdateEnabled) @0668c700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_ClearIntFlag/9 (Wdog_Ip_ClearIntFlag) @0668c460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_Unlock/8 (Wdog_Ip_Unlock) @0668c0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdog_Ip_UnlockCmd/7 (Wdog_Ip_UnlockCmd) @06687e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_IsIntEnabled/6 (Wdog_Ip_IsIntEnabled) @06687b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_GetIntFlag/5 (Wdog_Ip_GetIntFlag) @066878c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_Trigger/4 (Wdog_Ip_Trigger) @06687620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_IsEnabled/3 (Wdog_Ip_IsEnabled) @06687380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdog_Ip_apCallbackPtr/2 (Wdog_Ip_apCallbackPtr) @06615510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Wdog_Ip_sBase/1 (Wdog_Ip_sBase) @06615480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06615510
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @065efe00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

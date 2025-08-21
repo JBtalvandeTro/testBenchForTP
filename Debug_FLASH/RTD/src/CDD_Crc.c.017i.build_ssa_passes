@@ -1,0 +1,181 @@
+Crc_GetChannelResult (const uint32 Channel)
+{
+  uint64 Result;
+  uint64 D.5752;
+
+  <bb 2> :
+  Result = 0;
+  _1 = Crc_CheckChannelInvalid (Channel, 12);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Result = Crc_Ip_GetChannelResult (Channel);
+
+  <bb 4> :
+  D.5752 = Result;
+
+  <bb 5> :
+<L2>:
+  return D.5752;
+
+}
+
+
+Crc_SetChannelCalculate (const uint32 Channel, const uint8 * pCrcData, const uint32 CrcLength, const uint64 CrcStartValue, const boolean IsFirstCall)
+{
+  uint64 Result;
+  uint64 D.5748;
+
+  <bb 2> :
+  Result = 0;
+  _1 = Crc_CheckChannelInvalid (Channel, 11);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (pCrcData == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Crc_ReportDetError (11, 2);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Result = Crc_Ip_SetChannelCalculate (Channel, pCrcData, CrcLength, CrcStartValue, IsFirstCall);
+
+  <bb 6> :
+  D.5748 = Result;
+
+  <bb 7> :
+<L5>:
+  return D.5748;
+
+}
+
+
+Crc_SetChannelConfig (const uint32 Channel, const struct Crc_ChannelConfigType * pxChannelConfig)
+{
+  <bb 2> :
+  _1 = Crc_CheckChannelInvalid (Channel, 10);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_Ip_SetChannelConfig (Channel, pxChannelConfig);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Crc_Init (const struct Crc_InitType * ConfigPtr)
+{
+  <bb 2> :
+  if (ConfigPtr != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_ReportDetError (9, 4);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_pxCrcInit = &Crc_xConfigInit;
+  s_pxCrcInit.0_1 = s_pxCrcInit;
+  _2 = s_pxCrcInit.0_1->pxCrcIpConfigInit;
+  Crc_Ip_Init (_2);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Crc_CheckChannelInvalid (const uint32 Channel, uint8 ServiceId)
+{
+  const struct Crc_PartitionType * ConfigPartition;
+  uint32 IndexChannel;
+  boolean Status;
+  boolean D.5741;
+
+  <bb 2> :
+  Status = 0;
+  IndexChannel = 0;
+  ConfigPartition = &Crc_xConfigPartition;
+  if (Channel > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_ReportDetError (ServiceId, 1);
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  IndexChannel = 0;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _1 = ConfigPartition->ChannelList;
+  _2 = IndexChannel * 4;
+  _3 = _1 + _2;
+  _4 = *_3;
+  if (Channel == _4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Status = 1;
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+  IndexChannel = IndexChannel + 1;
+
+  <bb 8> :
+  _5 = ConfigPartition->ChannelMax;
+  if (IndexChannel < _5)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _6 = ~Status;
+  if (_6 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  Crc_ReportDetError (ServiceId, 1);
+
+  <bb 11> :
+  D.5741 = Status;
+
+  <bb 12> :
+<L10>:
+  return D.5741;
+
+}
+
+
+Crc_ReportDetError (uint8 ServiceId, uint8 ErrorId)
+{
+  <bb 2> :
+  Det_ReportError (201, 0, ServiceId, ErrorId);
+  return;
+
+}
+
+

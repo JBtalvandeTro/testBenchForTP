@@ -1,0 +1,74 @@
+Symbol table:
+
+ACT_Deinit/4 (ACT_Deinit) @05c1b620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ACT_readyForLowPower/0 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ACT_Init/3 (ACT_Init) @05c1b380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ACT_readyForLowPower/0 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)ACT_errors/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ACT_tempSeverity/2 (ACT_tempSeverity) @05c17510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+ACT_errors/1 (ACT_errors) @05c174c8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Init/3 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)ACT_Deinit/4 (write)
+  Availability: available
+  Varpool flags:
+ACT_readyForLowPower/0 (ACT_readyForLowPower) @05c17480
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: ACT_Init/3 (write)ACT_Deinit/4 (write)
+  Availability: available
+  Varpool flags:
+ACT_Deinit ()
+{
+  <bb 2> :
+  ACT_readyForLowPower = 0;
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+  ACT_errors.origin.all = 0;
+  ACT_errors.severity = 0;
+  ACT_errors.fastPowerDownMask.all = 65535;
+  ACT_errors.slowPowerDownMask.all = 4294967295;
+  return;
+
+}
+
+
+ACT_Init ()
+{
+  <bb 2> :
+  ACT_readyForLowPower = 0;
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+  ACT_errors.origin.all = 0;
+  ACT_errors.severity = 0;
+  ACT_errors.fastPowerDownMask.all = 65535;
+  ACT_errors.slowPowerDownMask.all = 4294967295;
+  ACT_errors.warningsMask.all = 65535;
+  return;
+
+}
+
+

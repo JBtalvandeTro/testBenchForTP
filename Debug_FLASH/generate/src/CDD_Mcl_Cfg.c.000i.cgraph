@@ -1,0 +1,200 @@
+Trivially needed symbols: g_ptLmemBasePtrArray
+
+
+Initial Symbol table:
+
+Cache_Ip_CleanByAddr/15 (Cache_Ip_CleanByAddr) @0673dd20
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_InvalidateByAddr/14 (Cache_Ip_InvalidateByAddr) @0673da80
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Clean/13 (Cache_Ip_Clean) @0673d7e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Invalidate/12 (Cache_Ip_Invalidate) @0673d540
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Disable/11 (Cache_Ip_Disable) @0673d2a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+Cache_Ip_Enable/10 (Cache_Ip_Enable) @0673d000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheCleanByAddr/9 (hwAcc_Lmem_ProcessorCodeCacheCleanByAddr) @067368c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeInvalidateByAddr/8 (hwAcc_Lmem_ProcessorCodeInvalidateByAddr) @06736460
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeClean/7 (hwAcc_Lmem_ProcessorCodeClean) @067360e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeInvalidate/6 (hwAcc_Lmem_ProcessorCodeInvalidate) @068c1e00
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheDisable/5 (hwAcc_Lmem_ProcessorCodeCacheDisable) @068c1b60
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ProcessorCodeCacheEnable/4 (hwAcc_Lmem_ProcessorCodeCacheEnable) @068c18c0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_AddressReg/3 (hwAcc_Lmem_AddressReg) @068c1620
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_LineControlReg/2 (hwAcc_Lmem_LineControlReg) @068c1380
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+hwAcc_Lmem_ControlReg/1 (hwAcc_Lmem_ControlReg) @068c10e0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols: Cache_Ip_CleanByAddr Cache_Ip_InvalidateByAddr Cache_Ip_Clean Cache_Ip_Invalidate Cache_Ip_Disable Cache_Ip_Enable hwAcc_Lmem_ProcessorCodeCacheCleanByAddr hwAcc_Lmem_ProcessorCodeInvalidateByAddr hwAcc_Lmem_ProcessorCodeClean hwAcc_Lmem_ProcessorCodeInvalidate hwAcc_Lmem_ProcessorCodeCacheDisable hwAcc_Lmem_ProcessorCodeCacheEnable hwAcc_Lmem_AddressReg hwAcc_Lmem_LineControlReg hwAcc_Lmem_ControlReg
+
+Reclaimed Symbol table:
+
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: g_ptLmemBasePtrArray
+Removing variables:
+
+Final Symbol table:
+
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @068bd948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

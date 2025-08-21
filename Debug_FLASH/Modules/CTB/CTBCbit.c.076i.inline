@@ -1,0 +1,449 @@
+IPA summary for ctbCbit_UnsetSpareDSO/13 is missing.
+IPA summary for ctbCbit_SetSpareDSO/12 is missing.
+IPA summary for ctbCbit_UnsetHealthDSO/11 is missing.
+IPA summary for ctbCbit_SetHealthDSO/10 is missing.
+IPA summary for ctbCbit_ReadSpareDSO/9 is missing.
+IPA summary for ctbCbit_ReadHealthDSO/8 is missing.
+IPA summary for CTBCbit_Deinit/7 is missing.
+IPA summary for CTBCbit_Runtests/6 is missing.
+IPA summary for CTBCbit_ReadDSO/5 is missing.
+IPA summary for CTBCbit_UnsetDSO/4 is missing.
+IPA summary for CTBCbit_SetDSO/3 is missing.
+IPA summary for CTBCbit_Init/2 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        9 calls, 9.000000 freq, 0 count
+function body not available                       :       20 calls, 20.000000 freq, 0 count
+IPA summary for ctbCbit_UnsetSpareDSO/13 is missing.
+IPA summary for ctbCbit_SetSpareDSO/12 is missing.
+IPA summary for ctbCbit_UnsetHealthDSO/11 is missing.
+IPA summary for ctbCbit_SetHealthDSO/10 is missing.
+IPA summary for ctbCbit_ReadSpareDSO/9 is missing.
+IPA summary for ctbCbit_ReadHealthDSO/8 is missing.
+IPA summary for CTBCbit_Deinit/7 is missing.
+IPA summary for CTBCbit_Runtests/6 is missing.
+IPA summary for CTBCbit_ReadDSO/5 is missing.
+IPA summary for CTBCbit_UnsetDSO/4 is missing.
+IPA summary for CTBCbit_SetDSO/3 is missing.
+IPA summary for CTBCbit_Init/2 is missing.
+Symbol table:
+
+Dio_ReadChannel/17 (Dio_ReadChannel) @05d66620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbCbit_ReadSpareDSO/9 ctbCbit_ReadHealthDSO/8 
+  Calls: 
+Port_SetPinMode/16 (Port_SetPinMode) @05d66540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbCbit_UnsetSpareDSO/13 ctbCbit_SetSpareDSO/12 ctbCbit_UnsetHealthDSO/11 ctbCbit_SetHealthDSO/10 ctbCbit_ReadSpareDSO/9 ctbCbit_ReadHealthDSO/8 
+  Calls: 
+COM_debugTestReq/15 (COM_debugTestReq) @05d6a0d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTBCbit_Runtests/6 (read)CTBCbit_Runtests/6 (read)
+  Availability: not_available
+  Varpool flags:
+Dio_WriteChannel/14 (Dio_WriteChannel) @05d5fe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbCbit_UnsetSpareDSO/13 ctbCbit_SetSpareDSO/12 ctbCbit_UnsetHealthDSO/11 ctbCbit_SetHealthDSO/10 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 CTBCbit_Init/2 
+  Calls: 
+ctbCbit_UnsetSpareDSO/13 (ctbCbit_UnsetSpareDSO) @05d5f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_UnsetDSO/4 
+  Calls: Dio_WriteChannel/14 Port_SetPinMode/16 
+ctbCbit_SetSpareDSO/12 (ctbCbit_SetSpareDSO) @05d5fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_SetDSO/3 
+  Calls: Dio_WriteChannel/14 Port_SetPinMode/16 
+ctbCbit_UnsetHealthDSO/11 (ctbCbit_UnsetHealthDSO) @05d5fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_UnsetDSO/4 
+  Calls: Dio_WriteChannel/14 Port_SetPinMode/16 
+ctbCbit_SetHealthDSO/10 (ctbCbit_SetHealthDSO) @05d5f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_SetDSO/3 
+  Calls: Dio_WriteChannel/14 Port_SetPinMode/16 
+ctbCbit_ReadSpareDSO/9 (ctbCbit_ReadSpareDSO) @05d5f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_ReadDSO/5 
+  Calls: Dio_ReadChannel/17 Port_SetPinMode/16 
+ctbCbit_ReadHealthDSO/8 (ctbCbit_ReadHealthDSO) @05d5f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_ReadDSO/5 
+  Calls: Dio_ReadChannel/17 Port_SetPinMode/16 
+CTBCbit_Deinit/7 (CTBCbit_Deinit) @05d5f000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CTBCbit_Runtests/6 (CTBCbit_Runtests) @05d59b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/15 (read)COM_debugTestReq/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CTBCbit_SetDSO/3 CTBCbit_UnsetDSO/4 CTBCbit_ReadDSO/5 
+CTBCbit_ReadDSO/5 (CTBCbit_ReadDSO) @05d59620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ctb_DSO_readResult/0 (write)ctb_DSO_readResult/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_Runtests/6 
+  Calls: ctbCbit_ReadSpareDSO/9 ctbCbit_ReadHealthDSO/8 
+CTBCbit_UnsetDSO/4 (CTBCbit_UnsetDSO) @05d59d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_Runtests/6 
+  Calls: ctbCbit_UnsetSpareDSO/13 ctbCbit_UnsetHealthDSO/11 
+CTBCbit_SetDSO/3 (CTBCbit_SetDSO) @05d59a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBCbit_Runtests/6 
+  Calls: ctbCbit_SetSpareDSO/12 ctbCbit_SetHealthDSO/10 
+CTBCbit_Init/2 (CTBCbit_Init) @05d597e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 Dio_WriteChannel/14 
+ctb_DSO_readResult/0 (ctb_DSO_readResult) @05abb870
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBCbit_ReadDSO/5 (write)CTBCbit_ReadDSO/5 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function CTBCbit_Init (CTBCbit_Init, funcdef_no=1, decl_uid=5422, cgraph_uid=2, symbol_order=2)
+
+CTBCbit_Init ()
+{
+  <bb 2> :
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Dio_WriteChannel (122, 1);
+  Dio_WriteChannel (124, 1);
+  return;
+
+}
+
+
+
+;; Function CTBCbit_SetDSO (CTBCbit_SetDSO, funcdef_no=2, decl_uid=5424, cgraph_uid=3, symbol_order=3)
+
+CTBCbit_SetDSO (uint8_t pinId)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) pinId_3(D);
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctbCbit_SetHealthDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctbCbit_SetSpareDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+
+;; Function CTBCbit_UnsetDSO (CTBCbit_UnsetDSO, funcdef_no=3, decl_uid=5426, cgraph_uid=4, symbol_order=4)
+
+CTBCbit_UnsetDSO (uint8_t pinId)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) pinId_3(D);
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctbCbit_UnsetHealthDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctbCbit_UnsetSpareDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+
+;; Function CTBCbit_ReadDSO (CTBCbit_ReadDSO, funcdef_no=4, decl_uid=5428, cgraph_uid=5, symbol_order=5)
+
+CTBCbit_ReadDSO (uint8_t pinId)
+{
+  int _1;
+  _Bool _2;
+  _Bool _3;
+
+  <bb 2> :
+  _1 = (int) pinId_5(D);
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = ctbCbit_ReadHealthDSO ();
+  ctb_DSO_readResult = _2;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = ctbCbit_ReadSpareDSO ();
+  ctb_DSO_readResult = _3;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+
+;; Function CTBCbit_Runtests (CTBCbit_Runtests, funcdef_no=5, decl_uid=5430, cgraph_uid=6, symbol_order=6)
+
+CTBCbit_Runtests ()
+{
+  uint8_t pincmd;
+  uint8_t pinId;
+  int _1;
+
+  <bb 2> :
+  pinId_4 = COM_debugTestReq.discreteIoId;
+  pincmd_5 = COM_debugTestReq.discreteIoCmd;
+  _1 = (int) pincmd_5;
+  switch (_1) <default: <L3> [INV], case 1: <L2> [INV], case 2: <L1> [INV], case 3: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  CTBCbit_ReadDSO (pinId_4);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  CTBCbit_UnsetDSO (pinId_4);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  CTBCbit_SetDSO (pinId_4);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function CTBCbit_Deinit (CTBCbit_Deinit, funcdef_no=6, decl_uid=5432, cgraph_uid=7, symbol_order=7)
+
+CTBCbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+
+;; Function ctbCbit_ReadHealthDSO (ctbCbit_ReadHealthDSO, funcdef_no=7, decl_uid=6228, cgraph_uid=8, symbol_order=8)
+
+ctbCbit_ReadHealthDSO ()
+{
+  boolean D.6298;
+  unsigned char _1;
+  boolean _5;
+
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  _1 = Dio_ReadChannel (120);
+  _5 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+
+
+;; Function ctbCbit_ReadSpareDSO (ctbCbit_ReadSpareDSO, funcdef_no=8, decl_uid=6234, cgraph_uid=9, symbol_order=9)
+
+ctbCbit_ReadSpareDSO ()
+{
+  boolean D.6300;
+  unsigned char _1;
+  boolean _5;
+
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  _1 = Dio_ReadChannel (121);
+  _5 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return _5;
+
+}
+
+
+
+;; Function ctbCbit_SetHealthDSO (ctbCbit_SetHealthDSO, funcdef_no=9, decl_uid=6230, cgraph_uid=10, symbol_order=10)
+
+ctbCbit_SetHealthDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  Dio_WriteChannel (120, 1);
+  return;
+
+}
+
+
+
+;; Function ctbCbit_UnsetHealthDSO (ctbCbit_UnsetHealthDSO, funcdef_no=10, decl_uid=6232, cgraph_uid=11, symbol_order=11)
+
+ctbCbit_UnsetHealthDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  Dio_WriteChannel (120, 0);
+  return;
+
+}
+
+
+
+;; Function ctbCbit_SetSpareDSO (ctbCbit_SetSpareDSO, funcdef_no=11, decl_uid=6236, cgraph_uid=12, symbol_order=12)
+
+ctbCbit_SetSpareDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  Dio_WriteChannel (121, 1);
+  return;
+
+}
+
+
+
+;; Function ctbCbit_UnsetSpareDSO (ctbCbit_UnsetSpareDSO, funcdef_no=12, decl_uid=6238, cgraph_uid=13, symbol_order=13)
+
+ctbCbit_UnsetSpareDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  Dio_WriteChannel (121, 0);
+  return;
+
+}
+
+

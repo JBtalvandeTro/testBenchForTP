@@ -1,0 +1,19 @@
+Symbol table:
+
+Wdg_43_Instance0_SetMode/1 (Wdg_43_Instance0_SetMode) @066a92a0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: WdgIf_SetModeFctPtr/0 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+WdgIf_SetModeFctPtr/0 (WdgIf_SetModeFctPtr) @066a6dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_43_Instance0_SetMode/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

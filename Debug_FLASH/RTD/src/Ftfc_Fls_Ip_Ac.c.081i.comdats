@@ -1,0 +1,61 @@
+__attribute__((section (".acfls_code_rom")))
+Ftfc_Fls_Ip_AccessCode (void (*<T490>) (void) CallBack)
+{
+  uint32 u32WaitedTicks;
+  uint32 u32ValueTimeOut;
+  struct FTFC_Type * FTFx_BaseAddress.0_1;
+  struct FTFC_Type * FTFx_BaseAddress.1_2;
+  unsigned char _3;
+  signed char _4;
+  long unsigned int Ftfc_Fls_Ip_u32TimeoutTicks.2_5;
+  long unsigned int Ftfc_Fls_Ip_u32ElapsedTicks.3_6;
+  long unsigned int _7;
+  long unsigned int Ftfc_Fls_Ip_u32CurrentTicks.4_8;
+  long unsigned int _9;
+
+  <bb 2> :
+  u32ValueTimeOut_13 = Ftfc_Fls_Ip_u32TimeoutTicks;
+  FTFx_BaseAddress.0_1 = FTFx_BaseAddress;
+  FTFx_BaseAddress.0_1->FSTAT ={v} 128;
+  goto <bb 5>; [INV]
+
+  <bb 3> :
+  u32ValueTimeOut_15 = u32ValueTimeOut_10 + 4294967295;
+  if (CallBack_16(D) != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CallBack_16(D) ();
+
+  <bb 5> :
+  # u32ValueTimeOut_10 = PHI <u32ValueTimeOut_13(2), u32ValueTimeOut_15(3), u32ValueTimeOut_15(4)>
+  FTFx_BaseAddress.1_2 = FTFx_BaseAddress;
+  _3 ={v} FTFx_BaseAddress.1_2->FSTAT;
+  _4 = (signed char) _3;
+  if (_4 >= 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (u32ValueTimeOut_10 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  Ftfc_Fls_Ip_u32TimeoutTicks.2_5 = Ftfc_Fls_Ip_u32TimeoutTicks;
+  u32WaitedTicks_18 = Ftfc_Fls_Ip_u32TimeoutTicks.2_5 - u32ValueTimeOut_10;
+  Ftfc_Fls_Ip_u32ElapsedTicks.3_6 = Ftfc_Fls_Ip_u32ElapsedTicks;
+  _7 = u32WaitedTicks_18 + Ftfc_Fls_Ip_u32ElapsedTicks.3_6;
+  Ftfc_Fls_Ip_u32ElapsedTicks = _7;
+  Ftfc_Fls_Ip_u32CurrentTicks.4_8 = Ftfc_Fls_Ip_u32CurrentTicks;
+  _9 = u32WaitedTicks_18 + Ftfc_Fls_Ip_u32CurrentTicks.4_8;
+  Ftfc_Fls_Ip_u32CurrentTicks = _9;
+  return;
+
+}
+
+

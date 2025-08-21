@@ -1,0 +1,331 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: PAR_IsValidAccess PAR_CheckIsValueAllowed
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+PAR_right/5 (PAR_right) @068a3630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_IsValidAccess/1 (read)PAR_IsValidAccess/1 (read)PAR_IsValidAccess/1 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/4 (PAR_paramConfig) @068a35e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_IsValidAccess/1 (read)PAR_IsValidAccess/1 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)par_IsValidRange/2 (read)
+  Availability: not_available
+  Varpool flags:
+par_IsValidParamIndex/3 (par_IsValidParamIndex) @0689cd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: par_IsValidRange/2 PAR_IsValidAccess/1 
+  Calls: 
+par_IsValidRange/2 (par_IsValidRange) @0689ca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_CheckIsValueAllowed/0 
+  Calls: par_IsValidParamIndex/3 
+PAR_IsValidAccess/1 (PAR_IsValidAccess) @0689c7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramConfig/4 (read)PAR_paramConfig/4 (read)PAR_right/5 (read)PAR_right/5 (read)PAR_right/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: par_IsValidParamIndex/3 
+PAR_CheckIsValueAllowed/0 (PAR_CheckIsValueAllowed) @0689c540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: par_IsValidRange/2 
+par_IsValidParamIndex (PAR_ParamE param)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6530;
+
+  <bb 2> :
+  if (param <= 67)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  error = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  error = 3;
+
+  <bb 5> :
+  D.6530 = error;
+
+  <bb 6> :
+<L3>:
+  return D.6530;
+
+}
+
+
+par_IsValidRange (PAR_ParamE param, union PAR_ValueU paramValue)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6525;
+
+  <bb 2> :
+  error = par_IsValidParamIndex (param);
+  if (error == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 3> :
+  _1 = PAR_paramConfig[param].type;
+  switch (_1) <default: <L17> [INV], case 0: <L1> [INV], case 1: <L7> [INV], case 2: <L1> [INV], case 3: <L7> [INV], case 4: <L1> [INV], case 5: <L7> [INV], case 6: <L13> [INV]>
+
+  <bb 4> :
+<L1>:
+  _2 = paramValue.unsignedVal;
+  _3 = PAR_paramConfig[param].min.unsignedVal;
+  if (_2 < _3)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _4 = paramValue.unsignedVal;
+  _5 = PAR_paramConfig[param].max.unsignedVal;
+  if (_4 > _5)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  error = 13;
+
+  <bb 7> :
+  goto <bb 17>; [INV]
+
+  <bb 8> :
+<L7>:
+  _6 = paramValue.signedVal;
+  _7 = PAR_paramConfig[param].min.signedVal;
+  if (_6 < _7)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  _8 = paramValue.signedVal;
+  _9 = PAR_paramConfig[param].max.signedVal;
+  if (_8 > _9)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  error = 13;
+
+  <bb 11> :
+  goto <bb 17>; [INV]
+
+  <bb 12> :
+<L13>:
+  _10 = paramValue.floatVal;
+  _11 = PAR_paramConfig[param].min.floatVal;
+  if (_10 < _11)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _12 = paramValue.floatVal;
+  _13 = PAR_paramConfig[param].max.floatVal;
+  if (_12 > _13)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  error = 13;
+
+  <bb 15> :
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+<L17>:
+  error = 10;
+
+  <bb 17> :
+  D.6525 = error;
+
+  <bb 18> :
+<L20>:
+  return D.6525;
+
+}
+
+
+PAR_IsValidAccess (PAR_ParamE param, PAR_AccessE access)
+{
+  boolean rejected;
+  PAR_AccessRightE paramAccessRights;
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6512;
+
+  <bb 2> :
+  error = par_IsValidParamIndex (param);
+  if (error == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 3> :
+  if (access == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  paramAccessRights = PAR_paramConfig[param].readAccessRight;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  paramAccessRights = PAR_paramConfig[param].writeAccessRight;
+
+  <bb 6> :
+  switch (paramAccessRights) <default: <L15> [INV], case 0: <L4> [INV], case 1: <L5> [INV], case 2: <L6> [INV], case 4: <L11> [INV]>
+
+  <bb 7> :
+<L4>:
+  rejected = 1;
+  goto <bb 19>; [INV]
+
+  <bb 8> :
+<L5>:
+  rejected = 0;
+  goto <bb 19>; [INV]
+
+  <bb 9> :
+<L6>:
+  PAR_right.0_1 = PAR_right;
+  if (PAR_right.0_1 != 2)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  PAR_right.1_2 = PAR_right;
+  if (PAR_right.1_2 != 4)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  rejected = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  rejected = 0;
+
+  <bb 13> :
+  goto <bb 19>; [INV]
+
+  <bb 14> :
+<L11>:
+  PAR_right.2_3 = PAR_right;
+  if (PAR_right.2_3 != 4)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  rejected = 1;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  rejected = 0;
+
+  <bb 17> :
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+<L15>:
+  rejected = 1;
+
+  <bb 19> :
+  _4 = ~rejected;
+  if (_4 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  error = 0;
+  goto <bb 24>; [INV]
+
+  <bb 21> :
+  if (access == 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  error = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  error = 2;
+
+  <bb 24> :
+  D.6512 = error;
+
+  <bb 25> :
+<L24>:
+  return D.6512;
+
+}
+
+
+PAR_CheckIsValueAllowed (PAR_ParamE param, union PAR_ValueU paramValue)
+{
+  PAR_ErrorsE error;
+  PAR_ErrorsE D.6492;
+
+  <bb 2> :
+  error = par_IsValidRange (param, paramValue);
+  D.6492 = error;
+
+  <bb 3> :
+<L0>:
+  return D.6492;
+
+}
+
+

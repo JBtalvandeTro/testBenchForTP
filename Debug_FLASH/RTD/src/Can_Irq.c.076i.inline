@@ -1,0 +1,157 @@
+IPA summary for Can_ErrorIrqCallback/1 is missing.
+IPA summary for Can_CommonIrqCallback/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        8 calls, 8.000000 freq, 0 count
+IPA summary for Can_ErrorIrqCallback/1 is missing.
+IPA summary for Can_CommonIrqCallback/0 is missing.
+Symbol table:
+
+Can_ProcessBusOffInterrupt/4 (Can_ProcessBusOffInterrupt) @060490e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_ErrorIrqCallback/1 
+  Calls: 
+Can_ProcessErrorInterrupt/3 (Can_ProcessErrorInterrupt) @06049000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_ErrorIrqCallback/1 Can_ErrorIrqCallback/1 
+  Calls: 
+Can_ProcessMesgBufferCommonInterrupt/2 (Can_ProcessMesgBufferCommonInterrupt) @06042620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_CommonIrqCallback/0 Can_CommonIrqCallback/0 Can_CommonIrqCallback/0 Can_CommonIrqCallback/0 Can_CommonIrqCallback/0 
+  Calls: 
+Can_ErrorIrqCallback/1 (Can_ErrorIrqCallback) @06042a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_ProcessBusOffInterrupt/4 Can_ProcessErrorInterrupt/3 Can_ProcessErrorInterrupt/3 
+Can_CommonIrqCallback/0 (Can_CommonIrqCallback) @060427e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_ProcessMesgBufferCommonInterrupt/2 Can_ProcessMesgBufferCommonInterrupt/2 Can_ProcessMesgBufferCommonInterrupt/2 Can_ProcessMesgBufferCommonInterrupt/2 Can_ProcessMesgBufferCommonInterrupt/2 
+
+;; Function Can_CommonIrqCallback (Can_CommonIrqCallback, funcdef_no=0, decl_uid=7026, cgraph_uid=1, symbol_order=0)
+
+Can_CommonIrqCallback (uint8 u8Instance, Flexcan_Ip_EventType event, uint32 u32buffIdx, const struct Flexcan_Ip_StateType * driverState)
+{
+  _Bool _1;
+  _Bool _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+
+  <bb 2> :
+  _1 = driverState_8(D)->mbs[u32buffIdx_9(D)].isPolling;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  switch (event_10(D)) <default: <L6> [INV], case 0: <L2> [INV], case 1: <L3> [INV], case 2: <L4> [INV], case 3: <L5> [INV], case 4: <L1> [INV]>
+
+  <bb 4> :
+<L1>:
+  _3 = (unsigned char) u32buffIdx_9(D);
+  Can_ProcessMesgBufferCommonInterrupt (u8Instance_11(D), _3, 3);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = (unsigned char) u32buffIdx_9(D);
+  Can_ProcessMesgBufferCommonInterrupt (u8Instance_11(D), _4, 0);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  _5 = (unsigned char) u32buffIdx_9(D);
+  Can_ProcessMesgBufferCommonInterrupt (u8Instance_11(D), _5, 1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  Can_ProcessMesgBufferCommonInterrupt (u8Instance_11(D), 6, 1);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  Can_ProcessMesgBufferCommonInterrupt (u8Instance_11(D), 7, 1);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  return;
+
+}
+
+
+
+;; Function Can_ErrorIrqCallback (Can_ErrorIrqCallback, funcdef_no=1, decl_uid=7031, cgraph_uid=2, symbol_order=1)
+
+Can_ErrorIrqCallback (uint8 u8Instance, Flexcan_Ip_EventType event, uint32 u32ErrStatus, const struct Flexcan_Ip_StateType * driverState)
+{
+  <bb 2> :
+  switch (event_2(D)) <default: <L3> [INV], case 5: <L0> [INV], case 6: <L1> [INV], case 7: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  Can_ProcessErrorInterrupt (u8Instance_4(D), 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  Can_ProcessErrorInterrupt (u8Instance_4(D), 1);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  Can_ProcessBusOffInterrupt (u8Instance_4(D));
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+

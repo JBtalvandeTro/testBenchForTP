@@ -1,0 +1,564 @@
+Trivially needed symbols: Spi_aHwUnitConfigList_Init Spi_HwUnitConfig_SpiPhyUnit_2_Init Spi_HwUnitConfig_SpiPhyUnit_1_Init Spi_HwUnitConfig_SpiPhyUnit_0_Init Spi_aExternalDeviceConfigList_Init Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init
+
+
+Initial Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067296c0
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06729678
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067295a0
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067294c8
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067293f0
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067293a8
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Spi_aHwUnitConfigList_Init Spi_HwUnitConfig_SpiPhyUnit_2_Init Spi_HwUnitConfig_SpiPhyUnit_1_Init Spi_HwUnitConfig_SpiPhyUnit_0_Init Spi_aExternalDeviceConfigList_Init Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init
+Removing variables:
+
+Final Symbol table:
+
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init) @06729900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init) @067298b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init) @06729870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init) @06729828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init) @067297e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Spi_aHwUnitConfigList_Init/6 (Spi_aHwUnitConfigList_Init) @067296c0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (addr)Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (addr)Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_2_Init/5 (Spi_HwUnitConfig_SpiPhyUnit_2_Init) @06729678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067296c0
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_2_Instance_2_Init/11 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_1_Init/4 (Spi_HwUnitConfig_SpiPhyUnit_1_Init) @067295a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06729678
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_1_Instance_1_Init/10 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_HwUnitConfig_SpiPhyUnit_0_Init/3 (Spi_HwUnitConfig_SpiPhyUnit_0_Init) @067294c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067295a0
+  References: Lpspi_Ip_PhyUnitConfig_SpiPhyUnit_0_Instance_0_Init/9 (addr)
+  Referring: Spi_aHwUnitConfigList_Init/6 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_aExternalDeviceConfigList_Init/2 (Spi_aExternalDeviceConfigList_Init) @067293f0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @067294c8
+  References: Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (addr)Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init/1 (Spi_ExternalDeviceConfig_HighVoltageMeasurment_Init) @067293a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067293f0
+  References: Lpspi_Ip_DeviceAttributes_HighVoltageMeasurment_Instance_2_Init/8 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init/0 (Spi_ExternalDeviceConfig_LowVoltageMeasurment_Init) @06729318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067293a8
+  References: Lpspi_Ip_DeviceAttributes_LowVoltageMeasurment_Instance_0_Init/7 (addr)
+  Referring: Spi_aExternalDeviceConfigList_Init/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

@@ -1,0 +1,393 @@
+Crc_Ip_HwGetLocResult (const uint8 HwInst, const uint8 HwChannel)
+{
+  const struct CRC_Type * const pxCrcBase;
+  uint64 D.5777;
+
+  <bb 2> :
+  _1 = (int) HwInst;
+  pxCrcBase = 1073946624B;
+  _2 = (long unsigned int) HwChannel;
+  _3 = hwAccCRC_GetResult (pxCrcBase, _2);
+  D.5777 = (uint64) _3;
+
+  <bb 3> :
+<L0>:
+  return D.5777;
+
+}
+
+
+Crc_Ip_HwCalculate (const struct Crc_Ip_LogicChannelType * LogicChannelInitCfg, const uint8 * DataPtr, const uint32 Length, const uint64 InitialSeedValue)
+{
+  struct CRC_Type * const pxCrcBase;
+  uint32 LocLength;
+  uint64 LocResult;
+  uint8 HwChannel;
+  uint8 HwInst;
+  uint64 D.5775;
+
+  <bb 2> :
+  HwInst = LogicChannelInitCfg->HwInst;
+  HwChannel = LogicChannelInitCfg->HwChannel;
+  LocResult = 0;
+  LocLength = 0;
+  _1 = (int) HwInst;
+  pxCrcBase = 1073946624B;
+  _2 = HwInst == 0;
+  Crc_Ip_DevAssert (_2);
+  _3 = HwChannel == 0;
+  Crc_Ip_DevAssert (_3);
+  _4 = DataPtr != 0B;
+  Crc_Ip_DevAssert (_4);
+  _5 = (long unsigned int) InitialSeedValue;
+  hwAccCrc_SetInitialSeedValue (pxCrcBase, HwChannel, _5);
+  LocLength = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = DataPtr + LocLength;
+  _7 = *_6;
+  hwAccCrc_SetInputData (pxCrcBase, HwChannel, _7);
+  LocLength = LocLength + 1;
+
+  <bb 4> :
+  if (LocLength < Length)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  LocResult = Crc_Ip_HwGetLocResult (HwInst, HwChannel);
+  D.5775 = LocResult;
+
+  <bb 6> :
+<L3>:
+  return D.5775;
+
+}
+
+
+Crc_Ip_HwSetConfig (const uint8 HwInst, const uint8 HwChannel, const struct Crc_Ip_LogicChannelStateType * pxLogicChannelState)
+{
+  const struct Crc_Ip_CrcProtocolInfoType * ProtocolInfo;
+  struct CRC_Type * const pxCrcBase;
+
+  <bb 2> :
+  _1 = (int) HwInst;
+  pxCrcBase = 1073946624B;
+  ProtocolInfo = pxLogicChannelState->CrcProtocolInfo;
+  _2 = pxLogicChannelState != 0B;
+  Crc_Ip_DevAssert (_2);
+  _3 = HwInst == 0;
+  Crc_Ip_DevAssert (_3);
+  _4 = HwChannel == 0;
+  Crc_Ip_DevAssert (_4);
+  _5 = ProtocolInfo->Width;
+  hwAccCrc_SetCrcWidth (pxCrcBase, HwChannel, _5);
+  _6 = ProtocolInfo->PolynomValue;
+  _7 = (long unsigned int) _6;
+  hwAccCrc_SetPolynom (pxCrcBase, HwChannel, _7);
+  _8 = ProtocolInfo->InitialSeedValue;
+  _9 = (long unsigned int) _8;
+  hwAccCrc_SetInitialSeedValue (pxCrcBase, HwChannel, _9);
+  _10 = ProtocolInfo->WriteBitSwap;
+  _11 = ProtocolInfo->WriteByteSwap;
+  hwAccCrc_SetWriteSwap (pxCrcBase, HwChannel, _10, _11);
+  _12 = ProtocolInfo->ReadBitSwap;
+  _13 = ProtocolInfo->ReadByteSwap;
+  hwAccCrc_SetReadSwap (pxCrcBase, HwChannel, _12, _13);
+  _14 = ProtocolInfo->InverseEnable;
+  hwAccCrc_SetInverseResult (pxCrcBase, HwChannel, _14);
+  return;
+
+}
+
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  x.0_1 = x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+hwAccCRC_GetResult (const struct CRC_Type * pxCrcBase, const uint32 HwChannel)
+{
+  uint32 Result;
+  uint8 SwapOption;
+  uint32 D.5784;
+
+  <bb 2> :
+  SwapOption = 0;
+  Result = 0;
+  Result = pxCrcBase->DATAu.DATA;
+  _1 = pxCrcBase->CTRL;
+  _2 = _1 >> 28;
+  _3 = (unsigned char) _2;
+  SwapOption = _3 & 3;
+  _4 = pxCrcBase->CTRL;
+  _5 = _4 & 16777216;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  if (SwapOption == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (SwapOption == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Result = Result >> 16;
+
+  <bb 6> :
+  Result = Result & 65535;
+
+  <bb 7> :
+  D.5784 = Result;
+
+  <bb 8> :
+<L5>:
+  return D.5784;
+
+}
+
+
+hwAccCrc_SetInitialSeedValue (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint32 InitialSeedValue)
+{
+  <bb 2> :
+  hwAccCrc_SetDataMode (pxCrcBase, HwChannel, 1);
+  pxCrcBase->DATAu.DATA = InitialSeedValue;
+  hwAccCrc_SetDataMode (pxCrcBase, HwChannel, 0);
+  return;
+
+}
+
+
+hwAccCrc_SetInputData (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint8 Value)
+{
+  <bb 2> :
+  pxCrcBase->DATAu.DATA_8.LL = Value;
+  return;
+
+}
+
+
+hwAccCrc_SetInverseResult (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean InverseEnable)
+{
+  uint32 Reg;
+  long unsigned int iftmp.3;
+
+  <bb 2> :
+  Reg = pxCrcBase->CTRL;
+  _1 = Reg & 4227858431;
+  if (InverseEnable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.3 = 67108864;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.3 = 0;
+
+  <bb 5> :
+  Reg = iftmp.3 | _1;
+  pxCrcBase->CTRL = Reg;
+  return;
+
+}
+
+
+hwAccCrc_SetReadSwap (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean ReadBit, const boolean ReadByte)
+{
+  uint8 SwapOption;
+  uint32 Reg;
+
+  <bb 2> :
+  Reg = pxCrcBase->CTRL;
+  SwapOption = 0;
+  if (ReadBit != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = ~ReadByte;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  SwapOption = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  SwapOption = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (ReadByte != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  SwapOption = 3;
+
+  <bb 8> :
+  _2 = Reg & 3489660927;
+  _3 = (long unsigned int) SwapOption;
+  _4 = _3 << 28;
+  _5 = _4 & 805306368;
+  Reg = _2 | _5;
+  pxCrcBase->CTRL = Reg;
+  return;
+
+}
+
+
+hwAccCrc_SetWriteSwap (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean WriteBit, const boolean WriteByte)
+{
+  uint8 SwapOption;
+  uint32 Reg;
+
+  <bb 2> :
+  Reg = pxCrcBase->CTRL;
+  SwapOption = 0;
+  if (WriteBit != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = ~WriteByte;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  SwapOption = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  SwapOption = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (WriteByte != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  SwapOption = 3;
+
+  <bb 8> :
+  _2 = Reg & 1073741823;
+  _3 = (long unsigned int) SwapOption;
+  _4 = _3 << 30;
+  Reg = _2 | _4;
+  pxCrcBase->CTRL = Reg;
+  return;
+
+}
+
+
+hwAccCrc_SetPolynom (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint32 PolynomValue)
+{
+  <bb 2> :
+  pxCrcBase->GPOLY = PolynomValue;
+  return;
+
+}
+
+
+hwAccCrc_SetDataMode (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean Enable)
+{
+  uint32 Reg;
+  long unsigned int iftmp.2;
+
+  <bb 2> :
+  Reg = pxCrcBase->CTRL;
+  _1 = Reg & 4261412863;
+  if (Enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.2 = 33554432;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.2 = 0;
+
+  <bb 5> :
+  Reg = iftmp.2 | _1;
+  pxCrcBase->CTRL = Reg;
+  return;
+
+}
+
+
+hwAccCrc_SetCrcWidth (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, Crc_Ip_CrcWidthType CrcWidth)
+{
+  uint32 Register;
+  boolean SetValue;
+  long unsigned int iftmp.1;
+
+  <bb 2> :
+  SetValue = 0;
+  Register = pxCrcBase->CTRL;
+  if (CrcWidth == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SetValue = 1;
+
+  <bb 4> :
+  _1 = Register & 4278190079;
+  if (SetValue != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.1 = 16777216;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.1 = 0;
+
+  <bb 7> :
+  Register = iftmp.1 | _1;
+  pxCrcBase->CTRL = Register;
+  return;
+
+}
+
+

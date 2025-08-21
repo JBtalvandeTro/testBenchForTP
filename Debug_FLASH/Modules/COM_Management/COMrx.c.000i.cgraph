@@ -1,0 +1,1981 @@
+Trivially needed symbols: com_HandleMaintenanceParameterRequest com_HandleMaintenanceEquipmentTestRequest com_MaintenanceReceivedManagement com_InternalReceivedManagement com_ControlReceivedManagement com_ReceivedManagement com_UpdateErrors com_GetFrameIndex COM_RxTask
+
+
+Initial Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 com_ReceivedManagement/3 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06206460
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062061c0
+  References: FSM_mode/34 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06176e00
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @061768c0
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06176380
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06176d20
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06176a80
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @061767e0
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 com_ReceivedManagement/3 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/34 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+
+
+Initial Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 com_ReceivedManagement/3 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/34 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 com_ReceivedManagement/3 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not-ready
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/34 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not_available
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ReceivedManagement/3 com_InternalReceivedManagement/5 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_InternalReceivedManagement/5 (read)com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not_available
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not_available
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_ControlReceivedManagement/4 (write)com_UpdateErrors/2 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)
+  Availability: not_available
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/34 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

@@ -1,0 +1,246 @@
+Wdg_Ipw_Service (Wdg_Ipw_InstanceType Instance)
+{
+  <bb 2> :
+  _1 = Wdg_Ipw_aeIp[Instance];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance;
+  Wdog_Ip_Service (_2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+Wdg_Ipw_StopTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5725;
+
+  <bb 2> :
+  Ret = 0;
+  RetIp = 0;
+  _1 = Wdg_Ipw_aeIp[Instance];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance;
+  RetIp = Wdog_Ip_StopTimer (_2);
+  if (RetIp != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance;
+  Det_ReportRuntimeError (102, _3, 1, 19);
+
+  <bb 6> :
+  Ret = 1;
+
+  <bb 7> :
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret = 1;
+
+  <bb 9> :
+  D.5725 = Ret;
+
+  <bb 10> :
+<L7>:
+  return D.5725;
+
+}
+
+
+Wdg_Ipw_StartTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5719;
+
+  <bb 2> :
+  Ret = 0;
+  RetIp = 0;
+  _1 = Wdg_Ipw_aeIp[Instance];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance;
+  RetIp = Wdog_Ip_StartTimer (_2);
+  if (RetIp != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance;
+  Det_ReportRuntimeError (102, _3, 1, 19);
+
+  <bb 6> :
+  Ret = 1;
+
+  <bb 7> :
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret = 1;
+
+  <bb 9> :
+  D.5719 = Ret;
+
+  <bb 10> :
+<L7>:
+  return D.5719;
+
+}
+
+
+Wdg_Ipw_SetMode (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5713;
+
+  <bb 2> :
+  Ret = 0;
+  RetIp = 0;
+  _1 = IpwConfig->eWdgIp;
+  Wdg_Ipw_aeIp[Instance] = _1;
+  _2 = Wdg_Ipw_aeIp[Instance];
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = (unsigned char) Instance;
+  _4 = IpwConfig->pWdogConfig;
+  RetIp = Wdog_Ip_Config (_3, _4);
+  if (RetIp != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) Instance;
+  Det_ReportRuntimeError (102, _5, 1, 19);
+
+  <bb 6> :
+  Ret = 1;
+
+  <bb 7> :
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret = 1;
+
+  <bb 9> :
+  D.5713 = Ret;
+
+  <bb 10> :
+<L7>:
+  return D.5713;
+
+}
+
+
+Wdg_Ipw_Init (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5707;
+
+  <bb 2> :
+  Ret = 0;
+  RetIp = 0;
+  _1 = IpwConfig->eWdgIp;
+  Wdg_Ipw_aeIp[Instance] = _1;
+  _2 = IpwConfig->eWdgIp;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = (unsigned char) Instance;
+  _4 = IpwConfig->pWdogConfig;
+  RetIp = Wdog_Ip_Init (_3, _4);
+  if (RetIp != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) Instance;
+  Det_ReportRuntimeError (102, _5, 0, 19);
+
+  <bb 6> :
+  Ret = 1;
+
+  <bb 7> :
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret = 1;
+
+  <bb 9> :
+  D.5707 = Ret;
+
+  <bb 10> :
+<L7>:
+  return D.5707;
+
+}
+
+

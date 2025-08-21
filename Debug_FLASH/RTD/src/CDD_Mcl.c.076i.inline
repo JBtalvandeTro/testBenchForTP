@@ -1,0 +1,1113 @@
+IPA summary for Mcl_SetTrgMuxLock/37 is missing.
+IPA summary for Mcl_SetTrgMuxInput/36 is missing.
+IPA summary for Mcl_SetDmaChannelScatterGatherConfig/35 is missing.
+IPA summary for Mcl_GetDmaChannelParam/34 is missing.
+IPA summary for Mcl_SetDmaChannelScatterGatherList/33 is missing.
+IPA summary for Mcl_SetDmaChannelTransferList/32 is missing.
+IPA summary for Mcl_SetDmaChannelGlobalList/31 is missing.
+IPA summary for Mcl_GetDmaChannelStatus/30 is missing.
+IPA summary for Mcl_SetDmaChannelCommand/29 is missing.
+IPA summary for Mcl_GetDmaInstanceStatus/28 is missing.
+IPA summary for Mcl_SetDmaInstanceCommand/27 is missing.
+IPA summary for Mcl_DeInit/26 is missing.
+IPA summary for Mcl_Init/25 is missing.
+IPA summary for Mcl_DmaReturnCheck/24 is missing.
+IPA summary for Mcl_ValidatePtrInit/23 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       11 calls, 11.000000 freq, 0 count
+function body not available                       :       41 calls, 41.000000 freq, 0 count
+IPA summary for Mcl_SetTrgMuxLock/37 is missing.
+IPA summary for Mcl_SetTrgMuxInput/36 is missing.
+IPA summary for Mcl_SetDmaChannelScatterGatherConfig/35 is missing.
+IPA summary for Mcl_GetDmaChannelParam/34 is missing.
+IPA summary for Mcl_SetDmaChannelScatterGatherList/33 is missing.
+IPA summary for Mcl_SetDmaChannelTransferList/32 is missing.
+IPA summary for Mcl_SetDmaChannelGlobalList/31 is missing.
+IPA summary for Mcl_GetDmaChannelStatus/30 is missing.
+IPA summary for Mcl_SetDmaChannelCommand/29 is missing.
+IPA summary for Mcl_GetDmaInstanceStatus/28 is missing.
+IPA summary for Mcl_SetDmaInstanceCommand/27 is missing.
+IPA summary for Mcl_DeInit/26 is missing.
+IPA summary for Mcl_Init/25 is missing.
+IPA summary for Mcl_DmaReturnCheck/24 is missing.
+IPA summary for Mcl_ValidatePtrInit/23 is missing.
+Symbol table:
+
+Trgmux_Ip_SetLock/52 (Trgmux_Ip_SetLock) @05e02460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetTrgMuxLock/37 
+  Calls: 
+Trgmux_Ip_SetInput/51 (Trgmux_Ip_SetInput) @05e022a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetTrgMuxInput/36 
+  Calls: 
+Dma_Ip_SetLogicChannelScatterGatherConfig/50 (Dma_Ip_SetLogicChannelScatterGatherConfig) @05e020e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelScatterGatherConfig/35 
+  Calls: 
+Dma_Ip_GetLogicChannelParam/49 (Dma_Ip_GetLogicChannelParam) @05df5ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_GetDmaChannelParam/34 
+  Calls: 
+Dma_Ip_SetLogicChannelScatterGatherList/48 (Dma_Ip_SetLogicChannelScatterGatherList) @05df5d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelScatterGatherList/33 
+  Calls: 
+Dma_Ip_SetLogicChannelTransferList/47 (Dma_Ip_SetLogicChannelTransferList) @05df5b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelTransferList/32 
+  Calls: 
+Dma_Ip_SetLogicChannelGlobalList/46 (Dma_Ip_SetLogicChannelGlobalList) @05df59a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelGlobalList/31 
+  Calls: 
+Dma_Ip_GetLogicChannelStatus/45 (Dma_Ip_GetLogicChannelStatus) @05df57e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_GetDmaChannelStatus/30 
+  Calls: 
+Dma_Ip_SetLogicChannelCommand/44 (Dma_Ip_SetLogicChannelCommand) @05df5620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelCommand/29 
+  Calls: 
+Dma_Ip_GetLogicInstanceStatus/43 (Dma_Ip_GetLogicInstanceStatus) @05df5460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_GetDmaInstanceStatus/28 
+  Calls: 
+Dma_Ip_SetLogicInstanceCommand/42 (Dma_Ip_SetLogicInstanceCommand) @05df52a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaInstanceCommand/27 
+  Calls: 
+Dma_Ip_Deinit/41 (Dma_Ip_Deinit) @05df50e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_DeInit/26 
+  Calls: 
+Trgmux_Ip_Init/40 (Trgmux_Ip_Init) @05dbe620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_Init/25 
+  Calls: 
+Dma_Ip_Init/39 (Dma_Ip_Init) @05dbe0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_Init/25 
+  Calls: 
+Det_ReportError/38 (Det_ReportError) @05dbed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Mcl_SetDmaChannelScatterGatherConfig/35 Mcl_GetDmaChannelParam/34 Mcl_GetDmaChannelParam/34 Mcl_SetDmaChannelScatterGatherList/33 Mcl_SetDmaChannelScatterGatherList/33 Mcl_SetDmaChannelScatterGatherList/33 Mcl_SetDmaChannelTransferList/32 Mcl_SetDmaChannelTransferList/32 Mcl_SetDmaChannelTransferList/32 Mcl_SetDmaChannelGlobalList/31 Mcl_SetDmaChannelGlobalList/31 Mcl_SetDmaChannelGlobalList/31 Mcl_GetDmaChannelStatus/30 Mcl_GetDmaChannelStatus/30 Mcl_SetDmaChannelCommand/29 Mcl_SetDmaChannelCommand/29 Mcl_GetDmaInstanceStatus/28 Mcl_GetDmaInstanceStatus/28 Mcl_SetDmaInstanceCommand/27 Mcl_SetDmaInstanceCommand/27 Mcl_DeInit/26 Mcl_Init/25 Mcl_Init/25 Mcl_Init/25 Mcl_DmaReturnCheck/24 Mcl_DmaReturnCheck/24 Mcl_ValidatePtrInit/23 
+  Calls: 
+Mcl_SetTrgMuxLock/37 (Mcl_SetTrgMuxLock) @05dbe7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Trgmux_Ip_SetLock/52 
+Mcl_SetTrgMuxInput/36 (Mcl_SetTrgMuxInput) @05dbe540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Trgmux_Ip_SetInput/51 
+Mcl_SetDmaChannelScatterGatherConfig/35 (Mcl_SetDmaChannelScatterGatherConfig) @05dbe2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicChannelScatterGatherConfig/50 Det_ReportError/38 
+Mcl_GetDmaChannelParam/34 (Mcl_GetDmaChannelParam) @05dbe000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_GetLogicChannelParam/49 Det_ReportError/38 Det_ReportError/38 
+Mcl_SetDmaChannelScatterGatherList/33 (Mcl_SetDmaChannelScatterGatherList) @05cf2b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicChannelScatterGatherList/48 Det_ReportError/38 Det_ReportError/38 Det_ReportError/38 
+Mcl_SetDmaChannelTransferList/32 (Mcl_SetDmaChannelTransferList) @05cf2620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicChannelTransferList/47 Det_ReportError/38 Det_ReportError/38 Det_ReportError/38 
+Mcl_SetDmaChannelGlobalList/31 (Mcl_SetDmaChannelGlobalList) @05cf20e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicChannelGlobalList/46 Det_ReportError/38 Det_ReportError/38 Det_ReportError/38 
+Mcl_GetDmaChannelStatus/30 (Mcl_GetDmaChannelStatus) @05cf2d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_GetLogicChannelStatus/45 Det_ReportError/38 Det_ReportError/38 
+Mcl_SetDmaChannelCommand/29 (Mcl_SetDmaChannelCommand) @05cf2a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicChannelCommand/44 Det_ReportError/38 Det_ReportError/38 
+Mcl_GetDmaInstanceStatus/28 (Mcl_GetDmaInstanceStatus) @05cf27e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_GetLogicInstanceStatus/43 Det_ReportError/38 Det_ReportError/38 
+Mcl_SetDmaInstanceCommand/27 (Mcl_SetDmaInstanceCommand) @05cf2540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mcl_DmaReturnCheck/24 Dma_Ip_SetLogicInstanceCommand/42 Det_ReportError/38 Det_ReportError/38 
+Mcl_DeInit/26 (Mcl_DeInit) @05cf22a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportError/38 Mcl_DmaReturnCheck/24 Dma_Ip_Deinit/41 
+Mcl_Init/25 (Mcl_Init) @05cf2000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (write)Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (read)Mcl_pxConfig/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportError/38 Det_ReportError/38 Trgmux_Ip_Init/40 Det_ReportError/38 Dma_Ip_Init/39 Mcl_ValidatePtrInit/23 
+Mcl_DmaReturnCheck/24 (Mcl_DmaReturnCheck) @05cece00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mcl_SetDmaChannelScatterGatherConfig/35 Mcl_GetDmaChannelParam/34 Mcl_SetDmaChannelScatterGatherList/33 Mcl_SetDmaChannelTransferList/32 Mcl_SetDmaChannelGlobalList/31 Mcl_GetDmaChannelStatus/30 Mcl_SetDmaChannelCommand/29 Mcl_GetDmaInstanceStatus/28 Mcl_SetDmaInstanceCommand/27 Mcl_DeInit/26 
+  Calls: Det_ReportError/38 Det_ReportError/38 
+Mcl_ValidatePtrInit/23 (Mcl_ValidatePtrInit) @05cecb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Mcl_Init/25 
+  Calls: Det_ReportError/38 
+Mcl_pxConfig/22 (Mcl_pxConfig) @05ce6c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Mcl_Init/25 (read)Mcl_Init/25 (read)Mcl_Init/25 (read)Mcl_Init/25 (read)Mcl_Init/25 (write)Mcl_Init/25 (read)Mcl_Init/25 (read)Mcl_DeInit/26 (read)Mcl_DeInit/26 (read)Mcl_DeInit/26 (write)
+  Availability: available
+  Varpool flags:
+g_ptLmemBasePtrArray/0 (g_ptLmemBasePtrArray) @05cb0990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+
+;; Function Mcl_ValidatePtrInit (Mcl_ValidatePtrInit, funcdef_no=21, decl_uid=6600, cgraph_uid=22, symbol_order=23)
+
+Mcl_ValidatePtrInit (const struct Mcl_ConfigType * const ConfigPtr)
+{
+  Mcl_ReturnType Valid;
+  Mcl_ReturnType D.6710;
+  Mcl_ReturnType _8;
+
+  <bb 2> :
+  Valid_3 = 0;
+  if (ConfigPtr_4(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Valid_6 = 1;
+  Det_ReportError (255, 0, 0, 11);
+
+  <bb 4> :
+  # Valid_1 = PHI <Valid_3(2), Valid_6(3)>
+  _8 = Valid_1;
+
+  <bb 5> :
+<L3>:
+  return _8;
+
+}
+
+
+
+;; Function Mcl_DmaReturnCheck (Mcl_DmaReturnCheck, funcdef_no=22, decl_uid=6604, cgraph_uid=23, symbol_order=24)
+
+Mcl_DmaReturnCheck (const uint8 Channel, const uint8 Function, const Dma_Ip_ReturnType RetStatus)
+{
+  <bb 2> :
+  switch (RetStatus_2(D)) <default: <L3> [INV], case 0: <L2> [INV], case 1: <L0> [INV], case 2: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  Det_ReportError (255, Channel_4(D), Function_5(D), 7);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  Det_ReportError (255, Channel_4(D), Function_5(D), 6);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Mcl_Init (Mcl_Init, funcdef_no=23, decl_uid=6534, cgraph_uid=24, symbol_order=25)
+
+Mcl_Init (const struct Mcl_ConfigType * const ConfigPtr)
+{
+  Mcl_ReturnType ValidPtr;
+  Trgmux_Ip_StatusType TrgmuxIpStatus;
+  Dma_Ip_ReturnType DmaIpStatus;
+  const struct Mcl_ConfigType * Mcl_pxConfig.0_1;
+  const struct Mcl_ConfigType * Mcl_pxConfig.1_2;
+  const struct Mcl_ConfigType * Mcl_pxConfig.2_3;
+  const struct Dma_Ip_InitType * _4;
+  const struct Mcl_ConfigType * Mcl_pxConfig.3_5;
+  const struct Dma_Ip_InitType * _6;
+  const struct Mcl_ConfigType * Mcl_pxConfig.4_7;
+  const struct Trgmux_Ip_InitType * _8;
+  const struct Mcl_ConfigType * Mcl_pxConfig.5_9;
+  const struct Trgmux_Ip_InitType * _10;
+
+  <bb 2> :
+  ValidPtr_16 = Mcl_ValidatePtrInit (ConfigPtr_14(D));
+  if (ValidPtr_16 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig.0_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.0_1 == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 4> :
+  Mcl_pxConfig = ConfigPtr_14(D);
+  Mcl_pxConfig.1_2 = Mcl_pxConfig;
+  if (Mcl_pxConfig.1_2 != 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 5> :
+  Mcl_pxConfig.2_3 = Mcl_pxConfig;
+  _4 = Mcl_pxConfig.2_3->pxDmaInitType;
+  if (_4 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  Mcl_pxConfig.3_5 = Mcl_pxConfig;
+  _6 = Mcl_pxConfig.3_5->pxDmaInitType;
+  DmaIpStatus_20 = Dma_Ip_Init (_6);
+  if (DmaIpStatus_20 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Det_ReportError (255, 0, 0, 0);
+
+  <bb 8> :
+  Mcl_pxConfig.4_7 = Mcl_pxConfig;
+  _8 = Mcl_pxConfig.4_7->pxTrgmuxInitType;
+  if (_8 != 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 9> :
+  Mcl_pxConfig.5_9 = Mcl_pxConfig;
+  _10 = Mcl_pxConfig.5_9->pxTrgmuxInitType;
+  TrgmuxIpStatus_23 = Trgmux_Ip_Init (_10);
+  if (TrgmuxIpStatus_23 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  Det_ReportError (255, 0, 0, 0);
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  Det_ReportError (255, 0, 0, 0);
+
+  <bb 12> :
+  return;
+
+}
+
+
+
+;; Function Mcl_DeInit (Mcl_DeInit, funcdef_no=24, decl_uid=6536, cgraph_uid=25, symbol_order=26)
+
+Mcl_DeInit ()
+{
+  Dma_Ip_ReturnType RetStatus;
+  const struct Mcl_ConfigType * Mcl_pxConfig.6_1;
+  const struct Mcl_ConfigType * Mcl_pxConfig.7_2;
+  const struct Dma_Ip_InitType * _3;
+
+  <bb 2> :
+  Mcl_pxConfig.6_1 = Mcl_pxConfig;
+  if (Mcl_pxConfig.6_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Mcl_pxConfig.7_2 = Mcl_pxConfig;
+  _3 = Mcl_pxConfig.7_2->pxDmaInitType;
+  if (_3 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetStatus_9 = Dma_Ip_Deinit ();
+  Mcl_DmaReturnCheck (0, 11, RetStatus_9);
+
+  <bb 5> :
+  Mcl_pxConfig = 0B;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Det_ReportError (255, 0, 11, 0);
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaInstanceCommand (Mcl_SetDmaInstanceCommand, funcdef_no=25, decl_uid=6539, cgraph_uid=26, symbol_order=27)
+
+Mcl_SetDmaInstanceCommand (const uint32 Instance, const Mcl_DmaInstanceCmdType Command)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Instance_5(D) > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_5(D);
+  Det_ReportError (255, _1, 1, 2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Command_6(D) > 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Instance_5(D);
+  Det_ReportError (255, _2, 1, 4);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_9 = Dma_Ip_SetLogicInstanceCommand (Instance_5(D), Command_6(D));
+  _3 = (unsigned char) Instance_5(D);
+  Mcl_DmaReturnCheck (_3, 1, RetStatus_9);
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Mcl_GetDmaInstanceStatus (Mcl_GetDmaInstanceStatus, funcdef_no=26, decl_uid=6542, cgraph_uid=27, symbol_order=28)
+
+Mcl_GetDmaInstanceStatus (const uint32 Instance, struct Mcl_DmaInstanceStatusType * const Status)
+{
+  struct Dma_Ip_LogicInstanceStatusType LocInstStatus;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  unsigned char _4;
+  _Bool _5;
+  unsigned char _6;
+
+  <bb 2> :
+  LocInstStatus.Errors = 0;
+  LocInstStatus.ActiveId = 0;
+  LocInstStatus.Active = 0;
+  if (Instance_12(D) > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_12(D);
+  Det_ReportError (255, _1, 2, 2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Status_13(D) == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Instance_12(D);
+  Det_ReportError (255, _2, 2, 1);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_15 = Dma_Ip_GetLogicInstanceStatus (Instance_12(D), &LocInstStatus);
+  _3 = LocInstStatus.Errors;
+  Status_13(D)->Errors = _3;
+  _4 = LocInstStatus.ActiveId;
+  Status_13(D)->ActiveId = _4;
+  _5 = LocInstStatus.Active;
+  Status_13(D)->Active = _5;
+  _6 = (unsigned char) Instance_12(D);
+  Mcl_DmaReturnCheck (_6, 2, RetStatus_15);
+
+  <bb 7> :
+  LocInstStatus ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaChannelCommand (Mcl_SetDmaChannelCommand, funcdef_no=27, decl_uid=6545, cgraph_uid=28, symbol_order=29)
+
+Mcl_SetDmaChannelCommand (const uint32 Channel, const Mcl_DmaChannelCmdType Command)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Channel_5(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _1, 3, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Command_6(D) > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _2, 3, 4);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_9 = Dma_Ip_SetLogicChannelCommand (Channel_5(D), Command_6(D));
+  _3 = (unsigned char) Channel_5(D);
+  Mcl_DmaReturnCheck (_3, 3, RetStatus_9);
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Mcl_GetDmaChannelStatus (Mcl_GetDmaChannelStatus, funcdef_no=28, decl_uid=6548, cgraph_uid=29, symbol_order=30)
+
+Mcl_GetDmaChannelStatus (const uint32 Channel, struct Mcl_DmaChannelStatusType * const Status)
+{
+  struct Dma_Ip_LogicChannelStatusType LocChStatus;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  <unnamed type> _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _6;
+  unsigned char _7;
+
+  <bb 2> :
+  if (Channel_9(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_9(D);
+  Det_ReportError (255, _1, 4, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Status_10(D) == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_9(D);
+  Det_ReportError (255, _2, 4, 1);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_13 = Dma_Ip_GetLogicChannelStatus (Channel_9(D), &LocChStatus);
+  _3 = LocChStatus.ChStateValue;
+  Status_10(D)->ChannelState = _3;
+  _4 = LocChStatus.Errors;
+  Status_10(D)->Errors = _4;
+  _5 = LocChStatus.Active;
+  Status_10(D)->Active = _5;
+  _6 = LocChStatus.Done;
+  Status_10(D)->Done = _6;
+  _7 = (unsigned char) Channel_9(D);
+  Mcl_DmaReturnCheck (_7, 4, RetStatus_13);
+
+  <bb 7> :
+  LocChStatus ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaChannelGlobalList (Mcl_SetDmaChannelGlobalList, funcdef_no=29, decl_uid=6552, cgraph_uid=30, symbol_order=31)
+
+Mcl_SetDmaChannelGlobalList (const uint32 Channel, const struct Mcl_DmaChannelGlobalListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelGlobalListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.8_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 5, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 11)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 5, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 10)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 5, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.8_8 = Idx_12;
+  Idx_30 = Idx.8_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_34 = Dma_Ip_SetLogicChannelGlobalList (Channel_21(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 5, RetStatus_34);
+
+  <bb 13> :
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaChannelTransferList (Mcl_SetDmaChannelTransferList, funcdef_no=30, decl_uid=6556, cgraph_uid=31, symbol_order=32)
+
+Mcl_SetDmaChannelTransferList (const uint32 Channel, const struct Mcl_DmaChannelTransferListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelTransferListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.9_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 6, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 26)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 6, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 25)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 6, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.9_8 = Idx_12;
+  Idx_30 = Idx.9_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_34 = Dma_Ip_SetLogicChannelTransferList (Channel_21(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 6, RetStatus_34);
+
+  <bb 13> :
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaChannelScatterGatherList (Mcl_SetDmaChannelScatterGatherList, funcdef_no=31, decl_uid=6561, cgraph_uid=32, symbol_order=33)
+
+Mcl_SetDmaChannelScatterGatherList (const uint32 Channel, const uint32 Element, const struct Mcl_DmaChannelScatterGatherListType * List, const uint32 ListDimension)
+{
+  boolean DetErrorCheck;
+  uint8 Idx;
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned int _3;
+  unsigned int _4;
+  const struct Mcl_DmaChannelScatterGatherListType * _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  unsigned char Idx.10_8;
+  long unsigned int _9;
+  _Bool _10;
+  unsigned char _11;
+
+  <bb 2> :
+  DetErrorCheck_20 = 0;
+  if (Channel_21(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _1, 7, 3);
+  DetErrorCheck_24 = 1;
+
+  <bb 4> :
+  # DetErrorCheck_13 = PHI <DetErrorCheck_20(2), DetErrorCheck_24(3)>
+  if (ListDimension_25(D) > 26)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _2, 7, 5);
+  DetErrorCheck_27 = 1;
+
+  <bb 6> :
+  # DetErrorCheck_14 = PHI <DetErrorCheck_13(4), DetErrorCheck_27(5)>
+  Idx_28 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  _3 = (unsigned int) Idx_12;
+  _4 = _3 * 8;
+  _5 = List_29(D) + _4;
+  _6 = _5->Param;
+  if (_6 > 25)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _7 = (unsigned char) Channel_21(D);
+  Det_ReportError (255, _7, 7, 5);
+  DetErrorCheck_32 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Idx.10_8 = Idx_12;
+  Idx_30 = Idx.10_8 + 1;
+
+  <bb 10> :
+  # Idx_12 = PHI <Idx_28(6), Idx_30(9)>
+  _9 = (long unsigned int) Idx_12;
+  if (ListDimension_25(D) > _9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DetErrorCheck_15 = PHI <DetErrorCheck_32(8), DetErrorCheck_14(10)>
+  _10 = ~DetErrorCheck_15;
+  if (_10 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  RetStatus_35 = Dma_Ip_SetLogicChannelScatterGatherList (Channel_21(D), Element_33(D), List_29(D), ListDimension_25(D));
+  _11 = (unsigned char) Channel_21(D);
+  Mcl_DmaReturnCheck (_11, 7, RetStatus_35);
+
+  <bb 13> :
+  return;
+
+}
+
+
+
+;; Function Mcl_GetDmaChannelParam (Mcl_GetDmaChannelParam, funcdef_no=32, decl_uid=6565, cgraph_uid=33, symbol_order=34)
+
+Mcl_GetDmaChannelParam (const uint32 Channel, const Mcl_DmaChannelInfoParamType Param, uint32 * const Value)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  if (Channel_5(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _1, 8, 3);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (Param_6(D) > 7)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (unsigned char) Channel_5(D);
+  Det_ReportError (255, _2, 8, 5);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetStatus_10 = Dma_Ip_GetLogicChannelParam (Channel_5(D), Param_6(D), Value_8(D));
+  _3 = (unsigned char) Channel_5(D);
+  Mcl_DmaReturnCheck (_3, 8, RetStatus_10);
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Mcl_SetDmaChannelScatterGatherConfig (Mcl_SetDmaChannelScatterGatherConfig, funcdef_no=33, decl_uid=6568, cgraph_uid=34, symbol_order=35)
+
+Mcl_SetDmaChannelScatterGatherConfig (const uint32 Channel, const uint32 Element)
+{
+  Dma_Ip_ReturnType RetStatus;
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  if (Channel_4(D) > 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Channel_4(D);
+  Det_ReportError (255, _1, 9, 3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetStatus_8 = Dma_Ip_SetLogicChannelScatterGatherConfig (Channel_4(D), Element_6(D));
+  _2 = (unsigned char) Channel_4(D);
+  Mcl_DmaReturnCheck (_2, 9, RetStatus_8);
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Mcl_SetTrgMuxInput (Mcl_SetTrgMuxInput, funcdef_no=34, decl_uid=6571, cgraph_uid=35, symbol_order=36)
+
+Mcl_SetTrgMuxInput (const uint32 Trigger, const uint32 Input)
+{
+  <bb 2> :
+  Trgmux_Ip_SetInput (Trigger_2(D), Input_3(D));
+  return;
+
+}
+
+
+
+;; Function Mcl_SetTrgMuxLock (Mcl_SetTrgMuxLock, funcdef_no=35, decl_uid=6573, cgraph_uid=36, symbol_order=37)
+
+Mcl_SetTrgMuxLock (const uint32 Trigger)
+{
+  <bb 2> :
+  Trgmux_Ip_SetLock (Trigger_2(D));
+  return;
+
+}
+
+

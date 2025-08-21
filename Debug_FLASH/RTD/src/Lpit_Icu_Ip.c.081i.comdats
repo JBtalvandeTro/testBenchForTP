@@ -1,0 +1,407 @@
+Lpit_Icu_Ip_DisableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  channelsState[_1][_2].notificationEnable = 0;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableNotification (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  _1 = (int) instance_3(D);
+  _2 = (int) hwChannel_4(D);
+  channelsState[_1][_2].notificationEnable = 1;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_DisableDetectionMode (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  Lpit_Icu_Ip_DisableInterrupt (instance_4(D), hwChannel_5(D));
+  _1 = (int) instance_4(D);
+  _2 = (int) hwChannel_5(D);
+  channelsState[_1][_2].measurementMode = 0;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableEdgeDetection (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  int _2;
+
+  <bb 2> :
+  Lpit_Icu_Ip_EnableInterrupt (instance_4(D), hwChannel_5(D));
+  _1 = (int) instance_4(D);
+  _2 = (int) hwChannel_5(D);
+  channelsState[_1][_2].measurementMode = 1;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_DisableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct LPIT_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  unsigned int _5;
+  long unsigned int _6;
+  int _7;
+  struct LPIT_Type * _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = (int) instance_10(D);
+  _2 = 1073967104B;
+  _3 ={v} _2->MIER;
+  _4 = (long unsigned int) hwChannel_12(D);
+  _5 = 1 << _4;
+  _6 = ~_5;
+  _7 = (int) instance_10(D);
+  _8 = 1073967104B;
+  _9 = _3 & _6;
+  _8->MIER ={v} _9;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_EnableInterrupt (uint8 instance, uint8 hwChannel)
+{
+  int _1;
+  struct LPIT_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  unsigned int _5;
+  int _6;
+  struct LPIT_Type * _7;
+  long unsigned int _8;
+  int _9;
+  struct LPIT_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  unsigned int _13;
+  int _14;
+  struct LPIT_Type * _15;
+  long unsigned int _16;
+
+  <bb 2> :
+  _1 = (int) instance_17(D);
+  _2 = 1073967104B;
+  _3 ={v} _2->MSR;
+  _4 = (long unsigned int) hwChannel_19(D);
+  _5 = 1 << _4;
+  _6 = (int) instance_17(D);
+  _7 = 1073967104B;
+  _8 = _3 | _5;
+  _7->MSR ={v} _8;
+  _9 = (int) instance_17(D);
+  _10 = 1073967104B;
+  _11 ={v} _10->MIER;
+  _12 = (long unsigned int) hwChannel_19(D);
+  _13 = 1 << _12;
+  _14 = (int) instance_17(D);
+  _15 = 1073967104B;
+  _16 = _11 | _13;
+  _15->MIER ={v} _16;
+  return;
+
+}
+
+
+Lpit_Icu_Ip_Init (uint8 instance, const struct Lpit_Icu_Ip_ConfigType * userConfig)
+{
+  uint8 counter;
+  const struct Lpit_Icu_Ip_ChannelConfigType * lpitChConfig;
+  Lpit_Icu_Ip_StatusType D.5675;
+  long unsigned int iftmp.0;
+  int _1;
+  struct LPIT_Type * _2;
+  long unsigned int _3;
+  int _4;
+  struct LPIT_Type * _5;
+  long unsigned int _6;
+  const struct Lpit_Icu_Ip_ChannelConfigType[<unknown>] * _7;
+  int _8;
+  int _9;
+  struct LPIT_Type * _10;
+  unsigned char _11;
+  int _12;
+  long unsigned int _13;
+  int _14;
+  struct LPIT_Type * _15;
+  unsigned char _16;
+  int _17;
+  long unsigned int _18;
+  int _19;
+  struct LPIT_Type * _20;
+  long unsigned int _21;
+  unsigned char _22;
+  long unsigned int _23;
+  unsigned int _24;
+  long unsigned int _25;
+  int _26;
+  struct LPIT_Type * _27;
+  long unsigned int _28;
+  int _29;
+  struct LPIT_Type * _30;
+  long unsigned int _31;
+  unsigned char _32;
+  long unsigned int _33;
+  unsigned int _34;
+  int _35;
+  struct LPIT_Type * _36;
+  long unsigned int _37;
+  int _38;
+  struct LPIT_Type * _39;
+  long unsigned int _40;
+  int _41;
+  struct LPIT_Type * _42;
+  long unsigned int _43;
+  int _44;
+  struct LPIT_Type * _45;
+  long unsigned int _46;
+  _Bool _47;
+  int _48;
+  struct LPIT_Type * _49;
+  long unsigned int _50;
+  int _51;
+  struct LPIT_Type * _52;
+  unsigned char _53;
+  int _54;
+  long unsigned int _55;
+  unsigned char _56;
+  long unsigned int _57;
+  long unsigned int _58;
+  int _59;
+  struct LPIT_Type * _60;
+  unsigned char _61;
+  int _62;
+  long unsigned int _63;
+  int _64;
+  struct LPIT_Type * _65;
+  unsigned char _66;
+  int _67;
+  long unsigned int _68;
+  unsigned char _69;
+  long unsigned int _70;
+  long unsigned int _71;
+  int _72;
+  struct LPIT_Type * _73;
+  unsigned char _74;
+  int _75;
+  long unsigned int _76;
+  int _77;
+  struct LPIT_Type * _78;
+  unsigned char _79;
+  int _80;
+  long unsigned int _81;
+  int _82;
+  struct LPIT_Type * _83;
+  unsigned char _84;
+  int _85;
+  long unsigned int _86;
+  int _87;
+  unsigned char _88;
+  int _89;
+  int _90;
+  unsigned char _91;
+  int _92;
+  void (*<T498>) (uint16, boolean) _93;
+  int _94;
+  unsigned char _95;
+  int _96;
+  unsigned char _97;
+  int _98;
+  unsigned char _99;
+  int _100;
+  void (*<T494>) (void) _101;
+  int _102;
+  unsigned char _103;
+  int _104;
+  void (*<T49d>) (uint16, uint8, boolean) _105;
+  unsigned char counter.1_106;
+  unsigned char _107;
+  long unsigned int iftmp.0_109;
+  Lpit_Icu_Ip_StatusType _116;
+  long unsigned int iftmp.0_122;
+  long unsigned int iftmp.0_123;
+
+  <bb 2> :
+  _1 = (int) instance_111(D);
+  _2 = 1073967104B;
+  _3 ={v} _2->MCR;
+  _4 = (int) instance_111(D);
+  _5 = 1073967104B;
+  _6 = _3 | 1;
+  _5->MCR ={v} _6;
+  counter_114 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _7 = userConfig_115(D)->pChannelsConfig;
+  _8 = (int) counter_108;
+  lpitChConfig_117 = &*_7[_8];
+  _9 = (int) instance_111(D);
+  _10 = 1073967104B;
+  _11 = lpitChConfig_117->hwChannel;
+  _12 = (int) _11;
+  _13 ={v} _10->TMR[_12].TCTRL;
+  _14 = (int) instance_111(D);
+  _15 = 1073967104B;
+  _16 = lpitChConfig_117->hwChannel;
+  _17 = (int) _16;
+  _18 = _13 | 1;
+  _15->TMR[_17].TCTRL ={v} _18;
+  _19 = (int) instance_111(D);
+  _20 = 1073967104B;
+  _21 ={v} _20->MIER;
+  _22 = lpitChConfig_117->hwChannel;
+  _23 = (long unsigned int) _22;
+  _24 = 1 << _23;
+  _25 = ~_24;
+  _26 = (int) instance_111(D);
+  _27 = 1073967104B;
+  _28 = _21 & _25;
+  _27->MIER ={v} _28;
+  _29 = (int) instance_111(D);
+  _30 = 1073967104B;
+  _31 ={v} _30->MSR;
+  _32 = lpitChConfig_117->hwChannel;
+  _33 = (long unsigned int) _32;
+  _34 = 1 << _33;
+  _35 = (int) instance_111(D);
+  _36 = 1073967104B;
+  _37 = _31 | _34;
+  _36->MSR ={v} _37;
+  _38 = (int) instance_111(D);
+  _39 = 1073967104B;
+  _40 ={v} _39->MCR;
+  _41 = (int) instance_111(D);
+  _42 = 1073967104B;
+  _43 = _40 | 4;
+  _42->MCR ={v} _43;
+  _44 = (int) instance_111(D);
+  _45 = 1073967104B;
+  _46 ={v} _45->MCR;
+  _47 = userConfig_115(D)->debugState;
+  if (_47 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.0_123 = 8;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.0_122 = 0;
+
+  <bb 6> :
+  # iftmp.0_109 = PHI <iftmp.0_123(4), iftmp.0_122(5)>
+  _48 = (int) instance_111(D);
+  _49 = 1073967104B;
+  _50 = iftmp.0_109 | _46;
+  _49->MCR ={v} _50;
+  _51 = (int) instance_111(D);
+  _52 = 1073967104B;
+  _53 = lpitChConfig_117->hwChannel;
+  _54 = (int) _53;
+  _55 ={v} _52->TMR[_54].TCTRL;
+  _56 = lpitChConfig_117->triggerSource;
+  _57 = (long unsigned int) _56;
+  _58 = _57 << 23;
+  _59 = (int) instance_111(D);
+  _60 = 1073967104B;
+  _61 = lpitChConfig_117->hwChannel;
+  _62 = (int) _61;
+  _63 = _55 | _58;
+  _60->TMR[_62].TCTRL ={v} _63;
+  _64 = (int) instance_111(D);
+  _65 = 1073967104B;
+  _66 = lpitChConfig_117->hwChannel;
+  _67 = (int) _66;
+  _68 ={v} _65->TMR[_67].TCTRL;
+  _69 = lpitChConfig_117->triggerSelect;
+  _70 = (long unsigned int) _69;
+  _71 = _70 << 24;
+  _72 = (int) instance_111(D);
+  _73 = 1073967104B;
+  _74 = lpitChConfig_117->hwChannel;
+  _75 = (int) _74;
+  _76 = _68 | _71;
+  _73->TMR[_75].TCTRL ={v} _76;
+  _77 = (int) instance_111(D);
+  _78 = 1073967104B;
+  _79 = lpitChConfig_117->hwChannel;
+  _80 = (int) _79;
+  _81 ={v} _78->TMR[_80].TCTRL;
+  _82 = (int) instance_111(D);
+  _83 = 1073967104B;
+  _84 = lpitChConfig_117->hwChannel;
+  _85 = (int) _84;
+  _86 = _81 | 12;
+  _83->TMR[_85].TCTRL ={v} _86;
+  _87 = (int) instance_111(D);
+  _88 = lpitChConfig_117->hwChannel;
+  _89 = (int) _88;
+  channelsState[_87][_89].initState = 1;
+  _90 = (int) instance_111(D);
+  _91 = lpitChConfig_117->hwChannel;
+  _92 = (int) _91;
+  _93 = lpitChConfig_117->callback;
+  channelsState[_90][_92].callback = _93;
+  _94 = (int) instance_111(D);
+  _95 = lpitChConfig_117->hwChannel;
+  _96 = (int) _95;
+  _97 = lpitChConfig_117->callbackParams;
+  channelsState[_94][_96].callbackParams = _97;
+  _98 = (int) instance_111(D);
+  _99 = lpitChConfig_117->hwChannel;
+  _100 = (int) _99;
+  _101 = lpitChConfig_117->lpitChannelNotify;
+  channelsState[_98][_100].lpitChannelNotify = _101;
+  _102 = (int) instance_111(D);
+  _103 = lpitChConfig_117->hwChannel;
+  _104 = (int) _103;
+  _105 = lpitChConfig_117->logicChStateCallback;
+  channelsState[_102][_104].logicChStateCallback = _105;
+  counter.1_106 = counter_108;
+  counter_133 = counter.1_106 + 1;
+
+  <bb 7> :
+  # counter_108 = PHI <counter_114(2), counter_133(6)>
+  _107 = userConfig_115(D)->numberOfChannels;
+  if (counter_108 < _107)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  _116 = 0;
+
+  <bb 9> :
+<L6>:
+  return _116;
+
+}
+
+

@@ -1,0 +1,3353 @@
+Trivially needed symbols: pwb_CalculateMeasurementAverage pwb_CheckVoltageConsistency pwb_CheckRelayConsitency pwb_CheckCometiUnits pwb_PilotDutyCycleSwitch2And3 pwb_PilotSwitch3 pwb_prechargeWaiting pwb_prechargeExe pwb_GetStateBattery pwb_PilotSwitch1and2 pwb_ControlManagement pwb_CbitManagement pwb_PbitManagement pwb_MaintManagement pwb_UpdateMeasResults pwb_UpdateRelayResults PWB_Deinit PWB_Update PWB_Init HvTempArrayIndex HvCurrentArrayIndex LvVoltageArrayIndex HvVoltageArrayIndex HvTempArray HvCurrentArray LvVoltageArray HvVoltageArray psValidTimer buck_AutoStopTimer timerPrechargeAbort timerPwmS3 timerPwmS2 timerSdeS3 timerSdeS2 timerSdeS1 startTimerSdeS1 pwb_taskCounter PWB_numberAvailableCOMETi PWB_relayCurrentState PWB_relayCurrentCmd PWB_measures PWB_Flags
+
+
+Initial Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_prechargeWaiting/36 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069ca0e0
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069cad20
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069caa80
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069ca7e0
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069ca540
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069ca2a0
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069ca000
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dcb60
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dc620
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dc0e0
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dcd20
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dca80
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dc7e0
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dc540
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068dc2a0
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068dc000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068d6c40
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068d6e00
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068d6b60
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069beca8
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069bec18
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069beb88
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069beaf8
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069bea68
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be9d8
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be948
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be8b8
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be828
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be798
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be708
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be678
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be5e8
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be558
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be4c8
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be438
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069be3a8
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/5 (DevAssert) @0678f700
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @069be318
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06669288
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06669240
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066691f8
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066691b0
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Update/25 (write)PWB_Update/25 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_prechargeWaiting/36 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Update/25 (write)PWB_Update/25 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_prechargeWaiting/36 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Update/25 (write)PWB_Update/25 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_PilotSwitch1and2/33 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_prechargeWaiting/36 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: not-ready
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Update/25 (write)PWB_Update/25 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_CheckRelayConsitency/40 pwb_CheckRelayConsitency/40 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not_available
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: not_available
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_prechargeExe/35 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PilotSwitch3/37 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_prechargeWaiting/36 pwb_prechargeExe/35 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CbitManagement/31 (read)
+  Availability: not_available
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_GetStateBattery/34 (read)pwb_PilotSwitch1and2/33 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_prechargeWaiting/36 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_PbitManagement/30 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_MaintManagement/29 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (write)
+  Availability: not_available
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateMeasResults/28 (read)pwb_UpdateMeasResults/28 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (write)pwb_UpdateMeasResults/28 (write)pwb_UpdateMeasResults/28 (write)pwb_MaintManagement/29 (read)pwb_MaintManagement/29 (read)
+  Availability: not_available
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_UpdateRelayResults/27 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Deinit/26 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PWB_Update/25 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CheckCometiUnits/39 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_CheckRelayConsitency/40 (read)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)PWB_Update/25 (read)PWB_Update/25 (read)
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWB_Init/24 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 pwb_ControlManagement/32 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)FSM_mode/46 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)PWB_relayCurrentCmd/2 (read)PWB_relayCurrentState/3 (read)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: PWBio_ReadAuxSwitch/70 PWBio_ReadAuxSwitch/70 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_numberAvailableCOMETi/4 (read)PWB_numberAvailableCOMETi/4 (write)PWB_numberAvailableCOMETi/4 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)buck_AutoStopTimer/14 (read)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (write)buck_AutoStopTimer/14 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_CbitManagement/31 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentCmd/2 (read)timerPwmS3/12 (read)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (read)timerPwmS3/12 (write)PWBio_LowerDutyCycleS3/68 (write)timerPwmS3/12 (write)PWB_relayCurrentCmd/2 (read)timerPwmS2/11 (read)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (read)timerPwmS2/11 (write)PWBio_LowerDutyCycleS2/69 (write)timerPwmS2/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)FSM_mode/46 (read)COM_mode/67 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_measures/1 (read)FSM_mode/46 (read)timerSdeS3/10 (read)PWB_relayCurrentCmd/2 (write)timerSdeS3/10 (write)timerSdeS3/10 (read)timerSdeS3/10 (write)PWB_measures/1 (read)PWB_relayCurrentCmd/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)PAR_paramConfig/61 (read)timerPrechargeAbort/13 (read)PWB_Flags/0 (write)timerPrechargeAbort/13 (write)timerPrechargeAbort/13 (read)timerPrechargeAbort/13 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_SetCdeSwitch/65 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: timerSdeS2/9 (read)PWB_relayCurrentCmd/2 (write)timerSdeS2/9 (write)startTimerSdeS1/7 (write)timerSdeS2/9 (read)timerSdeS2/9 (write)startTimerSdeS1/7 (read)timerSdeS1/8 (read)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)timerSdeS1/8 (write)startTimerSdeS1/7 (write)timerSdeS1/8 (read)timerSdeS1/8 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_PilotSwitch1and2/33 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (read)PWB_measures/1 (read)PWB_measures/1 (read)FSM_mode/46 (read)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_ControlManagement/32 
+  Calls: PWBio_UnsetCdeSwitch/66 PWBio_SetCdeSwitch/65 pwb_prechargeWaiting/36 pwb_prechargeExe/35 pwb_GetStateBattery/34 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)PWBCbit_cmdResults/53 (read)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (write)HvCurrentArrayIndex/22 (read)HvCurrentArray/18 (addr)PWB_measures/1 (write)HvCurrentArrayIndex/22 (write)HvCurrentArrayIndex/22 (read)HvCurrentArrayIndex/22 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (write)HvVoltageArrayIndex/20 (read)HvVoltageArray/16 (addr)PWB_measures/1 (write)HvVoltageArrayIndex/20 (write)HvVoltageArrayIndex/20 (read)HvVoltageArrayIndex/20 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)PWBCbit_cmdResults/53 (read)HvTempArrayIndex/23 (read)HvTempArray/19 (write)HvTempArrayIndex/23 (read)HvTempArray/19 (addr)PWB_measures/1 (write)HvTempArrayIndex/23 (write)HvTempArrayIndex/23 (read)HvTempArrayIndex/23 (write)pwb_taskCounter/6 (read)PWBCbit_cmdResults/53 (read)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (write)LvVoltageArrayIndex/21 (read)LvVoltageArray/17 (addr)PWB_measures/1 (write)LvVoltageArrayIndex/21 (write)LvVoltageArrayIndex/21 (read)LvVoltageArrayIndex/21 (write)pwb_taskCounter/6 (read)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)CNV_powercoreUnitTable/64 (read)CNV_powercoreUnitTable/64 (read)PWB_measures/1 (write)pwb_taskCounter/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_PilotDutyCycleSwitch2And3/38 pwb_PilotSwitch3/37 pwb_PilotSwitch1and2/33 pwb_CalculateMeasurementAverage/42 PWBCbit_GetLvMeasures/57 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 pwb_CalculateMeasurementAverage/42 PWBCbit_GetHvMeasures/56 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)FSM_mode/46 (read)PAR_paramConfig/61 (read)PAR_paramConfig/61 (read)PWB_measures/1 (read)FSM_mode/46 (read)FSM_mode/46 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)PAR_paramConfig/61 (read)PWB_psValidState/63 (read)psValidTimer/15 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)psValidTimer/15 (read)psValidTimer/15 (write)PWB_Flags/0 (write)psValidTimer/15 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBCBit_UpdatePsValidState/62 pwb_CheckRelayConsitency/40 pwb_CheckVoltageConsistency/41 pwb_CheckCometiUnits/39 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: PWBPbit_testLvPrechargeRelay/60 PWBPbit_testHvCouplerRelay/59 PWBPbit_testTempConsis/58 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/54 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)DBG_Flags/54 (read)COM_debugTestReq/52 (read)DBG_Flags/54 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PWB_Update/25 
+  Calls: pwb_UpdateMeasResults/28 PWBCbit_GetLvMeasures/57 pwb_UpdateMeasResults/28 PWBCbit_GetHvMeasures/56 pwb_UpdateRelayResults/27 PWBio_RunTests/55 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)PWBCbit_cmdResults/53 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_MaintManagement/29 pwb_MaintManagement/29 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWBio_cmdResults/51 (read)COM_debugTestReq/52 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: pwb_MaintManagement/29 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Deinit/50 PWBCbit_Deinit/49 PWBio_Deinit/48 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/46 (read)FSM_mode/46 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (read)pwb_taskCounter/6 (write)pwb_taskCounter/6 (write)COM_flags/47 (read)PWB_Flags/0 (write)PWB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: pwb_CbitManagement/31 pwb_ControlManagement/32 pwb_PbitManagement/30 pwb_MaintManagement/29 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_Flags/0 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_measures/1 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentCmd/2 (write)PWB_relayCurrentState/3 (write)PWB_relayCurrentState/3 (write)PWB_numberAvailableCOMETi/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBPbit_Init/45 PWBCbit_Init/44 PWBio_Init/43 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (addr)
+  Availability: available
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)
+  Availability: available
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: available
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (read)pwb_prechargeWaiting/36 (write)
+  Availability: available
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: available
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (write)pwb_PilotDutyCycleSwitch2And3/38 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_prechargeExe/35 (write)pwb_prechargeExe/35 (read)pwb_prechargeExe/35 (write)
+  Availability: available
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)pwb_ControlManagement/32 (read)PWB_Update/25 (read)PWB_Update/25 (read)PWB_Update/25 (write)PWB_Update/25 (write)
+  Availability: available
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (read)
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)PWB_Init/24 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PWB_Init/24 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)PWB_Init/24 (write)pwb_prechargeExe/35 (write)pwb_PilotDutyCycleSwitch2And3/38 (read)pwb_PilotDutyCycleSwitch2And3/38 (read)PWB_Init/24 (write)pwb_PilotSwitch3/37 (write)pwb_PilotSwitch3/37 (write)pwb_prechargeExe/35 (write)pwb_prechargeWaiting/36 (write)pwb_PilotSwitch1and2/33 (write)pwb_PilotSwitch1and2/33 (write)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)pwb_CheckRelayConsitency/40 (read)
+  Availability: available
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: pwb_CheckVoltageConsistency/41 (read)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch3/37 (read)pwb_PilotSwitch3/37 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)PWB_Init/24 (write)pwb_CheckCometiUnits/39 (read)pwb_CheckCometiUnits/39 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CbitManagement/31 (read)pwb_CbitManagement/31 (read)PWB_Init/24 (write)pwb_CbitManagement/31 (read)PWB_Init/24 (write)pwb_GetStateBattery/34 (read)pwb_CheckVoltageConsistency/41 (read)pwb_CheckVoltageConsistency/41 (read)PWB_Init/24 (write)pwb_PilotSwitch1and2/33 (read)pwb_PilotSwitch1and2/33 (read)pwb_CheckVoltageConsistency/41 (read)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)pwb_ControlManagement/32 (write)
+  Availability: available
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: pwb_PilotSwitch1and2/33 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckVoltageConsistency/41 (write)pwb_CheckVoltageConsistency/41 (write)pwb_PilotSwitch1and2/33 (read)pwb_CheckRelayConsitency/40 (write)pwb_CheckVoltageConsistency/41 (read)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckCometiUnits/39 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_PbitManagement/30 (write)pwb_prechargeExe/35 (write)PWB_Init/24 (write)PWB_Init/24 (write)PWB_Init/24 (write)pwb_PbitManagement/30 (write)pwb_CheckRelayConsitency/40 (write)pwb_CheckRelayConsitency/40 (write)pwb_PbitManagement/30 (write)pwb_PbitManagement/30 (write)pwb_prechargeWaiting/36 (write)pwb_CheckRelayConsitency/40 (write)PWB_Init/24 (write)pwb_PbitManagement/30 (write)pwb_prechargeWaiting/36 (write)pwb_prechargeWaiting/36 (write)pwb_CheckCometiUnits/39 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)pwb_CbitManagement/31 (write)PWB_Update/25 (write)PWB_Update/25 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: HvTempArrayIndex HvCurrentArrayIndex LvVoltageArrayIndex HvVoltageArrayIndex HvTempArray HvCurrentArray LvVoltageArray HvVoltageArray psValidTimer buck_AutoStopTimer timerPrechargeAbort timerPwmS3 timerPwmS2 timerSdeS3 timerSdeS2 timerSdeS1 startTimerSdeS1 pwb_taskCounter PWB_numberAvailableCOMETi PWB_relayCurrentState PWB_relayCurrentCmd PWB_measures PWB_Flags
+Removing variables:
+
+Final Symbol table:
+
+PWBio_ReadAuxSwitch/70 (PWBio_ReadAuxSwitch) @06a2c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_LowerDutyCycleS2/69 (PWBio_LowerDutyCycleS2) @06a29000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBio_LowerDutyCycleS3/68 (PWBio_LowerDutyCycleS3) @06a21f78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_mode/67 (COM_mode) @06a218b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBio_UnsetCdeSwitch/66 (PWBio_UnsetCdeSwitch) @069dfb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_SetCdeSwitch/65 (PWBio_SetCdeSwitch) @069dfa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_powercoreUnitTable/64 (CNV_powercoreUnitTable) @06a1c168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_psValidState/63 (PWB_psValidState) @06a14e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBCBit_UpdatePsValidState/62 (PWBCBit_UpdatePsValidState) @069df460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PAR_paramConfig/61 (PAR_paramConfig) @06a14cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBPbit_testLvPrechargeRelay/60 (PWBPbit_testLvPrechargeRelay) @069df000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBPbit_testHvCouplerRelay/59 (PWBPbit_testHvCouplerRelay) @069d71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBPbit_testTempConsis/58 (PWBPbit_testTempConsis) @069d7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_GetLvMeasures/57 (PWBCbit_GetLvMeasures) @069d7d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_GetHvMeasures/56 (PWBCbit_GetHvMeasures) @069d7b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_RunTests/55 (PWBio_RunTests) @069d7a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Flags/54 (DBG_Flags) @069db3f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBCbit_cmdResults/53 (PWBCbit_cmdResults) @069db000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/52 (COM_debugTestReq) @069d6ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBio_cmdResults/51 (PWBio_cmdResults) @069d6e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Deinit/50 (PWBPbit_Deinit) @069d7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_Deinit/49 (PWBCbit_Deinit) @069d7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_Deinit/48 (PWBio_Deinit) @069d7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_flags/47 (COM_flags) @069d6ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_mode/46 (FSM_mode) @069d6948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBPbit_Init/45 (PWBPbit_Init) @069d70e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBCbit_Init/44 (PWBCbit_Init) @069d7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PWBio_Init/43 (PWBio_Init) @069cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_CalculateMeasurementAverage/42 (pwb_CalculateMeasurementAverage) @069ca0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_CheckVoltageConsistency/41 (pwb_CheckVoltageConsistency) @069cad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_CheckRelayConsitency/40 (pwb_CheckRelayConsitency) @069caa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_CheckCometiUnits/39 (pwb_CheckCometiUnits) @069ca7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_PilotDutyCycleSwitch2And3/38 (pwb_PilotDutyCycleSwitch2And3) @069ca540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_PilotSwitch3/37 (pwb_PilotSwitch3) @069ca2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_prechargeWaiting/36 (pwb_prechargeWaiting) @069ca000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_prechargeExe/35 (pwb_prechargeExe) @068dcb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_GetStateBattery/34 (pwb_GetStateBattery) @068dc620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_PilotSwitch1and2/33 (pwb_PilotSwitch1and2) @068dc0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_ControlManagement/32 (pwb_ControlManagement) @068dcd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_CbitManagement/31 (pwb_CbitManagement) @068dca80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_PbitManagement/30 (pwb_PbitManagement) @068dc7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_MaintManagement/29 (pwb_MaintManagement) @068dc540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_UpdateMeasResults/28 (pwb_UpdateMeasResults) @068dc2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+pwb_UpdateRelayResults/27 (pwb_UpdateRelayResults) @068dc000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWB_Deinit/26 (PWB_Deinit) @068d6c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWB_Update/25 (PWB_Update) @068d6e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+PWB_Init/24 (PWB_Init) @068d6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+HvTempArrayIndex/23 (HvTempArrayIndex) @069beca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArrayIndex/22 (HvCurrentArrayIndex) @069bec18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069beca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArrayIndex/21 (LvVoltageArrayIndex) @069beb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069bec18
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArrayIndex/20 (HvVoltageArrayIndex) @069beaf8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069beb88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+HvTempArray/19 (HvTempArray) @069bea68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069beaf8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+HvCurrentArray/18 (HvCurrentArray) @069be9d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069bea68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+LvVoltageArray/17 (LvVoltageArray) @069be948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be9d8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+HvVoltageArray/16 (HvVoltageArray) @069be8b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be948
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+psValidTimer/15 (psValidTimer) @069be828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be8b8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+buck_AutoStopTimer/14 (buck_AutoStopTimer) @069be798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be828
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerPrechargeAbort/13 (timerPrechargeAbort) @069be708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be798
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerPwmS3/12 (timerPwmS3) @069be678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be708
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerPwmS2/11 (timerPwmS2) @069be5e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be678
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerSdeS3/10 (timerSdeS3) @069be558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be5e8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerSdeS2/9 (timerSdeS2) @069be4c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be558
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+timerSdeS1/8 (timerSdeS1) @069be438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be4c8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+startTimerSdeS1/7 (startTimerSdeS1) @069be3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+pwb_taskCounter/6 (pwb_taskCounter) @069be318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @069be3a8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+PWB_numberAvailableCOMETi/4 (PWB_numberAvailableCOMETi) @06669288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @069be318
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentState/3 (PWB_relayCurrentState) @06669240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06669288
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWB_relayCurrentCmd/2 (PWB_relayCurrentCmd) @066691f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @06669240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWB_measures/1 (PWB_measures) @066691b0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @066691f8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PWB_Flags/0 (PWB_Flags) @06669168
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @066691b0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

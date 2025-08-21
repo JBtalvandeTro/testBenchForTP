@@ -1,0 +1,54 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+GetElapsedValue/1 (GetElapsedValue) @05942d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+GetCounterValue/0 (GetCounterValue) @05942a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+GetElapsedValue (CounterType ctrId, TickType * valueRef, TickType * tickRef)
+{
+  StatusType D.5444;
+  StatusType _1;
+
+  <bb 2> :
+  _1 = 0;
+
+  <bb 3> :
+<L0>:
+  return _1;
+
+}
+
+
+GetCounterValue (CounterType ctrId, TickType * tickRef)
+{
+  StatusType D.5442;
+  StatusType _1;
+
+  <bb 2> :
+  _1 = 0;
+
+  <bb 3> :
+<L0>:
+  return _1;
+
+}
+
+

@@ -1,0 +1,201 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: PWBPbit_Deinit PWBPbit_testLvPrechargeRelay PWBPbit_testHvCouplerRelay PWBPbit_testTempConsis PWBPbit_Init
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+PWBio_ReadAuxSwitch/6 (PWBio_ReadAuxSwitch) @066102a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBPbit_testLvPrechargeRelay/3 PWBPbit_testHvCouplerRelay/2 
+  Calls: 
+PWBio_UnsetCdeSwitch/5 (PWBio_UnsetCdeSwitch) @06610000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PWBPbit_testLvPrechargeRelay/3 PWBPbit_testHvCouplerRelay/2 
+  Calls: 
+PWBPbit_Deinit/4 (PWBPbit_Deinit) @066109a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBPbit_testLvPrechargeRelay/3 (PWBPbit_testLvPrechargeRelay) @06610700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/6 PWBio_UnsetCdeSwitch/5 
+PWBPbit_testHvCouplerRelay/2 (PWBPbit_testHvCouplerRelay) @06610460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PWBio_ReadAuxSwitch/6 PWBio_UnsetCdeSwitch/5 
+PWBPbit_testTempConsis/1 (PWBPbit_testTempConsis) @066101c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBPbit_Init/0 (PWBPbit_Init) @0660d9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PWBPbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+PWBPbit_testLvPrechargeRelay ()
+{
+  boolean currentStateS2;
+  boolean testResult;
+  boolean D.5486;
+  _Bool _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+  boolean _15;
+
+  <bb 2> :
+  PWBio_UnsetCdeSwitch (1);
+  testResult_10 = 0;
+  _1 = PWBio_ReadAuxSwitch (1);
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  currentStateS2_12 = (boolean) _5;
+  _6 = ~currentStateS2_12;
+  if (_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  testResult_14 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  testResult_13 = 0;
+
+  <bb 5> :
+  # testResult_7 = PHI <testResult_14(3), testResult_13(4)>
+  _15 = testResult_7;
+
+  <bb 6> :
+<L3>:
+  return _15;
+
+}
+
+
+PWBPbit_testHvCouplerRelay ()
+{
+  boolean currentStateS3;
+  boolean testResult;
+  boolean D.5481;
+  _Bool _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+  boolean _15;
+
+  <bb 2> :
+  PWBio_UnsetCdeSwitch (2);
+  testResult_10 = 0;
+  _1 = PWBio_ReadAuxSwitch (2);
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  currentStateS3_12 = (boolean) _5;
+  _6 = ~currentStateS3_12;
+  if (_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  testResult_14 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  testResult_13 = 0;
+
+  <bb 5> :
+  # testResult_7 = PHI <testResult_14(3), testResult_13(4)>
+  _15 = testResult_7;
+
+  <bb 6> :
+<L3>:
+  return _15;
+
+}
+
+
+PWBPbit_testTempConsis ()
+{
+  boolean D.5476;
+  boolean _1;
+
+  <bb 2> :
+  _1 = 1;
+
+  <bb 3> :
+<L0>:
+  return _1;
+
+}
+
+
+PWBPbit_Init ()
+{
+  <bb 2> :
+  return;
+
+}
+
+

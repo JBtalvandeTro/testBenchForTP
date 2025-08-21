@@ -1,0 +1,254 @@
+IPA summary for Lpspi_Ip_LPSPI_2_IrqRxDmaHandler/8 is missing.
+IPA summary for Lpspi_Ip_LPSPI_2_IrqTxDmaHandler/7 is missing.
+IPA summary for Lpspi_Ip_LPSPI_2_IRQHandler/6 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IrqRxDmaHandler/5 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IrqTxDmaHandler/4 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IRQHandler/3 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/2 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/1 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IRQHandler/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        9 calls, 9.000000 freq, 0 count
+IPA summary for Lpspi_Ip_LPSPI_2_IrqRxDmaHandler/8 is missing.
+IPA summary for Lpspi_Ip_LPSPI_2_IrqTxDmaHandler/7 is missing.
+IPA summary for Lpspi_Ip_LPSPI_2_IRQHandler/6 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IrqRxDmaHandler/5 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IrqTxDmaHandler/4 is missing.
+IPA summary for Lpspi_Ip_LPSPI_1_IRQHandler/3 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/2 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/1 is missing.
+IPA summary for Lpspi_Ip_LPSPI_0_IRQHandler/0 is missing.
+Symbol table:
+
+Lpspi_Ip_IrqRxDmaHandler/11 (Lpspi_Ip_IrqRxDmaHandler) @066d1000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_LPSPI_2_IrqRxDmaHandler/8 Lpspi_Ip_LPSPI_1_IrqRxDmaHandler/5 Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/2 
+  Calls: 
+Lpspi_Ip_IrqTxDmaHandler/10 (Lpspi_Ip_IrqTxDmaHandler) @066ce620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_LPSPI_2_IrqTxDmaHandler/7 Lpspi_Ip_LPSPI_1_IrqTxDmaHandler/4 Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/1 
+  Calls: 
+Lpspi_Ip_IrqHandler/9 (Lpspi_Ip_IrqHandler) @066ce0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpspi_Ip_LPSPI_2_IRQHandler/6 Lpspi_Ip_LPSPI_1_IRQHandler/3 Lpspi_Ip_LPSPI_0_IRQHandler/0 
+  Calls: 
+Lpspi_Ip_LPSPI_2_IrqRxDmaHandler/8 (Lpspi_Ip_LPSPI_2_IrqRxDmaHandler) @066cea80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqRxDmaHandler/11 
+Lpspi_Ip_LPSPI_2_IrqTxDmaHandler/7 (Lpspi_Ip_LPSPI_2_IrqTxDmaHandler) @066ce7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqTxDmaHandler/10 
+Lpspi_Ip_LPSPI_2_IRQHandler/6 (Lpspi_Ip_LPSPI_2_IRQHandler) @066ce540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqHandler/9 
+Lpspi_Ip_LPSPI_1_IrqRxDmaHandler/5 (Lpspi_Ip_LPSPI_1_IrqRxDmaHandler) @066ce2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqRxDmaHandler/11 
+Lpspi_Ip_LPSPI_1_IrqTxDmaHandler/4 (Lpspi_Ip_LPSPI_1_IrqTxDmaHandler) @066ce000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqTxDmaHandler/10 
+Lpspi_Ip_LPSPI_1_IRQHandler/3 (Lpspi_Ip_LPSPI_1_IRQHandler) @066cba80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqHandler/9 
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler/2 (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler) @066cbee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqRxDmaHandler/11 
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler/1 (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler) @066cbc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqTxDmaHandler/10 
+Lpspi_Ip_LPSPI_0_IRQHandler/0 (Lpspi_Ip_LPSPI_0_IRQHandler) @066cb9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_IrqHandler/9 
+
+;; Function Lpspi_Ip_LPSPI_0_IRQHandler (Lpspi_Ip_LPSPI_0_IRQHandler, funcdef_no=0, decl_uid=5718, cgraph_uid=1, symbol_order=0)
+
+Lpspi_Ip_LPSPI_0_IRQHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqHandler (0);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_0_IrqTxDmaHandler (Lpspi_Ip_LPSPI_0_IrqTxDmaHandler, funcdef_no=1, decl_uid=5720, cgraph_uid=2, symbol_order=1)
+
+Lpspi_Ip_LPSPI_0_IrqTxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqTxDmaHandler (0);
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_0_IrqRxDmaHandler (Lpspi_Ip_LPSPI_0_IrqRxDmaHandler, funcdef_no=2, decl_uid=5722, cgraph_uid=3, symbol_order=2)
+
+Lpspi_Ip_LPSPI_0_IrqRxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqRxDmaHandler (0);
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_1_IRQHandler (Lpspi_Ip_LPSPI_1_IRQHandler, funcdef_no=3, decl_uid=5724, cgraph_uid=4, symbol_order=3)
+
+Lpspi_Ip_LPSPI_1_IRQHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqHandler (1);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_1_IrqTxDmaHandler (Lpspi_Ip_LPSPI_1_IrqTxDmaHandler, funcdef_no=4, decl_uid=5726, cgraph_uid=5, symbol_order=4)
+
+Lpspi_Ip_LPSPI_1_IrqTxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqTxDmaHandler (1);
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_1_IrqRxDmaHandler (Lpspi_Ip_LPSPI_1_IrqRxDmaHandler, funcdef_no=5, decl_uid=5728, cgraph_uid=6, symbol_order=5)
+
+Lpspi_Ip_LPSPI_1_IrqRxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqRxDmaHandler (1);
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_2_IRQHandler (Lpspi_Ip_LPSPI_2_IRQHandler, funcdef_no=6, decl_uid=5730, cgraph_uid=7, symbol_order=6)
+
+Lpspi_Ip_LPSPI_2_IRQHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqHandler (2);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_2_IrqTxDmaHandler (Lpspi_Ip_LPSPI_2_IrqTxDmaHandler, funcdef_no=7, decl_uid=5732, cgraph_uid=8, symbol_order=7)
+
+Lpspi_Ip_LPSPI_2_IrqTxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqTxDmaHandler (2);
+  return;
+
+}
+
+
+
+;; Function Lpspi_Ip_LPSPI_2_IrqRxDmaHandler (Lpspi_Ip_LPSPI_2_IrqRxDmaHandler, funcdef_no=8, decl_uid=5734, cgraph_uid=9, symbol_order=8)
+
+Lpspi_Ip_LPSPI_2_IrqRxDmaHandler ()
+{
+  <bb 2> :
+  Lpspi_Ip_IrqRxDmaHandler (2);
+  return;
+
+}
+
+

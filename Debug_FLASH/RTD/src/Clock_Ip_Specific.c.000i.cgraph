@@ -1,0 +1,3243 @@
+Trivially needed symbols: Clock_Ip_Command Clock_Ip_ClockPowerModeChangeNotification Clock_Ip_ClockInitializeObjects getSlowDividerConfig getBusDividerConfig getCoreDividerConfig getSelectorConfig getSpllConfig getSoscConfig getFircConfig Clock_Ip_SpecificPlatformInitClock SetSimLpoclksRegister_TrustedCall SetFircToResetValue_TrustedCall DisableSafeClock Clock_Ip_pxSlowConfigHsrunMode Clock_Ip_pxBusConfigHsrunMode Clock_Ip_pxCoreConfigHsrunMode Clock_Ip_pxScsConfigHsrunMode Clock_Ip_pxSlowHsrunClockDivider Clock_Ip_pxBusHsrunClockDivider Clock_Ip_pxCoreHsrunClockDivider Clock_Ip_pxScsHsrunClockSelector Clock_Ip_pxSlowConfigVlprMode Clock_Ip_pxSlowConfigRunMode Clock_Ip_pxBusConfigVlprMode Clock_Ip_pxBusConfigRunMode Clock_Ip_pxCoreConfigVlprMode Clock_Ip_pxCoreConfigRunMode Clock_Ip_pxScsConfigVlprMode Clock_Ip_pxScsConfigRunMode Clock_Ip_pxSpllConfig Clock_Ip_pxSoscConfig Clock_Ip_pxFircConfig Clock_Ip_pxSlowRunClockDivider Clock_Ip_pxBusRunClockDivider Clock_Ip_pxCoreRunClockDivider Clock_Ip_pxScsRunClockSelector Clock_Ip_pxFircClock Clock_Ip_pxSoscClock Clock_Ip_pxSpllClock Clock_Ip_apConfig Clock_Ip_bFircWasEnabledBeforeMcuInit
+Trivially needed symbols: Clock_Ip_bObjsAreInitialized DividerConfigurations DividerConfigurations DividerConfigurations ClockSource SelectorConfigurations SpllConfiguration SoscConfiguration FircConfiguration
+
+
+Initial Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068680e0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+DividerConfigurations/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868d20
+  References: 
+  Referring: getSlowDividerConfig/39 (addr)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868a80
+  References: 
+  Referring: getBusDividerConfig/38 (addr)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068687e0
+  References: 
+  Referring: getCoreDividerConfig/37 (addr)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)
+  Availability: not-ready
+  Varpool flags:
+ClockSource/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868540
+  References: 
+  Referring: getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06a5d708
+  References: 
+  Referring: getSelectorConfig/36 (addr)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)
+  Availability: not-ready
+  Varpool flags:
+SpllConfiguration/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068682a0
+  References: 
+  Referring: getSpllConfig/35 (addr)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)
+  Availability: not-ready
+  Varpool flags:
+SoscConfiguration/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868000
+  References: 
+  Referring: getSoscConfig/34 (addr)getSoscConfig/34 (write)getSoscConfig/34 (write)getSoscConfig/34 (write)
+  Availability: not-ready
+  Varpool flags:
+FircConfiguration/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068168c0
+  References: 
+  Referring: getFircConfig/33 (addr)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: DisableSafeClock/29 Clock_Ip_SpecificPlatformInitClock/32 Clock_Ip_ClockInitializeObjects/40 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06868620
+  References: Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigVlprMode/14 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigVlprMode/16 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigVlprMode/18 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigVlprMode/20 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigRunMode/13 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigRunMode/15 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigRunMode/17 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigRunMode/19 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsHsrunClockSelector/21 (read)Clock_Ip_pxScsConfigHsrunMode/25 (read)Clock_Ip_pxCoreHsrunClockDivider/22 (read)Clock_Ip_pxCoreConfigHsrunMode/26 (read)Clock_Ip_pxBusHsrunClockDivider/23 (read)Clock_Ip_pxBusConfigHsrunMode/27 (read)Clock_Ip_pxSlowHsrunClockDivider/24 (read)Clock_Ip_pxSlowConfigHsrunMode/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068680e0
+  References: Clock_Ip_bObjsAreInitialized/58 (read)Clock_Ip_bObjsAreInitialized/58 (write)Clock_Ip_au8PllCallbackIndex/59 (read)Clock_Ip_axPllCallbacks/60 (addr)Clock_Ip_pxSpllClock/3 (write)Clock_Ip_au8XoscCallbackIndex/61 (read)Clock_Ip_axExtOscCallbacks/62 (addr)Clock_Ip_pxSoscClock/4 (write)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (addr)Clock_Ip_pxFircClock/5 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsRunClockSelector/6 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsHsrunClockSelector/21 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreRunClockDivider/7 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreHsrunClockDivider/22 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusRunClockDivider/8 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusHsrunClockDivider/23 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowRunClockDivider/9 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowHsrunClockDivider/24 (write)Clock_Ip_pxFircConfig/10 (write)Clock_Ip_pxSoscConfig/11 (write)Clock_Ip_pxSpllConfig/12 (write)Clock_Ip_pxScsConfigRunMode/13 (write)Clock_Ip_pxScsConfigVlprMode/14 (write)Clock_Ip_pxScsConfigHsrunMode/25 (write)Clock_Ip_pxCoreConfigRunMode/15 (write)Clock_Ip_pxCoreConfigVlprMode/16 (write)Clock_Ip_pxCoreConfigHsrunMode/26 (write)Clock_Ip_pxBusConfigRunMode/17 (write)Clock_Ip_pxBusConfigVlprMode/18 (write)Clock_Ip_pxBusConfigHsrunMode/27 (write)Clock_Ip_pxSlowConfigRunMode/19 (write)Clock_Ip_pxSlowConfigVlprMode/20 (write)Clock_Ip_pxSlowConfigHsrunMode/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: getSlowDividerConfig/39 getSlowDividerConfig/39 getSlowDividerConfig/39 getBusDividerConfig/38 getBusDividerConfig/38 getBusDividerConfig/38 getCoreDividerConfig/37 getCoreDividerConfig/37 getCoreDividerConfig/37 getSelectorConfig/36 getSelectorConfig/36 getSelectorConfig/36 getSpllConfig/35 getSoscConfig/34 getFircConfig/33 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868d20
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/57 (addr)DividerConfigurations/57 (write)DividerConfigurations/57 (write)DividerConfigurations/57 (write)DividerConfigurations/57 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868a80
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/56 (addr)DividerConfigurations/56 (write)DividerConfigurations/56 (write)DividerConfigurations/56 (write)DividerConfigurations/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068687e0
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/55 (addr)DividerConfigurations/55 (write)DividerConfigurations/55 (write)DividerConfigurations/55 (write)DividerConfigurations/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868540
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SelectorConfigurations/53 (addr)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068682a0
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SpllConfiguration/52 (addr)SpllConfiguration/52 (write)SpllConfiguration/52 (write)SpllConfiguration/52 (write)SpllConfiguration/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06868000
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SoscConfiguration/51 (addr)SoscConfiguration/51 (write)SoscConfiguration/51 (write)SoscConfiguration/51 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068168c0
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)FircConfiguration/50 (addr)FircConfiguration/50 (write)FircConfiguration/50 (write)FircConfiguration/50 (write)FircConfiguration/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068160e0
+  References: Clock_Ip_apConfig/2 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: SetSimLpoclksRegister_TrustedCall/31 Clock_Ip_ReportClockErrors/49 Clock_Ip_TimeoutExpired/48 Clock_Ip_StartTimeout/47 SetFircToResetValue_TrustedCall/30 DevAssert/0 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06816d20
+  References: Clock_Ip_au16SelectorEntryHardwareValue/45 (read)Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06816a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068167e0
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: 
+   Indirect call
+   Indirect call
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068162a0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680fc60
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680fbd0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680fb40
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680fab0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680fa20
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f990
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f900
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f870
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f7e0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f750
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f6c0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f630
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f5a0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f510
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f480
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f3f0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f2d0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f240
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f1b0
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f120
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f090
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680f000
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680af30
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680ae58
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680adc8
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680ad38
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0680aca8
+  References: 
+  Referring: DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)Clock_Ip_SpecificPlatformInitClock/32 (write)
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @068160e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+DividerConfigurations/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSlowDividerConfig/39 (addr)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getBusDividerConfig/38 (addr)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getCoreDividerConfig/37 (addr)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)
+  Availability: not-ready
+  Varpool flags:
+ClockSource/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (addr)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)
+  Availability: not-ready
+  Varpool flags:
+SpllConfiguration/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSpllConfig/35 (addr)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)
+  Availability: not-ready
+  Varpool flags:
+SoscConfiguration/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSoscConfig/34 (addr)getSoscConfig/34 (write)getSoscConfig/34 (write)getSoscConfig/34 (write)
+  Availability: not-ready
+  Varpool flags:
+FircConfiguration/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getFircConfig/33 (addr)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: DisableSafeClock/29 Clock_Ip_SpecificPlatformInitClock/32 Clock_Ip_ClockInitializeObjects/40 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigVlprMode/14 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigVlprMode/16 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigVlprMode/18 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigVlprMode/20 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigRunMode/13 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigRunMode/15 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigRunMode/17 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigRunMode/19 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsHsrunClockSelector/21 (read)Clock_Ip_pxScsConfigHsrunMode/25 (read)Clock_Ip_pxCoreHsrunClockDivider/22 (read)Clock_Ip_pxCoreConfigHsrunMode/26 (read)Clock_Ip_pxBusHsrunClockDivider/23 (read)Clock_Ip_pxBusConfigHsrunMode/27 (read)Clock_Ip_pxSlowHsrunClockDivider/24 (read)Clock_Ip_pxSlowConfigHsrunMode/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_bObjsAreInitialized/58 (read)Clock_Ip_bObjsAreInitialized/58 (write)Clock_Ip_au8PllCallbackIndex/59 (read)Clock_Ip_axPllCallbacks/60 (addr)Clock_Ip_pxSpllClock/3 (write)Clock_Ip_au8XoscCallbackIndex/61 (read)Clock_Ip_axExtOscCallbacks/62 (addr)Clock_Ip_pxSoscClock/4 (write)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (addr)Clock_Ip_pxFircClock/5 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsRunClockSelector/6 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsHsrunClockSelector/21 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreRunClockDivider/7 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreHsrunClockDivider/22 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusRunClockDivider/8 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusHsrunClockDivider/23 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowRunClockDivider/9 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowHsrunClockDivider/24 (write)Clock_Ip_pxFircConfig/10 (write)Clock_Ip_pxSoscConfig/11 (write)Clock_Ip_pxSpllConfig/12 (write)Clock_Ip_pxScsConfigRunMode/13 (write)Clock_Ip_pxScsConfigVlprMode/14 (write)Clock_Ip_pxScsConfigHsrunMode/25 (write)Clock_Ip_pxCoreConfigRunMode/15 (write)Clock_Ip_pxCoreConfigVlprMode/16 (write)Clock_Ip_pxCoreConfigHsrunMode/26 (write)Clock_Ip_pxBusConfigRunMode/17 (write)Clock_Ip_pxBusConfigVlprMode/18 (write)Clock_Ip_pxBusConfigHsrunMode/27 (write)Clock_Ip_pxSlowConfigRunMode/19 (write)Clock_Ip_pxSlowConfigVlprMode/20 (write)Clock_Ip_pxSlowConfigHsrunMode/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: getSlowDividerConfig/39 getSlowDividerConfig/39 getSlowDividerConfig/39 getBusDividerConfig/38 getBusDividerConfig/38 getBusDividerConfig/38 getCoreDividerConfig/37 getCoreDividerConfig/37 getCoreDividerConfig/37 getSelectorConfig/36 getSelectorConfig/36 getSelectorConfig/36 getSpllConfig/35 getSoscConfig/34 getFircConfig/33 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/57 (addr)DividerConfigurations/57 (write)DividerConfigurations/57 (write)DividerConfigurations/57 (write)DividerConfigurations/57 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/56 (addr)DividerConfigurations/56 (write)DividerConfigurations/56 (write)DividerConfigurations/56 (write)DividerConfigurations/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations/55 (addr)DividerConfigurations/55 (write)DividerConfigurations/55 (write)DividerConfigurations/55 (write)DividerConfigurations/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SelectorConfigurations/53 (addr)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)ClockSource/54 (read)SelectorConfigurations/53 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SpllConfiguration/52 (addr)SpllConfiguration/52 (write)SpllConfiguration/52 (write)SpllConfiguration/52 (write)SpllConfiguration/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SoscConfiguration/51 (addr)SoscConfiguration/51 (write)SoscConfiguration/51 (write)SoscConfiguration/51 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)FircConfiguration/50 (addr)FircConfiguration/50 (write)FircConfiguration/50 (write)FircConfiguration/50 (write)FircConfiguration/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: SetSimLpoclksRegister_TrustedCall/31 Clock_Ip_ReportClockErrors/49 Clock_Ip_TimeoutExpired/48 Clock_Ip_StartTimeout/47 SetFircToResetValue_TrustedCall/30 DevAssert/0 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au16SelectorEntryHardwareValue/45 (read)Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: 
+   Indirect call
+   Indirect call
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)Clock_Ip_SpecificPlatformInitClock/32 (write)
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+
+
+Initial Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized.6361/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+DividerConfigurations.6342/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSlowDividerConfig/39 (addr)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations.6322/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getBusDividerConfig/38 (addr)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations.6302/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getCoreDividerConfig/37 (addr)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)
+  Availability: not-ready
+  Varpool flags:
+ClockSource.6284/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations.6281/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (addr)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)
+  Availability: not-ready
+  Varpool flags:
+SpllConfiguration.6273/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSpllConfig/35 (addr)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)
+  Availability: not-ready
+  Varpool flags:
+SoscConfiguration.6264/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSoscConfig/34 (addr)getSoscConfig/34 (write)getSoscConfig/34 (write)getSoscConfig/34 (write)
+  Availability: not-ready
+  Varpool flags:
+FircConfiguration.6255/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getFircConfig/33 (addr)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: DisableSafeClock/29 Clock_Ip_SpecificPlatformInitClock/32 Clock_Ip_ClockInitializeObjects/40 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigVlprMode/14 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigVlprMode/16 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigVlprMode/18 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigVlprMode/20 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigRunMode/13 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigRunMode/15 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigRunMode/17 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigRunMode/19 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsHsrunClockSelector/21 (read)Clock_Ip_pxScsConfigHsrunMode/25 (read)Clock_Ip_pxCoreHsrunClockDivider/22 (read)Clock_Ip_pxCoreConfigHsrunMode/26 (read)Clock_Ip_pxBusHsrunClockDivider/23 (read)Clock_Ip_pxBusConfigHsrunMode/27 (read)Clock_Ip_pxSlowHsrunClockDivider/24 (read)Clock_Ip_pxSlowConfigHsrunMode/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_bObjsAreInitialized.6361/58 (read)Clock_Ip_bObjsAreInitialized.6361/58 (write)Clock_Ip_au8PllCallbackIndex/59 (read)Clock_Ip_axPllCallbacks/60 (addr)Clock_Ip_pxSpllClock/3 (write)Clock_Ip_au8XoscCallbackIndex/61 (read)Clock_Ip_axExtOscCallbacks/62 (addr)Clock_Ip_pxSoscClock/4 (write)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (addr)Clock_Ip_pxFircClock/5 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsRunClockSelector/6 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsHsrunClockSelector/21 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreRunClockDivider/7 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreHsrunClockDivider/22 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusRunClockDivider/8 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusHsrunClockDivider/23 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowRunClockDivider/9 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowHsrunClockDivider/24 (write)Clock_Ip_pxFircConfig/10 (write)Clock_Ip_pxSoscConfig/11 (write)Clock_Ip_pxSpllConfig/12 (write)Clock_Ip_pxScsConfigRunMode/13 (write)Clock_Ip_pxScsConfigVlprMode/14 (write)Clock_Ip_pxScsConfigHsrunMode/25 (write)Clock_Ip_pxCoreConfigRunMode/15 (write)Clock_Ip_pxCoreConfigVlprMode/16 (write)Clock_Ip_pxCoreConfigHsrunMode/26 (write)Clock_Ip_pxBusConfigRunMode/17 (write)Clock_Ip_pxBusConfigVlprMode/18 (write)Clock_Ip_pxBusConfigHsrunMode/27 (write)Clock_Ip_pxSlowConfigRunMode/19 (write)Clock_Ip_pxSlowConfigVlprMode/20 (write)Clock_Ip_pxSlowConfigHsrunMode/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: getSlowDividerConfig/39 getSlowDividerConfig/39 getSlowDividerConfig/39 getBusDividerConfig/38 getBusDividerConfig/38 getBusDividerConfig/38 getCoreDividerConfig/37 getCoreDividerConfig/37 getCoreDividerConfig/37 getSelectorConfig/36 getSelectorConfig/36 getSelectorConfig/36 getSpllConfig/35 getSoscConfig/34 getFircConfig/33 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6342/57 (addr)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6322/56 (addr)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6302/55 (addr)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SelectorConfigurations.6281/53 (addr)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SpllConfiguration.6273/52 (addr)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SoscConfiguration.6264/51 (addr)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)FircConfiguration.6255/50 (addr)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: SetSimLpoclksRegister_TrustedCall/31 Clock_Ip_ReportClockErrors/49 Clock_Ip_TimeoutExpired/48 Clock_Ip_StartTimeout/47 SetFircToResetValue_TrustedCall/30 DevAssert/0 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au16SelectorEntryHardwareValue/45 (read)Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: 
+   Indirect call
+   Indirect call
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)Clock_Ip_SpecificPlatformInitClock/32 (write)
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized.6361/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+DividerConfigurations.6342/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSlowDividerConfig/39 (addr)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations.6322/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getBusDividerConfig/38 (addr)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)
+  Availability: not-ready
+  Varpool flags:
+DividerConfigurations.6302/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getCoreDividerConfig/37 (addr)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)
+  Availability: not-ready
+  Varpool flags:
+ClockSource.6284/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations.6281/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSelectorConfig/36 (addr)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)
+  Availability: not-ready
+  Varpool flags:
+SpllConfiguration.6273/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSpllConfig/35 (addr)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)
+  Availability: not-ready
+  Varpool flags:
+SoscConfiguration.6264/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getSoscConfig/34 (addr)getSoscConfig/34 (write)getSoscConfig/34 (write)getSoscConfig/34 (write)
+  Availability: not-ready
+  Varpool flags:
+FircConfiguration.6255/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: getFircConfig/33 (addr)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: DisableSafeClock/29 Clock_Ip_SpecificPlatformInitClock/32 Clock_Ip_ClockInitializeObjects/40 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigVlprMode/14 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigVlprMode/16 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigVlprMode/18 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigVlprMode/20 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigRunMode/13 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigRunMode/15 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigRunMode/17 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigRunMode/19 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsHsrunClockSelector/21 (read)Clock_Ip_pxScsConfigHsrunMode/25 (read)Clock_Ip_pxCoreHsrunClockDivider/22 (read)Clock_Ip_pxCoreConfigHsrunMode/26 (read)Clock_Ip_pxBusHsrunClockDivider/23 (read)Clock_Ip_pxBusConfigHsrunMode/27 (read)Clock_Ip_pxSlowHsrunClockDivider/24 (read)Clock_Ip_pxSlowConfigHsrunMode/28 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_bObjsAreInitialized.6361/58 (read)Clock_Ip_bObjsAreInitialized.6361/58 (write)Clock_Ip_au8PllCallbackIndex/59 (read)Clock_Ip_axPllCallbacks/60 (addr)Clock_Ip_pxSpllClock/3 (write)Clock_Ip_au8XoscCallbackIndex/61 (read)Clock_Ip_axExtOscCallbacks/62 (addr)Clock_Ip_pxSoscClock/4 (write)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (addr)Clock_Ip_pxFircClock/5 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsRunClockSelector/6 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsHsrunClockSelector/21 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreRunClockDivider/7 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreHsrunClockDivider/22 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusRunClockDivider/8 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusHsrunClockDivider/23 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowRunClockDivider/9 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowHsrunClockDivider/24 (write)Clock_Ip_pxFircConfig/10 (write)Clock_Ip_pxSoscConfig/11 (write)Clock_Ip_pxSpllConfig/12 (write)Clock_Ip_pxScsConfigRunMode/13 (write)Clock_Ip_pxScsConfigVlprMode/14 (write)Clock_Ip_pxScsConfigHsrunMode/25 (write)Clock_Ip_pxCoreConfigRunMode/15 (write)Clock_Ip_pxCoreConfigVlprMode/16 (write)Clock_Ip_pxCoreConfigHsrunMode/26 (write)Clock_Ip_pxBusConfigRunMode/17 (write)Clock_Ip_pxBusConfigVlprMode/18 (write)Clock_Ip_pxBusConfigHsrunMode/27 (write)Clock_Ip_pxSlowConfigRunMode/19 (write)Clock_Ip_pxSlowConfigVlprMode/20 (write)Clock_Ip_pxSlowConfigHsrunMode/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: getSlowDividerConfig/39 getSlowDividerConfig/39 getSlowDividerConfig/39 getBusDividerConfig/38 getBusDividerConfig/38 getBusDividerConfig/38 getCoreDividerConfig/37 getCoreDividerConfig/37 getCoreDividerConfig/37 getSelectorConfig/36 getSelectorConfig/36 getSelectorConfig/36 getSpllConfig/35 getSoscConfig/34 getFircConfig/33 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6342/57 (addr)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6322/56 (addr)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6302/55 (addr)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SelectorConfigurations.6281/53 (addr)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SpllConfiguration.6273/52 (addr)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SoscConfiguration.6264/51 (addr)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)FircConfiguration.6255/50 (addr)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: SetSimLpoclksRegister_TrustedCall/31 Clock_Ip_ReportClockErrors/49 Clock_Ip_TimeoutExpired/48 Clock_Ip_StartTimeout/47 SetFircToResetValue_TrustedCall/30 DevAssert/0 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au16SelectorEntryHardwareValue/45 (read)Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: 
+   Indirect call
+   Indirect call
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)Clock_Ip_SpecificPlatformInitClock/32 (write)
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized.6361/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (read)Clock_Ip_ClockInitializeObjects/40 (write)
+  Availability: available
+  Varpool flags: initialized
+DividerConfigurations.6342/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getSlowDividerConfig/39 (addr)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)getSlowDividerConfig/39 (write)
+  Availability: available
+  Varpool flags:
+DividerConfigurations.6322/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getBusDividerConfig/38 (addr)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)getBusDividerConfig/38 (write)
+  Availability: available
+  Varpool flags:
+DividerConfigurations.6302/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getCoreDividerConfig/37 (addr)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)getCoreDividerConfig/37 (write)
+  Availability: available
+  Varpool flags:
+ClockSource.6284/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations.6281/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getSelectorConfig/36 (addr)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)getSelectorConfig/36 (write)
+  Availability: available
+  Varpool flags:
+SpllConfiguration.6273/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getSpllConfig/35 (addr)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)getSpllConfig/35 (write)
+  Availability: available
+  Varpool flags:
+SoscConfiguration.6264/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getSoscConfig/34 (addr)getSoscConfig/34 (write)getSoscConfig/34 (write)getSoscConfig/34 (write)
+  Availability: available
+  Varpool flags:
+FircConfiguration.6255/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getFircConfig/33 (addr)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)getFircConfig/33 (write)
+  Availability: available
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SetSimLpoclksRegister_TrustedCall/31 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_ClockInitializeObjects/40 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: DisableSafeClock/29 Clock_Ip_SpecificPlatformInitClock/32 Clock_Ip_ClockInitializeObjects/40 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigVlprMode/14 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigVlprMode/16 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigVlprMode/18 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigVlprMode/20 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsRunClockSelector/6 (read)Clock_Ip_pxScsConfigRunMode/13 (read)Clock_Ip_pxCoreRunClockDivider/7 (read)Clock_Ip_pxCoreConfigRunMode/15 (read)Clock_Ip_pxBusRunClockDivider/8 (read)Clock_Ip_pxBusConfigRunMode/17 (read)Clock_Ip_pxSlowRunClockDivider/9 (read)Clock_Ip_pxSlowConfigRunMode/19 (read)Clock_Ip_pxFircClock/5 (read)Clock_Ip_pxFircConfig/10 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSoscClock/4 (read)Clock_Ip_pxSoscConfig/11 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxSpllClock/3 (read)Clock_Ip_pxSpllConfig/12 (read)Clock_Ip_pxScsHsrunClockSelector/21 (read)Clock_Ip_pxScsConfigHsrunMode/25 (read)Clock_Ip_pxCoreHsrunClockDivider/22 (read)Clock_Ip_pxCoreConfigHsrunMode/26 (read)Clock_Ip_pxBusHsrunClockDivider/23 (read)Clock_Ip_pxBusConfigHsrunMode/27 (read)Clock_Ip_pxSlowHsrunClockDivider/24 (read)Clock_Ip_pxSlowConfigHsrunMode/28 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+   Indirect call
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_bObjsAreInitialized.6361/58 (read)Clock_Ip_bObjsAreInitialized.6361/58 (write)Clock_Ip_au8PllCallbackIndex/59 (read)Clock_Ip_axPllCallbacks/60 (addr)Clock_Ip_pxSpllClock/3 (write)Clock_Ip_au8XoscCallbackIndex/61 (read)Clock_Ip_axExtOscCallbacks/62 (addr)Clock_Ip_pxSoscClock/4 (write)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (addr)Clock_Ip_pxFircClock/5 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsRunClockSelector/6 (write)Clock_Ip_au8SelectorCallbackIndex/63 (read)Clock_Ip_axSelectorCallbacks/64 (addr)Clock_Ip_pxScsHsrunClockSelector/21 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreRunClockDivider/7 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxCoreHsrunClockDivider/22 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusRunClockDivider/8 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxBusHsrunClockDivider/23 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowRunClockDivider/9 (write)Clock_Ip_au8DividerCallbackIndex/65 (read)Clock_Ip_axDividerCallbacks/66 (addr)Clock_Ip_pxSlowHsrunClockDivider/24 (write)Clock_Ip_pxFircConfig/10 (write)Clock_Ip_pxSoscConfig/11 (write)Clock_Ip_pxSpllConfig/12 (write)Clock_Ip_pxScsConfigRunMode/13 (write)Clock_Ip_pxScsConfigVlprMode/14 (write)Clock_Ip_pxScsConfigHsrunMode/25 (write)Clock_Ip_pxCoreConfigRunMode/15 (write)Clock_Ip_pxCoreConfigVlprMode/16 (write)Clock_Ip_pxCoreConfigHsrunMode/26 (write)Clock_Ip_pxBusConfigRunMode/17 (write)Clock_Ip_pxBusConfigVlprMode/18 (write)Clock_Ip_pxBusConfigHsrunMode/27 (write)Clock_Ip_pxSlowConfigRunMode/19 (write)Clock_Ip_pxSlowConfigVlprMode/20 (write)Clock_Ip_pxSlowConfigHsrunMode/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: getSlowDividerConfig/39 getSlowDividerConfig/39 getSlowDividerConfig/39 getBusDividerConfig/38 getBusDividerConfig/38 getBusDividerConfig/38 getCoreDividerConfig/37 getCoreDividerConfig/37 getCoreDividerConfig/37 getSelectorConfig/36 getSelectorConfig/36 getSelectorConfig/36 getSpllConfig/35 getSoscConfig/34 getFircConfig/33 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6342/57 (addr)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)DividerConfigurations.6342/57 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6322/56 (addr)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)DividerConfigurations.6322/56 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)DividerConfigurations.6302/55 (addr)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)DividerConfigurations.6302/55 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SelectorConfigurations.6281/53 (addr)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)ClockSource.6284/54 (read)SelectorConfigurations.6281/53 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SpllConfiguration.6273/52 (addr)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)SpllConfiguration.6273/52 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)SoscConfiguration.6264/51 (addr)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)SoscConfiguration.6264/51 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)FircConfiguration.6255/50 (addr)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)FircConfiguration.6255/50 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockInitializeObjects/40 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: SetSimLpoclksRegister_TrustedCall/31 Clock_Ip_ReportClockErrors/49 Clock_Ip_TimeoutExpired/48 Clock_Ip_StartTimeout/47 SetFircToResetValue_TrustedCall/30 DevAssert/0 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Clock_Ip_au16SelectorEntryHardwareValue/45 (read)Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Clock_Ip_apConfig/2 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)Clock_Ip_apConfig/2 (read)Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (read)Clock_Ip_au8IrcoscCallbackIndex/43 (read)Clock_Ip_axIntOscCallbacks/44 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_Command/42 
+  Calls: 
+   Indirect call
+   Indirect call
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/40 (write)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)Clock_Ip_ClockPowerModeChangeNotification/41 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getCoreDividerConfig/37 (read)getBusDividerConfig/38 (read)getBusDividerConfig/38 (read)DisableSafeClock/29 (read)getBusDividerConfig/38 (read)DisableSafeClock/29 (read)DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getFircConfig/33 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSoscConfig/34 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSpllConfig/35 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSelectorConfig/36 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)getSlowDividerConfig/39 (read)
+  Availability: available
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: DisableSafeClock/29 (read)Clock_Ip_SpecificPlatformInitClock/32 (write)Clock_Ip_SpecificPlatformInitClock/32 (write)
+  Availability: available
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Clock_Ip_SpecificPlatformInitClock/32 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_bObjsAreInitialized.6361 DividerConfigurations.6342 DividerConfigurations.6322 DividerConfigurations.6302 ClockSource.6284 SelectorConfigurations.6281 SpllConfiguration.6273 SoscConfiguration.6264 FircConfiguration.6255 Clock_Ip_pxSlowConfigHsrunMode Clock_Ip_pxBusConfigHsrunMode Clock_Ip_pxCoreConfigHsrunMode Clock_Ip_pxScsConfigHsrunMode Clock_Ip_pxSlowHsrunClockDivider Clock_Ip_pxBusHsrunClockDivider Clock_Ip_pxCoreHsrunClockDivider Clock_Ip_pxScsHsrunClockSelector Clock_Ip_pxSlowConfigVlprMode Clock_Ip_pxSlowConfigRunMode Clock_Ip_pxBusConfigVlprMode Clock_Ip_pxBusConfigRunMode Clock_Ip_pxCoreConfigVlprMode Clock_Ip_pxCoreConfigRunMode Clock_Ip_pxScsConfigVlprMode Clock_Ip_pxScsConfigRunMode Clock_Ip_pxSpllConfig Clock_Ip_pxSoscConfig Clock_Ip_pxFircConfig Clock_Ip_pxSlowRunClockDivider Clock_Ip_pxBusRunClockDivider Clock_Ip_pxCoreRunClockDivider Clock_Ip_pxScsRunClockSelector Clock_Ip_pxFircClock Clock_Ip_pxSoscClock Clock_Ip_pxSpllClock Clock_Ip_apConfig Clock_Ip_bFircWasEnabledBeforeMcuInit
+Removing variables:
+
+Final Symbol table:
+
+Clock_Ip_axDividerCallbacks/66 (Clock_Ip_axDividerCallbacks) @0687e288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/65 (Clock_Ip_au8DividerCallbackIndex) @0687e240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/64 (Clock_Ip_axSelectorCallbacks) @0687e1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/63 (Clock_Ip_au8SelectorCallbackIndex) @0687e1b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/62 (Clock_Ip_axExtOscCallbacks) @0687e168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/61 (Clock_Ip_au8XoscCallbackIndex) @0687e120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/60 (Clock_Ip_axPllCallbacks) @0687e0d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/59 (Clock_Ip_au8PllCallbackIndex) @0687e090
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_bObjsAreInitialized.6361/58 (Clock_Ip_bObjsAreInitialized) @0687e048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+DividerConfigurations.6342/57 (DividerConfigurations) @06a65d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0687e048
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+DividerConfigurations.6322/56 (DividerConfigurations) @06a655e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a65d38
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+DividerConfigurations.6302/55 (DividerConfigurations) @06a5de58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a655e8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+ClockSource.6284/54 (ClockSource) @06a5d708
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a5de58
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+SelectorConfigurations.6281/53 (SelectorConfigurations) @06a5d6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a5d708
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+SpllConfiguration.6273/52 (SpllConfiguration) @06a25f30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a5d6c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+SoscConfiguration.6264/51 (SoscConfiguration) @06a25a68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a25f30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+FircConfiguration.6255/50 (FircConfiguration) @06a255a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a25a68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_ReportClockErrors/49 (Clock_Ip_ReportClockErrors) @06878700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/48 (Clock_Ip_TimeoutExpired) @06878620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_StartTimeout/47 (Clock_Ip_StartTimeout) @06878540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_au8SelectorEntryPcsHardwareValue/46 (Clock_Ip_au8SelectorEntryPcsHardwareValue) @06a1d948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/45 (Clock_Ip_au16SelectorEntryHardwareValue) @06a1d900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/44 (Clock_Ip_axIntOscCallbacks) @06a1d1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/43 (Clock_Ip_au8IrcoscCallbackIndex) @06a1d1b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_Command/42 (Clock_Ip_Command) @06868620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockPowerModeChangeNotification/41 (Clock_Ip_ClockPowerModeChangeNotification) @068680e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/40 (Clock_Ip_ClockInitializeObjects) @06868d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getSlowDividerConfig/39 (getSlowDividerConfig) @06868a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getBusDividerConfig/38 (getBusDividerConfig) @068687e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getCoreDividerConfig/37 (getCoreDividerConfig) @06868540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getSelectorConfig/36 (getSelectorConfig) @068682a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getSpllConfig/35 (getSpllConfig) @06868000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getSoscConfig/34 (getSoscConfig) @068168c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+getFircConfig/33 (getFircConfig) @068160e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/32 (Clock_Ip_SpecificPlatformInitClock) @06816d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SetSimLpoclksRegister_TrustedCall/31 (SetSimLpoclksRegister_TrustedCall) @06816a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SetFircToResetValue_TrustedCall/30 (SetFircToResetValue_TrustedCall) @068167e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+DisableSafeClock/29 (DisableSafeClock) @068162a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_pxSlowConfigHsrunMode/28 (Clock_Ip_pxSlowConfigHsrunMode) @0680fc60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a255a0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigHsrunMode/27 (Clock_Ip_pxBusConfigHsrunMode) @0680fbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680fc60
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigHsrunMode/26 (Clock_Ip_pxCoreConfigHsrunMode) @0680fb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680fbd0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigHsrunMode/25 (Clock_Ip_pxScsConfigHsrunMode) @0680fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680fb40
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowHsrunClockDivider/24 (Clock_Ip_pxSlowHsrunClockDivider) @0680fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680fab0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusHsrunClockDivider/23 (Clock_Ip_pxBusHsrunClockDivider) @0680f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680fa20
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreHsrunClockDivider/22 (Clock_Ip_pxCoreHsrunClockDivider) @0680f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f990
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsHsrunClockSelector/21 (Clock_Ip_pxScsHsrunClockSelector) @0680f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f900
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowConfigVlprMode/20 (Clock_Ip_pxSlowConfigVlprMode) @0680f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f870
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowConfigRunMode/19 (Clock_Ip_pxSlowConfigRunMode) @0680f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f7e0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigVlprMode/18 (Clock_Ip_pxBusConfigVlprMode) @0680f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f750
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusConfigRunMode/17 (Clock_Ip_pxBusConfigRunMode) @0680f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f6c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigVlprMode/16 (Clock_Ip_pxCoreConfigVlprMode) @0680f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f630
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreConfigRunMode/15 (Clock_Ip_pxCoreConfigRunMode) @0680f510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f5a0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigVlprMode/14 (Clock_Ip_pxScsConfigVlprMode) @0680f480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f510
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsConfigRunMode/13 (Clock_Ip_pxScsConfigRunMode) @0680f3f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f480
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSpllConfig/12 (Clock_Ip_pxSpllConfig) @0680f2d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f3f0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSoscConfig/11 (Clock_Ip_pxSoscConfig) @0680f240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f2d0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxFircConfig/10 (Clock_Ip_pxFircConfig) @0680f1b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSlowRunClockDivider/9 (Clock_Ip_pxSlowRunClockDivider) @0680f120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f1b0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxBusRunClockDivider/8 (Clock_Ip_pxBusRunClockDivider) @0680f090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f120
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxCoreRunClockDivider/7 (Clock_Ip_pxCoreRunClockDivider) @0680f000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxScsRunClockSelector/6 (Clock_Ip_pxScsRunClockSelector) @0680af30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680f000
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxFircClock/5 (Clock_Ip_pxFircClock) @0680ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680af30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSoscClock/4 (Clock_Ip_pxSoscClock) @0680adc8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680ae58
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSpllClock/3 (Clock_Ip_pxSpllClock) @0680ad38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680adc8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_apConfig/2 (Clock_Ip_apConfig) @0680aca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680ad38
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_bFircWasEnabledBeforeMcuInit/1 (Clock_Ip_bFircWasEnabledBeforeMcuInit) @0680ac18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0680aca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+DevAssert/0 (DevAssert) @067dc540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

@@ -1,0 +1,9 @@
+Spi_Ipw.c:157:23:Spi_Ipw_SyncTransmitProcess	56	static
+Spi_Ipw.c:255:6:Spi_Ipw_Init	16	static
+Spi_Ipw.c:280:6:Spi_Ipw_DeInit	16	static
+Spi_Ipw.c:296:16:Spi_Ipw_SyncTransmit	48	static
+Spi_Ipw.c:379:6:Spi_Ipw_IrqPoll	16	static
+Spi_Ipw.c:402:6:Spi_Ipw_IrqConfig	32	static
+Spi_Ipw.c:441:13:Spi_Ipw_EndChannelCallback	80	static
+Spi_Ipw.c:598:13:Spi_Ipw_CallbackLpspi	24	static
+Spi_Ipw.c:705:6:Spi_Ipw_JobTransfer	64	static

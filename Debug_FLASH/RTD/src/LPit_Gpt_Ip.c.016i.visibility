@@ -1,0 +1,878 @@
+
+Marking local functions: Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels Lpit_Gpt_Ip_InterruptTimerChannels Lpit_Gpt_Ip_SetDozeMode Lpit_Gpt_Ip_SetDebugMode Lpit_Gpt_Ip_SetCmpValue Lpit_Gpt_Ip_SetMode Lpit_Gpt_Ip_TimerEnable Lpit_Gpt_Ip_EnableMdlClk
+
+
+Marking externally visible functions: LPIT_0_CH_2_ISR LPIT_0_CH_1_ISR LPIT_0_CH_0_ISR Lpit_Gpt_Ip_DisableChInterrupt Lpit_Gpt_Ip_EnableChInterrupt Lpit_Gpt_Ip_StopTimer Lpit_Gpt_Ip_StartTimer Lpit_Gpt_Ip_Deinit Lpit_Gpt_Ip_InitChannel Lpit_Gpt_Ip_Init Lpit_Gpt_Ip_GetTimerValue Lpit_Gpt_Ip_GetCurrentTimervalue Lpit_Gpt_Ip_GetTimerInterruptEnable Lpit_Gpt_Ip_GetInterruptFlagTimerChannels
+
+
+Marking externally visible variables: LPitGptBase
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_55/36 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_55) @05b4ed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_InterruptTimerChannels/8 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_55/35 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_55) @05b4ec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_InterruptTimerChannels/8 
+  Calls: 
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_52/34 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_52) @05b4e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetMode/4 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_52/33 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_52) @05b4e8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetMode/4 
+  Calls: 
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_51/32 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_51) @05b4e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_TimerEnable/3 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_51/31 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_51) @05b4e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_TimerEnable/3 
+  Calls: 
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_54/30 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_54) @05b4e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetDozeMode/7 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_54/29 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_54) @05b4e2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetDozeMode/7 
+  Calls: 
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_53/28 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_53) @05b4e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetDebugMode/6 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_53/27 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_53) @05b4e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_SetDebugMode/6 
+  Calls: 
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_50/26 (SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_50) @05b480e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_EnableMdlClk/2 
+  Calls: 
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_50/25 (SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_50) @05b48ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Lpit_Gpt_Ip_EnableMdlClk/2 
+  Calls: 
+LPIT_0_CH_2_ISR/24 (LPIT_0_CH_2_ISR) @05b48540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+LPIT_0_CH_1_ISR/23 (LPIT_0_CH_1_ISR) @05b482a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+LPIT_0_CH_0_ISR/22 (LPIT_0_CH_0_ISR) @05b48000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (Lpit_Gpt_Ip_ProcessCommonInterrupt) @05bb1b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Lpit_Gpt_Ip_u32ChState/0 (read)Lpit_Gpt_Ip_u32ChState/0 (read)Lpit_Gpt_Ip_u32ChState/0 (read)Lpit_Gpt_Ip_u32ChState/0 (read)Lpit_Gpt_Ip_u32ChState/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: LPIT_0_CH_2_ISR/24 LPIT_0_CH_1_ISR/23 LPIT_0_CH_0_ISR/22 
+  Calls: Lpit_Gpt_Ip_StopTimer/18 Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 Lpit_Gpt_Ip_GetTimerInterruptEnable/11 Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/10 
+   Indirect call
+Lpit_Gpt_Ip_DisableChInterrupt/20 (Lpit_Gpt_Ip_DisableChInterrupt) @05bb1620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InterruptTimerChannels/8 Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 
+Lpit_Gpt_Ip_EnableChInterrupt/19 (Lpit_Gpt_Ip_EnableChInterrupt) @05bb10e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InterruptTimerChannels/8 Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 
+Lpit_Gpt_Ip_StopTimer/18 (Lpit_Gpt_Ip_StopTimer) @05bb1d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+  Calls: Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 Lpit_Gpt_Ip_TimerEnable/3 
+Lpit_Gpt_Ip_StartTimer/17 (Lpit_Gpt_Ip_StartTimer) @05bb1a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_TimerEnable/3 Lpit_Gpt_Ip_SetCmpValue/5 Lpit_Gpt_Ip_TimerEnable/3 
+Lpit_Gpt_Ip_Deinit/16 (Lpit_Gpt_Ip_Deinit) @05bb17e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableMdlClk/2 Lpit_Gpt_Ip_SetDozeMode/7 Lpit_Gpt_Ip_SetDebugMode/6 Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 Lpit_Gpt_Ip_InterruptTimerChannels/8 Lpit_Gpt_Ip_SetMode/4 Lpit_Gpt_Ip_TimerEnable/3 Lpit_Gpt_Ip_EnableMdlClk/2 
+Lpit_Gpt_Ip_InitChannel/15 (Lpit_Gpt_Ip_InitChannel) @05bb1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lpit_Gpt_Ip_u32ChState/0 (write)Lpit_Gpt_Ip_u32ChState/0 (write)Lpit_Gpt_Ip_u32ChState/0 (write)Lpit_Gpt_Ip_u32ChState/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 Lpit_Gpt_Ip_InterruptTimerChannels/8 Lpit_Gpt_Ip_SetCmpValue/5 Lpit_Gpt_Ip_SetMode/4 Lpit_Gpt_Ip_TimerEnable/3 Lpit_Gpt_Ip_EnableMdlClk/2 
+Lpit_Gpt_Ip_Init/14 (Lpit_Gpt_Ip_Init) @05bb12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_SetDozeMode/7 Lpit_Gpt_Ip_SetDebugMode/6 Lpit_Gpt_Ip_EnableMdlClk/2 
+Lpit_Gpt_Ip_GetTimerValue/13 (Lpit_Gpt_Ip_GetTimerValue) @05baad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/12 (Lpit_Gpt_Ip_GetCurrentTimervalue) @05baa7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerInterruptEnable/11 (Lpit_Gpt_Ip_GetTimerInterruptEnable) @05baa2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/10 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @05baaee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 
+  Calls: 
+Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels/9 (Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels) @05baac40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_ProcessCommonInterrupt/21 Lpit_Gpt_Ip_DisableChInterrupt/20 Lpit_Gpt_Ip_EnableChInterrupt/19 Lpit_Gpt_Ip_StopTimer/18 Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_InitChannel/15 
+  Calls: 
+Lpit_Gpt_Ip_InterruptTimerChannels/8 (Lpit_Gpt_Ip_InterruptTimerChannels) @05baa9a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_DisableChInterrupt/20 Lpit_Gpt_Ip_EnableChInterrupt/19 Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_InitChannel/15 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_55/36 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_55/35 
+Lpit_Gpt_Ip_SetDozeMode/7 (Lpit_Gpt_Ip_SetDozeMode) @05baa700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_Init/14 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_54/30 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_54/29 
+Lpit_Gpt_Ip_SetDebugMode/6 (Lpit_Gpt_Ip_SetDebugMode) @05baa460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_Init/14 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_53/28 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_53/27 
+Lpit_Gpt_Ip_SetCmpValue/5 (Lpit_Gpt_Ip_SetCmpValue) @05baa1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_StartTimer/17 Lpit_Gpt_Ip_InitChannel/15 
+  Calls: 
+Lpit_Gpt_Ip_SetMode/4 (Lpit_Gpt_Ip_SetMode) @05a96ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_InitChannel/15 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_52/34 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_52/33 
+Lpit_Gpt_Ip_TimerEnable/3 (Lpit_Gpt_Ip_TimerEnable) @05a96e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_StopTimer/18 Lpit_Gpt_Ip_StartTimer/17 Lpit_Gpt_Ip_StartTimer/17 Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_InitChannel/15 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_51/32 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_51/31 
+Lpit_Gpt_Ip_EnableMdlClk/2 (Lpit_Gpt_Ip_EnableMdlClk) @05a96b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_Deinit/16 Lpit_Gpt_Ip_InitChannel/15 Lpit_Gpt_Ip_Init/14 
+  Calls: SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_50/26 SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_50/25 
+LPitGptBase/1 (LPitGptBase) @05a92bd0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Lpit_Gpt_Ip_u32ChState/0 (Lpit_Gpt_Ip_u32ChState) @05a92b40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Lpit_Gpt_Ip_InitChannel/15 (write)Lpit_Gpt_Ip_InitChannel/15 (write)Lpit_Gpt_Ip_InitChannel/15 (write)Lpit_Gpt_Ip_InitChannel/15 (write)Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (read)Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (read)Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (read)Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (read)Lpit_Gpt_Ip_ProcessCommonInterrupt/21 (read)
+  Availability: available
+  Varpool flags: initialized
+LPIT_0_CH_2_ISR ()
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_ProcessCommonInterrupt (0, 2);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+LPIT_0_CH_1_ISR ()
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_ProcessCommonInterrupt (0, 1);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+LPIT_0_CH_0_ISR ()
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_ProcessCommonInterrupt (0, 0);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_ProcessCommonInterrupt (uint8 instance, uint8 channel)
+{
+  uint32 interruptEnabled;
+  uint32 interruptFlag;
+
+  <bb 2> :
+  interruptFlag = Lpit_Gpt_Ip_GetInterruptFlagTimerChannels (instance, channel);
+  interruptEnabled = Lpit_Gpt_Ip_GetTimerInterruptEnable (instance, channel);
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, channel);
+  _1 = (int) instance;
+  _2 = (int) channel;
+  _3 = Lpit_Gpt_Ip_u32ChState[_1][_2].channelMode;
+  if (_3 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Lpit_Gpt_Ip_StopTimer (instance, channel);
+
+  <bb 4> :
+  if (interruptFlag == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  if (interruptEnabled == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  _4 = (int) instance;
+  _5 = (int) channel;
+  _6 = Lpit_Gpt_Ip_u32ChState[_4][_5].chInit;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  _7 = (int) instance;
+  _8 = (int) channel;
+  _9 = Lpit_Gpt_Ip_u32ChState[_7][_8].callback;
+  if (_9 != 0B)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _10 = (int) instance;
+  _11 = (int) channel;
+  _12 = Lpit_Gpt_Ip_u32ChState[_10][_11].callback;
+  _13 = (int) instance;
+  _14 = (int) channel;
+  _15 = Lpit_Gpt_Ip_u32ChState[_13][_14].callbackParam;
+  _12 (_15);
+
+  <bb 9> :
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_DisableChInterrupt (uint8 instance, uint8 channel)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, channel);
+  Lpit_Gpt_Ip_InterruptTimerChannels (instance, channel, 0);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_EnableChInterrupt (uint8 instance, uint8 channel)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, channel);
+  Lpit_Gpt_Ip_InterruptTimerChannels (instance, channel, 1);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_StopTimer (uint8 instance, uint8 channel)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_TimerEnable (instance, channel, 0);
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, channel);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_StartTimer (uint8 instance, uint8 channel, uint32 countValue)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_TimerEnable (instance, channel, 0);
+  Lpit_Gpt_Ip_SetCmpValue (instance, channel, countValue);
+  Lpit_Gpt_Ip_TimerEnable (instance, channel, 1);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_Deinit (uint8 instance)
+{
+  uint8 channelIndex;
+
+  <bb 2> :
+  Lpit_Gpt_Ip_EnableMdlClk (instance, 1);
+  channelIndex = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  Lpit_Gpt_Ip_TimerEnable (instance, channelIndex, 0);
+  Lpit_Gpt_Ip_SetMode (instance, channelIndex, 0);
+  Lpit_Gpt_Ip_InterruptTimerChannels (instance, channelIndex, 0);
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, channelIndex);
+  channelIndex.0_1 = channelIndex;
+  channelIndex = channelIndex.0_1 + 1;
+
+  <bb 4> :
+  if (channelIndex <= 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  Lpit_Gpt_Ip_SetDebugMode (instance, 0);
+  Lpit_Gpt_Ip_SetDozeMode (instance, 0);
+  Lpit_Gpt_Ip_EnableMdlClk (instance, 0);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_InitChannel (uint8 instance, const struct Lpit_Gpt_Ip_ChannelConfigType * configChannel)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_EnableMdlClk (instance, 1);
+  _1 = configChannel->hwChannel;
+  Lpit_Gpt_Ip_TimerEnable (instance, _1, 0);
+  _2 = configChannel->hwChannel;
+  Lpit_Gpt_Ip_SetMode (instance, _2, 0);
+  _3 = configChannel->hwChannel;
+  Lpit_Gpt_Ip_SetCmpValue (instance, _3, 4294967295);
+  _4 = configChannel->hwChannel;
+  Lpit_Gpt_Ip_InterruptTimerChannels (instance, _4, 0);
+  _5 = configChannel->hwChannel;
+  Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (instance, _5);
+  _6 = (int) instance;
+  _7 = configChannel->hwChannel;
+  _8 = (int) _7;
+  Lpit_Gpt_Ip_u32ChState[_6][_8].chInit = 1;
+  _9 = (int) instance;
+  _10 = configChannel->hwChannel;
+  _11 = (int) _10;
+  _12 = configChannel->callback;
+  Lpit_Gpt_Ip_u32ChState[_9][_11].callback = _12;
+  _13 = (int) instance;
+  _14 = configChannel->hwChannel;
+  _15 = (int) _14;
+  _16 = configChannel->callbackParam;
+  Lpit_Gpt_Ip_u32ChState[_13][_15].callbackParam = _16;
+  _17 = (int) instance;
+  _18 = configChannel->hwChannel;
+  _19 = (int) _18;
+  _20 = configChannel->channelMode;
+  Lpit_Gpt_Ip_u32ChState[_17][_19].channelMode = _20;
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_Init (uint8 instance, const struct Lpit_Gpt_Ip_InstanceConfigType * config)
+{
+  <bb 2> :
+  Lpit_Gpt_Ip_EnableMdlClk (instance, 1);
+  _1 = config->stopRunInDebug;
+  Lpit_Gpt_Ip_SetDebugMode (instance, _1);
+  _2 = config->runInDozeMode;
+  Lpit_Gpt_Ip_SetDozeMode (instance, _2);
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_GetTimerValue (uint8 instance, uint8 channel)
+{
+  uint32 D.6002;
+
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = (int) channel;
+  D.6002 = _2->TMR[_3].TVAL;
+
+  <bb 3> :
+<L0>:
+  return D.6002;
+
+}
+
+
+Lpit_Gpt_Ip_GetCurrentTimervalue (uint8 instance, uint8 channel)
+{
+  uint32 D.6000;
+
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = (int) channel;
+  D.6000 = _2->TMR[_3].CVAL;
+
+  <bb 3> :
+<L0>:
+  return D.6000;
+
+}
+
+
+Lpit_Gpt_Ip_GetTimerInterruptEnable (uint8 instance, uint8 channel)
+{
+  uint32 returnValue;
+  uint32 D.5998;
+
+  <bb 2> :
+  returnValue = 0;
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MIER;
+  _4 = (long unsigned int) channel;
+  _5 = 1 << _4;
+  _6 = _3 & _5;
+  _7 = (long unsigned int) channel;
+  returnValue = _6 >> _7;
+  D.5998 = returnValue;
+
+  <bb 3> :
+<L0>:
+  return D.5998;
+
+}
+
+
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels (uint8 instance, uint8 channel)
+{
+  volatile uint32 returnValue;
+  uint32 D.5996;
+
+  <bb 2> :
+  returnValue = 0;
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MSR;
+  _4 = (long unsigned int) channel;
+  _5 = 1 << _4;
+  _6 = _3 & _5;
+  _7 = (long unsigned int) channel;
+  _8 = _6 >> _7;
+  returnValue = _8;
+  D.5996 = returnValue;
+
+  <bb 3> :
+<L0>:
+  return D.5996;
+
+}
+
+
+Lpit_Gpt_Ip_ClearInterruptFlagTimerChannels (uint8 instance, uint8 channel)
+{
+  <bb 2> :
+  _1 = (long unsigned int) channel;
+  _2 = (int) instance;
+  _3 = 1073967104B;
+  _4 = 1 << _1;
+  _3->MSR = _4;
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_InterruptTimerChannels (uint8 instance, uint8 channel, boolean enable)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_55 ();
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MIER;
+  _4 = (long unsigned int) channel;
+  _5 = 1 << _4;
+  _6 = (int) instance;
+  _7 = 1073967104B;
+  _8 = _3 | _5;
+  _7->MIER = _8;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _9 = (int) instance;
+  _10 = 1073967104B;
+  _11 = _10->MIER;
+  _12 = (long unsigned int) channel;
+  _13 = 1 << _12;
+  _14 = ~_13;
+  _15 = (int) instance;
+  _16 = 1073967104B;
+  _17 = _11 & _14;
+  _16->MIER = _17;
+
+  <bb 5> :
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_55 ();
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_SetDozeMode (uint8 instance, boolean running)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_54 ();
+  if (running != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MCR;
+  _4 = (int) instance;
+  _5 = 1073967104B;
+  _6 = _3 | 4;
+  _5->MCR = _6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = (int) instance;
+  _8 = 1073967104B;
+  _9 = _8->MCR;
+  _10 = (int) instance;
+  _11 = 1073967104B;
+  _12 = _9 & 4294967291;
+  _11->MCR = _12;
+
+  <bb 5> :
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_54 ();
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_SetDebugMode (uint8 instance, boolean stopRun)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_53 ();
+  if (stopRun != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MCR;
+  _4 = (int) instance;
+  _5 = 1073967104B;
+  _6 = _3 | 8;
+  _5->MCR = _6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = (int) instance;
+  _8 = 1073967104B;
+  _9 = _8->MCR;
+  _10 = (int) instance;
+  _11 = 1073967104B;
+  _12 = _9 & 4294967287;
+  _11->MCR = _12;
+
+  <bb 5> :
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_53 ();
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_SetCmpValue (uint8 instance, uint8 channel, uint32 value)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = (int) channel;
+  _2->TMR[_3].TVAL = value;
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_SetMode (uint8 instance, uint8 channel, uint32 mode)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_52 ();
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = (int) channel;
+  _4 = _2->TMR[_3].TCTRL;
+  _5 = _4 & 4294967283;
+  _6 = mode << 2;
+  _7 = _6 & 12;
+  _8 = (int) instance;
+  _9 = 1073967104B;
+  _10 = (int) channel;
+  _11 = _5 | _7;
+  _9->TMR[_10].TCTRL = _11;
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_52 ();
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_TimerEnable (uint8 instance, uint8 channel, boolean enable)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_51 ();
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = (int) channel;
+  _4 = _2->TMR[_3].TCTRL;
+  _5 = (int) instance;
+  _6 = 1073967104B;
+  _7 = (int) channel;
+  _8 = _4 | 1;
+  _6->TMR[_7].TCTRL = _8;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _9 = (int) instance;
+  _10 = 1073967104B;
+  _11 = (int) channel;
+  _12 = _10->TMR[_11].TCTRL;
+  _13 = (int) instance;
+  _14 = 1073967104B;
+  _15 = (int) channel;
+  _16 = _12 & 4294967294;
+  _14->TMR[_15].TCTRL = _16;
+
+  <bb 5> :
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_51 ();
+  return;
+
+}
+
+
+Lpit_Gpt_Ip_EnableMdlClk (uint8 instance, boolean enable)
+{
+  <bb 2> :
+  SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_50 ();
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1073967104B;
+  _3 = _2->MCR;
+  _4 = (int) instance;
+  _5 = 1073967104B;
+  _6 = _3 | 1;
+  _5->MCR = _6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = (int) instance;
+  _8 = 1073967104B;
+  _9 = _8->MCR;
+  _10 = (int) instance;
+  _11 = 1073967104B;
+  _12 = _9 & 4294967294;
+  _11->MCR = _12;
+
+  <bb 5> :
+  SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_50 ();
+  return;
+
+}
+
+

@@ -1,0 +1,193 @@
+Trgmux_Ip_SetLock (const uint32 LogicTrigger)
+{
+  Trgmux_Ip_StatusType Status;
+  struct TRGMUX_Type * LocTrgmuxBase;
+  uint32 LocOutput;
+  uint32 LocHwInst;
+  Trgmux_Ip_StatusType D.5846;
+
+  <bb 2> :
+  Trgmux_Ip_pxInit.2_1 = Trgmux_Ip_pxInit;
+  _2 = Trgmux_Ip_pxInit.2_1->paxLogicTrigger[LogicTrigger];
+  _3 = _2->HwInstId;
+  LocHwInst = (uint32) _3;
+  Trgmux_Ip_pxInit.3_4 = Trgmux_Ip_pxInit;
+  _5 = Trgmux_Ip_pxInit.3_4->paxLogicTrigger[LogicTrigger];
+  _6 = _5->Output;
+  LocOutput = (uint32) _6;
+  LocTrgmuxBase = 1074147328B;
+  Status = 0;
+  _7 = hwAcc_GetLockForOutput (LocTrgmuxBase, LocOutput);
+  if (_7 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+
+  <bb 4> :
+  if (Status != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_21 ();
+  hwAcc_SetLockForOutput (LocTrgmuxBase, LocOutput);
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_21 ();
+
+  <bb 6> :
+  D.5846 = Status;
+
+  <bb 7> :
+<L5>:
+  return D.5846;
+
+}
+
+
+Trgmux_Ip_SetInput (const uint32 LogicTrigger, const uint32 Input)
+{
+  Trgmux_Ip_StatusType Status;
+  struct TRGMUX_Type * LocTrgmuxBase;
+  uint32 LocOutput;
+  uint32 LocHwInst;
+  Trgmux_Ip_StatusType D.5839;
+
+  <bb 2> :
+  Trgmux_Ip_pxInit.0_1 = Trgmux_Ip_pxInit;
+  _2 = Trgmux_Ip_pxInit.0_1->paxLogicTrigger[LogicTrigger];
+  _3 = _2->HwInstId;
+  LocHwInst = (uint32) _3;
+  Trgmux_Ip_pxInit.1_4 = Trgmux_Ip_pxInit;
+  _5 = Trgmux_Ip_pxInit.1_4->paxLogicTrigger[LogicTrigger];
+  _6 = _5->Output;
+  LocOutput = (uint32) _6;
+  LocTrgmuxBase = 1074147328B;
+  Status = 0;
+  _7 = hwAcc_GetLockForOutput (LocTrgmuxBase, LocOutput);
+  if (_7 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+
+  <bb 4> :
+  if (Status != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_20 ();
+  hwAcc_SetInputForOutput (LocTrgmuxBase, Input, LocOutput);
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_20 ();
+
+  <bb 6> :
+  D.5839 = Status;
+
+  <bb 7> :
+<L5>:
+  return D.5839;
+
+}
+
+
+Trgmux_Ip_Init (const struct Trgmux_Ip_InitType * const pxTrgmuxInit)
+{
+  Trgmux_Ip_StatusType Status;
+  boolean LocLock;
+  uint8 LocInst;
+  uint32 LocOutput;
+  uint32 LocInput;
+  uint32 LocTriggerIdx;
+  struct TRGMUX_Type * LocTrgmuxBase;
+  Trgmux_Ip_StatusType D.5832;
+
+  <bb 2> :
+  Status = 0;
+  LocTrgmuxBase = 1074147328B;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_19 ();
+  _1 = hwAcc_Init (LocTrgmuxBase);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+
+  <bb 4> :
+  if (Status == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 5> :
+  LocTriggerIdx = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _2 = pxTrgmuxInit->paxLogicTrigger[LocTriggerIdx];
+  LocInst = _2->HwInstId;
+  _3 = pxTrgmuxInit->paxLogicTrigger[LocTriggerIdx];
+  _4 = _3->Output;
+  LocOutput = (uint32) _4;
+  _5 = pxTrgmuxInit->paxLogicTrigger[LocTriggerIdx];
+  _6 = _5->Input;
+  LocInput = (uint32) _6;
+  _7 = (int) LocInst;
+  LocTrgmuxBase = 1074147328B;
+  hwAcc_SetInputForOutput (LocTrgmuxBase, LocInput, LocOutput);
+  LocTriggerIdx = LocTriggerIdx + 1;
+
+  <bb 7> :
+  if (LocTriggerIdx <= 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  LocTriggerIdx = 0;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+  _8 = pxTrgmuxInit->paxLogicTrigger[LocTriggerIdx];
+  LocLock = _8->Lock;
+  if (LocLock != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _9 = pxTrgmuxInit->paxLogicTrigger[LocTriggerIdx];
+  _10 = _9->Output;
+  LocOutput = (uint32) _10;
+  hwAcc_SetLockForOutput (LocTrgmuxBase, LocOutput);
+
+  <bb 11> :
+  LocTriggerIdx = LocTriggerIdx + 1;
+
+  <bb 12> :
+  if (LocTriggerIdx <= 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_19 ();
+  Trgmux_Ip_pxInit = pxTrgmuxInit;
+
+  <bb 14> :
+  D.5832 = Status;
+
+  <bb 15> :
+<L14>:
+  return D.5832;
+
+}
+
+

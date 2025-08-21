@@ -1,0 +1,16 @@
+Crypto_Ipw.c:742:13:Crypto_Ipw_ProcessAsyncCsecResponse	40	static
+Crypto_Ipw.c:810:20:Crypto_Ipw_PushJobFromCdoQueueToCsec	24	static
+Crypto_Ipw.c:854:23:Crypto_Ipw_ProcessOperation	24	static
+Crypto_Ipw.c:896:23:Crypto_Ipw_TranslateCsecResponse	16	static
+Crypto_Ipw.c:959:30:Crypto_Ipw_Random	48	static
+Crypto_Ipw.c:1020:16:Crypto_Ipw_Init	24	static
+Crypto_Ipw.c:1046:16:Crypto_Ipw_ProcessJob	32	static
+Crypto_Ipw.c:1109:16:Crypto_Ipw_CancelJob	24	static
+Crypto_Ipw.c:1330:6:Crypto_Ipw_MainFunction	16	static
+Crypto_Ipw.c:1341:6:Crypto_Ipw_SetSynchronousRequestsTimeout	16	static
+Crypto_Ipw.c:1354:16:Crypto_Ipw_SheSetBootStatus	24	static
+Crypto_Ipw.c:1382:16:Crypto_Ipw_SheGetStatus	16	static
+Crypto_Ipw.c:1397:16:Crypto_Ipw_SheGetId	32	static
+Crypto_Ipw.c:1421:16:Crypto_Ipw_SheDebugChal	24	static
+Crypto_Ipw.c:1442:16:Crypto_Ipw_SheDebugAuth	24	static
+Crypto_Ipw.c:1463:16:Crypto_Ipw_SheMPCompression	32	static

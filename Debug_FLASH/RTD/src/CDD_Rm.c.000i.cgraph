@@ -1,0 +1,789 @@
+Trivially needed symbols: Rm_Mpu_GetErrorDetails Rm_Mpu_SetAccessMode Rm_Mpu_EnableRegion Rm_Mpu_SetRegionConfig Rm_Init Rm_ValidatePtrInit Rm_ValidateGlobalCall Rm_pConfig
+
+
+Initial Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06782a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06782380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06782ee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06782c40
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067829a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06782540
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067822a0
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/0 (DevAssert) @066082a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not-ready
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_GetErrorDetails/8 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_SetAccessMode/7 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_EnableRegion/6 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Mpu_SetRegionConfig/5 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Init/4 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Rm_Init/4 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 Rm_ValidateGlobalCall/2 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_GetErrorDetails/15 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetAccessMode/14 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_EnableRegion/13 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_SetRegionConfig/12 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Rm_pConfig/1 (write)Rm_Config/10 (addr)Rm_pConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Rm_Ipw_Mpu_Init/11 Rm_ValidatePtrInit/3 Rm_ValidateGlobalCall/2 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Rm_pConfig/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Rm_Init/4 
+  Calls: Det_ReportError/9 Det_ReportError/9 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Rm_ValidateGlobalCall/2 (read)Rm_Init/4 (write)Rm_Init/4 (read)
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Rm_pConfig
+Removing variables:
+
+Final Symbol table:
+
+Rm_Ipw_Mpu_GetErrorDetails/15 (Rm_Ipw_Mpu_GetErrorDetails) @06786d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Ipw_Mpu_SetAccessMode/14 (Rm_Ipw_Mpu_SetAccessMode) @06786b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Ipw_Mpu_EnableRegion/13 (Rm_Ipw_Mpu_EnableRegion) @067869a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Ipw_Mpu_SetRegionConfig/12 (Rm_Ipw_Mpu_SetRegionConfig) @067867e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Ipw_Mpu_Init/11 (Rm_Ipw_Mpu_Init) @06786620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Config/10 (Rm_Config) @067859d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Det_ReportError/9 (Det_ReportError) @06786380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Mpu_GetErrorDetails/8 (Rm_Mpu_GetErrorDetails) @06782a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Mpu_SetAccessMode/7 (Rm_Mpu_SetAccessMode) @06782380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Mpu_EnableRegion/6 (Rm_Mpu_EnableRegion) @06782ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Mpu_SetRegionConfig/5 (Rm_Mpu_SetRegionConfig) @06782c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_Init/4 (Rm_Init) @067829a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_ValidatePtrInit/3 (Rm_ValidatePtrInit) @06782540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_ValidateGlobalCall/2 (Rm_ValidateGlobalCall) @067822a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Rm_pConfig/1 (Rm_pConfig) @0669bc18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

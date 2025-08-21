@@ -1,0 +1,934 @@
+Symbol table:
+
+Dio_FlipChannel/39 (Dio_FlipChannel) @064df1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbPbit_DsiPbit2TimerCB/25 
+  Calls: 
+Dio_ReadChannel/38 (Dio_ReadChannel) @08e299a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_ReadDSI/17 CTBPbit_ReadDSI/17 CTBPbit_ReadDSI/17 CTBPbit_ReadDSI/17 CTBPbit_ReadDSI/17 CTBPbit_ReadDSI/17 
+  Calls: 
+Gpt_DisableNotification/37 (Gpt_DisableNotification) @08e297e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbPbit_StopTestDSI/16 
+  Calls: 
+Gpt_EnableNotification/36 (Gpt_EnableNotification) @08e29620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbPbit_StartTestDSI/15 
+  Calls: 
+Pwm_SetPeriodAndDuty/35 (Pwm_SetPeriodAndDuty) @08e29540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 
+  Calls: 
+Port_SetPinMode/34 (Port_SetPinMode) @08e29460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StopTestDSI/16 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 ctbPbit_StartTestDSI/15 
+  Calls: 
+COM_debugTestReq/33 (COM_debugTestReq) @08e281f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTBPbit_RunTests/12 (read)CTBPbit_RunTests/12 (read)
+  Availability: not_available
+  Varpool flags:
+Icu_EnableEdgeCount/32 (Icu_EnableEdgeCount) @08e24d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 CTBPbit_Init/11 
+  Calls: 
+Icu_EnableNotification/31 (Icu_EnableNotification) @08e24c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 
+  Calls: 
+Icu_EnableEdgeDetection/30 (Icu_EnableEdgeDetection) @08e24b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 
+  Calls: 
+Gpt_StartTimer/29 (Gpt_StartTimer) @08e24a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 
+  Calls: 
+LPIT_0_CH_1_ISR/28 (LPIT_0_CH_1_ISR) @08e249a0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: CTBPbit_Init/11 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_InstallIrqHandler/27 (Platform_InstallIrqHandler) @08e248c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 
+  Calls: 
+Dio_WriteChannel/26 (Dio_WriteChannel) @08e247e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 CTBPbit_Init/11 
+  Calls: 
+ctbPbit_DsiPbit2TimerCB/25 (ctbPbit_DsiPbit2TimerCB) @08e24380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dio_FlipChannel/39 
+ctb_dsicpu6_callback/24 (ctb_dsicpu6_callback) @08e240e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi6_edgeCounter/9 (read)dsi6_edgeCounter/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctb_dsicpu5_callback/23 (ctb_dsicpu5_callback) @08e20ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi5_edgeCounter/8 (read)dsi5_edgeCounter/8 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctb_dsicpu4_callback/22 (ctb_dsicpu4_callback) @08e20c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi4_edgeCounter/7 (read)dsi4_edgeCounter/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctb_dsicpu3_callback/21 (ctb_dsicpu3_callback) @08e209a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi3_edgeCounter/6 (read)dsi3_edgeCounter/6 (write)dsi3_edgeCounter/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctb_dsicpu2_callback/20 (ctb_dsicpu2_callback) @08e20700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi2_edgeCounter/5 (read)dsi2_edgeCounter/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctb_dsicpu1_callback/19 (ctb_dsicpu1_callback) @08e20460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: dsi1_edgeCounter/4 (read)dsi1_edgeCounter/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CTBPbit_Deinit/18 (CTBPbit_Deinit) @08e201c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CTBPbit_ReadDSI/17 (CTBPbit_ReadDSI) @08e14e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ctb_DSI_readResult/1 (write)ctb_DSI_readResult/1 (write)ctb_DSI_readResult/1 (write)ctb_DSI_readResult/1 (write)ctb_DSI_readResult/1 (write)ctb_DSI_readResult/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBPbit_RunTests/12 
+  Calls: Dio_ReadChannel/38 Dio_ReadChannel/38 Dio_ReadChannel/38 Dio_ReadChannel/38 Dio_ReadChannel/38 Dio_ReadChannel/38 
+ctbPbit_StopTestDSI/16 (ctbPbit_StopTestDSI) @08e148c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBPbit_RunTests/12 
+  Calls: Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Gpt_DisableNotification/37 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 
+ctbPbit_StartTestDSI/15 (ctbPbit_StartTestDSI) @08e14380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CTBPbit_Started/2 (write)CTBPbit_TimePeriodEnded/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBPbit_RunTests/12 
+  Calls: Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Gpt_EnableNotification/36 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 Pwm_SetPeriodAndDuty/35 Port_SetPinMode/34 
+ctbPbit_CheckFrqDSI/14 (ctbPbit_CheckFrqDSI) @08e14d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: dsi1_edgeCounter/4 (read)dsi1_edgeCounter/4 (read)ctb_DSI_TestResult/0 (write)dsi5_edgeCounter/8 (read)dsi5_edgeCounter/8 (read)ctb_DSI_TestResult/0 (write)dsi6_edgeCounter/9 (read)dsi6_edgeCounter/9 (read)ctb_DSI_TestResult/0 (write)dsi4_edgeCounter/7 (read)dsi4_edgeCounter/7 (read)ctb_DSI_TestResult/0 (write)dsi2_edgeCounter/5 (read)dsi2_edgeCounter/5 (read)ctb_DSI_TestResult/0 (write)dsi3_edgeCounter/6 (read)dsi3_edgeCounter/6 (read)ctb_DSI_TestResult/0 (write)dsi1_edgeCounter/4 (write)dsi2_edgeCounter/5 (write)dsi3_edgeCounter/6 (write)dsi4_edgeCounter/7 (write)dsi5_edgeCounter/8 (write)dsi6_edgeCounter/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBPbit_SetTimePeriod/13 
+  Calls: 
+CTBPbit_SetTimePeriod/13 (CTBPbit_SetTimePeriod) @08e14a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CTBPbit_Started/2 (read)CTBPbit_TimePeriodEnded/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: ctbPbit_CheckFrqDSI/14 
+CTBPbit_RunTests/12 (CTBPbit_RunTests) @08e147e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/33 (read)COM_debugTestReq/33 (read)CTBPbit_Started/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: ctbPbit_StopTestDSI/16 ctbPbit_StartTestDSI/15 CTBPbit_ReadDSI/17 
+CTBPbit_Init/11 (CTBPbit_Init) @08e14540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: LPIT_0_CH_1_ISR/28 (addr)dsi1_edgeCounter/4 (write)dsi2_edgeCounter/5 (write)dsi3_edgeCounter/6 (write)dsi4_edgeCounter/7 (write)dsi5_edgeCounter/8 (write)dsi6_edgeCounter/9 (write)CTBPbit_Started/2 (write)CTBPbit_TimePeriodEnded/3 (write)ctb_DSI_readResult/1 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)ctb_DSI_TestResult/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_EnableNotification/31 Icu_EnableEdgeDetection/30 Icu_EnableNotification/31 Icu_EnableEdgeDetection/30 Icu_EnableNotification/31 Icu_EnableEdgeDetection/30 Icu_EnableNotification/31 Icu_EnableEdgeCount/32 Icu_EnableNotification/31 Icu_EnableEdgeCount/32 Icu_EnableNotification/31 Icu_EnableEdgeDetection/30 Gpt_StartTimer/29 Platform_InstallIrqHandler/27 Dio_WriteChannel/26 Dio_WriteChannel/26 Dio_WriteChannel/26 Dio_WriteChannel/26 Dio_WriteChannel/26 Dio_WriteChannel/26 
+dsi6_edgeCounter/9 (dsi6_edgeCounter) @059c9168
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctb_dsicpu6_callback/24 (read)ctb_dsicpu6_callback/24 (write)
+  Availability: available
+  Varpool flags:
+dsi5_edgeCounter/8 (dsi5_edgeCounter) @059c9120
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctb_dsicpu5_callback/23 (read)ctb_dsicpu5_callback/23 (write)
+  Availability: available
+  Varpool flags:
+dsi4_edgeCounter/7 (dsi4_edgeCounter) @059c90d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctb_dsicpu4_callback/22 (read)ctb_dsicpu4_callback/22 (write)
+  Availability: available
+  Varpool flags:
+dsi3_edgeCounter/6 (dsi3_edgeCounter) @059c9090
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (write)ctb_dsicpu3_callback/21 (read)ctb_dsicpu3_callback/21 (write)ctb_dsicpu3_callback/21 (read)
+  Availability: available
+  Varpool flags:
+dsi2_edgeCounter/5 (dsi2_edgeCounter) @059c9048
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctb_dsicpu2_callback/20 (read)ctb_dsicpu2_callback/20 (write)
+  Availability: available
+  Varpool flags:
+dsi1_edgeCounter/4 (dsi1_edgeCounter) @059c9000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (read)ctbPbit_CheckFrqDSI/14 (read)ctb_dsicpu1_callback/19 (read)ctb_dsicpu1_callback/19 (write)
+  Availability: available
+  Varpool flags:
+CTBPbit_TimePeriodEnded/3 (CTBPbit_TimePeriodEnded) @059c0f78
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)CTBPbit_SetTimePeriod/13 (write)ctbPbit_StartTestDSI/15 (write)
+  Availability: available
+  Varpool flags:
+CTBPbit_Started/2 (CTBPbit_Started) @059c0f30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)CTBPbit_SetTimePeriod/13 (read)ctbPbit_StartTestDSI/15 (write)CTBPbit_RunTests/12 (write)
+  Availability: available
+  Varpool flags:
+ctb_DSI_readResult/1 (ctb_DSI_readResult) @059c0ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)CTBPbit_ReadDSI/17 (write)CTBPbit_ReadDSI/17 (write)CTBPbit_ReadDSI/17 (write)CTBPbit_ReadDSI/17 (write)CTBPbit_ReadDSI/17 (write)CTBPbit_ReadDSI/17 (write)
+  Availability: available
+  Varpool flags:
+ctb_DSI_TestResult/0 (ctb_DSI_TestResult) @059c0ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)CTBPbit_Init/11 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (write)ctbPbit_CheckFrqDSI/14 (write)
+  Availability: available
+  Varpool flags:
+ctbPbit_DsiPbit2TimerCB ()
+{
+  <bb 2> :
+  Dio_FlipChannel (113);
+  return;
+
+}
+
+
+ctb_dsicpu6_callback ()
+{
+  long unsigned int dsi6_edgeCounter.25_1;
+  long unsigned int _2;
+
+  <bb 2> :
+  dsi6_edgeCounter.25_1 = dsi6_edgeCounter;
+  _2 = dsi6_edgeCounter.25_1 + 1;
+  dsi6_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu5_callback ()
+{
+  long unsigned int dsi5_edgeCounter.24_1;
+  long unsigned int _2;
+
+  <bb 2> :
+  dsi5_edgeCounter.24_1 = dsi5_edgeCounter;
+  _2 = dsi5_edgeCounter.24_1 + 1;
+  dsi5_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu4_callback ()
+{
+  long unsigned int dsi4_edgeCounter.23_1;
+  long unsigned int _2;
+
+  <bb 2> :
+  dsi4_edgeCounter.23_1 = dsi4_edgeCounter;
+  _2 = dsi4_edgeCounter.23_1 + 1;
+  dsi4_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu3_callback ()
+{
+  uint8_t i;
+  long unsigned int dsi3_edgeCounter.21_1;
+  long unsigned int _2;
+  long unsigned int dsi3_edgeCounter.22_3;
+
+  <bb 2> :
+  dsi3_edgeCounter.21_1 = dsi3_edgeCounter;
+  _2 = dsi3_edgeCounter.21_1 + 1;
+  dsi3_edgeCounter = _2;
+  i_6 = 0;
+  dsi3_edgeCounter.22_3 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.22_3 == 18)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  i_8 = 9;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  i_7 = 8;
+
+  <bb 5> :
+  return;
+
+}
+
+
+ctb_dsicpu2_callback ()
+{
+  long unsigned int dsi2_edgeCounter.20_1;
+  long unsigned int _2;
+
+  <bb 2> :
+  dsi2_edgeCounter.20_1 = dsi2_edgeCounter;
+  _2 = dsi2_edgeCounter.20_1 + 1;
+  dsi2_edgeCounter = _2;
+  return;
+
+}
+
+
+ctb_dsicpu1_callback ()
+{
+  long unsigned int dsi1_edgeCounter.19_1;
+  long unsigned int _2;
+
+  <bb 2> :
+  dsi1_edgeCounter.19_1 = dsi1_edgeCounter;
+  _2 = dsi1_edgeCounter.19_1 + 1;
+  dsi1_edgeCounter = _2;
+  return;
+
+}
+
+
+CTBPbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CTBPbit_ReadDSI (CTB_DSI_PinsE dsiPin)
+{
+  unsigned char _1;
+  _Bool _2;
+  unsigned char _3;
+  _Bool _4;
+  unsigned char _5;
+  _Bool _6;
+  unsigned char _7;
+  _Bool _8;
+  unsigned char _9;
+  _Bool _10;
+  unsigned char _11;
+  _Bool _12;
+
+  <bb 2> :
+  switch (dsiPin_14(D)) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = Dio_ReadChannel (141);
+  _2 = _1 != 0;
+  ctb_DSI_readResult = _2;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = Dio_ReadChannel (155);
+  _4 = _3 != 0;
+  ctb_DSI_readResult = _4;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  _5 = Dio_ReadChannel (140);
+  _6 = _5 != 0;
+  ctb_DSI_readResult = _6;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  _7 = Dio_ReadChannel (138);
+  _8 = _7 != 0;
+  ctb_DSI_readResult = _8;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  _9 = Dio_ReadChannel (139);
+  _10 = _9 != 0;
+  ctb_DSI_readResult = _10;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  _11 = Dio_ReadChannel (137);
+  _12 = _11 != 0;
+  ctb_DSI_readResult = _12;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  return;
+
+}
+
+
+ctbPbit_StopTestDSI (CTB_DSI_PinsE dsiPin)
+{
+  <bb 2> :
+  switch (dsiPin_2(D)) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Pwm_SetPeriodAndDuty (9, 60241, 0);
+  Port_SetPinMode (38, 1);
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  Pwm_SetPeriodAndDuty (10, 60241, 0);
+  Port_SetPinMode (67, 1);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  Pwm_SetPeriodAndDuty (8, 60241, 0);
+  Port_SetPinMode (37, 1);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  Gpt_DisableNotification (1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  Pwm_SetPeriodAndDuty (7, 60241, 0);
+  Port_SetPinMode (36, 1);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  Pwm_SetPeriodAndDuty (6, 60241, 0);
+  Port_SetPinMode (34, 1);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  return;
+
+}
+
+
+ctbPbit_StartTestDSI (CTB_DSI_PinsE dsiPin)
+{
+  <bb 2> :
+  switch (dsiPin_2(D)) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  Port_SetPinMode (38, 2);
+  Pwm_SetPeriodAndDuty (9, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  Port_SetPinMode (67, 2);
+  Pwm_SetPeriodAndDuty (10, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  Port_SetPinMode (37, 2);
+  Pwm_SetPeriodAndDuty (8, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  Gpt_EnableNotification (1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  Port_SetPinMode (36, 2);
+  Pwm_SetPeriodAndDuty (7, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  Port_SetPinMode (34, 2);
+  Pwm_SetPeriodAndDuty (6, 60241, 16384);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  CTBPbit_Started = 1;
+  CTBPbit_TimePeriodEnded = 0;
+  return;
+
+}
+
+
+ctbPbit_CheckFrqDSI ()
+{
+  int iftmp.16;
+  int iftmp.13;
+  int iftmp.10;
+  int iftmp.7;
+  int iftmp.4;
+  int iftmp.1;
+  long unsigned int dsi1_edgeCounter.2_1;
+  long unsigned int dsi1_edgeCounter.3_2;
+  _Bool _3;
+  long unsigned int dsi5_edgeCounter.5_4;
+  long unsigned int dsi5_edgeCounter.6_5;
+  _Bool _6;
+  long unsigned int dsi6_edgeCounter.8_7;
+  long unsigned int dsi6_edgeCounter.9_8;
+  _Bool _9;
+  long unsigned int dsi4_edgeCounter.11_10;
+  long unsigned int dsi4_edgeCounter.12_11;
+  _Bool _12;
+  long unsigned int dsi2_edgeCounter.14_13;
+  long unsigned int dsi2_edgeCounter.15_14;
+  _Bool _15;
+  long unsigned int dsi3_edgeCounter.17_16;
+  long unsigned int dsi3_edgeCounter.18_17;
+  _Bool _18;
+  int iftmp.1_19;
+  int iftmp.4_20;
+  int iftmp.7_21;
+  int iftmp.10_22;
+  int iftmp.13_23;
+  int iftmp.16_24;
+  int iftmp.1_26;
+  int iftmp.1_27;
+  int iftmp.4_29;
+  int iftmp.4_30;
+  int iftmp.7_32;
+  int iftmp.7_33;
+  int iftmp.10_35;
+  int iftmp.10_36;
+  int iftmp.13_38;
+  int iftmp.13_39;
+  int iftmp.16_41;
+  int iftmp.16_42;
+
+  <bb 2> :
+  dsi1_edgeCounter.2_1 = dsi1_edgeCounter;
+  if (dsi1_edgeCounter.2_1 > 14)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  dsi1_edgeCounter.3_2 = dsi1_edgeCounter;
+  if (dsi1_edgeCounter.3_2 <= 17)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.1_26 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.1_27 = 0;
+
+  <bb 6> :
+  # iftmp.1_19 = PHI <iftmp.1_26(4), iftmp.1_27(5)>
+  _3 = (_Bool) iftmp.1_19;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = _3;
+  dsi5_edgeCounter.5_4 = dsi5_edgeCounter;
+  if (dsi5_edgeCounter.5_4 > 14)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  dsi5_edgeCounter.6_5 = dsi5_edgeCounter;
+  if (dsi5_edgeCounter.6_5 <= 17)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.4_29 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.4_30 = 0;
+
+  <bb 10> :
+  # iftmp.4_20 = PHI <iftmp.4_29(8), iftmp.4_30(9)>
+  _6 = (_Bool) iftmp.4_20;
+  ctb_DSI_TestResult.HPP_1_TestResult = _6;
+  dsi6_edgeCounter.8_7 = dsi6_edgeCounter;
+  if (dsi6_edgeCounter.8_7 > 14)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  dsi6_edgeCounter.9_8 = dsi6_edgeCounter;
+  if (dsi6_edgeCounter.9_8 <= 17)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.7_32 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.7_33 = 0;
+
+  <bb 14> :
+  # iftmp.7_21 = PHI <iftmp.7_32(12), iftmp.7_33(13)>
+  _9 = (_Bool) iftmp.7_21;
+  ctb_DSI_TestResult.HPP_2_TestResult = _9;
+  dsi4_edgeCounter.11_10 = dsi4_edgeCounter;
+  if (dsi4_edgeCounter.11_10 > 14)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  dsi4_edgeCounter.12_11 = dsi4_edgeCounter;
+  if (dsi4_edgeCounter.12_11 <= 17)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.10_35 = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.10_36 = 0;
+
+  <bb 18> :
+  # iftmp.10_22 = PHI <iftmp.10_35(16), iftmp.10_36(17)>
+  _12 = (_Bool) iftmp.10_22;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = _12;
+  dsi2_edgeCounter.14_13 = dsi2_edgeCounter;
+  if (dsi2_edgeCounter.14_13 > 14)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 19> :
+  dsi2_edgeCounter.15_14 = dsi2_edgeCounter;
+  if (dsi2_edgeCounter.15_14 <= 17)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.13_38 = 1;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  iftmp.13_39 = 0;
+
+  <bb 22> :
+  # iftmp.13_23 = PHI <iftmp.13_38(20), iftmp.13_39(21)>
+  _15 = (_Bool) iftmp.13_23;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = _15;
+  dsi3_edgeCounter.17_16 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.17_16 > 14)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 23> :
+  dsi3_edgeCounter.18_17 = dsi3_edgeCounter;
+  if (dsi3_edgeCounter.18_17 <= 17)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  iftmp.16_41 = 1;
+  goto <bb 26>; [INV]
+
+  <bb 25> :
+  iftmp.16_42 = 0;
+
+  <bb 26> :
+  # iftmp.16_24 = PHI <iftmp.16_41(24), iftmp.16_42(25)>
+  _18 = (_Bool) iftmp.16_24;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = _18;
+  dsi1_edgeCounter = 0;
+  dsi2_edgeCounter = 0;
+  dsi3_edgeCounter = 0;
+  dsi4_edgeCounter = 0;
+  dsi5_edgeCounter = 0;
+  dsi6_edgeCounter = 0;
+  return;
+
+}
+
+
+CTBPbit_SetTimePeriod ()
+{
+  _Bool CTBPbit_Started.0_1;
+
+  <bb 2> :
+  CTBPbit_Started.0_1 = CTBPbit_Started;
+  if (CTBPbit_Started.0_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CTBPbit_TimePeriodEnded = 1;
+  ctbPbit_CheckFrqDSI ();
+
+  <bb 4> :
+  return;
+
+}
+
+
+CTBPbit_RunTests ()
+{
+  uint8_t pincmd;
+  uint8_t pinId;
+  int _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  <unnamed type> _4;
+
+  <bb 2> :
+  pinId_7 = COM_debugTestReq.discreteIoId;
+  pincmd_8 = COM_debugTestReq.discreteIoCmd;
+  _1 = (int) pincmd_8;
+  switch (_1) <default: <L3> [INV], case 4: <L0> [INV], case 5: <L1> [INV], case 6: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = (<unnamed type>) pinId_7;
+  CTBPbit_ReadDSI (_2);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = (<unnamed type>) pinId_7;
+  ctbPbit_StartTestDSI (_3);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  _4 = (<unnamed type>) pinId_7;
+  ctbPbit_StopTestDSI (_4);
+  CTBPbit_Started = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+CTBPbit_Init ()
+{
+  uint32_t cpu_timerFreq166Hz;
+  long unsigned int _1;
+
+  <bb 2> :
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Platform_InstallIrqHandler (49, LPIT_0_CH_1_ISR, 0B);
+  cpu_timerFreq166Hz_10 = 24096;
+  _1 = cpu_timerFreq166Hz_10 + 4294967295;
+  Gpt_StartTimer (1, _1);
+  Icu_EnableEdgeDetection (0);
+  Icu_EnableNotification (0);
+  Icu_EnableEdgeCount (1);
+  Icu_EnableNotification (1);
+  Icu_EnableEdgeCount (2);
+  Icu_EnableNotification (2);
+  Icu_EnableEdgeDetection (3);
+  Icu_EnableNotification (3);
+  Icu_EnableEdgeDetection (4);
+  Icu_EnableNotification (4);
+  Icu_EnableEdgeDetection (5);
+  Icu_EnableNotification (5);
+  dsi1_edgeCounter = 0;
+  dsi2_edgeCounter = 0;
+  dsi3_edgeCounter = 0;
+  dsi4_edgeCounter = 0;
+  dsi5_edgeCounter = 0;
+  dsi6_edgeCounter = 0;
+  CTBPbit_Started = 0;
+  CTBPbit_TimePeriodEnded = 0;
+  ctb_DSI_readResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = 0;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = 0;
+  ctb_DSI_TestResult.HPP_1_TestResult = 0;
+  ctb_DSI_TestResult.HPP_2_TestResult = 0;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = 0;
+  ctb_DSI_TestResult.reserved = 3;
+  return;
+
+}
+
+

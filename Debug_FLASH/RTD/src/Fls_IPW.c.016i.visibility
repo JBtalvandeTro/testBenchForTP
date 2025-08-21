@@ -1,0 +1,937 @@
+
+Marking local functions: Fls_IPW_CallAccessCodeErase Fls_IPW_CallAccessCodeWrite Fls_IPW_SectorWriteFtfcJobs Fls_IPW_SectorEraseFtfcJobs Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus
+
+
+Marking externally visible functions: Fls_IPW_GetBlockNumberFromAddress Fls_IPW_SectorWrite Fls_IPW_SectorErase Fls_IPW_SectorRead Fls_IPW_LLDMainFunction Fls_IPW_ClearHVJob Fls_IPW_AbortSuspended Fls_IPW_Init
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Ftfc_Fls_Ip_GetBlockNumberFromAddress/34 (Ftfc_Fls_Ip_GetBlockNumberFromAddress) @05c5e8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_GetBlockNumberFromAddress/17 
+  Calls: 
+Fls_u32JobAddrIt/33 (Fls_u32JobAddrIt) @05c5fca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (read)
+  Availability: not_available
+  Varpool flags:
+Det_ReportTransientFault/32 (Det_ReportTransientFault) @05c5e460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 
+  Calls: 
+Ftfc_Fls_Ip_WriteStatus/31 (Ftfc_Fls_Ip_WriteStatus) @05c5e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_LLDMainFunctionFtfcJobs/11 Fls_IPW_SectorWriteFtfcJobs/13 
+  Calls: 
+Ftfc_Fls_Ip_Write/30 (Ftfc_Fls_Ip_Write) @05c52ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_SectorWriteFtfcJobs/13 
+  Calls: 
+Fls_bACloaded/29 (Fls_bACloaded) @05c58438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_CallAccessCodeErase/15 (read)Fls_IPW_CallAccessCodeWrite/14 (read)
+  Availability: not_available
+  Varpool flags:
+Det_ReportRuntimeError/28 (Det_ReportRuntimeError) @05c52b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_TranslateReturnCode/16 Fls_IPW_TranslateReturnCode/16 Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 Fls_IPW_SectorWriteFtfcJobs/13 Fls_IPW_SectorEraseFtfcJobs/12 
+  Calls: 
+Ftfc_Fls_Ip_SectorEraseStatus/27 (Ftfc_Fls_Ip_SectorEraseStatus) @05c529a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_LLDMainFunctionFtfcJobs/11 Fls_IPW_SectorEraseFtfcJobs/12 
+  Calls: 
+Ftfc_Fls_Ip_SectorErase/26 (Ftfc_Fls_Ip_SectorErase) @05c528c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_SectorEraseFtfcJobs/12 
+  Calls: 
+Ftfc_Fls_Ip_SetAsyncMode/25 (Ftfc_Fls_Ip_SetAsyncMode) @05c527e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_SectorWriteFtfcJobs/13 Fls_IPW_SectorEraseFtfcJobs/12 
+  Calls: 
+Ftfc_Fls_Ip_Compare/24 (Ftfc_Fls_Ip_Compare) @05c52540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_SectorRead/6 
+  Calls: 
+Ftfc_Fls_Ip_Read/23 (Ftfc_Fls_Ip_Read) @05c52460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_SectorRead/6 
+  Calls: 
+Fls_u32JobSectorIt/22 (Fls_u32JobSectorIt) @05c53240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_LLDMainFunction/5 (read)Fls_IPW_SectorRead/6 (read)Fls_IPW_SectorRead/6 (read)Fls_IPW_SectorErase/7 (read)Fls_IPW_SectorEraseFtfcJobs/12 (read)Fls_IPW_SectorWrite/8 (read)Fls_IPW_SectorWriteFtfcJobs/13 (read)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (read)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (read)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (write)
+  Availability: not_available
+  Varpool flags:
+Fls_eLLDJob/21 (Fls_eLLDJob) @05d83cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_Init/2 (write)Fls_IPW_SectorEraseFtfcJobs/12 (write)Fls_IPW_SectorWriteFtfcJobs/13 (write)Fls_IPW_LLDMainFunctionFtfcJobs/11 (read)Fls_IPW_LLDMainFunctionFtfcJobs/11 (read)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (write)
+  Availability: not_available
+  Varpool flags:
+Ftfc_Fls_Ip_Init/20 (Ftfc_Fls_Ip_Init) @05d8dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_Init/2 
+  Calls: 
+Fls_pConfigPtr/19 (Fls_pConfigPtr) @05d83c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_Init/2 (read)Fls_IPW_LLDMainFunction/5 (read)Fls_IPW_SectorRead/6 (read)Fls_IPW_SectorRead/6 (read)Fls_IPW_SectorErase/7 (read)Fls_IPW_SectorEraseFtfcJobs/12 (read)Fls_IPW_CallAccessCodeErase/15 (read)Fls_IPW_CallAccessCodeErase/15 (read)Fls_IPW_CallAccessCodeErase/15 (read)Fls_IPW_SectorWrite/8 (read)Fls_IPW_SectorWriteFtfcJobs/13 (read)Fls_IPW_CallAccessCodeWrite/14 (read)Fls_IPW_CallAccessCodeWrite/14 (read)Fls_IPW_CallAccessCodeWrite/14 (read)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (read)
+  Availability: not_available
+  Varpool flags:
+Fls_eLLDJobResult/18 (Fls_eLLDJobResult) @05d83c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_IPW_Init/2 (write)Fls_IPW_Init/2 (read)Fls_IPW_Init/2 (write)Fls_IPW_Init/2 (write)Fls_IPW_LLDMainFunction/5 (read)Fls_IPW_SectorEraseFtfcJobs/12 (write)Fls_IPW_SectorEraseFtfcJobs/12 (write)Fls_IPW_SectorEraseFtfcJobs/12 (write)Fls_IPW_SectorEraseFtfcJobs/12 (write)Fls_IPW_SectorWriteFtfcJobs/13 (write)Fls_IPW_SectorWriteFtfcJobs/13 (write)Fls_IPW_SectorWriteFtfcJobs/13 (write)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (write)Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (write)Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 (write)Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 (write)
+  Availability: not_available
+  Varpool flags:
+Fls_IPW_GetBlockNumberFromAddress/17 (Fls_IPW_GetBlockNumberFromAddress) @05d8de00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_GetBlockNumberFromAddress/34 
+Fls_IPW_TranslateReturnCode/16 (Fls_IPW_TranslateReturnCode) @05d8db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_IPW_SectorWriteFtfcJobs/13 Fls_IPW_SectorWriteFtfcJobs/13 Fls_IPW_SectorEraseFtfcJobs/12 Fls_IPW_SectorEraseFtfcJobs/12 Fls_IPW_SectorRead/6 
+  Calls: Det_ReportRuntimeError/28 Det_ReportRuntimeError/28 
+Fls_IPW_CallAccessCodeErase/15 (Fls_IPW_CallAccessCodeErase) @05d8d8c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_bACloaded/29 (read)Fls_pConfigPtr/19 (read)Fls_pConfigPtr/19 (read)Fls_pConfigPtr/19 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_SectorEraseFtfcJobs/12 
+  Calls: Ftfc_Fls_Ip_AccessCode/1 
+   Indirect call
+Fls_IPW_CallAccessCodeWrite/14 (Fls_IPW_CallAccessCodeWrite) @05d8d540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_bACloaded/29 (read)Fls_pConfigPtr/19 (read)Fls_pConfigPtr/19 (read)Fls_pConfigPtr/19 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_SectorWriteFtfcJobs/13 
+  Calls: Ftfc_Fls_Ip_AccessCode/1 
+   Indirect call
+Fls_IPW_SectorWriteFtfcJobs/13 (Fls_IPW_SectorWriteFtfcJobs) @05d8d1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (write)Fls_eLLDJob/21 (write)Fls_eLLDJobResult/18 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_SectorWrite/8 
+  Calls: Det_ReportRuntimeError/28 Fls_IPW_TranslateReturnCode/16 Fls_IPW_TranslateReturnCode/16 Ftfc_Fls_Ip_WriteStatus/31 Fls_IPW_CallAccessCodeWrite/14 Ftfc_Fls_Ip_Write/30 Ftfc_Fls_Ip_SetAsyncMode/25 
+Fls_IPW_SectorEraseFtfcJobs/12 (Fls_IPW_SectorEraseFtfcJobs) @05d84d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (write)Fls_eLLDJob/21 (write)Fls_eLLDJobResult/18 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_SectorErase/7 
+  Calls: Det_ReportRuntimeError/28 Fls_IPW_TranslateReturnCode/16 Fls_IPW_TranslateReturnCode/16 Ftfc_Fls_Ip_SectorEraseStatus/27 Fls_IPW_CallAccessCodeErase/15 Ftfc_Fls_Ip_SectorErase/26 Ftfc_Fls_Ip_SetAsyncMode/25 
+Fls_IPW_LLDMainFunctionFtfcJobs/11 (Fls_IPW_LLDMainFunctionFtfcJobs) @05d847e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_eLLDJob/21 (read)Fls_eLLDJob/21 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_IPW_LLDMainFunction/5 
+  Calls: Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 Ftfc_Fls_Ip_WriteStatus/31 Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 Ftfc_Fls_Ip_SectorEraseStatus/27 
+Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus/10 (Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus) @05d842a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_LLDMainFunctionFtfcJobs/11 
+  Calls: Det_ReportRuntimeError/28 Det_ReportRuntimeError/28 Det_ReportTransientFault/32 
+Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus/9 (Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus) @05d84ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_eLLDJobResult/18 (write)Fls_eLLDJob/21 (write)Fls_eLLDJobResult/18 (write)Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)Fls_u32JobAddrIt/33 (read)Fls_u32JobSectorIt/22 (read)Fls_u32JobSectorIt/22 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_IPW_LLDMainFunctionFtfcJobs/11 
+  Calls: Det_ReportRuntimeError/28 Det_ReportRuntimeError/28 Det_ReportTransientFault/32 
+Fls_IPW_SectorWrite/8 (Fls_IPW_SectorWrite) @05d84c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_IPW_SectorWriteFtfcJobs/13 
+Fls_IPW_SectorErase/7 (Fls_IPW_SectorErase) @05d849a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_IPW_SectorEraseFtfcJobs/12 
+Fls_IPW_SectorRead/6 (Fls_IPW_SectorRead) @05d84700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_IPW_TranslateReturnCode/16 Ftfc_Fls_Ip_Compare/24 Ftfc_Fls_Ip_Read/23 
+Fls_IPW_LLDMainFunction/5 (Fls_IPW_LLDMainFunction) @05d84460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/19 (read)Fls_u32JobSectorIt/22 (read)Fls_eLLDJobResult/18 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_IPW_LLDMainFunctionFtfcJobs/11 
+Fls_IPW_ClearHVJob/4 (Fls_IPW_ClearHVJob) @05d841c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Fls_IPW_AbortSuspended/3 (Fls_IPW_AbortSuspended) @05d7bee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Fls_IPW_Init/2 (Fls_IPW_Init) @05d7be00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (read)Fls_pConfigPtr/19 (read)Fls_eLLDJobResult/18 (write)Fls_eLLDJobResult/18 (write)Fls_eLLDJob/21 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Ftfc_Fls_Ip_Init/20 
+Ftfc_Fls_Ip_AccessCode/1 (Ftfc_Fls_Ip_AccessCode) @05d7b2a0
+  Type: function
+  Visibility: external public section:.acfls_code_rom
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_IPW_CallAccessCodeWrite/14 Fls_IPW_CallAccessCodeErase/15 
+  Calls: 
+Fls_IPW_GetBlockNumberFromAddress (Fls_AddressType targetAddress)
+{
+  Fls_BlockNumberOfSectorType D.6361;
+
+  <bb 2> :
+  _1 = Ftfc_Fls_Ip_GetBlockNumberFromAddress (targetAddress);
+  D.6361 = (Fls_BlockNumberOfSectorType) _1;
+
+  <bb 3> :
+<L0>:
+  return D.6361;
+
+}
+
+
+Fls_IPW_TranslateReturnCode (Ftfc_Fls_Ip_StatusType eReturnCode)
+{
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6359;
+
+  <bb 2> :
+  switch (eReturnCode) <default: <L4> [INV], case 11892: <L2> [INV], case 13260: <L3> [INV], case 23205: <L0> [INV], case 59202: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  eLldRetVal = 0;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  eLldRetVal = 3;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  eLldRetVal = 2;
+  Det_ReportRuntimeError (92, 0, 6, 7);
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  eLldRetVal = 2;
+  Det_ReportRuntimeError (92, 0, 6, 8);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  eLldRetVal = 1;
+
+  <bb 8> :
+  D.6359 = eLldRetVal;
+
+  <bb 9> :
+<L6>:
+  return D.6359;
+
+}
+
+
+Fls_IPW_CallAccessCodeErase ()
+{
+  <bb 2> :
+  Fls_bACloaded.13_1 = Fls_bACloaded;
+  if (Fls_bACloaded.13_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.14_2 = Fls_pConfigPtr;
+  _3 = Fls_pConfigPtr.14_2->acErasePtr;
+  _4 = (long unsigned int) _3;
+  _5 = _4 | 1;
+  _6 = (void (*<T53c>) (void (*<T4b1>) (void))) _5;
+  Fls_pConfigPtr.15_7 = Fls_pConfigPtr;
+  _8 = Fls_pConfigPtr.15_7->acCallBackPtr;
+  _6 (_8);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.16_9 = Fls_pConfigPtr;
+  _10 = Fls_pConfigPtr.16_9->acCallBackPtr;
+  Ftfc_Fls_Ip_AccessCode (_10);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Fls_IPW_CallAccessCodeWrite ()
+{
+  <bb 2> :
+  Fls_bACloaded.21_1 = Fls_bACloaded;
+  if (Fls_bACloaded.21_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.22_2 = Fls_pConfigPtr;
+  _3 = Fls_pConfigPtr.22_2->acWritePtr;
+  _4 = (long unsigned int) _3;
+  _5 = _4 | 1;
+  _6 = (void (*<T53c>) (void (*<T4b1>) (void))) _5;
+  Fls_pConfigPtr.23_7 = Fls_pConfigPtr;
+  _8 = Fls_pConfigPtr.23_7->acCallBackPtr;
+  _6 (_8);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.24_9 = Fls_pConfigPtr;
+  _10 = Fls_pConfigPtr.24_9->acCallBackPtr;
+  Ftfc_Fls_Ip_AccessCode (_10);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Fls_IPW_SectorWriteFtfcJobs (const Fls_AddressType u32SectorOffset, const Fls_AddressType u32Length, const uint8 * pJobDataSrcPtr, const boolean bAsynch)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  uint32 u32WriteStartAddress;
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6324;
+
+  <bb 2> :
+  eLldRetVal = 1;
+  Fls_pConfigPtr.19_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.19_1->pSectorList;
+  Fls_u32JobSectorIt.20_3 = Fls_u32JobSectorIt;
+  _4 = *_2[Fls_u32JobSectorIt.20_3];
+  u32WriteStartAddress = _4->pSectorStartAddressPtr;
+  u32WriteStartAddress = u32WriteStartAddress + u32SectorOffset;
+  Ftfc_Fls_Ip_SetAsyncMode (bAsynch);
+  eReturnCode = Ftfc_Fls_Ip_Write (u32WriteStartAddress, pJobDataSrcPtr, u32Length);
+  if (eReturnCode == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _5 = ~bAsynch;
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  Fls_IPW_CallAccessCodeWrite ();
+  eReturnCode = Ftfc_Fls_Ip_WriteStatus ();
+  if (eReturnCode != 23205)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_eLLDJobResult = 1;
+  eLldRetVal = Fls_IPW_TranslateReturnCode (eReturnCode);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  eLldRetVal = 0;
+
+  <bb 7> :
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  if (eReturnCode != 23205)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Fls_eLLDJobResult = 1;
+  eLldRetVal = Fls_IPW_TranslateReturnCode (eReturnCode);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  eLldRetVal = 3;
+  Fls_eLLDJob = 3;
+  Fls_eLLDJobResult = 2;
+
+  <bb 11> :
+  if (eReturnCode == 11220)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Det_ReportRuntimeError (92, 0, 6, 9);
+
+  <bb 13> :
+  D.6324 = eLldRetVal;
+
+  <bb 14> :
+<L12>:
+  return D.6324;
+
+}
+
+
+Fls_IPW_SectorEraseFtfcJobs (boolean bAsynch, Fls_AddressType u32SectorOffset)
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  uint32 u32SectorStartAddress;
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6303;
+
+  <bb 2> :
+  eLldRetVal = 1;
+  eReturnCode = 10212;
+  Fls_pConfigPtr.11_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.11_1->pSectorList;
+  Fls_u32JobSectorIt.12_3 = Fls_u32JobSectorIt;
+  _4 = *_2[Fls_u32JobSectorIt.12_3];
+  u32SectorStartAddress = _4->pSectorStartAddressPtr;
+  Ftfc_Fls_Ip_SetAsyncMode (bAsynch);
+  _5 = u32SectorStartAddress + u32SectorOffset;
+  eReturnCode = Ftfc_Fls_Ip_SectorErase (_5);
+  if (eReturnCode == 23205)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _6 = ~bAsynch;
+  if (_6 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  Fls_IPW_CallAccessCodeErase ();
+  eReturnCode = Ftfc_Fls_Ip_SectorEraseStatus ();
+  if (eReturnCode != 23205)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_eLLDJobResult = 1;
+  eLldRetVal = Fls_IPW_TranslateReturnCode (eReturnCode);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Fls_eLLDJobResult = 0;
+  eLldRetVal = 0;
+
+  <bb 7> :
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  if (eReturnCode != 23205)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Fls_eLLDJobResult = 1;
+  eLldRetVal = Fls_IPW_TranslateReturnCode (eReturnCode);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  eLldRetVal = 3;
+  Fls_eLLDJob = 1;
+  Fls_eLLDJobResult = 2;
+
+  <bb 11> :
+  if (eReturnCode == 11220)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Det_ReportRuntimeError (92, 0, 6, 9);
+
+  <bb 13> :
+  D.6303 = eLldRetVal;
+
+  <bb 14> :
+<L12>:
+  return D.6303;
+
+}
+
+
+Fls_IPW_LLDMainFunctionFtfcJobs ()
+{
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+
+  <bb 2> :
+  eReturnCode = 10212;
+  Fls_eLLDJob.25_1 = Fls_eLLDJob;
+  if (Fls_eLLDJob.25_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eReturnCode = Ftfc_Fls_Ip_SectorEraseStatus ();
+  Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus (eReturnCode);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  Fls_eLLDJob.26_2 = Fls_eLLDJob;
+  if (Fls_eLLDJob.26_2 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  eReturnCode = Ftfc_Fls_Ip_WriteStatus ();
+  Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus (eReturnCode);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Fls_IPW_LLDMainFunctionFtfcJobs_CheckWriteStatus (Ftfc_Fls_Ip_StatusType status)
+{
+  <bb 2> :
+  if (status != 59202)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  if (status != 23205)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  Fls_eLLDJobResult = 1;
+  Det_ReportTransientFault (92, 0, 6, 2);
+  if (status == 13260)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportRuntimeError (92, 0, 6, 8);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  if (status == 11220)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  Det_ReportRuntimeError (92, 0, 6, 9);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Fls_eLLDJobResult = 0;
+
+  <bb 9> :
+  return;
+
+}
+
+
+Fls_IPW_LLDMainFunctionFtfcJobs_CheckEraseStatus (Ftfc_Fls_Ip_StatusType status)
+{
+  <bb 2> :
+  if (status != 59202)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  if (status != 23205)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  Fls_eLLDJobResult = 1;
+  Det_ReportTransientFault (92, 0, 6, 1);
+  if (status == 11892)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportRuntimeError (92, 0, 6, 7);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  if (status == 11220)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  Det_ReportRuntimeError (92, 0, 6, 9);
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  Fls_eLLDJob = 0;
+  Fls_eLLDJobResult = 0;
+  Fls_pConfigPtr.27_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.27_1->paSectorEndAddr;
+  Fls_u32JobSectorIt.28_3 = Fls_u32JobSectorIt;
+  _4 = *_2[Fls_u32JobSectorIt.28_3];
+  Fls_u32JobAddrIt.29_5 = Fls_u32JobAddrIt;
+  if (_4 < Fls_u32JobAddrIt.29_5)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Fls_u32JobSectorIt.30_6 = Fls_u32JobSectorIt;
+  _7 = Fls_u32JobSectorIt.30_6 + 1;
+  Fls_u32JobSectorIt = _7;
+
+  <bb 10> :
+  return;
+
+}
+
+
+Fls_IPW_SectorWrite (const Fls_AddressType u32SectorOffset, const Fls_AddressType u32Length, const uint8 * pJobDataSrcPtr, const boolean bAsynch)
+{
+  Fls_HwChType eHwCh;
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6310;
+
+  <bb 2> :
+  eLldRetVal = 1;
+  Fls_pConfigPtr.17_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.17_1->paHwCh;
+  Fls_u32JobSectorIt.18_3 = Fls_u32JobSectorIt;
+  eHwCh = *_2[Fls_u32JobSectorIt.18_3];
+  if (eHwCh == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eLldRetVal = Fls_IPW_SectorWriteFtfcJobs (u32SectorOffset, u32Length, pJobDataSrcPtr, bAsynch);
+
+  <bb 4> :
+  D.6310 = eLldRetVal;
+
+  <bb 5> :
+<L2>:
+  return D.6310;
+
+}
+
+
+Fls_IPW_SectorErase (const Fls_AddressType u32SectorOffset, const Fls_LengthType u32PhysicalSectorSize, const boolean bAsynch)
+{
+  Fls_HwChType eHwCh;
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6289;
+
+  <bb 2> :
+  eLldRetVal = 1;
+  Fls_pConfigPtr.9_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.9_1->paHwCh;
+  Fls_u32JobSectorIt.10_3 = Fls_u32JobSectorIt;
+  eHwCh = *_2[Fls_u32JobSectorIt.10_3];
+  if (eHwCh == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  eLldRetVal = Fls_IPW_SectorEraseFtfcJobs (bAsynch, u32SectorOffset);
+
+  <bb 4> :
+  D.6289 = eLldRetVal;
+
+  <bb 5> :
+<L2>:
+  return D.6289;
+
+}
+
+
+Fls_IPW_SectorRead (const Fls_AddressType u32SectorOffset, const Fls_AddressType u32Length, uint8 * pJobDataDestPtr, const uint8 * pJobDataSrcPtr)
+{
+  uint32 u32ReadStartAddress;
+  Ftfc_Fls_Ip_StatusType eReturnCode;
+  Fls_HwChType eHwCh;
+  Fls_LLDReturnType eLldRetVal;
+  Fls_LLDReturnType D.6285;
+
+  <bb 2> :
+  eLldRetVal = 1;
+  eReturnCode = 10212;
+  u32ReadStartAddress = 0;
+  Fls_pConfigPtr.5_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.5_1->paHwCh;
+  Fls_u32JobSectorIt.6_3 = Fls_u32JobSectorIt;
+  eHwCh = *_2[Fls_u32JobSectorIt.6_3];
+  if (eHwCh == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.7_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.7_4->pSectorList;
+  Fls_u32JobSectorIt.8_6 = Fls_u32JobSectorIt;
+  _7 = *_5[Fls_u32JobSectorIt.8_6];
+  u32ReadStartAddress = _7->pSectorStartAddressPtr;
+  u32ReadStartAddress = u32ReadStartAddress + u32SectorOffset;
+  if (pJobDataDestPtr != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  eReturnCode = Ftfc_Fls_Ip_Read (u32ReadStartAddress, pJobDataDestPtr, u32Length);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  eReturnCode = Ftfc_Fls_Ip_Compare (u32ReadStartAddress, pJobDataSrcPtr, u32Length);
+
+  <bb 6> :
+  eLldRetVal = Fls_IPW_TranslateReturnCode (eReturnCode);
+
+  <bb 7> :
+  D.6285 = eLldRetVal;
+
+  <bb 8> :
+<L5>:
+  return D.6285;
+
+}
+
+
+Fls_IPW_LLDMainFunction ()
+{
+  Fls_HwChType eHwCh;
+
+  <bb 2> :
+  Fls_pConfigPtr.2_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.2_1->paHwCh;
+  Fls_u32JobSectorIt.3_3 = Fls_u32JobSectorIt;
+  eHwCh = *_2[Fls_u32JobSectorIt.3_3];
+  Fls_eLLDJobResult.4_4 = Fls_eLLDJobResult;
+  if (Fls_eLLDJobResult.4_4 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (eHwCh == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_IPW_LLDMainFunctionFtfcJobs ();
+
+  <bb 5> :
+  return;
+
+}
+
+
+Fls_IPW_ClearHVJob ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+Fls_IPW_AbortSuspended ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+Fls_IPW_Init ()
+{
+  <bb 2> :
+  Fls_eLLDJobResult = 0;
+  Fls_eLLDJobResult.0_1 = Fls_eLLDJobResult;
+  if (Fls_eLLDJobResult.0_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.1_2 = Fls_pConfigPtr;
+  _3 = Fls_pConfigPtr.1_2->pFlsInternalCfgConfig;
+  _4 = Ftfc_Fls_Ip_Init (_3);
+  if (_4 == 23205)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_eLLDJobResult = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_eLLDJobResult = 1;
+
+  <bb 6> :
+  Fls_eLLDJob = 0;
+  return;
+
+}
+
+

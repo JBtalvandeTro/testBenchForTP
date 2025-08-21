@@ -1,0 +1,791 @@
+
+Marking local functions: Icu_ConvertChannelIndexToChannel Icu_CallNotification Icu_ClearBitChState Icu_GetBitChState Icu_SetBitChState
+
+
+Marking externally visible functions: Icu_LogicChStateCallback Icu_ReportEvents Icu_ReportWakeupAndOverflow Icu_DisableEdgeDetection Icu_EnableEdgeDetection Icu_GetEdgeNumbers Icu_DisableEdgeCount Icu_EnableEdgeCount Icu_ResetEdgeCount Icu_EnableNotification Icu_DisableNotification Icu_SetActivationCondition Icu_Init
+
+
+Marking externally visible variables: Icu_aChannelState Icu_CurrentMode Icu_pCfgPtr
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Icu_Ipw_DisableEdgeDetection/34 (Icu_Ipw_DisableEdgeDetection) @0614c700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_DisableEdgeDetection/17 
+  Calls: 
+Icu_Ipw_EnableEdgeDetection/33 (Icu_Ipw_EnableEdgeDetection) @0614c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_EnableEdgeDetection/16 
+  Calls: 
+Icu_Ipw_GetEdgeNumbers/32 (Icu_Ipw_GetEdgeNumbers) @0614c380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_GetEdgeNumbers/15 
+  Calls: 
+Icu_Ipw_DisableEdgeCount/31 (Icu_Ipw_DisableEdgeCount) @0614c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_DisableEdgeCount/14 
+  Calls: 
+Icu_Ipw_EnableEdgeCount/30 (Icu_Ipw_EnableEdgeCount) @0614c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_EnableEdgeCount/13 
+  Calls: 
+Icu_Ipw_ResetEdgeCount/29 (Icu_Ipw_ResetEdgeCount) @060cae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_ResetEdgeCount/12 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00/28 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00) @060cac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_SetBitChState/3 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00/27 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00) @060cab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_SetBitChState/3 
+  Calls: 
+Icu_Ipw_EnableNotification/26 (Icu_Ipw_EnableNotification) @060ca9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_EnableNotification/11 
+  Calls: 
+Icu_Ipw_DisableNotification/25 (Icu_Ipw_DisableNotification) @060ca7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_DisableNotification/10 
+  Calls: 
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01/24 (SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01) @060ca620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_ClearBitChState/5 
+  Calls: 
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01/23 (SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01) @060ca540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_ClearBitChState/5 
+  Calls: 
+Icu_Ipw_SetActivationCondition/22 (Icu_Ipw_SetActivationCondition) @060ca380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_SetActivationCondition/9 
+  Calls: 
+Icu_Ipw_Init/21 (Icu_Ipw_Init) @060ca000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Icu_Init/8 
+  Calls: 
+Icu_LogicChStateCallback/20 (Icu_LogicChStateCallback) @060c30e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_ClearBitChState/5 Icu_SetBitChState/3 
+Icu_ReportEvents/19 (Icu_ReportEvents) @060c3d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_CallNotification/6 Icu_ReportWakeupAndOverflow/18 Icu_SetBitChState/3 
+Icu_ReportWakeupAndOverflow/18 (Icu_ReportWakeupAndOverflow) @060c3a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_CurrentMode/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Icu_ReportEvents/19 
+  Calls: Icu_SetBitChState/3 Icu_SetBitChState/3 Icu_GetBitChState/4 
+Icu_DisableEdgeDetection/17 (Icu_DisableEdgeDetection) @060c37e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_ClearBitChState/5 Icu_Ipw_DisableEdgeDetection/34 
+Icu_EnableEdgeDetection/16 (Icu_EnableEdgeDetection) @060c3540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_EnableEdgeDetection/33 Icu_SetBitChState/3 
+Icu_GetEdgeNumbers/15 (Icu_GetEdgeNumbers) @060c32a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_GetEdgeNumbers/32 
+Icu_DisableEdgeCount/14 (Icu_DisableEdgeCount) @060c3000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_ClearBitChState/5 Icu_Ipw_DisableEdgeCount/31 
+Icu_EnableEdgeCount/13 (Icu_EnableEdgeCount) @06000b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_EnableEdgeCount/30 Icu_SetBitChState/3 Icu_ClearBitChState/5 
+Icu_ResetEdgeCount/12 (Icu_ResetEdgeCount) @06000620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_ResetEdgeCount/29 Icu_ClearBitChState/5 
+Icu_EnableNotification/11 (Icu_EnableNotification) @060000e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_EnableNotification/26 Icu_SetBitChState/3 
+Icu_DisableNotification/10 (Icu_DisableNotification) @06000d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_DisableNotification/25 Icu_ClearBitChState/5 
+Icu_SetActivationCondition/9 (Icu_SetActivationCondition) @06000a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_Ipw_SetActivationCondition/22 Icu_ClearBitChState/5 
+Icu_Init/8 (Icu_Init) @060007e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Icu_pCfgPtr/0 (write)Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)Icu_aChannelState/2 (write)Icu_pCfgPtr/0 (read)Icu_CurrentMode/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Icu_ConvertChannelIndexToChannel/7 Icu_Ipw_Init/21 
+Icu_ConvertChannelIndexToChannel/7 (Icu_ConvertChannelIndexToChannel) @06000540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Icu_Init/8 
+  Calls: 
+Icu_CallNotification/6 (Icu_CallNotification) @060002a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)Icu_pCfgPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Icu_ReportEvents/19 
+  Calls: Icu_GetBitChState/4 
+   Indirect call
+Icu_ClearBitChState/5 (Icu_ClearBitChState) @06000000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Icu_aChannelState/2 (read)Icu_aChannelState/2 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Icu_LogicChStateCallback/20 Icu_DisableEdgeDetection/17 Icu_DisableEdgeCount/14 Icu_EnableEdgeCount/13 Icu_ResetEdgeCount/12 Icu_DisableNotification/10 Icu_SetActivationCondition/9 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01/24 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01/23 
+Icu_GetBitChState/4 (Icu_GetBitChState) @05ffab60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Icu_aChannelState/2 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Icu_CallNotification/6 Icu_ReportWakeupAndOverflow/18 
+  Calls: 
+Icu_SetBitChState/3 (Icu_SetBitChState) @05ffad20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Icu_aChannelState/2 (read)Icu_aChannelState/2 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Icu_LogicChStateCallback/20 Icu_ReportEvents/19 Icu_ReportWakeupAndOverflow/18 Icu_ReportWakeupAndOverflow/18 Icu_EnableEdgeDetection/16 Icu_EnableEdgeCount/13 Icu_EnableNotification/11 
+  Calls: SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00/28 SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00/27 
+Icu_aChannelState/2 (Icu_aChannelState) @05ff5f30
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Icu_Init/8 (write)Icu_ClearBitChState/5 (read)Icu_ClearBitChState/5 (write)Icu_SetBitChState/3 (read)Icu_SetBitChState/3 (write)Icu_GetBitChState/4 (read)
+  Availability: available
+  Varpool flags:
+Icu_CurrentMode/1 (Icu_CurrentMode) @05ff5ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Icu_Init/8 (write)Icu_ReportWakeupAndOverflow/18 (read)
+  Availability: available
+  Varpool flags:
+Icu_pCfgPtr/0 (Icu_pCfgPtr) @05ff5ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Icu_Init/8 (write)Icu_Init/8 (read)Icu_Init/8 (read)Icu_Init/8 (read)Icu_ConvertChannelIndexToChannel/7 (read)Icu_SetActivationCondition/9 (read)Icu_SetActivationCondition/9 (read)Icu_DisableNotification/10 (read)Icu_DisableNotification/10 (read)Icu_EnableNotification/11 (read)Icu_EnableNotification/11 (read)Icu_ResetEdgeCount/12 (read)Icu_ResetEdgeCount/12 (read)Icu_EnableEdgeCount/13 (read)Icu_EnableEdgeCount/13 (read)Icu_DisableEdgeCount/14 (read)Icu_DisableEdgeCount/14 (read)Icu_GetEdgeNumbers/15 (read)Icu_GetEdgeNumbers/15 (read)Icu_EnableEdgeDetection/16 (read)Icu_EnableEdgeDetection/16 (read)Icu_DisableEdgeDetection/17 (read)Icu_DisableEdgeDetection/17 (read)Icu_CallNotification/6 (read)Icu_CallNotification/6 (read)Icu_CallNotification/6 (read)
+  Availability: available
+  Varpool flags:
+Icu_LogicChStateCallback (uint16 logicChannel, uint8 mask, boolean set)
+{
+  <bb 2> :
+  if (set != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Icu_SetBitChState (logicChannel, mask);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Icu_ClearBitChState (logicChannel, mask);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Icu_ReportEvents (uint16 Channel, boolean bOverflow)
+{
+  uint32 u32CoreId;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_SetBitChState (Channel, 2);
+  Icu_ReportWakeupAndOverflow (Channel, bOverflow);
+  Icu_CallNotification (Channel, u32CoreId);
+  return;
+
+}
+
+
+Icu_ReportWakeupAndOverflow (uint16 Channel, boolean bOverflow)
+{
+  <bb 2> :
+  _1 = Icu_GetBitChState (Channel, 1);
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Icu_CurrentMode.2_2 = Icu_CurrentMode;
+  if (Icu_CurrentMode.2_2 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Icu_SetBitChState (Channel, 128);
+
+  <bb 5> :
+  if (bOverflow != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Icu_SetBitChState (Channel, 16);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Icu_DisableEdgeDetection (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableEdgeDetection (ChannelConfig);
+  Icu_ClearBitChState (Channel, 8);
+  return;
+
+}
+
+
+Icu_EnableEdgeDetection (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_SetBitChState (Channel, 8);
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableEdgeDetection (ChannelConfig);
+  return;
+
+}
+
+
+Icu_GetEdgeNumbers (Icu_ChannelType Channel)
+{
+  Icu_EdgeNumberType edgeNumbers;
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  Icu_EdgeNumberType D.7316;
+
+  <bb 2> :
+  u32CoreId = 0;
+  edgeNumbers = 0;
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  edgeNumbers = Icu_Ipw_GetEdgeNumbers (ChannelConfig);
+  D.7316 = edgeNumbers;
+
+  <bb 3> :
+<L0>:
+  return D.7316;
+
+}
+
+
+Icu_DisableEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableEdgeCount (ChannelConfig);
+  Icu_ClearBitChState (Channel, 8);
+  return;
+
+}
+
+
+Icu_EnableEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_ClearBitChState (Channel, 16);
+  Icu_SetBitChState (Channel, 8);
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableEdgeCount (ChannelConfig);
+  return;
+
+}
+
+
+Icu_ResetEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  ChannelConfig = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_ClearBitChState (Channel, 16);
+  Icu_Ipw_ResetEdgeCount (ChannelConfig);
+  return;
+
+}
+
+
+Icu_EnableNotification (Icu_ChannelType Channel)
+{
+  Icu_ChannelType ChannelIndex;
+  uint32 u32CoreId;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_SetBitChState (Channel, 4);
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableNotification (_8);
+  return;
+
+}
+
+
+Icu_DisableNotification (Icu_ChannelType Channel)
+{
+  Icu_ChannelType ChannelIndex;
+  uint32 u32CoreId;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_ClearBitChState (Channel, 4);
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableNotification (_8);
+  return;
+
+}
+
+
+Icu_SetActivationCondition (Icu_ChannelType Channel, Icu_ActivationType Activation)
+{
+  uint32 u32CoreId;
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_ClearBitChState (Channel, 2);
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_SetActivationCondition (Activation, _8);
+  return;
+
+}
+
+
+Icu_Init (const struct Icu_ConfigType * ConfigPtr)
+{
+  uint32 u32CoreId;
+  Icu_ChannelType ChannelIndex;
+  Icu_ChannelType Channel;
+
+  <bb 2> :
+  u32CoreId = 0;
+  Icu_pCfgPtr[u32CoreId] = ConfigPtr;
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->nNumInstances;
+  _3 = Icu_pCfgPtr[u32CoreId];
+  _4 = _3->Icu_IpConfigPtr;
+  Icu_Ipw_Init (_2, _4);
+  ChannelIndex = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  Channel = Icu_ConvertChannelIndexToChannel (ChannelIndex, u32CoreId);
+  if (Channel <= 5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = (int) Channel;
+  Icu_aChannelState[_5] = 0;
+
+  <bb 5> :
+  ChannelIndex.0_6 = ChannelIndex;
+  ChannelIndex = ChannelIndex.0_6 + 1;
+
+  <bb 6> :
+  _7 = Icu_pCfgPtr[u32CoreId];
+  _8 = _7->nNumChannels;
+  _9 = (short unsigned int) _8;
+  if (ChannelIndex < _9)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  Icu_CurrentMode = 0;
+  return;
+
+}
+
+
+Icu_ConvertChannelIndexToChannel (Icu_ChannelType ChannelIndex, uint32 u32CoreId)
+{
+  Icu_ChannelType Channel;
+  Icu_ChannelType D.7314;
+
+  <bb 2> :
+  Channel = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  _5 = (short unsigned int) _4;
+  if (ChannelIndex == _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  Channel.1_6 = Channel;
+  Channel = Channel.1_6 + 1;
+
+  <bb 6> :
+  if (Channel <= 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  D.7314 = Channel;
+
+  <bb 8> :
+<L5>:
+  return D.7314;
+
+}
+
+
+Icu_CallNotification (Icu_ChannelType Channel, uint32 u32CoreId)
+{
+  Icu_ChannelType ChannelIndex;
+
+  <bb 2> :
+  _1 = Icu_pCfgPtr[u32CoreId];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel;
+  _4 = *_2[_3];
+  ChannelIndex = (Icu_ChannelType) _4;
+  _5 = Icu_GetBitChState (Channel, 4);
+  if (_5 == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _6 = Icu_pCfgPtr[u32CoreId];
+  _7 = _6->Icu_ChannelConfigPtr;
+  _8 = (int) ChannelIndex;
+  _9 = *_7[_8].Icu_ChannelNotification;
+  if (_9 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _10 = Icu_pCfgPtr[u32CoreId];
+  _11 = _10->Icu_ChannelConfigPtr;
+  _12 = (int) ChannelIndex;
+  _13 = *_11[_12].Icu_ChannelNotification;
+  _13 ();
+
+  <bb 5> :
+  return;
+
+}
+
+
+Icu_ClearBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01 ();
+  _1 = (int) Channel;
+  _2 = Icu_aChannelState[_1];
+  _3 = ~mask;
+  _4 = (int) Channel;
+  _5 = _2 & _3;
+  Icu_aChannelState[_4] = _5;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01 ();
+  return;
+
+}
+
+
+Icu_GetBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  Icu_ChannelStateType D.7324;
+
+  <bb 2> :
+  _1 = (int) Channel;
+  _2 = Icu_aChannelState[_1];
+  D.7324 = mask & _2;
+
+  <bb 3> :
+<L0>:
+  return D.7324;
+
+}
+
+
+Icu_SetBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00 ();
+  _1 = (int) Channel;
+  _2 = Icu_aChannelState[_1];
+  _3 = (int) Channel;
+  _4 = mask | _2;
+  Icu_aChannelState[_3] = _4;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00 ();
+  return;
+
+}
+
+

@@ -1,0 +1,15 @@
+CTBPbit.c:45:6:CTBPbit_Init	16	static
+CTBPbit.c:112:6:CTBPbit_RunTests	16	static
+CTBPbit.c:152:6:CTBPbit_SetTimePeriod	8	static
+CTBPbit.c:169:6:ctbPbit_CheckFrqDSI	0	static
+CTBPbit.c:196:6:ctbPbit_StartTestDSI	16	static
+CTBPbit.c:236:6:ctbPbit_StopTestDSI	16	static
+CTBPbit.c:273:6:CTBPbit_ReadDSI	16	static
+CTBPbit.c:311:6:CTBPbit_Deinit	0	static
+CTBPbit.c:320:6:ctb_dsicpu1_callback	0	static
+CTBPbit.c:329:6:ctb_dsicpu2_callback	0	static
+CTBPbit.c:338:6:ctb_dsicpu3_callback	8	static
+CTBPbit.c:356:6:ctb_dsicpu4_callback	0	static
+CTBPbit.c:365:6:ctb_dsicpu5_callback	0	static
+CTBPbit.c:374:6:ctb_dsicpu6_callback	0	static
+CTBPbit.c:383:6:ctbPbit_DsiPbit2TimerCB	8	static

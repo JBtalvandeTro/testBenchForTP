@@ -1,0 +1,995 @@
+Trivially needed symbols: Gpt_Ipw_DisableInterrupt Gpt_Ipw_DeInit Gpt_Ipw_EnableInterrupt Gpt_Ipw_StopTimer Gpt_Ipw_GetTimeElapsed Gpt_Ipw_StartTimer Gpt_Ipw_Init Gpt_Ipw_InitInstances
+
+
+Initial Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0680c460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0680c1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06803e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068038c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06803380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06803d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06803a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @068038c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+
+
+Initial Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

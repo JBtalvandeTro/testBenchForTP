@@ -1,0 +1,208 @@
+ctbCbit_UnsetSpareDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  Dio_WriteChannel (121, 0);
+  return;
+
+}
+
+
+ctbCbit_SetSpareDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  Dio_WriteChannel (121, 1);
+  return;
+
+}
+
+
+ctbCbit_UnsetHealthDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  Dio_WriteChannel (120, 0);
+  return;
+
+}
+
+
+ctbCbit_SetHealthDSO ()
+{
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  Dio_WriteChannel (120, 1);
+  return;
+
+}
+
+
+ctbCbit_ReadSpareDSO ()
+{
+  boolean D.6300;
+
+  <bb 2> :
+  Port_SetPinMode (69, 1);
+  _1 = Dio_ReadChannel (121);
+  D.6300 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.6300;
+
+}
+
+
+ctbCbit_ReadHealthDSO ()
+{
+  boolean D.6298;
+
+  <bb 2> :
+  Port_SetPinMode (68, 1);
+  _1 = Dio_ReadChannel (120);
+  D.6298 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.6298;
+
+}
+
+
+CTBCbit_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CTBCbit_Runtests ()
+{
+  uint8_t pincmd;
+  uint8_t pinId;
+
+  <bb 2> :
+  pinId = COM_debugTestReq.discreteIoId;
+  pincmd = COM_debugTestReq.discreteIoCmd;
+  _1 = (int) pincmd;
+  switch (_1) <default: <L3> [INV], case 1: <L2> [INV], case 2: <L1> [INV], case 3: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  CTBCbit_ReadDSO (pinId);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  CTBCbit_UnsetDSO (pinId);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  CTBCbit_SetDSO (pinId);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+CTBCbit_ReadDSO (uint8_t pinId)
+{
+  <bb 2> :
+  _1 = (int) pinId;
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  _2 = ctbCbit_ReadHealthDSO ();
+  ctb_DSO_readResult = _2;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  _3 = ctbCbit_ReadSpareDSO ();
+  ctb_DSO_readResult = _3;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+CTBCbit_UnsetDSO (uint8_t pinId)
+{
+  <bb 2> :
+  _1 = (int) pinId;
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctbCbit_UnsetHealthDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctbCbit_UnsetSpareDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+CTBCbit_SetDSO (uint8_t pinId)
+{
+  <bb 2> :
+  _1 = (int) pinId;
+  switch (_1) <default: <L2> [INV], case 7: <L0> [INV], case 8: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctbCbit_SetHealthDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctbCbit_SetSpareDSO ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  return;
+
+}
+
+
+CTBCbit_Init ()
+{
+  <bb 2> :
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Dio_WriteChannel (122, 1);
+  Dio_WriteChannel (124, 1);
+  return;
+
+}
+
+

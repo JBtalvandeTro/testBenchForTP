@@ -1,0 +1,551 @@
+Cmp_Ip_SetInterruptActivation (uint8 instance, Cmp_Ip_OutputInterruptTriggerType Edge)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  Cmp_Ip_axState[_1].CmpInterruptEdge = Edge;
+  return;
+
+}
+
+
+Cmp_Ip_DisableInterrupt (uint8 instance)
+{
+  struct CMP_Type * base;
+
+  <bb 2> :
+  _1 = (int) instance;
+  base = 1074212864B;
+  _2 = base->C0;
+  _3 = _2 & 3892314111;
+  base->C0 = _3;
+  _4 = base->C2;
+  _5 = _4 & 3221225471;
+  base->C2 = _5;
+  return;
+
+}
+
+
+Cmp_Ip_EnableInterrupt (uint8 instance)
+{
+  struct CMP_Type * base;
+
+  <bb 2> :
+  _1 = (int) instance;
+  base = 1074212864B;
+  _2 = base->C0;
+  _3 = _2 | 100663296;
+  base->C0 = _3;
+  _4 = (int) instance;
+  _5 = Cmp_Ip_axState[_4].CmpInterruptEdge;
+  switch (_5) <default: <L4> [INV], case 0: <L3> [INV], case 1: <L1> [INV], case 2: <L0> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  _6 = base->C0;
+  _7 = _6 | 268435456;
+  base->C0 = _7;
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+<L1>:
+  _8 = base->C0;
+  _9 = _8 | 134217728;
+  base->C0 = _9;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  _10 = base->C0;
+  _11 = _10 | 402653184;
+  base->C0 = _11;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  _12 = base->C0;
+  base->C0 = _12;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+
+  <bb 8> :
+  _13 = (int) instance;
+  _14 = Cmp_Ip_axState[_13].EnRoundRobinInterrupt;
+  if (_14 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _15 = base->C2;
+  _16 = _15 | 16711680;
+  base->C2 = _16;
+  _17 = base->C2;
+  _18 = _17 | 1073741824;
+  base->C2 = _18;
+
+  <bb 10> :
+  return;
+
+}
+
+
+Cmp_Ip_DisableNotification (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  Cmp_Ip_axState[_1].NotificationEnabled = 0;
+  return;
+
+}
+
+
+Cmp_Ip_EnableNotification (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  Cmp_Ip_axState[_1].NotificationEnabled = 1;
+  return;
+
+}
+
+
+Cmp_Ip_Deinit (uint8 instance)
+{
+  Cmp_Ip_StatusType retStatus;
+  Cmp_Ip_StatusType D.6035;
+
+  <bb 2> :
+  retStatus = 0;
+  _1 = (int) instance;
+  _2 = Cmp_Ip_axState[_1].State;
+  if (_2 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = (int) instance;
+  Cmp_Ip_axState[_3].State = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus = 1;
+
+  <bb 5> :
+  D.6035 = retStatus;
+
+  <bb 6> :
+<L3>:
+  return D.6035;
+
+}
+
+
+Cmp_Ip_Init (uint8 instance, const struct Cmp_Ip_ConfigType * userConfig)
+{
+  Cmp_Ip_StatusType retStatus;
+  Cmp_Ip_StatusType D.5986;
+
+  <bb 2> :
+  retStatus = 0;
+  _1 = (int) instance;
+  _2 = Cmp_Ip_axState[_1].State;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Cmp_Ip_InitCmpC0 (instance, userConfig);
+  Cmp_Ip_InitCmpC1 (instance, userConfig);
+  Cmp_Ip_InitCmpC2 (instance, userConfig);
+  _3 = (int) instance;
+  _4 = userConfig->Comparator.OutputInterruptTrigger;
+  Cmp_Ip_axState[_3].CmpInterruptEdge = _4;
+  _5 = (int) instance;
+  _6 = userConfig->Trigger.EnableRoundRobinInterrupt;
+  Cmp_Ip_axState[_5].EnRoundRobinInterrupt = _6;
+  _7 = (int) instance;
+  Cmp_Ip_axState[_7].State = 1;
+  _8 = (int) instance;
+  _9 = userConfig->TriggerNotification;
+  Cmp_Ip_axState[_8].TriggerNotification = _9;
+  _10 = (int) instance;
+  _11 = userConfig->ComparatorNotification;
+  Cmp_Ip_axState[_10].ComparatorNotification = _11;
+  _12 = (int) instance;
+  _13 = userConfig->CallbackParam1;
+  Cmp_Ip_axState[_12].CallbackParam1 = _13;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus = 1;
+
+  <bb 5> :
+  D.5986 = retStatus;
+
+  <bb 6> :
+<L3>:
+  return D.5986;
+
+}
+
+
+Cmp_Ip_InitCmpC2 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C2;
+  struct CMP_Type * base;
+  long unsigned int iftmp.10;
+  long unsigned int iftmp.9;
+
+  <bb 2> :
+  _1 = (int) instance;
+  base = 1074212864B;
+  Cmp_C2 = 0;
+  _2 = userConfig->Trigger.EnableRoundRobinInterrupt;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.9 = 1073741824;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.9 = 0;
+
+  <bb 5> :
+  Cmp_C2 = iftmp.9 | Cmp_C2;
+  _3 = userConfig->Trigger.EnableRoundRobin;
+  if (_3 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.10 = 2147483648;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.10 = 0;
+
+  <bb 8> :
+  Cmp_C2 = iftmp.10 | Cmp_C2;
+  _4 = userConfig->Trigger.FixedPort;
+  _5 = _4 << 29;
+  _6 = _5 & 536870912;
+  Cmp_C2 = Cmp_C2 | _6;
+  _7 = userConfig->Trigger.FixedChannel;
+  _8 = _7 << 25;
+  _9 = _8 & 234881024;
+  Cmp_C2 = Cmp_C2 | _9;
+  _10 = userConfig->Trigger.SampleDelay;
+  _11 = _10 << 14;
+  _12 = _11 & 65535;
+  Cmp_C2 = Cmp_C2 | _12;
+  _13 = userConfig->Trigger.InitDelayValue;
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 8;
+  _16 = _15 & 16128;
+  Cmp_C2 = Cmp_C2 | _16;
+  _17 = userConfig->Trigger.RoundRobinEnChannelMask;
+  _18 = (long unsigned int) _17;
+  Cmp_C2 = Cmp_C2 | _18;
+  base->C2 = Cmp_C2;
+  return;
+
+}
+
+
+Cmp_Ip_InitCmpC1 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C1;
+  struct CMP_Type * base;
+  long unsigned int iftmp.8;
+  long unsigned int iftmp.7;
+  long unsigned int iftmp.6;
+  long unsigned int iftmp.5;
+  long unsigned int iftmp.4;
+
+  <bb 2> :
+  _1 = (int) instance;
+  base = 1074212864B;
+  Cmp_C1 = 0;
+  _2 = userConfig->Comparator.NegativeInputMux;
+  if (_2 != 128)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.4 = 16777216;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.4 = 0;
+
+  <bb 5> :
+  Cmp_C1 = iftmp.4 | Cmp_C1;
+  _3 = userConfig->Comparator.NegativeInputMux;
+  if (_3 != 128)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _4 = userConfig->Comparator.NegativeInputMux;
+  _5 = _4 << 8;
+  iftmp.5 = _5 & 1792;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.5 = 0;
+
+  <bb 8> :
+  Cmp_C1 = iftmp.5 | Cmp_C1;
+  _6 = userConfig->Comparator.PositiveInputMux;
+  if (_6 != 128)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.6 = 134217728;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.6 = 0;
+
+  <bb 11> :
+  Cmp_C1 = iftmp.6 | Cmp_C1;
+  _7 = userConfig->Comparator.PositiveInputMux;
+  if (_7 != 128)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _8 = userConfig->Comparator.PositiveInputMux;
+  _9 = _8 << 11;
+  iftmp.7 = _9 & 14336;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.7 = 0;
+
+  <bb 14> :
+  Cmp_C1 = iftmp.7 | Cmp_C1;
+  _10 = userConfig->Dac.PowerState;
+  if (_10 == 1)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.8 = 32768;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.8 = 0;
+
+  <bb 17> :
+  Cmp_C1 = iftmp.8 | Cmp_C1;
+  _11 = userConfig->Dac.VoltageRefSource;
+  _12 = _11 << 14;
+  _13 = _12 & 16384;
+  Cmp_C1 = Cmp_C1 | _13;
+  _14 = userConfig->Dac.VoltageLevel;
+  _15 = (long unsigned int) _14;
+  Cmp_C1 = Cmp_C1 | _15;
+  base->C1 = Cmp_C1;
+  return;
+
+}
+
+
+Cmp_Ip_InitCmpC0 (uint8 instance, const struct Cmp_Ip_ConfigType * const userConfig)
+{
+  uint32 Cmp_C0;
+  struct CMP_Type * base;
+  long unsigned int iftmp.3;
+  long unsigned int iftmp.2;
+  long unsigned int iftmp.1;
+  long unsigned int iftmp.0;
+
+  <bb 2> :
+  _1 = (int) instance;
+  base = 1074212864B;
+  Cmp_C0 = 0;
+  _2 = userConfig->Comparator.FunctionalMode;
+  switch (_2) <default: <L9> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L3> [INV], case 3: <L2> [INV], case 4: <L4> [INV], case 5: <L5> [INV], case 6: <L6> [INV], case 7: <L7> [INV], case 8: <L8> [INV]>
+
+  <bb 3> :
+<L0>:
+  Cmp_C0 = Cmp_C0;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+<L1>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0;
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+<L2>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0 | 32768;
+  Cmp_C0 = Cmp_C0 | 16;
+  goto <bb 13>; [INV]
+
+  <bb 6> :
+<L3>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0 | 16;
+  _3 = userConfig->Comparator.FilterSamplePeriod;
+  _4 = (long unsigned int) _3;
+  _5 = _4 << 16;
+  _6 = _5 & 16711680;
+  Cmp_C0 = Cmp_C0 | _6;
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0 | 32768;
+  Cmp_C0 = Cmp_C0 | 32;
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+<L5>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0 | 32;
+  _7 = userConfig->Comparator.FilterSamplePeriod;
+  _8 = (long unsigned int) _7;
+  _9 = _8 << 16;
+  _10 = _9 & 16711680;
+  Cmp_C0 = Cmp_C0 | _10;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+<L6>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0 | 16384;
+  Cmp_C0 = Cmp_C0;
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+<L7>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0 | 16384;
+  Cmp_C0 = Cmp_C0;
+  _11 = userConfig->Comparator.FilterSamplePeriod;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 16;
+  _14 = _13 & 16711680;
+  Cmp_C0 = Cmp_C0 | _14;
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+<L8>:
+  Cmp_C0 = Cmp_C0 | 256;
+  Cmp_C0 = Cmp_C0 | 16384;
+  Cmp_C0 = Cmp_C0;
+  Cmp_C0 = Cmp_C0 | 32;
+  _15 = userConfig->Comparator.FilterSamplePeriod;
+  _16 = (long unsigned int) _15;
+  _17 = _16 << 16;
+  _18 = _17 & 16711680;
+  Cmp_C0 = Cmp_C0 | _18;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  _19 = userConfig->Comparator.HysteresisLevel;
+  _20 = _19 & 3;
+  Cmp_C0 = Cmp_C0 | _20;
+  _21 = userConfig->Comparator.OffsetLevel;
+  _22 = _21 << 2;
+  _23 = _22 & 4;
+  Cmp_C0 = Cmp_C0 | _23;
+  _24 = userConfig->Comparator.EnablePinOutput;
+  if (_24 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.0 = 512;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.0 = 0;
+
+  <bb 16> :
+  Cmp_C0 = iftmp.0 | Cmp_C0;
+  _25 = userConfig->Comparator.EnableInverter;
+  if (_25 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.1 = 2048;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  iftmp.1 = 0;
+
+  <bb 19> :
+  Cmp_C0 = iftmp.1 | Cmp_C0;
+  _26 = userConfig->Comparator.EnableHighPowerMode;
+  if (_26 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.2 = 4096;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  iftmp.2 = 0;
+
+  <bb 22> :
+  Cmp_C0 = iftmp.2 | Cmp_C0;
+  _27 = userConfig->Comparator.EnableDma;
+  if (_27 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  iftmp.3 = 1073741824;
+  goto <bb 25>; [INV]
+
+  <bb 24> :
+  iftmp.3 = 0;
+
+  <bb 25> :
+  Cmp_C0 = iftmp.3 | Cmp_C0;
+  _28 = userConfig->Comparator.OutputSelect;
+  _29 = _28 << 10;
+  _30 = _29 & 1024;
+  Cmp_C0 = Cmp_C0 | _30;
+  base->C0 = Cmp_C0;
+  return;
+
+}
+
+

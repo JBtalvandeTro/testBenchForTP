@@ -1,0 +1,1531 @@
+Trivially needed symbols: Wdg_ChannelService Wdg_ChannelGetVersionInfo Wdg_ChannelSetMode Wdg_ChannelInit Wdg_aePreviousMode Wdg_aeStatus Wdg_apConfigPtr
+
+
+Initial Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ValidatePtrVersion/6 Wdg_VadidateDoChannelSetMode/11 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067ecc40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067ec9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067ec700
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067ec9a0
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067ec1c0
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067e42a0
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067e40e0
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067e4d20
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067ecc40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067e4a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067ec700
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067e4540
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067ec460
+  References: 
+  Referring: Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateDoChannelSetMode/11 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067b96c0
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067b95a0
+  References: 
+  Referring: Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ValidatePtrVersion/6 Wdg_VadidateDoChannelSetMode/11 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateDoChannelSetMode/11 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ValidatePtrVersion/6 Wdg_VadidateDoChannelSetMode/11 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateDoChannelSetMode/11 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ValidatePtrVersion/6 Wdg_VadidateDoChannelSetMode/11 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateDoChannelSetMode/11 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 Wdg_ValidatePtrVersion/6 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_VadidateDoChannelSetMode/11 (write)Wdg_DoChannelSetMode/10 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)
+  Availability: available
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: available
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_InitialHardware/8 (read)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdg_aePreviousMode Wdg_aeStatus Wdg_apConfigPtr
+Removing variables:
+
+Final Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067b96c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067b95a0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

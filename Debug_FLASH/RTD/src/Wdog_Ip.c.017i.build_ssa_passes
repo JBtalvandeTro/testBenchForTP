@@ -1,0 +1,1000 @@
+Wdog_Ip_IrqHandler (uint8 Instance)
+{
+  struct WDOG_Type * Base;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  _3 = Wdog_Ip_GetIntFlag (Base);
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Wdog_Ip_ClearIntFlag (Base);
+  _4 = (int) Instance;
+  _5 = Wdog_Ip_apCallbackPtr[_4];
+  if (_5 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _6 = Wdog_Ip_IsIntEnabled (Base);
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = (int) Instance;
+  _8 = Wdog_Ip_apCallbackPtr[_7];
+  _8 ();
+
+  <bb 6> :
+  return;
+
+}
+
+
+Wdog_Ip_StopTimer (const uint8 Instance)
+{
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5936;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  Status = 0;
+  _3 = Wdog_Ip_IsEnabled (Base);
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  _4 = Wdog_Ip_IsUpdateEnabled (Base);
+  if (_4 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  __asm__ __volatile__(" cpsid i");
+  _5 = Wdog_Ip_Unlock (Base);
+  if (_5 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = Base->CS;
+  _7 = _6 & 4294967167;
+  Base->CS = _7;
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Status = 2;
+
+  <bb 7> :
+  __asm__ __volatile__(" cpsie i");
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Status = 1;
+
+  <bb 9> :
+  D.5936 = Status;
+
+  <bb 10> :
+<L8>:
+  return D.5936;
+
+}
+
+
+Wdog_Ip_StartTimer (const uint8 Instance)
+{
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5926;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  Status = 0;
+  _3 = Wdog_Ip_IsEnabled (Base);
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  _5 = Wdog_Ip_IsUpdateEnabled (Base);
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  __asm__ __volatile__(" cpsid i");
+  _6 = Wdog_Ip_Unlock (Base);
+  if (_6 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = Base->CS;
+  _8 = _7 | 128;
+  Base->CS = _8;
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Status = 2;
+
+  <bb 7> :
+  __asm__ __volatile__(" cpsie i");
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Status = 1;
+
+  <bb 9> :
+  D.5926 = Status;
+
+  <bb 10> :
+<L8>:
+  return D.5926;
+
+}
+
+
+Wdog_Ip_Config (const uint8 Instance, const struct Wdog_Ip_ConfigType * const ConfigPtr)
+{
+  boolean UpdateEnabled;
+  boolean WdogEnabled;
+  uint32 TempCs;
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5915;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = ConfigPtr != 0B;
+  DevAssert (_2);
+  _3 = (int) Instance;
+  Base = 1074077696B;
+  Status = 0;
+  TempCs = 0;
+  WdogEnabled = Wdog_Ip_IsEnabled (Base);
+  UpdateEnabled = Wdog_Ip_IsUpdateEnabled (Base);
+  _4 = ~UpdateEnabled;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (WdogEnabled != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = Base->CS;
+  _6 = _5 & 4294967167;
+  Base->CS = _6;
+
+  <bb 6> :
+  Status = Wdog_Ip_HwConfig (ConfigPtr, &TempCs);
+
+  <bb 7> :
+  if (Status == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 8> :
+  if (WdogEnabled != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  TempCs.14_7 = TempCs;
+  _8 = TempCs.14_7 | 8320;
+  TempCs = _8;
+
+  <bb 10> :
+  __asm__ __volatile__(" cpsid i");
+  _9 = Wdog_Ip_Unlock (Base);
+  if (_9 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 11> :
+  _10 = ConfigPtr->TimeoutValue;
+  _11 = (long unsigned int) _10;
+  Base->TOVAL = _11;
+  _12 = ConfigPtr->WinEnable;
+  if (_12 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  TempCs.15_13 = TempCs;
+  _14 = TempCs.15_13 | 32768;
+  TempCs = _14;
+  _15 = ConfigPtr->WindowValue;
+  _16 = (long unsigned int) _15;
+  Base->WIN = _16;
+
+  <bb 13> :
+  TempCs.16_17 = TempCs;
+  Base->CS = TempCs.16_17;
+  _18 = ConfigPtr->IntEnable;
+  if (_18 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _19 = (int) Instance;
+  _20 = ConfigPtr->pfWdogCallback;
+  Wdog_Ip_apCallbackPtr[_19] = _20;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  _21 = (int) Instance;
+  Wdog_Ip_apCallbackPtr[_21] = 0B;
+
+  <bb 16> :
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  Status = 2;
+
+  <bb 18> :
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 19> :
+  D.5915 = Status;
+  TempCs = {CLOBBER};
+
+  <bb 20> :
+<L18>:
+  return D.5915;
+
+}
+
+
+Wdog_Ip_SetTimeout (const uint8 Instance, uint16 Timeout, uint16 WindowValue)
+{
+  boolean windowEnable;
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5896;
+  long unsigned int iftmp.13;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  Status = 0;
+  windowEnable = WindowValue != 0;
+  _3 = Wdog_Ip_IsUpdateEnabled (Base);
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  __asm__ __volatile__(" cpsid i");
+  _4 = Wdog_Ip_Unlock (Base);
+  if (_4 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  _5 = (long unsigned int) Timeout;
+  Base->TOVAL = _5;
+  if (windowEnable != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = (long unsigned int) WindowValue;
+  Base->WIN = _6;
+
+  <bb 6> :
+  _7 = Base->CS;
+  _8 = _7 & 4294934527;
+  if (windowEnable != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.13 = 32768;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.13 = 0;
+
+  <bb 9> :
+  _9 = iftmp.13 | _8;
+  Base->CS = _9;
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  Status = 2;
+
+  <bb 11> :
+  __asm__ __volatile__(" cpsie i");
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  Status = 1;
+
+  <bb 13> :
+  D.5896 = Status;
+
+  <bb 14> :
+<L11>:
+  return D.5896;
+
+}
+
+
+Wdog_Ip_Service (const uint8 Instance)
+{
+  struct WDOG_Type * Base;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  Wdog_Ip_Trigger (Base);
+  return;
+
+}
+
+
+Wdog_Ip_DeInit (const uint8 Instance)
+{
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5882;
+
+  <bb 2> :
+  _1 = Instance == 0;
+  DevAssert (_1);
+  _2 = (int) Instance;
+  Base = 1074077696B;
+  Status = 0;
+  _3 = Wdog_Ip_IsUpdateEnabled (Base);
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  __asm__ __volatile__(" cpsid i");
+  _4 = Wdog_Ip_Unlock (Base);
+  if (_4 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdog_Ip_HwDeInit (Base);
+  _5 = (int) Instance;
+  Wdog_Ip_apCallbackPtr[_5] = 0B;
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Status = 2;
+
+  <bb 6> :
+  __asm__ __volatile__(" cpsie i");
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  Status = 1;
+
+  <bb 8> :
+  D.5882 = Status;
+
+  <bb 9> :
+<L6>:
+  return D.5882;
+
+}
+
+
+Wdog_Ip_Init (const uint8 Instance, const struct Wdog_Ip_ConfigType * const ConfigPtr)
+{
+  uint32 TempCs;
+  Wdog_Ip_StatusType Status;
+  struct WDOG_Type * Base;
+  Wdog_Ip_StatusType D.5866;
+
+  <bb 2> :
+  _1 = (int) Instance;
+  Base = 1074077696B;
+  _2 = Instance == 0;
+  DevAssert (_2);
+  _3 = ConfigPtr != 0B;
+  DevAssert (_3);
+  _4 = Wdog_Ip_IsEnabled (Base);
+  _5 = (int) _4;
+  _6 = _5 != 0;
+  _7 = ~_6;
+  _8 = (int) _7;
+  _9 = (_Bool) _8;
+  DevAssert (_9);
+  Status = 0;
+  TempCs = 0;
+  _10 = Wdog_Ip_IsUpdateEnabled (Base);
+  _11 = ~_10;
+  if (_11 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Status = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Status = Wdog_Ip_HwConfig (ConfigPtr, &TempCs);
+
+  <bb 5> :
+  if (Status == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 6> :
+  TempCs.9_12 = TempCs;
+  _13 = TempCs.9_12 | 8320;
+  TempCs = _13;
+  __asm__ __volatile__(" cpsid i");
+  _14 = Wdog_Ip_Unlock (Base);
+  if (_14 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 7> :
+  _15 = ConfigPtr->TimeoutValue;
+  _16 = (long unsigned int) _15;
+  Base->TOVAL = _16;
+  _17 = ConfigPtr->WinEnable;
+  if (_17 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  TempCs.10_18 = TempCs;
+  _19 = TempCs.10_18 | 32768;
+  TempCs = _19;
+  _20 = ConfigPtr->WindowValue;
+  _21 = (long unsigned int) _20;
+  Base->WIN = _21;
+
+  <bb 9> :
+  TempCs.11_22 = TempCs;
+  Base->CS = TempCs.11_22;
+  _23 = ConfigPtr->IntEnable;
+  if (_23 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _24 = (int) Instance;
+  _25 = ConfigPtr->pfWdogCallback;
+  Wdog_Ip_apCallbackPtr[_24] = _25;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  _26 = (int) Instance;
+  Wdog_Ip_apCallbackPtr[_26] = 0B;
+
+  <bb 12> :
+  Status = Wdog_Ip_IsReconfigurationComplete (Base);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  Status = 2;
+
+  <bb 14> :
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 15> :
+  D.5866 = Status;
+  TempCs = {CLOBBER};
+
+  <bb 16> :
+<L14>:
+  return D.5866;
+
+}
+
+
+Wdog_Ip_HwConfig (const struct Wdog_Ip_ConfigType * ConfigPtr, uint32 * ValueU32Cs)
+{
+  Wdog_Ip_StatusType Status;
+  Wdog_Ip_StatusType D.5851;
+  long unsigned int iftmp.8;
+  long unsigned int iftmp.7;
+  long unsigned int iftmp.6;
+  long unsigned int iftmp.5;
+  long unsigned int iftmp.4;
+  long unsigned int iftmp.3;
+
+  <bb 2> :
+  Status = 0;
+  _1 = ConfigPtr->WinEnable;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ConfigPtr->WindowValue;
+  _3 = ConfigPtr->TimeoutValue;
+  if (_2 >= _3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _4 = ConfigPtr->TimeoutValue;
+  if (_4 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Status = 1;
+  goto <bb 25>; [INV]
+
+  <bb 6> :
+  _5 = *ValueU32Cs;
+  _6 = _5 & 4294929560;
+  *ValueU32Cs = _6;
+  _7 = *ValueU32Cs;
+  _8 = ConfigPtr->clkSource;
+  _9 = _8 << 8;
+  _10 = _9 & 768;
+  _11 = _7 | _10;
+  *ValueU32Cs = _11;
+  _12 = *ValueU32Cs;
+  _13 = ConfigPtr->PrescalerEnable;
+  if (_13 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.3 = 4096;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.3 = 0;
+
+  <bb 9> :
+  _14 = iftmp.3 | _12;
+  *ValueU32Cs = _14;
+  _15 = *ValueU32Cs;
+  _16 = ConfigPtr->IntEnable;
+  if (_16 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.4 = 64;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  iftmp.4 = 0;
+
+  <bb 12> :
+  _17 = iftmp.4 | _15;
+  *ValueU32Cs = _17;
+  _18 = *ValueU32Cs;
+  _19 = ConfigPtr->UpdateEnable;
+  if (_19 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.5 = 32;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  iftmp.5 = 0;
+
+  <bb 15> :
+  _20 = iftmp.5 | _18;
+  *ValueU32Cs = _20;
+  _21 = *ValueU32Cs;
+  _22 = ConfigPtr->opMode.bDebug;
+  if (_22 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.6 = 4;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  iftmp.6 = 0;
+
+  <bb 18> :
+  _23 = iftmp.6 | _21;
+  *ValueU32Cs = _23;
+  _24 = *ValueU32Cs;
+  _25 = ConfigPtr->opMode.bWait;
+  if (_25 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  iftmp.7 = 2;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  iftmp.7 = 0;
+
+  <bb 21> :
+  _26 = iftmp.7 | _24;
+  *ValueU32Cs = _26;
+  _27 = *ValueU32Cs;
+  _28 = ConfigPtr->opMode.bStop;
+  if (_28 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  iftmp.8 = 1;
+  goto <bb 24>; [INV]
+
+  <bb 23> :
+  iftmp.8 = 0;
+
+  <bb 24> :
+  _29 = iftmp.8 | _27;
+  *ValueU32Cs = _29;
+  _30 = *ValueU32Cs;
+  _31 = _30 | 16384;
+  *ValueU32Cs = _31;
+
+  <bb 25> :
+  D.5851 = Status;
+
+  <bb 26> :
+<L23>:
+  return D.5851;
+
+}
+
+
+Wdog_Ip_HwDeInit (struct WDOG_Type * const Base)
+{
+  <bb 2> :
+  Base->CS = 10528;
+  Base->TOVAL = 1024;
+  Base->WIN = 0;
+  Wdog_Ip_Trigger (Base);
+  return;
+
+}
+
+
+Wdog_Ip_IsReconfigurationComplete (const struct WDOG_Type * Base)
+{
+  uint32 ElapsedTicks;
+  uint32 CurrentTicks;
+  uint32 TimeoutTicks;
+  Wdog_Ip_StatusType Status;
+  Wdog_Ip_StatusType D.5815;
+  long unsigned int D.5811;
+
+  <bb 2> :
+  Status = 0;
+  TimeoutTicks = OsIf_MicrosToTicks (3000, 0);
+  _1 = OsIf_GetCounter (0);
+  CurrentTicks = _1;
+  ElapsedTicks = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5811 = OsIf_GetElapsed (&CurrentTicks, 0);
+  ElapsedTicks = D.5811 + ElapsedTicks;
+
+  <bb 4> :
+  _2 = Base->CS;
+  _3 = _2 & 1024;
+  if (_3 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (ElapsedTicks < TimeoutTicks)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (ElapsedTicks >= TimeoutTicks)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Status = 2;
+
+  <bb 8> :
+  D.5815 = Status;
+  CurrentTicks = {CLOBBER};
+
+  <bb 9> :
+<L7>:
+  return D.5815;
+
+}
+
+
+Wdog_Ip_IsUpdateEnabled (const struct WDOG_Type * Base)
+{
+  boolean D.5874;
+
+  <bb 2> :
+  _1 = Base->CS;
+  _2 = _1 & 32;
+  D.5874 = _2 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.5874;
+
+}
+
+
+Wdog_Ip_ClearIntFlag (struct WDOG_Type * const Base)
+{
+  <bb 2> :
+  _1 = Wdog_Ip_Unlock (Base);
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = Base->CS;
+  _3 = _2 | 16384;
+  Base->CS = _3;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Wdog_Ip_Unlock (struct WDOG_Type * const Base)
+{
+  uint32 ElapsedTicks;
+  uint32 CurrentTicks;
+  uint32 TimeoutTicks;
+  Wdog_Ip_StatusType Status;
+  Wdog_Ip_StatusType D.5803;
+  long unsigned int D.5799;
+
+  <bb 2> :
+  Status = 0;
+  TimeoutTicks = OsIf_MicrosToTicks (3000, 0);
+  _1 = OsIf_GetCounter (0);
+  CurrentTicks = _1;
+  ElapsedTicks = 0;
+  Wdog_Ip_UnlockCmd (Base);
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  D.5799 = OsIf_GetElapsed (&CurrentTicks, 0);
+  ElapsedTicks = D.5799 + ElapsedTicks;
+
+  <bb 4> :
+  _2 = Base->CS;
+  _3 = _2 & 2048;
+  if (_3 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  if (ElapsedTicks < TimeoutTicks)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (ElapsedTicks >= TimeoutTicks)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Status = 2;
+
+  <bb 8> :
+  D.5803 = Status;
+  CurrentTicks = {CLOBBER};
+
+  <bb 9> :
+<L7>:
+  return D.5803;
+
+}
+
+
+Wdog_Ip_UnlockCmd (struct WDOG_Type * const Base)
+{
+  long unsigned int vol.1;
+  long unsigned int vol.0;
+
+  <bb 2> :
+  _1 = Base->CS;
+  _2 = _1 & 8192;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Base->CNT = 3643327776;
+  vol.0 = Base->CNT;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Base->CNT = 50464;
+  vol.1 = Base->CNT;
+  Base->CNT = 55592;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Wdog_Ip_IsIntEnabled (const struct WDOG_Type * const Base)
+{
+  boolean D.5948;
+
+  <bb 2> :
+  _1 = Base->CS;
+  _2 = _1 & 64;
+  D.5948 = _2 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.5948;
+
+}
+
+
+Wdog_Ip_GetIntFlag (const struct WDOG_Type * const Base)
+{
+  boolean D.5944;
+
+  <bb 2> :
+  _1 = Base->CS;
+  _2 = _1 & 16384;
+  D.5944 = _2 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.5944;
+
+}
+
+
+Wdog_Ip_Trigger (struct WDOG_Type * const Base)
+{
+  long unsigned int vol.2;
+
+  <bb 2> :
+  __asm__ __volatile__(" cpsid i");
+  _1 = Base->CS;
+  _2 = _1 & 8192;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Base->CNT = 3028329986;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Base->CNT = 42498;
+  vol.2 = Base->CNT;
+  Base->CNT = 46208;
+
+  <bb 5> :
+  __asm__ __volatile__(" cpsie i");
+  return;
+
+}
+
+
+Wdog_Ip_IsEnabled (const struct WDOG_Type * Base)
+{
+  boolean D.5869;
+
+  <bb 2> :
+  _1 = Base->CS;
+  _2 = _1 & 128;
+  D.5869 = _2 != 0;
+
+  <bb 3> :
+<L0>:
+  return D.5869;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  x.12_1 = x;
+  if (x.12_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  __asm__ __volatile__("BKPT #0");
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+

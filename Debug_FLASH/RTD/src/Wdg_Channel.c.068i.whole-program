@@ -1,0 +1,888 @@
+
+Marking local functions: Wdg_VadidateDoChannelSetMode Wdg_DoChannelSetMode Wdg_VadidateHardwareSetting Wdg_InitialHardware Wdg_ChannelValidateMode Wdg_ValidatePtrVersion Wdg_ValidatePtrInit Wdg_ChannelEndValidateGlobalCall Wdg_ChannelValidateGlobalCall
+
+
+Marking externally visible functions: Wdg_ChannelService Wdg_ChannelGetVersionInfo Wdg_ChannelSetMode Wdg_ChannelInit
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @06b96540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelService/15 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06b961c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @06b960e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 
+  Calls: 
+Wdg_Ipw_StartTimer/26 (Wdg_Ipw_StartTimer) @067f6ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+Wdg_Ipw_StopTimer/25 (Wdg_Ipw_StopTimer) @067f6e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @067f6b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @067f69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelEndValidateGlobalCall/4 
+  Calls: 
+Wdg_Ipw_Init/22 (Wdg_Ipw_Init) @067f6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_InitialHardware/8 
+  Calls: 
+Wdg_Ipw_SetMode/21 (Wdg_Ipw_SetMode) @067f6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_DoChannelSetMode/10 Wdg_InitialHardware/8 
+  Calls: 
+Det_ReportError/20 (Det_ReportError) @067f62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_VadidateDoChannelSetMode/11 Wdg_ValidatePtrVersion/6 Wdg_VadidateHardwareSetting/9 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @067f61c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @067f60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelValidateGlobalCall/3 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @067eca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @067ec7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Wdg_ChannelInit/12 
+  Calls: 
+Wdg_ChannelService/15 (Wdg_ChannelService) @067ecc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_Ipw_Service/29 
+Wdg_ChannelGetVersionInfo/14 (Wdg_ChannelGetVersionInfo) @067ec9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/6 
+Wdg_ChannelSetMode/13 (Wdg_ChannelSetMode) @067ec700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 Wdg_VadidateDoChannelSetMode/11 Wdg_DoChannelSetMode/10 Wdg_ChannelValidateMode/7 Wdg_ChannelValidateGlobalCall/3 
+Wdg_ChannelInit/12 (Wdg_ChannelInit) @067ec460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Wdg_apConfigPtr/0 (write)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/4 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/17 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/16 Wdg_VadidateHardwareSetting/9 Wdg_InitialHardware/8 Wdg_ChannelValidateMode/7 Wdg_ValidatePtrInit/5 Wdg_ChannelValidateGlobalCall/3 
+Wdg_VadidateDoChannelSetMode/11 (Wdg_VadidateDoChannelSetMode) @067ec1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aePreviousMode/2 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/28 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/27 Det_ReportError/20 
+Wdg_DoChannelSetMode/10 (Wdg_DoChannelSetMode) @067e48c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)Wdg_aePreviousMode/2 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 
+  Calls: Wdg_Ipw_SetMode/21 Wdg_Ipw_StartTimer/26 Wdg_Ipw_SetMode/21 Wdg_Ipw_SetMode/21 Wdg_Ipw_StopTimer/25 
+Wdg_VadidateHardwareSetting/9 (Wdg_VadidateHardwareSetting) @067e40e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_InitialHardware/8 (Wdg_InitialHardware) @067e4d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Wdg_Ipw_Init/22 Wdg_Ipw_SetMode/21 
+Wdg_ChannelValidateMode/7 (Wdg_ChannelValidateMode) @067e4a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_apConfigPtr/0 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrVersion/6 (Wdg_ValidatePtrVersion) @067e47e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelGetVersionInfo/14 
+  Calls: Det_ReportError/20 
+Wdg_ValidatePtrInit/5 (Wdg_ValidatePtrInit) @067e4540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelInit/12 
+  Calls: Det_ReportError/20 Det_ReportError/20 
+Wdg_ChannelEndValidateGlobalCall/4 (Wdg_ChannelEndValidateGlobalCall) @067e42a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_apConfigPtr/0 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/24 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/23 
+Wdg_ChannelValidateGlobalCall/3 (Wdg_ChannelValidateGlobalCall) @067e4000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (read)Wdg_aeStatus/1 (write)Wdg_aeStatus/1 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Wdg_ChannelSetMode/13 Wdg_ChannelInit/12 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 Det_ReportError/20 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/19 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/18 
+Wdg_aePreviousMode/2 (Wdg_aePreviousMode) @067b96c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_VadidateDoChannelSetMode/11 (write)Wdg_DoChannelSetMode/10 (read)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (write)
+  Availability: available
+  Varpool flags: initialized
+Wdg_aeStatus/1 (Wdg_aeStatus) @067b95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (read)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelValidateGlobalCall/3 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)Wdg_ChannelEndValidateGlobalCall/4 (write)
+  Availability: available
+  Varpool flags: initialized
+Wdg_apConfigPtr/0 (Wdg_apConfigPtr) @067b9510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_ChannelEndValidateGlobalCall/4 (read)Wdg_InitialHardware/8 (read)Wdg_DoChannelSetMode/10 (read)Wdg_VadidateHardwareSetting/9 (write)Wdg_DoChannelSetMode/10 (read)Wdg_DoChannelSetMode/10 (read)Wdg_ChannelValidateMode/7 (read)Wdg_InitialHardware/8 (read)Wdg_InitialHardware/8 (read)Wdg_ChannelInit/12 (write)Wdg_ChannelInit/12 (read)Wdg_ChannelInit/12 (read)
+  Availability: available
+  Varpool flags:
+Wdg_ChannelService (const Wdg_Ipw_InstanceType Instance)
+{
+  <bb 2> :
+  Wdg_Ipw_Service (Instance_2(D));
+  return;
+
+}
+
+
+Wdg_ChannelGetVersionInfo (const Wdg_Ipw_InstanceType Instance, struct Std_VersionInfoType * VersionInfo)
+{
+  Std_ReturnType Valid;
+
+  <bb 2> :
+  Valid_2 = 1;
+  Valid_7 = Wdg_ValidatePtrVersion (VersionInfo_4(D), Instance_5(D));
+  if (Valid_7 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  VersionInfo_4(D)->vendorID = 43;
+  VersionInfo_4(D)->moduleID = 102;
+  VersionInfo_4(D)->sw_major_version = 1;
+  VersionInfo_4(D)->sw_minor_version = 0;
+  VersionInfo_4(D)->sw_patch_version = 1;
+
+  <bb 4> :
+  return;
+
+}
+
+
+Wdg_ChannelSetMode (const Wdg_Ipw_InstanceType Instance, WdgIf_ModeType Mode)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5947;
+  Std_ReturnType _18;
+
+  <bb 2> :
+  Ret_4 = 1;
+  Valid_5 = 1;
+  Valid_9 = Wdg_ChannelValidateGlobalCall (1, Instance_7(D));
+  if (Valid_9 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Valid_12 = Wdg_ChannelValidateMode (Mode_10(D), 1, 17, Instance_7(D));
+  if (Valid_12 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Valid_14 = Wdg_DoChannelSetMode (Instance_7(D), Mode_10(D));
+  Ret_16 = Wdg_VadidateDoChannelSetMode (Instance_7(D), Mode_10(D), Valid_14);
+
+  <bb 5> :
+  # Ret_1 = PHI <Ret_4(2), Ret_4(3), Ret_16(4)>
+  # Valid_2 = PHI <Valid_9(2), Valid_12(3), Valid_14(4)>
+  Wdg_ChannelEndValidateGlobalCall (Valid_2, Instance_7(D));
+  _18 = Ret_1;
+
+  <bb 6> :
+<L4>:
+  return _18;
+
+}
+
+
+Wdg_ChannelInit (const Wdg_Ipw_InstanceType Instance, const struct Wdg_ConfigType * ConfigPtr)
+{
+  Std_ReturnType Valid;
+  <unnamed type> _1;
+  const struct Wdg_ConfigType * _2;
+  <unnamed type> _3;
+  const struct Wdg_ConfigType * _4;
+  <unnamed type> _5;
+
+  <bb 2> :
+  Valid_10 = 1;
+  Valid_14 = Wdg_ChannelValidateGlobalCall (0, Instance_12(D));
+  if (Valid_14 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  Valid_17 = Wdg_ValidatePtrInit (ConfigPtr_15(D), Instance_12(D));
+  if (Valid_17 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 4> :
+  Wdg_apConfigPtr[Instance_12(D)] = ConfigPtr_15(D);
+  _1 = Wdg_aePreviousMode[Instance_12(D)];
+  if (_1 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = Wdg_apConfigPtr[Instance_12(D)];
+  _3 = _2->Wdg_DefaultMode;
+  Valid_21 = Wdg_ChannelValidateMode (_3, 0, 17, Instance_12(D));
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Valid_19 = 1;
+
+  <bb 7> :
+  # Valid_6 = PHI <Valid_21(5), Valid_19(6)>
+  Valid_23 = Wdg_InitialHardware (Instance_12(D), Valid_6);
+  Valid_25 = Wdg_VadidateHardwareSetting (Instance_12(D), Valid_23);
+  if (Valid_25 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+  _4 = Wdg_apConfigPtr[Instance_12(D)];
+  _5 = _4->Wdg_DefaultMode;
+  Wdg_aePreviousMode[Instance_12(D)] = _5;
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+
+  <bb 9> :
+  # Valid_7 = PHI <Valid_14(2), Valid_17(3), Valid_25(7), Valid_25(8)>
+  Wdg_ChannelEndValidateGlobalCall (Valid_7, Instance_12(D));
+  return;
+
+}
+
+
+Wdg_VadidateDoChannelSetMode (const Wdg_Ipw_InstanceType Instance, const WdgIf_ModeType Mode, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5966;
+  unsigned char _1;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  Valid_5 = Status_4(D);
+  if (Valid_5 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_9(D);
+  Det_ReportError (102, _1, 1, 17);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Valid_6 = 0;
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+  Wdg_aePreviousMode[Instance_9(D)] = Mode_10(D);
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+
+  <bb 5> :
+  # Valid_2 = PHI <Valid_5(3), Valid_6(4)>
+  _14 = Valid_2;
+
+  <bb 6> :
+<L3>:
+  return _14;
+
+}
+
+
+Wdg_DoChannelSetMode (const Wdg_Ipw_InstanceType Instance, const WdgIf_ModeType Mode)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5961;
+  unsigned char _1;
+  const struct Wdg_ConfigType * _2;
+  const struct Wdg_ModeType * _3;
+  const struct Wdg_Ipw_ConfigType * _4;
+  <unnamed type> _5;
+  const struct Wdg_ConfigType * _6;
+  const struct Wdg_ModeType * _7;
+  const struct Wdg_Ipw_ConfigType * _8;
+  unsigned char _9;
+  const struct Wdg_ConfigType * _10;
+  const struct Wdg_ModeType * _11;
+  const struct Wdg_Ipw_ConfigType * _12;
+  Std_ReturnType _29;
+
+  <bb 2> :
+  Valid_15 = 0;
+  if (Mode_16(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Wdg_Ipw_StopTimer (Instance_18(D));
+  if (_1 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _2 = Wdg_apConfigPtr[Instance_18(D)];
+  _3 = _2->Wdg_ModeSettings[Mode_16(D)];
+  _4 = _3->Wdg_Ipw_pConfig;
+  Valid_28 = Wdg_Ipw_SetMode (Instance_18(D), _4);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+  Valid_26 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  _5 = Wdg_aePreviousMode[Instance_18(D)];
+  if (_5 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  _6 = Wdg_apConfigPtr[Instance_18(D)];
+  _7 = _6->Wdg_ModeSettings[Mode_16(D)];
+  _8 = _7->Wdg_Ipw_pConfig;
+  _9 = Wdg_Ipw_SetMode (Instance_18(D), _8);
+  if (_9 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Valid_24 = Wdg_Ipw_StartTimer (Instance_18(D));
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  Valid_22 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _10 = Wdg_apConfigPtr[Instance_18(D)];
+  _11 = _10->Wdg_ModeSettings[Mode_16(D)];
+  _12 = _11->Wdg_Ipw_pConfig;
+  Valid_20 = Wdg_Ipw_SetMode (Instance_18(D), _12);
+
+  <bb 11> :
+  # Valid_13 = PHI <Valid_26(5), Valid_22(9), Valid_20(10), Valid_28(4), Valid_24(8)>
+  _29 = Valid_13;
+
+  <bb 12> :
+<L12>:
+  return _29;
+
+}
+
+
+Wdg_VadidateHardwareSetting (const Wdg_Ipw_InstanceType Instance, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5932;
+  unsigned char _1;
+  Std_ReturnType _9;
+
+  <bb 2> :
+  Valid_4 = Status_3(D);
+  if (Valid_4 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_6(D);
+  Det_ReportError (102, _1, 0, 17);
+  Wdg_apConfigPtr[Instance_6(D)] = 0B;
+
+  <bb 4> :
+  _9 = Valid_4;
+
+  <bb 5> :
+<L3>:
+  return _9;
+
+}
+
+
+Wdg_InitialHardware (const Wdg_Ipw_InstanceType Instance, const Std_ReturnType Status)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5927;
+  const struct Wdg_ConfigType * _1;
+  <unnamed type> _2;
+  const struct Wdg_ConfigType * _3;
+  const struct Wdg_ConfigType * _4;
+  <unnamed type> _5;
+  const struct Wdg_ModeType * _6;
+  const struct Wdg_Ipw_ConfigType * _7;
+  const struct Wdg_ConfigType * _8;
+  const struct Wdg_ConfigType * _9;
+  <unnamed type> _10;
+  const struct Wdg_ModeType * _11;
+  const struct Wdg_Ipw_ConfigType * _12;
+  Std_ReturnType _23;
+
+  <bb 2> :
+  Valid_16 = Status_15(D);
+  if (Valid_16 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Wdg_apConfigPtr[Instance_18(D)];
+  _2 = _1->Wdg_DefaultMode;
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = Wdg_apConfigPtr[Instance_18(D)];
+  _4 = Wdg_apConfigPtr[Instance_18(D)];
+  _5 = _4->Wdg_DefaultMode;
+  _6 = _3->Wdg_ModeSettings[_5];
+  _7 = _6->Wdg_Ipw_pConfig;
+  Valid_22 = Wdg_Ipw_SetMode (Instance_18(D), _7);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = Wdg_apConfigPtr[Instance_18(D)];
+  _9 = Wdg_apConfigPtr[Instance_18(D)];
+  _10 = _9->Wdg_DefaultMode;
+  _11 = _8->Wdg_ModeSettings[_10];
+  _12 = _11->Wdg_Ipw_pConfig;
+  Valid_20 = Wdg_Ipw_Init (Instance_18(D), _12);
+
+  <bb 6> :
+  # Valid_13 = PHI <Valid_16(2), Valid_22(4), Valid_20(5)>
+  _23 = Valid_13;
+
+  <bb 7> :
+<L5>:
+  return _23;
+
+}
+
+
+Wdg_ChannelValidateMode (WdgIf_ModeType Wdg_Mode, Wdg_ServiceIdType ServiceId, Wdg_ErrorIdType ErrorId, const Wdg_Ipw_InstanceType Instance)
+{
+  boolean ModeFailedErrActive;
+  boolean DisableRejectedErrActive;
+  Std_ReturnType Valid;
+  Std_ReturnType D.5920;
+  const struct Wdg_ConfigType * _1;
+  const struct Wdg_ModeType * _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  Std_ReturnType _19;
+
+  <bb 2> :
+  Valid_8 = 0;
+  DisableRejectedErrActive_9 = 0;
+  ModeFailedErrActive_10 = 0;
+  if (Wdg_Mode_11(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  if (Wdg_Mode_11(D) != 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  if (Wdg_Mode_11(D) != 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _1 = Wdg_apConfigPtr[Instance_13(D)];
+  _2 = _1->Wdg_ModeSettings[Wdg_Mode_11(D)];
+  if (_2 == 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = (unsigned char) Instance_13(D);
+  _4 = (unsigned char) ServiceId_14(D);
+  _5 = (unsigned char) ErrorId_15(D);
+  Det_ReportError (102, _3, _4, _5);
+  ModeFailedErrActive_17 = 1;
+  Valid_18 = 1;
+
+  <bb 7> :
+  # Valid_6 = PHI <Valid_8(5), Valid_18(6)>
+  _19 = Valid_6;
+
+  <bb 8> :
+<L5>:
+  return _19;
+
+}
+
+
+Wdg_ValidatePtrVersion (const struct Std_VersionInfoType * VersionInfo, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5972;
+  unsigned char _1;
+  Std_ReturnType _10;
+
+  <bb 2> :
+  valid_4 = 0;
+  if (VersionInfo_5(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_7(D);
+  Det_ReportError (102, _1, 4, 20);
+  valid_9 = 1;
+
+  <bb 4> :
+  # valid_2 = PHI <valid_4(2), valid_9(3)>
+  _10 = valid_2;
+
+  <bb 5> :
+<L2>:
+  return _10;
+
+}
+
+
+Wdg_ValidatePtrInit (const struct Wdg_ConfigType * const ConfigPtr, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5913;
+  unsigned char _1;
+  <unnamed type> _2;
+  unsigned char _3;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  valid_6 = 0;
+  if (ConfigPtr_7(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) Instance_9(D);
+  Det_ReportError (102, _1, 0, 21);
+  valid_13 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _2 = ConfigPtr_7(D)->Wdg_Instance;
+  if (Instance_9(D) != _2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance_9(D);
+  Det_ReportError (102, _3, 0, 21);
+  valid_11 = 1;
+
+  <bb 6> :
+  # valid_4 = PHI <valid_13(3), valid_6(4), valid_11(5)>
+  _14 = valid_4;
+
+  <bb 7> :
+<L6>:
+  return _14;
+
+}
+
+
+Wdg_ChannelEndValidateGlobalCall (Std_ReturnType Validation, const Wdg_Ipw_InstanceType Instance)
+{
+  <unnamed type> _1;
+  const struct Wdg_ConfigType * _2;
+
+  <bb 2> :
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  if (Validation_6(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Wdg_aeStatus[Instance_7(D)] = 2;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  _1 = Wdg_aeStatus[Instance_7(D)];
+  if (_1 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Wdg_aeStatus[Instance_7(D)] = 2;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _2 = Wdg_apConfigPtr[Instance_7(D)];
+  if (_2 == 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Wdg_aeStatus[Instance_7(D)] = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Wdg_aeStatus[Instance_7(D)] = 2;
+
+  <bb 9> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  return;
+
+}
+
+
+Wdg_ChannelValidateGlobalCall (const Wdg_ServiceIdType ServiceId, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.5905;
+  <unnamed type> _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  unsigned char _4;
+  unsigned char _5;
+  Std_ReturnType _20;
+
+  <bb 2> :
+  Valid_9 = 0;
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  _1 = Wdg_aeStatus[Instance_12(D)];
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  if (ServiceId_13(D) != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _2 = Wdg_aeStatus[Instance_12(D)];
+  if (_2 == 4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _3 = Wdg_aeStatus[Instance_12(D)];
+  if (_3 == 3)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  _4 = (unsigned char) Instance_12(D);
+  _5 = (unsigned char) ServiceId_13(D);
+  Det_ReportError (102, _4, _5, 16);
+  Valid_19 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  if (ServiceId_13(D) == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Wdg_aeStatus[Instance_12(D)] = 4;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Wdg_aeStatus[Instance_12(D)] = 3;
+
+  <bb 10> :
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+
+  <bb 11> :
+  # Valid_6 = PHI <Valid_19(6), Valid_9(10)>
+  _20 = Valid_6;
+
+  <bb 12> :
+<L9>:
+  return _20;
+
+}
+
+

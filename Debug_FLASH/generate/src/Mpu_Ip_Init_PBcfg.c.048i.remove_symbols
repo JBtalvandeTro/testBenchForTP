@@ -1,0 +1,27 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Mpu_Config_INIT/2 (Mpu_Config_INIT) @0663a000
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Mpu_Configuration_RegionConfig_INIT/0 (addr)Mpu_Configuration_RegionNumber_INIT/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Mpu_Configuration_RegionNumber_INIT/1 (Mpu_Configuration_RegionNumber_INIT) @065f2d38
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Mpu_Config_INIT/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Mpu_Configuration_RegionConfig_INIT/0 (Mpu_Configuration_RegionConfig_INIT) @065f2ee8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Mpu_Config_INIT/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

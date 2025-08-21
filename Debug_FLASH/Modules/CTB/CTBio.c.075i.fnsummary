@@ -1,0 +1,271 @@
+Symbol table:
+
+Pwm_SetDutyCycle/9 (Pwm_SetDutyCycle) @05c56380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctbio_controlLED/6 ctbio_controlLED/6 ctbio_controlLED/6 ctbio_controlLED/6 ctbio_controlLED/6 ctbio_controlLED/6 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 CTBio_SetLedToBBAuxState/4 
+  Calls: 
+FSM_mode/8 (FSM_mode) @05c688b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTBio_SetLedToBBAuxState/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/7 (COM_debugTestReq) @05c68120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTBio_RunTests/2 (read)CTBio_RunTests/2 (read)CTBio_RunTests/2 (read)
+  Availability: not_available
+  Varpool flags:
+ctbio_controlLED/6 (ctbio_controlLED) @05c4f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBio_CmdLed/3 CTBio_CmdLed/3 CTBio_CmdLed/3 
+  Calls: Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 
+CTBio_Deinit/5 (CTBio_Deinit) @05c4fee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CTBio_SetLedToBBAuxState/4 (CTBio_SetLedToBBAuxState) @05c4fc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 Pwm_SetDutyCycle/9 
+CTBio_CmdLed/3 (CTBio_CmdLed) @05c4f9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTBio_RunTests/2 
+  Calls: ctbio_controlLED/6 ctbio_controlLED/6 ctbio_controlLED/6 
+CTBio_RunTests/2 (CTBio_RunTests) @05c4f700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/7 (read)COM_debugTestReq/7 (read)COM_debugTestReq/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CTBio_CmdLed/3 
+CTBio_Init/1 (CTBio_Init) @05c4f460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+ctbio_controlLED (uint8_t pinId, uint16_t state)
+{
+  int _1;
+
+  <bb 2> :
+  _1 = (int) pinId_3(D);
+  switch (_1) <default: <L3> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  Pwm_SetDutyCycle (0, state_5(D));
+  Pwm_SetDutyCycle (1, state_5(D));
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  Pwm_SetDutyCycle (2, state_5(D));
+  Pwm_SetDutyCycle (3, state_5(D));
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  Pwm_SetDutyCycle (4, state_5(D));
+  Pwm_SetDutyCycle (5, state_5(D));
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+CTBio_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+CTBio_SetLedToBBAuxState ()
+{
+  <unnamed type> FSM_mode.0_1;
+
+  <bb 2> :
+  FSM_mode.0_1 = FSM_mode;
+  switch (FSM_mode.0_1) <default: <L7> [INV], case 1: <L2> [INV], case 2: <L0> [INV], case 3: <L4> [INV], case 4: <L3> [INV], case 5: <L5> [INV], case 6: <L1> [INV], case 7: <L6> [INV]>
+
+  <bb 3> :
+<L0>:
+  Pwm_SetDutyCycle (0, 32768);
+  Pwm_SetDutyCycle (1, 0);
+  Pwm_SetDutyCycle (2, 32768);
+  Pwm_SetDutyCycle (3, 0);
+  Pwm_SetDutyCycle (4, 32768);
+  Pwm_SetDutyCycle (5, 0);
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+<L1>:
+  Pwm_SetDutyCycle (0, 0);
+  Pwm_SetDutyCycle (1, 32768);
+  Pwm_SetDutyCycle (2, 0);
+  Pwm_SetDutyCycle (3, 32768);
+  Pwm_SetDutyCycle (4, 0);
+  Pwm_SetDutyCycle (5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+<L2>:
+  Pwm_SetDutyCycle (0, 32768);
+  Pwm_SetDutyCycle (1, 32768);
+  Pwm_SetDutyCycle (2, 0);
+  Pwm_SetDutyCycle (3, 0);
+  Pwm_SetDutyCycle (4, 0);
+  Pwm_SetDutyCycle (5, 0);
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+<L3>:
+  Pwm_SetDutyCycle (0, 0);
+  Pwm_SetDutyCycle (1, 0);
+  Pwm_SetDutyCycle (2, 32768);
+  Pwm_SetDutyCycle (3, 32768);
+  Pwm_SetDutyCycle (4, 0);
+  Pwm_SetDutyCycle (5, 0);
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+<L4>:
+  Pwm_SetDutyCycle (0, 0);
+  Pwm_SetDutyCycle (1, 0);
+  Pwm_SetDutyCycle (2, 0);
+  Pwm_SetDutyCycle (3, 0);
+  Pwm_SetDutyCycle (4, 32768);
+  Pwm_SetDutyCycle (5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+<L5>:
+  Pwm_SetDutyCycle (0, 32768);
+  Pwm_SetDutyCycle (1, 32768);
+  Pwm_SetDutyCycle (2, 32768);
+  Pwm_SetDutyCycle (3, 32768);
+  Pwm_SetDutyCycle (4, 32768);
+  Pwm_SetDutyCycle (5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+<L6>:
+  Pwm_SetDutyCycle (0, 0);
+  Pwm_SetDutyCycle (1, 0);
+  Pwm_SetDutyCycle (2, 32768);
+  Pwm_SetDutyCycle (3, 32768);
+  Pwm_SetDutyCycle (4, 32768);
+  Pwm_SetDutyCycle (5, 32768);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L7>:
+  Pwm_SetDutyCycle (0, 0);
+  Pwm_SetDutyCycle (1, 0);
+  Pwm_SetDutyCycle (2, 0);
+  Pwm_SetDutyCycle (3, 0);
+  Pwm_SetDutyCycle (4, 0);
+  Pwm_SetDutyCycle (5, 0);
+
+  <bb 11> :
+  return;
+
+}
+
+
+CTBio_CmdLed (uint8_t ledid, uint8_t ledcolor, CTBio_LedState state)
+{
+  <bb 2> :
+  switch (state_3(D)) <default: <L3> [INV], case 1: <L1> [INV], case 2: <L0> [INV], case 3: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctbio_controlLED (ledid_5(D), 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctbio_controlLED (ledid_5(D), 32768);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  ctbio_controlLED (ledid_5(D), 16384);
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+  return;
+
+}
+
+
+CTBio_RunTests ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  <unnamed type> _4;
+
+  <bb 2> :
+  _1 = COM_debugTestReq.ledId;
+  _2 = COM_debugTestReq.ledColor;
+  _3 = COM_debugTestReq.ledCmd;
+  _4 = (<unnamed type>) _3;
+  CTBio_CmdLed (_1, _2, _4);
+  return;
+
+}
+
+
+CTBio_Init ()
+{
+  <bb 2> :
+  return;
+
+}
+
+

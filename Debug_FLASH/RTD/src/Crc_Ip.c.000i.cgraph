@@ -1,0 +1,2408 @@
+Trivially needed symbols: Crc_Ip_GetChannelResult Crc_Ip_SetChannelCalculate Crc_Ip_SetChannelConfig Crc_Ip_Init Static_Crc_Ip_ValidateProtocol Static_Crc_Ip_SetChannelState Static_Crc_Ip_SetChannelProtocol_Invalid Static_Crc_Ip_SetChannelProtocol_64BitAutosar Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar Static_Crc_Ip_SetChannelProtocol_64BitCustom Static_Crc_Ip_SetChannelProtocol_32BitCustom Static_Crc_Ip_SetChannelProtocol_16BitCustom Static_Crc_Ip_SetChannelProtocol_8BitCustom Static_Crc_Ip_SetChannelCustomProtocol s_axLogicChannelCustomProtocol s_axLogicChannelState s_ppaxLogicChannelInit Crc_Ip_au8BitSwapArray
+Trivially needed symbols: fpCrc_Ip_SetChannelProtocol s_Protocol64Bit_AUTOSAR s_Protocol32Bit_E2E_P4_AUTOSAR s_Protocol32Bit_ETHERNET_AUTOSAR s_Protocol32Bit_ETHERNET_HARDWARE s_Protocol16Bit_ARC_AUTOSAR s_Protocol16Bit_CCITT_FALSE_AUTOSAR s_Protocol16Bit_CCITT_FALSE_HARDWARE s_Protocol8Bit_H2F_AUTOSAR s_Protocol8Bit_SAE_J1850_AUTOSAR
+
+
+Initial Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671dc40
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671d620
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671d380
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067f9b88
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671d0e0
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06718e00
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067f97e0
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06718b60
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067188c0
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06718620
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067f1540
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067f12a0
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @067f1000
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671da80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0671dc40
+  References: fpCrc_Ip_SetChannelProtocol/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @0671d9a0
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @0671d620
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @0671d380
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @0671d0e0
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06718e00
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06718b60
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @067188c0
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06718620
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06718380
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @067180e0
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06714ee0
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @06714c40
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @067149a0
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06714700
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: not-ready
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0670aab0
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (write)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0670aa20
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (write)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067f1540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067f1540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0670f460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0670f1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @067079a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06707700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06707460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @06707ee0
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0670a990
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0671d9a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: fpCrc_Ip_SetChannelProtocol/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: not-ready
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (write)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (write)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+
+
+Initial Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol.5812/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR.5801/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR.5785/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR.5774/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: fpCrc_Ip_SetChannelProtocol.5812/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR.5801/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR.5785/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR.5774/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: not-ready
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (write)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (write)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol.5812/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR.5801/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR.5785/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR.5774/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: fpCrc_Ip_SetChannelProtocol.5812/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR.5801/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR.5785/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR.5774/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: not-ready
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (write)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (write)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: not-ready
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_GetChannelResult/31 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Crc_Ip_SetChannelState/26 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol.5812/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: Static_Crc_Ip_SetChannelState/26 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR.5801/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR.5785/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR.5774/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/46 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (read)s_axLogicChannelState/11 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)s_axLogicChannelState/11 (addr)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwCalculate/45 Crc_Ip_SwCalculate/44 Crc_Ip_LookupTablesCalculate/43 Crc_Ip_LibTranspose/9 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_ValidateProtocol/27 Crc_Ip_DevAssert/0 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_ppaxLogicChannelInit/10 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 Static_Crc_Ip_SetChannelState/26 Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 
+  Calls: Crc_Ip_DevAssert/0 Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: fpCrc_Ip_SetChannelProtocol.5812/41 (read)s_axLogicChannelState/11 (write)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 
+  Calls: Crc_Ip_HwSetConfig/42 Crc_Ip_DevAssert/0 
+   Indirect call
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_DevAssert/0 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol64Bit_AUTOSAR.5801/40 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (addr)s_axLogicChannelState/11 (write)s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol16Bit_ARC_AUTOSAR.5785/36 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_ppaxLogicChannelInit/10 (read)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (addr)s_axLogicChannelState/11 (write)s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_H2F_AUTOSAR.5774/33 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: s_axLogicChannelState/11 (write)s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (addr)
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Static_Crc_Ip_SetChannelCustomProtocol/13 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (write)s_axLogicChannelCustomProtocol/12 (addr)s_axLogicChannelState/11 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (addr)
+  Availability: available
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (write)Static_Crc_Ip_SetChannelState/26 (addr)Crc_Ip_SetChannelCalculate/30 (write)Static_Crc_Ip_SetChannelCustomProtocol/13 (write)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (write)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (write)Static_Crc_Ip_SetChannelState/26 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (write)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (write)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (write)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_SetChannelCalculate/30 (addr)Crc_Ip_GetChannelResult/31 (read)
+  Availability: available
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Ip_SetChannelConfig/29 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_Init/28 (write)Crc_Ip_SetChannelConfig/29 (read)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (read)Crc_Ip_SetChannelCalculate/30 (read)Crc_Ip_SetChannelCalculate/30 (read)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Static_Crc_Ip_SetChannelState/26 (read)Crc_Ip_Init/28 (read)Crc_Ip_Init/28 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)Crc_Ip_GetChannelResult/31 (read)
+  Availability: available
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_SetChannelCalculate/30 
+  Calls: Crc_Ip_LibByteSwap16U/8 Crc_Ip_LibByteSwap32U/7 Crc_Ip_LibByteSwap64U/6 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap64U/5 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibByteSwap32U/7 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 Crc_Ip_LibByteSwap16U/8 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 
+  Calls: Crc_Ip_LibBitSwap8U/2 Crc_Ip_LibBitSwap8U/2 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crc_Ip_au8BitSwapArray/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_LibTranspose/9 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap64U/5 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap32U/4 Crc_Ip_LibBitSwap16U/3 Crc_Ip_LibBitSwap16U/3 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Ip_LibBitSwap8U/2 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_GetChannelResult/31 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelCalculate/30 Crc_Ip_SetChannelConfig/29 Crc_Ip_Init/28 Crc_Ip_Init/28 Crc_Ip_Init/28 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_ValidateProtocol/27 Static_Crc_Ip_SetChannelState/26 Static_Crc_Ip_SetChannelProtocol_Invalid/25 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: fpCrc_Ip_SetChannelProtocol.5812 s_Protocol64Bit_AUTOSAR.5801 s_Protocol32Bit_E2E_P4_AUTOSAR.5796 s_Protocol32Bit_ETHERNET_AUTOSAR.5790 s_Protocol32Bit_ETHERNET_HARDWARE.5791 s_Protocol16Bit_ARC_AUTOSAR.5785 s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779 s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780 s_Protocol8Bit_H2F_AUTOSAR.5774 s_Protocol8Bit_SAE_J1850_AUTOSAR.5769 s_axLogicChannelCustomProtocol s_axLogicChannelState s_ppaxLogicChannelInit Crc_Ip_au8BitSwapArray
+Removing variables:
+
+Final Symbol table:
+
+Crc_Ip_HwGetLocResult/46 (Crc_Ip_HwGetLocResult) @06a439a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_HwCalculate/45 (Crc_Ip_HwCalculate) @06a43000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_SwCalculate/44 (Crc_Ip_SwCalculate) @06a337e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_LookupTablesCalculate/43 (Crc_Ip_LookupTablesCalculate) @06a33ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_HwSetConfig/42 (Crc_Ip_HwSetConfig) @06a33700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+fpCrc_Ip_SetChannelProtocol.5812/41 (fpCrc_Ip_SetChannelProtocol) @06a353f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (addr)Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (addr)Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (addr)Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (addr)Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (addr)Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (addr)Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (addr)Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (addr)Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (addr)Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (addr)Static_Crc_Ip_SetChannelProtocol_Invalid/25 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol64Bit_AUTOSAR.5801/40 (s_Protocol64Bit_AUTOSAR) @067f9e10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06a353f0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_E2E_P4_AUTOSAR.5796/39 (s_Protocol32Bit_E2E_P4_AUTOSAR) @067f9cf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9e10
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_AUTOSAR.5790/38 (s_Protocol32Bit_ETHERNET_AUTOSAR) @067f9bd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9cf0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol32Bit_ETHERNET_HARDWARE.5791/37 (s_Protocol32Bit_ETHERNET_HARDWARE) @067f9b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9bd0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_ARC_AUTOSAR.5785/36 (s_Protocol16Bit_ARC_AUTOSAR) @067f9948
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_AUTOSAR.5779/35 (s_Protocol16Bit_CCITT_FALSE_AUTOSAR) @067f9828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9948
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol16Bit_CCITT_FALSE_HARDWARE.5780/34 (s_Protocol16Bit_CCITT_FALSE_HARDWARE) @067f97e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9828
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_H2F_AUTOSAR.5774/33 (s_Protocol8Bit_H2F_AUTOSAR) @067f95a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f97e0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+s_Protocol8Bit_SAE_J1850_AUTOSAR.5769/32 (s_Protocol8Bit_SAE_J1850_AUTOSAR) @067f9480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f95a0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_GetChannelResult/31 (Crc_Ip_GetChannelResult) @067f1540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_SetChannelCalculate/30 (Crc_Ip_SetChannelCalculate) @067f12a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_SetChannelConfig/29 (Crc_Ip_SetChannelConfig) @067f1000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crc_Ip_Init/28 (Crc_Ip_Init) @0671da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_ValidateProtocol/27 (Static_Crc_Ip_ValidateProtocol) @0671dc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelState/26 (Static_Crc_Ip_SetChannelState) @0671d9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_Invalid/25 (Static_Crc_Ip_SetChannelProtocol_Invalid) @0671d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitAutosar/24 (Static_Crc_Ip_SetChannelProtocol_64BitAutosar) @0671d380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar/23 (Static_Crc_Ip_SetChannelProtocol_32BitE2eP4Autosar) @0671d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar/22 (Static_Crc_Ip_SetChannelProtocol_32BitEthernetAutosar) @06718e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar/21 (Static_Crc_Ip_SetChannelProtocol_16BitArcAutosar) @06718b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar/20 (Static_Crc_Ip_SetChannelProtocol_16BitCcittFalseAutosar) @067188c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar/19 (Static_Crc_Ip_SetChannelProtocol_8BitH2fAutosar) @06718620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar/18 (Static_Crc_Ip_SetChannelProtocol_8BitSaeJ1850Autosar) @06718380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_64BitCustom/17 (Static_Crc_Ip_SetChannelProtocol_64BitCustom) @067180e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_32BitCustom/16 (Static_Crc_Ip_SetChannelProtocol_32BitCustom) @06714ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_16BitCustom/15 (Static_Crc_Ip_SetChannelProtocol_16BitCustom) @06714c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelProtocol_8BitCustom/14 (Static_Crc_Ip_SetChannelProtocol_8BitCustom) @067149a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: fpCrc_Ip_SetChannelProtocol.5812/41 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Crc_Ip_SetChannelCustomProtocol/13 (Static_Crc_Ip_SetChannelCustomProtocol) @06714700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+s_axLogicChannelCustomProtocol/12 (s_axLogicChannelCustomProtocol) @0670aab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @067f9480
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+s_axLogicChannelState/11 (s_axLogicChannelState) @0670aa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0670aab0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+s_ppaxLogicChannelInit/10 (s_ppaxLogicChannelInit) @0670a990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0670aa20
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Crc_Ip_LibTranspose/9 (Crc_Ip_LibTranspose) @0670f700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibByteSwap16U/8 (Crc_Ip_LibByteSwap16U) @0670f460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibByteSwap32U/7 (Crc_Ip_LibByteSwap32U) @0670f1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibByteSwap64U/6 (Crc_Ip_LibByteSwap64U) @06707ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibBitSwap64U/5 (Crc_Ip_LibBitSwap64U) @06707c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibBitSwap32U/4 (Crc_Ip_LibBitSwap32U) @067079a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibBitSwap16U/3 (Crc_Ip_LibBitSwap16U) @06707700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_LibBitSwap8U/2 (Crc_Ip_LibBitSwap8U) @06707460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Crc_Ip_au8BitSwapArray/1 (Crc_Ip_au8BitSwapArray) @06634c60
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0670a990
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/0 (Crc_Ip_DevAssert) @065d3c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

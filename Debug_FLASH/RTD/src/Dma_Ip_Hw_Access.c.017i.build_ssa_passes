@@ -1,0 +1,2766 @@
+HwAccDmaCh_SetControl_EnScatterGatherProcessing (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, boolean LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_ScatterGatherAddress (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd (const struct Dma_Ip_LogicChannelIdType * const pxLocLogicCh, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicCh->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicCh->HwInstId;
+  LocHwInst = (uint32) _2;
+  _3 = pxLocLogicCh->HwChId;
+  LocHwCh = (uint32) _3;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearDone (_4, LocHwCh);
+  _5 = pxLocScatterGather->Stcd;
+  _6 = 1073778688B;
+  _7 = _5->reg_SADDR;
+  _6->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_SADDR = _7;
+  _8 = pxLocScatterGather->Stcd;
+  _9 = 1073778688B;
+  _10 = _8->reg_SOFF;
+  _9->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_SOFF = _10;
+  _11 = pxLocScatterGather->Stcd;
+  _12 = 1073778688B;
+  _13 = _11->reg_ATTR;
+  _12->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_ATTR = _13;
+  _14 = pxLocScatterGather->Stcd;
+  _15 = 1073778688B;
+  _16 = _14->reg_NBYTES.reg_MLOFFYES;
+  _15->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_NBYTES.reg_MLOFFYES = _16;
+  _17 = pxLocScatterGather->Stcd;
+  _18 = 1073778688B;
+  _19 = _17->reg_SLAST;
+  _18->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_SLAST = _19;
+  _20 = pxLocScatterGather->Stcd;
+  _21 = 1073778688B;
+  _22 = _20->reg_DADDR;
+  _21->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_DADDR = _22;
+  _23 = pxLocScatterGather->Stcd;
+  _24 = 1073778688B;
+  _25 = _23->reg_DOFF;
+  _24->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_DOFF = _25;
+  _26 = pxLocScatterGather->Stcd;
+  _27 = 1073778688B;
+  _28 = _26->reg_CITER.reg_ELINKYES;
+  _27->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_CITER.reg_ELINKYES = _28;
+  _29 = pxLocScatterGather->Stcd;
+  _30 = 1073778688B;
+  _31 = _29->reg_DLAST_SGA;
+  _30->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_DLAST_SGA = _31;
+  _32 = pxLocScatterGather->Stcd;
+  _33 = 1073778688B;
+  _34 = _32->reg_BITER.reg_ELINKYES;
+  _33->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_BITER.reg_ELINKYES = _34;
+  _35 = pxLocScatterGather->Stcd;
+  _36 = 1073778688B;
+  _37 = _35->reg_CSR;
+  _36->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg.reg_CSR = _37;
+
+  <bb 4> :
+  return;
+
+}
+
+
+HwAccDmaCh_LoadConfigIntoSoftwareTcd (uint32 HwVersId, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather, const uint32 ElementId, const boolean NotLastElement)
+{
+  uint32 hwLinkCh;
+  const uint32 iftmp.6;
+  const uint32 iftmp.5;
+
+  <bb 2> :
+  if (HwVersId == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 3> :
+  if (NotLastElement != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _1 = pxLocScatterGather->Stcd;
+  _2 = pxLocScatterGather->NextConfig;
+  _3 = _2->Stcd;
+  _4 = (long unsigned int) _3;
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (_1, _4);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (_5, 0);
+
+  <bb 6> :
+  _6 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (_6, NotLastElement);
+  _7 = pxLocScatterGather->TransferConfig;
+  if (_7 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 7> :
+  _8 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetControlAndStatus (_8, pxLocScatterGather);
+  _9 = pxLocScatterGather->Stcd;
+  _10 = pxLocScatterGather->TransferConfig;
+  _11 = _10->Source.Addr;
+  hwv2AccInlineDmaCh_SetSource_Address (_9, _11);
+  _12 = pxLocScatterGather->Stcd;
+  _13 = pxLocScatterGather->TransferConfig;
+  _14 = _13->Source.SignedOffset;
+  _15 = (long unsigned int) _14;
+  hwv2AccInlineDmaCh_SetSource_SignedOffset (_12, _15);
+  _16 = pxLocScatterGather->Stcd;
+  _17 = pxLocScatterGather->TransferConfig;
+  _18 = _17->Destination.Addr;
+  hwv2AccInlineDmaCh_SetDestination_Address (_16, _18);
+  _19 = pxLocScatterGather->Stcd;
+  _20 = pxLocScatterGather->TransferConfig;
+  _21 = _20->Destination.SignedOffset;
+  _22 = (long unsigned int) _21;
+  hwv2AccInlineDmaCh_SetDestination_SignedOffset (_19, _22);
+  _23 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetTransferAttributes (_23, pxLocScatterGather);
+  _24 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetSignedMinorLoopOffset (_24, pxLocScatterGather);
+  _25 = pxLocScatterGather->Stcd;
+  _26 = pxLocScatterGather->TransferConfig;
+  _27 = _26->MinorLoop.EnLink;
+  if (_27 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.5 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.5 = 0;
+
+  <bb 10> :
+  hwv2AccInlineDmaCh_SetMinorLoop_EnLink (_25, iftmp.5);
+  _28 = pxLocScatterGather->TransferConfig;
+  _29 = _28->MinorLoop.LogicLinkCh;
+  _30 = (long unsigned int) _29;
+  hwLinkCh = Dma_Ip_ConvertLogicChToHwCh (_30);
+  _31 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (_31, hwLinkCh);
+  _32 = pxLocScatterGather->Stcd;
+  _33 = pxLocScatterGather->TransferConfig;
+  _34 = _33->MinorLoop.Size;
+  hwv2AccInlineDmaCh_SetMinorLoop_Size (_32, _34);
+  _35 = pxLocScatterGather->Stcd;
+  _36 = pxLocScatterGather->TransferConfig;
+  _37 = _36->MajorLoop.EnLink;
+  if (_37 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  iftmp.6 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.6 = 0;
+
+  <bb 13> :
+  hwv2AccInlineDmaCh_SetMajorLoop_EnLink (_35, iftmp.6);
+  _38 = pxLocScatterGather->TransferConfig;
+  _39 = _38->MajorLoop.EnLink;
+  if (_39 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _40 = pxLocScatterGather->TransferConfig;
+  _41 = _40->MajorLoop.LogicLinkCh;
+  _42 = (long unsigned int) _41;
+  hwLinkCh = Dma_Ip_ConvertLogicChToHwCh (_42);
+  _43 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (_43, hwLinkCh);
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  _44 = pxLocScatterGather->Stcd;
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (_44, ElementId);
+
+  <bb 16> :
+  _45 = pxLocScatterGather->Stcd;
+  _46 = pxLocScatterGather->TransferConfig;
+  _47 = _46->MajorLoop.Count;
+  hwv2AccInlineDmaCh_SetMajorLoop_Count (_45, _47);
+  _48 = pxLocScatterGather->Stcd;
+  _49 = pxLocScatterGather->TransferConfig;
+  _50 = _49->Source.LastAddrAdj;
+  _51 = (long unsigned int) _50;
+  hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (_48, _51);
+
+  <bb 17> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetParam (const uint32 Parameter, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  static void (*<T647>) (const uint32, const uint32, const uint32, uint32 * const) fpHwAcc_DmaCh_GetParam[9] = {HwAccDmaCh_GetSourceAddress, HwAccDmaCh_GetDestinationAddress, HwAccDmaCh_GetBeginIterCount, HwAccDmaCh_GetCurrentIterCount, HwAccDmaCh_GetParamDummyFunction, HwAccDmaCh_GetParamDummyFunction, HwAccDmaCh_GetIntMajor, HwAccDmaCh_GetIntHalfMajor, HwAccDmaCh_GetParamDummyFunction};
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_GetParam[Parameter];
+  _1 (LocHwVers, LocHwInst, LocHwCh, retValue);
+  return;
+
+}
+
+
+HwAccDmaCh_GetIntHalfMajor (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetIntHalfMajor (_2, retValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetIntMajor (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetIntMajor (_2, retValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetCurrentIterCount (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetCurrentIterCount (_2, retValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetBeginIterCount (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetBeginIterCount (_2, retValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetDestinationAddress (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  uint32 LocPhysicalAddress;
+
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetDestinationAddress (_2, &LocPhysicalAddress);
+  LocPhysicalAddress.4_3 = LocPhysicalAddress;
+  *retValue = LocPhysicalAddress.4_3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  LocPhysicalAddress = {CLOBBER};
+  return;
+
+}
+
+
+HwAccDmaCh_GetSourceAddress (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  uint32 LocPhysicalAddress;
+
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetSourceAddress (_2, &LocPhysicalAddress);
+  LocPhysicalAddress.3_3 = LocPhysicalAddress;
+  *retValue = LocPhysicalAddress.3_3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  LocPhysicalAddress = {CLOBBER};
+  return;
+
+}
+
+
+HwAccDmaCh_SetTransferParam (const uint32 Parameter, const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  static void (*<T638>) (const uint32, struct Dma_Ip_TcdRegType *, const uint32) fpHwAcc_DmaCh_SetTransferParam[26] = {HwAccDmaCh_SetSource_Address, HwAccDmaCh_SetSource_SignedOffset, HwAccDmaCh_SetSource_LastAddrAdj, HwAccDmaCh_SetSource_TransferSize, HwAccDmaCh_SetSource_Modulo, HwAccDmaCh_SetDestination_Address, HwAccDmaCh_SetDestination_SignedOffset, HwAccDmaCh_SetDestination_LastAddrAdj, HwAccDmaCh_SetDestination_TransferSize, HwAccDmaCh_SetDestination_Modulo, HwAccDmaCh_SetMinorLoop_enSrcOffset, HwAccDmaCh_SetMinorLoop_enDstOffset, HwAccDmaCh_SetMinorLoop_Offset, HwAccDmaCh_SetMinorLoop_EnLink, HwAccDmaCh_SetMinorLoop_LogicLinkCh, HwAccDmaCh_SetMinorLoop_Size, HwAccDmaCh_SetMajorLoop_EnLink, HwAccDmaCh_SetMajorLoop_LogicLinkCh, HwAccDmaCh_SetMajorLoop_Count, HwAccDmaCh_SetTransferDummyFunction, HwAccDmaCh_SetControl_EnStart, HwAccDmaCh_SetControl_EnMajor, HwAccDmaCh_SetControl_EnHalfMajor, HwAccDmaCh_SetControl_DisAutoHwRequest, HwAccDmaCh_SetTransferDummyFunction, HwAccDmaCh_SetControl_BandwidthControl};
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_SetTransferParam[Parameter];
+  _1 (LocHwVers, pxLocTcd, LocValue);
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_BandwidthControl (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_BandwidthControl (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_DisAutoHwRequest (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnHalfMajor (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_EnHalfMajor (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnMajor (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_EnMajor (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnStart (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocValue != 0;
+  hwv2AccInlineDmaCh_SetControl_EnStart (pxLocTcd, _1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_Count (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_Count (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_LogicLinkCh (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  uint32 hwLinkCh;
+
+  <bb 2> :
+  hwLinkCh = Dma_Ip_ConvertLogicChToHwCh (LocValue);
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (pxLocTcd, hwLinkCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_EnLink (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_EnLink (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_Size (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_Size (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_LogicLinkCh (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  uint32 hwLinkCh;
+
+  <bb 2> :
+  hwLinkCh = Dma_Ip_ConvertLogicChToHwCh (LocValue);
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (pxLocTcd, hwLinkCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_EnLink (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_EnLink (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_Offset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_enDstOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_enSrcOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_Modulo (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_Modulo (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_TransferSize (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_TransferSize (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_LastAddrAdj (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_LastAddrAdj (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_SignedOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_SignedOffset (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_Address (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_Address (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_Modulo (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_Modulo (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_TransferSize (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_TransferSize (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_LastAddrAdj (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_SignedOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_SignedOffset (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_Address (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_Address (pxLocTcd, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetGlobalParam (const uint32 Parameter, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  static void (*<T626>) (const uint32, const uint32, const uint32, const uint32) fpHwAcc_DmaCh_SetGlobalParam[11] = {HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetRequest_EnMuxSource, HwAccDmaCh_SetRequest_MuxSource, HwAccDmaCh_SetRequest_EnMuxTrigger, HwAccDmaCh_SetRequest_EnRequest, HwAccDmaCh_SetInterrupt_EnError, HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetPriority_Level, HwAccDmaCh_SetPriority_EnPreemption, HwAccDmaCh_SetPriority_DisPreempt};
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_SetGlobalParam[Parameter];
+  _1 (LocHwVers, LocHwInst, LocHwCh, LocValue);
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_DisPreempt (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_DisPreempt (_1, _2, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_EnPreemption (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_EnPreemption (_1, _2, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_Level (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_Level (_1, _2, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetInterrupt_EnError (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_SetInterrupt_EnError (_1, LocHwCh, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_SetRequest_EnHwRequest (_1, LocHwCh, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnMuxTrigger (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+
+  <bb 2> :
+  LocDmaCh = 0;
+  LocDmaMuxInst = 0;
+  LocDmaMuxCh = 0;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst * 16;
+  LocDmaCh = LocHwCh + _1;
+  LocDmaMuxInst = LocDmaCh / 16;
+  LocDmaMuxCh = LocDmaCh & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh];
+  hwv2AccInlineDmaCh_SetRequest_EnTriggerMux (_3, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_MuxSource (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+
+  <bb 2> :
+  LocDmaCh = 0;
+  LocDmaMuxInst = 0;
+  LocDmaMuxCh = 0;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst * 16;
+  LocDmaCh = LocHwCh + _1;
+  LocDmaMuxInst = LocDmaCh / 16;
+  LocDmaMuxCh = LocDmaCh & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh];
+  hwv2AccInlineDmaCh_SetRequest_SourceMux (_3, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnMuxSource (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+
+  <bb 2> :
+  LocDmaCh = 0;
+  LocDmaMuxInst = 0;
+  LocDmaMuxCh = 0;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst * 16;
+  LocDmaCh = LocHwCh + _1;
+  LocDmaMuxInst = LocDmaCh / 16;
+  LocDmaMuxCh = LocDmaCh & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh];
+  hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux (_3, LocValue);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetStatus_Error (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const pLocError)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_GetErrorStatus (LocHwCh, _1, pLocError);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetStatus (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, struct Dma_Ip_LogicChannelStatusType * const pChStatus)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  _3 = &pChStatus->Active;
+  hwv2AccInlineDmaCh_GetActiveStatus (_2, _3);
+  _4 = 1073778688B;
+  _5 = &_4->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+  _6 = &pChStatus->Done;
+  hwv2AccInlineDmaCh_GetDoneStatus (_5, _6);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetCommand (const uint32 Command, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  static void (*<T60e>) (const uint32, const uint32, const uint32) fpHwAcc_DmaCh_Command[5] = {HwAccDmaCh_CmdSetHwRequest, HwAccDmaCh_CmdClearHwRequest, HwAccDmaCh_CmdSetSwRequest, HwAccDmaCh_CmdClearDone, HwAccDmaCh_CmdClearError};
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_Command[Command];
+  _1 (LocHwVers, LocHwInst, LocHwCh);
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearError (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearError (_1, LocHwCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearDone (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearDone (_1, LocHwCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdSetSwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdSwReqStart (_1, LocHwCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearHwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearRequest (_1, LocHwCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdSetHwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  <bb 2> :
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdSetRequest (_1, LocHwCh);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_GetStatus (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst, struct Dma_Ip_LogicInstanceStatusType * const Status)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  _4 = &Status->Errors;
+  hwv2AccInlineDmaInst_GetErrorStatus (_3, _4);
+  _5 = 1073774592B;
+  _6 = &Status->ActiveId;
+  hwv2AccInlineDmaInst_GetActiveIdStatus (_5, _6);
+  _7 = 1073774592B;
+  _8 = &Status->Active;
+  hwv2AccInlineDmaInst_GetActiveStatus (_7, _8);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_SetCommand (const uint32 Command, const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  static void (*<T5fa>) (const struct Dma_Ip_LogicInstanceIdType * const) fpHwAcc_DmaInst_Command[4] = {hwAccDmaInst_CmdCancelTransfer, hwAccDmaInst_CmdCancelTransferWithError, hwAccDmaInst_CmdHalt, hwAccDmaInst_CmdResume};
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaInst_Command[Command];
+  _1 (pxLocLogicInst);
+  return;
+
+}
+
+
+hwAccDmaInst_CmdResume (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdResume (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdHalt (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdHalt (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdCancelTransferWithError (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdCancelTransferWithError (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdCancelTransfer (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdCancelTransfer (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_SetConfig (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst, const struct Dma_Ip_LogicInstanceConfigType * const pxLocInstConfig)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+
+  <bb 2> :
+  _1 = pxLocLogicInst->HwVersId;
+  LocHwVers = (uint32) _1;
+  _2 = pxLocLogicInst->HwInstId;
+  LocHwInst = (uint32) _2;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_SetConfig (_3, pxLocInstConfig);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetParamDummyFunction (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetTransferDummyFunction (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetGlobalDummyFunction (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSignedMinorLoopOffset (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint32 reg;
+  long unsigned int iftmp.12;
+  long unsigned int iftmp.11;
+
+  <bb 2> :
+  reg = ptTcd->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg & 2147483647;
+  _2 = pxLocScatterGather->TransferConfig;
+  _3 = _2->MinorLoop.EnSrcOffset;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.11 = 2147483648;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.11 = 0;
+
+  <bb 5> :
+  reg = iftmp.11 | _1;
+  _4 = reg & 3221225471;
+  _5 = pxLocScatterGather->TransferConfig;
+  _6 = _5->MinorLoop.EnDstOffset;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.12 = 1073741824;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.12 = 0;
+
+  <bb 8> :
+  reg = iftmp.12 | _4;
+  _7 = reg & 3221226495;
+  _8 = pxLocScatterGather->TransferConfig;
+  _9 = _8->MinorLoop.Offset;
+  _10 = (long unsigned int) _9;
+  _11 = _10 << 10;
+  _12 = _11 & 1073740800;
+  reg = _7 | _12;
+  ptTcd->reg_NBYTES.reg_MLOFFYES = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetTransferAttributes (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_ATTR;
+  _1 = reg & 63743;
+  _2 = pxLocScatterGather->TransferConfig;
+  _3 = _2->Source.TransferSize;
+  _4 = (short unsigned int) _3;
+  _5 = _4 << 8;
+  _6 = _5 & 1792;
+  reg = _1 | _6;
+  _7 = reg & 2047;
+  _8 = pxLocScatterGather->TransferConfig;
+  _9 = _8->Source.Modulo;
+  _10 = (short unsigned int) _9;
+  _11 = _10 << 11;
+  reg = _7 | _11;
+  _12 = reg & 65528;
+  _13 = pxLocScatterGather->TransferConfig;
+  _14 = _13->Destination.TransferSize;
+  _15 = (short unsigned int) _14;
+  _16 = _15 & 7;
+  reg = _12 | _16;
+  _17 = reg & 65287;
+  _18 = pxLocScatterGather->TransferConfig;
+  _19 = _18->Destination.Modulo;
+  _20 = (short unsigned int) _19;
+  _21 = _20 << 3;
+  _22 = _21 & 255;
+  reg = _17 | _22;
+  ptTcd->reg_ATTR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControlAndStatus (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint16 reg;
+  uint16 iftmp.10;
+  uint16 iftmp.9;
+  uint16 iftmp.8;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65534;
+  _2 = pxLocScatterGather->TransferConfig;
+  _3 = _2->Control.EnStart;
+  _4 = _3;
+  _5 = (short unsigned int) _4;
+  reg = _1 | _5;
+  _6 = reg & 16383;
+  _7 = pxLocScatterGather->TransferConfig;
+  _8 = _7->Control.BandwidthControl;
+  _9 = (short unsigned int) _8;
+  _10 = _9 << 14;
+  reg = _6 | _10;
+  _11 = reg & 65533;
+  _12 = pxLocScatterGather->TransferConfig;
+  _13 = _12->Control.EnMajorInt;
+  if (_13 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.8 = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.8 = 0;
+
+  <bb 5> :
+  reg = iftmp.8 | _11;
+  _14 = reg & 65531;
+  _15 = pxLocScatterGather->TransferConfig;
+  _16 = _15->Control.EnHalfMajorInt;
+  if (_16 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.9 = 4;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.9 = 0;
+
+  <bb 8> :
+  reg = iftmp.9 | _14;
+  _17 = reg & 65527;
+  _18 = pxLocScatterGather->TransferConfig;
+  _19 = _18->Control.DisAutoHwRequest;
+  if (_19 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.10 = 8;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.10 = 0;
+
+  <bb 11> :
+  reg = iftmp.10 | _17;
+  ptTcd->reg_CSR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (struct Dma_Ip_TcdRegType * ptTcd, boolean Value)
+{
+  uint16 reg;
+  uint16 iftmp.7;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65519;
+  if (Value != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.7 = 16;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.7 = 0;
+
+  <bb 5> :
+  _2 = iftmp.7 | _1;
+  ptTcd->reg_CSR = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetIntHalfMajor (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_CSR;
+  _2 = (long unsigned int) _1;
+  _3 = _2 >> 2;
+  _4 = _3 & 1;
+  *retValue = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetIntMajor (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_CSR;
+  _2 = (long unsigned int) _1;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  *retValue = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetCurrentIterCount (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  uint16 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_CITER.reg_ELINKYES;
+  reg = _1 & 32768;
+  if (reg != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ptTcd->reg_CITER.reg_ELINKYES;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 511;
+  *retValue = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = ptTcd->reg_CITER.reg_ELINKNO;
+  _6 = (long unsigned int) _5;
+  _7 = _6 & 32767;
+  *retValue = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetBeginIterCount (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  uint16 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_BITER.reg_ELINKYES;
+  reg = _1 & 32768;
+  if (reg != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ptTcd->reg_BITER.reg_ELINKYES;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 511;
+  *retValue = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = ptTcd->reg_BITER.reg_ELINKYES;
+  _6 = (long unsigned int) _5;
+  _7 = _6 & 32767;
+  *retValue = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetDestinationAddress (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_DADDR;
+  *retValue = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetSourceAddress (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_SADDR;
+  *retValue = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_BandwidthControl (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 16383;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 14;
+  _4 = _1 | _3;
+  ptTcd->reg_CSR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65527;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 3;
+  _4 = _3 & 8;
+  _5 = _1 | _4;
+  ptTcd->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnHalfMajor (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65531;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 2;
+  _4 = _3 & 4;
+  _5 = _1 | _4;
+  ptTcd->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnMajor (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65533;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 1;
+  _4 = _3 & 2;
+  _5 = _1 | _4;
+  ptTcd->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnStart (struct Dma_Ip_TcdRegType * ptTcd, const boolean Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65534;
+  _2 = Value;
+  _3 = (short unsigned int) _2;
+  _4 = _1 | _3;
+  ptTcd->reg_CSR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_DLAST_SGA;
+  ptTcd->reg_DLAST_SGA = Value;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_Count (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_BITER.reg_ELINKYES;
+  _2 = ptTcd->reg_CITER.reg_ELINKYES;
+  _3 = _1 | _2;
+  reg = _3 & 32768;
+  if (reg != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  reg = ptTcd->reg_BITER.reg_ELINKYES;
+  _4 = reg & 65024;
+  _5 = (short unsigned int) Value;
+  _6 = _5 & 511;
+  _7 = _4 | _6;
+  ptTcd->reg_BITER.reg_ELINKYES = _7;
+  reg = ptTcd->reg_CITER.reg_ELINKYES;
+  _8 = reg & 65024;
+  _9 = (short unsigned int) Value;
+  _10 = _9 & 511;
+  _11 = _8 | _10;
+  ptTcd->reg_CITER.reg_ELINKYES = _11;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  reg = ptTcd->reg_BITER.reg_ELINKNO;
+  _12 = reg & 32768;
+  _13 = (short unsigned int) Value;
+  _14 = _13 & 32767;
+  _15 = _12 | _14;
+  ptTcd->reg_BITER.reg_ELINKNO = _15;
+  reg = ptTcd->reg_CITER.reg_ELINKNO;
+  _16 = reg & 32768;
+  _17 = (short unsigned int) Value;
+  _18 = _17 & 32767;
+  _19 = _16 | _18;
+  ptTcd->reg_CITER.reg_ELINKNO = _19;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 61695;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 8;
+  _4 = _3 & 3840;
+  _5 = _1 | _4;
+  ptTcd->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_EnLink (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_CSR;
+  _1 = reg & 65503;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 5;
+  _4 = _3 & 32;
+  _5 = _1 | _4;
+  ptTcd->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_Size (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_NBYTES.reg_MLOFFNO;
+  _1 = reg & 3221225472;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = reg & 4294966272;
+  _3 = Value & 1023;
+  _4 = _2 | _3;
+  ptTcd->reg_NBYTES.reg_MLOFFNO = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = reg & 3221225472;
+  _6 = Value & 1073741823;
+  _7 = _5 | _6;
+  ptTcd->reg_NBYTES.reg_MLOFFNO = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_BITER.reg_ELINKYES;
+  _1 = reg & 57855;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 9;
+  _4 = _3 & 7680;
+  _5 = _1 | _4;
+  ptTcd->reg_BITER.reg_ELINKYES = _5;
+  reg = ptTcd->reg_CITER.reg_ELINKYES;
+  _6 = reg & 57855;
+  _7 = (short unsigned int) Value;
+  _8 = _7 << 9;
+  _9 = _8 & 7680;
+  _10 = _6 | _9;
+  ptTcd->reg_CITER.reg_ELINKYES = _10;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_EnLink (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_BITER.reg_ELINKYES;
+  _1 = reg & 32767;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 15;
+  _4 = _1 | _3;
+  ptTcd->reg_BITER.reg_ELINKYES = _4;
+  reg = ptTcd->reg_CITER.reg_ELINKYES;
+  _5 = reg & 32767;
+  _6 = (short unsigned int) Value;
+  _7 = _6 << 15;
+  _8 = _5 | _7;
+  ptTcd->reg_CITER.reg_ELINKYES = _8;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg & 3221226495;
+  _2 = Value << 10;
+  _3 = _2 & 1073740800;
+  _4 = _1 | _3;
+  ptTcd->reg_NBYTES.reg_MLOFFYES = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg & 3221225471;
+  _2 = Value << 30;
+  _3 = _2 & 1073741824;
+  _4 = _1 | _3;
+  ptTcd->reg_NBYTES.reg_MLOFFYES = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg & 2147483647;
+  _2 = Value << 31;
+  _3 = _1 | _2;
+  ptTcd->reg_NBYTES.reg_MLOFFYES = _3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_Modulo (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_ATTR;
+  _1 = reg & 65287;
+  _2 = (short unsigned int) Value;
+  _3 = _2 << 3;
+  _4 = _3 & 255;
+  _5 = _1 | _4;
+  ptTcd->reg_ATTR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_TransferSize (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_ATTR;
+  _1 = reg & 65528;
+  _2 = (short unsigned int) Value;
+  _3 = _2 & 7;
+  _4 = _1 | _3;
+  ptTcd->reg_ATTR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_LastAddrAdj (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_DLAST_SGA;
+  ptTcd->reg_DLAST_SGA = Value;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_DOFF;
+  _1 = (short unsigned int) Value;
+  ptTcd->reg_DOFF = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_Address (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_DADDR;
+  ptTcd->reg_DADDR = Value;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_Modulo (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_ATTR;
+  reg = (uint32) _1;
+  _2 = (short unsigned int) reg;
+  _3 = _2 & 2047;
+  _4 = (short unsigned int) Value;
+  _5 = _4 << 11;
+  _6 = _3 | _5;
+  ptTcd->reg_ATTR = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_TransferSize (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_ATTR;
+  reg = (uint32) _1;
+  _2 = (short unsigned int) reg;
+  _3 = _2 & 63743;
+  _4 = (short unsigned int) Value;
+  _5 = _4 << 8;
+  _6 = _5 & 1792;
+  _7 = _3 | _6;
+  ptTcd->reg_ATTR = _7;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_SLAST;
+  ptTcd->reg_SLAST = Value;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  _1 = ptTcd->reg_SOFF;
+  reg = (uint32) _1;
+  _2 = (short unsigned int) Value;
+  ptTcd->reg_SOFF = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_Address (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptTcd->reg_SADDR;
+  ptTcd->reg_SADDR = Value;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_DisPreempt (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+
+  <bb 2> :
+  reg = ptCh->reg_DCHPRI[Channel];
+  _1 = reg & 191;
+  _2 = (unsigned char) Value;
+  _3 = _2 << 6;
+  _4 = _3 & 64;
+  _5 = _1 | _4;
+  ptCh->reg_DCHPRI[Channel] = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_EnPreemption (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+
+  <bb 2> :
+  reg = ptCh->reg_DCHPRI[Channel];
+  _1 = reg & 127;
+  _2 = (unsigned char) Value;
+  _3 = _2 << 7;
+  _4 = _1 | _3;
+  ptCh->reg_DCHPRI[Channel] = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_Level (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+
+  <bb 2> :
+  reg = ptCh->reg_DCHPRI[Channel];
+  _1 = reg & 240;
+  _2 = (unsigned char) Value;
+  _3 = _2 & 15;
+  _4 = _1 | _3;
+  ptCh->reg_DCHPRI[Channel] = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetInterrupt_EnError (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptCh->reg_EEI;
+  _1 = 1 << Channel;
+  _2 = ~_1;
+  _3 = reg & _2;
+  _4 = Value << Channel;
+  _5 = _3 | _4;
+  ptCh->reg_EEI = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnHwRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptCh->reg_ERQ;
+  _1 = 1 << Channel;
+  _2 = ~_1;
+  _3 = reg & _2;
+  _4 = Value << Channel;
+  _5 = _3 | _4;
+  ptCh->reg_ERQ = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, const uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+
+  <bb 2> :
+  reg = *pMuxChCfg;
+  _1 = reg & 127;
+  _2 = (unsigned char) Value;
+  _3 = _2 << 7;
+  _4 = _1 | _3;
+  *pMuxChCfg = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnTriggerMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+
+  <bb 2> :
+  reg = *pMuxChCfg;
+  _1 = reg & 191;
+  _2 = (unsigned char) Value;
+  _3 = _2 << 6;
+  _4 = _3 & 64;
+  _5 = _1 | _4;
+  *pMuxChCfg = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_SourceMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, const uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+
+  <bb 2> :
+  reg = *pMuxChCfg;
+  _1 = reg & 192;
+  _2 = (unsigned char) Value;
+  _3 = _2 & 63;
+  _4 = _1 | _3;
+  *pMuxChCfg = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetDoneStatus (const struct Dma_Ip_TcdRegType * ptTcd, boolean * const pBool)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_CSR;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 7;
+  _4 = (int) _3;
+  _5 = _4 & 1;
+  _6 = _5 != 0;
+  *pBool = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetActiveStatus (const struct Dma_Ip_TcdRegType * ptTcd, boolean * const pBool)
+{
+  <bb 2> :
+  _1 = ptTcd->reg_CSR;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 6;
+  _4 = (int) _3;
+  _5 = _4 & 1;
+  _6 = _5 != 0;
+  *pBool = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetErrorStatus (uint32 LocHwCh, const struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 * const pValue)
+{
+  <bb 2> :
+  _1 = ptCh->reg_ERR;
+  _2 = _1 >> LocHwCh;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = ptCh->reg_ES;
+  _4 = _3 & 2147569663;
+  *pValue = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *pValue = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearError (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel;
+  reg = _1 & 15;
+  ptCh->reg_CERR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearDone (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel;
+  reg = _1 & 15;
+  ptCh->reg_CDNE = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdSwReqStart (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel;
+  reg = _1 & 15;
+  ptCh->reg_SSRT = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel;
+  reg = _1 & 15;
+  ptCh->reg_CERQ = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdSetRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel;
+  reg = _1 & 15;
+  ptCh->reg_SERQ = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetActiveStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, boolean * const pBool)
+{
+  <bb 2> :
+  _1 = ptInst->reg_CR;
+  _2 = (signed int) _1;
+  _3 = _2 < 0;
+  *pBool = _3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetActiveIdStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, uint8 * const pValue)
+{
+  <bb 2> :
+  *pValue = 255;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetErrorStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, uint32 * const pValue)
+{
+  <bb 2> :
+  _1 = ptInst->reg_ES;
+  _2 = _1 & 2147569663;
+  *pValue = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdResume (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptInst->reg_CR;
+  reg = reg & 4294967263;
+  ptInst->reg_CR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdHalt (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptInst->reg_CR;
+  reg = reg | 32;
+  ptInst->reg_CR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdCancelTransferWithError (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptInst->reg_CR;
+  reg = reg | 65536;
+  ptInst->reg_CR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdCancelTransfer (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg = ptInst->reg_CR;
+  reg = reg | 131072;
+  ptInst->reg_CR = reg;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_SetConfig (struct Dma_Ip_Hwv2InstRegType * const ptInst, const struct Dma_Ip_LogicInstanceConfigType * const pxConfig)
+{
+  uint32 reg;
+  long unsigned int iftmp.2;
+  long unsigned int iftmp.1;
+  long unsigned int iftmp.0;
+
+  <bb 2> :
+  reg = ptInst->reg_CR;
+  _1 = reg & 4294967293;
+  _2 = pxConfig->EnDebug;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.0 = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.0 = 0;
+
+  <bb 5> :
+  reg = iftmp.0 | _1;
+  _3 = reg & 4294967291;
+  _4 = pxConfig->EnRoundRobin;
+  if (_4 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.1 = 4;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.1 = 0;
+
+  <bb 8> :
+  reg = iftmp.1 | _3;
+  _5 = reg & 4294967279;
+  _6 = pxConfig->EnHaltAfterError;
+  if (_6 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.2 = 16;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.2 = 0;
+
+  <bb 11> :
+  reg = iftmp.2 | _5;
+  reg = reg | 128;
+  reg = reg & 4294967231;
+  ptInst->reg_CR = reg;
+  return;
+
+}
+
+

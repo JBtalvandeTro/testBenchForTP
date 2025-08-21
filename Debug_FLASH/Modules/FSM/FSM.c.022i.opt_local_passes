@@ -1,0 +1,22 @@
+FSM_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+FSM_Init ()
+{
+  <bb 2> :
+  FSM_mode = 0;
+  FSM_errors.EnterMaintModeNotMet = 0;
+  FSM_errors.bbAuxInMaintMode = 0;
+  FSM_errors.autonomousBoostEnd = 0;
+  FSM_errors.autonomousBuckEnd = 0;
+  FSM_errors.failedPbit = 0;
+  return;
+
+}
+
+

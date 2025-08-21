@@ -1,0 +1,601 @@
+
+Marking local functions: Lptmr_Icu_Ip_SetMeasurementMode Lptmr_Icu_Ip_SetClockSelect Lptmr_Icu_Ip_PinSelect Lptmr_Icu_Ip_SetPrescaler Lptmr_Icu_Ip_TimerModeSelect Lptmr_Icu_Ip_ClearCompareFlag Lptmr_Icu_Ip_TimerEnable
+
+
+Marking externally visible functions: Lptmr_Icu_Ip_DisableNotification Lptmr_Icu_Ip_EnableNotification Lptmr_Icu_Ip_DisableInterrupt Lptmr_Icu_Ip_EnableInterrupt Lptmr_Icu_Ip_GetEdgeNumbers Lptmr_Icu_Ip_DisableEdgeCount Lptmr_Icu_Ip_EnableEdgeCount Lptmr_Icu_Ip_ResetEdgeCount Lptmr_Icu_Ip_DisableDetection Lptmr_Icu_Ip_EnableEdgeDetection Lptmr_Icu_Ip_SetActivationCondition Lptmr_Icu_Ip_Init
+
+
+Marking externally visible variables: Lptmr_Icu_aChConfig s_lptmrBase
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Lptmr_Icu_Ip_DisableNotification/20 (Lptmr_Icu_Ip_DisableNotification) @06b7cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_EnableNotification/19 (Lptmr_Icu_Ip_EnableNotification) @06b7c8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableInterrupt/18 (Lptmr_Icu_Ip_DisableInterrupt) @06b7c620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_DisableDetection/12 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_EnableInterrupt/17 (Lptmr_Icu_Ip_EnableInterrupt) @06b7c380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_EnableEdgeDetection/11 
+  Calls: 
+Lptmr_Icu_Ip_GetEdgeNumbers/16 (Lptmr_Icu_Ip_GetEdgeNumbers) @06b7c0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Lptmr_Icu_Ip_DisableEdgeCount/15 (Lptmr_Icu_Ip_DisableEdgeCount) @06b78a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_EnableEdgeCount/14 (Lptmr_Icu_Ip_EnableEdgeCount) @06b78460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_ResetEdgeCount/13 (Lptmr_Icu_Ip_ResetEdgeCount) @06b78ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_DisableDetection/12 (Lptmr_Icu_Ip_DisableDetection) @06b78c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_DisableInterrupt/18 
+Lptmr_Icu_Ip_EnableEdgeDetection/11 (Lptmr_Icu_Ip_EnableEdgeDetection) @06b789a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_EnableInterrupt/17 
+Lptmr_Icu_Ip_SetActivationCondition/10 (Lptmr_Icu_Ip_SetActivationCondition) @06b78700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_Init/9 (Lptmr_Icu_Ip_Init) @06b78380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Lptmr_Icu_aChConfig/1 (read)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)Lptmr_Icu_aChConfig/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lptmr_Icu_Ip_TimerEnable/2 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetActivationCondition/10 Lptmr_Icu_Ip_SetPrescaler/5 Lptmr_Icu_Ip_SetClockSelect/7 Lptmr_Icu_Ip_TimerModeSelect/4 Lptmr_Icu_Ip_PinSelect/6 Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_DisableInterrupt/18 Lptmr_Icu_Ip_TimerEnable/2 
+Lptmr_Icu_Ip_SetMeasurementMode/8 (Lptmr_Icu_Ip_SetMeasurementMode) @06b78000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: Lptmr_Icu_Ip_ClearCompareFlag/3 Lptmr_Icu_Ip_ClearCompareFlag/3 
+Lptmr_Icu_Ip_SetClockSelect/7 (Lptmr_Icu_Ip_SetClockSelect) @06b0b540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_PinSelect/6 (Lptmr_Icu_Ip_PinSelect) @06b0bee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_SetPrescaler/5 (Lptmr_Icu_Ip_SetPrescaler) @06b0bb60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerModeSelect/4 (Lptmr_Icu_Ip_TimerModeSelect) @06b0b7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_ClearCompareFlag/3 (Lptmr_Icu_Ip_ClearCompareFlag) @06b0b460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_SetMeasurementMode/8 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_Ip_TimerEnable/2 (Lptmr_Icu_Ip_TimerEnable) @06b0b1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Lptmr_Icu_Ip_DisableEdgeCount/15 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_EnableEdgeCount/14 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_ResetEdgeCount/13 Lptmr_Icu_Ip_Init/9 Lptmr_Icu_Ip_Init/9 
+  Calls: 
+Lptmr_Icu_aChConfig/1 (Lptmr_Icu_aChConfig) @06b03ea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Lptmr_Icu_Ip_Init/9 (read)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_Init/9 (write)Lptmr_Icu_Ip_EnableNotification/19 (write)Lptmr_Icu_Ip_DisableNotification/20 (write)
+  Availability: available
+  Varpool flags:
+s_lptmrBase/0 (s_lptmrBase) @06b03e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Lptmr_Icu_Ip_DisableNotification (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  Lptmr_Icu_aChConfig[_1].notificationEnable = 0;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_EnableNotification (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  Lptmr_Icu_aChConfig[_1].notificationEnable = 1;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_DisableInterrupt (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 & 4294967231;
+  _5->CSR = _6;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_EnableInterrupt (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 | 64;
+  _5->CSR = _6;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_GetEdgeNumbers (uint8 instance)
+{
+  uint16 D.6877;
+
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CNR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 & 1;
+  _5->CNR = _6;
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _8->CNR;
+  D.6877 = (uint16) _9;
+
+  <bb 3> :
+<L0>:
+  return D.6877;
+
+}
+
+
+Lptmr_Icu_Ip_DisableEdgeCount (uint8 instance)
+{
+  Lptmr_Icu_Ip_StatusType D.6875;
+
+  <bb 2> :
+  Lptmr_Icu_Ip_TimerEnable (instance, 0);
+  D.6875 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6875;
+
+}
+
+
+Lptmr_Icu_Ip_EnableEdgeCount (uint8 instance)
+{
+  <bb 2> :
+  Lptmr_Icu_Ip_TimerEnable (instance, 0);
+  Lptmr_Icu_Ip_TimerEnable (instance, 1);
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_ResetEdgeCount (uint8 instance)
+{
+  <bb 2> :
+  Lptmr_Icu_Ip_TimerEnable (instance, 0);
+  Lptmr_Icu_Ip_TimerEnable (instance, 1);
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_DisableDetection (uint8 instance)
+{
+  <bb 2> :
+  Lptmr_Icu_Ip_DisableInterrupt (instance);
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_EnableEdgeDetection (uint8 instance)
+{
+  <bb 2> :
+  Lptmr_Icu_Ip_EnableInterrupt (instance);
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_SetActivationCondition (uint8 instance, Lptmr_Icu_Ip_EdgeType activation)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = _3 & 4294967287;
+  _5 = activation << 3;
+  _6 = _5 & 8;
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _4 | _6;
+  _8->CSR = _9;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_Init (uint8 instance, const struct Lptmr_Icu_Ip_ConfigType * userConfig)
+{
+  Lptmr_Icu_Ip_StatusType retStatus;
+  const struct Lptmr_Icu_Ip_ChannelConfigType * pLptmrChannelConfig;
+  Lptmr_Icu_Ip_StatusType D.6863;
+
+  <bb 2> :
+  _1 = userConfig->pChannelsConfig;
+  pLptmrChannelConfig = &*_1[0];
+  retStatus = 0;
+  _2 = (int) instance;
+  _3 = Lptmr_Icu_aChConfig[_2].chInit;
+  _4 = ~_3;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Lptmr_Icu_Ip_TimerEnable (instance, 0);
+  Lptmr_Icu_Ip_DisableInterrupt (instance);
+  Lptmr_Icu_Ip_ClearCompareFlag (instance);
+  _5 = userConfig->PinSelect;
+  Lptmr_Icu_Ip_PinSelect (instance, _5);
+  Lptmr_Icu_Ip_TimerModeSelect (instance, 1);
+  _6 = userConfig->ClockSource;
+  Lptmr_Icu_Ip_SetClockSelect (instance, _6);
+  _7 = userConfig->Prescaler;
+  _8 = userConfig->PrescalerEnable;
+  Lptmr_Icu_Ip_SetPrescaler (instance, _7, _8);
+  _9 = pLptmrChannelConfig->DefaultStartEdge;
+  Lptmr_Icu_Ip_SetActivationCondition (instance, _9);
+  _10 = pLptmrChannelConfig->MeasurementModeType;
+  Lptmr_Icu_Ip_SetMeasurementMode (instance, _10);
+  Lptmr_Icu_Ip_TimerEnable (instance, 1);
+  _11 = (int) instance;
+  Lptmr_Icu_aChConfig[_11].chInit = 1;
+  _12 = (int) instance;
+  _13 = pLptmrChannelConfig->MeasurementModeType;
+  Lptmr_Icu_aChConfig[_12].measMode = _13;
+  _14 = (int) instance;
+  _15 = pLptmrChannelConfig->callback;
+  Lptmr_Icu_aChConfig[_14].callback = _15;
+  _16 = (int) instance;
+  _17 = pLptmrChannelConfig->callbackParam;
+  Lptmr_Icu_aChConfig[_16].callbackParam = _17;
+  _18 = (int) instance;
+  _19 = pLptmrChannelConfig->lptmrChannelNotification;
+  Lptmr_Icu_aChConfig[_18].lptmrChannelNotification = _19;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retStatus = 1;
+
+  <bb 5> :
+  D.6863 = retStatus;
+
+  <bb 6> :
+<L3>:
+  return D.6863;
+
+}
+
+
+Lptmr_Icu_Ip_SetMeasurementMode (uint8 instance, Lptmr_Icu_MeasurementModeType mode)
+{
+  <bb 2> :
+  if (mode == 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Lptmr_Icu_Ip_ClearCompareFlag (instance);
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 | 4;
+  _5->CSR = _6;
+
+  <bb 4> :
+  if (mode == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Lptmr_Icu_Ip_ClearCompareFlag (instance);
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _8->CSR;
+  _10 = (int) instance;
+  _11 = 1074003968B;
+  _12 = _9 & 4294967291;
+  _11->CSR = _12;
+  _13 = (int) instance;
+  _14 = 1074003968B;
+  _15 = _14->CMR;
+  _16 = _15 & 4294901760;
+  _17 = (int) instance;
+  _18 = 1074003968B;
+  _19 = _16 | 1;
+  _18->CMR = _19;
+
+  <bb 6> :
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_SetClockSelect (uint8 instance, Lptmr_Icu_Ip_ClockSourceType clocksource)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->PSR;
+  _4 = _3 & 4294967292;
+  _5 = clocksource & 3;
+  _6 = (int) instance;
+  _7 = 1074003968B;
+  _8 = _4 | _5;
+  _7->PSR = _8;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_PinSelect (uint8 instance, Lptmr_Icu_Ip_PinSelectType Pin)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = _3 & 4294967247;
+  _5 = Pin << 4;
+  _6 = _5 & 48;
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _4 | _6;
+  _8->CSR = _9;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_SetPrescaler (uint8 instance, Lptmr_Icu_PrescalerType prescalerValue, boolean enable)
+{
+  <bb 2> :
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->PSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 & 4294967291;
+  _5->PSR = _6;
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _8->PSR;
+  _10 = _9 & 4294967175;
+  _11 = prescalerValue << 3;
+  _12 = _11 & 120;
+  _13 = (int) instance;
+  _14 = 1074003968B;
+  _15 = _10 | _12;
+  _14->PSR = _15;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _16 = (int) instance;
+  _17 = 1074003968B;
+  _18 = _17->PSR;
+  _19 = (int) instance;
+  _20 = 1074003968B;
+  _21 = _18 | 4;
+  _20->PSR = _21;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_TimerModeSelect (uint8 instance, uint32 mode)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = _3 & 4294967293;
+  _5 = mode << 1;
+  _6 = _5 & 2;
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _4 | _6;
+  _8->CSR = _9;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_ClearCompareFlag (uint8 instance)
+{
+  <bb 2> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 | 128;
+  _5->CSR = _6;
+  return;
+
+}
+
+
+Lptmr_Icu_Ip_TimerEnable (uint8 instance, boolean enable)
+{
+  <bb 2> :
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) instance;
+  _2 = 1074003968B;
+  _3 = _2->CSR;
+  _4 = (int) instance;
+  _5 = 1074003968B;
+  _6 = _3 | 1;
+  _5->CSR = _6;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = (int) instance;
+  _8 = 1074003968B;
+  _9 = _8->CSR;
+  _10 = (int) instance;
+  _11 = 1074003968B;
+  _12 = _9 & 4294967294;
+  _11->CSR = _12;
+
+  <bb 5> :
+  return;
+
+}
+
+

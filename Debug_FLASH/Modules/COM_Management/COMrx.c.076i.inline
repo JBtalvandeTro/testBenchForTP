@@ -1,0 +1,1178 @@
+IPA summary for com_HandleMaintenanceParameterRequest/8 is missing.
+IPA summary for com_HandleMaintenanceEquipmentTestRequest/7 is missing.
+IPA summary for com_MaintenanceReceivedManagement/6 is missing.
+IPA summary for com_InternalReceivedManagement/5 is missing.
+IPA summary for com_ControlReceivedManagement/4 is missing.
+IPA summary for com_ReceivedManagement/3 is missing.
+IPA summary for com_UpdateErrors/2 is missing.
+IPA summary for com_GetFrameIndex/1 is missing.
+IPA summary for COM_RxTask/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       10 calls, 10.000000 freq, 0 count
+function body not available                       :       14 calls, 14.000000 freq, 0 count
+IPA summary for com_HandleMaintenanceParameterRequest/8 is missing.
+IPA summary for com_HandleMaintenanceEquipmentTestRequest/7 is missing.
+IPA summary for com_MaintenanceReceivedManagement/6 is missing.
+IPA summary for com_InternalReceivedManagement/5 is missing.
+IPA summary for com_ControlReceivedManagement/4 is missing.
+IPA summary for com_ReceivedManagement/3 is missing.
+IPA summary for com_UpdateErrors/2 is missing.
+IPA summary for com_GetFrameIndex/1 is missing.
+IPA summary for COM_RxTask/0 is missing.
+Symbol table:
+
+COM_paramReq/40 (COM_paramReq) @062ad3a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (addr)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)com_HandleMaintenanceParameterRequest/8 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/39 (CBU_GetMaintenanceParameterRequest) @062aab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_HandleMaintenanceParameterRequest/8 
+  Calls: 
+PAR_paramReq/38 (PAR_paramReq) @062ad318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceParameterRequest/8 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/37 (COM_debugTestReq) @062ad000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (addr)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)com_HandleMaintenanceEquipmentTestRequest/7 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceEquipmentTestRequest/36 (CBU_GetMaintenanceEquipmentTestRequest) @062aa8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_HandleMaintenanceEquipmentTestRequest/7 
+  Calls: 
+DBG_Flags/35 (DBG_Flags) @062a9f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_HandleMaintenanceEquipmentTestRequest/7 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/34 (FSM_mode) @062a9ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_MaintenanceReceivedManagement/6 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_GetInternalWarningsFrame/33 (CNV_GetInternalWarningsFrame) @062aa620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalErrorsFrame/32 (CNV_GetInternalErrorsFrame) @062aa540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalControlInfoFrame/31 (CNV_GetInternalControlInfoFrame) @062aa460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/30 (CNV_GetInternalRegulationInfoFrame) @062aa380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/29 (CNV_GetInternalVoltageMeasuresFrame) @062aa2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/28 (CNV_GetInternalTemperatureMeasuresFrame) @062aa1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/27 (CNV_GetInternalPowerMeasuresFrame) @062aa0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/26 (CNV_GetInternalCurrentMeasuresFrame) @062aa000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_InternalReceivedManagement/5 
+  Calls: 
+COM_errorsAndWarnings/25 (COM_errorsAndWarnings) @06211ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)
+  Availability: not_available
+  Varpool flags:
+COM_mode/24 (COM_mode) @06211e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetControlPtcuCmdsFrameData/23 (CBU_GetControlPtcuCmdsFrameData) @062062a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ControlReceivedManagement/4 
+  Calls: 
+CBU_ClearPendingFlag/22 (CBU_ClearPendingFlag) @06206ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ReceivedManagement/3 
+  Calls: 
+CNV_getPowercoreUnitsIndex/21 (CNV_getPowercoreUnitsIndex) @06206e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ReceivedManagement/3 com_InternalReceivedManagement/5 
+  Calls: 
+CBU_powerCoreAdd/20 (CBU_powerCoreAdd) @062118b8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_InternalReceivedManagement/5 (read)com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_framesStatus/19 (CBU_framesStatus) @062117e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags:
+Can_Config_Init/18 (Can_Config_Init) @06211798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ReceivedManagement/3 (read)
+  Availability: not_available
+  Varpool flags: read-only
+CBU_flags/17 (CBU_flags) @0620af30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/16 (CNV_powercoreUnitTable) @0620aee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)com_ReceivedManagement/3 (write)
+  Availability: not_available
+  Varpool flags:
+COM_internalComLostCounter/15 (COM_internalComLostCounter) @0620aea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_InternalReceivedManagement/5 (write)
+  Availability: not_available
+  Varpool flags:
+COM_controlComLostCounter/14 (COM_controlComLostCounter) @0620ae58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_ControlReceivedManagement/4 (write)com_UpdateErrors/2 (write)com_ReceivedManagement/3 (read)com_ReceivedManagement/3 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/13 (PAR_paramConfig) @0620ae10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (read)com_UpdateErrors/2 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesMaintenance/12 (COM_framesMaintenance) @0620a828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/11 (COM_framesInternal) @0620a7e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_InternalReceivedManagement/5 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/10 (COM_framesControl) @0620a798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_GetFrameIndex/1 (addr)com_GetFrameIndex/1 (addr)com_ControlReceivedManagement/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_flags/9 (COM_flags) @0620a1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_InternalReceivedManagement/5 (write)com_InternalReceivedManagement/5 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (write)com_UpdateErrors/2 (read)com_UpdateErrors/2 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)com_ControlReceivedManagement/4 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)COM_RxTask/0 (write)
+  Availability: not_available
+  Varpool flags:
+com_HandleMaintenanceParameterRequest/8 (com_HandleMaintenanceParameterRequest) @06206460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramReq/38 (read)COM_paramReq/40 (addr)COM_paramReq/40 (addr)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)COM_paramReq/40 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceParameterRequest/39 
+com_HandleMaintenanceEquipmentTestRequest/7 (com_HandleMaintenanceEquipmentTestRequest) @062061c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/35 (read)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (addr)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)COM_debugTestReq/37 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 
+  Calls: CBU_GetMaintenanceEquipmentTestRequest/36 
+com_MaintenanceReceivedManagement/6 (com_MaintenanceReceivedManagement) @06176e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/34 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: com_HandleMaintenanceParameterRequest/8 com_HandleMaintenanceEquipmentTestRequest/7 com_GetFrameIndex/1 
+com_InternalReceivedManagement/5 (com_InternalReceivedManagement) @061768c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesInternal/11 (read)COM_internalComLostCounter/15 (write)CBU_powerCoreAdd/20 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CNV_GetInternalWarningsFrame/33 CNV_GetInternalErrorsFrame/32 CNV_GetInternalControlInfoFrame/31 CNV_GetInternalRegulationInfoFrame/30 CNV_GetInternalVoltageMeasuresFrame/29 CNV_GetInternalTemperatureMeasuresFrame/28 CNV_GetInternalPowerMeasuresFrame/27 CNV_GetInternalCurrentMeasuresFrame/26 CNV_getPowercoreUnitsIndex/21 com_GetFrameIndex/1 
+com_ControlReceivedManagement/4 (com_ControlReceivedManagement) @06176380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_controlComLostCounter/14 (write)COM_framesControl/10 (read)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (addr)COM_mode/24 (read)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)COM_errorsAndWarnings/25 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ReceivedManagement/3 
+  Calls: CBU_GetControlPtcuCmdsFrameData/23 com_GetFrameIndex/1 
+com_ReceivedManagement/3 (com_ReceivedManagement) @06176d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Config_Init/18 (read)CBU_framesStatus/19 (read)CBU_framesStatus/19 (read)CBU_powerCoreAdd/20 (read)COM_controlComLostCounter/14 (read)COM_controlComLostCounter/14 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: CBU_ClearPendingFlag/22 com_MaintenanceReceivedManagement/6 CNV_getPowercoreUnitsIndex/21 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+com_UpdateErrors/2 (com_UpdateErrors) @06176a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)COM_flags/9 (read)COM_flags/9 (write)COM_controlComLostCounter/14 (write)COM_internalComLostCounter/15 (write)CNV_powercoreUnitTable/16 (write)CNV_powercoreUnitTable/16 (write)CBU_flags/17 (read)COM_controlComLostCounter/14 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)CBU_flags/17 (read)CNV_powercoreUnitTable/16 (read)CNV_powercoreUnitTable/16 (read)CBU_flags/17 (read)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_RxTask/0 
+  Calls: 
+com_GetFrameIndex/1 (com_GetFrameIndex) @061767e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesControl/10 (addr)COM_framesControl/10 (addr)COM_framesInternal/11 (addr)COM_framesMaintenance/12 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_MaintenanceReceivedManagement/6 com_InternalReceivedManagement/5 com_ControlReceivedManagement/4 
+  Calls: 
+COM_RxTask/0 (COM_RxTask) @06176540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)COM_flags/9 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: com_UpdateErrors/2 com_ReceivedManagement/3 
+
+;; Function COM_RxTask (COM_RxTask, funcdef_no=0, decl_uid=5417, cgraph_uid=1, symbol_order=0)
+
+COM_RxTask ()
+{
+  <bb 2> :
+  COM_flags.moduleFlags.status.flags.maintenanceRequestEnter = 0;
+  COM_flags.moduleFlags.status.flags.maintenanceRequestExit = 0;
+  COM_flags.moduleFlags.status.flags.settingRequestEnter = 0;
+  COM_flags.moduleFlags.status.flags.settingRequestExit = 0;
+  com_ReceivedManagement ();
+  com_UpdateErrors ();
+  return;
+
+}
+
+
+
+;; Function com_GetFrameIndex (com_GetFrameIndex, funcdef_no=1, decl_uid=8372, cgraph_uid=2, symbol_order=1)
+
+com_GetFrameIndex (uint8_t controllerId, uint32_t frameId)
+{
+  uint8_t framesCount;
+  struct COM_FrameStr * framesTable;
+  uint8_t ret;
+  uint8_t index;
+  uint8_t frame;
+  uint8_t D.8498;
+  int _1;
+  unsigned int _2;
+  unsigned int _3;
+  struct COM_FrameStr * _4;
+  long unsigned int _5;
+  unsigned char index.0_6;
+  unsigned char frame.1_7;
+  uint8_t _27;
+
+  <bb 2> :
+  index_15 = 0;
+  ret_16 = 255;
+  framesTable_17 = &COM_framesControl;
+  _1 = (int) controllerId_18(D);
+  switch (_1) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  framesTable_23 = &COM_framesControl;
+  framesCount_24 = 9;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  framesTable_21 = &COM_framesInternal;
+  framesCount_22 = 17;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  framesTable_19 = &COM_framesMaintenance;
+  framesCount_20 = 4;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  framesCount_25 = 0;
+
+  <bb 7> :
+  # framesTable_13 = PHI <framesTable_23(3), framesTable_21(4), framesTable_19(5), framesTable_17(6)>
+  # framesCount_14 = PHI <framesCount_24(3), framesCount_22(4), framesCount_20(5), framesCount_25(6)>
+  frame_26 = 0;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  _2 = (unsigned int) frame_8;
+  _3 = _2 * 20;
+  _4 = framesTable_13 + _3;
+  _5 = _4->id;
+  if (frameId_29(D) == _5)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  ret_31 = index_10;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  index.0_6 = index_10;
+  index_30 = index.0_6 + 1;
+
+  <bb 11> :
+  # index_9 = PHI <index_10(9), index_30(10)>
+  # ret_11 = PHI <ret_31(9), ret_12(10)>
+  frame.1_7 = frame_8;
+  frame_32 = frame.1_7 + 1;
+
+  <bb 12> :
+  # frame_8 = PHI <frame_26(7), frame_32(11)>
+  # index_10 = PHI <index_15(7), index_9(11)>
+  # ret_12 = PHI <ret_16(7), ret_11(11)>
+  if (frame_8 < framesCount_14)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _27 = ret_12;
+
+  <bb 14> :
+<L11>:
+  return _27;
+
+}
+
+
+
+;; Function com_UpdateErrors (com_UpdateErrors, funcdef_no=2, decl_uid=8369, cgraph_uid=3, symbol_order=2)
+
+com_UpdateErrors ()
+{
+  uint32_t timeoutInternal;
+  uint32_t timeoutControl;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int COM_controlComLostCounter.2_7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+
+  <bb 2> :
+  _1 = PAR_paramConfig[8].realVal.unsignedVal;
+  timeoutControl_20 = _1 * 100;
+  _2 = PAR_paramConfig[9].realVal.unsignedVal;
+  timeoutInternal_21 = _2 * 100;
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 8;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  COM_flags.moduleFlags.faults.all = 0;
+  COM_controlComLostCounter = 0;
+  COM_internalComLostCounter = 0;
+  CNV_powercoreUnitTable[0].comLostCounter = 0;
+  CNV_powercoreUnitTable[1].comLostCounter = 0;
+
+  <bb 4> :
+  _5 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  COM_controlComLostCounter.2_7 = COM_controlComLostCounter;
+  if (timeoutControl_20 <= COM_controlComLostCounter.2_7)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (timeoutControl_20 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _8 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _9 = _8 & 16;
+  if (_9 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  COM_flags.moduleFlags.faults.flags.canCComLoss = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  COM_flags.moduleFlags.faults.flags.canCComLoss = 0;
+
+  <bb 10> :
+  _10 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _11 = _10 & 2;
+  if (_11 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 11> :
+  _12 = CNV_powercoreUnitTable[0].comLostCounter;
+  if (timeoutInternal_21 <= _12)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  if (timeoutInternal_21 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _13 = CNV_powercoreUnitTable[1].comLostCounter;
+  if (timeoutInternal_21 <= _13)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  if (timeoutInternal_21 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  _14 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _15 = _14 & 32;
+  if (_15 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  COM_flags.moduleFlags.faults.flags.canIComLoss = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  COM_flags.moduleFlags.faults.flags.canIComLoss = 0;
+
+  <bb 18> :
+  return;
+
+}
+
+
+
+;; Function com_ReceivedManagement (com_ReceivedManagement, funcdef_no=3, decl_uid=8367, cgraph_uid=4, symbol_order=3)
+
+com_ReceivedManagement ()
+{
+  uint8_t powercoreUnitIndex;
+  uint8_t powercoreUnitAddress;
+  boolean frameReceivedCinternalCOMETI2;
+  boolean frameReceivedCinternalCOMETI1;
+  boolean frameReceivedCcontrol;
+  struct CBU_FrameStatusStr currentFrame;
+  uint16_t mailbox;
+  const struct Can_HwObjectConfigType * _1;
+  unsigned int _2;
+  unsigned int _3;
+  const struct Can_HwObjectConfigType * _4;
+  <unnamed type> _5;
+  int _6;
+  _Bool _7;
+  int _8;
+  unsigned char _9;
+  int _10;
+  short unsigned int mailbox.3_11;
+  _Bool _12;
+  long unsigned int COM_controlComLostCounter.4_13;
+  long unsigned int _14;
+  _Bool _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  _Bool _18;
+  long unsigned int _19;
+  long unsigned int _20;
+
+  <bb 2> :
+  frameReceivedCcontrol_39 = 0;
+  frameReceivedCinternalCOMETI1_40 = 0;
+  frameReceivedCinternalCOMETI2_41 = 0;
+  mailbox_42 = 0;
+  goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 = Can_Config_Init.Can_pHwObjectConfig;
+  _2 = (unsigned int) mailbox_21;
+  _3 = _2 * 36;
+  _4 = _1 + _3;
+  _5 = _4->Can_HohType;
+  if (_5 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 4> :
+  _6 = (int) mailbox_21;
+  _7 = CBU_framesStatus[_6].isPending;
+  if (_7 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 5> :
+  _8 = (int) mailbox_21;
+  currentFrame = CBU_framesStatus[_8];
+  _9 = currentFrame.idController;
+  _10 = (int) _9;
+  switch (_10) <default: <L11> [INV], case 0: <L3> [INV], case 1: <L4> [INV], case 2: <L10> [INV]>
+
+  <bb 6> :
+<L3>:
+  com_ControlReceivedManagement (currentFrame);
+  frameReceivedCcontrol_59 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  com_InternalReceivedManagement (currentFrame);
+  powercoreUnitAddress_53 = CBU_powerCoreAdd;
+  powercoreUnitIndex_55 = CNV_getPowercoreUnitsIndex (powercoreUnitAddress_53);
+  if (powercoreUnitIndex_55 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  frameReceivedCinternalCOMETI1_57 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (powercoreUnitIndex_55 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  frameReceivedCinternalCOMETI2_56 = 1;
+
+  <bb 11> :
+  # frameReceivedCinternalCOMETI1_25 = PHI <frameReceivedCinternalCOMETI1_57(8), frameReceivedCinternalCOMETI1_28(9), frameReceivedCinternalCOMETI1_28(10)>
+  # frameReceivedCinternalCOMETI2_29 = PHI <frameReceivedCinternalCOMETI2_32(8), frameReceivedCinternalCOMETI2_32(9), frameReceivedCinternalCOMETI2_56(10)>
+  goto <bb 14>; [INV]
+
+  <bb 12> :
+<L10>:
+  com_MaintenanceReceivedManagement (currentFrame);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L11>:
+
+  <bb 14> :
+  # frameReceivedCcontrol_22 = PHI <frameReceivedCcontrol_59(6), frameReceivedCcontrol_24(11), frameReceivedCcontrol_24(12), frameReceivedCcontrol_24(13)>
+  # frameReceivedCinternalCOMETI1_26 = PHI <frameReceivedCinternalCOMETI1_28(6), frameReceivedCinternalCOMETI1_25(11), frameReceivedCinternalCOMETI1_28(12), frameReceivedCinternalCOMETI1_28(13)>
+  # frameReceivedCinternalCOMETI2_30 = PHI <frameReceivedCinternalCOMETI2_32(6), frameReceivedCinternalCOMETI2_29(11), frameReceivedCinternalCOMETI2_32(12), frameReceivedCinternalCOMETI2_32(13)>
+  CBU_ClearPendingFlag (mailbox_21);
+
+  <bb 15> :
+  # frameReceivedCcontrol_23 = PHI <frameReceivedCcontrol_24(3), frameReceivedCcontrol_24(4), frameReceivedCcontrol_22(14)>
+  # frameReceivedCinternalCOMETI1_27 = PHI <frameReceivedCinternalCOMETI1_28(3), frameReceivedCinternalCOMETI1_28(4), frameReceivedCinternalCOMETI1_26(14)>
+  # frameReceivedCinternalCOMETI2_31 = PHI <frameReceivedCinternalCOMETI2_32(3), frameReceivedCinternalCOMETI2_32(4), frameReceivedCinternalCOMETI2_30(14)>
+  mailbox.3_11 = mailbox_21;
+  mailbox_61 = mailbox.3_11 + 1;
+
+  <bb 16> :
+  # mailbox_21 = PHI <mailbox_42(2), mailbox_61(15)>
+  # frameReceivedCcontrol_24 = PHI <frameReceivedCcontrol_39(2), frameReceivedCcontrol_23(15)>
+  # frameReceivedCinternalCOMETI1_28 = PHI <frameReceivedCinternalCOMETI1_40(2), frameReceivedCinternalCOMETI1_27(15)>
+  # frameReceivedCinternalCOMETI2_32 = PHI <frameReceivedCinternalCOMETI2_41(2), frameReceivedCinternalCOMETI2_31(15)>
+  if (mailbox_21 <= 24)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  _12 = ~frameReceivedCcontrol_24;
+  if (_12 != 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  COM_controlComLostCounter.4_13 = COM_controlComLostCounter;
+  _14 = COM_controlComLostCounter.4_13 + 10;
+  COM_controlComLostCounter = _14;
+
+  <bb 19> :
+  _15 = ~frameReceivedCinternalCOMETI1_28;
+  if (_15 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  _16 = CNV_powercoreUnitTable[0].comLostCounter;
+  _17 = _16 + 10;
+  CNV_powercoreUnitTable[0].comLostCounter = _17;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  CNV_powercoreUnitTable[0].comLostCounter = 0;
+
+  <bb 22> :
+  _18 = ~frameReceivedCinternalCOMETI2_32;
+  if (_18 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _19 = CNV_powercoreUnitTable[1].comLostCounter;
+  _20 = _19 + 10;
+  CNV_powercoreUnitTable[1].comLostCounter = _20;
+  goto <bb 25>; [INV]
+
+  <bb 24> :
+  CNV_powercoreUnitTable[1].comLostCounter = 0;
+
+  <bb 25> :
+  currentFrame ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function com_ControlReceivedManagement (com_ControlReceivedManagement, funcdef_no=4, decl_uid=8378, cgraph_uid=5, symbol_order=4)
+
+com_ControlReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t order;
+  uint32_t currentLenghtFrame;
+  uint32_t lenghtFrame;
+  uint8_t frame;
+  long unsigned int _1;
+  int _2;
+  unsigned int _3;
+  <unnamed type> _4;
+
+  <bb 2> :
+  order_7 = 0;
+  _1 = currentFrame.frameId;
+  frame_10 = com_GetFrameIndex (0, _1);
+  COM_controlComLostCounter = 0;
+  _2 = (int) frame_10;
+  lenghtFrame_12 = COM_framesControl[_2].FrameLenght;
+  currentLenghtFrame_13 = currentFrame.frameLength;
+  if (currentLenghtFrame_13 == lenghtFrame_12)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 3> :
+  _3 = (unsigned int) frame_10;
+  switch (_3) <default: <L9> [INV], case 7: <L1> [INV], case 8: <L8> [INV]>
+
+  <bb 4> :
+<L1>:
+  CBU_GetControlPtcuCmdsFrameData (&currentFrame.buffer, &COM_mode.bbauxCommand, &COM_mode.setpoint, &COM_mode.currentLimit, &COM_mode.S3ModeReq);
+  _4 = COM_mode.bbauxCommand;
+  switch (_4) <default: <L6> [INV], case 1: <L2> [INV], case 2: <L3> [INV], case 3: <L4> [INV], case 4: <L5> [INV]>
+
+  <bb 5> :
+<L2>:
+  COM_flags.moduleFlags.status.flags.boostRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_flags.moduleFlags.status.flags.buckRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_flags.moduleFlags.status.flags.stopRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  COM_flags.moduleFlags.status.flags.shutDownReq = 1;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+<L8>:
+  COM_flags.moduleFlags.status.flags.errorResetRequest = 1;
+  COM_flags.moduleFlags.faults.all = 0;
+  COM_errorsAndWarnings.bbauxErrors = 0;
+  COM_errorsAndWarnings.bbauxWarnings = 0;
+  COM_errorsAndWarnings.powercoreErrors = 0;
+  COM_errorsAndWarnings.powercoreWarnings = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  return;
+
+}
+
+
+
+;; Function com_InternalReceivedManagement (com_InternalReceivedManagement, funcdef_no=5, decl_uid=8380, cgraph_uid=6, symbol_order=5)
+
+com_InternalReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t order;
+  uint32_t currentLenghtFrame;
+  uint32_t lenghtFrame;
+  boolean frameReceivedUni;
+  uint8_t powercoreUnitIndex;
+  uint8_t powercoreUnitAddress;
+  uint8_t frame;
+  long unsigned int _1;
+  long unsigned int _2;
+  int _3;
+  int _4;
+
+  <bb 2> :
+  frameReceivedUni_7 = 0;
+  order_8 = 0;
+  _1 = currentFrame.frameId;
+  _2 = _1 & 4294967040;
+  frame_11 = com_GetFrameIndex (1, _2);
+  _3 = (int) frame_11;
+  lenghtFrame_12 = COM_framesInternal[_3].FrameLenght;
+  currentLenghtFrame_13 = currentFrame.frameLength;
+  COM_internalComLostCounter = 0;
+  powercoreUnitAddress_15 = 255;
+  powercoreUnitIndex_16 = 255;
+  if (currentLenghtFrame_13 == lenghtFrame_12)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 3> :
+  powercoreUnitAddress_17 = CBU_powerCoreAdd;
+  powercoreUnitIndex_19 = CNV_getPowercoreUnitsIndex (powercoreUnitAddress_17);
+  COM_flags.moduleFlags.faults.flags.unkownCOMETi = 0;
+  if (powercoreUnitIndex_19 != 255)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 4> :
+  _4 = (int) frame_11;
+  switch (_4) <default: <L10> [INV], case 8: <L2> [INV], case 10: <L3> [INV], case 11: <L4> [INV], case 12: <L5> [INV], case 13: <L6> [INV], case 14: <L7> [INV], case 15: <L8> [INV], case 16: <L9> [INV]>
+
+  <bb 5> :
+<L2>:
+  CNV_GetInternalCurrentMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 6> :
+<L3>:
+  CNV_GetInternalPowerMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  CNV_GetInternalTemperatureMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 8> :
+<L5>:
+  CNV_GetInternalVoltageMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 9> :
+<L6>:
+  CNV_GetInternalRegulationInfoFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+<L7>:
+  CNV_GetInternalControlInfoFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 11> :
+<L8>:
+  CNV_GetInternalErrorsFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 12> :
+<L9>:
+  CNV_GetInternalWarningsFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L10>:
+
+  <bb 14> :
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  COM_flags.moduleFlags.faults.flags.unkownCOMETi = 1;
+
+  <bb 16> :
+  return;
+
+}
+
+
+
+;; Function com_MaintenanceReceivedManagement (com_MaintenanceReceivedManagement, funcdef_no=6, decl_uid=8382, cgraph_uid=7, symbol_order=6)
+
+com_MaintenanceReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t frame;
+  long unsigned int _1;
+  <unnamed type> FSM_mode.5_2;
+  unsigned int _3;
+
+  <bb 2> :
+  _1 = currentFrame.frameId;
+  frame_8 = com_GetFrameIndex (2, _1);
+  FSM_mode.5_2 = FSM_mode;
+  if (FSM_mode.5_2 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _3 = (unsigned int) frame_8;
+  switch (_3) <default: <L3> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 4> :
+<L1>:
+  com_HandleMaintenanceEquipmentTestRequest (currentFrame);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  com_HandleMaintenanceParameterRequest (currentFrame);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function com_HandleMaintenanceEquipmentTestRequest (com_HandleMaintenanceEquipmentTestRequest, funcdef_no=7, decl_uid=8374, cgraph_uid=8, symbol_order=7)
+
+com_HandleMaintenanceEquipmentTestRequest (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t reqType;
+  _Bool _1;
+  _Bool _2;
+  unsigned char reqType.6_3;
+  unsigned int _4;
+
+  <bb 2> :
+  reqType = 0;
+  _1 = DBG_Flags.proccesingFlags.processed;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  CBU_GetMaintenanceEquipmentTestRequest (&currentFrame.buffer, &reqType, &COM_debugTestReq.muxAddress, &COM_debugTestReq.measFormat, &COM_debugTestReq.relaySwitchCmd, &COM_debugTestReq.relaySwitchId, &COM_debugTestReq.discreteIoCmd, &COM_debugTestReq.discreteIoId, &COM_debugTestReq.ledCmd, &COM_debugTestReq.ledId, &COM_debugTestReq.ledColor, &COM_debugTestReq.ledBlinkFreq);
+  reqType.6_3 = reqType;
+  _4 = (unsigned int) reqType.6_3;
+  switch (_4) <default: <L6> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV], case 5: <L5> [INV]>
+
+  <bb 4> :
+<L1>:
+  COM_debugTestReq.relaySwitchTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  COM_debugTestReq.hvMeasuresTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_debugTestReq.lvMeasuresTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_debugTestReq.discreteIosTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  COM_debugTestReq.ledsTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+  COM_debugTestReq.relaySwitchTestRequest = 0;
+  COM_debugTestReq.hvMeasuresTestRequest = 0;
+  COM_debugTestReq.lvMeasuresTestRequest = 0;
+  COM_debugTestReq.discreteIosTestRequest = 0;
+  COM_debugTestReq.ledsTestRequest = 0;
+
+  <bb 10> :
+
+  <bb 11> :
+  reqType ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function com_HandleMaintenanceParameterRequest (com_HandleMaintenanceParameterRequest, funcdef_no=8, decl_uid=8376, cgraph_uid=9, symbol_order=8)
+
+com_HandleMaintenanceParameterRequest (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t reqType;
+  _Bool _1;
+  _Bool _2;
+  unsigned char reqType.7_3;
+  unsigned int _4;
+
+  <bb 2> :
+  reqType = 0;
+  _1 = PAR_paramReq.processed;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  CBU_GetMaintenanceParameterRequest (&currentFrame.buffer, &reqType, &COM_paramReq.index, &COM_paramReq.value);
+  reqType.7_3 = reqType;
+  _4 = (unsigned int) reqType.7_3;
+  switch (_4) <default: <L4> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 4> :
+<L1>:
+  COM_paramReq.readRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  COM_paramReq.changeRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_paramReq.saveRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_paramReq.readRequest = 0;
+  COM_paramReq.changeRequest = 0;
+  COM_paramReq.saveRequest = 0;
+
+  <bb 8> :
+  reqType ={v} {CLOBBER};
+  return;
+
+}
+
+

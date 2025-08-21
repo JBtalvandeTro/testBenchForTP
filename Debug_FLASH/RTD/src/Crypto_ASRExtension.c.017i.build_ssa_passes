@@ -1,0 +1,152 @@
+Crypto_Exts_MPCompression (const uint8 * pInput, uint32 u32InputLen, uint8 * pResult, const uint32 * pResultLen)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6309;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheMPCompression (u32PartitionId, pInput, u32InputLen, pResult, pResultLen);
+  D.6309 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6309;
+
+}
+
+
+Crypto_Exts_SHE_DebugAuth (const uint8 * pAuthorization)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6307;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheDebugAuth (u32PartitionId, pAuthorization);
+  D.6307 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6307;
+
+}
+
+
+Crypto_Exts_SHE_DebugChal (uint8 * pChallenge)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6305;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheDebugChal (u32PartitionId, pChallenge);
+  D.6305 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6305;
+
+}
+
+
+Crypto_Exts_SHE_GetId (const uint8 * pChallenge, uint8 * pId, uint8 * pSreg, uint8 * pMac)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6303;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheGetId (u32PartitionId, pChallenge, pId, pSreg, pMac);
+  D.6303 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6303;
+
+}
+
+
+Crypto_Exts_SHE_GetStatus (uint8 * pStatus)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6301;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheGetStatus (u32PartitionId, pStatus);
+  D.6301 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6301;
+
+}
+
+
+Crypto_Exts_SHE_BootOk ()
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6299;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheSetBootStatus (u32PartitionId, 1);
+  D.6299 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6299;
+
+}
+
+
+Crypto_Exts_SHE_BootFailure ()
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6297;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  RetVal = Crypto_Ipw_SheSetBootStatus (u32PartitionId, 0);
+  D.6297 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6297;
+
+}
+
+
+Crypto_Exts_SetSynchronousRequestsTimeout (uint32 u32Timeout)
+{
+  Std_ReturnType RetVal;
+  const uint32 u32PartitionId;
+  Std_ReturnType D.6295;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  RetVal = 1;
+  Crypto_Ipw_SetSynchronousRequestsTimeout (u32PartitionId, u32Timeout);
+  D.6295 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6295;
+
+}
+
+

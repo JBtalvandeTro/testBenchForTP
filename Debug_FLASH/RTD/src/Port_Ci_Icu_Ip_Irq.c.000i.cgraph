@@ -1,0 +1,287 @@
+Trivially needed symbols: PORT_CI_ICU_IP_E_EXT_IRQ_ISR
+
+
+Initial Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not-ready
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @01733ea0
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @01733ea0
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not-ready
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+
+
+Initial Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not-ready
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not-ready
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not_available
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

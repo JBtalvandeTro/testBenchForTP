@@ -1,0 +1,1810 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)CNV_GetInternalWarningsFrame/17 (read)CNV_GetInternalErrorsFrame/16 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not_available
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: available
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: available
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)CNV_Init/7 (write)CNV_Init/7 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: available
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: available
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: available
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: available
+  Varpool flags:
+cnv_GetRegulationReq ()
+{
+  uint32_t defaultCurrentLimit;
+  uint32_t defaultSetpoint;
+  uint32_t tempValueCurrentLimite;
+  uint32_t tempValueSetpoint;
+  <unnamed type> _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+
+  <bb 2> :
+  _1 = COM_mode.bbauxCommand;
+  if (_1 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  _2 = COM_mode.setpoint;
+  tempValueSetpoint_11 = _2 / 10;
+  _3 = COM_mode.currentLimit;
+  _4 = _3 / 10;
+  tempValueCurrentLimite_12 = (uint32_t) _4;
+  defaultSetpoint_13 = PAR_paramConfig[20].realVal.unsignedVal;
+  defaultCurrentLimit_14 = PAR_paramConfig[22].realVal.unsignedVal;
+  if (tempValueSetpoint_11 <= 32)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  if (tempValueSetpoint_11 > 23)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (tempValueCurrentLimite_12 <= 357)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (tempValueCurrentLimite_12 > 49)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  CNV_regulationReq.setpointReq = tempValueSetpoint_11;
+  _5 = (short unsigned int) tempValueCurrentLimite_12;
+  CNV_regulationReq.currentLimiteReq = _5;
+  CNV_regulationReq.reqAccepted = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  CNV_regulationReq.setpointReq = defaultSetpoint_13;
+  _6 = (short unsigned int) defaultCurrentLimit_14;
+  CNV_regulationReq.currentLimiteReq = _6;
+  CNV_regulationReq.reqAccepted = 0;
+
+  <bb 9> :
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  CNV_regulationReq.reqAccepted = 1;
+
+  <bb 11> :
+  return;
+
+}
+
+
+cnv_resetPowercoreUnit (uint8_t index)
+{
+  int _1;
+  unsigned char _2;
+  int _3;
+  int _4;
+  int _5;
+  int _6;
+  int _7;
+  int _8;
+  int _9;
+  int _10;
+  int _11;
+  int _12;
+  int _13;
+  int _14;
+  int _15;
+  int _16;
+  int _17;
+  int _18;
+  int _19;
+  int _20;
+  int _21;
+  int _22;
+  int _23;
+  int _24;
+  int _25;
+  int _26;
+  int _27;
+  int _28;
+  int _29;
+  int _30;
+  int _31;
+
+  <bb 2> :
+  _1 = (int) index_32(D);
+  _2 = index_32(D) + 1;
+  CNV_powercoreUnitTable[_1].address = _2;
+  _3 = (int) index_32(D);
+  CNV_powercoreUnitTable[_3].comLostCounter = 0;
+  _4 = (int) index_32(D);
+  CNV_powercoreUnitTable[_4].flags.all = 0;
+  _5 = (int) index_32(D);
+  CNV_powercoreUnitTable[_5].powerMeas.vBus1 = 0;
+  _6 = (int) index_32(D);
+  CNV_powercoreUnitTable[_6].powerMeas.vBus2 = 0;
+  _7 = (int) index_32(D);
+  CNV_powercoreUnitTable[_7].powerMeas.iBus1 = 0;
+  _8 = (int) index_32(D);
+  CNV_powercoreUnitTable[_8].powerMeas.iBus2 = 0;
+  _9 = (int) index_32(D);
+  CNV_powercoreUnitTable[_9].powerMeas.pBus1 = 0;
+  _10 = (int) index_32(D);
+  CNV_powercoreUnitTable[_10].powerMeas.pBus2 = 0;
+  _11 = (int) index_32(D);
+  CNV_powercoreUnitTable[_11].tempMeas.temp1 = 0;
+  _12 = (int) index_32(D);
+  CNV_powercoreUnitTable[_12].tempMeas.temp2 = 0;
+  _13 = (int) index_32(D);
+  CNV_powercoreUnitTable[_13].tempMeas.temp3 = 0;
+  _14 = (int) index_32(D);
+  CNV_powercoreUnitTable[_14].tempMeas.temp4 = 0;
+  _15 = (int) index_32(D);
+  CNV_powercoreUnitTable[_15].tempMeas.temp5 = 0;
+  _16 = (int) index_32(D);
+  CNV_powercoreUnitTable[_16].tempMeas.temp6 = 0;
+  _17 = (int) index_32(D);
+  CNV_powercoreUnitTable[_17].tempMeas.temp7 = 0;
+  _18 = (int) index_32(D);
+  CNV_powercoreUnitTable[_18].tempMeas.temp8 = 0;
+  _19 = (int) index_32(D);
+  CNV_powercoreUnitTable[_19].regulInfo.softMode = 255;
+  _20 = (int) index_32(D);
+  CNV_powercoreUnitTable[_20].regulInfo.setpoint = 0;
+  _21 = (int) index_32(D);
+  CNV_powercoreUnitTable[_21].regulInfo.limitationType = 0;
+  _22 = (int) index_32(D);
+  CNV_powercoreUnitTable[_22].regulInfo.hasNewValues = 0;
+  _23 = (int) index_32(D);
+  CNV_powercoreUnitTable[_23].controlInfo.regMode = 0;
+  _24 = (int) index_32(D);
+  CNV_powercoreUnitTable[_24].controlInfo.regType = 0;
+  _25 = (int) index_32(D);
+  CNV_powercoreUnitTable[_25].controlInfo.currentLimit = 0;
+  _26 = (int) index_32(D);
+  CNV_powercoreUnitTable[_26].controlInfo.hasNewValues = 0;
+  _27 = (int) index_32(D);
+  CNV_powercoreUnitTable[_27].request.regMode = 1;
+  _28 = (int) index_32(D);
+  CNV_powercoreUnitTable[_28].request.regType = 7;
+  _29 = (int) index_32(D);
+  CNV_powercoreUnitTable[_29].request.setpoint = 0;
+  _30 = (int) index_32(D);
+  CNV_powercoreUnitTable[_30].request.currentLimit = 0;
+  _31 = (int) index_32(D);
+  CNV_powercoreUnitTable[_31].request.startOrder = 0;
+  return;
+
+}
+
+
+CNV_Update ()
+{
+  <bb 2> :
+  cnv_GetRegulationReq ();
+  cnv_ChangePowercoreUnitsCommand ();
+  cnv_UpdateBuckType ();
+  return;
+
+}
+
+
+cnv_UpdateBuckType ()
+{
+  uint32_t par_Buck_VoltSetpoint;
+  uint32_t par_Buck_CurrentLimit;
+  uint16_t vBus2;
+  uint16_t iBus2;
+  <unnamed type> FSM_mode.24_1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  int _5;
+  short unsigned int _6;
+  int _7;
+  int _8;
+  unsigned int _9;
+  unsigned int _10;
+  short unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+
+  <bb 2> :
+  FSM_mode.24_1 = FSM_mode;
+  if (FSM_mode.24_1 == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[0].powerMeas.iBus2;
+  _3 = CNV_powercoreUnitTable[1].powerMeas.iBus2;
+  iBus2_18 = _2 + _3;
+  _4 = CNV_powercoreUnitTable[0].powerMeas.vBus2;
+  _5 = (int) _4;
+  _6 = CNV_powercoreUnitTable[1].powerMeas.vBus2;
+  _7 = (int) _6;
+  _8 = _5 + _7;
+  _9 = (unsigned int) _8;
+  _10 = _9 / 2;
+  vBus2_19 = (uint16_t) _10;
+  _11 = CNV_regulationReq.currentLimiteReq;
+  par_Buck_CurrentLimit_20 = (uint32_t) _11;
+  par_Buck_VoltSetpoint_21 = CNV_regulationReq.setpointReq;
+  _12 = (long unsigned int) iBus2_18;
+  if (par_Buck_CurrentLimit_20 <= _12)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _13 = (long unsigned int) vBus2_19;
+  if (par_Buck_VoltSetpoint_21 > _13)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CNV_buckType = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  CNV_buckType = 2;
+
+  <bb 7> :
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  CNV_buckType = 0;
+
+  <bb 9> :
+  return;
+
+}
+
+
+cnv_CheckPowercoreUnitsCommand ()
+{
+  <unnamed type> FSM_mode.21_1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  <unnamed type> FSM_mode.22_4;
+  <unnamed type> _5;
+  <unnamed type> _6;
+  <unnamed type> FSM_mode.23_7;
+  <unnamed type> _8;
+  <unnamed type> _9;
+
+  <bb 2> :
+  FSM_mode.21_1 = FSM_mode;
+  if (FSM_mode.21_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[0].controlInfo.regMode;
+  if (_2 != 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  _3 = CNV_powercoreUnitTable[1].controlInfo.regMode;
+  if (_3 != 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  stopInconsistentCOMETi = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  stopInconsistentCOMETi = 0;
+
+  <bb 7> :
+  goto <bb 19>; [INV]
+
+  <bb 8> :
+  FSM_mode.22_4 = FSM_mode;
+  if (FSM_mode.22_4 == 4)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 9> :
+  _5 = CNV_powercoreUnitTable[0].controlInfo.regMode;
+  if (_5 != 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _6 = CNV_powercoreUnitTable[1].controlInfo.regMode;
+  if (_6 != 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  stopInconsistentCOMETi = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  stopInconsistentCOMETi = 0;
+
+  <bb 13> :
+  goto <bb 19>; [INV]
+
+  <bb 14> :
+  FSM_mode.23_7 = FSM_mode;
+  if (FSM_mode.23_7 == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 15> :
+  _8 = CNV_powercoreUnitTable[0].regulInfo.softMode;
+  if (_8 == 2)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 16> :
+  _9 = CNV_powercoreUnitTable[1].regulInfo.softMode;
+  if (_9 == 2)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  stopInconsistentCOMETi = 1;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  stopInconsistentCOMETi = 0;
+
+  <bb 19> :
+  return;
+
+}
+
+
+cnv_ChangePowercoreUnitsCommand ()
+{
+  <unnamed type> FSM_mode.18_1;
+  short unsigned int _2;
+  short unsigned int _3;
+  unsigned char _4;
+  unsigned char _5;
+  <unnamed type> FSM_mode.19_6;
+  unsigned char _7;
+  unsigned char _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  _Bool stopInconsistentCOMETi.20_11;
+
+  <bb 2> :
+  FSM_mode.18_1 = FSM_mode;
+  if (FSM_mode.18_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  _3 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  if (_3 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  _4 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _5 = _4 & 2;
+  if (_5 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  cnv_StartBoostPowercoreUnitCommand ();
+  goto <bb 15>; [INV]
+
+  <bb 7> :
+  FSM_mode.19_6 = FSM_mode;
+  if (FSM_mode.19_6 == 4)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  _7 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _8 = _7 & 2;
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 9> :
+  _9 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  if (_9 == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  _10 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  if (_10 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  cnv_StartBuckPowercoreUnitCommand ();
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  stopInconsistentCOMETi.20_11 = stopInconsistentCOMETi;
+  if (stopInconsistentCOMETi.20_11 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  cnv_StopPowercoreUnitCommand ();
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  cnv_StopPowercoreUnitCommand ();
+
+  <bb 15> :
+  return;
+
+}
+
+
+cnv_StartBuckPowercoreUnitCommand ()
+{
+  uint32_t buckCurrentLimitPAR;
+  uint32_t setpointPAR;
+  long unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = CNV_regulationReq.setpointReq;
+  setpointPAR_12 = _1 / 2;
+  _2 = CNV_regulationReq.currentLimiteReq;
+  _3 = _2 / 2;
+  buckCurrentLimitPAR_13 = (uint32_t) _3;
+  CNV_powercoreUnitTable[0].request.startOrder = 1;
+  CNV_powercoreUnitTable[0].request.setpoint = setpointPAR_12;
+  _4 = (short unsigned int) buckCurrentLimitPAR_13;
+  CNV_powercoreUnitTable[0].request.currentLimit = _4;
+  CNV_powercoreUnitTable[0].request.regMode = 1;
+  CNV_powercoreUnitTable[0].request.regType = 7;
+  CNV_powercoreUnitTable[1].request.startOrder = 1;
+  CNV_powercoreUnitTable[1].request.setpoint = setpointPAR_12;
+  _5 = (short unsigned int) buckCurrentLimitPAR_13;
+  CNV_powercoreUnitTable[1].request.currentLimit = _5;
+  CNV_powercoreUnitTable[1].request.regMode = 1;
+  CNV_powercoreUnitTable[1].request.regType = 7;
+  _6 = CNV_powercoreUnitTable[0].regulInfo.setpoint;
+  _7 = CNV_powercoreUnitTable[0].request.setpoint;
+  if (_6 < _7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _8 = CNV_powercoreUnitTable[1].regulInfo.setpoint;
+  _9 = CNV_powercoreUnitTable[1].request.setpoint;
+  if (_8 < _9)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CNV_flags.moduleFlags.status.flags.buck_stub_error_req = 1;
+  CNV_flags.moduleFlags.status.flags.no_stub_error_req = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  CNV_flags.moduleFlags.status.flags.buck_stub_error_req = 0;
+  CNV_flags.moduleFlags.status.flags.no_stub_error_req = 1;
+
+  <bb 6> :
+  return;
+
+}
+
+
+cnv_StartBoostPowercoreUnitCommand ()
+{
+  uint32_t currentLimit;
+  uint32_t setpointPAR;
+  short unsigned int _1;
+  short unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  setpointPAR_9 = PAR_paramConfig[16].realVal.unsignedVal;
+  currentLimit_11 = cnv_CalculateBoostCurrentLimit ();
+  CNV_powercoreUnitTable[0].request.startOrder = 1;
+  CNV_powercoreUnitTable[0].request.setpoint = setpointPAR_9;
+  _1 = (short unsigned int) currentLimit_11;
+  CNV_powercoreUnitTable[0].request.currentLimit = _1;
+  CNV_powercoreUnitTable[0].request.regMode = 2;
+  CNV_powercoreUnitTable[0].request.regType = 8;
+  CNV_powercoreUnitTable[1].request.startOrder = 1;
+  CNV_powercoreUnitTable[1].request.setpoint = setpointPAR_9;
+  _2 = (short unsigned int) currentLimit_11;
+  CNV_powercoreUnitTable[1].request.currentLimit = _2;
+  CNV_powercoreUnitTable[1].request.regMode = 2;
+  CNV_powercoreUnitTable[1].request.regType = 2;
+  _3 = CNV_powercoreUnitTable[0].regulInfo.setpoint;
+  _4 = CNV_powercoreUnitTable[0].request.setpoint;
+  if (_3 < _4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _5 = CNV_powercoreUnitTable[1].regulInfo.setpoint;
+  _6 = CNV_powercoreUnitTable[1].request.setpoint;
+  if (_5 < _6)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CNV_flags.moduleFlags.status.flags.boost_stub_error_req = 1;
+  CNV_flags.moduleFlags.status.flags.no_stub_error_req = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  CNV_flags.moduleFlags.status.flags.boost_stub_error_req = 0;
+  CNV_flags.moduleFlags.status.flags.no_stub_error_req = 1;
+
+  <bb 6> :
+  return;
+
+}
+
+
+cnv_CalculateBoostCurrentLimit ()
+{
+  uint32_t boostCurrentLimitPAR;
+  uint32_t D.8597;
+  uint32_t _3;
+
+  <bb 2> :
+  boostCurrentLimitPAR_2 = PAR_paramConfig[66].realVal.unsignedVal;
+  _3 = boostCurrentLimitPAR_2 / 2;
+
+  <bb 3> :
+<L0>:
+  return _3;
+
+}
+
+
+cnv_StopPowercoreUnitCommand ()
+{
+  <bb 2> :
+  CNV_powercoreUnitTable[0].request.startOrder = 0;
+  CNV_powercoreUnitTable[1].request.startOrder = 0;
+  return;
+
+}
+
+
+CNV_updatePowercoreUnitsComlossCounter (uint8_t powercoreUnitIndex)
+{
+  uint8_t index;
+  int _1;
+  int _2;
+  long unsigned int _3;
+  int _4;
+  long unsigned int _5;
+  unsigned char index.17_6;
+
+  <bb 2> :
+  index_10 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  if (index_7 == powercoreUnitIndex_12(D))
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _1 = (int) index_7;
+  CNV_powercoreUnitTable[_1].comLostCounter = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _2 = (int) index_7;
+  _3 = CNV_powercoreUnitTable[_2].comLostCounter;
+  _4 = (int) index_7;
+  _5 = _3 + 10;
+  CNV_powercoreUnitTable[_4].comLostCounter = _5;
+
+  <bb 6> :
+  index.17_6 = index_7;
+  index_15 = index.17_6 + 1;
+
+  <bb 7> :
+  # index_7 = PHI <index_10(2), index_15(6)>
+  if (index_7 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+CNV_getPowercoreUnitsIndex (uint8_t powercoreUnitAddress)
+{
+  boolean found;
+  uint8_t ret;
+  uint8_t index;
+  uint8_t D.8592;
+  int _1;
+  unsigned char _2;
+  _Bool _3;
+  uint8_t _17;
+
+  <bb 2> :
+  ret_8 = 0;
+  found_9 = 0;
+  index_10 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = (int) index_4;
+  _2 = CNV_powercoreUnitTable[_1].address;
+  if (powercoreUnitAddress_12(D) == _2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  found_13 = 1;
+
+  <bb 5> :
+  # found_6 = PHI <found_7(3), found_13(4)>
+  index_14 = index_4 + 1;
+
+  <bb 6> :
+  # index_4 = PHI <index_10(2), index_14(5)>
+  # found_7 = PHI <found_9(2), found_6(5)>
+  if (index_4 <= 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _3 = ~found_7;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  if (index_4 > 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  ret_16 = 255;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  ret_15 = index_4 + 255;
+
+  <bb 11> :
+  # ret_5 = PHI <ret_16(9), ret_15(10)>
+  _17 = ret_5;
+
+  <bb 12> :
+<L9>:
+  return _17;
+
+}
+
+
+CNV_GetInternalWarningsFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  union CNV_CometiWarningU cometiWarnings;
+  int _1;
+  _Bool _2;
+  int _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+  int _7;
+  _Bool _8;
+  int _9;
+  _Bool _10;
+  int _11;
+  _Bool _12;
+  int _13;
+  _Bool _14;
+  _Bool _15;
+  _Bool _16;
+  _Bool _17;
+  _Bool _18;
+  _Bool _19;
+  _Bool _20;
+  _Bool _21;
+  _Bool _22;
+  _Bool _23;
+  int _24;
+  int _25;
+  _Bool _26;
+  <unnamed type> FSM_mode.16_27;
+  int _28;
+
+  <bb 2> :
+  cometiWarnings.value = 0;
+  CBU_GetInternalWarningsFrameData (buffer_32(D), &cometiWarnings.value);
+  _1 = (int) powercoreUnitIndex_34(D);
+  _2 = cometiWarnings.flags.highOutCoolantTemp;
+  CNV_powercoreUnitTable[_1].flags.moduleFlags.warns.flags.outCoolantTemp = _2;
+  _3 = (int) powercoreUnitIndex_34(D);
+  _4 = cometiWarnings.flags.highInCoolantTemp;
+  CNV_powercoreUnitTable[_3].flags.moduleFlags.warns.flags.inCoolantTemp = _4;
+  _5 = (int) powercoreUnitIndex_34(D);
+  _6 = cometiWarnings.flags.highAmbientTemp;
+  CNV_powercoreUnitTable[_5].flags.moduleFlags.warns.flags.ambientTemp = _6;
+  _7 = (int) powercoreUnitIndex_34(D);
+  _8 = cometiWarnings.flags.highMosfetTemp;
+  CNV_powercoreUnitTable[_7].flags.moduleFlags.warns.flags.mosfetTemp = _8;
+  _9 = (int) powercoreUnitIndex_34(D);
+  _10 = cometiWarnings.flags.highTransformerTemp;
+  CNV_powercoreUnitTable[_9].flags.moduleFlags.warns.flags.transformerTemp = _10;
+  _11 = (int) powercoreUnitIndex_34(D);
+  _12 = cometiWarnings.flags.highSelfTemp;
+  CNV_powercoreUnitTable[_11].flags.moduleFlags.warns.flags.selfTemp = _12;
+  _13 = (int) powercoreUnitIndex_34(D);
+  _14 = cometiWarnings.flags.highCoolantDeltaTemp;
+  CNV_powercoreUnitTable[_13].flags.moduleFlags.warns.flags.coolantDeltaTemp = _14;
+  _15 = cometiWarnings.flags.backupApplicationStarted;
+  _16 = cometiWarnings.flags.backupParametersLoaded;
+  _17 = _15 | _16;
+  _18 = cometiWarnings.flags.setPointUnreachableTooLow;
+  _19 = _17 | _18;
+  _20 = cometiWarnings.flags.setPointUnreachableTooHigh;
+  _21 = _19 | _20;
+  _22 = cometiWarnings.flags.controlTypeChangeNotAllowed;
+  _23 = _21 | _22;
+  _24 = (int) _23;
+  _25 = (int) powercoreUnitIndex_34(D);
+  _26 = _24 != 0;
+  CNV_powercoreUnitTable[_25].flags.moduleFlags.warns.flags.componentSwWarn = _26;
+  FSM_mode.16_27 = FSM_mode;
+  if (FSM_mode.16_27 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _28 = (int) powercoreUnitIndex_34(D);
+  CNV_powercoreUnitTable[_28].flags.moduleFlags.warns.all = 0;
+
+  <bb 4> :
+  cometiWarnings ={v} {CLOBBER};
+  return;
+
+}
+
+
+CNV_GetInternalErrorsFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  union CNV_CometiFunctionalErrorU cometiFunctionalErrors;
+  union CNV_CometiCriticalErrorU cometiCriticalErrors;
+  int _1;
+  _Bool _2;
+  int _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+  int _7;
+  _Bool _8;
+  _Bool _9;
+  _Bool _10;
+  _Bool _11;
+  int _12;
+  int _13;
+  _Bool _14;
+  _Bool _15;
+  _Bool _16;
+  _Bool _17;
+  int _18;
+  int _19;
+  _Bool _20;
+  int _21;
+  _Bool _22;
+  int _23;
+  _Bool _24;
+  _Bool _25;
+  _Bool _26;
+  _Bool _27;
+  int _28;
+  int _29;
+  _Bool _30;
+  _Bool _31;
+  _Bool _32;
+  _Bool _33;
+  _Bool _34;
+  _Bool _35;
+  int _36;
+  int _37;
+  _Bool _38;
+  int _39;
+  _Bool _40;
+  int _41;
+  _Bool _42;
+  _Bool _43;
+  _Bool _44;
+  _Bool _45;
+  int _46;
+  int _47;
+  _Bool _48;
+  _Bool _49;
+  _Bool _50;
+  _Bool _51;
+  int _52;
+  int _53;
+  _Bool _54;
+  _Bool _55;
+  _Bool _56;
+  _Bool _57;
+  _Bool _58;
+  _Bool _59;
+  _Bool _60;
+  _Bool _61;
+  _Bool _62;
+  _Bool _63;
+  _Bool _64;
+  _Bool _65;
+  _Bool _66;
+  _Bool _67;
+  _Bool _68;
+  _Bool _69;
+  _Bool _70;
+  _Bool _71;
+  _Bool _72;
+  _Bool _73;
+  _Bool _74;
+  _Bool _75;
+  _Bool _76;
+  _Bool _77;
+  _Bool _78;
+  _Bool _79;
+  _Bool _80;
+  _Bool _81;
+  _Bool _82;
+  _Bool _83;
+  _Bool _84;
+  _Bool _85;
+  _Bool _86;
+  _Bool _87;
+  int _88;
+  int _89;
+  _Bool _90;
+  <unnamed type> FSM_mode.15_91;
+  int _92;
+
+  <bb 2> :
+  cometiCriticalErrors.value = 0;
+  cometiFunctionalErrors.value = 0;
+  CBU_GetInternalErrorsFrameData (buffer_97(D), &cometiCriticalErrors.value, &cometiFunctionalErrors.value);
+  _1 = (int) powercoreUnitIndex_99(D);
+  _2 = cometiFunctionalErrors.flags.vbus1Min;
+  CNV_powercoreUnitTable[_1].flags.moduleFlags.faults.flags.uBusHvMin = _2;
+  _3 = (int) powercoreUnitIndex_99(D);
+  _4 = cometiFunctionalErrors.flags.vbus2Min;
+  CNV_powercoreUnitTable[_3].flags.moduleFlags.faults.flags.uBusLvMin = _4;
+  _5 = (int) powercoreUnitIndex_99(D);
+  _6 = cometiFunctionalErrors.flags.vbus1Max;
+  CNV_powercoreUnitTable[_5].flags.moduleFlags.faults.flags.uBusHvMax = _6;
+  _7 = (int) powercoreUnitIndex_99(D);
+  _8 = cometiFunctionalErrors.flags.vbus2Max;
+  CNV_powercoreUnitTable[_7].flags.moduleFlags.faults.flags.uBusLvMax = _8;
+  _9 = cometiFunctionalErrors.flags.iBus1Leg1Max;
+  _10 = cometiFunctionalErrors.flags.iBus1Leg2Max;
+  _11 = _9 | _10;
+  _12 = (int) _11;
+  _13 = (int) powercoreUnitIndex_99(D);
+  _14 = _12 != 0;
+  CNV_powercoreUnitTable[_13].flags.moduleFlags.faults.flags.iBusHvMax = _14;
+  _15 = cometiFunctionalErrors.flags.iBus2Leg1Max;
+  _16 = cometiFunctionalErrors.flags.iBus2Leg2Max;
+  _17 = _15 | _16;
+  _18 = (int) _17;
+  _19 = (int) powercoreUnitIndex_99(D);
+  _20 = _18 != 0;
+  CNV_powercoreUnitTable[_19].flags.moduleFlags.faults.flags.iBusLvMax = _20;
+  _21 = (int) powercoreUnitIndex_99(D);
+  _22 = cometiFunctionalErrors.flags.CoolantTempMinCritical;
+  CNV_powercoreUnitTable[_21].flags.moduleFlags.faults.flags.CoolantTempMinCritical = _22;
+  _23 = (int) powercoreUnitIndex_99(D);
+  _24 = cometiFunctionalErrors.flags.CoolantTempMaxCritical;
+  CNV_powercoreUnitTable[_23].flags.moduleFlags.faults.flags.CoolantTempMaxCritical = _24;
+  _25 = cometiFunctionalErrors.flags.ambientTempMinCritical;
+  _26 = cometiFunctionalErrors.flags.ambientTempMaxCritical;
+  _27 = _25 | _26;
+  _28 = (int) _27;
+  _29 = (int) powercoreUnitIndex_99(D);
+  _30 = _28 != 0;
+  CNV_powercoreUnitTable[_29].flags.moduleFlags.faults.flags.ambientTempCritical = _30;
+  _31 = cometiFunctionalErrors.flags.mosfetTempMaxCritical;
+  _32 = cometiFunctionalErrors.flags.transformerTempMaxCritical;
+  _33 = _31 | _32;
+  _34 = cometiFunctionalErrors.flags.selfTempMaxCritical;
+  _35 = _33 | _34;
+  _36 = (int) _35;
+  _37 = (int) powercoreUnitIndex_99(D);
+  _38 = _36 != 0;
+  CNV_powercoreUnitTable[_37].flags.moduleFlags.faults.flags.otherTempCritical = _38;
+  _39 = (int) powercoreUnitIndex_99(D);
+  _40 = cometiCriticalErrors.flags.vbus1MaxCritical;
+  CNV_powercoreUnitTable[_39].flags.moduleFlags.faults.flags.uBusHvMaxCritical = _40;
+  _41 = (int) powercoreUnitIndex_99(D);
+  _42 = cometiCriticalErrors.flags.vbus2MaxCritical;
+  CNV_powercoreUnitTable[_41].flags.moduleFlags.faults.flags.uBusLvMaxCritical = _42;
+  _43 = cometiCriticalErrors.flags.iBus1Leg1MaxCritical;
+  _44 = cometiCriticalErrors.flags.iBus1Leg2MaxCritical;
+  _45 = _43 | _44;
+  _46 = (int) _45;
+  _47 = (int) powercoreUnitIndex_99(D);
+  _48 = _46 != 0;
+  CNV_powercoreUnitTable[_47].flags.moduleFlags.faults.flags.iBusHvMaxCritical = _48;
+  _49 = cometiCriticalErrors.flags.iBus2Leg1MaxCritical;
+  _50 = cometiCriticalErrors.flags.iBus2Leg2MaxCritical;
+  _51 = _49 | _50;
+  _52 = (int) _51;
+  _53 = (int) powercoreUnitIndex_99(D);
+  _54 = _52 != 0;
+  CNV_powercoreUnitTable[_53].flags.moduleFlags.faults.flags.iBusLvMaxCritical = _54;
+  _55 = cometiCriticalErrors.flags.fpgaLost;
+  _56 = cometiCriticalErrors.flags.mcuClockUnsync;
+  _57 = _55 | _56;
+  _58 = cometiCriticalErrors.flags.fpgaClockUnsync;
+  _59 = _57 | _58;
+  _60 = cometiCriticalErrors.flags.servicePowerSupplyLostMcu;
+  _61 = _59 | _60;
+  _62 = cometiCriticalErrors.flags.servicePowerSupplyLostFpga;
+  _63 = _61 | _62;
+  _64 = cometiCriticalErrors.flags.inoperationalCurrentSensor;
+  _65 = _63 | _64;
+  _66 = cometiCriticalErrors.flags.inoperationalVoltageSensor;
+  _67 = _65 | _66;
+  _68 = cometiCriticalErrors.flags.powerMap;
+  _69 = _67 | _68;
+  _70 = cometiCriticalErrors.flags.parameters;
+  _71 = _69 | _70;
+  _72 = cometiFunctionalErrors.flags.unknownControlMode;
+  _73 = _71 | _72;
+  _74 = cometiFunctionalErrors.flags.unknownControlType;
+  _75 = _73 | _74;
+  _76 = cometiFunctionalErrors.flags.incompatibleCtrlModeType;
+  _77 = _75 | _76;
+  _78 = cometiFunctionalErrors.flags.inoperationalTemperatureSensor;
+  _79 = _77 | _78;
+  _80 = cometiFunctionalErrors.flags.controlLoopNotSet;
+  _81 = _79 | _80;
+  _82 = cometiFunctionalErrors.flags.comIsLost;
+  _83 = _81 | _82;
+  _84 = cometiCriticalErrors.flags.vbusAuxMaxCritical;
+  _85 = _83 | _84;
+  _86 = cometiCriticalErrors.flags.vbusAuxMinCritical;
+  _87 = _85 | _86;
+  _88 = (int) _87;
+  _89 = (int) powercoreUnitIndex_99(D);
+  _90 = _88 != 0;
+  CNV_powercoreUnitTable[_89].flags.moduleFlags.faults.flags.componentInternalError = _90;
+  FSM_mode.15_91 = FSM_mode;
+  if (FSM_mode.15_91 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _92 = (int) powercoreUnitIndex_99(D);
+  CNV_powercoreUnitTable[_92].flags.moduleFlags.faults.all = 0;
+
+  <bb 4> :
+  cometiCriticalErrors ={v} {CLOBBER};
+  cometiFunctionalErrors ={v} {CLOBBER};
+  return;
+
+}
+
+
+CNV_GetInternalControlInfoFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  uint8_t regType;
+  uint8_t regMode;
+  int _1;
+  int _2;
+  uint16_t * _3;
+  unsigned char regMode.13_4;
+  int _5;
+  <unnamed type> _6;
+  unsigned char regType.14_7;
+  int _8;
+  <unnamed type> _9;
+
+  <bb 2> :
+  regMode = 0;
+  regType = 0;
+  _1 = (int) powercoreUnitIndex_13(D);
+  CNV_powercoreUnitTable[_1].controlInfo.currentLimit = 0;
+  _2 = (int) powercoreUnitIndex_13(D);
+  _3 = &CNV_powercoreUnitTable[_2].controlInfo.currentLimit;
+  CBU_GetInternalControlInfoFrameData (buffer_15(D), &regMode, &regType, _3);
+  regMode.13_4 = regMode;
+  _5 = (int) powercoreUnitIndex_13(D);
+  _6 = (<unnamed type>) regMode.13_4;
+  CNV_powercoreUnitTable[_5].controlInfo.regMode = _6;
+  regType.14_7 = regType;
+  _8 = (int) powercoreUnitIndex_13(D);
+  _9 = (<unnamed type>) regType.14_7;
+  CNV_powercoreUnitTable[_8].controlInfo.regType = _9;
+  cnv_CheckPowercoreUnitsCommand ();
+  regMode ={v} {CLOBBER};
+  regType ={v} {CLOBBER};
+  return;
+
+}
+
+
+CNV_GetInternalRegulationInfoFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  uint8_t limitationType;
+  uint8_t softwaremode;
+  int _1;
+  int _2;
+  uint32_t * _3;
+  unsigned char softwaremode.11_4;
+  int _5;
+  <unnamed type> _6;
+  unsigned char limitationType.12_7;
+  int _8;
+  <unnamed type> _9;
+
+  <bb 2> :
+  softwaremode = 0;
+  limitationType = 0;
+  _1 = (int) powercoreUnitIndex_13(D);
+  CNV_powercoreUnitTable[_1].regulInfo.setpoint = 0;
+  _2 = (int) powercoreUnitIndex_13(D);
+  _3 = &CNV_powercoreUnitTable[_2].regulInfo.setpoint;
+  CBU_GetInternalRegulationInfoFrameData (buffer_15(D), &softwaremode, _3, &limitationType);
+  softwaremode.11_4 = softwaremode;
+  _5 = (int) powercoreUnitIndex_13(D);
+  _6 = (<unnamed type>) softwaremode.11_4;
+  CNV_powercoreUnitTable[_5].regulInfo.softMode = _6;
+  limitationType.12_7 = limitationType;
+  _8 = (int) powercoreUnitIndex_13(D);
+  _9 = (<unnamed type>) limitationType.12_7;
+  CNV_powercoreUnitTable[_8].regulInfo.limitationType = _9;
+  softwaremode ={v} {CLOBBER};
+  limitationType ={v} {CLOBBER};
+  return;
+
+}
+
+
+CNV_GetInternalVoltageMeasuresFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  int _1;
+  int _2;
+  int _3;
+  uint16_t * _4;
+  int _5;
+  uint16_t * _6;
+
+  <bb 2> :
+  _1 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_1].powerMeas.vBus1 = 0;
+  _2 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_2].powerMeas.vBus2 = 0;
+  _3 = (int) powercoreUnitIndex_7(D);
+  _4 = &CNV_powercoreUnitTable[_3].powerMeas.vBus1;
+  _5 = (int) powercoreUnitIndex_7(D);
+  _6 = &CNV_powercoreUnitTable[_5].powerMeas.vBus2;
+  CBU_GetInternalVoltageMeasuresFrameData (buffer_11(D), _4, _6);
+  return;
+
+}
+
+
+CNV_GetInternalTemperatureMeasuresFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  uint32_t temp8;
+  uint32_t temp7;
+  uint32_t temp6;
+  uint32_t temp5;
+  uint32_t temp4;
+  uint32_t temp3;
+  uint32_t temp2;
+  uint32_t temp1;
+  long unsigned int temp1.3_1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  long unsigned int temp2.4_5;
+  unsigned char _6;
+  int _7;
+  unsigned char _8;
+  long unsigned int temp3.5_9;
+  unsigned char _10;
+  int _11;
+  unsigned char _12;
+  long unsigned int temp4.6_13;
+  unsigned char _14;
+  int _15;
+  unsigned char _16;
+  long unsigned int temp5.7_17;
+  unsigned char _18;
+  int _19;
+  unsigned char _20;
+  long unsigned int temp6.8_21;
+  unsigned char _22;
+  int _23;
+  unsigned char _24;
+  long unsigned int temp7.9_25;
+  unsigned char _26;
+  int _27;
+  unsigned char _28;
+  long unsigned int temp8.10_29;
+  unsigned char _30;
+  int _31;
+  unsigned char _32;
+
+  <bb 2> :
+  temp1 = 0;
+  temp2 = 0;
+  temp3 = 0;
+  temp4 = 0;
+  temp5 = 0;
+  temp6 = 0;
+  temp7 = 0;
+  temp8 = 0;
+  CBU_GetInternalTemperatureMeasuresFrameData (buffer_42(D), &temp1, &temp2, &temp3, &temp4, &temp5, &temp6, &temp7, &temp8);
+  temp1.3_1 = temp1;
+  _2 = (unsigned char) temp1.3_1;
+  _3 = (int) powercoreUnitIndex_44(D);
+  _4 = _2 + 206;
+  CNV_powercoreUnitTable[_3].tempMeas.temp1 = _4;
+  temp2.4_5 = temp2;
+  _6 = (unsigned char) temp2.4_5;
+  _7 = (int) powercoreUnitIndex_44(D);
+  _8 = _6 + 206;
+  CNV_powercoreUnitTable[_7].tempMeas.temp2 = _8;
+  temp3.5_9 = temp3;
+  _10 = (unsigned char) temp3.5_9;
+  _11 = (int) powercoreUnitIndex_44(D);
+  _12 = _10 + 206;
+  CNV_powercoreUnitTable[_11].tempMeas.temp3 = _12;
+  temp4.6_13 = temp4;
+  _14 = (unsigned char) temp4.6_13;
+  _15 = (int) powercoreUnitIndex_44(D);
+  _16 = _14 + 206;
+  CNV_powercoreUnitTable[_15].tempMeas.temp4 = _16;
+  temp5.7_17 = temp5;
+  _18 = (unsigned char) temp5.7_17;
+  _19 = (int) powercoreUnitIndex_44(D);
+  _20 = _18 + 206;
+  CNV_powercoreUnitTable[_19].tempMeas.temp5 = _20;
+  temp6.8_21 = temp6;
+  _22 = (unsigned char) temp6.8_21;
+  _23 = (int) powercoreUnitIndex_44(D);
+  _24 = _22 + 206;
+  CNV_powercoreUnitTable[_23].tempMeas.temp6 = _24;
+  temp7.9_25 = temp7;
+  _26 = (unsigned char) temp7.9_25;
+  _27 = (int) powercoreUnitIndex_44(D);
+  _28 = _26 + 206;
+  CNV_powercoreUnitTable[_27].tempMeas.temp7 = _28;
+  temp8.10_29 = temp8;
+  _30 = (unsigned char) temp8.10_29;
+  _31 = (int) powercoreUnitIndex_44(D);
+  _32 = _30 + 206;
+  CNV_powercoreUnitTable[_31].tempMeas.temp8 = _32;
+  temp1 ={v} {CLOBBER};
+  temp2 ={v} {CLOBBER};
+  temp3 ={v} {CLOBBER};
+  temp4 ={v} {CLOBBER};
+  temp5 ={v} {CLOBBER};
+  temp6 ={v} {CLOBBER};
+  temp7 ={v} {CLOBBER};
+  temp8 ={v} {CLOBBER};
+  return;
+
+}
+
+
+CNV_GetInternalPowerMeasuresFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  int _1;
+  int _2;
+  int _3;
+  uint32_t * _4;
+  int _5;
+  uint32_t * _6;
+
+  <bb 2> :
+  _1 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_1].powerMeas.pBus1 = 0;
+  _2 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_2].powerMeas.pBus2 = 0;
+  _3 = (int) powercoreUnitIndex_7(D);
+  _4 = &CNV_powercoreUnitTable[_3].powerMeas.pBus1;
+  _5 = (int) powercoreUnitIndex_7(D);
+  _6 = &CNV_powercoreUnitTable[_5].powerMeas.pBus2;
+  CBU_GetInternalPowerMeasuresFrameData (buffer_11(D), _4, _6);
+  return;
+
+}
+
+
+CNV_GetInternalCurrentMeasuresFrame (const uint8_t * buffer, uint8_t powercoreUnitIndex)
+{
+  int _1;
+  int _2;
+  int _3;
+  uint16_t * _4;
+  int _5;
+  uint16_t * _6;
+
+  <bb 2> :
+  _1 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_1].powerMeas.iBus1 = 0;
+  _2 = (int) powercoreUnitIndex_7(D);
+  CNV_powercoreUnitTable[_2].powerMeas.iBus2 = 0;
+  _3 = (int) powercoreUnitIndex_7(D);
+  _4 = &CNV_powercoreUnitTable[_3].powerMeas.iBus1;
+  _5 = (int) powercoreUnitIndex_7(D);
+  _6 = &CNV_powercoreUnitTable[_5].powerMeas.iBus2;
+  CBU_GetInternalCurrentMeasuresFrameData (buffer_11(D), _4, _6);
+  return;
+
+}
+
+
+CNV_ManageInternalErrorResetRequestFrame ()
+{
+  boolean cometiHasError;
+  short unsigned int _1;
+  short unsigned int _2;
+  unsigned char _3;
+  unsigned char _4;
+  <unnamed type> stateForErrorResetReq.2_5;
+
+  <bb 2> :
+  cometiHasError_8 = 0;
+  _1 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  cometiHasError_11 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  cometiHasError_10 = 0;
+
+  <bb 6> :
+  # cometiHasError_6 = PHI <cometiHasError_11(4), cometiHasError_10(5)>
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 8;
+  if (_4 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (cometiHasError_6 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  stateForErrorResetReq.2_5 = stateForErrorResetReq;
+  switch (stateForErrorResetReq.2_5) <default: <L8> [INV], case 0: <L6> [INV], case 1: <L7> [INV]>
+
+  <bb 9> :
+<L6>:
+  CBU_SendInternalErrorResetRequestFrameCOMETiUnits (0);
+  stateForErrorResetReq = 1;
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+<L7>:
+  CBU_SendInternalErrorResetRequestFrameCOMETiUnits (1);
+  stateForErrorResetReq = 0;
+  COM_flags.moduleFlags.status.flags.errorResetRequest = 0;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+<L8>:
+
+  <bb 12> :
+  return;
+
+}
+
+
+CNV_Deinit ()
+{
+  uint8_t index;
+  unsigned char index.1_1;
+
+  <bb 2> :
+  index_4 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  cnv_resetPowercoreUnit (index_2);
+  index.1_1 = index_2;
+  index_7 = index.1_1 + 1;
+
+  <bb 4> :
+  # index_2 = PHI <index_4(2), index_7(3)>
+  if (index_2 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+CNV_Init ()
+{
+  uint8_t index;
+  unsigned char index.0_1;
+
+  <bb 2> :
+  index_4 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  cnv_resetPowercoreUnit (index_2);
+  index.0_1 = index_2;
+  index_10 = index.0_1 + 1;
+
+  <bb 4> :
+  # index_2 = PHI <index_4(2), index_10(3)>
+  if (index_2 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  CNV_regulationReq.setpointReq = 0;
+  CNV_regulationReq.reqAccepted = 0;
+  CNV_regulationReq.currentLimiteReq = 0;
+  return;
+
+}
+
+

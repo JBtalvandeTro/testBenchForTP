@@ -1,0 +1,42 @@
+Wdg_43_Instance0_GetVersionInfo (struct Std_VersionInfoType * Versioninfo)
+{
+  <bb 2> :
+  Wdg_ChannelGetVersionInfo (0, Versioninfo_2(D));
+  return;
+
+}
+
+
+Wdg_43_Instance0_Service ()
+{
+  <bb 2> :
+  Wdg_ChannelService (0);
+  return;
+
+}
+
+
+Wdg_43_Instance0_SetMode (WdgIf_ModeType Mode)
+{
+  Std_ReturnType D.5684;
+  Std_ReturnType _4;
+
+  <bb 2> :
+  _4 = Wdg_ChannelSetMode (0, Mode_2(D));
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Wdg_43_Instance0_Init (const struct Wdg_ConfigType * ConfigPtr)
+{
+  <bb 2> :
+  Wdg_ChannelInit (0, ConfigPtr_2(D));
+  return;
+
+}
+
+

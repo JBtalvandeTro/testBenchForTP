@@ -1,0 +1,11 @@
+CTB.c:67:6:CTB_Init	8	static
+CTB.c:89:6:CTB_Update	8	static
+CTB.c:127:9:CTB_Read_EMERSTOP	8	static
+CTB.c:137:9:CTB_Read_Maint	8	static
+CTB.c:147:9:CTB_Read_BbAuxAdd	16	static
+CTB.c:163:6:CTB_Deinit	8	static
+CTB.c:174:13:ctb_UpdateResults	8	static
+CTB.c:227:13:ctb_MaintManagement	8	static
+CTB.c:248:13:ctb_PbitManagement	16	static
+CTB.c:323:13:ctb_CbitManagement	16	static
+CTB.c:362:13:ctb_ControlManagement	8	static

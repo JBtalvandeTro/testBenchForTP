@@ -1,0 +1,150 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Mpu_Ip_GetErrorDetails/10 (Mpu_Ip_GetErrorDetails) @066f7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Ipw_Mpu_GetErrorDetails/5 
+  Calls: 
+Mpu_Ip_SetAccessMode/9 (Mpu_Ip_SetAccessMode) @066f7540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Ipw_Mpu_SetAccessMode/4 
+  Calls: 
+Mpu_Ip_EnableRegion/8 (Mpu_Ip_EnableRegion) @066f7380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Ipw_Mpu_EnableRegion/3 
+  Calls: 
+Mpu_Ip_SetRegionConfig/7 (Mpu_Ip_SetRegionConfig) @066f71c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Ipw_Mpu_SetRegionConfig/2 
+  Calls: 
+Mpu_Ip_Init/6 (Mpu_Ip_Init) @066f7000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Rm_Ipw_Mpu_Init/1 
+  Calls: 
+Rm_Ipw_Mpu_GetErrorDetails/5 (Rm_Ipw_Mpu_GetErrorDetails) @066f4ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_GetErrorDetails/10 
+Rm_Ipw_Mpu_SetAccessMode/4 (Rm_Ipw_Mpu_SetAccessMode) @066f4c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetAccessMode/9 
+Rm_Ipw_Mpu_EnableRegion/3 (Rm_Ipw_Mpu_EnableRegion) @066f49a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_EnableRegion/8 
+Rm_Ipw_Mpu_SetRegionConfig/2 (Rm_Ipw_Mpu_SetRegionConfig) @066f4700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_SetRegionConfig/7 
+Rm_Ipw_Mpu_Init/1 (Rm_Ipw_Mpu_Init) @066f4460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Mpu_Ip_Init/6 
+Rm_Ipw_Mpu_GetErrorDetails (struct Rm_Mpu_ErrorDetailsType * pErrorDetails)
+{
+  boolean D.5755;
+  boolean _4;
+
+  <bb 2> :
+  _4 = Mpu_Ip_GetErrorDetails (pErrorDetails_2(D));
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+Rm_Ipw_Mpu_SetAccessMode (uint8 u8RegionNum, Rm_Mpu_MasterType eMaster, Rm_Mpu_SupervisorAccessModeType eSupervisorMode, Rm_Mpu_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  Mpu_Ip_SetAccessMode (u8RegionNum_2(D), eMaster_3(D), eSupervisorMode_4(D), eUserMode_5(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  Mpu_Ip_EnableRegion (u8RegionNum_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_SetRegionConfig (uint8 u8RegionNum, const struct Rm_Mpu_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  Mpu_Ip_SetRegionConfig (u8RegionNum_2(D), pUserConfigPtr_3(D));
+  return;
+
+}
+
+
+Rm_Ipw_Mpu_Init (const struct Rm_Ipw_ConfigType * pIpwConfig)
+{
+  const struct Mpu_Ip_ConfigType * _1;
+
+  <bb 2> :
+  _1 = pIpwConfig_3(D)->Rm_Ipw_pMpuConfig;
+  Mpu_Ip_Init (_1);
+  return;
+
+}
+
+

@@ -1,0 +1,1078 @@
+IPA summary for CBU_GetErrorResetCmdFrameData/8 is missing.
+IPA summary for CBU_GetControlPtcuCmdsFrameData/7 is missing.
+IPA summary for CBU_SendControlPbitResultsFrame/6 is missing.
+IPA summary for CBU_SendControlErrorsWarningsFrame/5 is missing.
+IPA summary for CBU_SendControlControlStatusFrame/4 is missing.
+IPA summary for CBU_SendControlVoltageMeasuresFrame/3 is missing.
+IPA summary for CBU_SendControlTemperatureMeasuresFrame/2 is missing.
+IPA summary for CBU_SendControlPowerMeasuresFrame/1 is missing.
+IPA summary for CBU_SendControlCurrentMeasuresFrame/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       14 calls, 14.000000 freq, 0 count
+IPA summary for CBU_GetErrorResetCmdFrameData/8 is missing.
+IPA summary for CBU_GetControlPtcuCmdsFrameData/7 is missing.
+IPA summary for CBU_SendControlPbitResultsFrame/6 is missing.
+IPA summary for CBU_SendControlErrorsWarningsFrame/5 is missing.
+IPA summary for CBU_SendControlControlStatusFrame/4 is missing.
+IPA summary for CBU_SendControlVoltageMeasuresFrame/3 is missing.
+IPA summary for CBU_SendControlTemperatureMeasuresFrame/2 is missing.
+IPA summary for CBU_SendControlPowerMeasuresFrame/1 is missing.
+IPA summary for CBU_SendControlCurrentMeasuresFrame/0 is missing.
+Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not_available
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+
+;; Function CBU_SendControlCurrentMeasuresFrame (CBU_SendControlCurrentMeasuresFrame, funcdef_no=0, decl_uid=5417, cgraph_uid=1, symbol_order=0)
+
+CBU_SendControlCurrentMeasuresFrame ()
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  short unsigned int _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  int _6;
+  int _7;
+  unsigned char _8;
+  unsigned char index.0_9;
+  unsigned char index.1_10;
+  short unsigned int _11;
+  int _12;
+  unsigned char _13;
+  short unsigned int _14;
+  short unsigned int _15;
+  int _16;
+  int _17;
+  unsigned char _18;
+  unsigned char CBU_Address.2_19;
+  long unsigned int _20;
+  long unsigned int _21;
+
+  <bb 2> :
+  id_value_23 = COM_framesControl[0].id;
+  index_24 = 0;
+  swPduHandle_25 = 0;
+  _1 = COM_powerMeasures.iBusHv;
+  _2 = (int) index_24;
+  _3 = (unsigned char) _1;
+  buffer[_2] = _3;
+  _4 = COM_powerMeasures.iBusHv;
+  _5 = _4 >> 8;
+  _6 = (int) index_24;
+  _7 = _6 + 1;
+  _8 = (unsigned char) _5;
+  buffer[_7] = _8;
+  index.0_9 = index_24;
+  index_28 = index.0_9 + 1;
+  index.1_10 = index_28;
+  index_29 = index.1_10 + 1;
+  _11 = COM_powerMeasures.iBusLv;
+  _12 = (int) index_29;
+  _13 = (unsigned char) _11;
+  buffer[_12] = _13;
+  _14 = COM_powerMeasures.iBusLv;
+  _15 = _14 >> 8;
+  _16 = (int) index_29;
+  _17 = _16 + 1;
+  _18 = (unsigned char) _15;
+  buffer[_17] = _18;
+  index_32 = index_29 + 2;
+  CBU_Address.2_19 = CBU_Address;
+  _20 = (long unsigned int) CBU_Address.2_19;
+  _21 = _20 & 3;
+  id_value_33 = id_value_23 + _21;
+  CBU_CreatePduInfo (id_value_33, swPduHandle_25, index_32, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 15);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlPowerMeasuresFrame (CBU_SendControlPowerMeasuresFrame, funcdef_no=1, decl_uid=5419, cgraph_uid=2, symbol_order=1)
+
+CBU_SendControlPowerMeasuresFrame ()
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  long unsigned int _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  int _6;
+  int _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  int _11;
+  int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  int _16;
+  int _17;
+  unsigned char _18;
+  long unsigned int _19;
+  int _20;
+  unsigned char _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  int _24;
+  int _25;
+  unsigned char _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  int _29;
+  int _30;
+  unsigned char _31;
+  long unsigned int _32;
+  long unsigned int _33;
+  int _34;
+  int _35;
+  unsigned char _36;
+  unsigned char CBU_Address.3_37;
+  long unsigned int _38;
+  long unsigned int _39;
+
+  <bb 2> :
+  id_value_41 = COM_framesControl[1].id;
+  index_42 = 0;
+  swPduHandle_43 = 0;
+  _1 = COM_powerMeasures.pBusHv;
+  _2 = (int) index_42;
+  _3 = (unsigned char) _1;
+  buffer[_2] = _3;
+  _4 = COM_powerMeasures.pBusHv;
+  _5 = _4 >> 8;
+  _6 = (int) index_42;
+  _7 = _6 + 1;
+  _8 = (unsigned char) _5;
+  buffer[_7] = _8;
+  _9 = COM_powerMeasures.pBusHv;
+  _10 = _9 >> 16;
+  _11 = (int) index_42;
+  _12 = _11 + 2;
+  _13 = (unsigned char) _10;
+  buffer[_12] = _13;
+  _14 = COM_powerMeasures.pBusHv;
+  _15 = _14 >> 24;
+  _16 = (int) index_42;
+  _17 = _16 + 3;
+  _18 = (unsigned char) _15;
+  buffer[_17] = _18;
+  index_48 = index_42 + 4;
+  _19 = COM_powerMeasures.pBusLv;
+  _20 = (int) index_48;
+  _21 = (unsigned char) _19;
+  buffer[_20] = _21;
+  _22 = COM_powerMeasures.pBusLv;
+  _23 = _22 >> 8;
+  _24 = (int) index_48;
+  _25 = _24 + 1;
+  _26 = (unsigned char) _23;
+  buffer[_25] = _26;
+  _27 = COM_powerMeasures.pBusLv;
+  _28 = _27 >> 16;
+  _29 = (int) index_48;
+  _30 = _29 + 2;
+  _31 = (unsigned char) _28;
+  buffer[_30] = _31;
+  _32 = COM_powerMeasures.pBusLv;
+  _33 = _32 >> 24;
+  _34 = (int) index_48;
+  _35 = _34 + 3;
+  _36 = (unsigned char) _33;
+  buffer[_35] = _36;
+  index_53 = index_48 + 4;
+  CBU_Address.3_37 = CBU_Address;
+  _38 = (long unsigned int) CBU_Address.3_37;
+  _39 = _38 & 3;
+  id_value_54 = id_value_41 + _39;
+  CBU_CreatePduInfo (id_value_54, swPduHandle_43, index_53, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 18);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlTemperatureMeasuresFrame (CBU_SendControlTemperatureMeasuresFrame, funcdef_no=2, decl_uid=5421, cgraph_uid=3, symbol_order=2)
+
+CBU_SendControlTemperatureMeasuresFrame ()
+{
+  uint8_t index;
+  struct Can_PduType local_pduInfo;
+  uint16_t swPduHandle;
+  uint32_t id_value;
+  uint8_t buffer[64];
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char index.4_3;
+  int _4;
+  unsigned char _5;
+  unsigned char index.5_6;
+  int _7;
+  unsigned char _8;
+  unsigned char index.6_9;
+  int _10;
+  unsigned char _11;
+  unsigned char index.7_12;
+  int _13;
+  unsigned char _14;
+  unsigned char CBU_Address.8_15;
+  long unsigned int _16;
+  long unsigned int _17;
+
+  <bb 2> :
+  id_value_19 = COM_framesControl[2].id;
+  swPduHandle_20 = 0;
+  index_21 = 0;
+  _1 = COM_tempMeasures.tempNotif;
+  _2 = (unsigned char) _1;
+  index.4_3 = index_21;
+  index_22 = index.4_3 + 1;
+  _4 = (int) index.4_3;
+  _5 = _2 & 3;
+  buffer[_4] = _5;
+  index.5_6 = index_22;
+  index_24 = index.5_6 + 1;
+  _7 = (int) index.5_6;
+  _8 = COM_tempMeasures.temp1Cometi;
+  buffer[_7] = _8;
+  index.6_9 = index_24;
+  index_26 = index.6_9 + 1;
+  _10 = (int) index.6_9;
+  _11 = COM_tempMeasures.temp2Cometi;
+  buffer[_10] = _11;
+  index.7_12 = index_26;
+  index_28 = index.7_12 + 1;
+  _13 = (int) index.7_12;
+  _14 = COM_tempMeasures.tempHvCoupler;
+  buffer[_13] = _14;
+  CBU_Address.8_15 = CBU_Address;
+  _16 = (long unsigned int) CBU_Address.8_15;
+  _17 = _16 & 3;
+  id_value_30 = id_value_19 + _17;
+  CBU_CreatePduInfo (id_value_30, swPduHandle_20, index_28, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 19);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlVoltageMeasuresFrame (CBU_SendControlVoltageMeasuresFrame, funcdef_no=3, decl_uid=5423, cgraph_uid=4, symbol_order=3)
+
+CBU_SendControlVoltageMeasuresFrame ()
+{
+  uint16_t swPduHandle;
+  uint8_t index;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  short unsigned int _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  int _6;
+  int _7;
+  unsigned char _8;
+  short unsigned int _9;
+  int _10;
+  unsigned char _11;
+  short unsigned int _12;
+  short unsigned int _13;
+  int _14;
+  int _15;
+  unsigned char _16;
+  short unsigned int _17;
+  int _18;
+  unsigned char _19;
+  short unsigned int _20;
+  short unsigned int _21;
+  int _22;
+  int _23;
+  unsigned char _24;
+  unsigned char CBU_Address.9_25;
+  long unsigned int _26;
+  long unsigned int _27;
+
+  <bb 2> :
+  id_value_29 = COM_framesControl[3].id;
+  index_30 = 0;
+  swPduHandle_31 = 0;
+  _1 = COM_powerMeasures.uBusHv;
+  _2 = (int) index_30;
+  _3 = (unsigned char) _1;
+  buffer[_2] = _3;
+  _4 = COM_powerMeasures.uBusHv;
+  _5 = _4 >> 8;
+  _6 = (int) index_30;
+  _7 = _6 + 1;
+  _8 = (unsigned char) _5;
+  buffer[_7] = _8;
+  index_34 = index_30 + 2;
+  _9 = COM_powerMeasures.uBusLv;
+  _10 = (int) index_34;
+  _11 = (unsigned char) _9;
+  buffer[_10] = _11;
+  _12 = COM_powerMeasures.uBusLv;
+  _13 = _12 >> 8;
+  _14 = (int) index_34;
+  _15 = _14 + 1;
+  _16 = (unsigned char) _13;
+  buffer[_15] = _16;
+  index_37 = index_34 + 2;
+  _17 = COM_powerMeasures.uBusHvAux;
+  _18 = (int) index_37;
+  _19 = (unsigned char) _17;
+  buffer[_18] = _19;
+  _20 = COM_powerMeasures.uBusHvAux;
+  _21 = _20 >> 8;
+  _22 = (int) index_37;
+  _23 = _22 + 1;
+  _24 = (unsigned char) _21;
+  buffer[_23] = _24;
+  index_40 = index_37 + 2;
+  CBU_Address.9_25 = CBU_Address;
+  _26 = (long unsigned int) CBU_Address.9_25;
+  _27 = _26 & 3;
+  id_value_41 = id_value_29 + _27;
+  CBU_CreatePduInfo (id_value_41, swPduHandle_31, index_40, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 20);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlControlStatusFrame (CBU_SendControlControlStatusFrame, funcdef_no=4, decl_uid=5425, cgraph_uid=5, symbol_order=4)
+
+CBU_SendControlControlStatusFrame ()
+{
+  uint16_t swPduHandle;
+  uint8_t index;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  long unsigned int _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  int _6;
+  int _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  int _11;
+  int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  int _16;
+  int _17;
+  unsigned char _18;
+  short unsigned int _19;
+  unsigned char index.10_20;
+  int _21;
+  unsigned char _22;
+  short unsigned int _23;
+  short unsigned int _24;
+  unsigned char _25;
+  unsigned char _26;
+  <unnamed type> _27;
+  unsigned char _28;
+  unsigned char _29;
+  unsigned char _30;
+  unsigned char _31;
+  <unnamed type> _32;
+  unsigned char _33;
+  unsigned char _34;
+  unsigned char _35;
+  unsigned char _36;
+  <unnamed type> _37;
+  unsigned char _38;
+  unsigned char _39;
+  unsigned char index.11_40;
+  int _41;
+  unsigned char _42;
+  <unnamed type> _43;
+  unsigned char _44;
+  unsigned char _45;
+  <unnamed type> _46;
+  unsigned char _47;
+  unsigned char _48;
+  unsigned char _49;
+  unsigned char _50;
+  unsigned char _51;
+  unsigned char _52;
+  unsigned char index.12_53;
+  int _54;
+  unsigned char _55;
+  _Bool _56;
+  unsigned char _57;
+  _Bool _58;
+  unsigned char _59;
+  unsigned char _60;
+  unsigned char index.13_61;
+  int _62;
+  unsigned char _63;
+  unsigned char CBU_Address.14_64;
+  long unsigned int _65;
+  long unsigned int _66;
+
+  <bb 2> :
+  id_value_68 = COM_framesControl[4].id;
+  index_69 = 0;
+  swPduHandle_70 = 0;
+  _1 = COM_controlStatusInfo.setpoint;
+  _2 = (int) index_69;
+  _3 = (unsigned char) _1;
+  buffer[_2] = _3;
+  _4 = COM_controlStatusInfo.setpoint;
+  _5 = _4 >> 8;
+  _6 = (int) index_69;
+  _7 = _6 + 1;
+  _8 = (unsigned char) _5;
+  buffer[_7] = _8;
+  _9 = COM_controlStatusInfo.setpoint;
+  _10 = _9 >> 16;
+  _11 = (int) index_69;
+  _12 = _11 + 2;
+  _13 = (unsigned char) _10;
+  buffer[_12] = _13;
+  _14 = COM_controlStatusInfo.setpoint;
+  _15 = _14 >> 24;
+  _16 = (int) index_69;
+  _17 = _16 + 3;
+  _18 = (unsigned char) _15;
+  buffer[_17] = _18;
+  index_75 = index_69 + 4;
+  _19 = COM_controlStatusInfo.currentLimit;
+  index.10_20 = index_75;
+  index_76 = index.10_20 + 1;
+  _21 = (int) index.10_20;
+  _22 = (unsigned char) _19;
+  buffer[_21] = _22;
+  _23 = COM_controlStatusInfo.currentLimit;
+  _24 = _23 >> 8;
+  _25 = (unsigned char) _24;
+  _26 = _25 & 15;
+  _27 = COM_controlStatusInfo.limitationType;
+  _28 = (unsigned char) _27;
+  _29 = _28 << 4;
+  _30 = _29 & 48;
+  _31 = _26 | _30;
+  _32 = COM_controlStatusInfo.lvPrechargeStatus;
+  _33 = (unsigned char) _32;
+  _34 = _33 << 6;
+  _35 = _34 & 64;
+  _36 = _31 + _35;
+  _37 = COM_controlStatusInfo.hvCouplerStatus1;
+  _38 = (unsigned char) _37;
+  _39 = _38 << 7;
+  index.11_40 = index_76;
+  index_78 = index.11_40 + 1;
+  _41 = (int) index.11_40;
+  _42 = _36 + _39;
+  buffer[_41] = _42;
+  _43 = COM_controlStatusInfo.dcdcState;
+  _44 = (unsigned char) _43;
+  _45 = _44 & 15;
+  _46 = COM_controlStatusInfo.buckType;
+  _47 = (unsigned char) _46;
+  _48 = _47 << 4;
+  _49 = _48 & 48;
+  _50 = _45 | _49;
+  _51 = COM_controlStatusInfo.powercoreUnitsNb;
+  _52 = _51 << 6;
+  index.12_53 = index_78;
+  index_80 = index.12_53 + 1;
+  _54 = (int) index.12_53;
+  _55 = _50 + _52;
+  buffer[_54] = _55;
+  _56 = COM_controlStatusInfo.emerstopStatus;
+  _57 = (unsigned char) _56;
+  _58 = COM_controlStatusInfo.healthStatus;
+  _59 = (unsigned char) _58;
+  _60 = _59 << 1;
+  index.13_61 = index_80;
+  index_82 = index.13_61 + 1;
+  _62 = (int) index.13_61;
+  _63 = _57 + _60;
+  buffer[_62] = _63;
+  CBU_Address.14_64 = CBU_Address;
+  _65 = (long unsigned int) CBU_Address.14_64;
+  _66 = _65 & 3;
+  id_value_84 = id_value_68 + _66;
+  CBU_CreatePduInfo (id_value_84, swPduHandle_70, index_82, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 14);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlErrorsWarningsFrame (CBU_SendControlErrorsWarningsFrame, funcdef_no=5, decl_uid=5427, cgraph_uid=6, symbol_order=5)
+
+CBU_SendControlErrorsWarningsFrame ()
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint32_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  short unsigned int _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  unsigned char _7;
+  int _8;
+  int _9;
+  unsigned char _10;
+  short unsigned int _11;
+  unsigned char _12;
+  int _13;
+  unsigned char _14;
+  short unsigned int _15;
+  short unsigned int _16;
+  unsigned char _17;
+  int _18;
+  int _19;
+  unsigned char _20;
+  short unsigned int _21;
+  unsigned char _22;
+  int _23;
+  unsigned char _24;
+  short unsigned int _25;
+  short unsigned int _26;
+  unsigned char _27;
+  int _28;
+  int _29;
+  unsigned char _30;
+  long unsigned int index.15_31;
+  unsigned char _32;
+  <unnamed type> _33;
+  unsigned char _34;
+  unsigned char _35;
+  long unsigned int _36;
+  unsigned char _37;
+  unsigned char _38;
+  unsigned char _39;
+  long unsigned int index.16_40;
+  unsigned char _41;
+  unsigned char CBU_Address.17_42;
+  long unsigned int _43;
+  long unsigned int _44;
+  unsigned char _45;
+
+  <bb 2> :
+  id_value_47 = COM_framesControl[5].id;
+  index_48 = 0;
+  swPduHandle_49 = 0;
+  _1 = COM_errorsAndWarnings.bbauxErrors;
+  _2 = (unsigned char) index_48;
+  _3 = (int) _2;
+  _4 = (unsigned char) _1;
+  buffer[_3] = _4;
+  _5 = COM_errorsAndWarnings.bbauxErrors;
+  _6 = _5 >> 8;
+  _7 = (unsigned char) index_48;
+  _8 = (int) _7;
+  _9 = _8 + 1;
+  _10 = (unsigned char) _6;
+  buffer[_9] = _10;
+  index_52 = index_48 + 2;
+  _11 = COM_errorsAndWarnings.bbauxWarnings;
+  _12 = (unsigned char) index_52;
+  _13 = (int) _12;
+  _14 = (unsigned char) _11;
+  buffer[_13] = _14;
+  _15 = COM_errorsAndWarnings.bbauxWarnings;
+  _16 = _15 >> 8;
+  _17 = (unsigned char) index_52;
+  _18 = (int) _17;
+  _19 = _18 + 1;
+  _20 = (unsigned char) _16;
+  buffer[_19] = _20;
+  index_55 = index_52 + 2;
+  _21 = COM_errorsAndWarnings.powercoreErrors;
+  _22 = (unsigned char) index_55;
+  _23 = (int) _22;
+  _24 = (unsigned char) _21;
+  buffer[_23] = _24;
+  _25 = COM_errorsAndWarnings.powercoreErrors;
+  _26 = _25 >> 8;
+  _27 = (unsigned char) index_55;
+  _28 = (int) _27;
+  _29 = _28 + 1;
+  _30 = (unsigned char) _26;
+  buffer[_29] = _30;
+  index_58 = index_55 + 2;
+  index.15_31 = index_58;
+  index_59 = index.15_31 + 1;
+  _32 = COM_errorsAndWarnings.powercoreWarnings;
+  buffer[index.15_31] = _32;
+  _33 = COM_errorsAndWarnings.severity;
+  _34 = (unsigned char) _33;
+  _35 = _34 & 3;
+  _36 = COM_errorsAndWarnings.faultOrigin;
+  _37 = (unsigned char) _36;
+  _38 = _37 << 2;
+  _39 = _38 & 12;
+  index.16_40 = index_59;
+  index_61 = index.16_40 + 1;
+  _41 = _35 | _39;
+  buffer[index.16_40] = _41;
+  CBU_Address.17_42 = CBU_Address;
+  _43 = (long unsigned int) CBU_Address.17_42;
+  _44 = _43 & 3;
+  id_value_63 = id_value_47 + _44;
+  _45 = (unsigned char) index_61;
+  CBU_CreatePduInfo (id_value_63, swPduHandle_49, _45, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 16);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_SendControlPbitResultsFrame (CBU_SendControlPbitResultsFrame, funcdef_no=6, decl_uid=5429, cgraph_uid=7, symbol_order=6)
+
+CBU_SendControlPbitResultsFrame ()
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  long unsigned int _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  int _6;
+  int _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  int _11;
+  int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  int _16;
+  int _17;
+  unsigned char _18;
+  <unnamed type> _19;
+  unsigned char _20;
+  unsigned char _21;
+  <unnamed type> _22;
+  unsigned char _23;
+  unsigned char _24;
+  unsigned char _25;
+  unsigned char _26;
+  <unnamed type> _27;
+  unsigned char _28;
+  unsigned char _29;
+  unsigned char index.18_30;
+  int _31;
+  unsigned char _32;
+  unsigned char index.19_33;
+  int _34;
+  unsigned char _35;
+  unsigned char CBU_Address.20_36;
+  long unsigned int _37;
+  long unsigned int _38;
+
+  <bb 2> :
+  id_value_40 = COM_framesControl[6].id;
+  index_41 = 0;
+  swPduHandle_42 = 0;
+  _1 = COM_pbitResultsInfo.softwareVersion;
+  _2 = (int) index_41;
+  _3 = (unsigned char) _1;
+  buffer[_2] = _3;
+  _4 = COM_pbitResultsInfo.softwareVersion;
+  _5 = _4 >> 8;
+  _6 = (int) index_41;
+  _7 = _6 + 1;
+  _8 = (unsigned char) _5;
+  buffer[_7] = _8;
+  _9 = COM_pbitResultsInfo.softwareVersion;
+  _10 = _9 >> 16;
+  _11 = (int) index_41;
+  _12 = _11 + 2;
+  _13 = (unsigned char) _10;
+  buffer[_12] = _13;
+  _14 = COM_pbitResultsInfo.softwareVersion;
+  _15 = _14 >> 24;
+  _16 = (int) index_41;
+  _17 = _16 + 3;
+  _18 = (unsigned char) _15;
+  buffer[_17] = _18;
+  index_47 = index_41 + 4;
+  _19 = COM_pbitResultsInfo.pbitStatus;
+  _20 = (unsigned char) _19;
+  _21 = _20 & 3;
+  _22 = COM_pbitResultsInfo.lvPrechargeStatus;
+  _23 = (unsigned char) _22;
+  _24 = _23 << 4;
+  _25 = _24 & 48;
+  _26 = _21 | _25;
+  _27 = COM_pbitResultsInfo.hvCouplerStatus;
+  _28 = (unsigned char) _27;
+  _29 = _28 << 6;
+  index.18_30 = index_47;
+  index_48 = index.18_30 + 1;
+  _31 = (int) index.18_30;
+  _32 = _26 + _29;
+  buffer[_31] = _32;
+  index.19_33 = index_48;
+  index_50 = index.19_33 + 1;
+  _34 = (int) index.19_33;
+  _35 = COM_pbitResultsInfo.dsioStatus;
+  buffer[_34] = _35;
+  CBU_Address.20_36 = CBU_Address;
+  _37 = (long unsigned int) CBU_Address.20_36;
+  _38 = _37 & 3;
+  id_value_52 = id_value_40 + _38;
+  CBU_CreatePduInfo (id_value_52, swPduHandle_42, index_50, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 17);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function CBU_GetControlPtcuCmdsFrameData (CBU_GetControlPtcuCmdsFrameData, funcdef_no=7, decl_uid=5435, cgraph_uid=8, symbol_order=7)
+
+CBU_GetControlPtcuCmdsFrameData (const uint8_t * buffer, uint8_t * bbauxCommand, uint32_t * setpointReq, uint16_t * currentLimitReq, boolean * s3Mode)
+{
+  int8_t index;
+  sizetype _1;
+  const uint8_t * _2;
+  unsigned char _3;
+  unsigned char _4;
+  signed char index.21_5;
+  unsigned char index.22_6;
+  unsigned char _7;
+  sizetype _8;
+  sizetype _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  sizetype _14;
+  sizetype _15;
+  const uint8_t * _16;
+  unsigned char _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  sizetype _21;
+  sizetype _22;
+  const uint8_t * _23;
+  unsigned char _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  sizetype _28;
+  const uint8_t * _29;
+  unsigned char _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  unsigned char index.23_33;
+  unsigned char _34;
+  sizetype _35;
+  sizetype _36;
+  const uint8_t * _37;
+  unsigned char _38;
+  int _39;
+  int _40;
+  signed short _41;
+  sizetype _42;
+  const uint8_t * _43;
+  unsigned char _44;
+  signed short _45;
+  signed short _46;
+  short unsigned int _47;
+  unsigned char index.24_48;
+  unsigned char _49;
+  sizetype _50;
+  const uint8_t * _51;
+  unsigned char _52;
+  _Bool _53;
+
+  <bb 2> :
+  index_54 = 0;
+  _1 = (sizetype) index_54;
+  _2 = buffer_55(D) + _1;
+  _3 = *_2;
+  _4 = _3 & 7;
+  *bbauxCommand_57(D) = _4;
+  index.21_5 = index_54;
+  index.22_6 = (unsigned char) index.21_5;
+  _7 = index.22_6 + 1;
+  index_59 = (int8_t) _7;
+  _8 = (sizetype) index_59;
+  _9 = _8 + 3;
+  _10 = buffer_55(D) + _9;
+  _11 = *_10;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 24;
+  _14 = (sizetype) index_59;
+  _15 = _14 + 2;
+  _16 = buffer_55(D) + _15;
+  _17 = *_16;
+  _18 = (long unsigned int) _17;
+  _19 = _18 << 16;
+  _20 = _13 | _19;
+  _21 = (sizetype) index_59;
+  _22 = _21 + 1;
+  _23 = buffer_55(D) + _22;
+  _24 = *_23;
+  _25 = (long unsigned int) _24;
+  _26 = _25 << 8;
+  _27 = _20 | _26;
+  _28 = (sizetype) index_59;
+  _29 = buffer_55(D) + _28;
+  _30 = *_29;
+  _31 = (long unsigned int) _30;
+  _32 = _27 | _31;
+  *setpointReq_60(D) = _32;
+  index.23_33 = (unsigned char) index_59;
+  _34 = index.23_33 + 4;
+  index_62 = (int8_t) _34;
+  _35 = (sizetype) index_62;
+  _36 = _35 + 1;
+  _37 = buffer_55(D) + _36;
+  _38 = *_37;
+  _39 = (int) _38;
+  _40 = _39 << 8;
+  _41 = (signed short) _40;
+  _42 = (sizetype) index_62;
+  _43 = buffer_55(D) + _42;
+  _44 = *_43;
+  _45 = (signed short) _44;
+  _46 = _41 | _45;
+  _47 = (short unsigned int) _46;
+  *currentLimitReq_63(D) = _47;
+  index.24_48 = (unsigned char) index_62;
+  _49 = index.24_48 + 2;
+  index_65 = (int8_t) _49;
+  _50 = (sizetype) index_65;
+  _51 = buffer_55(D) + _50;
+  _52 = *_51;
+  _53 = _52 != 0;
+  *s3Mode_66(D) = _53;
+  return;
+
+}
+
+
+
+;; Function CBU_GetErrorResetCmdFrameData (CBU_GetErrorResetCmdFrameData, funcdef_no=8, decl_uid=8402, cgraph_uid=9, symbol_order=8)
+
+CBU_GetErrorResetCmdFrameData ()
+{
+  <bb 2> :
+  return;
+
+}
+
+

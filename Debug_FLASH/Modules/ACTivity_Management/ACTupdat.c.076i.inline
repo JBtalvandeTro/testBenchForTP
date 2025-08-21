@@ -1,0 +1,1577 @@
+IPA summary for act_UpdateFaultSeverity/26 is missing.
+IPA summary for act_UpdateFaultOrigin/25 is missing.
+IPA summary for act_CheckErrors/24 is missing.
+IPA summary for act_CheckPowerCoreError/23 is missing.
+IPA summary for act_CheckWarnings/22 is missing.
+IPA summary for act_CheckUnavailableCOMETi/21 is missing.
+IPA summary for act_CheckMaintCondition/20 is missing.
+IPA summary for act_CheckRegulationRequestNok/19 is missing.
+IPA summary for act_CheckAutoCnvEnd/18 is missing.
+IPA summary for act_CheckOverVolt/17 is missing.
+IPA summary for act_CheckRelayCmd/16 is missing.
+IPA summary for act_CheckUnkownCometiUnit/15 is missing.
+IPA summary for act_CheckParamError/14 is missing.
+IPA summary for act_CheckPrechargeError/13 is missing.
+IPA summary for act_CheckDiscreteIOErrors/12 is missing.
+IPA summary for act_CheckOverCurrent/11 is missing.
+IPA summary for act_CheckVoltageMeas/10 is missing.
+IPA summary for act_CheckRelayNokError/9 is missing.
+IPA summary for act_evaluateTempSeverity/8 is missing.
+IPA summary for act_CheckTemperture/7 is missing.
+IPA summary for act_CheckAddressChanged/6 is missing.
+IPA summary for act_CheckCanLossErrors/5 is missing.
+IPA summary for act_UpdateMasks/4 is missing.
+IPA summary for ACT_UpdateFaults/3 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       24 calls, 24.000000 freq, 0 count
+IPA summary for act_UpdateFaultSeverity/26 is missing.
+IPA summary for act_UpdateFaultOrigin/25 is missing.
+IPA summary for act_CheckErrors/24 is missing.
+IPA summary for act_CheckPowerCoreError/23 is missing.
+IPA summary for act_CheckWarnings/22 is missing.
+IPA summary for act_CheckUnavailableCOMETi/21 is missing.
+IPA summary for act_CheckMaintCondition/20 is missing.
+IPA summary for act_CheckRegulationRequestNok/19 is missing.
+IPA summary for act_CheckAutoCnvEnd/18 is missing.
+IPA summary for act_CheckOverVolt/17 is missing.
+IPA summary for act_CheckRelayCmd/16 is missing.
+IPA summary for act_CheckUnkownCometiUnit/15 is missing.
+IPA summary for act_CheckParamError/14 is missing.
+IPA summary for act_CheckPrechargeError/13 is missing.
+IPA summary for act_CheckDiscreteIOErrors/12 is missing.
+IPA summary for act_CheckOverCurrent/11 is missing.
+IPA summary for act_CheckVoltageMeas/10 is missing.
+IPA summary for act_CheckRelayNokError/9 is missing.
+IPA summary for act_evaluateTempSeverity/8 is missing.
+IPA summary for act_CheckTemperture/7 is missing.
+IPA summary for act_CheckAddressChanged/6 is missing.
+IPA summary for act_CheckCanLossErrors/5 is missing.
+IPA summary for act_UpdateMasks/4 is missing.
+IPA summary for ACT_UpdateFaults/3 is missing.
+Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckRelayNokError/9 (read)act_CheckOverVolt/17 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckVoltageMeas/10 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_CheckTemperture/7 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckOverCurrent/11 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverVolt/17 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)act_UpdateMasks/4 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckTemperture/7 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_UpdateFaultOrigin/25 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckAddressChanged/6 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayNokError/9 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckVoltageMeas/10 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckAutoCnvEnd/18 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckErrors/24 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)
+  Availability: not_available
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)act_CheckCanLossErrors/5 (read)ACT_UpdateFaults/3 (read)
+  Availability: not_available
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: available
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: available
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: available
+  Varpool flags: initialized
+
+;; Function ACT_UpdateFaults (ACT_UpdateFaults, funcdef_no=0, decl_uid=6438, cgraph_uid=1, symbol_order=3)
+
+ACT_UpdateFaults ()
+{
+  unsigned char _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.fastPowerDown.all = 0;
+  ACT_errors.slowPowerDown.all = 0;
+  ACT_errors.warnings.all = 0;
+
+  <bb 4> :
+  act_UpdateMasks ();
+  act_CheckWarnings ();
+  act_CheckErrors ();
+  act_UpdateFaultOrigin ();
+  act_UpdateFaultSeverity ();
+  return;
+
+}
+
+
+
+;; Function act_UpdateMasks (act_UpdateMasks, funcdef_no=1, decl_uid=8629, cgraph_uid=2, symbol_order=4)
+
+act_UpdateMasks ()
+{
+  uint32_t warningsMask;
+  uint32_t slowPowerDownMask;
+  uint32_t fastPowerDownMask;
+  <unnamed type> FSM_mode.0_1;
+  <unnamed type> FSM_mode.1_2;
+  <unnamed type> FSM_mode.2_3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  FSM_mode.0_1 = FSM_mode;
+  if (FSM_mode.0_1 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  FSM_mode.1_2 = FSM_mode;
+  if (FSM_mode.1_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  FSM_mode.2_3 = FSM_mode;
+  if (FSM_mode.2_3 == 5)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.fastPowerDownMask.all = 0;
+  ACT_errors.slowPowerDownMask.all = 0;
+  ACT_errors.warningsMask.all = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  fastPowerDownMask_8 = PAR_paramConfig[31].realVal.unsignedVal;
+  slowPowerDownMask_9 = PAR_paramConfig[30].realVal.unsignedVal;
+  warningsMask_10 = PAR_paramConfig[29].realVal.unsignedVal;
+  _4 = (short unsigned int) fastPowerDownMask_8;
+  ACT_errors.fastPowerDownMask.all = _4;
+  ACT_errors.slowPowerDownMask.all = slowPowerDownMask_9;
+  _5 = (short unsigned int) warningsMask_10;
+  ACT_errors.warningsMask.all = _5;
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function act_CheckCanLossErrors (act_CheckCanLossErrors, funcdef_no=2, decl_uid=8631, cgraph_uid=3, symbol_order=5)
+
+act_CheckCanLossErrors ()
+{
+  _Bool _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = COM_flags.moduleFlags.faults.flags.canCComLoss;
+  ACT_errors.slowPowerDown.error.controlCanLoss = _1;
+  _2 = ACT_errors.slowPowerDown.error.limitedCapacity;
+  _3 = COM_flags.moduleFlags.faults.flags.canIComLoss;
+  _4 = _2 | _3;
+  _5 = (int) _4;
+  _6 = _5 != 0;
+  ACT_errors.slowPowerDown.error.limitedCapacity = _6;
+  return;
+
+}
+
+
+
+;; Function act_CheckAddressChanged (act_CheckAddressChanged, funcdef_no=3, decl_uid=8633, cgraph_uid=4, symbol_order=6)
+
+act_CheckAddressChanged ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.faults.flags);
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.addressChanged;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.addressChanged;
+  _5 = _4 + 1;
+  errorsTimeouts.addressChanged = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.addressChanged = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.addressChanged;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.addressChanged = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function act_CheckTemperture (act_CheckTemperture, funcdef_no=4, decl_uid=8635, cgraph_uid=5, symbol_order=7)
+
+act_CheckTemperture ()
+{
+  uint32_t maxAbmientTemp;
+  uint32_t powerCore_high_Threshold;
+  uint32_t powerCore_med_Threshold;
+  uint32_t powerCore_low_Threshold;
+  uint32_t bbAUX_high_Threshold;
+  uint32_t bbAUX_med_Threshold;
+  uint32_t bbAUX_low_Threshold;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  long unsigned int _5;
+  <unnamed type> bbaux_severityLevel.3_6;
+  <unnamed type> _7;
+  <unnamed type> cometi_severityLevel.4_8;
+  <unnamed type> _9;
+  <unnamed type> cometi_severityLevel.5_10;
+  <unnamed type> bbaux_severityLevel.6_11;
+  <unnamed type> _12;
+  <unnamed type> ACT_tempSeverity.7_13;
+
+  <bb 2> :
+  bbAUX_low_Threshold_17 = PAR_paramConfig[23].realVal.unsignedVal;
+  bbAUX_med_Threshold_18 = PAR_paramConfig[24].realVal.unsignedVal;
+  bbAUX_high_Threshold_19 = PAR_paramConfig[25].realVal.unsignedVal;
+  powerCore_low_Threshold_20 = PAR_paramConfig[26].realVal.unsignedVal;
+  powerCore_med_Threshold_21 = PAR_paramConfig[27].realVal.unsignedVal;
+  powerCore_high_Threshold_22 = PAR_paramConfig[28].realVal.unsignedVal;
+  maxAbmientTemp_23 = 0;
+  _1 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  _2 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  if (_1 > _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  maxAbmientTemp_25 = (uint32_t) _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  maxAbmientTemp_24 = (uint32_t) _4;
+
+  <bb 5> :
+  # maxAbmientTemp_14 = PHI <maxAbmientTemp_25(3), maxAbmientTemp_24(4)>
+  _5 = PWB_measures.Hv_Temp;
+  bbaux_severityLevel.3_6 = bbaux_severityLevel;
+  _7 = act_evaluateTempSeverity (_5, bbaux_severityLevel.3_6, bbAUX_low_Threshold_17, bbAUX_med_Threshold_18, bbAUX_high_Threshold_19);
+  bbaux_severityLevel = _7;
+  cometi_severityLevel.4_8 = cometi_severityLevel;
+  _9 = act_evaluateTempSeverity (maxAbmientTemp_14, cometi_severityLevel.4_8, powerCore_low_Threshold_20, powerCore_med_Threshold_21, powerCore_high_Threshold_22);
+  cometi_severityLevel = _9;
+  cometi_severityLevel.5_10 = cometi_severityLevel;
+  bbaux_severityLevel.6_11 = bbaux_severityLevel;
+  _12 = MAX_EXPR <cometi_severityLevel.5_10, bbaux_severityLevel.6_11>;
+  ACT_tempSeverity = _12;
+  ACT_tempSeverity.7_13 = ACT_tempSeverity;
+  switch (ACT_tempSeverity.7_13) <default: <L6> [INV], case 1: <L5> [INV], case 2: <L4> [INV], case 3: <L3> [INV]>
+
+  <bb 6> :
+<L3>:
+  ACT_errors.fastPowerDown.error.overTemperature = 1;
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 1;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 1;
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+  ACT_errors.warnings.warningsFlags.tempUrgentReminder = 0;
+  ACT_errors.warnings.warningsFlags.tempGentleReminder = 0;
+
+  <bb 10> :
+  return;
+
+}
+
+
+
+;; Function act_evaluateTempSeverity (act_evaluateTempSeverity, funcdef_no=5, decl_uid=8641, cgraph_uid=6, symbol_order=8)
+
+act_evaluateTempSeverity (uint32_t temp, ACT_TempSeverity currentSeverity, uint32_t lowTheshold, uint32_t medTheshold, uint32_t highTheshold)
+{
+  ACT_TempSeverity returnValue;
+  ACT_TempSeverity D.8830;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  ACT_TempSeverity _21;
+
+  <bb 2> :
+  returnValue_10 = currentSeverity_9(D);
+  switch (currentSeverity_9(D)) <default: <L18> [INV], case 0: <L0> [INV], case 1: <L3> [INV], case 2: <L9> [INV], case 3: <L15> [INV]>
+
+  <bb 3> :
+<L0>:
+  if (temp_12(D) > lowTheshold_17(D))
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  returnValue_20 = 1;
+
+  <bb 5> :
+  # returnValue_4 = PHI <returnValue_10(3), returnValue_20(4)>
+  goto <bb 20>; [INV]
+
+  <bb 6> :
+<L3>:
+  if (temp_12(D) > medTheshold_14(D))
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  returnValue_19 = 2;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  _1 = lowTheshold_17(D) + 4294967291;
+  if (temp_12(D) < _1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  returnValue_18 = 0;
+
+  <bb 10> :
+  # returnValue_5 = PHI <returnValue_19(7), returnValue_10(8), returnValue_18(9)>
+  goto <bb 20>; [INV]
+
+  <bb 11> :
+<L9>:
+  if (temp_12(D) > highTheshold_11(D))
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  returnValue_16 = 3;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+  _2 = medTheshold_14(D) + 4294967291;
+  if (temp_12(D) < _2)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  returnValue_15 = 1;
+
+  <bb 15> :
+  # returnValue_6 = PHI <returnValue_16(12), returnValue_10(13), returnValue_15(14)>
+  goto <bb 20>; [INV]
+
+  <bb 16> :
+<L15>:
+  _3 = highTheshold_11(D) + 4294967291;
+  if (temp_12(D) < _3)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  returnValue_13 = 2;
+
+  <bb 18> :
+  # returnValue_7 = PHI <returnValue_10(16), returnValue_13(17)>
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+<L18>:
+
+  <bb 20> :
+  # returnValue_8 = PHI <returnValue_4(5), returnValue_5(10), returnValue_6(15), returnValue_7(18), returnValue_10(19)>
+  _21 = returnValue_8;
+
+  <bb 21> :
+<L20>:
+  return _21;
+
+}
+
+
+
+;; Function act_CheckRelayNokError (act_CheckRelayNokError, funcdef_no=6, decl_uid=8647, cgraph_uid=7, symbol_order=9)
+
+act_CheckRelayNokError ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  unsigned char _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 4;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.hvRelayNok;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.hvRelayNok;
+  _5 = _4 + 1;
+  errorsTimeouts.hvRelayNok = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.hvRelayNok = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.hvRelayNok;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.hvCouplerNok = 1;
+
+  <bb 8> :
+  _7 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _8 = _7 & 8;
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  _9 = errorsTimeouts.lvRelayNok;
+  if (_9 <= 99)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  _10 = errorsTimeouts.lvRelayNok;
+  _11 = _10 + 1;
+  errorsTimeouts.lvRelayNok = _11;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  errorsTimeouts.lvRelayNok = 0;
+
+  <bb 12> :
+  _12 = errorsTimeouts.lvRelayNok;
+  if (_12 > 99)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  ACT_errors.fastPowerDown.error.LvPrechargeNok = 1;
+
+  <bb 14> :
+  return;
+
+}
+
+
+
+;; Function act_CheckVoltageMeas (act_CheckVoltageMeas, funcdef_no=7, decl_uid=8649, cgraph_uid=8, symbol_order=10)
+
+act_CheckVoltageMeas ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  unsigned char _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 16;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.hvVoltMeas;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.hvVoltMeas;
+  _5 = _4 + 1;
+  errorsTimeouts.hvVoltMeas = _5;
+
+  <bb 5> :
+  ACT_errors.warnings.warningsFlags.hvVoltageMeas = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  errorsTimeouts.hvVoltMeas = 0;
+  ACT_errors.warnings.warningsFlags.hvVoltageMeas = 0;
+
+  <bb 7> :
+  _6 = errorsTimeouts.hvVoltMeas;
+  if (_6 > 99)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.fastPowerDown.error.hvVoltageMeas = 1;
+
+  <bb 9> :
+  _7 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _8 = _7 & 32;
+  if (_8 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 10> :
+  _9 = errorsTimeouts.lvVoltMeas;
+  if (_9 <= 99)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _10 = errorsTimeouts.lvVoltMeas;
+  _11 = _10 + 1;
+  errorsTimeouts.lvVoltMeas = _11;
+
+  <bb 12> :
+  ACT_errors.warnings.warningsFlags.lvVoltageMeas = 1;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  errorsTimeouts.lvVoltMeas = 0;
+  ACT_errors.warnings.warningsFlags.lvVoltageMeas = 0;
+
+  <bb 14> :
+  _12 = errorsTimeouts.lvVoltMeas;
+  if (_12 > 99)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  ACT_errors.fastPowerDown.error.lvVoltageMeas = 1;
+
+  <bb 16> :
+  return;
+
+}
+
+
+
+;; Function act_CheckOverCurrent (act_CheckOverCurrent, funcdef_no=8, decl_uid=8651, cgraph_uid=9, symbol_order=11)
+
+act_CheckOverCurrent ()
+{
+  uint32_t overCurrentConfirmationTime;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  overCurrentConfirmationTime_10 = PAR_paramConfig[52].realVal.unsignedVal;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 64;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.overCurrent;
+  if (overCurrentConfirmationTime_10 > _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.overCurrent;
+  _5 = _4 + 1;
+  errorsTimeouts.overCurrent = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.overCurrent = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.overCurrent;
+  if (overCurrentConfirmationTime_10 <= _6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.overCurrent = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function act_CheckDiscreteIOErrors (act_CheckDiscreteIOErrors, funcdef_no=9, decl_uid=8653, cgraph_uid=10, symbol_order=12)
+
+act_CheckDiscreteIOErrors ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.faults.flags);
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.discretIoError;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.discretIoError;
+  _5 = _4 + 1;
+  errorsTimeouts.discretIoError = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.discretIoError = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.discretIoError;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.discreteIOsError = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function act_CheckPrechargeError (act_CheckPrechargeError, funcdef_no=10, decl_uid=8655, cgraph_uid=11, symbol_order=13)
+
+act_CheckPrechargeError ()
+{
+  _Bool _1;
+
+  <bb 2> :
+  _1 = PWB_Flags.status.flags.prechargeAborted;
+  ACT_errors.fastPowerDown.error.prechargeError = _1;
+  return;
+
+}
+
+
+
+;; Function act_CheckParamError (act_CheckParamError, funcdef_no=11, decl_uid=8657, cgraph_uid=12, symbol_order=14)
+
+act_CheckParamError ()
+{
+  <unnamed type> _1;
+
+  <bb 2> :
+  _1 = PAR_paramReq.lastError;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.fastPowerDown.error.parameterError = 1;
+
+  <bb 4> :
+  return;
+
+}
+
+
+
+;; Function act_CheckUnkownCometiUnit (act_CheckUnkownCometiUnit, funcdef_no=12, decl_uid=8643, cgraph_uid=13, symbol_order=15)
+
+act_CheckUnkownCometiUnit ()
+{
+  _Bool _1;
+
+  <bb 2> :
+  _1 = COM_flags.moduleFlags.faults.flags.unkownCOMETi;
+  ACT_errors.warnings.warningsFlags.unknownPowercoreUnit = _1;
+  return;
+
+}
+
+
+
+;; Function act_CheckRelayCmd (act_CheckRelayCmd, funcdef_no=13, decl_uid=8645, cgraph_uid=14, symbol_order=16)
+
+act_CheckRelayCmd ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 2;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.relayCmdWarning;
+  if (_3 <= 99)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.relayCmdWarning;
+  _5 = _4 + 1;
+  errorsTimeouts.relayCmdWarning = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.relayCmdWarning = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.relayCmdWarning;
+  if (_6 > 99)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.warnings.warningsFlags.relayCommandWarning = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function act_CheckOverVolt (act_CheckOverVolt, funcdef_no=14, decl_uid=8659, cgraph_uid=15, symbol_order=17)
+
+act_CheckOverVolt ()
+{
+  uint32_t overVoltConfirmationTime;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> :
+  overVoltConfirmationTime_10 = PAR_paramConfig[51].realVal.unsignedVal;
+  _1 = BIT_FIELD_REF <PWB_Flags.faults.flags, 8, 0>;
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = errorsTimeouts.overVolt;
+  if (overVoltConfirmationTime_10 > _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _4 = errorsTimeouts.overVolt;
+  _5 = _4 + 1;
+  errorsTimeouts.overVolt = _5;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  errorsTimeouts.overVolt = 0;
+
+  <bb 6> :
+  _6 = errorsTimeouts.overVolt;
+  if (overVoltConfirmationTime_10 <= _6)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.fastPowerDown.error.overVoltage = 1;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function act_CheckAutoCnvEnd (act_CheckAutoCnvEnd, funcdef_no=15, decl_uid=8661, cgraph_uid=16, symbol_order=18)
+
+act_CheckAutoCnvEnd ()
+{
+  _Bool _1;
+  _Bool _2;
+
+  <bb 2> :
+  _1 = FSM_errors.autonomousBoostEnd;
+  ACT_errors.warnings.warningsFlags.autonomousBoostEnd = _1;
+  _2 = FSM_errors.autonomousBuckEnd;
+  ACT_errors.warnings.warningsFlags.autonomousBuckEnd = _2;
+  return;
+
+}
+
+
+
+;; Function act_CheckRegulationRequestNok (act_CheckRegulationRequestNok, funcdef_no=16, decl_uid=8663, cgraph_uid=17, symbol_order=19)
+
+act_CheckRegulationRequestNok ()
+{
+  _Bool _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  int _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = CNV_regulationReq.reqAccepted;
+  _2 = (int) _1;
+  _3 = _2 != 0;
+  _4 = ~_3;
+  _5 = (int) _4;
+  _6 = (_Bool) _5;
+  ACT_errors.warnings.warningsFlags.regulationRequestNOK = _6;
+  return;
+
+}
+
+
+
+;; Function act_CheckMaintCondition (act_CheckMaintCondition, funcdef_no=17, decl_uid=8665, cgraph_uid=18, symbol_order=20)
+
+act_CheckMaintCondition ()
+{
+  _Bool _1;
+  _Bool _2;
+
+  <bb 2> :
+  _1 = FSM_errors.bbAuxInMaintMode;
+  ACT_errors.warnings.warningsFlags.bbauxInMaintenanceMode = _1;
+  _2 = FSM_errors.EnterMaintModeNotMet;
+  ACT_errors.warnings.warningsFlags.maintenanceConditionNotMet = _2;
+  return;
+
+}
+
+
+
+;; Function act_CheckUnavailableCOMETi (act_CheckUnavailableCOMETi, funcdef_no=18, decl_uid=8667, cgraph_uid=19, symbol_order=21)
+
+act_CheckUnavailableCOMETi ()
+{
+  _Bool _1;
+
+  <bb 2> :
+  _1 = PWB_Flags.faults.flags.unavailableCometi;
+  ACT_errors.slowPowerDown.error.limitedCapacity = _1;
+  return;
+
+}
+
+
+
+;; Function act_CheckWarnings (act_CheckWarnings, funcdef_no=19, decl_uid=8669, cgraph_uid=20, symbol_order=22)
+
+act_CheckWarnings ()
+{
+  size_t index;
+  boolean tempWarning;
+  int _1;
+  unsigned char _2;
+  int _3;
+  int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+
+  <bb 2> :
+  tempWarning_10 = 0;
+  index_11 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) tempWarning_8;
+  _2 = CNV_powercoreUnitTable[index_9].flags.moduleFlags.warns.all;
+  _3 = (int) _2;
+  _4 = _1 | _3;
+  tempWarning_22 = _4 != 0;
+  index_23 = index_9 + 1;
+
+  <bb 4> :
+  # tempWarning_8 = PHI <tempWarning_10(2), tempWarning_22(3)>
+  # index_9 = PHI <index_11(2), index_23(3)>
+  if (index_9 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  ACT_errors.warnings.warningsFlags.internalWarning = tempWarning_8;
+  act_CheckTemperture ();
+  act_CheckMaintCondition ();
+  act_CheckUnkownCometiUnit ();
+  act_CheckRelayCmd ();
+  act_CheckOverVolt ();
+  act_CheckAutoCnvEnd ();
+  act_CheckRegulationRequestNok ();
+  _5 = ACT_errors.warnings.all;
+  _6 = ACT_errors.warningsMask.all;
+  _7 = _5 & _6;
+  ACT_errors.warnings.all = _7;
+  return;
+
+}
+
+
+
+;; Function act_CheckPowerCoreError (act_CheckPowerCoreError, funcdef_no=20, decl_uid=8671, cgraph_uid=21, symbol_order=23)
+
+act_CheckPowerCoreError ()
+{
+  size_t index;
+  boolean checkVoltageShourceSide;
+  boolean checkCriticalCapacity;
+  short unsigned int _1;
+  short unsigned int _2;
+
+  <bb 2> :
+  checkCriticalCapacity_9 = 0;
+  checkVoltageShourceSide_10 = 0;
+  index_11 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[index_7].flags.moduleFlags.faults.all;
+  if (_1 > 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  checkCriticalCapacity_16 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  _2 = CNV_powercoreUnitTable[index_7].flags.moduleFlags.faults.all;
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  checkVoltageShourceSide_15 = 1;
+
+  <bb 7> :
+  # checkCriticalCapacity_3 = PHI <checkCriticalCapacity_16(4), checkCriticalCapacity_4(5), checkCriticalCapacity_4(6)>
+  # checkVoltageShourceSide_5 = PHI <checkVoltageShourceSide_6(4), checkVoltageShourceSide_6(5), checkVoltageShourceSide_15(6)>
+  index_17 = index_7 + 1;
+
+  <bb 8> :
+  # checkCriticalCapacity_4 = PHI <checkCriticalCapacity_9(2), checkCriticalCapacity_3(7)>
+  # checkVoltageShourceSide_6 = PHI <checkVoltageShourceSide_10(2), checkVoltageShourceSide_5(7)>
+  # index_7 = PHI <index_11(2), index_17(7)>
+  if (index_7 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  if (checkCriticalCapacity_4 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  ACT_errors.fastPowerDown.error.criticalCapacity = 1;
+
+  <bb 11> :
+  ACT_errors.warnings.warningsFlags.noVoltageOnSourceSide = checkVoltageShourceSide_6;
+  return;
+
+}
+
+
+
+;; Function act_CheckErrors (act_CheckErrors, funcdef_no=21, decl_uid=8673, cgraph_uid=22, symbol_order=24)
+
+act_CheckErrors ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+  short unsigned int _9;
+
+  <bb 2> :
+  act_CheckUnavailableCOMETi ();
+  act_CheckCanLossErrors ();
+  act_CheckPowerCoreError ();
+  act_CheckAddressChanged ();
+  act_CheckRelayNokError ();
+  act_CheckVoltageMeas ();
+  act_CheckOverCurrent ();
+  act_CheckDiscreteIOErrors ();
+  act_CheckPrechargeError ();
+  act_CheckParamError ();
+  _1 = ACT_errors.slowPowerDown.all;
+  _2 = ACT_errors.slowPowerDownMask.all;
+  _3 = _1 & _2;
+  ACT_errors.slowPowerDown.all = _3;
+  _4 = ACT_errors.fastPowerDown.all;
+  _5 = ACT_errors.fastPowerDownMask.all;
+  _6 = _4 & _5;
+  ACT_errors.fastPowerDown.all = _6;
+  _7 = ACT_errors.warnings.all;
+  _8 = ACT_errors.warningsMask.all;
+  _9 = _7 & _8;
+  ACT_errors.warnings.all = _9;
+  return;
+
+}
+
+
+
+;; Function act_UpdateFaultOrigin (act_UpdateFaultOrigin, funcdef_no=22, decl_uid=8675, cgraph_uid=23, symbol_order=25)
+
+act_UpdateFaultOrigin ()
+{
+  short unsigned int _1;
+  unsigned char _2;
+  short unsigned int _3;
+  unsigned char _4;
+
+  <bb 2> :
+  _1 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  _2 = CNV_powercoreUnitTable[0].flags.moduleFlags.warns.all;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  ACT_errors.origin.originFlag.powerCore1 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.origin.originFlag.powerCore1 = 0;
+
+  <bb 6> :
+  _3 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  if (_3 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _4 = CNV_powercoreUnitTable[1].flags.moduleFlags.warns.all;
+  if (_4 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.origin.originFlag.powerCore2 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  ACT_errors.origin.originFlag.powerCore2 = 0;
+
+  <bb 10> :
+  return;
+
+}
+
+
+
+;; Function act_UpdateFaultSeverity (act_UpdateFaultSeverity, funcdef_no=23, decl_uid=8677, cgraph_uid=24, symbol_order=26)
+
+act_UpdateFaultSeverity ()
+{
+  short unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+
+  <bb 2> :
+  _1 = ACT_errors.fastPowerDown.all;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  ACT_errors.severity = 3;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  _2 = ACT_errors.slowPowerDown.all;
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  ACT_errors.severity = 2;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _3 = ACT_errors.warnings.all;
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ACT_errors.severity = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  ACT_errors.severity = 0;
+
+  <bb 9> :
+  return;
+
+}
+
+

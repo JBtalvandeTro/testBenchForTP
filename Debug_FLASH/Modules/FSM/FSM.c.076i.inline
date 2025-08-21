@@ -1,0 +1,80 @@
+IPA summary for FSM_Deinit/3 is missing.
+IPA summary for FSM_Init/2 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+IPA summary for FSM_Deinit/3 is missing.
+IPA summary for FSM_Init/2 is missing.
+Symbol table:
+
+FSM_Deinit/3 (FSM_Deinit) @0664d620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+FSM_Init/2 (FSM_Init) @0664dee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/0 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)FSM_errors/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+FSM_errors/1 (FSM_errors) @06649dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)FSM_Init/2 (write)
+  Availability: available
+  Varpool flags:
+FSM_mode/0 (FSM_mode) @06649d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: FSM_Init/2 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function FSM_Init (FSM_Init, funcdef_no=0, decl_uid=5438, cgraph_uid=1, symbol_order=2)
+
+FSM_Init ()
+{
+  <bb 2> :
+  FSM_mode = 0;
+  FSM_errors.EnterMaintModeNotMet = 0;
+  FSM_errors.bbAuxInMaintMode = 0;
+  FSM_errors.autonomousBoostEnd = 0;
+  FSM_errors.autonomousBuckEnd = 0;
+  FSM_errors.failedPbit = 0;
+  return;
+
+}
+
+
+
+;; Function FSM_Deinit (FSM_Deinit, funcdef_no=1, decl_uid=5440, cgraph_uid=2, symbol_order=3)
+
+FSM_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+

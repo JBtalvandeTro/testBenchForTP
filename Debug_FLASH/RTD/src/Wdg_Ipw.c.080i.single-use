@@ -1,0 +1,277 @@
+Wdg_Ipw_Service (Wdg_Ipw_InstanceType Instance)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = Wdg_Ipw_aeIp[Instance_5(D)];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance_5(D);
+  Wdog_Ip_Service (_2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+Wdg_Ipw_StopTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5725;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+  Std_ReturnType _18;
+
+  <bb 2> :
+  Ret_9 = 0;
+  RetIp_10 = 0;
+  _1 = Wdg_Ipw_aeIp[Instance_12(D)];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance_12(D);
+  RetIp_14 = Wdog_Ip_StopTimer (_2);
+  if (RetIp_14 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp_14 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance_12(D);
+  Det_ReportRuntimeError (102, _3, 1, 19);
+
+  <bb 6> :
+  Ret_16 = 1;
+
+  <bb 7> :
+  # Ret_4 = PHI <Ret_9(3), Ret_16(6)>
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret_17 = 1;
+
+  <bb 9> :
+  # Ret_5 = PHI <Ret_4(7), Ret_17(8)>
+  _18 = Ret_5;
+
+  <bb 10> :
+<L7>:
+  return _18;
+
+}
+
+
+Wdg_Ipw_StartTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5719;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+  Std_ReturnType _18;
+
+  <bb 2> :
+  Ret_9 = 0;
+  RetIp_10 = 0;
+  _1 = Wdg_Ipw_aeIp[Instance_12(D)];
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = (unsigned char) Instance_12(D);
+  RetIp_14 = Wdog_Ip_StartTimer (_2);
+  if (RetIp_14 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp_14 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _3 = (unsigned char) Instance_12(D);
+  Det_ReportRuntimeError (102, _3, 1, 19);
+
+  <bb 6> :
+  Ret_16 = 1;
+
+  <bb 7> :
+  # Ret_4 = PHI <Ret_9(3), Ret_16(6)>
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret_17 = 1;
+
+  <bb 9> :
+  # Ret_5 = PHI <Ret_4(7), Ret_17(8)>
+  _18 = Ret_5;
+
+  <bb 10> :
+<L7>:
+  return _18;
+
+}
+
+
+Wdg_Ipw_SetMode (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5713;
+  <unnamed type> _1;
+  <unnamed type> _2;
+  unsigned char _3;
+  const struct Wdog_Ip_ConfigType * _4;
+  unsigned char _5;
+  Std_ReturnType _22;
+
+  <bb 2> :
+  Ret_11 = 0;
+  RetIp_12 = 0;
+  _1 = IpwConfig_14(D)->eWdgIp;
+  Wdg_Ipw_aeIp[Instance_15(D)] = _1;
+  _2 = Wdg_Ipw_aeIp[Instance_15(D)];
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = (unsigned char) Instance_15(D);
+  _4 = IpwConfig_14(D)->pWdogConfig;
+  RetIp_18 = Wdog_Ip_Config (_3, _4);
+  if (RetIp_18 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp_18 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) Instance_15(D);
+  Det_ReportRuntimeError (102, _5, 1, 19);
+
+  <bb 6> :
+  Ret_20 = 1;
+
+  <bb 7> :
+  # Ret_6 = PHI <Ret_11(3), Ret_20(6)>
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret_21 = 1;
+
+  <bb 9> :
+  # Ret_7 = PHI <Ret_6(7), Ret_21(8)>
+  _22 = Ret_7;
+
+  <bb 10> :
+<L7>:
+  return _22;
+
+}
+
+
+Wdg_Ipw_Init (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Wdog_Ip_StatusType RetIp;
+  Std_ReturnType Ret;
+  Std_ReturnType D.5707;
+  <unnamed type> _1;
+  <unnamed type> _2;
+  unsigned char _3;
+  const struct Wdog_Ip_ConfigType * _4;
+  unsigned char _5;
+  Std_ReturnType _22;
+
+  <bb 2> :
+  Ret_11 = 0;
+  RetIp_12 = 0;
+  _1 = IpwConfig_14(D)->eWdgIp;
+  Wdg_Ipw_aeIp[Instance_15(D)] = _1;
+  _2 = IpwConfig_14(D)->eWdgIp;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = (unsigned char) Instance_15(D);
+  _4 = IpwConfig_14(D)->pWdogConfig;
+  RetIp_18 = Wdog_Ip_Init (_3, _4);
+  if (RetIp_18 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (RetIp_18 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) Instance_15(D);
+  Det_ReportRuntimeError (102, _5, 0, 19);
+
+  <bb 6> :
+  Ret_20 = 1;
+
+  <bb 7> :
+  # Ret_6 = PHI <Ret_11(3), Ret_20(6)>
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+  Ret_21 = 1;
+
+  <bb 9> :
+  # Ret_7 = PHI <Ret_6(7), Ret_21(8)>
+  _22 = Ret_7;
+
+  <bb 10> :
+<L7>:
+  return _22;
+
+}
+
+

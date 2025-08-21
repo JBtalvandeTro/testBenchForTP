@@ -1,0 +1,1920 @@
+Trivially needed symbols: act_UpdateFaultSeverity act_UpdateFaultOrigin act_CheckErrors act_CheckPowerCoreError act_CheckWarnings act_CheckUnavailableCOMETi act_CheckMaintCondition act_CheckRegulationRequestNok act_CheckAutoCnvEnd act_CheckOverVolt act_CheckRelayCmd act_CheckUnkownCometiUnit act_CheckParamError act_CheckPrechargeError act_CheckDiscreteIOErrors act_CheckOverCurrent act_CheckVoltageMeas act_CheckRelayNokError act_evaluateTempSeverity act_CheckTemperture act_CheckAddressChanged act_CheckCanLossErrors act_UpdateMasks ACT_UpdateFaults bbaux_severityLevel cometi_severityLevel errorsTimeouts
+
+
+Initial Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverCurrent/11 (read)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (write)act_CheckAddressChanged/6 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckAutoCnvEnd/18 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (read)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)
+  Availability: not-ready
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624ed20
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624ea80
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624e7e0
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624e540
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624e2a0
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0624e000
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249b60
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249620
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062490e0
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249d20
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249a80
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062497e0
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249540
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062492a0
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06249000
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623db60
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623d620
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623d0e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623dd20
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623da80
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623d7e0
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623d540
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0623d2a0
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0623d000
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06237168
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062370d8
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverCurrent/11 (read)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (write)act_CheckAddressChanged/6 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckAutoCnvEnd/18 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (read)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)
+  Availability: not-ready
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverCurrent/11 (read)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (write)act_CheckAddressChanged/6 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckAutoCnvEnd/18 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (read)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)
+  Availability: not-ready
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverCurrent/11 (read)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (write)act_CheckAddressChanged/6 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckAutoCnvEnd/18 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ACT_UpdateFaults/3 (read)act_CheckCanLossErrors/5 (read)act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)
+  Availability: not-ready
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckRegulationRequestNok/19 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckAutoCnvEnd/18 (read)act_CheckAutoCnvEnd/18 (read)act_CheckMaintCondition/20 (read)act_CheckMaintCondition/20 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckParamError/14 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckPrechargeError/13 (read)act_CheckRelayCmd/16 (read)act_CheckRelayNokError/9 (read)act_CheckOverVolt/17 (read)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckOverCurrent/11 (read)act_CheckVoltageMeas/10 (read)act_CheckUnavailableCOMETi/21 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckWarnings/22 (read)act_CheckPowerCoreError/23 (read)act_CheckPowerCoreError/23 (read)act_CheckTemperture/7 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)act_UpdateFaultOrigin/25 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckAddressChanged/6 (read)act_CheckDiscreteIOErrors/12 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckOverCurrent/11 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckTemperture/7 (read)act_CheckOverVolt/17 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)act_UpdateMasks/4 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_UpdateFaultOrigin/25 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckErrors/24 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (write)act_UpdateMasks/4 (write)act_CheckPowerCoreError/23 (write)act_CheckPowerCoreError/23 (write)act_CheckTemperture/7 (write)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_UpdateFaultOrigin/25 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckCanLossErrors/5 (read)act_CheckAddressChanged/6 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_UpdateMasks/4 (write)act_CheckCanLossErrors/5 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckRelayNokError/9 (write)act_CheckVoltageMeas/10 (write)act_CheckOverCurrent/11 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckPrechargeError/13 (write)act_CheckParamError/14 (write)act_CheckUnkownCometiUnit/15 (write)act_CheckRelayNokError/9 (write)act_CheckRelayCmd/16 (write)act_CheckOverVolt/17 (write)act_CheckVoltageMeas/10 (write)act_CheckAutoCnvEnd/18 (write)act_CheckRegulationRequestNok/19 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckAutoCnvEnd/18 (write)act_CheckMaintCondition/20 (write)act_CheckMaintCondition/20 (write)act_CheckUnavailableCOMETi/21 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckErrors/24 (write)act_CheckTemperture/7 (write)act_CheckTemperture/7 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckWarnings/22 (read)act_CheckWarnings/22 (write)act_CheckWarnings/22 (write)act_CheckWarnings/22 (read)act_CheckErrors/24 (read)act_CheckErrors/24 (read)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)act_UpdateFaultSeverity/26 (read)act_UpdateFaultSeverity/26 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)ACT_UpdateFaults/3 (write)
+  Availability: not_available
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: act_CheckCanLossErrors/5 (read)act_CheckUnkownCometiUnit/15 (read)act_CheckCanLossErrors/5 (read)ACT_UpdateFaults/3 (read)
+  Availability: not_available
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckParamError/14 act_CheckPrechargeError/13 act_CheckDiscreteIOErrors/12 act_CheckOverCurrent/11 act_CheckVoltageMeas/10 act_CheckRelayNokError/9 act_CheckAddressChanged/6 act_CheckPowerCoreError/23 act_CheckCanLossErrors/5 act_CheckUnavailableCOMETi/21 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/32 (read)ACT_errors/28 (write)ACT_errors/28 (read)ACT_errors/28 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: act_CheckRegulationRequestNok/19 act_CheckAutoCnvEnd/18 act_CheckOverVolt/17 act_CheckRelayCmd/16 act_CheckUnkownCometiUnit/15 act_CheckMaintCondition/20 act_CheckTemperture/7 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_regulationReq/38 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_errors/37 (read)ACT_errors/28 (write)FSM_errors/37 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramReq/36 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (write)ACT_errors/28 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)PWB_Flags/35 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckTemperture/7 act_CheckTemperture/7 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)CNV_powercoreUnitTable/32 (read)PWB_measures/33 (read)bbaux_severityLevel/2 (read)bbaux_severityLevel/2 (write)cometi_severityLevel/1 (read)cometi_severityLevel/1 (write)cometi_severityLevel/1 (read)bbaux_severityLevel/2 (read)ACT_tempSeverity/34 (write)ACT_tempSeverity/34 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckWarnings/22 
+  Calls: act_evaluateTempSeverity/8 act_evaluateTempSeverity/8 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CTB_Flags/31 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (read)errorsTimeouts/0 (write)errorsTimeouts/0 (write)errorsTimeouts/0 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (read)COM_flags/27 (read)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: act_CheckErrors/24 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/29 (read)FSM_mode/29 (read)FSM_mode/29 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)PAR_paramConfig/30 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ACT_UpdateFaults/3 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_flags/27 (read)ACT_errors/28 (write)ACT_errors/28 (write)ACT_errors/28 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: act_UpdateFaultSeverity/26 act_UpdateFaultOrigin/25 act_CheckErrors/24 act_CheckWarnings/22 act_UpdateMasks/4 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: available
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckTemperture/7 (read)act_CheckTemperture/7 (write)act_CheckTemperture/7 (read)
+  Availability: available
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (read)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (write)act_CheckDiscreteIOErrors/12 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (read)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (write)act_CheckOverCurrent/11 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (read)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (write)act_CheckRelayCmd/16 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (read)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (write)act_CheckAddressChanged/6 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (read)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (write)act_CheckRelayNokError/9 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (read)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (write)act_CheckVoltageMeas/10 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (read)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (write)act_CheckOverVolt/17 (read)
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: bbaux_severityLevel cometi_severityLevel errorsTimeouts
+Removing variables:
+
+Final Symbol table:
+
+CNV_regulationReq/38 (CNV_regulationReq) @062e1bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_errors/37 (FSM_errors) @062e1ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/36 (PAR_paramReq) @062e1318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/35 (PWB_Flags) @062605e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ACT_tempSeverity/34 (ACT_tempSeverity) @0625aa68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_measures/33 (PWB_measures) @0625a990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/32 (CNV_powercoreUnitTable) @0625a948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/31 (CTB_Flags) @0625a480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/30 (PAR_paramConfig) @0625a090
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_mode/29 (FSM_mode) @0625a048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ACT_errors/28 (ACT_errors) @06248b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_flags/27 (COM_flags) @06248af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+act_UpdateFaultSeverity/26 (act_UpdateFaultSeverity) @0624ed20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_UpdateFaultOrigin/25 (act_UpdateFaultOrigin) @0624ea80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckErrors/24 (act_CheckErrors) @0624e7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckPowerCoreError/23 (act_CheckPowerCoreError) @0624e540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckWarnings/22 (act_CheckWarnings) @0624e2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckUnavailableCOMETi/21 (act_CheckUnavailableCOMETi) @0624e000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckMaintCondition/20 (act_CheckMaintCondition) @06249b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckRegulationRequestNok/19 (act_CheckRegulationRequestNok) @06249620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckAutoCnvEnd/18 (act_CheckAutoCnvEnd) @062490e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckOverVolt/17 (act_CheckOverVolt) @06249d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckRelayCmd/16 (act_CheckRelayCmd) @06249a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckUnkownCometiUnit/15 (act_CheckUnkownCometiUnit) @062497e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckParamError/14 (act_CheckParamError) @06249540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckPrechargeError/13 (act_CheckPrechargeError) @062492a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckDiscreteIOErrors/12 (act_CheckDiscreteIOErrors) @06249000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckOverCurrent/11 (act_CheckOverCurrent) @0623db60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckVoltageMeas/10 (act_CheckVoltageMeas) @0623d620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckRelayNokError/9 (act_CheckRelayNokError) @0623d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_evaluateTempSeverity/8 (act_evaluateTempSeverity) @0623dd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckTemperture/7 (act_CheckTemperture) @0623da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckAddressChanged/6 (act_CheckAddressChanged) @0623d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_CheckCanLossErrors/5 (act_CheckCanLossErrors) @0623d540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+act_UpdateMasks/4 (act_UpdateMasks) @0623d2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ACT_UpdateFaults/3 (ACT_UpdateFaults) @0623d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+bbaux_severityLevel/2 (bbaux_severityLevel) @06237168
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+cometi_severityLevel/1 (cometi_severityLevel) @062370d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06237168
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+errorsTimeouts/0 (errorsTimeouts) @06237048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @062370d8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

@@ -1,0 +1,13 @@
+CBUs.c:25:6:CanIf_ControllerBusOff	8	static
+CBUs.c:50:6:CanIf_ControllerModeIndication	8	static
+CBUs.c:61:6:CanIf_TxConfirmation	8	static
+CBUs.c:70:6:CanIf_RxIndication	24	static
+CBUs.c:114:6:CBU_CreatePduInfo	16	static
+CBUs.c:127:6:CBU_Init	32	static
+CBUs.c:216:6:CBU_Deinit	8	static
+CBUs.c:237:6:CBU_CheckErrors	24	static
+CBUs.c:284:6:CBU_ClearPendingFlag	8	static
+CBUs.c:293:6:CBU_SendFrame	24	static
+CBUs.c:303:6:CanIf_CurrentIcomConfiguration	8	static
+CBUs.c:319:6:CBU_SetBitrate	32	static
+CBUs.c:395:9:CBU_CheckLength	16	static

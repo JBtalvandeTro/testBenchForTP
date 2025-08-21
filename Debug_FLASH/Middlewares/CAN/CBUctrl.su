@@ -1,0 +1,9 @@
+CBUctrl.c:30:6:CBU_SendControlCurrentMeasuresFrame	104	static
+CBUctrl.c:59:6:CBU_SendControlPowerMeasuresFrame	104	static
+CBUctrl.c:89:6:CBU_SendControlTemperatureMeasuresFrame	104	static
+CBUctrl.c:117:6:CBU_SendControlVoltageMeasuresFrame	104	static
+CBUctrl.c:147:6:CBU_SendControlControlStatusFrame	104	static
+CBUctrl.c:181:6:CBU_SendControlErrorsWarningsFrame	104	static
+CBUctrl.c:217:6:CBU_SendControlPbitResultsFrame	104	static
+CBUctrl.c:249:6:CBU_GetControlPtcuCmdsFrameData	24	static
+CBUctrl.c:265:6:CBU_GetErrorResetCmdFrameData	0	static

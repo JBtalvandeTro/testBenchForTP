@@ -1,0 +1,2285 @@
+Trivially needed symbols: ctb_ControlManagement ctb_CbitManagement ctb_PbitManagement ctb_MaintManagement ctb_UpdateResults CTB_Deinit CTB_Read_BbAuxAdd CTB_Read_Maint CTB_Read_EMERSTOP CTB_Update CTB_Init ctb_DSICurrentStates ctb_DSIConfirmationTimers pbitTestsEnded pbit_timingCounter ctb_taskCounter CTB_dsoState CTB_dsiState CTB_Flags
+
+
+Initial Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_CbitManagement/18 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Read_BbAuxAdd/13 (read)CTB_Read_BbAuxAdd/13 (read)ctb_UpdateResults/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_BbAuxAdd/13 CTB_Read_BbAuxAdd/13 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_Maint/12 CTB_Read_EMERSTOP/11 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: ctb_taskCounter/4 (read)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_taskCounter/4 (read)CTB_dsiState/1 (write)ctb_taskCounter/4 (read)FSM_mode/23 (read)COM_debugTestReq/31 (read)CTB_dsoState/2 (write)ACT_errors/46 (read)FSM_mode/23 (read)CTB_dsoState/2 (write)FSM_mode/23 (read)CTB_dsoState/2 (write)CTB_dsoState/2 (write)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_SetDSO/41 CTBCbit_SetDSO/41 CTBCbit_UnsetDSO/47 CTB_Read_BbAuxAdd/13 CTB_Read_EMERSTOP/11 CTB_Read_Maint/12 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062af2a0
+  References: ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)COM_Address/39 (read)CTB_dsiState/1 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)ctb_taskCounter/4 (read)CTB_dsoState/2 (read)ctb_DSO_readResult/33 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_ReadDSO/45 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062afee0
+  References: pbitTestsEnded/6 (read)pbit_timingCounter/5 (read)CTB_Flags/0 (write)CTBPbit_Started/38 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (read)COM_Address/39 (write)CTB_dsiState/1 (read)CBU_Address/40 (write)CTB_dsoState/2 (write)pbit_timingCounter/5 (read)pbit_timingCounter/5 (write)CTBPbit_Started/38 (read)CTBPbit_TimePeriodEnded/42 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)pbitTestsEnded/6 (write)CTB_Flags/0 (write)ctb_DSI_TestResult/32 (read)pbitTestsEnded/6 (write)pbit_timingCounter/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: ctbPbit_StartTestDSI/44 ctbPbit_StopTestDSI/43 CTBCbit_SetDSO/41 CTB_Read_BbAuxAdd/13 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062afc40
+  References: DBG_Flags/34 (read)DBG_Flags/34 (write)DBG_Flags/34 (read)DBG_Flags/34 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBio_RunTests/37 ctb_UpdateResults/15 CTBCbit_Runtests/36 CTBPbit_RunTests/35 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062af9a0
+  References: COM_debugTestReq/31 (read)COM_debugTestReq/31 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)COM_debugTestReq/31 (write)ctb_DSI_readResult/27 (read)COM_debugTestReq/31 (write)ctb_DSO_readResult/33 (read)COM_debugTestReq/31 (write)
+  Referring: 
+  Function flags: body
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062af700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Deinit/30 CTBCbit_Deinit/29 CTBPbit_Deinit/28 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062af460
+  References: ctb_DSI_readResult/27 (read)ctb_DSI_readResult/27 (read)
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: CTBPbit_ReadDSI/26 CTBPbit_ReadDSI/26 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062af1c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062aae00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062aa8c0
+  References: FSM_mode/23 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (write)ctb_taskCounter/4 (write)COM_flags/24 (read)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: ctb_ControlManagement/19 ctb_CbitManagement/18 ctb_PbitManagement/17 ctb_MaintManagement/16 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062aad20
+  References: CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Init/22 CTBCbit_Init/21 CTBPbit_Init/20 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062aaa80
+  References: 
+  Referring: ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062a5510
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062a5438
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062a5360
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062a52d0
+  References: 
+  Referring: CTB_Update/10 (read)CTB_Update/10 (read)CTB_Update/10 (write)CTB_Update/10 (write)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/3 (DevAssert) @06221700
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062a5240
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05a6aea0
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05a6ae58
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Update/10 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_CbitManagement/18 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Read_BbAuxAdd/13 (read)CTB_Read_BbAuxAdd/13 (read)ctb_UpdateResults/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_BbAuxAdd/13 CTB_Read_BbAuxAdd/13 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_Maint/12 CTB_Read_EMERSTOP/11 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_taskCounter/4 (read)CTB_dsiState/1 (write)ctb_taskCounter/4 (read)FSM_mode/23 (read)COM_debugTestReq/31 (read)CTB_dsoState/2 (write)ACT_errors/46 (read)FSM_mode/23 (read)CTB_dsoState/2 (write)FSM_mode/23 (read)CTB_dsoState/2 (write)CTB_dsoState/2 (write)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_SetDSO/41 CTBCbit_SetDSO/41 CTBCbit_UnsetDSO/47 CTB_Read_BbAuxAdd/13 CTB_Read_EMERSTOP/11 CTB_Read_Maint/12 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)COM_Address/39 (read)CTB_dsiState/1 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)ctb_taskCounter/4 (read)CTB_dsoState/2 (read)ctb_DSO_readResult/33 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_ReadDSO/45 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pbitTestsEnded/6 (read)pbit_timingCounter/5 (read)CTB_Flags/0 (write)CTBPbit_Started/38 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (read)COM_Address/39 (write)CTB_dsiState/1 (read)CBU_Address/40 (write)CTB_dsoState/2 (write)pbit_timingCounter/5 (read)pbit_timingCounter/5 (write)CTBPbit_Started/38 (read)CTBPbit_TimePeriodEnded/42 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)pbitTestsEnded/6 (write)CTB_Flags/0 (write)ctb_DSI_TestResult/32 (read)pbitTestsEnded/6 (write)pbit_timingCounter/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: ctbPbit_StartTestDSI/44 ctbPbit_StopTestDSI/43 CTBCbit_SetDSO/41 CTB_Read_BbAuxAdd/13 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/34 (read)DBG_Flags/34 (write)DBG_Flags/34 (read)DBG_Flags/34 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBio_RunTests/37 ctb_UpdateResults/15 CTBCbit_Runtests/36 CTBPbit_RunTests/35 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_debugTestReq/31 (read)COM_debugTestReq/31 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)COM_debugTestReq/31 (write)ctb_DSI_readResult/27 (read)COM_debugTestReq/31 (write)ctb_DSO_readResult/33 (read)COM_debugTestReq/31 (write)
+  Referring: 
+  Function flags: body
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Deinit/30 CTBCbit_Deinit/29 CTBPbit_Deinit/28 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: ctb_DSI_readResult/27 (read)ctb_DSI_readResult/27 (read)
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: CTBPbit_ReadDSI/26 CTBPbit_ReadDSI/26 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/23 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (write)ctb_taskCounter/4 (write)COM_flags/24 (read)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: ctb_ControlManagement/19 ctb_CbitManagement/18 ctb_PbitManagement/17 ctb_MaintManagement/16 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Init/22 CTBCbit_Init/21 CTBPbit_Init/20 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CTB_Update/10 (read)CTB_Update/10 (read)CTB_Update/10 (write)CTB_Update/10 (write)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Update/10 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_CbitManagement/18 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Read_BbAuxAdd/13 (read)CTB_Read_BbAuxAdd/13 (read)ctb_UpdateResults/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_BbAuxAdd/13 CTB_Read_BbAuxAdd/13 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_Maint/12 CTB_Read_EMERSTOP/11 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_taskCounter/4 (read)CTB_dsiState/1 (write)ctb_taskCounter/4 (read)FSM_mode/23 (read)COM_debugTestReq/31 (read)CTB_dsoState/2 (write)ACT_errors/46 (read)FSM_mode/23 (read)CTB_dsoState/2 (write)FSM_mode/23 (read)CTB_dsoState/2 (write)CTB_dsoState/2 (write)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_SetDSO/41 CTBCbit_SetDSO/41 CTBCbit_UnsetDSO/47 CTB_Read_BbAuxAdd/13 CTB_Read_EMERSTOP/11 CTB_Read_Maint/12 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)COM_Address/39 (read)CTB_dsiState/1 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)ctb_taskCounter/4 (read)CTB_dsoState/2 (read)ctb_DSO_readResult/33 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_ReadDSO/45 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pbitTestsEnded/6 (read)pbit_timingCounter/5 (read)CTB_Flags/0 (write)CTBPbit_Started/38 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (read)COM_Address/39 (write)CTB_dsiState/1 (read)CBU_Address/40 (write)CTB_dsoState/2 (write)pbit_timingCounter/5 (read)pbit_timingCounter/5 (write)CTBPbit_Started/38 (read)CTBPbit_TimePeriodEnded/42 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)pbitTestsEnded/6 (write)CTB_Flags/0 (write)ctb_DSI_TestResult/32 (read)pbitTestsEnded/6 (write)pbit_timingCounter/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: ctbPbit_StartTestDSI/44 ctbPbit_StopTestDSI/43 CTBCbit_SetDSO/41 CTB_Read_BbAuxAdd/13 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/34 (read)DBG_Flags/34 (write)DBG_Flags/34 (read)DBG_Flags/34 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBio_RunTests/37 ctb_UpdateResults/15 CTBCbit_Runtests/36 CTBPbit_RunTests/35 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_debugTestReq/31 (read)COM_debugTestReq/31 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)COM_debugTestReq/31 (write)ctb_DSI_readResult/27 (read)COM_debugTestReq/31 (write)ctb_DSO_readResult/33 (read)COM_debugTestReq/31 (write)
+  Referring: 
+  Function flags: body
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Deinit/30 CTBCbit_Deinit/29 CTBPbit_Deinit/28 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: ctb_DSI_readResult/27 (read)ctb_DSI_readResult/27 (read)
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: CTBPbit_ReadDSI/26 CTBPbit_ReadDSI/26 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/23 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (write)ctb_taskCounter/4 (write)COM_flags/24 (read)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: ctb_ControlManagement/19 ctb_CbitManagement/18 ctb_PbitManagement/17 ctb_MaintManagement/16 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Init/22 CTBCbit_Init/21 CTBPbit_Init/20 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CTB_Update/10 (read)CTB_Update/10 (read)CTB_Update/10 (write)CTB_Update/10 (write)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Update/10 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_CbitManagement/18 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_ControlManagement/19 ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_CbitManagement/18 (read)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Read_BbAuxAdd/13 (read)CTB_Read_BbAuxAdd/13 (read)ctb_UpdateResults/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_BbAuxAdd/13 CTB_Read_BbAuxAdd/13 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Read_Maint/12 CTB_Read_EMERSTOP/11 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)
+  Availability: not-ready
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_taskCounter/4 (read)CTB_dsiState/1 (write)ctb_taskCounter/4 (read)FSM_mode/23 (read)COM_debugTestReq/31 (read)CTB_dsoState/2 (write)ACT_errors/46 (read)FSM_mode/23 (read)CTB_dsoState/2 (write)FSM_mode/23 (read)CTB_dsoState/2 (write)CTB_dsoState/2 (write)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_SetDSO/41 CTBCbit_SetDSO/41 CTBCbit_UnsetDSO/47 CTB_Read_BbAuxAdd/13 CTB_Read_EMERSTOP/11 CTB_Read_Maint/12 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)COM_Address/39 (read)CTB_dsiState/1 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)ctb_taskCounter/4 (read)CTB_dsoState/2 (read)ctb_DSO_readResult/33 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_ReadDSO/45 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: pbitTestsEnded/6 (read)pbit_timingCounter/5 (read)CTB_Flags/0 (write)CTBPbit_Started/38 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (read)COM_Address/39 (write)CTB_dsiState/1 (read)CBU_Address/40 (write)CTB_dsoState/2 (write)pbit_timingCounter/5 (read)pbit_timingCounter/5 (write)CTBPbit_Started/38 (read)CTBPbit_TimePeriodEnded/42 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)pbitTestsEnded/6 (write)CTB_Flags/0 (write)ctb_DSI_TestResult/32 (read)pbitTestsEnded/6 (write)pbit_timingCounter/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: ctbPbit_StartTestDSI/44 ctbPbit_StopTestDSI/43 CTBCbit_SetDSO/41 CTB_Read_BbAuxAdd/13 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: DBG_Flags/34 (read)DBG_Flags/34 (write)DBG_Flags/34 (read)DBG_Flags/34 (write)
+  Referring: 
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBio_RunTests/37 ctb_UpdateResults/15 CTBCbit_Runtests/36 CTBPbit_RunTests/35 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_debugTestReq/31 (read)COM_debugTestReq/31 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)COM_debugTestReq/31 (write)ctb_DSI_readResult/27 (read)COM_debugTestReq/31 (write)ctb_DSO_readResult/33 (read)COM_debugTestReq/31 (write)
+  Referring: 
+  Function flags: body
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Deinit/30 CTBCbit_Deinit/29 CTBPbit_Deinit/28 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: ctb_DSI_readResult/27 (read)ctb_DSI_readResult/27 (read)
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: CTBPbit_ReadDSI/26 CTBPbit_ReadDSI/26 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: FSM_mode/23 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (write)ctb_taskCounter/4 (write)COM_flags/24 (read)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: ctb_ControlManagement/19 ctb_CbitManagement/18 ctb_PbitManagement/17 ctb_MaintManagement/16 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Init/22 CTBCbit_Init/21 CTBPbit_Init/20 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CTB_Update/10 (read)CTB_Update/10 (read)CTB_Update/10 (write)CTB_Update/10 (write)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: not-ready
+  Varpool flags: initialized
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Update/10 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_ControlManagement/19 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)
+  Availability: not_available
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_CbitManagement/18 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_PbitManagement/17 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (read)
+  Availability: not_available
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_ControlManagement/19 ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)
+  Availability: not_available
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)
+  Availability: not_available
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)
+  Availability: not_available
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)ctb_MaintManagement/16 (read)ctb_MaintManagement/16 (write)
+  Availability: not_available
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_CbitManagement/18 (read)
+  Availability: not_available
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (read)ctb_UpdateResults/15 (write)ctb_UpdateResults/15 (write)ctb_ControlManagement/19 (read)
+  Availability: not_available
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Deinit/14 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTB_Read_BbAuxAdd/13 (read)CTB_Read_BbAuxAdd/13 (read)ctb_UpdateResults/15 (read)
+  Availability: not_available
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Read_BbAuxAdd/13 CTB_Read_BbAuxAdd/13 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Read_Maint/12 CTB_Read_EMERSTOP/11 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CTB_Update/10 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)CTB_Update/10 (read)
+  Availability: not_available
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CTB_Init/9 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ctb_taskCounter/4 (read)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (read)ctb_DSIConfirmationTimers/7 (read)ctb_DSICurrentStates/8 (read)CTB_dsiState/1 (write)ctb_DSIConfirmationTimers/7 (write)ctb_DSIConfirmationTimers/7 (read)ctb_DSIConfirmationTimers/7 (write)ctb_taskCounter/4 (read)CTB_dsiState/1 (write)ctb_taskCounter/4 (read)FSM_mode/23 (read)COM_debugTestReq/31 (read)CTB_dsoState/2 (write)ACT_errors/46 (read)FSM_mode/23 (read)CTB_dsoState/2 (write)FSM_mode/23 (read)CTB_dsoState/2 (write)CTB_dsoState/2 (write)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_SetDSO/41 CTBCbit_SetDSO/41 CTBCbit_UnsetDSO/47 CTB_Read_BbAuxAdd/13 CTB_Read_EMERSTOP/11 CTB_Read_Maint/12 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)COM_Address/39 (read)CTB_dsiState/1 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)ctb_taskCounter/4 (read)CTB_dsoState/2 (read)ctb_DSO_readResult/33 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBCbit_ReadDSO/45 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: pbitTestsEnded/6 (read)pbit_timingCounter/5 (read)CTB_Flags/0 (write)CTBPbit_Started/38 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (read)COM_Address/39 (write)CTB_dsiState/1 (read)CBU_Address/40 (write)CTB_dsoState/2 (write)pbit_timingCounter/5 (read)pbit_timingCounter/5 (write)CTBPbit_Started/38 (read)CTBPbit_TimePeriodEnded/42 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)pbitTestsEnded/6 (write)CTB_Flags/0 (write)ctb_DSI_TestResult/32 (read)pbitTestsEnded/6 (write)pbit_timingCounter/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: ctbPbit_StartTestDSI/44 ctbPbit_StopTestDSI/43 CTBCbit_SetDSO/41 CTB_Read_BbAuxAdd/13 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/34 (read)DBG_Flags/34 (write)DBG_Flags/34 (read)DBG_Flags/34 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CTB_Update/10 
+  Calls: CTBio_RunTests/37 ctb_UpdateResults/15 CTBCbit_Runtests/36 CTBPbit_RunTests/35 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_debugTestReq/31 (read)COM_debugTestReq/31 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)ctb_DSI_TestResult/32 (read)COM_debugTestReq/31 (write)ctb_DSI_readResult/27 (read)COM_debugTestReq/31 (write)ctb_DSO_readResult/33 (read)COM_debugTestReq/31 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ctb_MaintManagement/16 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Deinit/30 CTBCbit_Deinit/29 CTBPbit_Deinit/28 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: ctb_DSI_readResult/27 (read)ctb_DSI_readResult/27 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ctb_ControlManagement/19 ctb_PbitManagement/17 
+  Calls: CTBPbit_ReadDSI/26 CTBPbit_ReadDSI/26 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: ctb_ControlManagement/19 
+  Calls: Dio_ReadChannel/25 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: FSM_mode/23 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (read)ctb_taskCounter/4 (write)ctb_taskCounter/4 (write)COM_flags/24 (read)CTB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: ctb_ControlManagement/19 ctb_CbitManagement/18 ctb_PbitManagement/17 ctb_MaintManagement/16 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_dsiState/1 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)CTB_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CTBio_Init/22 CTBCbit_Init/21 CTBPbit_Init/20 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)
+  Availability: available
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)
+  Availability: available
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: available
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)
+  Availability: available
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: ctb_ControlManagement/19 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (read)CTB_Update/10 (read)CTB_Update/10 (read)CTB_Update/10 (write)CTB_Update/10 (write)
+  Availability: available
+  Varpool flags: initialized
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: available
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (read)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (read)ctb_CbitManagement/18 (read)CTB_Init/9 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (read)ctb_ControlManagement/19 (write)ctb_ControlManagement/19 (write)
+  Availability: available
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: ctb_CbitManagement/18 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)CTB_Init/9 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_PbitManagement/17 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)ctb_CbitManagement/18 (write)CTB_Update/10 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: ctb_DSICurrentStates ctb_DSIConfirmationTimers pbitTestsEnded pbit_timingCounter ctb_taskCounter CTB_dsoState CTB_dsiState CTB_Flags
+Removing variables:
+
+Final Symbol table:
+
+CTBCbit_UnsetDSO/47 (CTBCbit_UnsetDSO) @0655ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ACT_errors/46 (ACT_errors) @065689d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBCbit_ReadDSO/45 (CTBCbit_ReadDSO) @0655e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ctbPbit_StartTestDSI/44 (ctbPbit_StartTestDSI) @0655e700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ctbPbit_StopTestDSI/43 (ctbPbit_StopTestDSI) @0655e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBPbit_TimePeriodEnded/42 (CTBPbit_TimePeriodEnded) @065606c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBCbit_SetDSO/41 (CTBCbit_SetDSO) @0655e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_Address/40 (CBU_Address) @06560630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_Address/39 (COM_Address) @065605e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBPbit_Started/38 (CTBPbit_Started) @06560558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBio_RunTests/37 (CTBio_RunTests) @0655e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBCbit_Runtests/36 (CTBCbit_Runtests) @0655e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBPbit_RunTests/35 (CTBPbit_RunTests) @0649ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+DBG_Flags/34 (DBG_Flags) @0649da20
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ctb_DSO_readResult/33 (ctb_DSO_readResult) @0649d6c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ctb_DSI_TestResult/32 (ctb_DSI_TestResult) @0649d678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/31 (COM_debugTestReq) @0649d630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBio_Deinit/30 (CTBio_Deinit) @0649ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBCbit_Deinit/29 (CTBCbit_Deinit) @0649ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBPbit_Deinit/28 (CTBPbit_Deinit) @0649aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_DSI_readResult/27 (ctb_DSI_readResult) @06499dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBPbit_ReadDSI/26 (CTBPbit_ReadDSI) @0649a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dio_ReadChannel/25 (Dio_ReadChannel) @0649a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_flags/24 (COM_flags) @06499948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+FSM_mode/23 (FSM_mode) @064997e0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTBio_Init/22 (CTBio_Init) @0649a1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBCbit_Init/21 (CTBCbit_Init) @0649a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CTBPbit_Init/20 (CTBPbit_Init) @0649a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_ControlManagement/19 (ctb_ControlManagement) @062af2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_CbitManagement/18 (ctb_CbitManagement) @062afee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_PbitManagement/17 (ctb_PbitManagement) @062afc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_MaintManagement/16 (ctb_MaintManagement) @062af9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_UpdateResults/15 (ctb_UpdateResults) @062af700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Deinit/14 (CTB_Deinit) @062af460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Read_BbAuxAdd/13 (CTB_Read_BbAuxAdd) @062af1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Read_Maint/12 (CTB_Read_Maint) @062aae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Read_EMERSTOP/11 (CTB_Read_EMERSTOP) @062aa8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Update/10 (CTB_Update) @062aad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CTB_Init/9 (CTB_Init) @062aaa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+ctb_DSICurrentStates/8 (ctb_DSICurrentStates) @062a5510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+ctb_DSIConfirmationTimers/7 (ctb_DSIConfirmationTimers) @062a5438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @062a5510
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+pbitTestsEnded/6 (pbitTestsEnded) @062a5360
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @062a5438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+pbit_timingCounter/5 (pbit_timingCounter) @062a52d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @062a5360
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+ctb_taskCounter/4 (ctb_taskCounter) @062a5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @062a52d0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+CTB_dsoState/2 (CTB_dsoState) @05a6aea0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @062a5240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CTB_dsiState/1 (CTB_dsiState) @05a6ae58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05a6aea0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CTB_Flags/0 (CTB_Flags) @05a6ae10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05a6ae58
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

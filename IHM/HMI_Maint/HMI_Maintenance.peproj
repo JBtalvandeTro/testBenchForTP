@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCANExplorerProject Version="6.0" AppVersion="6.7.0" Name="HMI_Maintenance">
+    <Connections AutoReset="0" IgnoreRTRLength="0" ProcessRTR="1">
+        <Connection Name="Connection1" Bus="1" Enabled="1" Protocol="0" SymbolsFileName="DCDC_BB-AUX_MaintenanceCAN-02.sym" Connection="Untitled@pcan_usb"/>
+    </Connections>
+    <Files>
+        <File RelativePath="HMI_Maintenance.ipf"/>
+        <File RelativePath="DCDC_BB-AUX_MaintenanceCAN-02.sym"/>
+        <File RelativePath="scripts.pem"/>
+    </Files>
+</PCANExplorerProject>

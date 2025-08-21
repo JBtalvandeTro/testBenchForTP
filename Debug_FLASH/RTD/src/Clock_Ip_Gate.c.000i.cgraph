@@ -1,0 +1,1236 @@
+Trivially needed symbols: Clock_Ip_axGateCallbacks Clock_Ip_ClockSetSimTraceEnable_TrustedCall Clock_Ip_ClockSetSimGate_TrustedCall Clock_Ip_ClockSetPccCgcEnable_TrustedCall Clock_Ip_ClockSetSimClkoutEnable_TrustedCall Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall Clock_Ip_ClockUpdateSimTraceEnable Clock_Ip_ClockSetSimTraceEnable Clock_Ip_ClockUpdateSimGate Clock_Ip_ClockSetSimGate Clock_Ip_ClockUpdatePccCgcEnable Clock_Ip_ClockSetPccCgcEnable Clock_Ip_ClockUpdateSimClkoutEnable Clock_Ip_ClockSetSimClkoutEnable Clock_Ip_ClockUpdateSimLPO32KEnable Clock_Ip_ClockSetSimLPO32KEnable Clock_Ip_ClockUpdateSimLPO1KEnable Clock_Ip_ClockSetSimLPO1KEnable Clock_Ip_ClockUpdateGateEmpty Clock_Ip_ClockSetGateEmpty
+
+
+Initial Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetSimGate_TrustedCall/19 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0e438
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimTraceEnable/13 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0f0e0
+  References: Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimGate/11 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0fd20
+  References: Clock_Ip_au8ClockFeatures/22 (read)Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetPccCgcEnable/9 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0fa80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimClkoutEnable/7 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0f7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO32KEnable/5 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c0f540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO1KEnable/3 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0f2a0
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimTraceEnable/13 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0f000
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimTraceEnable/14 
+  Calls: Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0aa80
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimGate/11 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a540
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimGate/12 
+  Calls: Clock_Ip_ClockSetSimGate_TrustedCall/19 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a000
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetPccCgcEnable/9 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0ac40
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdatePccCgcEnable/10 
+  Calls: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a9a0
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable/7 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a700
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimClkoutEnable/8 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a460
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable/5 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c0a1c0
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO32KEnable/6 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c07ee0
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable/3 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c079a0
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO1KEnable/4 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c07e00
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05c07b60
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+DevAssert/0 (DevAssert) @05bd5540
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert
+
+Reclaimed Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetSimGate_TrustedCall/19 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimTraceEnable/13 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimGate/11 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetPccCgcEnable/9 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimClkoutEnable/7 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO32KEnable/5 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO1KEnable/3 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimTraceEnable/13 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimTraceEnable/14 
+  Calls: Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimGate/11 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimGate/12 
+  Calls: Clock_Ip_ClockSetSimGate_TrustedCall/19 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetPccCgcEnable/9 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdatePccCgcEnable/10 
+  Calls: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable/7 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimClkoutEnable/8 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable/5 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO32KEnable/6 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable/3 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO1KEnable/4 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetSimGate_TrustedCall/19 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimTraceEnable/13 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimGate/11 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetPccCgcEnable/9 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimClkoutEnable/7 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO32KEnable/5 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO1KEnable/3 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimTraceEnable/13 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimTraceEnable/14 
+  Calls: Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimGate/11 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimGate/12 
+  Calls: Clock_Ip_ClockSetSimGate_TrustedCall/19 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetPccCgcEnable/9 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdatePccCgcEnable/10 
+  Calls: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable/7 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimClkoutEnable/8 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable/5 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO32KEnable/6 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable/3 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO1KEnable/4 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetSimGate_TrustedCall/19 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimTraceEnable/13 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimGate/11 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetPccCgcEnable/9 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimClkoutEnable/7 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO32KEnable/5 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO1KEnable/3 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimTraceEnable/13 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimTraceEnable/14 
+  Calls: Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimGate/11 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimGate/12 
+  Calls: Clock_Ip_ClockSetSimGate_TrustedCall/19 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetPccCgcEnable/9 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdatePccCgcEnable/10 
+  Calls: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable/7 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimClkoutEnable/8 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable/5 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO32KEnable/6 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable/3 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO1KEnable/4 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (read)Clock_Ip_ClockSetSimGate_TrustedCall/19 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimTraceEnable/13 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimGate/11 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Clock_Ip_au8ClockFeatures/22 (read)Clock_Ip_au8ClockFeatures/22 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetPccCgcEnable/9 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimClkoutEnable/7 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO32KEnable/5 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockSetSimLPO1KEnable/3 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimTraceEnable/13 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimTraceEnable/14 
+  Calls: Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimGate/11 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimGate/12 
+  Calls: Clock_Ip_ClockSetSimGate_TrustedCall/19 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetPccCgcEnable/9 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdatePccCgcEnable/10 
+  Calls: Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable/7 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimClkoutEnable/8 
+  Calls: Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable/5 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO32KEnable/6 
+  Calls: Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable/3 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: Clock_Ip_ClockUpdateSimLPO1KEnable/4 
+  Calls: Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_axGateCallbacks
+Removing variables:
+
+Final Symbol table:
+
+Clock_Ip_au8ClockFeatures/22 (Clock_Ip_au8ClockFeatures) @05c5de10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axGateCallbacks/21 (Clock_Ip_axGateCallbacks) @05c0e438
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: Clock_Ip_ClockSetGateEmpty/1 (addr)Clock_Ip_ClockUpdateGateEmpty/2 (addr)Clock_Ip_ClockSetPccCgcEnable/9 (addr)Clock_Ip_ClockUpdatePccCgcEnable/10 (addr)Clock_Ip_ClockSetSimClkoutEnable/7 (addr)Clock_Ip_ClockUpdateSimClkoutEnable/8 (addr)Clock_Ip_ClockSetSimLPO32KEnable/5 (addr)Clock_Ip_ClockUpdateSimLPO32KEnable/6 (addr)Clock_Ip_ClockSetSimLPO1KEnable/3 (addr)Clock_Ip_ClockUpdateSimLPO1KEnable/4 (addr)Clock_Ip_ClockSetSimGate/11 (addr)Clock_Ip_ClockUpdateSimGate/12 (addr)Clock_Ip_ClockSetSimTraceEnable/13 (addr)Clock_Ip_ClockUpdateSimTraceEnable/14 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_ClockSetSimTraceEnable_TrustedCall/20 (Clock_Ip_ClockSetSimTraceEnable_TrustedCall) @05c0f0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimGate_TrustedCall/19 (Clock_Ip_ClockSetSimGate_TrustedCall) @05c0fd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable_TrustedCall/18 (Clock_Ip_ClockSetPccCgcEnable_TrustedCall) @05c0fa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable_TrustedCall/17 (Clock_Ip_ClockSetSimClkoutEnable_TrustedCall) @05c0f7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall/16 (Clock_Ip_ClockSetSimLPO32KEnable_TrustedCall) @05c0f540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall/15 (Clock_Ip_ClockSetSimLPO1KEnable_TrustedCall) @05c0f2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateSimTraceEnable/14 (Clock_Ip_ClockUpdateSimTraceEnable) @05c0f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimTraceEnable/13 (Clock_Ip_ClockSetSimTraceEnable) @05c0aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateSimGate/12 (Clock_Ip_ClockUpdateSimGate) @05c0a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimGate/11 (Clock_Ip_ClockSetSimGate) @05c0a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdatePccCgcEnable/10 (Clock_Ip_ClockUpdatePccCgcEnable) @05c0ac40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetPccCgcEnable/9 (Clock_Ip_ClockSetPccCgcEnable) @05c0a9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateSimClkoutEnable/8 (Clock_Ip_ClockUpdateSimClkoutEnable) @05c0a700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimClkoutEnable/7 (Clock_Ip_ClockSetSimClkoutEnable) @05c0a460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateSimLPO32KEnable/6 (Clock_Ip_ClockUpdateSimLPO32KEnable) @05c0a1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimLPO32KEnable/5 (Clock_Ip_ClockSetSimLPO32KEnable) @05c07ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateSimLPO1KEnable/4 (Clock_Ip_ClockUpdateSimLPO1KEnable) @05c079a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetSimLPO1KEnable/3 (Clock_Ip_ClockSetSimLPO1KEnable) @05c07e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockUpdateGateEmpty/2 (Clock_Ip_ClockUpdateGateEmpty) @05c07b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Clock_Ip_ClockSetGateEmpty/1 (Clock_Ip_ClockSetGateEmpty) @05c078c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axGateCallbacks/21 (addr)
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

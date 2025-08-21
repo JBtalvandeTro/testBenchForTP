@@ -1,0 +1,8 @@
+Callgraph clone;hwAcc_Lmem_AddressReg;4;../RTD/include/Cache_Ip_HwAcc_Lmem.h;195;29;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;9;../RTD/include/Cache_Ip_HwAcc_Lmem.h;316;29;inlining to
+Callgraph clone;hwAcc_Lmem_LineControlReg;3;../RTD/include/Cache_Ip_HwAcc_Lmem.h;165;29;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;9;../RTD/include/Cache_Ip_HwAcc_Lmem.h;316;29;inlining to
+Callgraph removal;hwAcc_Lmem_LineControlReg;3;../RTD/include/Cache_Ip_HwAcc_Lmem.h;165;29
+Callgraph removal;hwAcc_Lmem_AddressReg;4;../RTD/include/Cache_Ip_HwAcc_Lmem.h;195;29
+Callgraph clone;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;9;../RTD/include/Cache_Ip_HwAcc_Lmem.h;316;29;Cache_Ip_InvalidateByAddr;15;../RTD/include/Cache_Ip.h;433;29;inlining to
+Callgraph removal;hwAcc_Lmem_ProcessorCodeInvalidateByAddr;9;../RTD/include/Cache_Ip_HwAcc_Lmem.h;316;29
+Callgraph clone;Cache_Ip_InvalidateByAddr;15;../RTD/include/Cache_Ip.h;433;29;Ftfc_Fls_SynchronizeCache;36;../RTD/src/Ftfc_Fls_Ip.c;585;13;inlining to
+Callgraph removal;Cache_Ip_InvalidateByAddr;15;../RTD/include/Cache_Ip.h;433;29

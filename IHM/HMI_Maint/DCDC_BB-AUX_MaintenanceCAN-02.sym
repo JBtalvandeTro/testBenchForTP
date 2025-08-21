@@ -1,0 +1,121 @@
+FormatVersion=6.0 // Do not edit this line!
+Title="DCDC_BB-AUX_MaintenanceCAN-02"
+
+{ENUMS}
+Enum=VtSig_discretIoResult(2="Closed/Failure", 1="Opened/OK", 0="None")
+Enum=VtSig_relaySwitchResult(2="Closed", 1="Opened", 0="None")
+Enum=VtSig_ledColor(1="Red", 0="Green")
+Enum=VtSig_ledCmd(3="Blink", 2="Off", 1="On", 0="None")
+Enum=VtSig_ledId(3="Led3", 2="Led2", 1="Led1", 0="None")
+Enum=VtSig_discreteIoCmd(0="None", 1="Set (DSO)", 2="Unset (DSO)", 3="Read (DSI/DSO)", 4="Test (DSI/DSO)",
+  5="Stop Test (DSI/DSO)", 6="StopTT")
+Enum=VtSig_discreteIoId(8="DSO_SPARE_1", 7="DSO_HEALTH", 6="DSI_HPP_MAINT", 5="DSI_SPARE_2", 4="DSI_EMER_STOP",
+  3="DSI_SPARE_1", 2="DSI_HPP_2", 1="DSI_HPP_1", 0="None")
+Enum=VtSig_measFormat(1="HMI Format", 0="Raw")
+Enum=VtSig_relaySwitchCmd(3="Read", 2="Close", 1="Open", 0="None")
+Enum=VtSig_relaySwitchId(3="S3", 2="S2", 1="S1", 0="None")
+Enum=VtSig_testCommand(5="TesLeds", 4="Test DiscreteIOs", 3="Test LV Measures", 2="Test HV Measures",
+  1="Test RelaySwitch", 0="None")
+Enum=VtSig_paramIdReq(65="BBAUX_BOOST_LV_OVERVOLTAGE_MAX", 64="BBAUX_BUCK_LV_OVERVOLTAGE_MAX",
+  63="BBAUX_BOOST_HV_OVERVOLTAGE_MAX", 62="BBAUX_BUCK_HV_OVERVOLTAGE_MAX", 61="COMETI_BOOST_LV_OVERCURRENT_MAX",
+  60="COMETI_BUCK_LV_OVERCURRENT_MAX", 59="COMETI_BOOST_HV_OVERCURRENT_MAX", 58="COMETI_BUCK_HV_OVERCURRENT_MAX",
+  57="BBAUX_BOOST_HV_OVERCURRENT_MAX", 56="BBAUX_BUCK_HV_OVERCURRENT_MAX", 55="BUCK_CURRENTSOURCE_MINVOLTAGE",
+  54="BUCK_CURRENTSOURCE_MAXDURATION", 53="TEMPMEAS_CONFIRMATION_TIME", 52="CURRENTMEAS_CONFIRMATION_TIME",
+  51="VOLTAGEMEAS_CONFIRMATION_TIME", 50="ACTIVITY_EXTENSION_TIMER", 49="LVRELAY_STEADY_FREQUENCY",
+  48="HVRELAY_STEADY_FREQUENCY", 47="LVPRECHARGE_RELAY_TEST_CONDITION", 46="HVCOUPLER_RELAY_TEST_CONDITION",
+  45="POWERCOREI_BUCK_MAX_POWER", 44="POWERCORE_BOOST_MAX_POWER", 43="LV_PRECHARGE_STOP_DELTA",
+  42="LV_PRECHARGE_START_CONDITION", 41="HV_DIOD_BYPASS_STOP_CONDITION", 40="HV_DIOD_BYPASS_START_CONDITION",
+  39="CALIBRATION_B_T1", 38="CALIBRATION_A_T1", 37="CALIBRATION_B_VHV", 36="CALIBRATION_A_VHV", 35="CALIBRATION_B_IHV",
+  34="CALIBRATION_A_IHV", 33="CALIBRATION_B_VLV", 32="CALIBRATION_A_VLV", 31="CRITICAL_ERRORS_MASK",
+  30="OPERATING_ERRORS_MASK", 29="WARNINGS_MASK", 28="POWERCORE_TEMP_THRESH_CRITICALER",
+  27="POWERCORE_TEMP_THRESH_URGENTWARN", 26="POWERCORE_TEMP_THRESH_GENTLEWARN", 25="BBAUX_TEMP_THRESH_CRITICALERR",
+  24="BBAUX_TEMP_THRESH_URGENTWARN", 23="BBAUX_TEMP_THRESH_GENTLEWARN", 22="BUCK_CURRENT_LIMIT", 21="BUCK_RAMP",
+  20="BUCK_VOLTAGE_SETPOINT", 19="BOOST_RAMP", 18="BOOST_POWER_SETPOINT", 17="BOOST_AUTONOMOUS_END_DELTA",
+  16="BOOST_VOLTAGE_SETPOINT", 15="PAR_COM_INTERNAL_FRAMES_PERIOD", 14="COM_STATUS_FRAMES_PERIOD",
+  13="COM_ALERT_FRAMES_PERIOD", 12="COM_TEMP_MEAS_FRAMES_PERIOD", 11="COM_PWR_MEAS_FRAMES_PERIOD",
+  10="CAN_BASE_TX_PERIOD", 9="INTERNALCAN_TIMEOUT", 8="CONTROLCAN_TIMEOUT", 7="COUNT_WR", 6="BOOT_FLAG",
+  5="DEFAULT_VERSION", 4="DF_ENS_NUMBER", 3="BOOTLOADER_VERSION", 2="SERIAL_NUMBER", 1="FILE_VERSION", 0="SW_VERSION")
+Enum=VtSig_paramAction(3="Save", 2="Update", 1="Read", 0="None")
+Enum=VtSig_paramStatus(2="Failure", 1="Success", 0="None")
+
+{SENDRECEIVE}
+
+[DCDC_EquipmentTestResponse]
+ID=08200000h // DCDC_Converter Parameter ResponseThis frame is sent as a response to a parameter request (see DCDC_ParameterRequest)
+Type=Extended
+Len=5
+Var=discretIoResult unsigned 36,2 /e:VtSig_discretIoResult // DCDC_Converter Test Result value for Discrete I/Os Tests
+Var=measureResult unsigned 0,32 // DCDC_Converter Test Result value for HV/LV analog Measurement Tests
+Var=relaySwitchResult unsigned 32,2 /e:VtSig_relaySwitchResult // DCDC_Converter Test Result value for Relay/Switch Tests
+
+[MAINT_EquipmentTestRequest]
+ID=08100000h // DCDC_Converter Paramenter RequestThis frame is sent to converter to request to read/edit a parameter, or to save the parameters modifications into the converters non-volatile memory
+Type=Extended
+Len=5
+Var=ledColor bit 36,1 /e:VtSig_ledColor // Led Color for Debug Test
+Var=ledBlinkFreq unsigned 24,8 // Led blinking frequency (Hz) for Debug Test
+Var=ledCmd unsigned 32,2 /e:VtSig_ledCmd // Led Debug Test Command
+Var=ledId unsigned 34,2 /e:VtSig_ledId // Led Id for Debug Test
+Var=discreteIoCmd unsigned 16,4 /e:VtSig_discreteIoCmd // DCDC_Converter test Discrete IOs Command
+Var=discreteIoId unsigned 20,4 /e:VtSig_discreteIoId // DCDC_Converter test Discrete IOs Id
+Var=measFormat bit 7,1 /e:VtSig_measFormat // DCDC_Converter test ADC Measures Data format
+Var=measMuxAddress unsigned 4,3 // DCDC_Converter test ADC Measures MUX Address for HV/LV raw/HMI format MeasuresHV MUX   0 I_HV   1 V_HV   2 T_1   3-7 not usedLV MUX   0 V_LV   1-7 not used
+Var=relaySwitchCmd unsigned 8,4 /e:VtSig_relaySwitchCmd // DCDC_Converter test Relay/Switch Command (Read command not significant for S1)
+Var=relaySwitchId unsigned 12,2 /e:VtSig_relaySwitchId // DCDC_Converter test Relay/Switch Id
+Var=testCommand unsigned 0,4 /e:VtSig_testCommand // DCDC_Converter Test Command requested
+
+[BOOT_Bootloader_WriteDataCmd]
+ID=09100000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_ReadDataCmd]
+ID=09200000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_ProgAppCmd]
+ID=09300000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_GetVersionCmd]
+ID=09400000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_GetParamCmd]
+ID=09500000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_SetParamCmd]
+ID=09600000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_ProgParamCmd]
+ID=09A00000h
+Type=Extended
+Len=0
+
+[BOOT_Bootloader_BootlActionCmd]
+ID=09B00000h
+Type=Extended
+Len=0
+
+[MAINT_ParameterRequest]
+ID=08300000h // DCDC_Converter Paramenter RequestThis frame is sent to converter to request to read/edit a parameter, or to save the parameters modifications into the converters non-volatile memory
+Type=Extended
+Len=7
+Var=paramValueReq unsigned 0,32 // DCDC_Converter Parameter Value requested
+Var=paramIdReq unsigned 32,16 /e:VtSig_paramIdReq // DCDC_Converter Parameter ID requested
+Var=paramAction unsigned 48,2 /e:VtSig_paramAction // DCDC_Converter Parameter Action requested
+
+[DCDC_ParameterResponse]
+ID=08400000h // DCDC_Converter Parameter ResponseThis frame is sent as a response to a parameter request (see DCDC_ParameterRequest)
+Type=Extended
+Len=7
+Var=paramStatus unsigned 48,2 /e:VtSig_paramStatus // DCDC_Converter Parameter Action Status
+Var=paramValue unsigned 0,32 // DCDC_Converter Parameter Value
+Var=paramId unsigned 32,16 /e:VtSig_paramIdReq // DCDC_Converter Parameter ID

@@ -1,0 +1,3106 @@
+IPA summary for Fls_LLDClrJobResult/54 is missing.
+IPA summary for Fls_LLDGetJobResult/53 is missing.
+IPA summary for Fls_MainFunction/52 is missing.
+IPA summary for Fls_MainFunction_CheckJobResult/51 is missing.
+IPA summary for Fls_Compare/50 is missing.
+IPA summary for Fls_Read/49 is missing.
+IPA summary for Fls_GetJobResult/48 is missing.
+IPA summary for Fls_GetStatus/47 is missing.
+IPA summary for Fls_Write/46 is missing.
+IPA summary for Fls_Erase/45 is missing.
+IPA summary for Fls_Init/44 is missing.
+IPA summary for Fls_ProcessRequestedJobs/43 is missing.
+IPA summary for Fls_CalcCfgCRC/42 is missing.
+IPA summary for Fls_UpdateCRCreminder/41 is missing.
+IPA summary for Fls_FinalizeCRC/40 is missing.
+IPA summary for Fls_ResetCRC/39 is missing.
+IPA summary for Fls_AccumulateCRC/38 is missing.
+IPA summary for Fls_DoJobDataTransfer/37 is missing.
+IPA summary for Fls_ProcessJobDataTransfer/36 is missing.
+IPA summary for Fls_DoJobWrite/35 is missing.
+IPA summary for Fls_CalcSectorTransferLength/34 is missing.
+IPA summary for Fls_CalcSectorTransferOffset/33 is missing.
+IPA summary for Fls_CalcMaxTransferAddrEnd/32 is missing.
+IPA summary for Fls_DoJobErase/31 is missing.
+IPA summary for Fls_CheckUnLoadAc/30 is missing.
+IPA summary for Fls_CheckLoadAc/29 is missing.
+IPA summary for Fls_UnloadAc/28 is missing.
+IPA summary for Fls_LoadAc/27 is missing.
+IPA summary for Fls_CheckInputParamReadCompareJob/26 is missing.
+IPA summary for Fls_IsAddrSectorEndAligned/25 is missing.
+IPA summary for Fls_IsAddrSectorStartAligned/24 is missing.
+IPA summary for Fls_IsAddrPageEndAligned/23 is missing.
+IPA summary for Fls_IsAddrPageStartAligned/22 is missing.
+IPA summary for Fls_IsAddrPageAligned/21 is missing.
+IPA summary for Fls_GetSectorStartAddr/20 is missing.
+IPA summary for Fls_GetSectorIndexByAddr/19 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       61 calls, 61.000000 freq, 0 count
+function body not available                       :       43 calls, 43.000000 freq, 0 count
+IPA summary for Fls_LLDClrJobResult/54 is missing.
+IPA summary for Fls_LLDGetJobResult/53 is missing.
+IPA summary for Fls_MainFunction/52 is missing.
+IPA summary for Fls_MainFunction_CheckJobResult/51 is missing.
+IPA summary for Fls_Compare/50 is missing.
+IPA summary for Fls_Read/49 is missing.
+IPA summary for Fls_GetJobResult/48 is missing.
+IPA summary for Fls_GetStatus/47 is missing.
+IPA summary for Fls_Write/46 is missing.
+IPA summary for Fls_Erase/45 is missing.
+IPA summary for Fls_Init/44 is missing.
+IPA summary for Fls_ProcessRequestedJobs/43 is missing.
+IPA summary for Fls_CalcCfgCRC/42 is missing.
+IPA summary for Fls_UpdateCRCreminder/41 is missing.
+IPA summary for Fls_FinalizeCRC/40 is missing.
+IPA summary for Fls_ResetCRC/39 is missing.
+IPA summary for Fls_AccumulateCRC/38 is missing.
+IPA summary for Fls_DoJobDataTransfer/37 is missing.
+IPA summary for Fls_ProcessJobDataTransfer/36 is missing.
+IPA summary for Fls_DoJobWrite/35 is missing.
+IPA summary for Fls_CalcSectorTransferLength/34 is missing.
+IPA summary for Fls_CalcSectorTransferOffset/33 is missing.
+IPA summary for Fls_CalcMaxTransferAddrEnd/32 is missing.
+IPA summary for Fls_DoJobErase/31 is missing.
+IPA summary for Fls_CheckUnLoadAc/30 is missing.
+IPA summary for Fls_CheckLoadAc/29 is missing.
+IPA summary for Fls_UnloadAc/28 is missing.
+IPA summary for Fls_LoadAc/27 is missing.
+IPA summary for Fls_CheckInputParamReadCompareJob/26 is missing.
+IPA summary for Fls_IsAddrSectorEndAligned/25 is missing.
+IPA summary for Fls_IsAddrSectorStartAligned/24 is missing.
+IPA summary for Fls_IsAddrPageEndAligned/23 is missing.
+IPA summary for Fls_IsAddrPageStartAligned/22 is missing.
+IPA summary for Fls_IsAddrPageAligned/21 is missing.
+IPA summary for Fls_GetSectorStartAddr/20 is missing.
+IPA summary for Fls_GetSectorIndexByAddr/19 is missing.
+Symbol table:
+
+Fls_IPW_LLDMainFunction/75 (Fls_IPW_LLDMainFunction) @05eb2000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_MainFunction/52 
+  Calls: 
+Fls_IPW_AbortSuspended/74 (Fls_IPW_AbortSuspended) @05ea5540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_MainFunction/52 
+  Calls: 
+SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_13/73 (SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_13) @05ea5e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Compare/50 
+  Calls: 
+SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_13/72 (SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_13) @05ea5c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Compare/50 
+  Calls: 
+SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_12/71 (SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_12) @05ea5a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Read/49 
+  Calls: 
+SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_12/70 (SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_12) @05ea58c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Read/49 
+  Calls: 
+SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11/69 (SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11) @05ea5460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Write/46 Fls_Write/46 
+  Calls: 
+SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_11/68 (SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_11) @05ea5380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Write/46 
+  Calls: 
+SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10/67 (SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10) @05ea50e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Erase/45 Fls_Erase/45 
+  Calls: 
+SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_10/66 (SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_10) @05ea5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Erase/45 
+  Calls: 
+Fls_IPW_Init/65 (Fls_IPW_Init) @05e3d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Init/44 
+  Calls: 
+Fls_IPW_SectorRead/64 (Fls_IPW_SectorRead) @05e3d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_ProcessJobDataTransfer/36 Fls_ProcessJobDataTransfer/36 
+  Calls: 
+Fls_IPW_SectorWrite/63 (Fls_IPW_SectorWrite) @05e3d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_DoJobWrite/35 
+  Calls: 
+Fls_IPW_GetBlockNumberFromAddress/62 (Fls_IPW_GetBlockNumberFromAddress) @05d2cc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Init/44 Fls_Init/44 Fls_CheckLoadAc/29 
+  Calls: 
+Det_ReportTransientFault/61 (Det_ReportTransientFault) @05d2ca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_ProcessJobDataTransfer/36 Fls_ProcessJobDataTransfer/36 Fls_DoJobWrite/35 Fls_DoJobErase/31 
+  Calls: 
+Fls_IPW_SectorErase/60 (Fls_IPW_SectorErase) @05d2c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_DoJobErase/31 
+  Calls: 
+Fls_ACWriteSize/59 (Fls_ACWriteSize) @05e31af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_LoadAc/27 (addr)Fls_UnloadAc/28 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Fls_ACWriteRomStart/58 (Fls_ACWriteRomStart) @05e31ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_LoadAc/27 (addr)Fls_Init/44 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Fls_ACEraseSize/57 (Fls_ACEraseSize) @05e31a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_LoadAc/27 (addr)Fls_UnloadAc/28 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Fls_ACEraseRomStart/56 (Fls_ACEraseRomStart) @05e31a20
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_LoadAc/27 (addr)Fls_Init/44 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Det_ReportError/55 (Det_ReportError) @05d2c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Fls_Init/44 Fls_Init/44 Fls_Init/44 Fls_Compare/50 Fls_Read/49 Fls_GetJobResult/48 Fls_Write/46 Fls_Write/46 Fls_Write/46 Fls_Write/46 Fls_Write/46 Fls_Erase/45 Fls_Erase/45 Fls_Erase/45 Fls_Erase/45 Fls_CheckInputParamReadCompareJob/26 Fls_CheckInputParamReadCompareJob/26 Fls_CheckInputParamReadCompareJob/26 Fls_CheckInputParamReadCompareJob/26 
+  Calls: 
+Fls_LLDClrJobResult/54 (Fls_LLDClrJobResult) @05d23d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_eLLDJobResult/6 (write)Fls_eLLDJob/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_MainFunction/52 
+  Calls: 
+Fls_LLDGetJobResult/53 (Fls_LLDGetJobResult) @05d23a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_eLLDJobResult/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_MainFunction/52 Fls_Init/44 
+  Calls: 
+Fls_MainFunction/52 (Fls_MainFunction) @05d237e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/8 (read)Fls_eJobResult/12 (read)Fls_u8JobStart/15 (read)Fls_u8JobStart/15 (write)Fls_eLLDJob/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_MainFunction_CheckJobResult/51 Fls_ProcessRequestedJobs/43 Fls_LLDGetJobResult/53 Fls_IPW_LLDMainFunction/75 Fls_IPW_AbortSuspended/74 Fls_LLDClrJobResult/54 
+Fls_MainFunction_CheckJobResult/51 (Fls_MainFunction_CheckJobResult) @05d23540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_eJobResult/12 (write)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_MainFunction/52 
+  Calls: 
+   Indirect call
+   Indirect call
+Fls_Compare/50 (Fls_Compare) @05d232a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_eJobResult/12 (read)Fls_u32JobSectorIt/3 (write)Fls_u32JobSectorEnd/5 (write)Fls_u32JobAddrIt/1 (write)Fls_u32JobAddrEnd/2 (write)Fls_pJobDataSrcPtr/13 (write)Fls_eJob/4 (write)Fls_u8JobStart/15 (write)Fls_eJobResult/12 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_13/73 Fls_GetSectorIndexByAddr/19 Det_ReportError/55 SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_13/72 Fls_GetSectorIndexByAddr/19 Fls_CheckInputParamReadCompareJob/26 
+Fls_Read/49 (Fls_Read) @05d23000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_eJobResult/12 (read)Fls_u32JobSectorIt/3 (write)Fls_u32JobSectorEnd/5 (write)Fls_u32JobAddrIt/1 (write)Fls_u32JobAddrEnd/2 (write)Fls_pJobDataDestPtr/14 (write)Fls_eJob/4 (write)Fls_u8JobStart/15 (write)Fls_eJobResult/12 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_12/71 Fls_GetSectorIndexByAddr/19 Det_ReportError/55 SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_12/70 Fls_GetSectorIndexByAddr/19 Fls_CheckInputParamReadCompareJob/26 
+Fls_GetJobResult/48 (Fls_GetJobResult) @05d15b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/8 (read)Fls_eJobResult/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportError/55 
+Fls_GetStatus/47 (Fls_GetStatus) @05d15620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/8 (read)Fls_eJobResult/12 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Fls_Write/46 (Fls_Write) @05d150e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/8 (read)Fls_eJobResult/12 (read)Fls_u32JobSectorIt/3 (write)Fls_u32JobSectorEnd/5 (write)Fls_u32JobAddrEnd/2 (write)Fls_u32JobAddrIt/1 (write)Fls_pJobDataSrcPtr/13 (write)Fls_eJob/4 (write)Fls_u8JobStart/15 (write)Fls_eJobResult/12 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11/69 Fls_GetSectorIndexByAddr/19 SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11/69 Det_ReportError/55 SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_11/68 Fls_GetSectorIndexByAddr/19 Det_ReportError/55 Det_ReportError/55 Fls_IsAddrPageEndAligned/23 Det_ReportError/55 Fls_IsAddrPageStartAligned/22 Det_ReportError/55 
+Fls_Erase/45 (Fls_Erase) @05d15d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_pConfigPtr/8 (read)Fls_eJobResult/12 (read)Fls_u32JobSectorIt/3 (write)Fls_u32JobSectorEnd/5 (write)Fls_u32JobAddrIt/1 (write)Fls_u32JobAddrEnd/2 (write)Fls_eJob/4 (write)Fls_u8JobStart/15 (write)Fls_eJobResult/12 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10/67 SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10/67 Det_ReportError/55 SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_10/66 Fls_GetSectorIndexByAddr/19 Fls_GetSectorIndexByAddr/19 Det_ReportError/55 Fls_IsAddrSectorEndAligned/25 Det_ReportError/55 Fls_IsAddrSectorStartAligned/24 Det_ReportError/55 
+Fls_Init/44 (Fls_Init) @05d15a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Fls_eJobResult/12 (read)Fls_pConfigPtr/8 (write)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (write)Fls_eJobResult/12 (write)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_u32MaxRead/10 (write)Fls_pConfigPtr/8 (read)Fls_u32MaxWrite/11 (write)Fls_pConfigPtr/8 (read)Fls_u32MaxRead/10 (write)Fls_pConfigPtr/8 (read)Fls_u32MaxWrite/11 (write)Fls_eJobResult/12 (write)Fls_pConfigPtr/8 (write)Fls_eJobResult/12 (write)Fls_ACWriteRomStart/58 (addr)FLs_u8blockAcWrite/18 (write)Fls_ACEraseRomStart/56 (addr)FLs_u8blockAcErase/17 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Fls_IPW_GetBlockNumberFromAddress/62 Fls_IPW_GetBlockNumberFromAddress/62 Fls_LLDGetJobResult/53 Fls_IPW_Init/65 Det_ReportError/55 Fls_CalcCfgCRC/42 Det_ReportError/55 Det_ReportError/55 
+Fls_ProcessRequestedJobs/43 (Fls_ProcessRequestedJobs) @05d157e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_eJob/4 (read)Fls_eJob/4 (read)Fls_u32MaxWrite/11 (read)Fls_u32MaxRead/10 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_MainFunction/52 
+  Calls: Fls_DoJobDataTransfer/37 Fls_DoJobDataTransfer/37 Fls_DoJobErase/31 
+Fls_CalcCfgCRC/42 (Fls_CalcCfgCRC) @05d15540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Init/44 
+  Calls: Fls_FinalizeCRC/40 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_ResetCRC/39 
+Fls_UpdateCRCreminder/41 (Fls_UpdateCRCreminder) @05d152a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32AccCRCremainder/16 (read)Fls_u32AccCRCremainder/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_FinalizeCRC/40 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 Fls_AccumulateCRC/38 
+  Calls: 
+Fls_FinalizeCRC/40 (Fls_FinalizeCRC) @05d15000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32AccCRCremainder/16 (read)Fls_u32AccCRCremainder/16 (write)Fls_u32AccCRCremainder/16 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CalcCfgCRC/42 
+  Calls: Fls_UpdateCRCreminder/41 
+Fls_ResetCRC/39 (Fls_ResetCRC) @05cedb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32AccCRCremainder/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CalcCfgCRC/42 
+  Calls: 
+Fls_AccumulateCRC/38 (Fls_AccumulateCRC) @05ced620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32AccCRCremainder/16 (read)Fls_u32AccCRCremainder/16 (write)Fls_u32AccCRCremainder/16 (read)Fls_u32AccCRCremainder/16 (write)Fls_u32AccCRCremainder/16 (read)Fls_u32AccCRCremainder/16 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 Fls_CalcCfgCRC/42 
+  Calls: Fls_UpdateCRCreminder/41 Fls_UpdateCRCreminder/41 Fls_UpdateCRCreminder/41 
+Fls_DoJobDataTransfer/37 (Fls_DoJobDataTransfer) @05ced0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrEnd/2 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (write)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobSectorIt/3 (read)Fls_u32JobSectorIt/3 (write)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrEnd/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_ProcessRequestedJobs/43 Fls_ProcessRequestedJobs/43 
+  Calls: Fls_ProcessJobDataTransfer/36 Fls_CalcSectorTransferLength/34 Fls_CalcSectorTransferOffset/33 Fls_CalcMaxTransferAddrEnd/32 
+Fls_ProcessJobDataTransfer/36 (Fls_ProcessJobDataTransfer) @05cedd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_eJob/4 (read)Fls_pJobDataSrcPtr/13 (read)Fls_pJobDataSrcPtr/13 (write)Fls_pJobDataDestPtr/14 (read)Fls_pJobDataDestPtr/14 (read)Fls_pJobDataDestPtr/14 (write)Fls_pJobDataSrcPtr/13 (read)Fls_pJobDataSrcPtr/13 (read)Fls_pJobDataSrcPtr/13 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_DoJobDataTransfer/37 
+  Calls: Det_ReportTransientFault/61 Fls_IPW_SectorRead/64 Det_ReportTransientFault/61 Fls_IPW_SectorRead/64 Fls_DoJobWrite/35 
+Fls_DoJobWrite/35 (Fls_DoJobWrite) @05ceda80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)FLs_u8blockAcWrite/18 (read)Fls_pJobDataSrcPtr/13 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_ProcessJobDataTransfer/36 
+  Calls: Fls_CheckUnLoadAc/30 Det_ReportTransientFault/61 Fls_IPW_SectorWrite/63 Fls_CheckLoadAc/29 
+Fls_CalcSectorTransferLength/34 (Fls_CalcSectorTransferLength) @05ced7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_eJob/4 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_DoJobDataTransfer/37 
+  Calls: 
+Fls_CalcSectorTransferOffset/33 (Fls_CalcSectorTransferOffset) @05ced540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32JobSectorIt/3 (read)Fls_u32JobAddrIt/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_DoJobDataTransfer/37 Fls_DoJobErase/31 
+  Calls: Fls_GetSectorStartAddr/20 
+Fls_CalcMaxTransferAddrEnd/32 (Fls_CalcMaxTransferAddrEnd) @05ced2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32JobAddrEnd/2 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_DoJobDataTransfer/37 
+  Calls: 
+Fls_DoJobErase/31 (Fls_DoJobErase) @05ced000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrEnd/2 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)FLs_u8blockAcErase/17 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrIt/1 (write)Fls_u32JobAddrIt/1 (read)Fls_u32JobAddrEnd/2 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_u32JobAddrIt/1 (read)Fls_u32JobSectorIt/3 (read)Fls_u32JobSectorIt/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_ProcessRequestedJobs/43 
+  Calls: Fls_CheckUnLoadAc/30 Det_ReportTransientFault/61 Fls_IPW_SectorErase/60 Fls_CheckLoadAc/29 Fls_CalcSectorTransferOffset/33 
+Fls_CheckUnLoadAc/30 (Fls_CheckUnLoadAc) @05cd2c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_bACloaded/9 (read)Fls_eJob/4 (read)Fls_bACloaded/9 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_DoJobWrite/35 Fls_DoJobErase/31 
+  Calls: Fls_UnloadAc/28 
+Fls_CheckLoadAc/29 (Fls_CheckLoadAc) @05cd2540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_pConfigPtr/8 (read)Fls_u32JobSectorIt/3 (read)Fls_eJob/4 (read)Fls_bACloaded/9 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Fls_DoJobWrite/35 Fls_DoJobErase/31 
+  Calls: Fls_LoadAc/27 Fls_IPW_GetBlockNumberFromAddress/62 
+Fls_UnloadAc/28 (Fls_UnloadAc) @05cd2e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_ACEraseSize/57 (addr)Fls_pConfigPtr/8 (read)Fls_ACWriteSize/59 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CheckUnLoadAc/30 
+  Calls: 
+Fls_LoadAc/27 (Fls_LoadAc) @05cd2b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_ACEraseRomStart/56 (addr)Fls_pConfigPtr/8 (read)Fls_ACEraseSize/57 (addr)Fls_ACWriteRomStart/58 (addr)Fls_pConfigPtr/8 (read)Fls_ACWriteSize/59 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CheckLoadAc/29 
+  Calls: 
+Fls_CheckInputParamReadCompareJob/26 (Fls_CheckInputParamReadCompareJob) @05cd28c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Compare/50 Fls_Read/49 
+  Calls: Det_ReportError/55 Det_ReportError/55 Det_ReportError/55 Det_ReportError/55 
+Fls_IsAddrSectorEndAligned/25 (Fls_IsAddrSectorEndAligned) @05cd2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Erase/45 
+  Calls: Fls_GetSectorIndexByAddr/19 
+Fls_IsAddrSectorStartAligned/24 (Fls_IsAddrSectorStartAligned) @05cd20e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Erase/45 
+  Calls: Fls_GetSectorStartAddr/20 Fls_GetSectorIndexByAddr/19 
+Fls_IsAddrPageEndAligned/23 (Fls_IsAddrPageEndAligned) @05cca9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Write/46 
+  Calls: Fls_GetSectorIndexByAddr/19 Fls_GetSectorStartAddr/20 Fls_GetSectorIndexByAddr/19 
+Fls_IsAddrPageStartAligned/22 (Fls_IsAddrPageStartAligned) @05ccaee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Write/46 
+  Calls: Fls_IsAddrPageAligned/21 
+Fls_IsAddrPageAligned/21 (Fls_IsAddrPageAligned) @05ccab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_IsAddrPageStartAligned/22 
+  Calls: Fls_GetSectorIndexByAddr/19 
+Fls_GetSectorStartAddr/20 (Fls_GetSectorStartAddr) @05cca8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_CalcSectorTransferOffset/33 Fls_IsAddrSectorStartAligned/24 Fls_IsAddrPageEndAligned/23 
+  Calls: 
+Fls_GetSectorIndexByAddr/19 (Fls_GetSectorIndexByAddr) @05cca620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Fls_pConfigPtr/8 (read)Fls_pConfigPtr/8 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Fls_Compare/50 Fls_Compare/50 Fls_Read/49 Fls_Read/49 Fls_Write/46 Fls_Write/46 Fls_Erase/45 Fls_Erase/45 Fls_IsAddrSectorEndAligned/25 Fls_IsAddrSectorStartAligned/24 Fls_IsAddrPageEndAligned/23 Fls_IsAddrPageEndAligned/23 Fls_IsAddrPageAligned/21 
+  Calls: 
+FLs_u8blockAcWrite/18 (FLs_u8blockAcWrite) @05cc42d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_DoJobWrite/35 (read)Fls_Init/44 (write)
+  Availability: available
+  Varpool flags:
+FLs_u8blockAcErase/17 (FLs_u8blockAcErase) @05cc4240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_DoJobErase/31 (read)Fls_Init/44 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32AccCRCremainder/16 (Fls_u32AccCRCremainder) @05cc4090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_AccumulateCRC/38 (write)Fls_AccumulateCRC/38 (write)Fls_UpdateCRCreminder/41 (read)Fls_UpdateCRCreminder/41 (write)Fls_AccumulateCRC/38 (read)Fls_ResetCRC/39 (write)Fls_AccumulateCRC/38 (read)Fls_AccumulateCRC/38 (write)Fls_AccumulateCRC/38 (read)Fls_FinalizeCRC/40 (read)Fls_FinalizeCRC/40 (write)Fls_FinalizeCRC/40 (read)
+  Availability: available
+  Varpool flags:
+Fls_u8JobStart/15 (Fls_u8JobStart) @05cc4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Read/49 (write)Fls_Compare/50 (write)Fls_Erase/45 (write)Fls_Write/46 (write)Fls_MainFunction/52 (read)Fls_MainFunction/52 (write)
+  Availability: available
+  Varpool flags:
+Fls_pJobDataDestPtr/14 (Fls_pJobDataDestPtr) @05cbbf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_ProcessJobDataTransfer/36 (write)Fls_ProcessJobDataTransfer/36 (read)Fls_ProcessJobDataTransfer/36 (read)Fls_Read/49 (write)
+  Availability: available
+  Varpool flags:
+Fls_pJobDataSrcPtr/13 (Fls_pJobDataSrcPtr) @05cbbea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_ProcessJobDataTransfer/36 (write)Fls_Write/46 (write)Fls_DoJobWrite/35 (read)Fls_ProcessJobDataTransfer/36 (read)Fls_ProcessJobDataTransfer/36 (write)Fls_ProcessJobDataTransfer/36 (read)Fls_ProcessJobDataTransfer/36 (read)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+Fls_eJobResult/12 (Fls_eJobResult) @05cbbe10
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Write/46 (read)Fls_GetJobResult/48 (read)Fls_Read/49 (read)Fls_Read/49 (write)Fls_Compare/50 (write)Fls_Init/44 (write)Fls_Compare/50 (read)Fls_MainFunction_CheckJobResult/51 (write)Fls_Erase/45 (write)Fls_Write/46 (write)Fls_Erase/45 (read)Fls_GetStatus/47 (read)Fls_Init/44 (read)Fls_Init/44 (write)Fls_Init/44 (write)Fls_MainFunction/52 (read)
+  Availability: available
+  Varpool flags:
+Fls_u32MaxWrite/11 (Fls_u32MaxWrite) @05cbbd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_ProcessRequestedJobs/43 (read)Fls_Init/44 (write)Fls_Init/44 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32MaxRead/10 (Fls_u32MaxRead) @05cbbcf0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_ProcessRequestedJobs/43 (read)Fls_Init/44 (write)Fls_Init/44 (write)
+  Availability: available
+  Varpool flags:
+Fls_bACloaded/9 (Fls_bACloaded) @05cbbc18
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_CheckLoadAc/29 (write)Fls_CheckUnLoadAc/30 (read)Fls_CheckUnLoadAc/30 (write)
+  Availability: available
+  Varpool flags:
+Fls_pConfigPtr/8 (Fls_pConfigPtr) @05cbbb88
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_CalcCfgCRC/42 (read)Fls_Init/44 (write)Fls_MainFunction_CheckJobResult/51 (read)Fls_GetSectorIndexByAddr/19 (read)Fls_MainFunction_CheckJobResult/51 (read)Fls_GetSectorStartAddr/20 (read)Fls_CalcCfgCRC/42 (read)Fls_GetSectorIndexByAddr/19 (read)Fls_IsAddrPageAligned/21 (read)Fls_MainFunction_CheckJobResult/51 (read)Fls_IsAddrPageStartAligned/22 (read)Fls_IsAddrPageStartAligned/22 (read)Fls_CalcCfgCRC/42 (read)Fls_IsAddrPageEndAligned/23 (read)Fls_IsAddrPageEndAligned/23 (read)Fls_IsAddrPageEndAligned/23 (read)Fls_GetJobResult/48 (read)Fls_MainFunction_CheckJobResult/51 (read)Fls_IsAddrSectorStartAligned/24 (read)Fls_IsAddrSectorStartAligned/24 (read)Fls_IsAddrSectorStartAligned/24 (read)Fls_IsAddrSectorEndAligned/25 (read)Fls_IsAddrSectorEndAligned/25 (read)Fls_LoadAc/27 (read)Fls_LoadAc/27 (read)Fls_IsAddrSectorEndAligned/25 (read)Fls_IsAddrSectorEndAligned/25 (read)Fls_CheckLoadAc/29 (read)Fls_CheckLoadAc/29 (read)Fls_CheckInputParamReadCompareJob/26 (read)Fls_CheckInputParamReadCompareJob/26 (read)Fls_UnloadAc/28 (read)Fls_UnloadAc/28 (read)Fls_DoJobErase/31 (read)Fls_CalcSectorTransferLength/34 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_CalcSectorTransferLength/34 (read)Fls_GetStatus/47 (read)Fls_DoJobDataTransfer/37 (read)Fls_CalcCfgCRC/42 (read)Fls_Erase/45 (read)Fls_Write/46 (read)Fls_CalcCfgCRC/42 (read)Fls_CheckInputParamReadCompareJob/26 (read)Fls_CheckInputParamReadCompareJob/26 (read)Fls_DoJobErase/31 (read)Fls_DoJobWrite/35 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_CheckInputParamReadCompareJob/26 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_CalcCfgCRC/42 (read)Fls_Init/44 (write)Fls_Init/44 (read)Fls_Init/44 (write)Fls_Init/44 (read)Fls_Init/44 (read)Fls_Init/44 (read)Fls_Init/44 (read)Fls_Init/44 (read)Fls_MainFunction/52 (read)
+  Availability: available
+  Varpool flags:
+Fls_eLLDJob/7 (Fls_eLLDJob) @05cbbb40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_LLDClrJobResult/54 (write)Fls_MainFunction/52 (read)
+  Availability: available
+  Varpool flags:
+Fls_eLLDJobResult/6 (Fls_eLLDJobResult) @05cbbaf8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_LLDGetJobResult/53 (read)Fls_LLDClrJobResult/54 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32JobSectorEnd/5 (Fls_u32JobSectorEnd) @05cbbab0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_Write/46 (write)Fls_Read/49 (write)Fls_Erase/45 (write)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+Fls_eJob/4 (Fls_eJob) @05cbba68
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Write/46 (write)Fls_Read/49 (write)Fls_CheckLoadAc/29 (read)Fls_CheckUnLoadAc/30 (read)Fls_Erase/45 (write)Fls_CalcSectorTransferLength/34 (read)Fls_ProcessJobDataTransfer/36 (read)Fls_ProcessRequestedJobs/43 (read)Fls_ProcessRequestedJobs/43 (read)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32JobSectorIt/3 (Fls_u32JobSectorIt) @05cbb9d8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_DoJobErase/31 (read)Fls_CalcSectorTransferLength/34 (read)Fls_DoJobWrite/35 (read)Fls_DoJobDataTransfer/37 (write)Fls_CalcSectorTransferLength/34 (read)Fls_CheckLoadAc/29 (read)Fls_Erase/45 (write)Fls_Write/46 (write)Fls_Read/49 (write)Fls_CheckLoadAc/29 (read)Fls_CalcSectorTransferOffset/33 (read)Fls_DoJobErase/31 (write)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_DoJobDataTransfer/37 (read)Fls_DoJobDataTransfer/37 (read)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32JobAddrEnd/2 (Fls_u32JobAddrEnd) @05cbb990
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_Erase/45 (write)Fls_Read/49 (write)Fls_Write/46 (write)Fls_DoJobErase/31 (read)Fls_CalcMaxTransferAddrEnd/32 (read)Fls_DoJobErase/31 (read)Fls_DoJobDataTransfer/37 (read)Fls_DoJobDataTransfer/37 (read)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+Fls_u32JobAddrIt/1 (Fls_u32JobAddrIt) @05cbb948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Fls_DoJobErase/31 (read)Fls_CalcSectorTransferLength/34 (read)Fls_DoJobDataTransfer/37 (read)Fls_CalcSectorTransferLength/34 (read)Fls_CalcMaxTransferAddrEnd/32 (read)Fls_Erase/45 (write)Fls_Write/46 (write)Fls_Read/49 (write)Fls_CalcSectorTransferLength/34 (read)Fls_CalcSectorTransferLength/34 (read)Fls_CalcSectorTransferLength/34 (read)Fls_CalcMaxTransferAddrEnd/32 (read)Fls_CalcSectorTransferOffset/33 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (read)Fls_DoJobErase/31 (write)Fls_DoJobDataTransfer/37 (read)Fls_DoJobDataTransfer/37 (read)Fls_DoJobDataTransfer/37 (write)Fls_DoJobDataTransfer/37 (read)Fls_DoJobDataTransfer/37 (read)Fls_Compare/50 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function Fls_GetSectorIndexByAddr (Fls_GetSectorIndexByAddr, funcdef_no=1, decl_uid=6175, cgraph_uid=2, symbol_order=19)
+
+Fls_GetSectorIndexByAddr (const Fls_AddressType TargetAddress)
+{
+  Fls_SectorIndexType SectorIndex;
+  Fls_SectorIndexType D.6455;
+  const struct Fls_ConfigType * Fls_pConfigPtr.0_1;
+  const Fls_AddressType[<unknown>] * _2;
+  long unsigned int _3;
+  const struct Fls_ConfigType * Fls_pConfigPtr.1_4;
+  long unsigned int _5;
+  Fls_SectorIndexType _11;
+
+  <bb 2> :
+  SectorIndex_7 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.0_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.0_1->paSectorEndAddr;
+  _3 = *_2[SectorIndex_6];
+  if (TargetAddress_9(D) <= _3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  SectorIndex_10 = SectorIndex_6 + 1;
+
+  <bb 6> :
+  # SectorIndex_6 = PHI <SectorIndex_7(2), SectorIndex_10(5)>
+  Fls_pConfigPtr.1_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.1_4->u32SectorCount;
+  if (SectorIndex_6 < _5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _11 = SectorIndex_6;
+
+  <bb 8> :
+<L5>:
+  return _11;
+
+}
+
+
+
+;; Function Fls_GetSectorStartAddr (Fls_GetSectorStartAddr, funcdef_no=2, decl_uid=6177, cgraph_uid=3, symbol_order=20)
+
+Fls_GetSectorStartAddr (const Fls_SectorIndexType SectorIndex)
+{
+  Fls_AddressType TargetAddress;
+  Fls_AddressType D.6460;
+  const struct Fls_ConfigType * Fls_pConfigPtr.2_1;
+  const Fls_AddressType[<unknown>] * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  Fls_AddressType _10;
+
+  <bb 2> :
+  if (SectorIndex_6(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.2_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.2_1->paSectorEndAddr;
+  _3 = SectorIndex_6(D) + 4294967295;
+  _4 = *_2[_3];
+  TargetAddress_9 = _4 + 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  TargetAddress_7 = 0;
+
+  <bb 5> :
+  # TargetAddress_5 = PHI <TargetAddress_9(3), TargetAddress_7(4)>
+  _10 = TargetAddress_5;
+
+  <bb 6> :
+<L3>:
+  return _10;
+
+}
+
+
+
+;; Function Fls_IsAddrPageAligned (Fls_IsAddrPageAligned, funcdef_no=3, decl_uid=6179, cgraph_uid=4, symbol_order=21)
+
+Fls_IsAddrPageAligned (const Fls_AddressType TargetAddress)
+{
+  boolean RetVal;
+  boolean D.6465;
+  const struct Fls_ConfigType * Fls_pConfigPtr.3_1;
+  const Fls_LengthType[<unknown>] * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  boolean _12;
+
+  <bb 2> :
+  Fls_pConfigPtr.3_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.3_1->paSectorPageSize;
+  _3 = Fls_GetSectorIndexByAddr (TargetAddress_8(D));
+  _4 = *_2[_3];
+  _5 = TargetAddress_8(D) % _4;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RetVal_11 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_10 = 0;
+
+  <bb 5> :
+  # RetVal_6 = PHI <RetVal_11(3), RetVal_10(4)>
+  _12 = RetVal_6;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+
+;; Function Fls_IsAddrPageStartAligned (Fls_IsAddrPageStartAligned, funcdef_no=4, decl_uid=6181, cgraph_uid=5, symbol_order=22)
+
+Fls_IsAddrPageStartAligned (const Fls_AddressType TargetAddress)
+{
+  boolean RetVal;
+  boolean D.6471;
+  const struct Fls_ConfigType * Fls_pConfigPtr.4_1;
+  const Fls_AddressType[<unknown>] * _2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.5_3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  _Bool _8;
+  boolean _17;
+
+  <bb 2> :
+  Fls_pConfigPtr.4_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.4_1->paSectorEndAddr;
+  Fls_pConfigPtr.5_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.5_3->u32SectorCount;
+  _5 = _4 + 4294967295;
+  _6 = *_2[_5];
+  _7 = _6 + 1;
+  if (TargetAddress_13(D) < _7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _8 = Fls_IsAddrPageAligned (TargetAddress_13(D));
+  if (_8 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_15 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal_16 = 0;
+
+  <bb 6> :
+  # RetVal_9 = PHI <RetVal_15(4), RetVal_16(5)>
+  _17 = RetVal_9;
+
+  <bb 7> :
+<L4>:
+  return _17;
+
+}
+
+
+
+;; Function Fls_IsAddrPageEndAligned (Fls_IsAddrPageEndAligned, funcdef_no=5, decl_uid=6183, cgraph_uid=6, symbol_order=23)
+
+Fls_IsAddrPageEndAligned (const Fls_AddressType TargetAddress)
+{
+  Fls_LengthType SectorOffset;
+  boolean RetVal;
+  boolean D.6478;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  const struct Fls_ConfigType * Fls_pConfigPtr.6_4;
+  const Fls_AddressType[<unknown>] * _5;
+  const struct Fls_ConfigType * Fls_pConfigPtr.7_6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  const struct Fls_ConfigType * Fls_pConfigPtr.8_11;
+  const Fls_LengthType[<unknown>] * _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  boolean _26;
+
+  <bb 2> :
+  RetVal_18 = 0;
+  _1 = Fls_GetSectorIndexByAddr (TargetAddress_20(D));
+  _2 = Fls_GetSectorStartAddr (_1);
+  SectorOffset_23 = TargetAddress_20(D) - _2;
+  _3 = TargetAddress_20(D) + 4294967295;
+  Fls_pConfigPtr.6_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.6_4->paSectorEndAddr;
+  Fls_pConfigPtr.7_6 = Fls_pConfigPtr;
+  _7 = Fls_pConfigPtr.7_6->u32SectorCount;
+  _8 = _7 + 4294967295;
+  _9 = *_5[_8];
+  _10 = _9 + 1;
+  if (_3 < _10)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.8_11 = Fls_pConfigPtr;
+  _12 = Fls_pConfigPtr.8_11->paSectorPageSize;
+  _13 = Fls_GetSectorIndexByAddr (TargetAddress_20(D));
+  _14 = *_12[_13];
+  _15 = SectorOffset_23 % _14;
+  if (_15 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_25 = 1;
+
+  <bb 5> :
+  # RetVal_16 = PHI <RetVal_18(2), RetVal_18(3), RetVal_25(4)>
+  _26 = RetVal_16;
+
+  <bb 6> :
+<L5>:
+  return _26;
+
+}
+
+
+
+;; Function Fls_IsAddrSectorStartAligned (Fls_IsAddrSectorStartAligned, funcdef_no=6, decl_uid=6185, cgraph_uid=7, symbol_order=24)
+
+Fls_IsAddrSectorStartAligned (const Fls_AddressType TargetAddress)
+{
+  Fls_LengthType SectorSize;
+  Fls_SectorIndexType SectorIndex;
+  boolean RetVal;
+  boolean D.6485;
+  const struct Fls_ConfigType * Fls_pConfigPtr.9_1;
+  const Fls_AddressType[<unknown>] * _2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.10_3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  const struct Fls_ConfigType * Fls_pConfigPtr.11_8;
+  const Fls_LengthType[<unknown>] * _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  boolean _23;
+
+  <bb 2> :
+  RetVal_15 = 0;
+  Fls_pConfigPtr.9_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.9_1->paSectorEndAddr;
+  Fls_pConfigPtr.10_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.10_3->u32SectorCount;
+  _5 = _4 + 4294967295;
+  _6 = *_2[_5];
+  _7 = _6 + 1;
+  if (TargetAddress_17(D) < _7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  SectorIndex_19 = Fls_GetSectorIndexByAddr (TargetAddress_17(D));
+  Fls_pConfigPtr.11_8 = Fls_pConfigPtr;
+  _9 = Fls_pConfigPtr.11_8->paSectorSize;
+  SectorSize_20 = *_9[SectorIndex_19];
+  _10 = Fls_GetSectorStartAddr (SectorIndex_19);
+  _11 = TargetAddress_17(D) - _10;
+  _12 = _11 % SectorSize_20;
+  if (_12 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_22 = 1;
+
+  <bb 5> :
+  # RetVal_13 = PHI <RetVal_15(2), RetVal_15(3), RetVal_22(4)>
+  _23 = RetVal_13;
+
+  <bb 6> :
+<L5>:
+  return _23;
+
+}
+
+
+
+;; Function Fls_IsAddrSectorEndAligned (Fls_IsAddrSectorEndAligned, funcdef_no=7, decl_uid=6187, cgraph_uid=8, symbol_order=25)
+
+Fls_IsAddrSectorEndAligned (const Fls_AddressType TargetAddress)
+{
+  Fls_AddressType EndAddress;
+  Fls_LengthType SectorSize;
+  Fls_SectorIndexType SectorIndex;
+  boolean RetVal;
+  boolean D.6492;
+  const struct Fls_ConfigType * Fls_pConfigPtr.12_1;
+  const Fls_AddressType[<unknown>] * _2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.13_3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  const struct Fls_ConfigType * Fls_pConfigPtr.14_8;
+  const Fls_LengthType[<unknown>] * _9;
+  const struct Fls_ConfigType * Fls_pConfigPtr.15_10;
+  const Fls_AddressType[<unknown>] * _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  boolean _24;
+
+  <bb 2> :
+  RetVal_16 = 0;
+  Fls_pConfigPtr.12_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.12_1->paSectorEndAddr;
+  Fls_pConfigPtr.13_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.13_3->u32SectorCount;
+  _5 = _4 + 4294967295;
+  _6 = *_2[_5];
+  _7 = _6 + 1;
+  if (TargetAddress_18(D) < _7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  SectorIndex_20 = Fls_GetSectorIndexByAddr (TargetAddress_18(D));
+  Fls_pConfigPtr.14_8 = Fls_pConfigPtr;
+  _9 = Fls_pConfigPtr.14_8->paSectorSize;
+  SectorSize_21 = *_9[SectorIndex_20];
+  Fls_pConfigPtr.15_10 = Fls_pConfigPtr;
+  _11 = Fls_pConfigPtr.15_10->paSectorEndAddr;
+  EndAddress_22 = *_11[SectorIndex_20];
+  _12 = EndAddress_22 - TargetAddress_18(D);
+  _13 = _12 % SectorSize_21;
+  if (_13 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_23 = 1;
+
+  <bb 5> :
+  # RetVal_14 = PHI <RetVal_16(2), RetVal_16(3), RetVal_23(4)>
+  _24 = RetVal_14;
+
+  <bb 6> :
+<L5>:
+  return _24;
+
+}
+
+
+
+;; Function Fls_CheckInputParamReadCompareJob (Fls_CheckInputParamReadCompareJob, funcdef_no=8, decl_uid=6192, cgraph_uid=9, symbol_order=26)
+
+Fls_CheckInputParamReadCompareJob (Fls_AddressType SourceAddress, const uint8 * TargetAddressPtr, Fls_LengthType Length, uint8 ApiId)
+{
+  boolean CheckInputTemp;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6508;
+  const struct Fls_ConfigType * Fls_pConfigPtr.16_1;
+  const struct Fls_ConfigType * Fls_pConfigPtr.17_2;
+  const Fls_AddressType[<unknown>] * _3;
+  const struct Fls_ConfigType * Fls_pConfigPtr.18_4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  const struct Fls_ConfigType * Fls_pConfigPtr.19_10;
+  const Fls_AddressType[<unknown>] * _11;
+  const struct Fls_ConfigType * Fls_pConfigPtr.20_12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  Std_ReturnType _38;
+
+  <bb 2> :
+  RetVal_22 = 0;
+  CheckInputTemp_23 = 0;
+  Fls_pConfigPtr.16_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.16_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportError (92, 0, ApiId_28(D), 5);
+  RetVal_34 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.17_2 = Fls_pConfigPtr;
+  _3 = Fls_pConfigPtr.17_2->paSectorEndAddr;
+  Fls_pConfigPtr.18_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.18_4->u32SectorCount;
+  _6 = _5 + 4294967295;
+  _7 = *_3[_6];
+  _8 = _7 + 1;
+  if (SourceAddress_25(D) >= _8)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportError (92, 0, ApiId_28(D), 2);
+  RetVal_32 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  if (Length_26(D) == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _9 = SourceAddress_25(D) + Length_26(D);
+  Fls_pConfigPtr.19_10 = Fls_pConfigPtr;
+  _11 = Fls_pConfigPtr.19_10->paSectorEndAddr;
+  Fls_pConfigPtr.20_12 = Fls_pConfigPtr;
+  _13 = Fls_pConfigPtr.20_12->u32SectorCount;
+  _14 = _13 + 4294967295;
+  _15 = *_11[_14];
+  _16 = _15 + 1;
+  if (_9 > _16)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Det_ReportError (92, 0, ApiId_28(D), 3);
+  RetVal_30 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  CheckInputTemp_27 = 1;
+
+  <bb 10> :
+  # RetVal_17 = PHI <RetVal_34(3), RetVal_32(5), RetVal_30(8), RetVal_22(9)>
+  # CheckInputTemp_19 = PHI <CheckInputTemp_23(3), CheckInputTemp_23(5), CheckInputTemp_23(8), CheckInputTemp_27(9)>
+  if (CheckInputTemp_19 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  if (TargetAddressPtr_35(D) == 0B)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Det_ReportError (92, 0, ApiId_28(D), 4);
+  RetVal_37 = 1;
+
+  <bb 13> :
+  # RetVal_18 = PHI <RetVal_17(10), RetVal_17(11), RetVal_37(12)>
+  _38 = RetVal_18;
+
+  <bb 14> :
+<L14>:
+  return _38;
+
+}
+
+
+
+;; Function Fls_LoadAc (Fls_LoadAc, funcdef_no=9, decl_uid=6194, cgraph_uid=10, symbol_order=27)
+
+Fls_LoadAc (const Fls_JobType Job)
+{
+  uint32 Cnt;
+  uint32 ACSize;
+  uint32 * RamPtr;
+  const uint32 * RomPtr;
+  const struct Fls_ConfigType * Fls_pConfigPtr.21_1;
+  const struct Fls_ConfigType * Fls_pConfigPtr.22_2;
+  long unsigned int _3;
+  const uint32 * _4;
+  long unsigned int _5;
+  uint32 * _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  if (Job_13(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RomPtr_18 = &Fls_ACEraseRomStart;
+  Fls_pConfigPtr.21_1 = Fls_pConfigPtr;
+  RamPtr_19 = Fls_pConfigPtr.21_1->acErasePtr;
+  ACSize_20 = (uint32) &Fls_ACEraseSize;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RomPtr_14 = &Fls_ACWriteRomStart;
+  Fls_pConfigPtr.22_2 = Fls_pConfigPtr;
+  RamPtr_16 = Fls_pConfigPtr.22_2->acWritePtr;
+  ACSize_17 = (uint32) &Fls_ACWriteSize;
+
+  <bb 5> :
+  # RomPtr_8 = PHI <RomPtr_18(3), RomPtr_14(4)>
+  # RamPtr_9 = PHI <RamPtr_19(3), RamPtr_16(4)>
+  # ACSize_10 = PHI <ACSize_20(3), ACSize_17(4)>
+  Cnt_21 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = Cnt_11 * 4;
+  _4 = RomPtr_8 + _3;
+  _5 = Cnt_11 * 4;
+  _6 = RamPtr_9 + _5;
+  _7 = *_4;
+  *_6 = _7;
+  Cnt_23 = Cnt_11 + 1;
+
+  <bb 7> :
+  # Cnt_11 = PHI <Cnt_21(5), Cnt_23(6)>
+  if (Cnt_11 < ACSize_10)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function Fls_UnloadAc (Fls_UnloadAc, funcdef_no=10, decl_uid=6196, cgraph_uid=11, symbol_order=28)
+
+Fls_UnloadAc (const Fls_JobType Job)
+{
+  uint32 Cnt;
+  uint32 ACSize;
+  uint32 * RamPtr;
+  const struct Fls_ConfigType * Fls_pConfigPtr.23_1;
+  const struct Fls_ConfigType * Fls_pConfigPtr.24_2;
+  long unsigned int _3;
+  uint32 * _4;
+
+  <bb 2> :
+  if (Job_9(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.23_1 = Fls_pConfigPtr;
+  RamPtr_13 = Fls_pConfigPtr.23_1->acErasePtr;
+  ACSize_14 = (uint32) &Fls_ACEraseSize;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.24_2 = Fls_pConfigPtr;
+  RamPtr_11 = Fls_pConfigPtr.24_2->acWritePtr;
+  ACSize_12 = (uint32) &Fls_ACWriteSize;
+
+  <bb 5> :
+  # RamPtr_5 = PHI <RamPtr_13(3), RamPtr_11(4)>
+  # ACSize_6 = PHI <ACSize_14(3), ACSize_12(4)>
+  Cnt_15 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = Cnt_7 * 4;
+  _4 = RamPtr_5 + _3;
+  *_4 = 4294967295;
+  Cnt_17 = Cnt_7 + 1;
+
+  <bb 7> :
+  # Cnt_7 = PHI <Cnt_15(5), Cnt_17(6)>
+  if (Cnt_7 < ACSize_6)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function Fls_CheckLoadAc (Fls_CheckLoadAc, funcdef_no=11, decl_uid=6199, cgraph_uid=12, symbol_order=29)
+
+Fls_CheckLoadAc (Fls_BlockNumberOfSectorType BlockAc, Fls_AddressType SectorOffset)
+{
+  Fls_BlockNumberOfSectorType BlockSector;
+  Fls_AddressType JobAddress;
+  Fls_HwChType HwCh;
+  const struct Fls_ConfigType * Fls_pConfigPtr.41_1;
+  const Fls_HwChType[<unknown>] * _2;
+  long unsigned int Fls_u32JobSectorIt.42_3;
+  const struct Fls_ConfigType * Fls_pConfigPtr.43_4;
+  const struct Fls_Flash_InternalSectorInfoType * const[<unknown>] * _5;
+  long unsigned int Fls_u32JobSectorIt.44_6;
+  const struct Fls_Flash_InternalSectorInfoType * _7;
+  <unnamed type> Fls_eJob.45_8;
+
+  <bb 2> :
+  Fls_pConfigPtr.41_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.41_1->paHwCh;
+  Fls_u32JobSectorIt.42_3 ={v} Fls_u32JobSectorIt;
+  HwCh_11 = *_2[Fls_u32JobSectorIt.42_3];
+  if (HwCh_11 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.43_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.43_4->pSectorList;
+  Fls_u32JobSectorIt.44_6 ={v} Fls_u32JobSectorIt;
+  _7 = *_5[Fls_u32JobSectorIt.44_6];
+  JobAddress_12 = _7->pSectorStartAddressPtr;
+  JobAddress_14 = JobAddress_12 + SectorOffset_13(D);
+  BlockSector_16 = Fls_IPW_GetBlockNumberFromAddress (JobAddress_14);
+  if (BlockSector_16 == BlockAc_17(D))
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_eJob.45_8 = Fls_eJob;
+  Fls_LoadAc (Fls_eJob.45_8);
+  Fls_bACloaded = 1;
+
+  <bb 5> :
+  return;
+
+}
+
+
+
+;; Function Fls_CheckUnLoadAc (Fls_CheckUnLoadAc, funcdef_no=12, decl_uid=6201, cgraph_uid=13, symbol_order=30)
+
+Fls_CheckUnLoadAc ()
+{
+  _Bool Fls_bACloaded.46_1;
+  <unnamed type> Fls_eJob.47_2;
+
+  <bb 2> :
+  Fls_bACloaded.46_1 = Fls_bACloaded;
+  if (Fls_bACloaded.46_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_eJob.47_2 = Fls_eJob;
+  Fls_UnloadAc (Fls_eJob.47_2);
+  Fls_bACloaded = 0;
+
+  <bb 4> :
+  return;
+
+}
+
+
+
+;; Function Fls_DoJobErase (Fls_DoJobErase, funcdef_no=13, decl_uid=6213, cgraph_uid=14, symbol_order=31)
+
+Fls_DoJobErase ()
+{
+  Fls_LLDReturnType LldRetVal;
+  boolean Asynch;
+  Fls_AddressType SectorTransferOffset;
+  Fls_LengthType PhysicalSectorSize;
+  uint32 DataStore;
+  MemIf_JobResultType RetVal;
+  MemIf_JobResultType D.6533;
+  long unsigned int Fls_u32JobAddrIt.25_1;
+  long unsigned int Fls_u32JobAddrEnd.26_2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.27_3;
+  const uint8[<unknown>] * _4;
+  long unsigned int Fls_u32JobSectorIt.28_5;
+  unsigned char _6;
+  unsigned int _7;
+  unsigned int _8;
+  unsigned char FLs_u8blockAcErase.29_9;
+  const struct Fls_ConfigType * Fls_pConfigPtr.30_10;
+  const Fls_LengthType[<unknown>] * _11;
+  long unsigned int Fls_u32JobSectorIt.31_12;
+  long unsigned int Fls_u32JobAddrIt.32_13;
+  long unsigned int _14;
+  long unsigned int Fls_u32JobAddrIt.33_15;
+  long unsigned int Fls_u32JobAddrEnd.34_16;
+  const struct Fls_ConfigType * Fls_pConfigPtr.35_17;
+  const uint8[<unknown>] * _18;
+  long unsigned int Fls_u32JobSectorIt.36_19;
+  unsigned char _20;
+  long unsigned int _21;
+  const struct Fls_ConfigType * Fls_pConfigPtr.37_22;
+  const Fls_AddressType[<unknown>] * _23;
+  long unsigned int Fls_u32JobSectorIt.38_24;
+  long unsigned int _25;
+  long unsigned int Fls_u32JobAddrIt.39_26;
+  long unsigned int Fls_u32JobSectorIt.40_27;
+  long unsigned int _28;
+  MemIf_JobResultType _53;
+
+  <bb 2> :
+  RetVal_35 = 2;
+  Fls_u32JobAddrIt.25_1 = Fls_u32JobAddrIt;
+  Fls_u32JobAddrEnd.26_2 = Fls_u32JobAddrEnd;
+  if (Fls_u32JobAddrIt.25_1 > Fls_u32JobAddrEnd.26_2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RetVal_52 = 0;
+  goto <bb 16>; [INV]
+
+  <bb 4> :
+  SectorTransferOffset_38 = Fls_CalcSectorTransferOffset ();
+  Fls_pConfigPtr.27_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.27_3->paSectorFlags;
+  Fls_u32JobSectorIt.28_5 ={v} Fls_u32JobSectorIt;
+  _6 = *_4[Fls_u32JobSectorIt.28_5];
+  _7 = (unsigned int) _6;
+  _8 = _7 & 1;
+  if (_8 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Asynch_41 = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Asynch_39 = 0;
+  FLs_u8blockAcErase.29_9 = FLs_u8blockAcErase;
+  Fls_CheckLoadAc (FLs_u8blockAcErase.29_9, SectorTransferOffset_38);
+
+  <bb 7> :
+  # Asynch_31 = PHI <Asynch_41(5), Asynch_39(6)>
+  Fls_pConfigPtr.30_10 = Fls_pConfigPtr;
+  _11 = Fls_pConfigPtr.30_10->paSectorSize;
+  Fls_u32JobSectorIt.31_12 ={v} Fls_u32JobSectorIt;
+  PhysicalSectorSize_42 = *_11[Fls_u32JobSectorIt.31_12];
+  Fls_u32JobAddrIt.32_13 = Fls_u32JobAddrIt;
+  _14 = PhysicalSectorSize_42 + Fls_u32JobAddrIt.32_13;
+  Fls_u32JobAddrIt = _14;
+  LldRetVal_45 = Fls_IPW_SectorErase (SectorTransferOffset_38, PhysicalSectorSize_42, Asynch_31);
+  Fls_u32JobAddrIt.33_15 = Fls_u32JobAddrIt;
+  Fls_u32JobAddrEnd.34_16 = Fls_u32JobAddrEnd;
+  if (Fls_u32JobAddrIt.33_15 > Fls_u32JobAddrEnd.34_16)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  if (LldRetVal_45 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  RetVal_46 = 0;
+  goto <bb 15>; [INV]
+
+  <bb 10> :
+  if (LldRetVal_45 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  Det_ReportTransientFault (92, 0, 6, 1);
+  RetVal_50 = 1;
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  Fls_pConfigPtr.35_17 = Fls_pConfigPtr;
+  _18 = Fls_pConfigPtr.35_17->paSectorFlags;
+  Fls_u32JobSectorIt.36_19 ={v} Fls_u32JobSectorIt;
+  _20 = *_18[Fls_u32JobSectorIt.36_19];
+  DataStore_47 = (uint32) _20;
+  _21 = DataStore_47 & 1;
+  if (_21 == 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 13> :
+  Fls_pConfigPtr.37_22 = Fls_pConfigPtr;
+  _23 = Fls_pConfigPtr.37_22->paSectorEndAddr;
+  Fls_u32JobSectorIt.38_24 ={v} Fls_u32JobSectorIt;
+  _25 = *_23[Fls_u32JobSectorIt.38_24];
+  Fls_u32JobAddrIt.39_26 = Fls_u32JobAddrIt;
+  if (_25 < Fls_u32JobAddrIt.39_26)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Fls_u32JobSectorIt.40_27 ={v} Fls_u32JobSectorIt;
+  _28 = Fls_u32JobSectorIt.40_27 + 1;
+  Fls_u32JobSectorIt ={v} _28;
+
+  <bb 15> :
+  # RetVal_29 = PHI <RetVal_46(9), RetVal_50(11), RetVal_35(12), RetVal_35(13), RetVal_35(14)>
+  Fls_CheckUnLoadAc ();
+
+  <bb 16> :
+  # RetVal_30 = PHI <RetVal_52(3), RetVal_29(15)>
+  _53 = RetVal_30;
+
+  <bb 17> :
+<L17>:
+  return _53;
+
+}
+
+
+
+;; Function Fls_CalcMaxTransferAddrEnd (Fls_CalcMaxTransferAddrEnd, funcdef_no=14, decl_uid=6215, cgraph_uid=15, symbol_order=32)
+
+Fls_CalcMaxTransferAddrEnd (const Fls_LengthType MaxTransfer)
+{
+  Fls_AddressType MaxTransferEndAddr;
+  Fls_AddressType D.6544;
+  long unsigned int Fls_u32JobAddrIt.48_1;
+  long unsigned int _2;
+  long unsigned int Fls_u32JobAddrIt.49_3;
+  long unsigned int _4;
+  Fls_AddressType _10;
+
+  <bb 2> :
+  MaxTransferEndAddr_7 = Fls_u32JobAddrEnd;
+  Fls_u32JobAddrIt.48_1 = Fls_u32JobAddrIt;
+  _2 = MaxTransfer_8(D) + Fls_u32JobAddrIt.48_1;
+  if (MaxTransferEndAddr_7 >= _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_u32JobAddrIt.49_3 = Fls_u32JobAddrIt;
+  _4 = MaxTransfer_8(D) + Fls_u32JobAddrIt.49_3;
+  MaxTransferEndAddr_9 = _4 + 4294967295;
+
+  <bb 4> :
+  # MaxTransferEndAddr_5 = PHI <MaxTransferEndAddr_7(2), MaxTransferEndAddr_9(3)>
+  _10 = MaxTransferEndAddr_5;
+
+  <bb 5> :
+<L3>:
+  return _10;
+
+}
+
+
+
+;; Function Fls_CalcSectorTransferOffset (Fls_CalcSectorTransferOffset, funcdef_no=15, decl_uid=6217, cgraph_uid=16, symbol_order=33)
+
+Fls_CalcSectorTransferOffset ()
+{
+  Fls_AddressType SectorAddrStart;
+  Fls_AddressType D.6546;
+  long unsigned int Fls_u32JobSectorIt.50_1;
+  long unsigned int Fls_u32JobAddrIt.51_2;
+  Fls_AddressType _6;
+
+  <bb 2> :
+  Fls_u32JobSectorIt.50_1 ={v} Fls_u32JobSectorIt;
+  SectorAddrStart_5 = Fls_GetSectorStartAddr (Fls_u32JobSectorIt.50_1);
+  Fls_u32JobAddrIt.51_2 = Fls_u32JobAddrIt;
+  _6 = Fls_u32JobAddrIt.51_2 - SectorAddrStart_5;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+
+;; Function Fls_CalcSectorTransferLength (Fls_CalcSectorTransferLength, funcdef_no=16, decl_uid=6219, cgraph_uid=17, symbol_order=34)
+
+Fls_CalcSectorTransferLength (const Fls_AddressType MaxTransferEndAddr)
+{
+  uint32 InterfaceSize;
+  uint32 TransferSize;
+  Fls_AddressType MaxTransferAddr;
+  Fls_AddressType SectorEndAddr;
+  Fls_AddressType D.6557;
+  const struct Fls_ConfigType * Fls_pConfigPtr.52_1;
+  const Fls_AddressType[<unknown>] * _2;
+  long unsigned int Fls_u32JobSectorIt.53_3;
+  const struct Fls_ConfigType * Fls_pConfigPtr.54_4;
+  const Fls_HwChType[<unknown>] * _5;
+  long unsigned int Fls_u32JobSectorIt.55_6;
+  <unnamed type> _7;
+  <unnamed type> Fls_eJob.56_8;
+  long unsigned int Fls_u32JobAddrIt.57_9;
+  long unsigned int _10;
+  long unsigned int Fls_u32JobAddrIt.58_11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int Fls_u32JobAddrIt.59_14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int Fls_u32JobAddrIt.60_17;
+  long unsigned int _18;
+  long unsigned int Fls_u32JobAddrIt.61_19;
+  long unsigned int _20;
+  Fls_AddressType _33;
+
+  <bb 2> :
+  MaxTransferAddr_24 = MaxTransferEndAddr_23(D);
+  TransferSize_25 = 0;
+  InterfaceSize_26 = 0;
+  Fls_pConfigPtr.52_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.52_1->paSectorEndAddr;
+  Fls_u32JobSectorIt.53_3 ={v} Fls_u32JobSectorIt;
+  SectorEndAddr_28 = *_2[Fls_u32JobSectorIt.53_3];
+  Fls_pConfigPtr.54_4 = Fls_pConfigPtr;
+  _5 = Fls_pConfigPtr.54_4->paHwCh;
+  Fls_u32JobSectorIt.55_6 ={v} Fls_u32JobSectorIt;
+  _7 = *_5[Fls_u32JobSectorIt.55_6];
+  if (_7 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  Fls_eJob.56_8 = Fls_eJob;
+  if (Fls_eJob.56_8 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  InterfaceSize_29 = 8;
+  Fls_u32JobAddrIt.57_9 = Fls_u32JobAddrIt;
+  _10 = MaxTransferAddr_24 - Fls_u32JobAddrIt.57_9;
+  TransferSize_30 = _10 + 1;
+  Fls_u32JobAddrIt.58_11 = Fls_u32JobAddrIt;
+  _12 = Fls_u32JobAddrIt.58_11 % InterfaceSize_29;
+  _13 = InterfaceSize_29 - _12;
+  if (TransferSize_30 > _13)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u32JobAddrIt.59_14 = Fls_u32JobAddrIt;
+  _15 = Fls_u32JobAddrIt.59_14 % InterfaceSize_29;
+  _16 = InterfaceSize_29 - _15;
+  Fls_u32JobAddrIt.60_17 = Fls_u32JobAddrIt;
+  _18 = _16 + Fls_u32JobAddrIt.60_17;
+  MaxTransferAddr_31 = _18 + 4294967295;
+
+  <bb 6> :
+  # MaxTransferAddr_22 = PHI <MaxTransferAddr_24(2), MaxTransferAddr_24(3), MaxTransferAddr_24(4), MaxTransferAddr_31(5)>
+  if (SectorEndAddr_28 > MaxTransferAddr_22)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  SectorEndAddr_32 = MaxTransferAddr_22;
+
+  <bb 8> :
+  # SectorEndAddr_21 = PHI <SectorEndAddr_28(6), SectorEndAddr_32(7)>
+  Fls_u32JobAddrIt.61_19 = Fls_u32JobAddrIt;
+  _20 = SectorEndAddr_21 - Fls_u32JobAddrIt.61_19;
+  _33 = _20 + 1;
+
+  <bb 9> :
+<L9>:
+  return _33;
+
+}
+
+
+
+;; Function Fls_DoJobWrite (Fls_DoJobWrite, funcdef_no=17, decl_uid=6222, cgraph_uid=18, symbol_order=35)
+
+Fls_DoJobWrite (const Fls_AddressType SectorOffset, const Fls_AddressType Length)
+{
+  boolean Asynch;
+  Fls_LLDReturnType RetVal;
+  Fls_LLDReturnType D.6568;
+  const struct Fls_ConfigType * Fls_pConfigPtr.62_1;
+  const uint8[<unknown>] * _2;
+  long unsigned int Fls_u32JobSectorIt.63_3;
+  unsigned char _4;
+  unsigned int _5;
+  unsigned int _6;
+  unsigned char FLs_u8blockAcWrite.64_7;
+  const uint8 * Fls_pJobDataSrcPtr.65_8;
+  Fls_LLDReturnType _24;
+
+  <bb 2> :
+  Fls_pConfigPtr.62_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.62_1->paSectorFlags;
+  Fls_u32JobSectorIt.63_3 ={v} Fls_u32JobSectorIt;
+  _4 = *_2[Fls_u32JobSectorIt.63_3];
+  _5 = (unsigned int) _4;
+  _6 = _5 & 2;
+  if (_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Asynch_17 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Asynch_14 = 0;
+  FLs_u8blockAcWrite.64_7 = FLs_u8blockAcWrite;
+  Fls_CheckLoadAc (FLs_u8blockAcWrite.64_7, SectorOffset_15(D));
+
+  <bb 5> :
+  # Asynch_10 = PHI <Asynch_17(3), Asynch_14(4)>
+  Fls_pJobDataSrcPtr.65_8 = Fls_pJobDataSrcPtr;
+  RetVal_20 = Fls_IPW_SectorWrite (SectorOffset_15(D), Length_18(D), Fls_pJobDataSrcPtr.65_8, Asynch_10);
+  if (RetVal_20 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Det_ReportTransientFault (92, 0, 6, 2);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+  if (RetVal_20 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  RetVal_21 = 1;
+
+  <bb 9> :
+  # RetVal_9 = PHI <RetVal_20(6), RetVal_20(7), RetVal_21(8)>
+  Fls_CheckUnLoadAc ();
+  _24 = RetVal_9;
+
+  <bb 10> :
+<L9>:
+  return _24;
+
+}
+
+
+
+;; Function Fls_ProcessJobDataTransfer (Fls_ProcessJobDataTransfer, funcdef_no=18, decl_uid=6225, cgraph_uid=19, symbol_order=36)
+
+Fls_ProcessJobDataTransfer (const Fls_AddressType SectorOffset, const Fls_AddressType Length)
+{
+  Fls_LLDReturnType TransferRetVal;
+  Fls_LLDReturnType D.6575;
+  <unnamed type> Fls_eJob.66_1;
+  const uint8 * Fls_pJobDataSrcPtr.67_2;
+  const uint8 * _3;
+  uint8 * Fls_pJobDataDestPtr.68_4;
+  uint8 * Fls_pJobDataDestPtr.69_5;
+  uint8 * _6;
+  const uint8 * Fls_pJobDataSrcPtr.70_7;
+  const uint8 * Fls_pJobDataSrcPtr.71_8;
+  const uint8 * _9;
+  Fls_LLDReturnType _29;
+
+  <bb 2> :
+  TransferRetVal_14 = 1;
+  Fls_eJob.66_1 = Fls_eJob;
+  switch (Fls_eJob.66_1) <default: <L8> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  TransferRetVal_27 = Fls_DoJobWrite (SectorOffset_16(D), Length_17(D));
+  Fls_pJobDataSrcPtr.67_2 = Fls_pJobDataSrcPtr;
+  _3 = Fls_pJobDataSrcPtr.67_2 + Length_17(D);
+  Fls_pJobDataSrcPtr = _3;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+<L1>:
+  Fls_pJobDataDestPtr.68_4 = Fls_pJobDataDestPtr;
+  TransferRetVal_23 = Fls_IPW_SectorRead (SectorOffset_16(D), Length_17(D), Fls_pJobDataDestPtr.68_4, 0B);
+  if (TransferRetVal_23 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportTransientFault (92, 0, 6, 3);
+
+  <bb 6> :
+  Fls_pJobDataDestPtr.69_5 = Fls_pJobDataDestPtr;
+  _6 = Fls_pJobDataDestPtr.69_5 + Length_17(D);
+  Fls_pJobDataDestPtr = _6;
+  goto <bb 12>; [INV]
+
+  <bb 7> :
+<L4>:
+  Fls_pJobDataSrcPtr.70_7 = Fls_pJobDataSrcPtr;
+  TransferRetVal_19 = Fls_IPW_SectorRead (SectorOffset_16(D), Length_17(D), 0B, Fls_pJobDataSrcPtr.70_7);
+  if (TransferRetVal_19 == 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  if (TransferRetVal_19 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Det_ReportTransientFault (92, 0, 6, 4);
+
+  <bb 10> :
+  Fls_pJobDataSrcPtr.71_8 = Fls_pJobDataSrcPtr;
+  _9 = Fls_pJobDataSrcPtr.71_8 + Length_17(D);
+  Fls_pJobDataSrcPtr = _9;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+<L8>:
+
+  <bb 12> :
+  # TransferRetVal_10 = PHI <TransferRetVal_27(3), TransferRetVal_23(6), TransferRetVal_19(10), TransferRetVal_14(11)>
+  _29 = TransferRetVal_10;
+
+  <bb 13> :
+<L10>:
+  return _29;
+
+}
+
+
+
+;; Function Fls_DoJobDataTransfer (Fls_DoJobDataTransfer, funcdef_no=19, decl_uid=6227, cgraph_uid=20, symbol_order=37)
+
+Fls_DoJobDataTransfer (const Fls_LengthType MaxTransfer)
+{
+  Fls_AddressType u32SectorTransferLength;
+  Fls_AddressType SectorTransferOffset;
+  Fls_LLDReturnType TransferRetVal;
+  Fls_AddressType u32MaxTransferAddrEnd;
+  MemIf_JobResultType RetVal;
+  MemIf_JobResultType D.6596;
+  long unsigned int Fls_u32JobAddrIt.72_1;
+  long unsigned int Fls_u32JobAddrEnd.73_2;
+  long unsigned int Fls_u32JobAddrIt.74_3;
+  long unsigned int _4;
+  const struct Fls_ConfigType * Fls_pConfigPtr.75_5;
+  const Fls_AddressType[<unknown>] * _6;
+  long unsigned int Fls_u32JobSectorIt.76_7;
+  long unsigned int _8;
+  long unsigned int Fls_u32JobAddrIt.77_9;
+  long unsigned int Fls_u32JobSectorIt.78_10;
+  long unsigned int _11;
+  long unsigned int Fls_u32JobAddrIt.79_12;
+  long unsigned int Fls_u32JobAddrIt.80_13;
+  long unsigned int Fls_u32JobAddrEnd.81_14;
+  MemIf_JobResultType _36;
+
+  <bb 2> :
+  RetVal_19 = 2;
+  Fls_u32JobAddrIt.72_1 = Fls_u32JobAddrIt;
+  Fls_u32JobAddrEnd.73_2 = Fls_u32JobAddrEnd;
+  if (Fls_u32JobAddrIt.72_1 > Fls_u32JobAddrEnd.73_2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RetVal_35 = 0;
+  goto <bb 17>; [INV]
+
+  <bb 4> :
+  u32MaxTransferAddrEnd_23 = Fls_CalcMaxTransferAddrEnd (MaxTransfer_21(D));
+
+  <bb 5> :
+  SectorTransferOffset_25 = Fls_CalcSectorTransferOffset ();
+  u32SectorTransferLength_27 = Fls_CalcSectorTransferLength (u32MaxTransferAddrEnd_23);
+  Fls_u32JobAddrIt.74_3 = Fls_u32JobAddrIt;
+  _4 = u32SectorTransferLength_27 + Fls_u32JobAddrIt.74_3;
+  Fls_u32JobAddrIt = _4;
+  TransferRetVal_30 = Fls_ProcessJobDataTransfer (SectorTransferOffset_25, u32SectorTransferLength_27);
+  if (TransferRetVal_30 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  Fls_pConfigPtr.75_5 = Fls_pConfigPtr;
+  _6 = Fls_pConfigPtr.75_5->paSectorEndAddr;
+  Fls_u32JobSectorIt.76_7 ={v} Fls_u32JobSectorIt;
+  _8 = *_6[Fls_u32JobSectorIt.76_7];
+  Fls_u32JobAddrIt.77_9 = Fls_u32JobAddrIt;
+  if (_8 < Fls_u32JobAddrIt.77_9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Fls_u32JobSectorIt.78_10 ={v} Fls_u32JobSectorIt;
+  _11 = Fls_u32JobSectorIt.78_10 + 1;
+  Fls_u32JobSectorIt ={v} _11;
+
+  <bb 8> :
+  Fls_u32JobAddrIt.79_12 = Fls_u32JobAddrIt;
+  if (u32MaxTransferAddrEnd_23 >= Fls_u32JobAddrIt.79_12)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  if (TransferRetVal_30 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  if (TransferRetVal_30 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  RetVal_34 = 1;
+  goto <bb 17>; [INV]
+
+  <bb 12> :
+  if (TransferRetVal_30 == 2)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  RetVal_33 = 4;
+  goto <bb 17>; [INV]
+
+  <bb 14> :
+  Fls_u32JobAddrIt.80_13 = Fls_u32JobAddrIt;
+  Fls_u32JobAddrEnd.81_14 = Fls_u32JobAddrEnd;
+  if (Fls_u32JobAddrIt.80_13 > Fls_u32JobAddrEnd.81_14)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  if (TransferRetVal_30 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  RetVal_32 = 0;
+
+  <bb 17> :
+  # RetVal_15 = PHI <RetVal_35(3), RetVal_34(11), RetVal_33(13), RetVal_19(14), RetVal_19(15), RetVal_32(16)>
+  _36 = RetVal_15;
+
+  <bb 18> :
+<L21>:
+  return _36;
+
+}
+
+
+
+;; Function Fls_AccumulateCRC (Fls_AccumulateCRC, funcdef_no=20, decl_uid=6203, cgraph_uid=21, symbol_order=38)
+
+Fls_AccumulateCRC (uint32 InputData)
+{
+  long unsigned int Fls_u32AccCRCremainder.82_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int Fls_u32AccCRCremainder.83_5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int Fls_u32AccCRCremainder.84_9;
+  long unsigned int _10;
+  long unsigned int _11;
+
+  <bb 2> :
+  if (InputData_14(D) > 65535)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Fls_u32AccCRCremainder.82_1 = Fls_u32AccCRCremainder;
+  _2 = Fls_u32AccCRCremainder.82_1 << 16;
+  _3 = InputData_14(D) >> 16;
+  _4 = _2 | _3;
+  Fls_u32AccCRCremainder = _4;
+  Fls_UpdateCRCreminder (1);
+
+  <bb 4> :
+  if (InputData_14(D) > 255)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u32AccCRCremainder.83_5 = Fls_u32AccCRCremainder;
+  _6 = Fls_u32AccCRCremainder.83_5 << 16;
+  _7 = InputData_14(D) & 65535;
+  _8 = _6 | _7;
+  Fls_u32AccCRCremainder = _8;
+  Fls_UpdateCRCreminder (1);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Fls_u32AccCRCremainder.84_9 = Fls_u32AccCRCremainder;
+  _10 = Fls_u32AccCRCremainder.84_9 << 8;
+  _11 = InputData_14(D) | _10;
+  Fls_u32AccCRCremainder = _11;
+  Fls_UpdateCRCreminder (0);
+
+  <bb 7> :
+  return;
+
+}
+
+
+
+;; Function Fls_ResetCRC (Fls_ResetCRC, funcdef_no=21, decl_uid=6205, cgraph_uid=22, symbol_order=39)
+
+Fls_ResetCRC ()
+{
+  <bb 2> :
+  Fls_u32AccCRCremainder = 0;
+  return;
+
+}
+
+
+
+;; Function Fls_FinalizeCRC (Fls_FinalizeCRC, funcdef_no=22, decl_uid=6207, cgraph_uid=23, symbol_order=40)
+
+Fls_FinalizeCRC ()
+{
+  uint32 D.6603;
+  long unsigned int Fls_u32AccCRCremainder.85_1;
+  long unsigned int _2;
+  uint32 _6;
+
+  <bb 2> :
+  Fls_u32AccCRCremainder.85_1 = Fls_u32AccCRCremainder;
+  _2 = Fls_u32AccCRCremainder.85_1 << 16;
+  Fls_u32AccCRCremainder = _2;
+  Fls_UpdateCRCreminder (1);
+  _6 = Fls_u32AccCRCremainder;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+
+;; Function Fls_UpdateCRCreminder (Fls_UpdateCRCreminder, funcdef_no=23, decl_uid=6209, cgraph_uid=24, symbol_order=41)
+
+Fls_UpdateCRCreminder (Fls_CrcDataSizeType DataSize)
+{
+  uint32 LeadingOneInitial;
+  uint32 AccDataLoc;
+  uint32 LeadingOne;
+  uint32 CrcPolynomSft;
+  long unsigned int _1;
+
+  <bb 2> :
+  if (DataSize_8(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  CrcPolynomSft_9 = 8917120;
+  LeadingOneInitial_10 = 8388608;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  CrcPolynomSft_11 = 2282782720;
+  LeadingOneInitial_12 = 2147483648;
+
+  <bb 5> :
+  # CrcPolynomSft_2 = PHI <CrcPolynomSft_9(3), CrcPolynomSft_11(4)>
+  # LeadingOneInitial_7 = PHI <LeadingOneInitial_10(3), LeadingOneInitial_12(4)>
+  AccDataLoc_14 = Fls_u32AccCRCremainder;
+  LeadingOne_15 = LeadingOneInitial_7;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  _1 = AccDataLoc_6 & LeadingOne_4;
+  if (_1 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  AccDataLoc_17 = AccDataLoc_6 ^ CrcPolynomSft_3;
+
+  <bb 8> :
+  # AccDataLoc_5 = PHI <AccDataLoc_6(6), AccDataLoc_17(7)>
+  CrcPolynomSft_18 = CrcPolynomSft_3 >> 1;
+  LeadingOne_19 = LeadingOne_4 >> 1;
+
+  <bb 9> :
+  # CrcPolynomSft_3 = PHI <CrcPolynomSft_2(5), CrcPolynomSft_18(8)>
+  # LeadingOne_4 = PHI <LeadingOne_15(5), LeadingOne_19(8)>
+  # AccDataLoc_6 = PHI <AccDataLoc_14(5), AccDataLoc_5(8)>
+  if (LeadingOne_4 > 65535)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  Fls_u32AccCRCremainder = AccDataLoc_6;
+  return;
+
+}
+
+
+
+;; Function Fls_CalcCfgCRC (Fls_CalcCfgCRC, funcdef_no=24, decl_uid=6211, cgraph_uid=25, symbol_order=42)
+
+Fls_CalcCfgCRC ()
+{
+  Fls_SectorIndexType SectorIndex;
+  Fls_CrcType D.6609;
+  const struct Fls_ConfigType * Fls_pConfigPtr.86_1;
+  <unnamed type> _2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.87_3;
+  long unsigned int _4;
+  const struct Fls_ConfigType * Fls_pConfigPtr.88_5;
+  long unsigned int _6;
+  const struct Fls_ConfigType * Fls_pConfigPtr.89_7;
+  long unsigned int _8;
+  const struct Fls_ConfigType * Fls_pConfigPtr.90_9;
+  long unsigned int _10;
+  const struct Fls_ConfigType * Fls_pConfigPtr.91_11;
+  long unsigned int _12;
+  const struct Fls_ConfigType * Fls_pConfigPtr.92_13;
+  const Fls_AddressType[<unknown>] * _14;
+  long unsigned int _15;
+  const struct Fls_ConfigType * Fls_pConfigPtr.93_16;
+  const Fls_LengthType[<unknown>] * _17;
+  long unsigned int _18;
+  const struct Fls_ConfigType * Fls_pConfigPtr.94_19;
+  const struct Fls_Flash_InternalSectorInfoType * const[<unknown>] * _20;
+  const struct Fls_Flash_InternalSectorInfoType * _21;
+  const struct Fls_ConfigType * Fls_pConfigPtr.95_22;
+  const struct Fls_Flash_InternalSectorInfoType * const[<unknown>] * _23;
+  const struct Fls_Flash_InternalSectorInfoType * _24;
+  long unsigned int _25;
+  const struct Fls_ConfigType * Fls_pConfigPtr.96_26;
+  const struct Fls_Flash_InternalSectorInfoType * const[<unknown>] * _27;
+  const struct Fls_Flash_InternalSectorInfoType * _28;
+  long unsigned int _29;
+  const struct Fls_ConfigType * Fls_pConfigPtr.97_30;
+  const uint8[<unknown>] * _31;
+  unsigned char _32;
+  long unsigned int _33;
+  const struct Fls_ConfigType * Fls_pConfigPtr.98_34;
+  long unsigned int _35;
+  long unsigned int _36;
+  Fls_CrcType _50;
+
+  <bb 2> :
+  Fls_ResetCRC ();
+  Fls_pConfigPtr.86_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.86_1->eDefaultMode;
+  Fls_AccumulateCRC (_2);
+  Fls_pConfigPtr.87_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.87_3->u32MaxReadFastMode;
+  Fls_AccumulateCRC (_4);
+  Fls_pConfigPtr.88_5 = Fls_pConfigPtr;
+  _6 = Fls_pConfigPtr.88_5->u32MaxReadNormalMode;
+  Fls_AccumulateCRC (_6);
+  Fls_pConfigPtr.89_7 = Fls_pConfigPtr;
+  _8 = Fls_pConfigPtr.89_7->u32MaxWriteFastMode;
+  Fls_AccumulateCRC (_8);
+  Fls_pConfigPtr.90_9 = Fls_pConfigPtr;
+  _10 = Fls_pConfigPtr.90_9->u32MaxWriteNormalMode;
+  Fls_AccumulateCRC (_10);
+  Fls_pConfigPtr.91_11 = Fls_pConfigPtr;
+  _12 = Fls_pConfigPtr.91_11->u32SectorCount;
+  Fls_AccumulateCRC (_12);
+  SectorIndex_48 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.92_13 = Fls_pConfigPtr;
+  _14 = Fls_pConfigPtr.92_13->paSectorEndAddr;
+  _15 = *_14[SectorIndex_37];
+  Fls_AccumulateCRC (_15);
+  Fls_pConfigPtr.93_16 = Fls_pConfigPtr;
+  _17 = Fls_pConfigPtr.93_16->paSectorSize;
+  _18 = *_17[SectorIndex_37];
+  Fls_AccumulateCRC (_18);
+  Fls_pConfigPtr.94_19 = Fls_pConfigPtr;
+  _20 = Fls_pConfigPtr.94_19->pSectorList;
+  _21 = *_20[SectorIndex_37];
+  if (_21 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.95_22 = Fls_pConfigPtr;
+  _23 = Fls_pConfigPtr.95_22->pSectorList;
+  _24 = *_23[SectorIndex_37];
+  _25 = _24->u32SectorId;
+  Fls_AccumulateCRC (_25);
+  Fls_pConfigPtr.96_26 = Fls_pConfigPtr;
+  _27 = Fls_pConfigPtr.96_26->pSectorList;
+  _28 = *_27[SectorIndex_37];
+  _29 = _28->pSectorStartAddressPtr;
+  Fls_AccumulateCRC (_29);
+
+  <bb 5> :
+  Fls_pConfigPtr.97_30 = Fls_pConfigPtr;
+  _31 = Fls_pConfigPtr.97_30->paSectorFlags;
+  _32 = *_31[SectorIndex_37];
+  _33 = (long unsigned int) _32;
+  Fls_AccumulateCRC (_33);
+  SectorIndex_56 = SectorIndex_37 + 1;
+
+  <bb 6> :
+  # SectorIndex_37 = PHI <SectorIndex_48(2), SectorIndex_56(5)>
+  Fls_pConfigPtr.98_34 = Fls_pConfigPtr;
+  _35 = Fls_pConfigPtr.98_34->u32SectorCount;
+  if (SectorIndex_37 < _35)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _36 = Fls_FinalizeCRC ();
+  _50 = (Fls_CrcType) _36;
+
+  <bb 8> :
+<L5>:
+  return _50;
+
+}
+
+
+
+;; Function Fls_ProcessRequestedJobs (Fls_ProcessRequestedJobs, funcdef_no=25, decl_uid=6229, cgraph_uid=26, symbol_order=43)
+
+Fls_ProcessRequestedJobs ()
+{
+  MemIf_JobResultType WorkResult;
+  MemIf_JobResultType D.6617;
+  <unnamed type> Fls_eJob.99_1;
+  <unnamed type> Fls_eJob.100_2;
+  long unsigned int Fls_u32MaxWrite.101_3;
+  long unsigned int Fls_u32MaxRead.102_4;
+  MemIf_JobResultType _14;
+
+  <bb 2> :
+  Fls_eJob.99_1 = Fls_eJob;
+  if (Fls_eJob.99_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  WorkResult_13 = Fls_DoJobErase ();
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  Fls_eJob.100_2 = Fls_eJob;
+  if (Fls_eJob.100_2 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u32MaxWrite.101_3 = Fls_u32MaxWrite;
+  WorkResult_11 = Fls_DoJobDataTransfer (Fls_u32MaxWrite.101_3);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Fls_u32MaxRead.102_4 = Fls_u32MaxRead;
+  WorkResult_9 = Fls_DoJobDataTransfer (Fls_u32MaxRead.102_4);
+
+  <bb 7> :
+  # WorkResult_5 = PHI <WorkResult_13(3), WorkResult_11(5), WorkResult_9(6)>
+  _14 = WorkResult_5;
+
+  <bb 8> :
+<L6>:
+  return _14;
+
+}
+
+
+
+;; Function Fls_Init (Fls_Init, funcdef_no=26, decl_uid=6044, cgraph_uid=27, symbol_order=44)
+
+Fls_Init (const struct Fls_ConfigType * ConfigPtr)
+{
+  <unnamed type> Fls_eJobResult.103_1;
+  const struct Fls_ConfigType * Fls_pConfigPtr.104_2;
+  short unsigned int _3;
+  short unsigned int _4;
+  const struct Fls_ConfigType * Fls_pConfigPtr.105_5;
+  <unnamed type> _6;
+  const struct Fls_ConfigType * Fls_pConfigPtr.106_7;
+  long unsigned int _8;
+  const struct Fls_ConfigType * Fls_pConfigPtr.107_9;
+  long unsigned int _10;
+  const struct Fls_ConfigType * Fls_pConfigPtr.108_11;
+  long unsigned int _12;
+  const struct Fls_ConfigType * Fls_pConfigPtr.109_13;
+  long unsigned int _14;
+  <unnamed type> _15;
+  long unsigned int Fls_ACWriteRomStart.110_16;
+  unsigned char _17;
+  long unsigned int Fls_ACEraseRomStart.111_18;
+  unsigned char _19;
+
+  <bb 2> :
+  if (ConfigPtr_22(D) == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportError (92, 0, 0, 1);
+  goto <bb 14>; [INV]
+
+  <bb 4> :
+  Fls_eJobResult.103_1 = Fls_eJobResult;
+  if (Fls_eJobResult.103_1 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportError (92, 0, 0, 6);
+  goto <bb 14>; [INV]
+
+  <bb 6> :
+  Fls_pConfigPtr = ConfigPtr_22(D);
+  Fls_pConfigPtr.104_2 = Fls_pConfigPtr;
+  _3 = Fls_pConfigPtr.104_2->u16ConfigCrc;
+  _4 = Fls_CalcCfgCRC ();
+  if (_3 != _4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Det_ReportError (92, 0, 0, 1);
+  Fls_pConfigPtr = 0B;
+  Fls_eJobResult = 1;
+  goto <bb 14>; [INV]
+
+  <bb 8> :
+  Fls_pConfigPtr.105_5 = Fls_pConfigPtr;
+  _6 = Fls_pConfigPtr.105_5->eDefaultMode;
+  if (_6 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Fls_pConfigPtr.106_7 = Fls_pConfigPtr;
+  _8 = Fls_pConfigPtr.106_7->u32MaxReadNormalMode;
+  Fls_u32MaxRead = _8;
+  Fls_pConfigPtr.107_9 = Fls_pConfigPtr;
+  _10 = Fls_pConfigPtr.107_9->u32MaxWriteNormalMode;
+  Fls_u32MaxWrite = _10;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  Fls_pConfigPtr.108_11 = Fls_pConfigPtr;
+  _12 = Fls_pConfigPtr.108_11->u32MaxReadFastMode;
+  Fls_u32MaxRead = _12;
+  Fls_pConfigPtr.109_13 = Fls_pConfigPtr;
+  _14 = Fls_pConfigPtr.109_13->u32MaxWriteFastMode;
+  Fls_u32MaxWrite = _14;
+
+  <bb 11> :
+  Fls_IPW_Init ();
+  _15 = Fls_LLDGetJobResult ();
+  if (_15 == 1)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Fls_eJobResult = 1;
+  Fls_pConfigPtr = 0B;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  Fls_eJobResult = 0;
+  Fls_ACWriteRomStart.110_16 = (long unsigned int) &Fls_ACWriteRomStart;
+  _17 = Fls_IPW_GetBlockNumberFromAddress (Fls_ACWriteRomStart.110_16);
+  FLs_u8blockAcWrite = _17;
+  Fls_ACEraseRomStart.111_18 = (long unsigned int) &Fls_ACEraseRomStart;
+  _19 = Fls_IPW_GetBlockNumberFromAddress (Fls_ACEraseRomStart.111_18);
+  FLs_u8blockAcErase = _19;
+
+  <bb 14> :
+  return;
+
+}
+
+
+
+;; Function Fls_Erase (Fls_Erase, funcdef_no=27, decl_uid=6051, cgraph_uid=28, symbol_order=45)
+
+Fls_Erase (Fls_AddressType TargetAddress, Fls_LengthType Length)
+{
+  Fls_SectorIndexType TmpJobSectorEnd;
+  Fls_SectorIndexType TmpJobSectorIt;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6647;
+  const struct Fls_ConfigType * Fls_pConfigPtr.112_1;
+  _Bool _2;
+  _Bool _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  _Bool _6;
+  _Bool _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  <unnamed type> Fls_eJobResult.113_10;
+  long unsigned int _11;
+  long unsigned int _12;
+  Std_ReturnType _44;
+
+  <bb 2> :
+  RetVal_16 = 0;
+  Fls_pConfigPtr.112_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.112_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportError (92, 0, 1, 5);
+  RetVal_43 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+  _2 = Fls_IsAddrSectorStartAligned (TargetAddress_18(D));
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportError (92, 0, 1, 2);
+  RetVal_41 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+  if (Length_20(D) == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _4 = TargetAddress_18(D) + Length_20(D);
+  _5 = _4 + 4294967295;
+  _6 = Fls_IsAddrSectorEndAligned (_5);
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Det_ReportError (92, 0, 1, 3);
+  RetVal_39 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+  TmpJobSectorIt_23 = Fls_GetSectorIndexByAddr (TargetAddress_18(D));
+  _8 = TargetAddress_18(D) + Length_20(D);
+  _9 = _8 + 4294967295;
+  TmpJobSectorEnd_25 = Fls_GetSectorIndexByAddr (_9);
+  SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_10 ();
+  Fls_eJobResult.113_10 = Fls_eJobResult;
+  if (Fls_eJobResult.113_10 == 2)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  Det_ReportError (92, 0, 1, 6);
+  RetVal_36 = 1;
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10 ();
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  Fls_u32JobSectorIt ={v} TmpJobSectorIt_23;
+  Fls_u32JobSectorEnd = TmpJobSectorEnd_25;
+  Fls_u32JobAddrIt = TargetAddress_18(D);
+  _11 = TargetAddress_18(D) + Length_20(D);
+  _12 = _11 + 4294967295;
+  Fls_u32JobAddrEnd = _12;
+  Fls_eJob = 0;
+  Fls_u8JobStart = 1;
+  Fls_eJobResult = 2;
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_10 ();
+
+  <bb 12> :
+  # RetVal_13 = PHI <RetVal_43(3), RetVal_41(5), RetVal_39(8), RetVal_36(10), RetVal_16(11)>
+  _44 = RetVal_13;
+
+  <bb 13> :
+<L13>:
+  return _44;
+
+}
+
+
+
+;; Function Fls_Write (Fls_Write, funcdef_no=28, decl_uid=6048, cgraph_uid=29, symbol_order=46)
+
+Fls_Write (Fls_AddressType TargetAddress, const uint8 * SourceAddressPtr, Fls_LengthType Length)
+{
+  Fls_AddressType TmpJobAddrEnd;
+  Fls_SectorIndexType TmpJobSectorIt;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6665;
+  const struct Fls_ConfigType * Fls_pConfigPtr.114_1;
+  _Bool _2;
+  _Bool _3;
+  long unsigned int _4;
+  _Bool _5;
+  _Bool _6;
+  long unsigned int _7;
+  <unnamed type> Fls_eJobResult.115_8;
+  long unsigned int _9;
+  Std_ReturnType _45;
+
+  <bb 2> :
+  RetVal_13 = 0;
+  Fls_pConfigPtr.114_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.114_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportError (92, 0, 2, 5);
+  RetVal_44 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 4> :
+  _2 = Fls_IsAddrPageStartAligned (TargetAddress_15(D));
+  _3 = ~_2;
+  if (_3 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Det_ReportError (92, 0, 2, 2);
+  RetVal_42 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 6> :
+  if (Length_17(D) == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _4 = TargetAddress_15(D) + Length_17(D);
+  _5 = Fls_IsAddrPageEndAligned (_4);
+  _6 = ~_5;
+  if (_6 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Det_ReportError (92, 0, 2, 3);
+  RetVal_40 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 9> :
+  if (SourceAddressPtr_19(D) == 0B)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  Det_ReportError (92, 0, 2, 4);
+  RetVal_38 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 11> :
+  TmpJobSectorIt_21 = Fls_GetSectorIndexByAddr (TargetAddress_15(D));
+  _7 = TargetAddress_15(D) + Length_17(D);
+  TmpJobAddrEnd_22 = _7 + 4294967295;
+  SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_11 ();
+  Fls_eJobResult.115_8 = Fls_eJobResult;
+  if (Fls_eJobResult.115_8 == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Det_ReportError (92, 0, 2, 6);
+  RetVal_35 = 1;
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11 ();
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  Fls_u32JobSectorIt ={v} TmpJobSectorIt_21;
+  _9 = Fls_GetSectorIndexByAddr (TmpJobAddrEnd_22);
+  Fls_u32JobSectorEnd = _9;
+  Fls_u32JobAddrEnd = TmpJobAddrEnd_22;
+  Fls_u32JobAddrIt = TargetAddress_15(D);
+  Fls_pJobDataSrcPtr = SourceAddressPtr_19(D);
+  Fls_eJob = 1;
+  Fls_u8JobStart = 1;
+  Fls_eJobResult = 2;
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_11 ();
+
+  <bb 14> :
+  # RetVal_10 = PHI <RetVal_44(3), RetVal_42(5), RetVal_40(8), RetVal_38(10), RetVal_35(12), RetVal_13(13)>
+  _45 = RetVal_10;
+
+  <bb 15> :
+<L16>:
+  return _45;
+
+}
+
+
+
+;; Function Fls_GetStatus (Fls_GetStatus, funcdef_no=29, decl_uid=6053, cgraph_uid=30, symbol_order=47)
+
+Fls_GetStatus ()
+{
+  MemIf_StatusType RetVal;
+  MemIf_StatusType D.6673;
+  const struct Fls_ConfigType * Fls_pConfigPtr.116_1;
+  <unnamed type> Fls_eJobResult.117_2;
+  MemIf_StatusType _8;
+
+  <bb 2> :
+  Fls_pConfigPtr.116_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.116_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  RetVal_7 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  Fls_eJobResult.117_2 = Fls_eJobResult;
+  if (Fls_eJobResult.117_2 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  RetVal_6 = 2;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  RetVal_5 = 1;
+
+  <bb 7> :
+  # RetVal_3 = PHI <RetVal_7(3), RetVal_6(5), RetVal_5(6)>
+  _8 = RetVal_3;
+
+  <bb 8> :
+<L6>:
+  return _8;
+
+}
+
+
+
+;; Function Fls_GetJobResult (Fls_GetJobResult, funcdef_no=30, decl_uid=6055, cgraph_uid=31, symbol_order=48)
+
+Fls_GetJobResult ()
+{
+  MemIf_JobResultType RetVal;
+  MemIf_JobResultType D.6678;
+  const struct Fls_ConfigType * Fls_pConfigPtr.118_1;
+  MemIf_JobResultType _8;
+
+  <bb 2> :
+  Fls_pConfigPtr.118_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.118_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Det_ReportError (92, 0, 5, 5);
+  RetVal_7 = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  RetVal_5 = Fls_eJobResult;
+
+  <bb 5> :
+  # RetVal_2 = PHI <RetVal_7(3), RetVal_5(4)>
+  _8 = RetVal_2;
+
+  <bb 6> :
+<L3>:
+  return _8;
+
+}
+
+
+
+;; Function Fls_Read (Fls_Read, funcdef_no=31, decl_uid=6059, cgraph_uid=32, symbol_order=49)
+
+Fls_Read (Fls_AddressType SourceAddress, uint8 * TargetAddressPtr, Fls_LengthType Length)
+{
+  Fls_AddressType TmpJobAddrEnd;
+  Fls_SectorIndexType TmpJobSectorIt;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6685;
+  long unsigned int _1;
+  <unnamed type> Fls_eJobResult.119_2;
+  long unsigned int _3;
+  Std_ReturnType _33;
+
+  <bb 2> :
+  RetVal_8 = 0;
+  TmpJobSectorIt_9 = 0;
+  TmpJobAddrEnd_10 = 0;
+  RetVal_16 = Fls_CheckInputParamReadCompareJob (SourceAddress_12(D), TargetAddressPtr_13(D), Length_14(D), 7);
+  if (RetVal_16 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  TmpJobSectorIt_18 = Fls_GetSectorIndexByAddr (SourceAddress_12(D));
+  _1 = SourceAddress_12(D) + Length_14(D);
+  TmpJobAddrEnd_19 = _1 + 4294967295;
+  SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_12 ();
+  Fls_eJobResult.119_2 = Fls_eJobResult;
+  if (Fls_eJobResult.119_2 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Det_ReportError (92, 0, 7, 6);
+  RetVal_31 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u32JobSectorIt ={v} TmpJobSectorIt_18;
+  _3 = Fls_GetSectorIndexByAddr (TmpJobAddrEnd_19);
+  Fls_u32JobSectorEnd = _3;
+  Fls_u32JobAddrIt = SourceAddress_12(D);
+  Fls_u32JobAddrEnd = TmpJobAddrEnd_19;
+  Fls_pJobDataDestPtr = TargetAddressPtr_13(D);
+  Fls_eJob = 2;
+  Fls_u8JobStart = 1;
+  Fls_eJobResult = 2;
+
+  <bb 6> :
+  # RetVal_4 = PHI <RetVal_31(4), RetVal_16(5)>
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_12 ();
+
+  <bb 7> :
+  # RetVal_5 = PHI <RetVal_16(2), RetVal_4(6)>
+  _33 = RetVal_5;
+
+  <bb 8> :
+<L5>:
+  return _33;
+
+}
+
+
+
+;; Function Fls_Compare (Fls_Compare, funcdef_no=32, decl_uid=6063, cgraph_uid=33, symbol_order=50)
+
+Fls_Compare (Fls_AddressType SourceAddress, const uint8 * TargetAddressPtr, Fls_LengthType Length)
+{
+  Fls_AddressType TmpJobAddrEnd;
+  Fls_SectorIndexType TmpJobSectorIt;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6692;
+  long unsigned int _1;
+  <unnamed type> Fls_eJobResult.120_2;
+  long unsigned int _3;
+  Std_ReturnType _31;
+
+  <bb 2> :
+  RetVal_8 = 0;
+  RetVal_14 = Fls_CheckInputParamReadCompareJob (SourceAddress_10(D), TargetAddressPtr_11(D), Length_12(D), 8);
+  if (RetVal_14 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  TmpJobSectorIt_16 = Fls_GetSectorIndexByAddr (SourceAddress_10(D));
+  _1 = SourceAddress_10(D) + Length_12(D);
+  TmpJobAddrEnd_17 = _1 + 4294967295;
+  SchM_Enter_Fls_FLS_EXCLUSIVE_AREA_13 ();
+  Fls_eJobResult.120_2 = Fls_eJobResult;
+  if (Fls_eJobResult.120_2 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Det_ReportError (92, 0, 8, 6);
+  RetVal_29 = 1;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u32JobSectorIt ={v} TmpJobSectorIt_16;
+  _3 = Fls_GetSectorIndexByAddr (TmpJobAddrEnd_17);
+  Fls_u32JobSectorEnd = _3;
+  Fls_u32JobAddrIt = SourceAddress_10(D);
+  Fls_u32JobAddrEnd = TmpJobAddrEnd_17;
+  Fls_pJobDataSrcPtr = TargetAddressPtr_11(D);
+  Fls_eJob = 3;
+  Fls_u8JobStart = 1;
+  Fls_eJobResult = 2;
+
+  <bb 6> :
+  # RetVal_4 = PHI <RetVal_29(4), RetVal_14(5)>
+  SchM_Exit_Fls_FLS_EXCLUSIVE_AREA_13 ();
+
+  <bb 7> :
+  # RetVal_5 = PHI <RetVal_14(2), RetVal_4(6)>
+  _31 = RetVal_5;
+
+  <bb 8> :
+<L5>:
+  return _31;
+
+}
+
+
+
+;; Function Fls_MainFunction_CheckJobResult (Fls_MainFunction_CheckJobResult, funcdef_no=33, decl_uid=6235, cgraph_uid=34, symbol_order=51)
+
+Fls_MainFunction_CheckJobResult (MemIf_JobResultType WorkResult)
+{
+  const struct Fls_ConfigType * Fls_pConfigPtr.125_1;
+  void (*<T4b1>) (void) _2;
+  const struct Fls_ConfigType * Fls_pConfigPtr.126_3;
+  void (*<T4b1>) (void) _4;
+  const struct Fls_ConfigType * Fls_pConfigPtr.127_5;
+  void (*<T4b1>) (void) _6;
+  const struct Fls_ConfigType * Fls_pConfigPtr.128_7;
+  void (*<T4b1>) (void) _8;
+
+  <bb 2> :
+  Fls_eJobResult = WorkResult_11(D);
+  if (WorkResult_11(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Fls_pConfigPtr.125_1 = Fls_pConfigPtr;
+  _2 = Fls_pConfigPtr.125_1->jobEndNotificationPtr;
+  if (_2 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 4> :
+  Fls_pConfigPtr.126_3 = Fls_pConfigPtr;
+  _4 = Fls_pConfigPtr.126_3->jobEndNotificationPtr;
+  _4 ();
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  if (WorkResult_11(D) == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (WorkResult_11(D) == 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (WorkResult_11(D) == 4)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  Fls_pConfigPtr.127_5 = Fls_pConfigPtr;
+  _6 = Fls_pConfigPtr.127_5->jobErrorNotificationPtr;
+  if (_6 != 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Fls_pConfigPtr.128_7 = Fls_pConfigPtr;
+  _8 = Fls_pConfigPtr.128_7->jobErrorNotificationPtr;
+  _8 ();
+
+  <bb 10> :
+  return;
+
+}
+
+
+
+;; Function Fls_MainFunction (Fls_MainFunction, funcdef_no=34, decl_uid=6125, cgraph_uid=35, symbol_order=52)
+
+Fls_MainFunction ()
+{
+  MemIf_JobResultType WorkResult;
+  const struct Fls_ConfigType * Fls_pConfigPtr.121_1;
+  <unnamed type> Fls_eJobResult.122_2;
+  unsigned char Fls_u8JobStart.123_3;
+  <unnamed type> Fls_eLLDJob.124_4;
+
+  <bb 2> :
+  Fls_pConfigPtr.121_1 = Fls_pConfigPtr;
+  if (Fls_pConfigPtr.121_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  Fls_eJobResult.122_2 = Fls_eJobResult;
+  if (Fls_eJobResult.122_2 == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 4> :
+  WorkResult_11 = 0;
+  Fls_u8JobStart.123_3 = Fls_u8JobStart;
+  if (Fls_u8JobStart.123_3 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Fls_u8JobStart = 0;
+  Fls_LLDClrJobResult ();
+  Fls_IPW_AbortSuspended ();
+
+  <bb 6> :
+  Fls_eLLDJob.124_4 = Fls_eLLDJob;
+  if (Fls_eLLDJob.124_4 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Fls_IPW_LLDMainFunction ();
+
+  <bb 8> :
+  WorkResult_17 = Fls_LLDGetJobResult ();
+  if (WorkResult_17 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  WorkResult_19 = Fls_ProcessRequestedJobs ();
+
+  <bb 10> :
+  # WorkResult_5 = PHI <WorkResult_17(8), WorkResult_19(9)>
+  Fls_MainFunction_CheckJobResult (WorkResult_5);
+
+  <bb 11> :
+  return;
+
+}
+
+
+
+;; Function Fls_LLDGetJobResult (Fls_LLDGetJobResult, funcdef_no=35, decl_uid=6231, cgraph_uid=36, symbol_order=53)
+
+Fls_LLDGetJobResult ()
+{
+  MemIf_JobResultType D.6716;
+  MemIf_JobResultType _2;
+
+  <bb 2> :
+  _2 ={v} Fls_eLLDJobResult;
+
+  <bb 3> :
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function Fls_LLDClrJobResult (Fls_LLDClrJobResult, funcdef_no=36, decl_uid=6233, cgraph_uid=37, symbol_order=54)
+
+Fls_LLDClrJobResult ()
+{
+  <bb 2> :
+  Fls_eLLDJobResult ={v} 0;
+  Fls_eLLDJob = 0;
+  return;
+
+}
+
+

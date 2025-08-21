@@ -1,0 +1,305 @@
+Gpt_Ipw_DisableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <bb 2> :
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  _3 = pHwChannelConfig->channel;
+  Lpit_Gpt_Ip_DisableChInterrupt (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_Ipw_DeInit (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <bb 2> :
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  Lpit_Gpt_Ip_Deinit (_2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_Ipw_EnableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <bb 2> :
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  _3 = pHwChannelConfig->channel;
+  Lpit_Gpt_Ip_EnableChInterrupt (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_Ipw_StopTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <bb 2> :
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  _3 = pHwChannelConfig->channel;
+  Lpit_Gpt_Ip_StopTimer (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_Ipw_GetTimeElapsed (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, struct Gpt_HwChannelInfoType * pReturnHwChannelInfo)
+{
+  uint32 returnValue;
+  Gpt_ValueType D.6223;
+
+  <bb 2> :
+  returnValue = 0;
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  returnValue = Gpt_Ipw_LpitGetTimeElapsed (pHwChannelConfig, pReturnHwChannelInfo);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  D.6223 = returnValue;
+
+  <bb 6> :
+<L3>:
+  return D.6223;
+
+}
+
+
+Gpt_Ipw_StartTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, Gpt_ValueType uValue)
+{
+  Std_ReturnType returnValue;
+  Std_ReturnType D.6221;
+
+  <bb 2> :
+  returnValue = 1;
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  _3 = pHwChannelConfig->channel;
+  Lpit_Gpt_Ip_StartTimer (_2, _3, uValue);
+  returnValue = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  D.6221 = returnValue;
+
+  <bb 6> :
+<L3>:
+  return D.6221;
+
+}
+
+
+Gpt_Ipw_Init (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <bb 2> :
+  _1 = pHwChannelConfig->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig->instance;
+  _3 = pHwChannelConfig->Gpt_Ipw_ChannelConfig.Lpit_Gpt_Ip_ChannelConfig;
+  Lpit_Gpt_Ip_InitChannel (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+Gpt_Ipw_InitInstances (const struct Gpt_ConfigType * configPtr)
+{
+  uint8 index;
+
+  <bb 2> :
+  index = 0;
+  index = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = configPtr->Gpt_Ipw_HwInstanceConfig;
+  _2 = (int) index;
+  _3 = *_1[_2].instanceType;
+  if (_3 == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  _4 = configPtr->Gpt_Ipw_HwInstanceConfig;
+  _5 = (int) index;
+  _6 = *_4[_5].instance;
+  _7 = configPtr->Gpt_Ipw_HwInstanceConfig;
+  _8 = (int) index;
+  _9 = *_7[_8].Gpt_Ipw_InstanceConfig.Lpit_Gpt_Ip_InstanceConfig;
+  Lpit_Gpt_Ip_Init (_6, _9);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  index.0_10 = index;
+  index = index.0_10 + 1;
+
+  <bb 7> :
+  _11 = configPtr->instanceCount;
+  if (index < _11)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+
+  <bb 9> :
+<L6>:
+  return;
+
+}
+
+
+Gpt_Ipw_LpitGetTimeElapsed (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, struct Gpt_HwChannelInfoType * pReturnHwChannelInfo)
+{
+  uint32 tempValue;
+  uint32 returnValue;
+  Gpt_ValueType D.6228;
+
+  <bb 2> :
+  returnValue = 0;
+  tempValue = 0;
+  _1 = pHwChannelConfig->instance;
+  _2 = pHwChannelConfig->channel;
+  _3 = Lpit_Gpt_Ip_GetTimerValue (_1, _2);
+  pReturnHwChannelInfo->uTargetTime = _3;
+  _4 = pReturnHwChannelInfo->uTargetTime;
+  _5 = pHwChannelConfig->instance;
+  _6 = pHwChannelConfig->channel;
+  _7 = Lpit_Gpt_Ip_GetCurrentTimervalue (_5, _6);
+  returnValue = _4 - _7;
+  _8 = pHwChannelConfig->instance;
+  _9 = pHwChannelConfig->channel;
+  _10 = (int) _9;
+  _11 = 1 << _10;
+  _12 = (unsigned char) _11;
+  _13 = Lpit_Gpt_Ip_GetInterruptFlagTimerChannels (_8, _12);
+  _14 = pHwChannelConfig->channel;
+  _15 = (int) _14;
+  tempValue = _13 >> _15;
+  if (tempValue != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  pReturnHwChannelInfo->bChannelRollover = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  pReturnHwChannelInfo->bChannelRollover = 0;
+
+  <bb 5> :
+  D.6228 = returnValue;
+
+  <bb 6> :
+<L3>:
+  return D.6228;
+
+}
+
+

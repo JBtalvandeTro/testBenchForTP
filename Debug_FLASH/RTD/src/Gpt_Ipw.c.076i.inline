@@ -1,0 +1,594 @@
+IPA summary for Gpt_Ipw_DisableInterrupt/8 is missing.
+IPA summary for Gpt_Ipw_DeInit/7 is missing.
+IPA summary for Gpt_Ipw_EnableInterrupt/6 is missing.
+IPA summary for Gpt_Ipw_StopTimer/5 is missing.
+IPA summary for Gpt_Ipw_GetTimeElapsed/4 is missing.
+IPA summary for Gpt_Ipw_StartTimer/3 is missing.
+IPA summary for Gpt_Ipw_Init/2 is missing.
+IPA summary for Gpt_Ipw_InitInstances/1 is missing.
+IPA summary for Gpt_Ipw_LpitGetTimeElapsed/0 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        1 calls, 1.000000 freq, 0 count
+function body not available                       :       10 calls, 10.000000 freq, 0 count
+IPA summary for Gpt_Ipw_DisableInterrupt/8 is missing.
+IPA summary for Gpt_Ipw_DeInit/7 is missing.
+IPA summary for Gpt_Ipw_EnableInterrupt/6 is missing.
+IPA summary for Gpt_Ipw_StopTimer/5 is missing.
+IPA summary for Gpt_Ipw_GetTimeElapsed/4 is missing.
+IPA summary for Gpt_Ipw_StartTimer/3 is missing.
+IPA summary for Gpt_Ipw_Init/2 is missing.
+IPA summary for Gpt_Ipw_InitInstances/1 is missing.
+IPA summary for Gpt_Ipw_LpitGetTimeElapsed/0 is missing.
+Symbol table:
+
+Lpit_Gpt_Ip_DisableChInterrupt/18 (Lpit_Gpt_Ip_DisableChInterrupt) @06814700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_DisableInterrupt/8 
+  Calls: 
+Lpit_Gpt_Ip_Deinit/17 (Lpit_Gpt_Ip_Deinit) @06814540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_DeInit/7 
+  Calls: 
+Lpit_Gpt_Ip_EnableChInterrupt/16 (Lpit_Gpt_Ip_EnableChInterrupt) @06814380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_EnableInterrupt/6 
+  Calls: 
+Lpit_Gpt_Ip_StopTimer/15 (Lpit_Gpt_Ip_StopTimer) @068141c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_StopTimer/5 
+  Calls: 
+Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 (Lpit_Gpt_Ip_GetInterruptFlagTimerChannels) @06814000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetCurrentTimervalue/13 (Lpit_Gpt_Ip_GetCurrentTimervalue) @0680c2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_GetTimerValue/12 (Lpit_Gpt_Ip_GetTimerValue) @0680c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_LpitGetTimeElapsed/0 
+  Calls: 
+Lpit_Gpt_Ip_StartTimer/11 (Lpit_Gpt_Ip_StartTimer) @0680cd20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_StartTimer/3 
+  Calls: 
+Lpit_Gpt_Ip_InitChannel/10 (Lpit_Gpt_Ip_InitChannel) @0680cb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_Init/2 
+  Calls: 
+Lpit_Gpt_Ip_Init/9 (Lpit_Gpt_Ip_Init) @0680c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Gpt_Ipw_InitInstances/1 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/8 (Gpt_Ipw_DisableInterrupt) @0680c460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_DisableChInterrupt/18 
+Gpt_Ipw_DeInit/7 (Gpt_Ipw_DeInit) @0680c1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Deinit/17 
+Gpt_Ipw_EnableInterrupt/6 (Gpt_Ipw_EnableInterrupt) @06803e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_EnableChInterrupt/16 
+Gpt_Ipw_StopTimer/5 (Gpt_Ipw_StopTimer) @068038c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StopTimer/15 
+Gpt_Ipw_GetTimeElapsed/4 (Gpt_Ipw_GetTimeElapsed) @06803380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Gpt_Ipw_LpitGetTimeElapsed/0 
+Gpt_Ipw_StartTimer/3 (Gpt_Ipw_StartTimer) @06803d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_StartTimer/11 
+Gpt_Ipw_Init/2 (Gpt_Ipw_Init) @06803a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_InitChannel/10 
+Gpt_Ipw_InitInstances/1 (Gpt_Ipw_InitInstances) @068037e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpit_Gpt_Ip_Init/9 
+Gpt_Ipw_LpitGetTimeElapsed/0 (Gpt_Ipw_LpitGetTimeElapsed) @06803540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Gpt_Ipw_GetTimeElapsed/4 
+  Calls: Lpit_Gpt_Ip_GetInterruptFlagTimerChannels/14 Lpit_Gpt_Ip_GetCurrentTimervalue/13 Lpit_Gpt_Ip_GetTimerValue/12 
+
+;; Function Gpt_Ipw_LpitGetTimeElapsed (Gpt_Ipw_LpitGetTimeElapsed, funcdef_no=0, decl_uid=6152, cgraph_uid=1, symbol_order=0)
+
+Gpt_Ipw_LpitGetTimeElapsed (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, struct Gpt_HwChannelInfoType * pReturnHwChannelInfo)
+{
+  uint32 tempValue;
+  uint32 returnValue;
+  Gpt_ValueType D.6228;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int _7;
+  unsigned char _8;
+  unsigned char _9;
+  int _10;
+  unsigned int _11;
+  unsigned char _12;
+  long unsigned int _13;
+  unsigned char _14;
+  int _15;
+  Gpt_ValueType _30;
+
+  <bb 2> :
+  returnValue_17 = 0;
+  tempValue_18 = 0;
+  _1 = pHwChannelConfig_20(D)->instance;
+  _2 = pHwChannelConfig_20(D)->channel;
+  _3 = Lpit_Gpt_Ip_GetTimerValue (_1, _2);
+  pReturnHwChannelInfo_22(D)->uTargetTime = _3;
+  _4 = pReturnHwChannelInfo_22(D)->uTargetTime;
+  _5 = pHwChannelConfig_20(D)->instance;
+  _6 = pHwChannelConfig_20(D)->channel;
+  _7 = Lpit_Gpt_Ip_GetCurrentTimervalue (_5, _6);
+  returnValue_25 = _4 - _7;
+  _8 = pHwChannelConfig_20(D)->instance;
+  _9 = pHwChannelConfig_20(D)->channel;
+  _10 = (int) _9;
+  _11 = 1 << _10;
+  _12 = (unsigned char) _11;
+  _13 = Lpit_Gpt_Ip_GetInterruptFlagTimerChannels (_8, _12);
+  _14 = pHwChannelConfig_20(D)->channel;
+  _15 = (int) _14;
+  tempValue_27 = _13 >> _15;
+  if (tempValue_27 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  pReturnHwChannelInfo_22(D)->bChannelRollover = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  pReturnHwChannelInfo_22(D)->bChannelRollover = 0;
+
+  <bb 5> :
+  _30 = returnValue_25;
+
+  <bb 6> :
+<L3>:
+  return _30;
+
+}
+
+
+
+;; Function Gpt_Ipw_InitInstances (Gpt_Ipw_InitInstances, funcdef_no=1, decl_uid=6135, cgraph_uid=2, symbol_order=1)
+
+Gpt_Ipw_InitInstances (const struct Gpt_ConfigType * configPtr)
+{
+  uint8 index;
+  struct Gpt_Ipw_HwInstanceConfigType[<unknown>] * _1;
+  int _2;
+  <unnamed type> _3;
+  struct Gpt_Ipw_HwInstanceConfigType[<unknown>] * _4;
+  int _5;
+  unsigned char _6;
+  struct Gpt_Ipw_HwInstanceConfigType[<unknown>] * _7;
+  int _8;
+  const struct Lpit_Gpt_Ip_InstanceConfigType * _9;
+  unsigned char index.0_10;
+  unsigned char _11;
+
+  <bb 2> :
+  index_15 = 0;
+  index_16 = 0;
+  goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = configPtr_18(D)->Gpt_Ipw_HwInstanceConfig;
+  _2 = (int) index_12;
+  _3 = *_1[_2].instanceType;
+  if (_3 == 3)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  _4 = configPtr_18(D)->Gpt_Ipw_HwInstanceConfig;
+  _5 = (int) index_12;
+  _6 = *_4[_5].instance;
+  _7 = configPtr_18(D)->Gpt_Ipw_HwInstanceConfig;
+  _8 = (int) index_12;
+  _9 = *_7[_8].Gpt_Ipw_InstanceConfig.Lpit_Gpt_Ip_InstanceConfig;
+  Lpit_Gpt_Ip_Init (_6, _9);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  index.0_10 = index_12;
+  index_20 = index.0_10 + 1;
+
+  <bb 7> :
+  # index_12 = PHI <index_16(2), index_20(6)>
+  _11 = configPtr_18(D)->instanceCount;
+  if (index_12 < _11)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+
+  <bb 9> :
+<L6>:
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_Init (Gpt_Ipw_Init, funcdef_no=2, decl_uid=6133, cgraph_uid=3, symbol_order=2)
+
+Gpt_Ipw_Init (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Lpit_Gpt_Ip_ChannelConfigType * _3;
+
+  <bb 2> :
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->Gpt_Ipw_ChannelConfig.Lpit_Gpt_Ip_ChannelConfig;
+  Lpit_Gpt_Ip_InitChannel (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_StartTimer (Gpt_Ipw_StartTimer, funcdef_no=3, decl_uid=6141, cgraph_uid=4, symbol_order=3)
+
+Gpt_Ipw_StartTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, Gpt_ValueType uValue)
+{
+  Std_ReturnType returnValue;
+  Std_ReturnType D.6221;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+  Std_ReturnType _12;
+
+  <bb 2> :
+  returnValue_6 = 1;
+  _1 = pHwChannelConfig_8(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_8(D)->instance;
+  _3 = pHwChannelConfig_8(D)->channel;
+  Lpit_Gpt_Ip_StartTimer (_2, _3, uValue_9(D));
+  returnValue_11 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # returnValue_4 = PHI <returnValue_11(3), returnValue_6(4)>
+  _12 = returnValue_4;
+
+  <bb 6> :
+<L3>:
+  return _12;
+
+}
+
+
+
+;; Function Gpt_Ipw_GetTimeElapsed (Gpt_Ipw_GetTimeElapsed, funcdef_no=4, decl_uid=6138, cgraph_uid=5, symbol_order=4)
+
+Gpt_Ipw_GetTimeElapsed (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, struct Gpt_HwChannelInfoType * pReturnHwChannelInfo)
+{
+  uint32 returnValue;
+  Gpt_ValueType D.6223;
+  <unnamed type> _1;
+  Gpt_ValueType _10;
+
+  <bb 2> :
+  returnValue_4 = 0;
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  returnValue_9 = Gpt_Ipw_LpitGetTimeElapsed (pHwChannelConfig_6(D), pReturnHwChannelInfo_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  # returnValue_2 = PHI <returnValue_9(3), returnValue_4(4)>
+  _10 = returnValue_2;
+
+  <bb 6> :
+<L3>:
+  return _10;
+
+}
+
+
+
+;; Function Gpt_Ipw_StopTimer (Gpt_Ipw_StopTimer, funcdef_no=5, decl_uid=6143, cgraph_uid=6, symbol_order=5)
+
+Gpt_Ipw_StopTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Lpit_Gpt_Ip_StopTimer (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_EnableInterrupt (Gpt_Ipw_EnableInterrupt, funcdef_no=6, decl_uid=6145, cgraph_uid=7, symbol_order=6)
+
+Gpt_Ipw_EnableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Lpit_Gpt_Ip_EnableChInterrupt (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_DeInit (Gpt_Ipw_DeInit, funcdef_no=7, decl_uid=6147, cgraph_uid=8, symbol_order=7)
+
+Gpt_Ipw_DeInit (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+
+  <bb 2> :
+  _1 = pHwChannelConfig_5(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_5(D)->instance;
+  Lpit_Gpt_Ip_Deinit (_2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_DisableInterrupt (Gpt_Ipw_DisableInterrupt, funcdef_no=8, decl_uid=6149, cgraph_uid=9, symbol_order=8)
+
+Gpt_Ipw_DisableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> :
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Lpit_Gpt_Ip_DisableChInterrupt (_2, _3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+
+  <bb 6> :
+<L3>:
+  return;
+
+}
+
+

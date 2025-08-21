@@ -1,0 +1,23 @@
+Symbol table:
+
+Trgmux_Ip_xTrgmuxInitPB_INIT/2 (Trgmux_Ip_xTrgmuxInitPB_INIT) @067d84c8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Trgmux_Ip_LogicTrigger0ConfigPB_INIT/0 (addr)Trgmux_Ip_LogicTrigger1ConfigPB_INIT/1 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Trgmux_Ip_LogicTrigger1ConfigPB_INIT/1 (Trgmux_Ip_LogicTrigger1ConfigPB_INIT) @067d8480
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Trgmux_Ip_xTrgmuxInitPB_INIT/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Trgmux_Ip_LogicTrigger0ConfigPB_INIT/0 (Trgmux_Ip_LogicTrigger0ConfigPB_INIT) @067d83a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Trgmux_Ip_xTrgmuxInitPB_INIT/2 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

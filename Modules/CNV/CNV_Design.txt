@@ -1,0 +1,28 @@
+PS : this design was based on these documents with the following versions : 
+	- 50147TRS001-01  
+	- 50147ICD001-03
+	- 50147SWAD001-01
+	
+The CNV module manage the Functional of the POWER Core ( COMETi) state and msgs and faults
+
+Input Data and Services : 
+
+	- the CMD from the PTCU(MTU) (BUCK, BOOST, STOP)
+	- the EMER_STOP DSI
+	- the DATA from the COMETi units (Temp, Error, Measures, Control Info)
+	- FSM current Mode
+	
+Output Data and Services :
+
+	- Flags on the States of COMETi units
+	- Sending CMD to the COMETi units 
+
+Dependencies : 
+	- MCAL :
+	
+	- Middleware :
+	
+	- App Layer :
+	
+
+Based on the SWAD the CNV management should be done every 1ms to smooth the load on the CAN internal.

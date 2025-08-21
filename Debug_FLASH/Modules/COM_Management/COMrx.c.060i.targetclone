@@ -1,0 +1,765 @@
+com_HandleMaintenanceParameterRequest (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t reqType;
+  _Bool _1;
+  _Bool _2;
+  unsigned char reqType.7_3;
+  unsigned int _4;
+
+  <bb 2> :
+  reqType = 0;
+  _1 = PAR_paramReq.processed;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  CBU_GetMaintenanceParameterRequest (&currentFrame.buffer, &reqType, &COM_paramReq.index, &COM_paramReq.value);
+  reqType.7_3 = reqType;
+  _4 = (unsigned int) reqType.7_3;
+  switch (_4) <default: <L4> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 4> :
+<L1>:
+  COM_paramReq.readRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+<L2>:
+  COM_paramReq.changeRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_paramReq.saveRequest = 1;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_paramReq.readRequest = 0;
+  COM_paramReq.changeRequest = 0;
+  COM_paramReq.saveRequest = 0;
+
+  <bb 8> :
+  reqType ={v} {CLOBBER};
+  return;
+
+}
+
+
+com_HandleMaintenanceEquipmentTestRequest (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t reqType;
+  _Bool _1;
+  _Bool _2;
+  unsigned char reqType.6_3;
+  unsigned int _4;
+
+  <bb 2> :
+  reqType = 0;
+  _1 = DBG_Flags.proccesingFlags.processed;
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  CBU_GetMaintenanceEquipmentTestRequest (&currentFrame.buffer, &reqType, &COM_debugTestReq.muxAddress, &COM_debugTestReq.measFormat, &COM_debugTestReq.relaySwitchCmd, &COM_debugTestReq.relaySwitchId, &COM_debugTestReq.discreteIoCmd, &COM_debugTestReq.discreteIoId, &COM_debugTestReq.ledCmd, &COM_debugTestReq.ledId, &COM_debugTestReq.ledColor, &COM_debugTestReq.ledBlinkFreq);
+  reqType.6_3 = reqType;
+  _4 = (unsigned int) reqType.6_3;
+  switch (_4) <default: <L6> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV], case 5: <L5> [INV]>
+
+  <bb 4> :
+<L1>:
+  COM_debugTestReq.relaySwitchTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  COM_debugTestReq.hvMeasuresTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_debugTestReq.lvMeasuresTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_debugTestReq.discreteIosTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  COM_debugTestReq.ledsTestRequest = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+  COM_debugTestReq.relaySwitchTestRequest = 0;
+  COM_debugTestReq.hvMeasuresTestRequest = 0;
+  COM_debugTestReq.lvMeasuresTestRequest = 0;
+  COM_debugTestReq.discreteIosTestRequest = 0;
+  COM_debugTestReq.ledsTestRequest = 0;
+
+  <bb 10> :
+
+  <bb 11> :
+  reqType ={v} {CLOBBER};
+  return;
+
+}
+
+
+com_MaintenanceReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t frame;
+  long unsigned int _1;
+  <unnamed type> FSM_mode.5_2;
+  unsigned int _3;
+
+  <bb 2> :
+  _1 = currentFrame.frameId;
+  frame_8 = com_GetFrameIndex (2, _1);
+  FSM_mode.5_2 = FSM_mode;
+  if (FSM_mode.5_2 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _3 = (unsigned int) frame_8;
+  switch (_3) <default: <L3> [INV], case 2: <L1> [INV], case 3: <L2> [INV]>
+
+  <bb 4> :
+<L1>:
+  com_HandleMaintenanceEquipmentTestRequest (currentFrame);
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  com_HandleMaintenanceParameterRequest (currentFrame);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+
+  <bb 7> :
+
+  <bb 8> :
+  return;
+
+}
+
+
+com_InternalReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t order;
+  uint32_t currentLenghtFrame;
+  uint32_t lenghtFrame;
+  boolean frameReceivedUni;
+  uint8_t powercoreUnitIndex;
+  uint8_t powercoreUnitAddress;
+  uint8_t frame;
+  long unsigned int _1;
+  long unsigned int _2;
+  int _3;
+  int _4;
+
+  <bb 2> :
+  frameReceivedUni_7 = 0;
+  order_8 = 0;
+  _1 = currentFrame.frameId;
+  _2 = _1 & 4294967040;
+  frame_11 = com_GetFrameIndex (1, _2);
+  _3 = (int) frame_11;
+  lenghtFrame_12 = COM_framesInternal[_3].FrameLenght;
+  currentLenghtFrame_13 = currentFrame.frameLength;
+  COM_internalComLostCounter = 0;
+  powercoreUnitAddress_15 = 255;
+  powercoreUnitIndex_16 = 255;
+  if (currentLenghtFrame_13 == lenghtFrame_12)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 3> :
+  powercoreUnitAddress_17 = CBU_powerCoreAdd;
+  powercoreUnitIndex_19 = CNV_getPowercoreUnitsIndex (powercoreUnitAddress_17);
+  COM_flags.moduleFlags.faults.flags.unkownCOMETi = 0;
+  if (powercoreUnitIndex_19 != 255)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 4> :
+  _4 = (int) frame_11;
+  switch (_4) <default: <L10> [INV], case 8: <L2> [INV], case 10: <L3> [INV], case 11: <L4> [INV], case 12: <L5> [INV], case 13: <L6> [INV], case 14: <L7> [INV], case 15: <L8> [INV], case 16: <L9> [INV]>
+
+  <bb 5> :
+<L2>:
+  CNV_GetInternalCurrentMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 6> :
+<L3>:
+  CNV_GetInternalPowerMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  CNV_GetInternalTemperatureMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 8> :
+<L5>:
+  CNV_GetInternalVoltageMeasuresFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 9> :
+<L6>:
+  CNV_GetInternalRegulationInfoFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+<L7>:
+  CNV_GetInternalControlInfoFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 11> :
+<L8>:
+  CNV_GetInternalErrorsFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 12> :
+<L9>:
+  CNV_GetInternalWarningsFrame (&currentFrame.buffer, powercoreUnitIndex_19);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L10>:
+
+  <bb 14> :
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  COM_flags.moduleFlags.faults.flags.unkownCOMETi = 1;
+
+  <bb 16> :
+  return;
+
+}
+
+
+com_ControlReceivedManagement (struct CBU_FrameStatusStr currentFrame)
+{
+  uint8_t order;
+  uint32_t currentLenghtFrame;
+  uint32_t lenghtFrame;
+  uint8_t frame;
+  long unsigned int _1;
+  int _2;
+  unsigned int _3;
+  <unnamed type> _4;
+
+  <bb 2> :
+  order_7 = 0;
+  _1 = currentFrame.frameId;
+  frame_10 = com_GetFrameIndex (0, _1);
+  COM_controlComLostCounter = 0;
+  _2 = (int) frame_10;
+  lenghtFrame_12 = COM_framesControl[_2].FrameLenght;
+  currentLenghtFrame_13 = currentFrame.frameLength;
+  if (currentLenghtFrame_13 == lenghtFrame_12)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 3> :
+  _3 = (unsigned int) frame_10;
+  switch (_3) <default: <L9> [INV], case 7: <L1> [INV], case 8: <L8> [INV]>
+
+  <bb 4> :
+<L1>:
+  CBU_GetControlPtcuCmdsFrameData (&currentFrame.buffer, &COM_mode.bbauxCommand, &COM_mode.setpoint, &COM_mode.currentLimit, &COM_mode.S3ModeReq);
+  _4 = COM_mode.bbauxCommand;
+  switch (_4) <default: <L6> [INV], case 1: <L2> [INV], case 2: <L3> [INV], case 3: <L4> [INV], case 4: <L5> [INV]>
+
+  <bb 5> :
+<L2>:
+  COM_flags.moduleFlags.status.flags.boostRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  COM_flags.moduleFlags.status.flags.buckRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  COM_flags.moduleFlags.status.flags.stopRequest = 1;
+  COM_flags.moduleFlags.status.flags.shutDownReq = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  COM_flags.moduleFlags.status.flags.shutDownReq = 1;
+  COM_flags.moduleFlags.status.flags.stopRequest = 0;
+  COM_flags.moduleFlags.status.flags.buckRequest = 0;
+  COM_flags.moduleFlags.status.flags.boostRequest = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+<L8>:
+  COM_flags.moduleFlags.status.flags.errorResetRequest = 1;
+  COM_flags.moduleFlags.faults.all = 0;
+  COM_errorsAndWarnings.bbauxErrors = 0;
+  COM_errorsAndWarnings.bbauxWarnings = 0;
+  COM_errorsAndWarnings.powercoreErrors = 0;
+  COM_errorsAndWarnings.powercoreWarnings = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+<L9>:
+
+  <bb 13> :
+  return;
+
+}
+
+
+com_ReceivedManagement ()
+{
+  uint8_t powercoreUnitIndex;
+  uint8_t powercoreUnitAddress;
+  boolean frameReceivedCinternalCOMETI2;
+  boolean frameReceivedCinternalCOMETI1;
+  boolean frameReceivedCcontrol;
+  struct CBU_FrameStatusStr currentFrame;
+  uint16_t mailbox;
+  const struct Can_HwObjectConfigType * _1;
+  unsigned int _2;
+  unsigned int _3;
+  const struct Can_HwObjectConfigType * _4;
+  <unnamed type> _5;
+  int _6;
+  _Bool _7;
+  int _8;
+  unsigned char _9;
+  int _10;
+  short unsigned int mailbox.3_11;
+  _Bool _12;
+  long unsigned int COM_controlComLostCounter.4_13;
+  long unsigned int _14;
+  _Bool _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  _Bool _18;
+  long unsigned int _19;
+  long unsigned int _20;
+
+  <bb 2> :
+  frameReceivedCcontrol_39 = 0;
+  frameReceivedCinternalCOMETI1_40 = 0;
+  frameReceivedCinternalCOMETI2_41 = 0;
+  mailbox_42 = 0;
+  goto <bb 16>; [INV]
+
+  <bb 3> :
+  _1 = Can_Config_Init.Can_pHwObjectConfig;
+  _2 = (unsigned int) mailbox_21;
+  _3 = _2 * 36;
+  _4 = _1 + _3;
+  _5 = _4->Can_HohType;
+  if (_5 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 4> :
+  _6 = (int) mailbox_21;
+  _7 = CBU_framesStatus[_6].isPending;
+  if (_7 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 5> :
+  _8 = (int) mailbox_21;
+  currentFrame = CBU_framesStatus[_8];
+  _9 = currentFrame.idController;
+  _10 = (int) _9;
+  switch (_10) <default: <L11> [INV], case 0: <L3> [INV], case 1: <L4> [INV], case 2: <L10> [INV]>
+
+  <bb 6> :
+<L3>:
+  com_ControlReceivedManagement (currentFrame);
+  frameReceivedCcontrol_59 = 1;
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+<L4>:
+  com_InternalReceivedManagement (currentFrame);
+  powercoreUnitAddress_53 = CBU_powerCoreAdd;
+  powercoreUnitIndex_55 = CNV_getPowercoreUnitsIndex (powercoreUnitAddress_53);
+  if (powercoreUnitIndex_55 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  frameReceivedCinternalCOMETI1_57 = 1;
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (powercoreUnitIndex_55 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  frameReceivedCinternalCOMETI2_56 = 1;
+
+  <bb 11> :
+  # frameReceivedCinternalCOMETI1_25 = PHI <frameReceivedCinternalCOMETI1_57(8), frameReceivedCinternalCOMETI1_28(9), frameReceivedCinternalCOMETI1_28(10)>
+  # frameReceivedCinternalCOMETI2_29 = PHI <frameReceivedCinternalCOMETI2_32(8), frameReceivedCinternalCOMETI2_32(9), frameReceivedCinternalCOMETI2_56(10)>
+  goto <bb 14>; [INV]
+
+  <bb 12> :
+<L10>:
+  com_MaintenanceReceivedManagement (currentFrame);
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L11>:
+
+  <bb 14> :
+  # frameReceivedCcontrol_22 = PHI <frameReceivedCcontrol_59(6), frameReceivedCcontrol_24(11), frameReceivedCcontrol_24(12), frameReceivedCcontrol_24(13)>
+  # frameReceivedCinternalCOMETI1_26 = PHI <frameReceivedCinternalCOMETI1_28(6), frameReceivedCinternalCOMETI1_25(11), frameReceivedCinternalCOMETI1_28(12), frameReceivedCinternalCOMETI1_28(13)>
+  # frameReceivedCinternalCOMETI2_30 = PHI <frameReceivedCinternalCOMETI2_32(6), frameReceivedCinternalCOMETI2_29(11), frameReceivedCinternalCOMETI2_32(12), frameReceivedCinternalCOMETI2_32(13)>
+  CBU_ClearPendingFlag (mailbox_21);
+
+  <bb 15> :
+  # frameReceivedCcontrol_23 = PHI <frameReceivedCcontrol_24(3), frameReceivedCcontrol_24(4), frameReceivedCcontrol_22(14)>
+  # frameReceivedCinternalCOMETI1_27 = PHI <frameReceivedCinternalCOMETI1_28(3), frameReceivedCinternalCOMETI1_28(4), frameReceivedCinternalCOMETI1_26(14)>
+  # frameReceivedCinternalCOMETI2_31 = PHI <frameReceivedCinternalCOMETI2_32(3), frameReceivedCinternalCOMETI2_32(4), frameReceivedCinternalCOMETI2_30(14)>
+  mailbox.3_11 = mailbox_21;
+  mailbox_61 = mailbox.3_11 + 1;
+
+  <bb 16> :
+  # mailbox_21 = PHI <mailbox_42(2), mailbox_61(15)>
+  # frameReceivedCcontrol_24 = PHI <frameReceivedCcontrol_39(2), frameReceivedCcontrol_23(15)>
+  # frameReceivedCinternalCOMETI1_28 = PHI <frameReceivedCinternalCOMETI1_40(2), frameReceivedCinternalCOMETI1_27(15)>
+  # frameReceivedCinternalCOMETI2_32 = PHI <frameReceivedCinternalCOMETI2_41(2), frameReceivedCinternalCOMETI2_31(15)>
+  if (mailbox_21 <= 24)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  _12 = ~frameReceivedCcontrol_24;
+  if (_12 != 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  COM_controlComLostCounter.4_13 = COM_controlComLostCounter;
+  _14 = COM_controlComLostCounter.4_13 + 10;
+  COM_controlComLostCounter = _14;
+
+  <bb 19> :
+  _15 = ~frameReceivedCinternalCOMETI1_28;
+  if (_15 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  _16 = CNV_powercoreUnitTable[0].comLostCounter;
+  _17 = _16 + 10;
+  CNV_powercoreUnitTable[0].comLostCounter = _17;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  CNV_powercoreUnitTable[0].comLostCounter = 0;
+
+  <bb 22> :
+  _18 = ~frameReceivedCinternalCOMETI2_32;
+  if (_18 != 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _19 = CNV_powercoreUnitTable[1].comLostCounter;
+  _20 = _19 + 10;
+  CNV_powercoreUnitTable[1].comLostCounter = _20;
+  goto <bb 25>; [INV]
+
+  <bb 24> :
+  CNV_powercoreUnitTable[1].comLostCounter = 0;
+
+  <bb 25> :
+  currentFrame ={v} {CLOBBER};
+  return;
+
+}
+
+
+com_UpdateErrors ()
+{
+  uint32_t timeoutInternal;
+  uint32_t timeoutControl;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  long unsigned int COM_controlComLostCounter.2_7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+
+  <bb 2> :
+  _1 = PAR_paramConfig[8].realVal.unsignedVal;
+  timeoutControl_20 = _1 * 100;
+  _2 = PAR_paramConfig[9].realVal.unsignedVal;
+  timeoutInternal_21 = _2 * 100;
+  _3 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _4 = _3 & 8;
+  if (_4 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  COM_flags.moduleFlags.faults.all = 0;
+  COM_controlComLostCounter = 0;
+  COM_internalComLostCounter = 0;
+  CNV_powercoreUnitTable[0].comLostCounter = 0;
+  CNV_powercoreUnitTable[1].comLostCounter = 0;
+
+  <bb 4> :
+  _5 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  COM_controlComLostCounter.2_7 = COM_controlComLostCounter;
+  if (timeoutControl_20 <= COM_controlComLostCounter.2_7)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (timeoutControl_20 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _8 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _9 = _8 & 16;
+  if (_9 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  COM_flags.moduleFlags.faults.flags.canCComLoss = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  COM_flags.moduleFlags.faults.flags.canCComLoss = 0;
+
+  <bb 10> :
+  _10 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _11 = _10 & 2;
+  if (_11 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 11> :
+  _12 = CNV_powercoreUnitTable[0].comLostCounter;
+  if (timeoutInternal_21 <= _12)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  if (timeoutInternal_21 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _13 = CNV_powercoreUnitTable[1].comLostCounter;
+  if (timeoutInternal_21 <= _13)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  if (timeoutInternal_21 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  _14 = VIEW_CONVERT_EXPR<unsigned char>(CBU_flags.status);
+  _15 = _14 & 32;
+  if (_15 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  COM_flags.moduleFlags.faults.flags.canIComLoss = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  COM_flags.moduleFlags.faults.flags.canIComLoss = 0;
+
+  <bb 18> :
+  return;
+
+}
+
+
+com_GetFrameIndex (uint8_t controllerId, uint32_t frameId)
+{
+  uint8_t framesCount;
+  struct COM_FrameStr * framesTable;
+  uint8_t ret;
+  uint8_t index;
+  uint8_t frame;
+  uint8_t D.8498;
+  int _1;
+  unsigned int _2;
+  unsigned int _3;
+  struct COM_FrameStr * _4;
+  long unsigned int _5;
+  unsigned char index.0_6;
+  unsigned char frame.1_7;
+  uint8_t _27;
+
+  <bb 2> :
+  index_15 = 0;
+  ret_16 = 255;
+  framesTable_17 = &COM_framesControl;
+  _1 = (int) controllerId_18(D);
+  switch (_1) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  framesTable_23 = &COM_framesControl;
+  framesCount_24 = 9;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  framesTable_21 = &COM_framesInternal;
+  framesCount_22 = 17;
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  framesTable_19 = &COM_framesMaintenance;
+  framesCount_20 = 4;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  framesCount_25 = 0;
+
+  <bb 7> :
+  # framesTable_13 = PHI <framesTable_23(3), framesTable_21(4), framesTable_19(5), framesTable_17(6)>
+  # framesCount_14 = PHI <framesCount_24(3), framesCount_22(4), framesCount_20(5), framesCount_25(6)>
+  frame_26 = 0;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  _2 = (unsigned int) frame_8;
+  _3 = _2 * 20;
+  _4 = framesTable_13 + _3;
+  _5 = _4->id;
+  if (frameId_29(D) == _5)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  ret_31 = index_10;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  index.0_6 = index_10;
+  index_30 = index.0_6 + 1;
+
+  <bb 11> :
+  # index_9 = PHI <index_10(9), index_30(10)>
+  # ret_11 = PHI <ret_31(9), ret_12(10)>
+  frame.1_7 = frame_8;
+  frame_32 = frame.1_7 + 1;
+
+  <bb 12> :
+  # frame_8 = PHI <frame_26(7), frame_32(11)>
+  # index_10 = PHI <index_15(7), index_9(11)>
+  # ret_12 = PHI <ret_16(7), ret_11(11)>
+  if (frame_8 < framesCount_14)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  _27 = ret_12;
+
+  <bb 14> :
+<L11>:
+  return _27;
+
+}
+
+
+COM_RxTask ()
+{
+  <bb 2> :
+  COM_flags.moduleFlags.status.flags.maintenanceRequestEnter = 0;
+  COM_flags.moduleFlags.status.flags.maintenanceRequestExit = 0;
+  COM_flags.moduleFlags.status.flags.settingRequestEnter = 0;
+  COM_flags.moduleFlags.status.flags.settingRequestExit = 0;
+  com_ReceivedManagement ();
+  com_UpdateErrors ();
+  return;
+
+}
+
+

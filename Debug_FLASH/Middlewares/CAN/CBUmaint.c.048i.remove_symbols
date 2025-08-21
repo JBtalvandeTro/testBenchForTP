@@ -1,0 +1,440 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+CBU_SendFrame/7 (CBU_SendFrame) @06002460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendMaintenanceParameterResponse/1 CBU_SendMaintenanceEquipmentTestResponse/0 
+  Calls: 
+CBU_CreatePduInfo/6 (CBU_CreatePduInfo) @06002380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendMaintenanceParameterResponse/1 CBU_SendMaintenanceEquipmentTestResponse/0 
+  Calls: 
+COM_debugTestReq/5 (COM_debugTestReq) @05fe7ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceEquipmentTestResponse/0 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesMaintenance/4 (COM_framesMaintenance) @05fe7a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendMaintenanceEquipmentTestResponse/0 (read)CBU_SendMaintenanceParameterResponse/1 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetMaintenanceParameterRequest/3 (CBU_GetMaintenanceParameterRequest) @05fe6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetMaintenanceEquipmentTestRequest/2 (CBU_GetMaintenanceEquipmentTestRequest) @05fe6380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/1 (CBU_SendMaintenanceParameterResponse) @05fe60e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesMaintenance/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/7 CBU_CreatePduInfo/6 
+CBU_SendMaintenanceEquipmentTestResponse/0 (CBU_SendMaintenanceEquipmentTestResponse) @05fe6d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesMaintenance/4 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)COM_debugTestReq/5 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/7 CBU_CreatePduInfo/6 
+CBU_GetMaintenanceParameterRequest (const uint8_t * buffer, uint8_t * reqType, uint16_t * id, uint32_t * value)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  const uint8_t * _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  const uint8_t * _18;
+  unsigned char _19;
+  int _20;
+  int _21;
+  signed short _22;
+  const uint8_t * _23;
+  unsigned char _24;
+  signed short _25;
+  signed short _26;
+  short unsigned int _27;
+  const uint8_t * _28;
+  unsigned char _29;
+  unsigned char _30;
+
+  <bb 2> :
+  _1 = buffer_31(D) + 3;
+  _2 = *_1;
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 24;
+  _5 = buffer_31(D) + 2;
+  _6 = *_5;
+  _7 = (long unsigned int) _6;
+  _8 = _7 << 16;
+  _9 = _4 | _8;
+  _10 = buffer_31(D) + 1;
+  _11 = *_10;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 8;
+  _14 = _9 | _13;
+  _15 = *buffer_31(D);
+  _16 = (long unsigned int) _15;
+  _17 = _14 | _16;
+  *value_33(D) = _17;
+  _18 = buffer_31(D) + 5;
+  _19 = *_18;
+  _20 = (int) _19;
+  _21 = _20 << 8;
+  _22 = (signed short) _21;
+  _23 = buffer_31(D) + 4;
+  _24 = *_23;
+  _25 = (signed short) _24;
+  _26 = _22 | _25;
+  _27 = (short unsigned int) _26;
+  *id_35(D) = _27;
+  _28 = buffer_31(D) + 6;
+  _29 = *_28;
+  _30 = _29 & 3;
+  *reqType_37(D) = _30;
+  return;
+
+}
+
+
+CBU_GetMaintenanceEquipmentTestRequest (const uint8_t * buffer, uint8_t * testCmd, uint8_t * muxAddress, uint8_t * measFormat, uint8_t * relaySwitchCmd, uint8_t * relaySwitchId, uint8_t * discreteIoCmd, uint8_t * discreteIoId, uint8_t * ledCmd, uint8_t * ledId, uint8_t * ledColor, uint8_t * ledBlinkFreq)
+{
+  uint8_t byte;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+
+  <bb 2> :
+  byte_12 = 0;
+  byte_15 = *buffer_14(D);
+  _1 = byte_15 & 15;
+  *testCmd_16(D) = _1;
+  byte_18 = byte_15 >> 4;
+  _2 = byte_18 & 7;
+  *muxAddress_19(D) = _2;
+  byte_21 = byte_18 >> 3;
+  _3 = byte_21 & 1;
+  *measFormat_22(D) = _3;
+  byte_24 = MEM[(const uint8_t *)buffer_14(D) + 1B];
+  _4 = byte_24 & 15;
+  *relaySwitchCmd_25(D) = _4;
+  byte_27 = byte_24 >> 4;
+  _5 = byte_27 & 3;
+  *relaySwitchId_28(D) = _5;
+  byte_30 = MEM[(const uint8_t *)buffer_14(D) + 2B];
+  _6 = byte_30 & 15;
+  *discreteIoCmd_31(D) = _6;
+  byte_33 = byte_30 >> 4;
+  _7 = byte_33 & 15;
+  *discreteIoId_34(D) = _7;
+  _8 = MEM[(const uint8_t *)buffer_14(D) + 3B];
+  *ledBlinkFreq_36(D) = _8;
+  byte_38 = MEM[(const uint8_t *)buffer_14(D) + 4B];
+  _9 = byte_38 & 3;
+  *ledCmd_39(D) = _9;
+  byte_41 = byte_38 >> 2;
+  _10 = byte_41 & 3;
+  *ledId_42(D) = _10;
+  byte_44 = byte_41 >> 2;
+  _11 = byte_44 & 1;
+  *ledColor_45(D) = _11;
+  return;
+
+}
+
+
+CBU_SendMaintenanceParameterResponse (uint16_t paramId, uint32_t ParamValue, boolean status)
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  long unsigned int _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  int _5;
+  int _6;
+  unsigned char _7;
+  long unsigned int _8;
+  int _9;
+  int _10;
+  unsigned char _11;
+  long unsigned int _12;
+  int _13;
+  int _14;
+  unsigned char _15;
+  int _16;
+  unsigned char _17;
+  short unsigned int _18;
+  int _19;
+  int _20;
+  unsigned char _21;
+  unsigned char index.2_22;
+  int _23;
+  unsigned char _24;
+
+  <bb 2> :
+  _1 = COM_framesMaintenance[1].id;
+  id_value_26 = _1 + 2147483648;
+  index_27 = 0;
+  swPduHandle_28 = 0;
+  _2 = (int) index_27;
+  _3 = (unsigned char) ParamValue_29(D);
+  buffer[_2] = _3;
+  _4 = ParamValue_29(D) >> 8;
+  _5 = (int) index_27;
+  _6 = _5 + 1;
+  _7 = (unsigned char) _4;
+  buffer[_6] = _7;
+  _8 = ParamValue_29(D) >> 16;
+  _9 = (int) index_27;
+  _10 = _9 + 2;
+  _11 = (unsigned char) _8;
+  buffer[_10] = _11;
+  _12 = ParamValue_29(D) >> 24;
+  _13 = (int) index_27;
+  _14 = _13 + 3;
+  _15 = (unsigned char) _12;
+  buffer[_14] = _15;
+  index_34 = index_27 + 4;
+  _16 = (int) index_34;
+  _17 = (unsigned char) paramId_35(D);
+  buffer[_16] = _17;
+  _18 = paramId_35(D) >> 8;
+  _19 = (int) index_34;
+  _20 = _19 + 1;
+  _21 = (unsigned char) _18;
+  buffer[_20] = _21;
+  index_38 = index_34 + 2;
+  index.2_22 = index_38;
+  index_39 = index.2_22 + 1;
+  _23 = (int) index.2_22;
+  _24 = (unsigned char) status_40(D);
+  buffer[_23] = _24;
+  CBU_CreatePduInfo (id_value_26, swPduHandle_28, index_39, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 23);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+CBU_SendMaintenanceEquipmentTestResponse ()
+{
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t index;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  long unsigned int _1;
+  unsigned char _2;
+  long unsigned int _3;
+  int _4;
+  unsigned char _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  int _8;
+  int _9;
+  unsigned char _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  int _13;
+  int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  int _18;
+  int _19;
+  unsigned char _20;
+  long unsigned int _21;
+  int _22;
+  unsigned char _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  int _26;
+  int _27;
+  unsigned char _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  int _31;
+  int _32;
+  unsigned char _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  int _36;
+  int _37;
+  unsigned char _38;
+  unsigned char _39;
+  unsigned char _40;
+  unsigned char _41;
+  unsigned char _42;
+  unsigned char _43;
+  unsigned char _44;
+  unsigned char _45;
+  unsigned char _46;
+  unsigned char index.0_47;
+  int _48;
+  unsigned char _49;
+  unsigned char _50;
+  unsigned char _51;
+  unsigned char _52;
+  unsigned char _53;
+  unsigned char _54;
+  unsigned char index.1_55;
+  int _56;
+  unsigned char _57;
+
+  <bb 2> :
+  _1 = COM_framesMaintenance[0].id;
+  id_value_60 = _1 + 2147483648;
+  index_61 = 0;
+  swPduHandle_62 = 0;
+  _2 = COM_debugTestReq.measFormat;
+  if (_2 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = COM_debugTestReq.rawMeasure;
+  _4 = (int) index_61;
+  _5 = (unsigned char) _3;
+  buffer[_4] = _5;
+  _6 = COM_debugTestReq.rawMeasure;
+  _7 = _6 >> 8;
+  _8 = (int) index_61;
+  _9 = _8 + 1;
+  _10 = (unsigned char) _7;
+  buffer[_9] = _10;
+  _11 = COM_debugTestReq.rawMeasure;
+  _12 = _11 >> 16;
+  _13 = (int) index_61;
+  _14 = _13 + 2;
+  _15 = (unsigned char) _12;
+  buffer[_14] = _15;
+  _16 = COM_debugTestReq.rawMeasure;
+  _17 = _16 >> 24;
+  _18 = (int) index_61;
+  _19 = _18 + 3;
+  _20 = (unsigned char) _17;
+  buffer[_19] = _20;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _21 = COM_debugTestReq.hmiMeasure;
+  _22 = (int) index_61;
+  _23 = (unsigned char) _21;
+  buffer[_22] = _23;
+  _24 = COM_debugTestReq.hmiMeasure;
+  _25 = _24 >> 8;
+  _26 = (int) index_61;
+  _27 = _26 + 1;
+  _28 = (unsigned char) _25;
+  buffer[_27] = _28;
+  _29 = COM_debugTestReq.hmiMeasure;
+  _30 = _29 >> 16;
+  _31 = (int) index_61;
+  _32 = _31 + 2;
+  _33 = (unsigned char) _30;
+  buffer[_32] = _33;
+  _34 = COM_debugTestReq.hmiMeasure;
+  _35 = _34 >> 24;
+  _36 = (int) index_61;
+  _37 = _36 + 3;
+  _38 = (unsigned char) _35;
+  buffer[_37] = _38;
+
+  <bb 5> :
+  index_71 = index_61 + 4;
+  _39 = COM_debugTestReq.discreteIoId;
+  _40 = _39 << 4;
+  _41 = COM_debugTestReq.discreteIosPWMResult;
+  _42 = _41 << 2;
+  _43 = _42 & 12;
+  _44 = _40 + _43;
+  _45 = COM_debugTestReq.discreteIosReadResult;
+  _46 = _45 & 3;
+  index.0_47 = index_71;
+  index_72 = index.0_47 + 1;
+  _48 = (int) index.0_47;
+  _49 = _44 + _46;
+  buffer[_48] = _49;
+  _50 = COM_debugTestReq.relaySwitchId;
+  _51 = _50 << 2;
+  _52 = _51 & 12;
+  _53 = COM_debugTestReq.relaySwitchResult;
+  _54 = _53 & 3;
+  index.1_55 = index_72;
+  index_74 = index.1_55 + 1;
+  _56 = (int) index.1_55;
+  _57 = _52 | _54;
+  buffer[_56] = _57;
+  CBU_CreatePduInfo (id_value_60, swPduHandle_62, index_74, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 22);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+

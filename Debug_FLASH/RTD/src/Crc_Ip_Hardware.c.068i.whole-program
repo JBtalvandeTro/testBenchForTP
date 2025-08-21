@@ -1,0 +1,596 @@
+
+Marking local functions: Crc_Ip_DevAssert hwAccCRC_GetResult hwAccCrc_SetInitialSeedValue hwAccCrc_SetInputData hwAccCrc_SetInverseResult hwAccCrc_SetReadSwap hwAccCrc_SetWriteSwap hwAccCrc_SetPolynom hwAccCrc_SetDataMode hwAccCrc_SetCrcWidth
+
+
+Marking externally visible functions: Crc_Ip_HwGetLocResult Crc_Ip_HwCalculate Crc_Ip_HwSetConfig
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Crc_Ip_HwGetLocResult/13 (Crc_Ip_HwGetLocResult) @066e58c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crc_Ip_HwCalculate/12 
+  Calls: hwAccCRC_GetResult/8 
+Crc_Ip_HwCalculate/12 (Crc_Ip_HwCalculate) @066e5620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_HwGetLocResult/13 hwAccCrc_SetInputData/6 hwAccCrc_SetInitialSeedValue/7 Crc_Ip_DevAssert/9 Crc_Ip_DevAssert/9 Crc_Ip_DevAssert/9 
+Crc_Ip_HwSetConfig/11 (Crc_Ip_HwSetConfig) @066e5380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwAccCrc_SetInverseResult/5 hwAccCrc_SetReadSwap/4 hwAccCrc_SetWriteSwap/3 hwAccCrc_SetInitialSeedValue/7 hwAccCrc_SetPolynom/2 hwAccCrc_SetCrcWidth/0 Crc_Ip_DevAssert/9 Crc_Ip_DevAssert/9 Crc_Ip_DevAssert/9 
+s_pxCrcBase/10 (s_pxCrcBase) @066fbb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_Ip_DevAssert/9 (Crc_Ip_DevAssert) @066fe7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwCalculate/12 Crc_Ip_HwCalculate/12 Crc_Ip_HwCalculate/12 Crc_Ip_HwSetConfig/11 Crc_Ip_HwSetConfig/11 Crc_Ip_HwSetConfig/11 
+  Calls: 
+hwAccCRC_GetResult/8 (hwAccCRC_GetResult) @066fe380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwGetLocResult/13 
+  Calls: 
+hwAccCrc_SetInitialSeedValue/7 (hwAccCrc_SetInitialSeedValue) @066fe0e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwCalculate/12 Crc_Ip_HwSetConfig/11 
+  Calls: hwAccCrc_SetDataMode/1 hwAccCrc_SetDataMode/1 
+hwAccCrc_SetInputData/6 (hwAccCrc_SetInputData) @066f8e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwCalculate/12 
+  Calls: 
+hwAccCrc_SetInverseResult/5 (hwAccCrc_SetInverseResult) @066f8b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwSetConfig/11 
+  Calls: 
+hwAccCrc_SetReadSwap/4 (hwAccCrc_SetReadSwap) @066f87e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwSetConfig/11 
+  Calls: 
+hwAccCrc_SetWriteSwap/3 (hwAccCrc_SetWriteSwap) @066f8460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwSetConfig/11 
+  Calls: 
+hwAccCrc_SetPolynom/2 (hwAccCrc_SetPolynom) @066f80e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwSetConfig/11 
+  Calls: 
+hwAccCrc_SetDataMode/1 (hwAccCrc_SetDataMode) @06698e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: hwAccCrc_SetInitialSeedValue/7 hwAccCrc_SetInitialSeedValue/7 
+  Calls: 
+hwAccCrc_SetCrcWidth/0 (hwAccCrc_SetCrcWidth) @06698a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_Ip_HwSetConfig/11 
+  Calls: 
+Crc_Ip_HwGetLocResult (const uint8 HwInst, const uint8 HwChannel)
+{
+  const struct CRC_Type * const pxCrcBase;
+  uint64 D.5777;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint64 _9;
+
+  <bb 2> :
+  _1 = (int) HwInst_4(D);
+  pxCrcBase_5 = 1073946624B;
+  _2 = (long unsigned int) HwChannel_6(D);
+  _3 = hwAccCRC_GetResult (pxCrcBase_5, _2);
+  _9 = (uint64) _3;
+
+  <bb 3> :
+<L0>:
+  return _9;
+
+}
+
+
+Crc_Ip_HwCalculate (const struct Crc_Ip_LogicChannelType * LogicChannelInitCfg, const uint8 * DataPtr, const uint32 Length, const uint64 InitialSeedValue)
+{
+  struct CRC_Type * const pxCrcBase;
+  uint32 LocLength;
+  uint64 LocResult;
+  uint8 HwChannel;
+  uint8 HwInst;
+  uint64 D.5775;
+  int _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  long unsigned int _5;
+  const uint8 * _6;
+  unsigned char _7;
+  uint64 _27;
+
+  <bb 2> :
+  HwInst_12 = LogicChannelInitCfg_11(D)->HwInst;
+  HwChannel_13 = LogicChannelInitCfg_11(D)->HwChannel;
+  LocResult_14 = 0;
+  LocLength_15 = 0;
+  _1 = (int) HwInst_12;
+  pxCrcBase_16 = 1073946624B;
+  _2 = HwInst_12 == 0;
+  Crc_Ip_DevAssert (_2);
+  _3 = HwChannel_13 == 0;
+  Crc_Ip_DevAssert (_3);
+  _4 = DataPtr_19(D) != 0B;
+  Crc_Ip_DevAssert (_4);
+  _5 = (long unsigned int) InitialSeedValue_21(D);
+  hwAccCrc_SetInitialSeedValue (pxCrcBase_16, HwChannel_13, _5);
+  LocLength_23 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = DataPtr_19(D) + LocLength_8;
+  _7 = *_6;
+  hwAccCrc_SetInputData (pxCrcBase_16, HwChannel_13, _7);
+  LocLength_29 = LocLength_8 + 1;
+
+  <bb 4> :
+  # LocLength_8 = PHI <LocLength_23(2), LocLength_29(3)>
+  if (LocLength_8 < Length_24(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  LocResult_26 = Crc_Ip_HwGetLocResult (HwInst_12, HwChannel_13);
+  _27 = LocResult_26;
+
+  <bb 6> :
+<L3>:
+  return _27;
+
+}
+
+
+Crc_Ip_HwSetConfig (const uint8 HwInst, const uint8 HwChannel, const struct Crc_Ip_LogicChannelStateType * pxLogicChannelState)
+{
+  const struct Crc_Ip_CrcProtocolInfoType * ProtocolInfo;
+  struct CRC_Type * const pxCrcBase;
+  int _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  <unnamed type> _5;
+  long long unsigned int _6;
+  long unsigned int _7;
+  long long unsigned int _8;
+  long unsigned int _9;
+  _Bool _10;
+  _Bool _11;
+  _Bool _12;
+  _Bool _13;
+  _Bool _14;
+
+  <bb 2> :
+  _1 = (int) HwInst_15(D);
+  pxCrcBase_16 = 1073946624B;
+  ProtocolInfo_19 = pxLogicChannelState_18(D)->CrcProtocolInfo;
+  _2 = pxLogicChannelState_18(D) != 0B;
+  Crc_Ip_DevAssert (_2);
+  _3 = HwInst_15(D) == 0;
+  Crc_Ip_DevAssert (_3);
+  _4 = HwChannel_22(D) == 0;
+  Crc_Ip_DevAssert (_4);
+  _5 = ProtocolInfo_19->Width;
+  hwAccCrc_SetCrcWidth (pxCrcBase_16, HwChannel_22(D), _5);
+  _6 = ProtocolInfo_19->PolynomValue;
+  _7 = (long unsigned int) _6;
+  hwAccCrc_SetPolynom (pxCrcBase_16, HwChannel_22(D), _7);
+  _8 = ProtocolInfo_19->InitialSeedValue;
+  _9 = (long unsigned int) _8;
+  hwAccCrc_SetInitialSeedValue (pxCrcBase_16, HwChannel_22(D), _9);
+  _10 = ProtocolInfo_19->WriteBitSwap;
+  _11 = ProtocolInfo_19->WriteByteSwap;
+  hwAccCrc_SetWriteSwap (pxCrcBase_16, HwChannel_22(D), _10, _11);
+  _12 = ProtocolInfo_19->ReadBitSwap;
+  _13 = ProtocolInfo_19->ReadByteSwap;
+  hwAccCrc_SetReadSwap (pxCrcBase_16, HwChannel_22(D), _12, _13);
+  _14 = ProtocolInfo_19->InverseEnable;
+  hwAccCrc_SetInverseResult (pxCrcBase_16, HwChannel_22(D), _14);
+  return;
+
+}
+
+
+Crc_Ip_DevAssert (volatile boolean x)
+{
+  _Bool x.0_1;
+
+  <bb 2> :
+  x.0_1 ={v} x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  return;
+
+}
+
+
+hwAccCRC_GetResult (const struct CRC_Type * pxCrcBase, const uint32 HwChannel)
+{
+  uint32 Result;
+  uint8 SwapOption;
+  uint32 D.5784;
+  long unsigned int _1;
+  long unsigned int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  uint32 _16;
+
+  <bb 2> :
+  SwapOption_8 = 0;
+  Result_9 = 0;
+  Result_12 ={v} pxCrcBase_11(D)->DATAu.DATA;
+  _1 ={v} pxCrcBase_11(D)->CTRL;
+  _2 = _1 >> 28;
+  _3 = (unsigned char) _2;
+  SwapOption_13 = _3 & 3;
+  _4 ={v} pxCrcBase_11(D)->CTRL;
+  _5 = _4 & 16777216;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  if (SwapOption_13 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (SwapOption_13 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Result_14 = Result_12 >> 16;
+
+  <bb 6> :
+  # Result_6 = PHI <Result_12(4), Result_14(5)>
+  Result_15 = Result_6 & 65535;
+
+  <bb 7> :
+  # Result_7 = PHI <Result_12(2), Result_15(6)>
+  _16 = Result_7;
+
+  <bb 8> :
+<L5>:
+  return _16;
+
+}
+
+
+hwAccCrc_SetInitialSeedValue (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint32 InitialSeedValue)
+{
+  <bb 2> :
+  hwAccCrc_SetDataMode (pxCrcBase_2(D), HwChannel_3(D), 1);
+  pxCrcBase_2(D)->DATAu.DATA ={v} InitialSeedValue_5(D);
+  hwAccCrc_SetDataMode (pxCrcBase_2(D), HwChannel_3(D), 0);
+  return;
+
+}
+
+
+hwAccCrc_SetInputData (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint8 Value)
+{
+  <bb 2> :
+  pxCrcBase_2(D)->DATAu.DATA_8.LL ={v} Value_3(D);
+  return;
+
+}
+
+
+hwAccCrc_SetInverseResult (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean InverseEnable)
+{
+  uint32 Reg;
+  long unsigned int iftmp.3;
+  long unsigned int _1;
+  long unsigned int iftmp.3_2;
+  long unsigned int iftmp.3_7;
+  long unsigned int iftmp.3_8;
+
+  <bb 2> :
+  Reg_5 ={v} pxCrcBase_4(D)->CTRL;
+  _1 = Reg_5 & 4227858431;
+  if (InverseEnable_6(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.3_8 = 67108864;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.3_7 = 0;
+
+  <bb 5> :
+  # iftmp.3_2 = PHI <iftmp.3_8(3), iftmp.3_7(4)>
+  Reg_9 = iftmp.3_2 | _1;
+  pxCrcBase_4(D)->CTRL ={v} Reg_9;
+  return;
+
+}
+
+
+hwAccCrc_SetReadSwap (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean ReadBit, const boolean ReadByte)
+{
+  uint8 SwapOption;
+  uint32 Reg;
+  _Bool _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  Reg_9 ={v} pxCrcBase_8(D)->CTRL;
+  SwapOption_10 = 0;
+  if (ReadBit_11(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = ~ReadByte_12(D);
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  SwapOption_15 = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  SwapOption_14 = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (ReadByte_12(D) != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  SwapOption_13 = 3;
+
+  <bb 8> :
+  # SwapOption_6 = PHI <SwapOption_14(5), SwapOption_10(6), SwapOption_13(7), SwapOption_15(4)>
+  _2 = Reg_9 & 3489660927;
+  _3 = (long unsigned int) SwapOption_6;
+  _4 = _3 << 28;
+  _5 = _4 & 805306368;
+  Reg_16 = _2 | _5;
+  pxCrcBase_8(D)->CTRL ={v} Reg_16;
+  return;
+
+}
+
+
+hwAccCrc_SetWriteSwap (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean WriteBit, const boolean WriteByte)
+{
+  uint8 SwapOption;
+  uint32 Reg;
+  _Bool _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  Reg_8 ={v} pxCrcBase_7(D)->CTRL;
+  SwapOption_9 = 0;
+  if (WriteBit_10(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = ~WriteByte_11(D);
+  if (_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  SwapOption_14 = 1;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  SwapOption_13 = 2;
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (WriteByte_11(D) != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  SwapOption_12 = 3;
+
+  <bb 8> :
+  # SwapOption_5 = PHI <SwapOption_13(5), SwapOption_9(6), SwapOption_12(7), SwapOption_14(4)>
+  _2 = Reg_8 & 1073741823;
+  _3 = (long unsigned int) SwapOption_5;
+  _4 = _3 << 30;
+  Reg_15 = _2 | _4;
+  pxCrcBase_7(D)->CTRL ={v} Reg_15;
+  return;
+
+}
+
+
+hwAccCrc_SetPolynom (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const uint32 PolynomValue)
+{
+  <bb 2> :
+  pxCrcBase_2(D)->GPOLY ={v} PolynomValue_3(D);
+  return;
+
+}
+
+
+hwAccCrc_SetDataMode (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, const boolean Enable)
+{
+  uint32 Reg;
+  long unsigned int iftmp.2;
+  long unsigned int _1;
+  long unsigned int iftmp.2_2;
+  long unsigned int iftmp.2_7;
+  long unsigned int iftmp.2_8;
+
+  <bb 2> :
+  Reg_5 ={v} pxCrcBase_4(D)->CTRL;
+  _1 = Reg_5 & 4261412863;
+  if (Enable_6(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.2_8 = 33554432;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.2_7 = 0;
+
+  <bb 5> :
+  # iftmp.2_2 = PHI <iftmp.2_8(3), iftmp.2_7(4)>
+  Reg_9 = iftmp.2_2 | _1;
+  pxCrcBase_4(D)->CTRL ={v} Reg_9;
+  return;
+
+}
+
+
+hwAccCrc_SetCrcWidth (struct CRC_Type * const pxCrcBase, const uint8 HwChannel, Crc_Ip_CrcWidthType CrcWidth)
+{
+  uint32 Register;
+  boolean SetValue;
+  long unsigned int iftmp.1;
+  long unsigned int _1;
+  long unsigned int iftmp.1_3;
+  long unsigned int iftmp.1_10;
+  long unsigned int iftmp.1_11;
+
+  <bb 2> :
+  SetValue_4 = 0;
+  Register_7 ={v} pxCrcBase_6(D)->CTRL;
+  if (CrcWidth_8(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  SetValue_9 = 1;
+
+  <bb 4> :
+  # SetValue_2 = PHI <SetValue_4(2), SetValue_9(3)>
+  _1 = Register_7 & 4278190079;
+  if (SetValue_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.1_11 = 16777216;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.1_10 = 0;
+
+  <bb 7> :
+  # iftmp.1_3 = PHI <iftmp.1_11(5), iftmp.1_10(6)>
+  Register_12 = iftmp.1_3 | _1;
+  pxCrcBase_6(D)->CTRL ={v} Register_12;
+  return;
+
+}
+
+

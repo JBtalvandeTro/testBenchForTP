@@ -1,0 +1,285 @@
+IPA summary for dbg_executeLvMeasureTest/8 is missing.
+IPA summary for dbg_executeHvMeasureTest/7 is missing.
+IPA summary for dbg_executeRelaySwitchTest/6 is missing.
+IPA summary for dbg_executeLedsTest/5 is missing.
+IPA summary for dbg_executeDiscreteIosTest/4 is missing.
+IPA summary for DBG_Deinit/3 is missing.
+IPA summary for DBG_Update/2 is missing.
+IPA summary for DBG_Init/1 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        5 calls, 5.000000 freq, 0 count
+IPA summary for dbg_executeLvMeasureTest/8 is missing.
+IPA summary for dbg_executeHvMeasureTest/7 is missing.
+IPA summary for dbg_executeRelaySwitchTest/6 is missing.
+IPA summary for dbg_executeLedsTest/5 is missing.
+IPA summary for dbg_executeDiscreteIosTest/4 is missing.
+IPA summary for DBG_Deinit/3 is missing.
+IPA summary for DBG_Update/2 is missing.
+IPA summary for DBG_Init/1 is missing.
+Symbol table:
+
+COM_debugTestReq/9 (COM_debugTestReq) @05968e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)DBG_Update/2 (read)
+  Availability: not_available
+  Varpool flags:
+dbg_executeLvMeasureTest/8 (dbg_executeLvMeasureTest) @0596ab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeHvMeasureTest/7 (dbg_executeHvMeasureTest) @0596a620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeRelaySwitchTest/6 (dbg_executeRelaySwitchTest) @0596a0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeLedsTest/5 (dbg_executeLedsTest) @0596ad20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+dbg_executeDiscreteIosTest/4 (dbg_executeDiscreteIosTest) @0596aa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: DBG_Update/2 
+  Calls: 
+DBG_Deinit/3 (DBG_Deinit) @0596a7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Update/2 (DBG_Update) @0596a540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)COM_debugTestReq/9 (read)DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: dbg_executeLvMeasureTest/8 dbg_executeHvMeasureTest/7 dbg_executeRelaySwitchTest/6 dbg_executeLedsTest/5 dbg_executeDiscreteIosTest/4 
+DBG_Init/1 (DBG_Init) @0596a2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: DBG_Flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+DBG_Flags/0 (DBG_Flags) @0590dd38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: dbg_executeRelaySwitchTest/6 (write)dbg_executeLvMeasureTest/8 (write)DBG_Init/1 (write)dbg_executeDiscreteIosTest/4 (write)dbg_executeLedsTest/5 (write)dbg_executeHvMeasureTest/7 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)DBG_Update/2 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function DBG_Init (DBG_Init, funcdef_no=0, decl_uid=5440, cgraph_uid=1, symbol_order=1)
+
+DBG_Init ()
+{
+  <bb 2> :
+  DBG_Flags.proccesingFlags.processed = 0;
+  return;
+
+}
+
+
+
+;; Function DBG_Update (DBG_Update, funcdef_no=1, decl_uid=5442, cgraph_uid=2, symbol_order=2)
+
+DBG_Update ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  dbg_executeDiscreteIosTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 4> :
+  _3 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _4 = _3 & 16;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  dbg_executeLedsTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 6> :
+  _5 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  dbg_executeRelaySwitchTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 8> :
+  _7 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _8 = _7 & 2;
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  dbg_executeHvMeasureTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 10> :
+  _9 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _10 = _9 & 4;
+  if (_10 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  dbg_executeLvMeasureTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 12> :
+  return;
+
+}
+
+
+
+;; Function DBG_Deinit (DBG_Deinit, funcdef_no=2, decl_uid=5444, cgraph_uid=3, symbol_order=3)
+
+DBG_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+
+;; Function dbg_executeDiscreteIosTest (dbg_executeDiscreteIosTest, funcdef_no=3, decl_uid=5952, cgraph_uid=4, symbol_order=4)
+
+dbg_executeDiscreteIosTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.dsioTest = 1;
+  return;
+
+}
+
+
+
+;; Function dbg_executeLedsTest (dbg_executeLedsTest, funcdef_no=4, decl_uid=5950, cgraph_uid=5, symbol_order=5)
+
+dbg_executeLedsTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.ledCmd = 1;
+  return;
+
+}
+
+
+
+;; Function dbg_executeRelaySwitchTest (dbg_executeRelaySwitchTest, funcdef_no=5, decl_uid=5954, cgraph_uid=6, symbol_order=6)
+
+dbg_executeRelaySwitchTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.relaySwitchTest = 1;
+  return;
+
+}
+
+
+
+;; Function dbg_executeHvMeasureTest (dbg_executeHvMeasureTest, funcdef_no=6, decl_uid=5956, cgraph_uid=7, symbol_order=7)
+
+dbg_executeHvMeasureTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.HvMeasure = 1;
+  return;
+
+}
+
+
+
+;; Function dbg_executeLvMeasureTest (dbg_executeLvMeasureTest, funcdef_no=7, decl_uid=5958, cgraph_uid=8, symbol_order=8)
+
+dbg_executeLvMeasureTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.LvMeasure = 1;
+  return;
+
+}
+
+

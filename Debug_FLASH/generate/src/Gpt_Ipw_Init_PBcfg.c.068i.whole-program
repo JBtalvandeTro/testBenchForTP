@@ -1,0 +1,45 @@
+
+Marking local functions:
+
+
+Marking externally visible functions:
+
+
+Marking externally visible variables: Gpt_Ipw_ChannelConfig_PB_Init Gpt_Ipw_HwInstanceConfig_PB_Init
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+LPIT_0_ChannelConfig_PB_Init/3 (LPIT_0_ChannelConfig_PB_Init) @068a6f30
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_ChannelConfig_PB_Init/1 (addr)Gpt_Ipw_ChannelConfig_PB_Init/1 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+LPIT_0_InitConfig_PB_Init/2 (LPIT_0_InitConfig_PB_Init) @068a6ee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_HwInstanceConfig_PB_Init/0 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Ipw_ChannelConfig_PB_Init/1 (Gpt_Ipw_ChannelConfig_PB_Init) @068a6dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: LPIT_0_ChannelConfig_PB_Init/3 (addr)LPIT_0_ChannelConfig_PB_Init/3 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Gpt_Ipw_HwInstanceConfig_PB_Init/0 (Gpt_Ipw_HwInstanceConfig_PB_Init) @068a6d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: LPIT_0_InitConfig_PB_Init/2 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

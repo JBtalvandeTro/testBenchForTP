@@ -1,0 +1,2187 @@
+Trivially needed symbols: cnv_GetRegulationReq cnv_resetPowercoreUnit CNV_Update cnv_UpdateBuckType cnv_CheckPowercoreUnitsCommand cnv_ChangePowercoreUnitsCommand cnv_StartBuckPowercoreUnitCommand cnv_StartBoostPowercoreUnitCommand cnv_CalculateBoostCurrentLimit cnv_StopPowercoreUnitCommand CNV_updatePowercoreUnitsComlossCounter CNV_getPowercoreUnitsIndex CNV_GetInternalWarningsFrame CNV_GetInternalErrorsFrame CNV_GetInternalControlInfoFrame CNV_GetInternalRegulationInfoFrame CNV_GetInternalVoltageMeasuresFrame CNV_GetInternalTemperatureMeasuresFrame CNV_GetInternalPowerMeasuresFrame CNV_GetInternalCurrentMeasuresFrame CNV_ManageInternalErrorResetRequestFrame CNV_Deinit CNV_Init resetCOMETiErrorResetTimer stateForErrorResetReq stopInconsistentCOMETi CNV_regulationReq CNV_buckType CNV_powercoreUnitTable CNV_flags
+
+
+Initial Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_GetInternalErrorsFrame/16 (read)CNV_GetInternalWarningsFrame/17 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062d9a80
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062d97e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062d9540
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062d92a0
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062d9000
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062cbb60
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062cb620
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062cb0e0
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @062cbd20
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062cba80
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062cb7e0
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062cb540
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062cb2a0
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062cb000
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06238b60
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06238620
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062380e0
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06238d20
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06238a80
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062387e0
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06238540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @062382a0
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06238000
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0622bbd0
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0622bb40
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0622b828
+  References: 
+  Referring: CNV_Init/7 (write)CNV_Init/7 (write)CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05af32d0
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05af3288
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05af3240
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_GetInternalErrorsFrame/16 (read)CNV_GetInternalWarningsFrame/17 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_Init/7 (write)CNV_Init/7 (write)CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_GetInternalErrorsFrame/16 (read)CNV_GetInternalWarningsFrame/17 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_Init/7 (write)CNV_Init/7 (write)CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_GetInternalErrorsFrame/16 (read)CNV_GetInternalWarningsFrame/17 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: not-ready
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_Init/7 (write)CNV_Init/7 (write)CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: not-ready
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_CalculateBoostCurrentLimit/21 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_GetRegulationReq/29 (read)cnv_GetRegulationReq/29 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalWarningsFrame/17 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)CNV_GetInternalWarningsFrame/17 (read)CNV_GetInternalErrorsFrame/16 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_UpdateBuckType/26 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalErrorsFrame/16 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalRegulationInfoFrame/14 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalVoltageMeasuresFrame/13 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalTemperatureMeasuresFrame/12 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalPowerMeasuresFrame/11 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_GetInternalCurrentMeasuresFrame/10 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNV_ManageInternalErrorResetRequestFrame/9 CNV_ManageInternalErrorResetRequestFrame/9 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: not_available
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_mode/43 (read)COM_mode/43 (read)COM_mode/43 (read)PAR_paramConfig/41 (read)PAR_paramConfig/41 (read)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Deinit/8 CNV_Init/7 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_UpdateBuckType/26 cnv_ChangePowercoreUnitsCommand/24 cnv_GetRegulationReq/29 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_buckType/2 (write)CNV_buckType/2 (write)CNV_buckType/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (write)stopInconsistentCOMETi/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_GetInternalControlInfoFrame/15 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/39 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)PWB_Flags/42 (read)FSM_mode/39 (read)PWB_Flags/42 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)stopInconsistentCOMETi/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CNV_Update/27 
+  Calls: cnv_StopPowercoreUnitCommand/20 cnv_StopPowercoreUnitCommand/20 cnv_StartBuckPowercoreUnitCommand/23 cnv_StartBoostPowercoreUnitCommand/22 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_regulationReq/3 (read)CNV_regulationReq/3 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/41 (read)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)CNV_flags/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 
+  Calls: cnv_CalculateBoostCurrentLimit/21 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/41 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_StartBoostPowercoreUnitCommand/22 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: cnv_ChangePowercoreUnitsCommand/24 cnv_ChangePowercoreUnitsCommand/24 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalWarningsFrameData/40 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)FSM_mode/39 (read)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalErrorsFrameData/38 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_CheckPowercoreUnitsCommand/25 CBU_GetInternalControlInfoFrameData/37 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalRegulationInfoFrameData/36 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalVoltageMeasuresFrameData/35 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalTemperatureMeasuresFrameData/34 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalPowerMeasuresFrameData/33 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (write)CNV_powercoreUnitTable/1 (addr)CNV_powercoreUnitTable/1 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_GetInternalCurrentMeasuresFrameData/32 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_powercoreUnitTable/1 (read)CNV_powercoreUnitTable/1 (read)COM_flags/30 (read)stateForErrorResetReq/5 (read)stateForErrorResetReq/5 (write)stateForErrorResetReq/5 (write)COM_flags/30 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)CNV_regulationReq/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: cnv_resetPowercoreUnit/28 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (write)CNV_ManageInternalErrorResetRequestFrame/9 (write)
+  Availability: available
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: cnv_ChangePowercoreUnitsCommand/24 (read)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)cnv_CheckPowercoreUnitsCommand/25 (write)
+  Availability: available
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CNV_Init/7 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)CNV_Init/7 (write)CNV_Init/7 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)cnv_GetRegulationReq/29 (write)
+  Availability: available
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)cnv_UpdateBuckType/26 (write)
+  Availability: available
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (write)CNV_GetInternalControlInfoFrame/15 (addr)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)cnv_UpdateBuckType/26 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)CNV_ManageInternalErrorResetRequestFrame/9 (read)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (write)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalCurrentMeasuresFrame/10 (addr)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (write)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalPowerMeasuresFrame/11 (addr)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)cnv_ChangePowercoreUnitsCommand/24 (read)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (write)CNV_GetInternalVoltageMeasuresFrame/13 (addr)CNV_GetInternalVoltageMeasuresFrame/13 (addr)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalTemperatureMeasuresFrame/12 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (addr)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalRegulationInfoFrame/14 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_getPowercoreUnitsIndex/18 (read)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_updatePowercoreUnitsComlossCounter/19 (read)CNV_updatePowercoreUnitsComlossCounter/19 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalErrorsFrame/16 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_GetInternalWarningsFrame/17 (write)CNV_updatePowercoreUnitsComlossCounter/19 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StopPowercoreUnitCommand/20 (write)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (read)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_StartBuckPowercoreUnitCommand/23 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_CheckPowercoreUnitsCommand/25 (read)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)cnv_resetPowercoreUnit/28 (write)
+  Availability: available
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBoostPowercoreUnitCommand/22 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)cnv_StartBuckPowercoreUnitCommand/23 (write)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: resetCOMETiErrorResetTimer stateForErrorResetReq stopInconsistentCOMETi CNV_regulationReq CNV_buckType CNV_powercoreUnitTable CNV_flags
+Removing variables:
+
+Final Symbol table:
+
+COM_mode/43 (COM_mode) @06390990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/42 (PWB_Flags) @06388798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/41 (PAR_paramConfig) @0637ac18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalWarningsFrameData/40 (CBU_GetInternalWarningsFrameData) @0636ee00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FSM_mode/39 (FSM_mode) @0637a168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetInternalErrorsFrameData/38 (CBU_GetInternalErrorsFrameData) @0636eb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/37 (CBU_GetInternalControlInfoFrameData) @0636e9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/36 (CBU_GetInternalRegulationInfoFrameData) @0636e7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/35 (CBU_GetInternalVoltageMeasuresFrameData) @0636e620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/34 (CBU_GetInternalTemperatureMeasuresFrameData) @0636e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/33 (CBU_GetInternalPowerMeasuresFrameData) @0636e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/32 (CBU_GetInternalCurrentMeasuresFrameData) @0636e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/31 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @062d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_flags/30 (COM_flags) @062e03a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+cnv_GetRegulationReq/29 (cnv_GetRegulationReq) @062d9a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_resetPowercoreUnit/28 (cnv_resetPowercoreUnit) @062d97e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_Update/27 (CNV_Update) @062d9540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_UpdateBuckType/26 (cnv_UpdateBuckType) @062d92a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_CheckPowercoreUnitsCommand/25 (cnv_CheckPowercoreUnitsCommand) @062d9000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_ChangePowercoreUnitsCommand/24 (cnv_ChangePowercoreUnitsCommand) @062cbb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_StartBuckPowercoreUnitCommand/23 (cnv_StartBuckPowercoreUnitCommand) @062cb620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_StartBoostPowercoreUnitCommand/22 (cnv_StartBoostPowercoreUnitCommand) @062cb0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_CalculateBoostCurrentLimit/21 (cnv_CalculateBoostCurrentLimit) @062cbd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+cnv_StopPowercoreUnitCommand/20 (cnv_StopPowercoreUnitCommand) @062cba80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_updatePowercoreUnitsComlossCounter/19 (CNV_updatePowercoreUnitsComlossCounter) @062cb7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_getPowercoreUnitsIndex/18 (CNV_getPowercoreUnitsIndex) @062cb540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalWarningsFrame/17 (CNV_GetInternalWarningsFrame) @062cb2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalErrorsFrame/16 (CNV_GetInternalErrorsFrame) @062cb000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalControlInfoFrame/15 (CNV_GetInternalControlInfoFrame) @06238b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalRegulationInfoFrame/14 (CNV_GetInternalRegulationInfoFrame) @06238620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalVoltageMeasuresFrame/13 (CNV_GetInternalVoltageMeasuresFrame) @062380e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalTemperatureMeasuresFrame/12 (CNV_GetInternalTemperatureMeasuresFrame) @06238d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalPowerMeasuresFrame/11 (CNV_GetInternalPowerMeasuresFrame) @06238a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_GetInternalCurrentMeasuresFrame/10 (CNV_GetInternalCurrentMeasuresFrame) @062387e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_ManageInternalErrorResetRequestFrame/9 (CNV_ManageInternalErrorResetRequestFrame) @06238540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_Deinit/8 (CNV_Deinit) @062382a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_Init/7 (CNV_Init) @06238000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+resetCOMETiErrorResetTimer/6 (resetCOMETiErrorResetTimer) @0622bbd0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+stateForErrorResetReq/5 (stateForErrorResetReq) @0622bb40
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0622bbd0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+stopInconsistentCOMETi/4 (stopInconsistentCOMETi) @0622b828
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0622bb40
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+CNV_regulationReq/3 (CNV_regulationReq) @05af32d0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @0622b828
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CNV_buckType/2 (CNV_buckType) @05af3288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05af32d0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CNV_powercoreUnitTable/1 (CNV_powercoreUnitTable) @05af3240
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05af3288
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CNV_flags/0 (CNV_flags) @05af31f8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05af3240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

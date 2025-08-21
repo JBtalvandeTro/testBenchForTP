@@ -1,0 +1,1193 @@
+Trivially needed symbols: Dma0_Error_IrqHandler Dma_Ch0_Ch15_ErrorIrqDispatcher Dma0_Ch15_IRQHandler Dma0_Ch14_IRQHandler Dma0_Ch13_IRQHandler Dma0_Ch12_IRQHandler Dma0_Ch11_IRQHandler Dma0_Ch10_IRQHandler Dma0_Ch9_IRQHandler Dma0_Ch8_IRQHandler Dma0_Ch7_IRQHandler Dma0_Ch6_IRQHandler Dma0_Ch5_IRQHandler Dma0_Ch4_IRQHandler Dma0_Ch3_IRQHandler Dma0_Ch2_IRQHandler Dma0_Ch1_IRQHandler Dma0_Ch0_IRQHandler IntIrqDispatcher g_ptHwv2BaseTcdPtrArray g_ptHwv2BaseInstPtrArray
+
+
+Initial Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @066d7e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d78c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d70e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d7d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d7a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d77e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d7540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d72a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d7000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d3b60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d3620
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d30e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d3d20
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d3a80
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d37e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d3540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @066d32a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @066d3000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @066a8e00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @066a7090
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: IntIrqDispatcher/2 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ch0_Ch15_ErrorIrqDispatcher/19 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma0_Error_IrqHandler/20 
+  Calls: Dma_Ip_ErrorIrqHandler/22 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: IntIrqDispatcher/2 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma0_Ch15_IRQHandler/18 Dma0_Ch14_IRQHandler/17 Dma0_Ch13_IRQHandler/16 Dma0_Ch12_IRQHandler/15 Dma0_Ch11_IRQHandler/14 Dma0_Ch10_IRQHandler/13 Dma0_Ch9_IRQHandler/12 Dma0_Ch8_IRQHandler/11 Dma0_Ch7_IRQHandler/10 Dma0_Ch6_IRQHandler/9 Dma0_Ch5_IRQHandler/8 Dma0_Ch4_IRQHandler/7 Dma0_Ch3_IRQHandler/6 Dma0_Ch2_IRQHandler/5 Dma0_Ch1_IRQHandler/4 Dma0_Ch0_IRQHandler/3 
+  Calls: Dma_Ip_IntIrqHandler/21 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: g_ptHwv2BaseTcdPtrArray g_ptHwv2BaseInstPtrArray
+Removing variables:
+
+Final Symbol table:
+
+Dma_Ip_ErrorIrqHandler/22 (Dma_Ip_ErrorIrqHandler) @0680f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_IntIrqHandler/21 (Dma_Ip_IntIrqHandler) @066db460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Error_IrqHandler/20 (Dma0_Error_IrqHandler) @066d7e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ch0_Ch15_ErrorIrqDispatcher/19 (Dma_Ch0_Ch15_ErrorIrqDispatcher) @066d78c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch15_IRQHandler/18 (Dma0_Ch15_IRQHandler) @066d70e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch14_IRQHandler/17 (Dma0_Ch14_IRQHandler) @066d7d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch13_IRQHandler/16 (Dma0_Ch13_IRQHandler) @066d7a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch12_IRQHandler/15 (Dma0_Ch12_IRQHandler) @066d77e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch11_IRQHandler/14 (Dma0_Ch11_IRQHandler) @066d7540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch10_IRQHandler/13 (Dma0_Ch10_IRQHandler) @066d72a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch9_IRQHandler/12 (Dma0_Ch9_IRQHandler) @066d7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch8_IRQHandler/11 (Dma0_Ch8_IRQHandler) @066d3b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch7_IRQHandler/10 (Dma0_Ch7_IRQHandler) @066d3620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch6_IRQHandler/9 (Dma0_Ch6_IRQHandler) @066d30e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch5_IRQHandler/8 (Dma0_Ch5_IRQHandler) @066d3d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch4_IRQHandler/7 (Dma0_Ch4_IRQHandler) @066d3a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch3_IRQHandler/6 (Dma0_Ch3_IRQHandler) @066d37e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch2_IRQHandler/5 (Dma0_Ch2_IRQHandler) @066d3540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch1_IRQHandler/4 (Dma0_Ch1_IRQHandler) @066d32a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch0_IRQHandler/3 (Dma0_Ch0_IRQHandler) @066d3000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+IntIrqDispatcher/2 (IntIrqDispatcher) @066a8e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @066a7090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0669bf30
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @066a7090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

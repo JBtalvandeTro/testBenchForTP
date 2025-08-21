@@ -1,0 +1,2956 @@
+Trivially needed symbols: Can_Ipw_ProcessRxMesgBuffer Can_Ipw_ProcessTxMesgBuffer Can_Ipw_MainFunction_Mode Can_Ipw_InitRx Can_Ipw_Write Can_Ipw_GetControllerRxErrorCounter Can_Ipw_GetControllerTxErrorCounter Can_Ipw_GetControllerErrorState Can_Ipw_EnableControllerInterrupts Can_Ipw_DisableControllerInterrupts Can_Ipw_SetControllerToStopMode Can_Ipw_SetControllerToStartMode Can_Ipw_SetControlerErrorInit Can_Ipw_SetBaudrate Can_Ipw_DeInit Can_Ipw_Init Can_Ipw_InitBaudrate Can_Ipw_InitLegacyFifoFilter Can_Ipw_ParseData Can_Ipw_abIsInterruptEnabled Can_au16ControllerBaudRateSel Can_Ipw_au16MbIdxToObjIDMap Can_Ipw_au16TxPduId Can_Ipw_apxStatus Can_Ipw_xStatus2 Can_Ipw_xStatus1 Can_Ipw_xStatus0
+Trivially needed symbols: CanIf_PduInfo CanIf_Mailbox
+
+
+Initial Symbol table:
+
+CanIf_PduInfo/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_Mailbox/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @061b4048
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox/57 (addr)CanIf_PduInfo/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox/57 (addr)CanIf_PduInfo/58 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060f27e0
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060f2540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @060f22a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060f2000
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060ea700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060eae00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060eab60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060ea8c0
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060ea620
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060ea0e0
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06055ee0
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @060559a0
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06055540
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06055000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0618da80
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0618d7e0
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0618d0e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06008b60
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06008700
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_EnableControllerInterrupts/18 (write)
+  Availability: not-ready
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @060027e0
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_Init/11 (write)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06002750
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @060026c0
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @060025a0
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06002510
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06002318
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06002288
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CanIf_PduInfo/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_Mailbox/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox/57 (addr)CanIf_PduInfo/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox/57 (addr)CanIf_PduInfo/58 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_EnableControllerInterrupts/18 (write)
+  Availability: not-ready
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_Init/11 (write)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+CanIf_PduInfo.7246/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_Mailbox.7245/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_EnableControllerInterrupts/18 (write)
+  Availability: not-ready
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_Init/11 (write)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CanIf_PduInfo.7246/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_Mailbox.7245/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: not-ready
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_Init/11 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_EnableControllerInterrupts/18 (write)
+  Availability: not-ready
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_Init/11 (write)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+CanIf_PduInfo.7246/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: available
+  Varpool flags:
+CanIf_Mailbox.7245/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessRxMesgBuffer/26 (addr)Can_Ipw_ProcessRxMesgBuffer/26 (addr)
+  Availability: available
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessTxMesgBuffer/25 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_MainFunction_Mode/24 Can_Ipw_MainFunction_Mode/24 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Write/22 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerRxErrorCounter/21 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerTxErrorCounter/20 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_GetControllerErrorState/19 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_SetControllerToStartMode/15 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_EnableControllerInterrupts/18 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 Can_Ipw_SetControlerErrorInit/14 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_DeInit/12 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetControllerToStopMode/16 Can_Ipw_SetBaudrate/13 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 Can_Ipw_DisableControllerInterrupts/17 Can_Ipw_SetControllerToStopMode/16 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_Init/11 Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_SetBaudrate/13 Can_Ipw_InitBaudrate/10 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_InitRx/23 Can_Ipw_InitLegacyFifoFilter/9 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ParseData/8 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ParseData/8 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)Can_Ipw_apxStatus/3 (read)CanIf_Mailbox.7245/57 (addr)CanIf_PduInfo.7246/58 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_RxFifo/45 Can_Ipw_ParseData/8 Det_ReportRuntimeError/27 FlexCAN_Ip_Receive/44 Can_Ipw_ParseData/8 
+   Indirect call
+   Indirect call
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_au16MbIdxToObjIDMap/5 (read)Can_Ipw_au16TxPduId/4 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CanIf_TxConfirmation/56 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 CanIf_ControllerModeIndication/55 FlexCAN_Ip_GetStartMode_Privileged/54 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 Can_Ipw_Init/11 
+  Calls: Can_Ipw_InitLegacyFifoFilter/9 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 FlexCAN_Ip_ConfigRxMb/53 FlexCAN_Ip_SetRxMaskType_Privileged/52 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (read)Can_Ipw_au16TxPduId/4 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Send/51 FlexCAN_Ip_GetTransferStatus/50 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerRxErrorCounter/49 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetControllerTxErrorCounter/48 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_GetErrorStatus/47 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_EnableInterrupts_Privileged/42 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)Can_Ipw_abIsInterruptEnabled/7 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_AbortTransfer/46 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_Ipw_apxStatus/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Can_Ipw_SetControlerErrorInit/14 FlexCAN_Ip_RxFifo/45 FlexCAN_Ip_Receive/44 Can_Ipw_InitRx/23 Can_Ipw_InitBaudrate/10 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Ipw_abIsInterruptEnabled/7 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetStartMode_Privileged/43 FlexCAN_Ip_EnableInterrupts_Privileged/42 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 FlexCAN_Ip_SetErrorInt_Privileged/41 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 FlexCAN_Ip_EnterFreezeMode_Privileged/40 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_Deinit_Privileged/39 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Can_au16ControllerBaudRateSel/6 (write)Can_Ipw_apxStatus/3 (read)Can_Ipw_abIsInterruptEnabled/7 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)Can_Ipw_au16MbIdxToObjIDMap/5 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: FlexCAN_Ip_SetStopMode_Privileged/38 Can_Ipw_InitRx/23 FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_DisableInterrupts_Privileged/37 FlexCAN_Ip_Init_Privileged/36 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_au16ControllerBaudRateSel/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_SetControllerToStartMode/15 
+  Calls: FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 FlexCAN_Ip_SetTDCOffset_Privileged/34 FlexCAN_Ip_SetBitrateCbt_Privileged/33 FlexCAN_Ip_SetBitrate_Privileged/32 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_InitRx/23 
+  Calls: FlexCAN_Ip_ConfigRxFifo_Privileged/31 FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 FlexCAN_Ip_SetRxIndividualMask_Privileged/29 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Can_Ipw_ProcessRxMesgBuffer/26 Can_Ipw_ProcessRxMesgBuffer/26 
+  Calls: CanIf_RxIndication/28 Det_ReportRuntimeError/27 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_DisableControllerInterrupts/17 (write)Can_Ipw_SetControllerToStopMode/16 (read)Can_Ipw_EnableControllerInterrupts/18 (write)Can_Ipw_DisableControllerInterrupts/17 (read)Can_Ipw_SetControlerErrorInit/14 (read)Can_Ipw_EnableControllerInterrupts/18 (read)Can_Ipw_Init/11 (write)
+  Availability: available
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_InitBaudrate/10 (read)Can_Ipw_SetBaudrate/13 (write)Can_Ipw_Write/22 (read)Can_Ipw_Init/11 (write)
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_ProcessTxMesgBuffer/25 (read)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_Init/11 (write)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_Write/22 (write)Can_Ipw_ProcessTxMesgBuffer/25 (read)
+  Availability: available
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: Can_Ipw_Init/11 (read)Can_Ipw_SetControllerToStartMode/15 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)Can_Ipw_ProcessRxMesgBuffer/26 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: CanIf_PduInfo.7246 CanIf_Mailbox.7245 Can_Ipw_abIsInterruptEnabled Can_au16ControllerBaudRateSel Can_Ipw_au16MbIdxToObjIDMap Can_Ipw_au16TxPduId Can_Ipw_apxStatus Can_Ipw_xStatus2 Can_Ipw_xStatus1 Can_Ipw_xStatus0
+Removing variables:
+
+Final Symbol table:
+
+CanIf_PduInfo.7246/58 (CanIf_PduInfo) @061b4048
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CanIf_Mailbox.7245/57 (CanIf_Mailbox) @061b4000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @061b4048
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+CanIf_TxConfirmation/56 (CanIf_TxConfirmation) @061ad2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_ControllerModeIndication/55 (CanIf_ControllerModeIndication) @061ad0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_GetStartMode_Privileged/54 (FlexCAN_Ip_GetStartMode_Privileged) @061ad000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_ConfigRxMb/53 (FlexCAN_Ip_ConfigRxMb) @06198e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetRxMaskType_Privileged/52 (FlexCAN_Ip_SetRxMaskType_Privileged) @06198d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_Send/51 (FlexCAN_Ip_Send) @06198b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_GetTransferStatus/50 (FlexCAN_Ip_GetTransferStatus) @06198a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_GetControllerRxErrorCounter/49 (FlexCAN_Ip_GetControllerRxErrorCounter) @061988c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_GetControllerTxErrorCounter/48 (FlexCAN_Ip_GetControllerTxErrorCounter) @06198700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_GetErrorStatus/47 (FlexCAN_Ip_GetErrorStatus) @06198540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_AbortTransfer/46 (FlexCAN_Ip_AbortTransfer) @061981c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_RxFifo/45 (FlexCAN_Ip_RxFifo) @06198000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_Receive/44 (FlexCAN_Ip_Receive) @06104b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetStartMode_Privileged/43 (FlexCAN_Ip_SetStartMode_Privileged) @061040e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_EnableInterrupts_Privileged/42 (FlexCAN_Ip_EnableInterrupts_Privileged) @06104ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetErrorInt_Privileged/41 (FlexCAN_Ip_SetErrorInt_Privileged) @06104e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_EnterFreezeMode_Privileged/40 (FlexCAN_Ip_EnterFreezeMode_Privileged) @06104c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_Deinit_Privileged/39 (FlexCAN_Ip_Deinit_Privileged) @06104a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetStopMode_Privileged/38 (FlexCAN_Ip_SetStopMode_Privileged) @061048c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_DisableInterrupts_Privileged/37 (FlexCAN_Ip_DisableInterrupts_Privileged) @06104700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_Init_Privileged/36 (FlexCAN_Ip_Init_Privileged) @06104620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged/35 (FlexCAN_Ip_SetTxArbitrationStartDelay_Privileged) @06104460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetTDCOffset_Privileged/34 (FlexCAN_Ip_SetTDCOffset_Privileged) @06104380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetBitrateCbt_Privileged/33 (FlexCAN_Ip_SetBitrateCbt_Privileged) @061042a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetBitrate_Privileged/32 (FlexCAN_Ip_SetBitrate_Privileged) @061041c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_ConfigRxFifo_Privileged/31 (FlexCAN_Ip_ConfigRxFifo_Privileged) @06104000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetRxFifoGlobalMask_Privileged/30 (FlexCAN_Ip_SetRxFifoGlobalMask_Privileged) @060f2ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FlexCAN_Ip_SetRxIndividualMask_Privileged/29 (FlexCAN_Ip_SetRxIndividualMask_Privileged) @060f2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CanIf_RxIndication/28 (CanIf_RxIndication) @060f2e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportRuntimeError/27 (Det_ReportRuntimeError) @060f2d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_ProcessRxMesgBuffer/26 (Can_Ipw_ProcessRxMesgBuffer) @060f27e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_ProcessTxMesgBuffer/25 (Can_Ipw_ProcessTxMesgBuffer) @060f2540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_MainFunction_Mode/24 (Can_Ipw_MainFunction_Mode) @060f22a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_InitRx/23 (Can_Ipw_InitRx) @060f2000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_Write/22 (Can_Ipw_Write) @060ea700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_GetControllerRxErrorCounter/21 (Can_Ipw_GetControllerRxErrorCounter) @060eae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_GetControllerTxErrorCounter/20 (Can_Ipw_GetControllerTxErrorCounter) @060eab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_GetControllerErrorState/19 (Can_Ipw_GetControllerErrorState) @060ea8c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_EnableControllerInterrupts/18 (Can_Ipw_EnableControllerInterrupts) @060ea620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_DisableControllerInterrupts/17 (Can_Ipw_DisableControllerInterrupts) @060ea0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_SetControllerToStopMode/16 (Can_Ipw_SetControllerToStopMode) @06055ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_SetControllerToStartMode/15 (Can_Ipw_SetControllerToStartMode) @060559a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_SetControlerErrorInit/14 (Can_Ipw_SetControlerErrorInit) @06055540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_SetBaudrate/13 (Can_Ipw_SetBaudrate) @06055000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_DeInit/12 (Can_Ipw_DeInit) @0618da80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_Init/11 (Can_Ipw_Init) @0618d7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_InitBaudrate/10 (Can_Ipw_InitBaudrate) @0618d0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_InitLegacyFifoFilter/9 (Can_Ipw_InitLegacyFifoFilter) @06008b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_ParseData/8 (Can_Ipw_ParseData) @06008700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_Ipw_abIsInterruptEnabled/7 (Can_Ipw_abIsInterruptEnabled) @060027e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @061b4000
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Can_au16ControllerBaudRateSel/6 (Can_au16ControllerBaudRateSel) @06002750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @060027e0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16MbIdxToObjIDMap/5 (Can_Ipw_au16MbIdxToObjIDMap) @060026c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06002750
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Can_Ipw_au16TxPduId/4 (Can_Ipw_au16TxPduId) @060025a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @060026c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Can_Ipw_apxStatus/3 (Can_Ipw_apxStatus) @06002510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @060025a0
+  References: Can_Ipw_xStatus0/0 (addr)Can_Ipw_xStatus1/1 (addr)Can_Ipw_xStatus2/2 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Can_Ipw_xStatus2/2 (Can_Ipw_xStatus2) @06002318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06002510
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus1/1 (Can_Ipw_xStatus1) @06002288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06002318
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:
+Can_Ipw_xStatus0/0 (Can_Ipw_xStatus0) @06002240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @06002288
+  References: 
+  Referring: Can_Ipw_apxStatus/3 (addr)
+  Availability: available
+  Varpool flags:

@@ -1,0 +1,173 @@
+Rm_Mpu_GetErrorDetails (struct Rm_Mpu_ErrorDetailsType * pErrorDetails)
+{
+  boolean bErr;
+  Std_ReturnType retval;
+  Std_ReturnType D.5841;
+  Std_ReturnType _9;
+
+  <bb 2> :
+  retval_2 = 1;
+  bErr_6 = Rm_Ipw_Mpu_GetErrorDetails (pErrorDetails_4(D));
+  if (bErr_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  retval_8 = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  retval_7 = 1;
+
+  <bb 5> :
+  # retval_1 = PHI <retval_8(3), retval_7(4)>
+  _9 = retval_1;
+
+  <bb 6> :
+<L3>:
+  return _9;
+
+}
+
+
+Rm_Mpu_SetAccessMode (uint8 u8RegionNum, Rm_Mpu_MasterType eMaster, Rm_Mpu_SupervisorAccessModeType eSupervisorMode, Rm_Mpu_UserAccessModeType eUserMode)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_SetAccessMode (u8RegionNum_2(D), eMaster_3(D), eSupervisorMode_4(D), eUserMode_5(D));
+  return;
+
+}
+
+
+Rm_Mpu_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_EnableRegion (u8RegionNum_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+Rm_Mpu_SetRegionConfig (uint8 u8RegionNum, const struct Rm_Mpu_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  Rm_Ipw_Mpu_SetRegionConfig (u8RegionNum_2(D), pUserConfigPtr_3(D));
+  return;
+
+}
+
+
+Rm_Init (const struct Rm_ConfigType * ConfigPtr)
+{
+  Std_ReturnType valid;
+  const struct Rm_ConfigType * Rm_pConfig.1_1;
+  const struct Rm_Ipw_ConfigType * _2;
+
+  <bb 2> :
+  valid_6 = Rm_ValidateGlobalCall (0);
+  if (valid_6 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  valid_9 = Rm_ValidatePtrInit (ConfigPtr_7(D));
+  if (valid_9 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Rm_pConfig = &Rm_Config;
+  Rm_pConfig.1_1 = Rm_pConfig;
+  _2 = Rm_pConfig.1_1->Rm_pIpwConfig;
+  Rm_Ipw_Mpu_Init (_2);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Rm_ValidatePtrInit (const struct Rm_ConfigType * ConfigPtr)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5832;
+  Std_ReturnType _8;
+
+  <bb 2> :
+  valid_3 = 0;
+  if (ConfigPtr_4(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  valid_6 = 1;
+  Det_ReportError (255, 0, 0, 4);
+
+  <bb 4> :
+  # valid_1 = PHI <valid_3(2), valid_6(3)>
+  _8 = valid_1;
+
+  <bb 5> :
+<L3>:
+  return _8;
+
+}
+
+
+Rm_ValidateGlobalCall (uint8 u8ServiceId)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.5827;
+  const struct Rm_ConfigType * Rm_pConfig.0_1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  valid_4 = 1;
+  Rm_pConfig.0_1 = Rm_pConfig;
+  if (Rm_pConfig.0_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (u8ServiceId_6(D) == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Det_ReportError (255, 0, u8ServiceId_6(D), 2);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  valid_9 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  if (u8ServiceId_6(D) == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  valid_8 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  Det_ReportError (255, 0, u8ServiceId_6(D), 3);
+
+  <bb 9> :
+  # valid_2 = PHI <valid_9(5), valid_8(7), valid_4(8), valid_4(4)>
+  _11 = valid_2;
+
+  <bb 10> :
+<L9>:
+  return _11;
+
+}
+
+

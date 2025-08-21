@@ -1,0 +1,442 @@
+sch_ExitLowPower ()
+{
+  <bb 2> :
+  Mcu_SetMode (0);
+  Mcl_Init (&Mcl_Config_INIT);
+  Port_Init (&Port_Config_Init);
+  Platform_Init (0B);
+  Platform_SetIrq (79, 1);
+  Platform_SetIrq (81, 1);
+  Platform_SetIrq (82, 1);
+  Platform_SetIrq (86, 1);
+  Platform_SetIrq (80, 1);
+  Platform_SetIrq (88, 1);
+  Platform_SetIrq (89, 1);
+  Platform_SetIrq (0, 1);
+  Platform_SetIrq (1, 1);
+  Platform_SetIrq (2, 1);
+  Platform_SetIrq (3, 1);
+  Platform_SetIrq (26, 1);
+  Platform_SetIrq (27, 1);
+  Platform_SetIrq (49, 1);
+  Platform_SetIrq (50, 1);
+  Gpt_Init (&Gpt_Config_Init);
+  Spi_Init (&Spi_Config_Init);
+  Spi_SetAsyncMode (1);
+  Can_Init (&Can_Config_Init);
+  Pwm_Init (&Pwm_Config_Init);
+  Crc_Init (&Crc_xConfigInit);
+  INI_InitMiddlewares ();
+  INI_InitLibrairies ();
+  INI_InitModules ();
+  return;
+
+}
+
+
+sch_EnterLowPower ()
+{
+  <bb 2> :
+  ACT_Deinit ();
+  FSM_Deinit ();
+  MPM_Deinit ();
+  FLA_Deinit ();
+  Pwm_DeInit ();
+  Spi_DeInit ();
+  Gpt_DeInit ();
+  Mcl_DeInit ();
+  Platform_SetIrq (79, 0);
+  Platform_SetIrq (81, 1);
+  Platform_SetIrq (82, 1);
+  Platform_SetIrq (86, 0);
+  Platform_SetIrq (80, 1);
+  Platform_SetIrq (88, 0);
+  Platform_SetIrq (89, 0);
+  Platform_SetIrq (0, 0);
+  Platform_SetIrq (1, 0);
+  Platform_SetIrq (2, 0);
+  Platform_SetIrq (3, 0);
+  Platform_SetIrq (26, 0);
+  Platform_SetIrq (27, 0);
+  Platform_SetIrq (28, 0);
+  Platform_SetIrq (48, 0);
+  Platform_SetIrq (49, 0);
+  Platform_SetIrq (50, 0);
+  Mcu_SetMode (1);
+  return;
+
+}
+
+
+sch_Interruption ()
+{
+  <bb 2> :
+  _1 = sch_counters.count1ms;
+  _2 = _1 + 1;
+  sch_counters.count1ms = _2;
+  WDO_InternalStateFlag.5_3 = WDO_InternalStateFlag;
+  if (WDO_InternalStateFlag.5_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  WDO_Refresh (0);
+
+  <bb 4> :
+  WDO_ExternalStateFlag.6_4 = WDO_ExternalStateFlag;
+  if (WDO_ExternalStateFlag.6_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  WDO_Refresh (1);
+
+  <bb 6> :
+  return;
+
+}
+
+
+sch_UpdateLoadMeasures ()
+{
+  uint32_t tempLoad;
+
+  <bb 2> :
+  sch_mainLoopElapsedTimeUs.2_1 = sch_mainLoopElapsedTimeUs;
+  _2 = sch_mainLoopElapsedTimeUs.2_1 * 100;
+  tempLoad = _2 / 100;
+  if (tempLoad > 100)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  tempLoad = 100;
+
+  <bb 4> :
+  SCH_MinLoad.3_3 = SCH_MinLoad;
+  _4 = (long unsigned int) SCH_MinLoad.3_3;
+  if (tempLoad < _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) tempLoad;
+  SCH_MinLoad = _5;
+
+  <bb 6> :
+  SCH_MaxLoad.4_6 = SCH_MaxLoad;
+  _7 = (long unsigned int) SCH_MaxLoad.4_6;
+  if (tempLoad > _7)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = (unsigned char) tempLoad;
+  SCH_MaxLoad = _8;
+
+  <bb 8> :
+  _9 = (unsigned char) tempLoad;
+  SCH_AverageLoad = _9;
+  return;
+
+}
+
+
+sch_Run10sTasks ()
+{
+  <bb 2> :
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+
+sch_Run1sTasks ()
+{
+  <bb 2> :
+  sch_counters.count1s = 0;
+  PAR_SaveParametersInFlash ();
+  return;
+
+}
+
+
+sch_Run500msTasks ()
+{
+  <bb 2> :
+  sch_counters.count500ms = 0;
+  return;
+
+}
+
+
+sch_Run100msTasks ()
+{
+  <bb 2> :
+  sch_counters.count100ms = 0;
+  CTBPbit_SetTimePeriod ();
+  return;
+
+}
+
+
+sch_Run50msTasks ()
+{
+  <bb 2> :
+  sch_counters.count50ms = 0;
+  return;
+
+}
+
+
+sch_Run20msTasks ()
+{
+  <bb 2> :
+  sch_counters.count20ms = 0;
+  COM_TxRequestedTasks ();
+  return;
+
+}
+
+
+sch_Run10msTasks ()
+{
+  <bb 2> :
+  sch_counters.count10ms = 0;
+  ACT_readyForLowPower.1_1 = ACT_readyForLowPower;
+  if (ACT_readyForLowPower.1_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  sch_EnterLowPower ();
+  sch_ExitLowPower ();
+
+  <bb 4> :
+  MPM_Management ();
+  COM_RxTask ();
+  return;
+
+}
+
+
+sch_Run5msTasks ()
+{
+  <bb 2> :
+  sch_counters.count5ms = 0;
+  return;
+
+}
+
+
+sch_Run1msTasks ()
+{
+  uint32_t localCnt1msCpy;
+
+  <bb 2> :
+  localCnt1msCpy = sch_counters.count1ms;
+  sch_counters.count1ms = 0;
+  _1 = sch_counters.count5ms;
+  _2 = localCnt1msCpy + _1;
+  sch_counters.count5ms = _2;
+  _3 = sch_counters.count10ms;
+  _4 = localCnt1msCpy + _3;
+  sch_counters.count10ms = _4;
+  _5 = sch_counters.count20ms;
+  _6 = localCnt1msCpy + _5;
+  sch_counters.count20ms = _6;
+  _7 = sch_counters.count50ms;
+  _8 = localCnt1msCpy + _7;
+  sch_counters.count50ms = _8;
+  _9 = sch_counters.count100ms;
+  _10 = localCnt1msCpy + _9;
+  sch_counters.count100ms = _10;
+  _11 = sch_counters.count500ms;
+  _12 = localCnt1msCpy + _11;
+  sch_counters.count500ms = _12;
+  _13 = sch_counters.count1s;
+  _14 = localCnt1msCpy + _13;
+  sch_counters.count1s = _14;
+  _15 = sch_counters.count10s;
+  _16 = localCnt1msCpy + _15;
+  sch_counters.count10s = _16;
+  _17 = BIT_FIELD_REF <PAR_flags.moduleFlags.status.flags, 8, 0>;
+  _18 = _17 & 2;
+  if (_18 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mcu_PerformReset ();
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  WDO_Refresh (1);
+
+  <bb 5> :
+  PAR_Update ();
+  ACT_UpdateFaults ();
+  FSM_Update ();
+  PWB_Update ();
+  CTB_Update ();
+  DBG_Update ();
+  CNV_Update ();
+  COM_TxScheduledTasks ();
+  return;
+
+}
+
+
+SCH_MainLoop ()
+{
+  <bb 2> :
+  _1 = sch_counters.count1ms;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  sch_Run1msTasks ();
+
+  <bb 4> :
+  _2 = sch_counters.count5ms;
+  if (_2 > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  sch_Run5msTasks ();
+
+  <bb 6> :
+  _3 = sch_counters.count10ms;
+  if (_3 > 9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  sch_Run10msTasks ();
+
+  <bb 8> :
+  _4 = sch_counters.count20ms;
+  if (_4 > 19)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  sch_Run20msTasks ();
+
+  <bb 10> :
+  _5 = sch_counters.count50ms;
+  if (_5 > 49)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  sch_Run50msTasks ();
+
+  <bb 12> :
+  _6 = sch_counters.count100ms;
+  if (_6 > 99)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  sch_Run100msTasks ();
+
+  <bb 14> :
+  _7 = sch_counters.count500ms;
+  if (_7 > 499)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  sch_Run500msTasks ();
+
+  <bb 16> :
+  _8 = sch_counters.count1s;
+  if (_8 > 999)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  sch_Run1sTasks ();
+
+  <bb 18> :
+  _9 = sch_counters.count10s;
+  if (_9 > 9999)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  sch_Run10sTasks ();
+
+  <bb 20> :
+  sch_UpdateLoadMeasures ();
+  return;
+
+}
+
+
+SCH_Deinit ()
+{
+  <bb 2> :
+  Gpt_DisableNotification (0);
+  sch_counters.count1ms = 0;
+  sch_counters.count5ms = 0;
+  sch_counters.count10ms = 0;
+  sch_counters.count20ms = 0;
+  sch_counters.count50ms = 0;
+  sch_counters.count100ms = 0;
+  sch_counters.count500ms = 0;
+  sch_counters.count1s = 0;
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+
+SCH_Init ()
+{
+  static uint32_t SCH_lpit0Freq;
+
+  <bb 2> :
+  SCH_MinLoad = 100;
+  SCH_MaxLoad = 0;
+  SCH_AverageLoad = 0;
+  Platform_InstallIrqHandler (48, LPIT_0_CH_0_ISR, 0B);
+  _1 = Mcu_GetClockFrequency (78);
+  SCH_lpit0Freq = _1;
+  Gpt_EnableNotification (0);
+  SCH_lpit0Freq.0_2 = SCH_lpit0Freq;
+  _3 = SCH_lpit0Freq.0_2 / 1000;
+  Gpt_StartTimer (0, _3);
+  sch_counters.count1ms = 0;
+  sch_counters.count5ms = 0;
+  sch_counters.count10ms = 0;
+  sch_counters.count20ms = 0;
+  sch_counters.count50ms = 0;
+  sch_counters.count100ms = 0;
+  sch_counters.count500ms = 0;
+  sch_counters.count1s = 0;
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+

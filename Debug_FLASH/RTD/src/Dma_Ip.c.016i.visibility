@@ -1,0 +1,2185 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Dma_Ip_ErrorIrqHandler Dma_Ip_IntIrqHandler Dma_Ip_SetLogicChannelScatterGatherConfig Dma_Ip_GetLogicChannelParam Dma_Ip_SetLogicChannelScatterGatherList Dma_Ip_SetLogicChannelTransferList Dma_Ip_SetLogicChannelGlobalList Dma_Ip_GetLogicChannelStatus Dma_Ip_SetLogicChannelCommand Dma_Ip_LogicChannelDeinit Dma_Ip_LogicChannelInit Dma_Ip_GetLogicInstanceStatus Dma_Ip_SetLogicInstanceCommand Dma_Ip_Deinit Dma_Ip_Init Dma_Ip_ConvertLogicChToHwCh
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_IntIrqHandler/24 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_Init/6 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 Dma_Ip_Init/6 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)
+  Availability: available
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Static_Dma_Ip_GetLogicChannelError (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * LocLogicChErrors)
+{
+  uint32 LocError;
+
+  <bb 2> :
+  LocError = 0;
+  HwAccDmaCh_GetStatus_Error (LocHwVers, LocHwInst, LocHwCh, &LocError);
+  _1 = *LocLogicChErrors;
+  LocError.37_2 = LocError;
+  _3 = _1 | LocError.37_2;
+  *LocLogicChErrors = _3;
+  LocError = {CLOBBER};
+  return;
+
+}
+
+
+Dma_Ip_ErrorIrqHandler (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_HwChannelStateType * LocChState;
+
+  <bb 2> :
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  if (LocChState != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _1 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _1);
+  _2 = LocChState->LogicChErrors;
+  if (_2 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+
+  <bb 5> :
+  _3 = LocChState->LogicChId;
+  _4 = _3->ErrIntCallback;
+  if (_4 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _5 = LocChState->LogicChId;
+  _6 = _5->ErrIntCallback;
+  _6 ();
+
+  <bb 7> :
+  return;
+
+}
+
+
+Dma_Ip_IntIrqHandler (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  const struct Dma_Ip_HwChannelStateType * LocChState;
+
+  <bb 2> :
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  if (LocChState != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _1 = LocChState->LogicChId;
+  _2 = _1->IntCallback;
+  if (_2 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = LocChState->LogicChId;
+  _4 = _3->IntCallback;
+  _4 ();
+
+  <bb 5> :
+  return;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelScatterGatherInit (const uint32 LogicCh, const uint32 Element)
+{
+  uint32 LocElement;
+  uint32 LocLoopCheck;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  struct Dma_Ip_ScatterGatherConfigType * LocCurrentConfig;
+  struct Dma_Ip_ScatterGatherConfigType * LocScatterGather;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6636;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.35_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.35_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  Dma_Ip_pxInit.36_6 = Dma_Ip_pxInit;
+  _7 = Dma_Ip_pxInit.36_6->ppxLogicChannelConfigArray;
+  _8 = LogicCh * 4;
+  _9 = _7 + _8;
+  _10 = *_9;
+  _11 = _10->ppxScatterGatherConfigArray;
+  _12 = Element * 4;
+  _13 = _11 + _12;
+  LocScatterGather = *_13;
+  _14 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _14;
+  _15 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _15;
+  _16 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _16;
+  LocLoopCheck = 0;
+  LocElement = Element;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12 ();
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _17 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _17);
+  _18 = LocChState->StateValue;
+  if (_18 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  LocCurrentConfig = LocScatterGather;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  LocCurrentConfig->Loaded = 0;
+  LocCurrentConfig = LocCurrentConfig->NextConfig;
+
+  <bb 5> :
+  if (LocCurrentConfig != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _19 = LocCurrentConfig->Loaded;
+  if (_19 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  LocCurrentConfig = LocScatterGather;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  LocCurrentConfig->Loaded = 1;
+  _20 = LocCurrentConfig->NextConfig;
+  if (_20 == 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  HwAccDmaCh_LoadConfigIntoSoftwareTcd (LocHwVers, LocCurrentConfig, LocElement, 0);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  HwAccDmaCh_LoadConfigIntoSoftwareTcd (LocHwVers, LocCurrentConfig, LocElement, 1);
+
+  <bb 11> :
+  LocCurrentConfig = LocCurrentConfig->NextConfig;
+  LocLoopCheck = LocLoopCheck + 1;
+  LocElement = LocElement + 1;
+
+  <bb 12> :
+  if (LocCurrentConfig != 0B)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _21 = LocCurrentConfig->Loaded;
+  _22 = ~_21;
+  if (_22 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd (LocLogicChId, LocScatterGather);
+
+  <bb 15> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12 ();
+  D.6636 = LocStatus;
+
+  <bb 16> :
+<L14>:
+  return D.6636;
+
+}
+
+
+Static_Dma_Ip_ResetConfig (const uint32 LogicCh)
+{
+  <bb 2> :
+  Dma_Ip_pxInit.33_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.33_1->pxLogicChannelResetConfig;
+  _3 = _2->pxGlobalConfig;
+  Static_Dma_Ip_SetLogicChannelGlobalConfig (LogicCh, _3, 1);
+  Dma_Ip_pxInit.34_4 = Dma_Ip_pxInit;
+  _5 = Dma_Ip_pxInit.34_4->pxLogicChannelResetConfig;
+  _6 = _5->pxTransferConfig;
+  Static_Dma_Ip_SetLogicChannelTransferConfig (LogicCh, _6);
+  return;
+
+}
+
+
+Dma_Ip_SetLogicChannelScatterGatherConfig (const uint32 LogicCh, const uint32 Element)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_ScatterGatherConfigType * LocScatterGather;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6626;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.31_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.31_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  Dma_Ip_pxInit.32_6 = Dma_Ip_pxInit;
+  _7 = Dma_Ip_pxInit.32_6->ppxLogicChannelConfigArray;
+  _8 = LogicCh * 4;
+  _9 = _7 + _8;
+  _10 = *_9;
+  _11 = _10->ppxScatterGatherConfigArray;
+  _12 = Element * 4;
+  _13 = _11 + _12;
+  LocScatterGather = *_13;
+  _14 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _14;
+  _15 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _15;
+  _16 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _16;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11 ();
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _17 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _17);
+  _18 = LocChState->LogicChErrors;
+  if (_18 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+  LocStatus = 1;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  _19 = LocChState->StateValue;
+  if (_19 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd (LocLogicChId, LocScatterGather);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  _20 = LocChState->StateValue;
+  if (_20 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _21 = LocChState->StateValue;
+  if (_21 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 3);
+  HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd (LocLogicChId, LocScatterGather);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  LocStatus = 2;
+
+  <bb 10> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11 ();
+  D.6626 = LocStatus;
+
+  <bb 11> :
+<L10>:
+  return D.6626;
+
+}
+
+
+Dma_Ip_GetLogicChannelParam (const uint32 LogicCh, const Dma_Ip_LogicChannelInfoParamType Param, uint32 * const Value)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6614;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.30_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.30_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  HwAccDmaCh_GetParam (Param, LocHwVers, LocHwInst, LocHwCh, Value);
+  D.6614 = LocStatus;
+
+  <bb 3> :
+<L0>:
+  return D.6614;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelScatterGatherList (const uint32 LogicCh, struct Dma_Ip_SwTcdRegType * PxSwTcd, const struct Dma_Ip_LogicChannelScatterGatherListType * List, const uint32 ListDimension)
+{
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  uint32 LocParamIdx;
+
+  <bb 2> :
+  Dma_Ip_pxInit.29_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.29_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  LocParamIdx = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _7 = LocParamIdx * 8;
+  _8 = List + _7;
+  _9 = _8->Param;
+  _10 = LocParamIdx * 8;
+  _11 = List + _10;
+  _12 = _11->Value;
+  HwAccDmaCh_SetTransferParam (_9, LocHwVers, PxSwTcd, _12);
+  LocParamIdx = LocParamIdx + 1;
+
+  <bb 4> :
+  if (LocParamIdx < ListDimension)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Dma_Ip_SetLogicChannelScatterGatherList (const uint32 LogicCh, const uint32 Element, const struct Dma_Ip_LogicChannelScatterGatherListType * List, const uint32 ListDimension)
+{
+  struct Dma_Ip_SwTcdRegType * PxSwTcd;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6612;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.27_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.27_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09 ();
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _9 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _9);
+  _10 = LocChState->LogicChErrors;
+  if (_10 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+  LocStatus = 1;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  Dma_Ip_pxInit.28_11 = Dma_Ip_pxInit;
+  _12 = Dma_Ip_pxInit.28_11->ppxLogicChannelConfigArray;
+  _13 = LogicCh * 4;
+  _14 = _12 + _13;
+  _15 = *_14;
+  _16 = _15->ppxScatterGatherConfigArray;
+  _17 = Element * 4;
+  _18 = _16 + _17;
+  _19 = *_18;
+  PxSwTcd = _19->Stcd;
+  _20 = LocChState->StateValue;
+  if (_20 == 3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Static_Dma_Ip_SetLogicChannelScatterGatherList (LogicCh, PxSwTcd, List, ListDimension);
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  _21 = LocChState->StateValue;
+  if (_21 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _22 = LocChState->StateValue;
+  if (_22 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 3);
+  Static_Dma_Ip_SetLogicChannelScatterGatherList (LogicCh, PxSwTcd, List, ListDimension);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  LocStatus = 2;
+
+  <bb 10> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09 ();
+  D.6612 = LocStatus;
+
+  <bb 11> :
+<L10>:
+  return D.6612;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelTransferList (const uint32 LogicCh, struct Dma_Ip_TcdRegType * PxTcd, const struct Dma_Ip_LogicChannelTransferListType * List, const uint32 ListDimension)
+{
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  uint32 LocParamIdx;
+
+  <bb 2> :
+  Dma_Ip_pxInit.26_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.26_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  LocParamIdx = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _7 = LocParamIdx * 8;
+  _8 = List + _7;
+  _9 = _8->Param;
+  _10 = LocParamIdx * 8;
+  _11 = List + _10;
+  _12 = _11->Value;
+  HwAccDmaCh_SetTransferParam (_9, LocHwVers, PxTcd, _12);
+  LocParamIdx = LocParamIdx + 1;
+
+  <bb 4> :
+  if (LocParamIdx < ListDimension)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Dma_Ip_SetLogicChannelTransferList (const uint32 LogicCh, const struct Dma_Ip_LogicChannelTransferListType * List, const uint32 ListDimension)
+{
+  struct Dma_Ip_TcdRegType * PxTcd;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6600;
+
+  <bb 2> :
+  LocStatus = 0;
+  PxTcd = 0B;
+  Dma_Ip_pxInit.25_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.25_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08 ();
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _9 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _9);
+  _10 = LocChState->LogicChErrors;
+  if (_10 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+  LocStatus = 1;
+  goto <bb 13>; [INV]
+
+  <bb 4> :
+  if (LocHwVers == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _11 = 1073778688B;
+  PxTcd = &_11->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+
+  <bb 6> :
+  HwAccDmaCh_SetCommand (3, LocHwVers, LocHwInst, LocHwCh);
+  _12 = LocChState->StateValue;
+  if (_12 == 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Static_Dma_Ip_SetLogicChannelTransferList (LogicCh, PxTcd, List, ListDimension);
+  goto <bb 13>; [INV]
+
+  <bb 8> :
+  HwAccDmaCh_SetControl_EnScatterGatherProcessing (LocHwVers, PxTcd, 0);
+  HwAccDmaCh_SetControl_ScatterGatherAddress (LocHwVers, PxTcd, 0);
+  _13 = LocChState->StateValue;
+  if (_13 == 3)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 2);
+  Static_Dma_Ip_SetLogicChannelTransferList (LogicCh, PxTcd, List, ListDimension);
+  goto <bb 13>; [INV]
+
+  <bb 10> :
+  _14 = LocChState->StateValue;
+  if (_14 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 2);
+  Static_Dma_Ip_SetLogicChannelTransferList (LogicCh, PxTcd, List, ListDimension);
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  LocStatus = 2;
+
+  <bb 13> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08 ();
+  D.6600 = LocStatus;
+
+  <bb 14> :
+<L14>:
+  return D.6600;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelGlobalList (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const struct Dma_Ip_LogicChannelGlobalListType * List, const uint32 ListDimension)
+{
+  uint32 LocParamIdx;
+
+  <bb 2> :
+  LocParamIdx = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = LocParamIdx * 8;
+  _2 = List + _1;
+  _3 = _2->Param;
+  _4 = LocParamIdx * 8;
+  _5 = List + _4;
+  _6 = _5->Value;
+  HwAccDmaCh_SetGlobalParam (_3, LocHwVers, LocHwInst, LocHwCh, _6);
+  LocParamIdx = LocParamIdx + 1;
+
+  <bb 4> :
+  if (LocParamIdx < ListDimension)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Dma_Ip_SetLogicChannelGlobalList (const uint32 LogicCh, const struct Dma_Ip_LogicChannelGlobalListType * List, const uint32 ListDimension)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6584;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.24_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.24_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07 ();
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _9 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (LocHwVers, LocHwInst, LocHwCh, _9);
+  _10 = LocChState->LogicChErrors;
+  if (_10 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+  LocStatus = 1;
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+  _11 = LocChState->StateValue;
+  if (_11 == 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  _12 = LocChState->StateValue;
+  if (_12 == 3)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _13 = LocChState->StateValue;
+  if (_13 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  Static_Dma_Ip_SetLogicChannelGlobalList (LocHwVers, LocHwInst, LocHwCh, List, ListDimension);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  LocStatus = 2;
+
+  <bb 9> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07 ();
+  D.6584 = LocStatus;
+
+  <bb 10> :
+<L8>:
+  return D.6584;
+
+}
+
+
+Dma_Ip_GetLogicChannelStatus (const uint32 LogicCh, struct Dma_Ip_LogicChannelStatusType * const ChStatus)
+{
+  uint8 LocHwCh;
+  uint8 LocHwInst;
+  uint8 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6574;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.23_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.23_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  LocHwVers = LocLogicChId->HwVersId;
+  LocHwInst = LocLogicChId->HwInstId;
+  LocHwCh = LocLogicChId->HwChId;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06 ();
+  _6 = (long unsigned int) LocHwVers;
+  _7 = (long unsigned int) LocHwInst;
+  _8 = (long unsigned int) LocHwCh;
+  LocChState = Dma_Ip_GetHwChannelStatePointer (_6, _7, _8);
+  _9 = (long unsigned int) LocHwVers;
+  _10 = (long unsigned int) LocHwInst;
+  _11 = (long unsigned int) LocHwCh;
+  _12 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (_9, _10, _11, _12);
+  _13 = LocChState->LogicChErrors;
+  ChStatus->Errors = _13;
+  _14 = (long unsigned int) LocHwVers;
+  _15 = (long unsigned int) LocHwInst;
+  _16 = (long unsigned int) LocHwCh;
+  HwAccDmaCh_GetStatus (_14, _15, _16, ChStatus);
+  _17 = (long unsigned int) LocHwVers;
+  _18 = (long unsigned int) LocHwInst;
+  _19 = (long unsigned int) LocHwCh;
+  _20 = Dma_Ip_GetHwChannelState (_17, _18, _19);
+  ChStatus->ChStateValue = _20;
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06 ();
+  D.6574 = LocStatus;
+
+  <bb 3> :
+<L0>:
+  return D.6574;
+
+}
+
+
+Dma_Ip_SetLogicChannelCommand (const uint32 LogicCh, const Dma_Ip_LogicChannelCmdType Command)
+{
+  uint8 LocHwCh;
+  uint8 LocHwInst;
+  uint8 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6572;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.22_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.22_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  LocHwVers = LocLogicChId->HwVersId;
+  LocHwInst = LocLogicChId->HwInstId;
+  LocHwCh = LocLogicChId->HwChId;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05 ();
+  _6 = (long unsigned int) LocHwVers;
+  _7 = (long unsigned int) LocHwInst;
+  _8 = (long unsigned int) LocHwCh;
+  LocChState = Dma_Ip_GetHwChannelStatePointer (_6, _7, _8);
+  if (Command == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  LocChState->LogicChErrors = 0;
+  _9 = (long unsigned int) LocHwVers;
+  _10 = (long unsigned int) LocHwInst;
+  _11 = (long unsigned int) LocHwCh;
+  Dma_Ip_SetHwChannelState (_9, _10, _11, 1);
+  _12 = (long unsigned int) LocHwVers;
+  _13 = (long unsigned int) LocHwInst;
+  _14 = (long unsigned int) LocHwCh;
+  HwAccDmaCh_SetCommand (Command, _12, _13, _14);
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  _15 = (long unsigned int) LocHwVers;
+  _16 = (long unsigned int) LocHwInst;
+  _17 = (long unsigned int) LocHwCh;
+  _18 = &LocChState->LogicChErrors;
+  Static_Dma_Ip_GetLogicChannelError (_15, _16, _17, _18);
+  _19 = LocChState->LogicChErrors;
+  if (_19 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _20 = (long unsigned int) LocHwVers;
+  _21 = (long unsigned int) LocHwInst;
+  _22 = (long unsigned int) LocHwCh;
+  Dma_Ip_SetHwChannelState (_20, _21, _22, 4);
+  LocStatus = 1;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  _23 = LocChState->StateValue;
+  if (_23 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _24 = LocChState->StateValue;
+  if (_24 == 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _25 = (long unsigned int) LocHwVers;
+  _26 = (long unsigned int) LocHwInst;
+  _27 = (long unsigned int) LocHwCh;
+  HwAccDmaCh_SetCommand (Command, _25, _26, _27);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  LocStatus = 2;
+
+  <bb 10> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05 ();
+  D.6572 = LocStatus;
+
+  <bb 11> :
+<L10>:
+  return D.6572;
+
+}
+
+
+Dma_Ip_LogicChannelDeinit (const uint32 LogicCh)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6560;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.21_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.21_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04 ();
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 0);
+  Static_Dma_Ip_ResetConfig (LogicCh);
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  LocChState->LogicChErrors = 0;
+  HwAccDmaCh_SetCommand (4, LocHwVers, LocHwInst, LocHwCh);
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04 ();
+  D.6560 = LocStatus;
+
+  <bb 3> :
+<L0>:
+  return D.6560;
+
+}
+
+
+Dma_Ip_LogicChannelInit (const uint32 LogicCh)
+{
+  struct Dma_Ip_TcdRegType * PxTcd;
+  struct Dma_Ip_HwChannelStateType * LocChState;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6558;
+
+  <bb 2> :
+  LocStatus = 0;
+  PxTcd = 0B;
+  Dma_Ip_pxInit.13_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.13_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  LocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _9 = LocChState->StateValue;
+  if (_9 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  LocStatus = 2;
+  goto <bb 15>; [INV]
+
+  <bb 4> :
+  if (LocHwVers == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _10 = 1073778688B;
+  PxTcd = &_10->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+
+  <bb 6> :
+  LocChState->LogicChId = LocLogicChId;
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 1);
+  Dma_Ip_pxInit.14_11 = Dma_Ip_pxInit;
+  _12 = Dma_Ip_pxInit.14_11->ppxLogicChannelConfigArray;
+  _13 = LogicCh * 4;
+  _14 = _12 + _13;
+  _15 = *_14;
+  _16 = _15->pxTransferConfig;
+  if (_16 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  HwAccDmaCh_SetControl_EnScatterGatherProcessing (LocHwVers, PxTcd, 0);
+  HwAccDmaCh_SetControl_ScatterGatherAddress (LocHwVers, PxTcd, 0);
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 2);
+  _17 = LocLogicChId->LogicChId;
+  Dma_Ip_pxInit.15_18 = Dma_Ip_pxInit;
+  _19 = Dma_Ip_pxInit.15_18->ppxLogicChannelConfigArray;
+  _20 = LogicCh * 4;
+  _21 = _19 + _20;
+  _22 = *_21;
+  _23 = _22->pxTransferConfig;
+  LocStatus = Static_Dma_Ip_SetLogicChannelTransferConfig (_17, _23);
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  Dma_Ip_pxInit.16_24 = Dma_Ip_pxInit;
+  _25 = Dma_Ip_pxInit.16_24->ppxLogicChannelConfigArray;
+  _26 = LogicCh * 4;
+  _27 = _25 + _26;
+  _28 = *_27;
+  _29 = _28->ppxScatterGatherConfigArray;
+  if (_29 != 0B)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  HwAccDmaCh_SetControl_EnScatterGatherProcessing (LocHwVers, PxTcd, 0);
+  HwAccDmaCh_SetControl_ScatterGatherAddress (LocHwVers, PxTcd, 0);
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 3);
+  _30 = LocLogicChId->LogicChId;
+  LocStatus = Static_Dma_Ip_SetLogicChannelScatterGatherInit (_30, 0);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _31 = LocLogicChId->LogicChId;
+  Dma_Ip_pxInit.17_32 = Dma_Ip_pxInit;
+  _33 = Dma_Ip_pxInit.17_32->pxLogicChannelResetConfig;
+  _34 = _33->pxTransferConfig;
+  LocStatus = Static_Dma_Ip_SetLogicChannelTransferConfig (_31, _34);
+
+  <bb 11> :
+  if (LocStatus == 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 12> :
+  Dma_Ip_pxInit.18_35 = Dma_Ip_pxInit;
+  _36 = Dma_Ip_pxInit.18_35->ppxLogicChannelConfigArray;
+  _37 = LogicCh * 4;
+  _38 = _36 + _37;
+  _39 = *_38;
+  _40 = _39->pxGlobalConfig;
+  if (_40 != 0B)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _41 = LocLogicChId->LogicChId;
+  Dma_Ip_pxInit.19_42 = Dma_Ip_pxInit;
+  _43 = Dma_Ip_pxInit.19_42->ppxLogicChannelConfigArray;
+  _44 = LogicCh * 4;
+  _45 = _43 + _44;
+  _46 = *_45;
+  _47 = _46->pxGlobalConfig;
+  LocStatus = Static_Dma_Ip_SetLogicChannelGlobalConfig (_41, _47, 0);
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+  _48 = LocLogicChId->LogicChId;
+  Dma_Ip_pxInit.20_49 = Dma_Ip_pxInit;
+  _50 = Dma_Ip_pxInit.20_49->pxLogicChannelResetConfig;
+  _51 = _50->pxGlobalConfig;
+  LocStatus = Static_Dma_Ip_SetLogicChannelGlobalConfig (_48, _51, 1);
+
+  <bb 15> :
+  if (LocStatus != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  Dma_Ip_SetHwChannelState (LocHwVers, LocHwInst, LocHwCh, 4);
+
+  <bb 17> :
+  D.6558 = LocStatus;
+
+  <bb 18> :
+<L18>:
+  return D.6558;
+
+}
+
+
+Dma_Ip_GetLogicInstanceStatus (const uint32 LogicInst, struct Dma_Ip_LogicInstanceStatusType * const Status)
+{
+  const struct Dma_Ip_LogicInstanceIdType * PaxLogicInst;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6538;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.12_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.12_1->ppxLogicInstConfigArray;
+  _3 = LogicInst * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  PaxLogicInst = &_5->LogicInstId;
+  HwAccDmaInst_GetStatus (PaxLogicInst, Status);
+  D.6538 = LocStatus;
+
+  <bb 3> :
+<L0>:
+  return D.6538;
+
+}
+
+
+Dma_Ip_SetLogicInstanceCommand (const uint32 LogicInst, const Dma_Ip_LogicInstanceCmdType Command)
+{
+  const struct Dma_Ip_LogicInstanceIdType * PaxLogicInst;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6536;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit.11_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.11_1->ppxLogicInstConfigArray;
+  _3 = LogicInst * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  PaxLogicInst = &_5->LogicInstId;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02 ();
+  HwAccDmaInst_SetCommand (Command, PaxLogicInst);
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02 ();
+  D.6536 = LocStatus;
+
+  <bb 3> :
+<L0>:
+  return D.6536;
+
+}
+
+
+Dma_Ip_Deinit ()
+{
+  uint32 LocCfgIdx;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6534;
+
+  <bb 2> :
+  LocStatus = 0;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01 ();
+  LocCfgIdx = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_pxInit.9_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.9_1->ppxLogicInstConfigArray;
+  _3 = LocCfgIdx * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  _6 = &_5->LogicInstId;
+  Dma_Ip_pxInit.10_7 = Dma_Ip_pxInit;
+  _8 = Dma_Ip_pxInit.10_7->pxLogicInstanceResetConfig;
+  HwAccDmaInst_SetConfig (_6, _8);
+  LocCfgIdx = LocCfgIdx + 1;
+
+  <bb 4> :
+  if (LocCfgIdx == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01 ();
+  LocCfgIdx = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  Dma_Ip_LogicChannelDeinit (LocCfgIdx);
+  LocCfgIdx = LocCfgIdx + 1;
+
+  <bb 7> :
+  if (LocCfgIdx <= 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  D.6534 = LocStatus;
+
+  <bb 9> :
+<L6>:
+  return D.6534;
+
+}
+
+
+Dma_Ip_Init (const struct Dma_Ip_InitType * const DmaInit)
+{
+  const struct Dma_Ip_HwChannelStateType * pLocChState;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  uint32 LocCfgIdx;
+  Dma_Ip_ReturnType LocStatus;
+  Dma_Ip_ReturnType D.6532;
+
+  <bb 2> :
+  LocStatus = 0;
+  Dma_Ip_pxInit = DmaInit;
+  SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00 ();
+  LocCfgIdx = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dma_Ip_pxInit.3_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.3_1->ppxLogicInstConfigArray;
+  _3 = LocCfgIdx * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  _6 = &_5->LogicInstId;
+  Dma_Ip_pxInit.4_7 = Dma_Ip_pxInit;
+  _8 = Dma_Ip_pxInit.4_7->ppxLogicInstConfigArray;
+  _9 = LocCfgIdx * 4;
+  _10 = _8 + _9;
+  _11 = *_10;
+  HwAccDmaInst_SetConfig (_6, _11);
+  LocCfgIdx = LocCfgIdx + 1;
+
+  <bb 4> :
+  if (LocCfgIdx == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00 ();
+  LocCfgIdx = 0;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+  Dma_Ip_pxInit.5_12 = Dma_Ip_pxInit;
+  _13 = Dma_Ip_pxInit.5_12->ppxLogicChannelConfigArray;
+  _14 = LocCfgIdx * 4;
+  _15 = _13 + _14;
+  _16 = *_15;
+  _17 = _16->LogicChId.HwVersId;
+  LocHwVers = (uint32) _17;
+  Dma_Ip_pxInit.6_18 = Dma_Ip_pxInit;
+  _19 = Dma_Ip_pxInit.6_18->ppxLogicChannelConfigArray;
+  _20 = LocCfgIdx * 4;
+  _21 = _19 + _20;
+  _22 = *_21;
+  _23 = _22->LogicChId.HwInstId;
+  LocHwInst = (uint32) _23;
+  Dma_Ip_pxInit.7_24 = Dma_Ip_pxInit;
+  _25 = Dma_Ip_pxInit.7_24->ppxLogicChannelConfigArray;
+  _26 = LocCfgIdx * 4;
+  _27 = _25 + _26;
+  _28 = *_27;
+  _29 = _28->LogicChId.HwChId;
+  LocHwCh = (uint32) _29;
+  Dma_Ip_pxInit.8_30 = Dma_Ip_pxInit;
+  _31 = Dma_Ip_pxInit.8_30->ppxChStateArray;
+  _32 = LocCfgIdx * 4;
+  _33 = _31 + _32;
+  _34 = *_33;
+  Dma_Ip_SetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh, _34);
+  pLocChState = Dma_Ip_GetHwChannelStatePointer (LocHwVers, LocHwInst, LocHwCh);
+  _35 = pLocChState->StateValue;
+  if (_35 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  LocStatus = 2;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  LocStatus = Dma_Ip_LogicChannelInit (LocCfgIdx);
+
+  <bb 9> :
+  LocCfgIdx = LocCfgIdx + 1;
+
+  <bb 10> :
+  if (LocCfgIdx <= 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  D.6532 = LocStatus;
+
+  <bb 12> :
+<L9>:
+  return D.6532;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelTransferConfig (const uint32 LogicCh, const struct Dma_Ip_TransferConfigType * const TransferConfig)
+{
+  struct Dma_Ip_TcdRegType * PxTcd;
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  struct Dma_Ip_LogicChannelTransferListType LocList[25];
+  Dma_Ip_ReturnType D.6526;
+
+  <bb 2> :
+  PxTcd = 0B;
+  Dma_Ip_pxInit.2_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.2_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  LocList[0].Param = 0;
+  _9 = TransferConfig->Source.Addr;
+  LocList[0].Value = _9;
+  LocList[1].Param = 1;
+  _10 = TransferConfig->Source.SignedOffset;
+  _11 = (long unsigned int) _10;
+  LocList[1].Value = _11;
+  LocList[2].Param = 2;
+  _12 = TransferConfig->Source.LastAddrAdj;
+  _13 = (long unsigned int) _12;
+  LocList[2].Value = _13;
+  LocList[3].Param = 3;
+  _14 = TransferConfig->Source.TransferSize;
+  _15 = (long unsigned int) _14;
+  LocList[3].Value = _15;
+  LocList[4].Param = 4;
+  _16 = TransferConfig->Source.Modulo;
+  _17 = (long unsigned int) _16;
+  LocList[4].Value = _17;
+  LocList[5].Param = 5;
+  _18 = TransferConfig->Destination.Addr;
+  LocList[5].Value = _18;
+  LocList[6].Param = 6;
+  _19 = TransferConfig->Destination.SignedOffset;
+  _20 = (long unsigned int) _19;
+  LocList[6].Value = _20;
+  LocList[7].Param = 7;
+  _21 = TransferConfig->Destination.LastAddrAdj;
+  _22 = (long unsigned int) _21;
+  LocList[7].Value = _22;
+  LocList[8].Param = 8;
+  _23 = TransferConfig->Destination.TransferSize;
+  _24 = (long unsigned int) _23;
+  LocList[8].Value = _24;
+  LocList[9].Param = 9;
+  _25 = TransferConfig->Destination.Modulo;
+  _26 = (long unsigned int) _25;
+  LocList[9].Value = _26;
+  LocList[10].Param = 10;
+  _27 = TransferConfig->MinorLoop.EnSrcOffset;
+  _28 = _27;
+  _29 = (long unsigned int) _28;
+  LocList[10].Value = _29;
+  LocList[11].Param = 11;
+  _30 = TransferConfig->MinorLoop.EnDstOffset;
+  _31 = _30;
+  _32 = (long unsigned int) _31;
+  LocList[11].Value = _32;
+  LocList[12].Param = 12;
+  _33 = TransferConfig->MinorLoop.Offset;
+  _34 = (long unsigned int) _33;
+  LocList[12].Value = _34;
+  LocList[13].Param = 13;
+  _35 = TransferConfig->MinorLoop.EnLink;
+  _36 = _35;
+  _37 = (long unsigned int) _36;
+  LocList[13].Value = _37;
+  LocList[14].Param = 14;
+  _38 = TransferConfig->MinorLoop.LogicLinkCh;
+  _39 = (long unsigned int) _38;
+  LocList[14].Value = _39;
+  LocList[15].Param = 15;
+  _40 = TransferConfig->MinorLoop.Size;
+  LocList[15].Value = _40;
+  LocList[16].Param = 16;
+  _41 = TransferConfig->MajorLoop.EnLink;
+  _42 = _41;
+  _43 = (long unsigned int) _42;
+  LocList[16].Value = _43;
+  LocList[17].Param = 17;
+  _44 = TransferConfig->MajorLoop.LogicLinkCh;
+  _45 = (long unsigned int) _44;
+  LocList[17].Value = _45;
+  LocList[18].Param = 18;
+  _46 = TransferConfig->MajorLoop.Count;
+  LocList[18].Value = _46;
+  LocList[19].Param = 21;
+  _47 = TransferConfig->Control.EnMajorInt;
+  _48 = _47;
+  _49 = (long unsigned int) _48;
+  LocList[19].Value = _49;
+  LocList[20].Param = 22;
+  _50 = TransferConfig->Control.EnHalfMajorInt;
+  _51 = _50;
+  _52 = (long unsigned int) _51;
+  LocList[20].Value = _52;
+  LocList[21].Param = 23;
+  _53 = TransferConfig->Control.DisAutoHwRequest;
+  _54 = _53;
+  _55 = (long unsigned int) _54;
+  LocList[21].Value = _55;
+  LocList[22].Param = 25;
+  _56 = TransferConfig->Control.BandwidthControl;
+  _57 = (long unsigned int) _56;
+  LocList[22].Value = _57;
+  LocList[23].Param = 25;
+  _58 = TransferConfig->Control.BandwidthControl;
+  _59 = (long unsigned int) _58;
+  LocList[23].Value = _59;
+  LocList[24].Param = 20;
+  _60 = TransferConfig->Control.EnStart;
+  _61 = _60;
+  _62 = (long unsigned int) _61;
+  LocList[24].Value = _62;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _63 = 1073778688B;
+  PxTcd = &_63->TCD_RSV[LocHwCh].tChTcdReg.tTcdReg;
+
+  <bb 4> :
+  HwAccDmaCh_SetCommand (3, LocHwVers, LocHwInst, LocHwCh);
+  if (PxTcd != 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Static_Dma_Ip_SetLogicChannelTransferList (LogicCh, PxTcd, &LocList, 25);
+
+  <bb 6> :
+  D.6526 = 0;
+  LocList = {CLOBBER};
+
+  <bb 7> :
+<L5>:
+  return D.6526;
+
+}
+
+
+Static_Dma_Ip_SetLogicChannelGlobalConfig (const uint32 LogicCh, const struct Dma_Ip_GlobalConfigType * const GlobalConfig, boolean ResetState)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  const struct Dma_Ip_LogicChannelIdType * LocLogicChId;
+  struct Dma_Ip_LogicChannelGlobalListType LocListHwv2[10];
+  Dma_Ip_ReturnType D.6519;
+
+  <bb 2> :
+  Dma_Ip_pxInit.1_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.1_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  LocLogicChId = &_5->LogicChId;
+  _6 = LocLogicChId->HwVersId;
+  LocHwVers = (uint32) _6;
+  _7 = LocLogicChId->HwInstId;
+  LocHwInst = (uint32) _7;
+  _8 = LocLogicChId->HwChId;
+  LocHwCh = (uint32) _8;
+  if (LocHwVers == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  LocListHwv2[0].Param = 2;
+  _9 = GlobalConfig->Request.EnSourceMux;
+  _10 = _9;
+  _11 = (long unsigned int) _10;
+  LocListHwv2[0].Value = _11;
+  LocListHwv2[1].Param = 2;
+  _12 = GlobalConfig->Request.EnSourceMux;
+  _13 = _12;
+  _14 = (long unsigned int) _13;
+  LocListHwv2[1].Value = _14;
+  LocListHwv2[2].Param = 2;
+  _15 = GlobalConfig->Request.EnSourceMux;
+  _16 = _15;
+  _17 = (long unsigned int) _16;
+  LocListHwv2[2].Value = _17;
+  LocListHwv2[3].Param = 3;
+  _18 = GlobalConfig->Request.SourceMux;
+  _19 = (long unsigned int) _18;
+  LocListHwv2[3].Value = _19;
+  LocListHwv2[4].Param = 4;
+  _20 = GlobalConfig->Request.EnTriggerMux;
+  _21 = _20;
+  _22 = (long unsigned int) _21;
+  LocListHwv2[4].Value = _22;
+  LocListHwv2[5].Param = 6;
+  _23 = GlobalConfig->Interrupt.EnErrorInt;
+  _24 = _23;
+  _25 = (long unsigned int) _24;
+  LocListHwv2[5].Value = _25;
+  _26 = ~ResetState;
+  if (_26 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  LocListHwv2[6].Param = 8;
+  _27 = GlobalConfig->Priority.Level;
+  _28 = (long unsigned int) _27;
+  LocListHwv2[6].Value = _28;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  LocListHwv2[6].Param = 9;
+  _29 = GlobalConfig->Priority.EnPreemption;
+  _30 = _29;
+  _31 = (long unsigned int) _30;
+  LocListHwv2[6].Value = _31;
+
+  <bb 6> :
+  LocListHwv2[7].Param = 9;
+  _32 = GlobalConfig->Priority.EnPreemption;
+  _33 = _32;
+  _34 = (long unsigned int) _33;
+  LocListHwv2[7].Value = _34;
+  LocListHwv2[8].Param = 10;
+  _35 = GlobalConfig->Priority.DisPreempt;
+  _36 = _35;
+  _37 = (long unsigned int) _36;
+  LocListHwv2[8].Value = _37;
+  LocListHwv2[9].Param = 5;
+  _38 = GlobalConfig->Request.EnRequest;
+  _39 = _38;
+  _40 = (long unsigned int) _39;
+  LocListHwv2[9].Value = _40;
+  Static_Dma_Ip_SetLogicChannelGlobalList (LocHwVers, LocHwInst, LocHwCh, &LocListHwv2, 10);
+
+  <bb 7> :
+  D.6519 = 0;
+  LocListHwv2 = {CLOBBER};
+
+  <bb 8> :
+<L7>:
+  return D.6519;
+
+}
+
+
+Dma_Ip_ConvertLogicChToHwCh (uint32 LogicCh)
+{
+  uint32 LocHwCh;
+  uint32 D.6511;
+
+  <bb 2> :
+  Dma_Ip_pxInit.0_1 = Dma_Ip_pxInit;
+  _2 = Dma_Ip_pxInit.0_1->ppxLogicChannelConfigArray;
+  _3 = LogicCh * 4;
+  _4 = _2 + _3;
+  _5 = *_4;
+  _6 = _5->LogicChId.HwChId;
+  LocHwCh = (uint32) _6;
+  D.6511 = LocHwCh;
+
+  <bb 3> :
+<L0>:
+  return D.6511;
+
+}
+
+

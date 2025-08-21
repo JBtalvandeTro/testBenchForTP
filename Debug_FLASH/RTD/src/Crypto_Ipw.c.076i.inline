@@ -1,0 +1,1025 @@
+IPA summary for Crypto_Ipw_SheMPCompression/16 is missing.
+IPA summary for Crypto_Ipw_SheDebugAuth/15 is missing.
+IPA summary for Crypto_Ipw_SheDebugChal/14 is missing.
+IPA summary for Crypto_Ipw_SheGetId/13 is missing.
+IPA summary for Crypto_Ipw_SheGetStatus/12 is missing.
+IPA summary for Crypto_Ipw_SheSetBootStatus/11 is missing.
+IPA summary for Crypto_Ipw_SetSynchronousRequestsTimeout/10 is missing.
+IPA summary for Crypto_Ipw_MainFunction/9 is missing.
+IPA summary for Crypto_Ipw_CancelJob/8 is missing.
+IPA summary for Crypto_Ipw_ProcessJob/7 is missing.
+IPA summary for Crypto_Ipw_Init/6 is missing.
+IPA summary for Crypto_Ipw_Random/5 is missing.
+IPA summary for Crypto_Ipw_TranslateCsecResponse/4 is missing.
+IPA summary for Crypto_Ipw_ProcessOperation/3 is missing.
+IPA summary for Crypto_Ipw_PushJobFromCdoQueueToCsec/2 is missing.
+IPA summary for Crypto_Ipw_ProcessAsyncCsecResponse/1 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :       12 calls, 12.000000 freq, 0 count
+function body not available                       :       18 calls, 18.000000 freq, 0 count
+IPA summary for Crypto_Ipw_SheMPCompression/16 is missing.
+IPA summary for Crypto_Ipw_SheDebugAuth/15 is missing.
+IPA summary for Crypto_Ipw_SheDebugChal/14 is missing.
+IPA summary for Crypto_Ipw_SheGetId/13 is missing.
+IPA summary for Crypto_Ipw_SheGetStatus/12 is missing.
+IPA summary for Crypto_Ipw_SheSetBootStatus/11 is missing.
+IPA summary for Crypto_Ipw_SetSynchronousRequestsTimeout/10 is missing.
+IPA summary for Crypto_Ipw_MainFunction/9 is missing.
+IPA summary for Crypto_Ipw_CancelJob/8 is missing.
+IPA summary for Crypto_Ipw_ProcessJob/7 is missing.
+IPA summary for Crypto_Ipw_Init/6 is missing.
+IPA summary for Crypto_Ipw_Random/5 is missing.
+IPA summary for Crypto_Ipw_TranslateCsecResponse/4 is missing.
+IPA summary for Crypto_Ipw_ProcessOperation/3 is missing.
+IPA summary for Crypto_Ipw_PushJobFromCdoQueueToCsec/2 is missing.
+IPA summary for Crypto_Ipw_ProcessAsyncCsecResponse/1 is missing.
+Symbol table:
+
+Csec_Ip_MpCompress/36 (Csec_Ip_MpCompress) @05bc69a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheMPCompression/16 
+  Calls: 
+Csec_Ip_DbgAuth/35 (Csec_Ip_DbgAuth) @05bc67e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugAuth/15 
+  Calls: 
+Csec_Ip_DbgChal/34 (Csec_Ip_DbgChal) @05bc6620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheDebugChal/14 
+  Calls: 
+Csec_Ip_GetId/33 (Csec_Ip_GetId) @05bc6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheGetId/13 
+  Calls: 
+Csec_Ip_GetStatus/32 (Csec_Ip_GetStatus) @05bc62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheGetStatus/12 
+  Calls: 
+Csec_Ip_BootFailure/31 (Csec_Ip_BootFailure) @05bc60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_BootOk/30 (Csec_Ip_BootOk) @05bc6000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SheSetBootStatus/11 
+  Calls: 
+Csec_Ip_SetSynchronousCmdTimeout/29 (Csec_Ip_SetSynchronousCmdTimeout) @05bbce00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_SetSynchronousRequestsTimeout/10 
+  Calls: 
+Csec_Ip_MainFunction/28 (Csec_Ip_MainFunction) @05bbcc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_MainFunction/9 
+  Calls: 
+Crypto_Util_DequeueJob/27 (Crypto_Util_DequeueJob) @05bbca80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Csec_Ip_CancelCommand/26 (Csec_Ip_CancelCommand) @05bbc9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_CancelJob/8 
+  Calls: 
+Crypto_Util_QueueJob/25 (Crypto_Util_QueueJob) @05bbc7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_ProcessJob/7 
+  Calls: 
+Csec_Ip_InitRng/24 (Csec_Ip_InitRng) @05bbc620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_Init/23 (Csec_Ip_Init) @05bbc540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Init/6 
+  Calls: 
+Csec_Ip_GenerateRnd/22 (Csec_Ip_GenerateRnd) @05bbc2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Util_DequeueHeadJob/21 (Crypto_Util_DequeueHeadJob) @05bbc000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_aDriverObjectList/20 (Crypto_aDriverObjectList) @05b36dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_ProcessJob/7 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Crypto_aObjectQueueList/19 (Crypto_aObjectQueueList) @05b36d80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not_available
+  Varpool flags:
+Crypto_aeDriverState/18 (Crypto_aeDriverState) @05b36d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (read)
+  Availability: not_available
+  Varpool flags:
+CryIf_CallbackNotification/17 (CryIf_CallbackNotification) @05ba48c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: 
+Crypto_Ipw_SheMPCompression/16 (Crypto_Ipw_SheMPCompression) @05ba4d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_MpCompress/36 
+Crypto_Ipw_SheDebugAuth/15 (Crypto_Ipw_SheDebugAuth) @05ba4a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgAuth/35 
+Crypto_Ipw_SheDebugChal/14 (Crypto_Ipw_SheDebugChal) @05ba47e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_DbgChal/34 
+Crypto_Ipw_SheGetId/13 (Crypto_Ipw_SheGetId) @05ba4540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GetId/33 
+Crypto_Ipw_SheGetStatus/12 (Crypto_Ipw_SheGetStatus) @05ba42a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_GetStatus/32 
+Crypto_Ipw_SheSetBootStatus/11 (Crypto_Ipw_SheSetBootStatus) @05ba4000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_BootFailure/31 Csec_Ip_BootOk/30 
+Crypto_Ipw_SetSynchronousRequestsTimeout/10 (Crypto_Ipw_SetSynchronousRequestsTimeout) @05b9ab60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_SetSynchronousCmdTimeout/29 
+Crypto_Ipw_MainFunction/9 (Crypto_Ipw_MainFunction) @05b9a620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Csec_Ip_MainFunction/28 
+Crypto_Ipw_CancelJob/8 (Crypto_Ipw_CancelJob) @05b9a0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_Ipw_State/0 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_DequeueJob/27 Csec_Ip_CancelCommand/26 
+Crypto_Ipw_ProcessJob/7 (Crypto_Ipw_ProcessJob) @05b9ad20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Util_QueueJob/25 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_Init/6 (Crypto_Ipw_Init) @05b9aa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_Ipw_State/0 (addr)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_InitRng/24 Csec_Ip_Init/23 
+Crypto_Ipw_Random/5 (Crypto_Ipw_Random) @05b9a7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crypto_Ipw_ProcessAsyncCsecResponse/1 (addr)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crypto_Ipw_ProcessOperation/3 
+  Calls: Crypto_Ipw_TranslateCsecResponse/4 Csec_Ip_GenerateRnd/22 
+Crypto_Ipw_TranslateCsecResponse/4 (Crypto_Ipw_TranslateCsecResponse) @05b9a540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crypto_Ipw_SheMPCompression/16 Crypto_Ipw_SheDebugAuth/15 Crypto_Ipw_SheDebugChal/14 Crypto_Ipw_SheGetId/13 Crypto_Ipw_SheSetBootStatus/11 Crypto_Ipw_Init/6 Crypto_Ipw_ProcessAsyncCsecResponse/1 Crypto_Ipw_Random/5 
+  Calls: 
+Crypto_Ipw_ProcessOperation/3 (Crypto_Ipw_ProcessOperation) @05b9a2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Crypto_Ipw_ProcessJob/7 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+  Calls: Crypto_Ipw_Random/5 
+Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (Crypto_Ipw_PushJobFromCdoQueueToCsec) @05b9a000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crypto_aeDriverState/18 (read)Crypto_aObjectQueueList/19 (read)Crypto_aObjectQueueList/19 (read)Crypto_aDriverObjectList/20 (read)Crypto_Ipw_State/0 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crypto_Ipw_ProcessAsyncCsecResponse/1 
+  Calls: CryIf_CallbackNotification/17 Crypto_Util_DequeueHeadJob/21 Crypto_Ipw_ProcessOperation/3 
+Crypto_Ipw_ProcessAsyncCsecResponse/1 (Crypto_Ipw_ProcessAsyncCsecResponse) @05b30ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: Crypto_Ipw_State/0 (write)
+  Referring: Crypto_Ipw_Random/5 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CryIf_CallbackNotification/17 Crypto_Ipw_TranslateCsecResponse/4 Crypto_Ipw_PushJobFromCdoQueueToCsec/2 
+Crypto_Ipw_State/0 (Crypto_Ipw_State) @05b313f0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crypto_Ipw_ProcessJob/7 (write)Crypto_Ipw_Init/6 (write)Crypto_Ipw_Init/6 (addr)Crypto_Ipw_PushJobFromCdoQueueToCsec/2 (write)Crypto_Ipw_ProcessAsyncCsecResponse/1 (write)Crypto_Ipw_CancelJob/8 (read)Crypto_Ipw_CancelJob/8 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function Crypto_Ipw_ProcessAsyncCsecResponse (Crypto_Ipw_ProcessAsyncCsecResponse, funcdef_no=0, decl_uid=6223, cgraph_uid=1, symbol_order=1)
+
+Crypto_Ipw_ProcessAsyncCsecResponse (Csec_Ip_ErrorCodeType ErrCode, Csec_Ip_CmdType u32CompletedCmd, void * pCallbackParam)
+{
+  Crypto_ServiceInfoType eService;
+  uint32 * pOutputLength;
+  Std_ReturnType CryptoErrorCode;
+  struct Crypto_JobType * const pCryptoJob;
+  const struct Crypto_JobPrimitiveInfoType * _1;
+  const struct Crypto_PrimitiveInfoType * _2;
+
+  <bb 2> :
+  pCryptoJob_5 = pCallbackParam_4(D);
+  pOutputLength_7 = pCryptoJob_5->jobPrimitiveInputOutput.outputLengthPtr;
+  _1 = pCryptoJob_5->jobPrimitiveInfo;
+  _2 = _1->primitiveInfo;
+  eService_8 = _2->service;
+  Crypto_Ipw_PushJobFromCdoQueueToCsec ();
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  CryptoErrorCode_13 = Crypto_Ipw_TranslateCsecResponse (ErrCode_11(D));
+  pCryptoJob_5->jobState = 0;
+  if (CryptoErrorCode_13 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (eService_8 == 11)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  *pOutputLength_7 = 16;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  CryIf_CallbackNotification (pCryptoJob_5, CryptoErrorCode_13);
+  return;
+
+}
+
+
+
+;; Function Crypto_Ipw_PushJobFromCdoQueueToCsec (Crypto_Ipw_PushJobFromCdoQueueToCsec, funcdef_no=1, decl_uid=6225, cgraph_uid=2, symbol_order=2)
+
+Crypto_Ipw_PushJobFromCdoQueueToCsec ()
+{
+  const uint32 u32PartitionId;
+  uint32 u32HeadOfQueuedJobs;
+  struct Crypto_JobType * pJob;
+  Std_ReturnType StdRetVal;
+  <unnamed type> _1;
+  long unsigned int _2;
+  struct Crypto_QueueElementType * _3;
+  long unsigned int _4;
+  struct Crypto_QueueElementType * _5;
+  const struct Crypto_JobInfoType * _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  u32PartitionId_9 = 0;
+  _1 = Crypto_aeDriverState[u32PartitionId_9];
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = Crypto_aObjectQueueList[0].u32HeadOfQueuedJobs;
+  if (_2 != 4294967295)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  u32HeadOfQueuedJobs_11 = Crypto_aObjectQueueList[0].u32HeadOfQueuedJobs;
+  _3 = Crypto_aDriverObjectList[0].pQueuedJobs;
+  _4 = u32HeadOfQueuedJobs_11 * 8;
+  _5 = _3 + _4;
+  pJob_12 = _5->pJob;
+  StdRetVal_14 = Crypto_Ipw_ProcessOperation (pJob_12);
+  if (StdRetVal_14 != 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  Crypto_Util_DequeueHeadJob (0);
+  if (StdRetVal_14 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  pJob_12->jobState = 0;
+  CryIf_CallbackNotification (pJob_12, StdRetVal_14);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _6 = pJob_12->jobInfo;
+  _7 = _6->jobId;
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = _7;
+
+  <bb 8> :
+  return;
+
+}
+
+
+
+;; Function Crypto_Ipw_ProcessOperation (Crypto_Ipw_ProcessOperation, funcdef_no=2, decl_uid=6227, cgraph_uid=3, symbol_order=3)
+
+Crypto_Ipw_ProcessOperation (struct Crypto_JobType * pJob)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6365;
+  const struct Crypto_JobPrimitiveInfoType * _1;
+  const struct Crypto_PrimitiveInfoType * _2;
+  <unnamed type> _3;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  RetVal_6 = 1;
+  pJob_8(D)->jobState = 1;
+  _1 = pJob_8(D)->jobPrimitiveInfo;
+  _2 = _1->primitiveInfo;
+  _3 = _2->service;
+  if (_3 == 11)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  RetVal_11 = Crypto_Ipw_Random (pJob_8(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  RetVal_12 = 1;
+  pJob_8(D)->jobState = 0;
+
+  <bb 5> :
+  # RetVal_4 = PHI <RetVal_11(3), RetVal_12(4)>
+  _14 = RetVal_4;
+
+  <bb 6> :
+<L3>:
+  return _14;
+
+}
+
+
+
+;; Function Crypto_Ipw_TranslateCsecResponse (Crypto_Ipw_TranslateCsecResponse, funcdef_no=3, decl_uid=6229, cgraph_uid=4, symbol_order=4)
+
+Crypto_Ipw_TranslateCsecResponse (Csec_Ip_ErrorCodeType CsecResponse)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6380;
+  int _1;
+  Std_ReturnType _13;
+
+  <bb 2> :
+  _1 = (int) CsecResponse_3(D);
+  switch (_1) <default: <L14> [INV], case 1: <L0> [INV], case 2: <L3> [INV], case 4: <L12> [INV], case 8: <L13> [INV], case 16: <L10> [INV], case 32: <L3> [INV], case 64: <L11> [INV], case 128: <L3> [INV], case 256: <L3> [INV], case 512: <L3> [INV], case 1024: <L3> [INV], case 2048: <L3> [INV], case 65534: <L2> [INV], case 65535: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  RetVal_11 = 0;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+<L1>:
+  RetVal_4 = 2;
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+<L2>:
+  RetVal_5 = 128;
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+<L3>:
+  RetVal_10 = 1;
+  goto <bb 12>; [INV]
+
+  <bb 7> :
+<L10>:
+  RetVal_7 = 13;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+<L11>:
+  RetVal_6 = 7;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+<L12>:
+  RetVal_9 = 8;
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+<L13>:
+  RetVal_8 = 9;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+<L14>:
+  RetVal_12 = 1;
+
+  <bb 12> :
+  # RetVal_2 = PHI <RetVal_11(3), RetVal_4(4), RetVal_5(5), RetVal_10(6), RetVal_7(7), RetVal_6(8), RetVal_9(9), RetVal_8(10), RetVal_12(11)>
+  _13 = RetVal_2;
+
+  <bb 13> :
+<L16>:
+  return _13;
+
+}
+
+
+
+;; Function Crypto_Ipw_Random (Crypto_Ipw_Random, funcdef_no=4, decl_uid=6231, cgraph_uid=5, symbol_order=5)
+
+Crypto_Ipw_Random (struct Crypto_JobType * pJob)
+{
+  uint32 * pOutputLength;
+  Crypto_ProcessingType eProcessingType;
+  Std_ReturnType RetVal;
+  struct Csec_Ip_ReqType CsecIpReq;
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType D.6377;
+  const struct Crypto_JobPrimitiveInfoType * _1;
+  long unsigned int _2;
+  uint8 * _3;
+  Std_ReturnType _22;
+
+  <bb 2> :
+  RetVal_7 = 1;
+  _1 = pJob_9(D)->jobPrimitiveInfo;
+  eProcessingType_10 = _1->processingType;
+  pOutputLength_11 = pJob_9(D)->jobPrimitiveInputOutput.outputLengthPtr;
+  _2 = *pOutputLength_11;
+  if (_2 > 15)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  if (eProcessingType_10 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CsecIpReq.eReqType = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  CsecIpReq.eReqType = 2;
+  CsecIpReq.pfCallback = Crypto_Ipw_ProcessAsyncCsecResponse;
+  CsecIpReq.pCallbackParam = pJob_9(D);
+
+  <bb 6> :
+  _3 = pJob_9(D)->jobPrimitiveInputOutput.outputPtr;
+  CsecResponse_18 = Csec_Ip_GenerateRnd (&CsecIpReq, _3);
+  RetVal_20 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_18);
+  if (RetVal_20 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (eProcessingType_10 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  *pOutputLength_11 = 16;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  RetVal_12 = 3;
+
+  <bb 10> :
+  # RetVal_4 = PHI <RetVal_20(7), RetVal_12(9), RetVal_20(6), RetVal_20(8)>
+  _22 = RetVal_4;
+  CsecIpReq ={v} {CLOBBER};
+
+  <bb 11> :
+<L11>:
+  return _22;
+
+}
+
+
+
+;; Function Crypto_Ipw_Init (Crypto_Ipw_Init, funcdef_no=5, decl_uid=6036, cgraph_uid=6, symbol_order=6)
+
+Crypto_Ipw_Init (const uint32 u32PartitionId)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6382;
+  Std_ReturnType _8;
+
+  <bb 2> :
+  Csec_Ip_Init (&Crypto_Ipw_State.Csec_Ip_State);
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  CsecResponse_5 = Csec_Ip_InitRng ();
+  RetVal_7 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_5);
+  _8 = RetVal_7;
+
+  <bb 3> :
+<L0>:
+  return _8;
+
+}
+
+
+
+;; Function Crypto_Ipw_ProcessJob (Crypto_Ipw_ProcessJob, funcdef_no=6, decl_uid=6040, cgraph_uid=7, symbol_order=7)
+
+Crypto_Ipw_ProcessJob (const uint32 u32PartitionId, const uint32 u32ObjectIdx, struct Crypto_JobType * const pJob)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6403;
+  <unnamed type> _1;
+  const struct Crypto_JobPrimitiveInfoType * _2;
+  <unnamed type> _3;
+  const struct Crypto_JobPrimitiveInfoType * _4;
+  <unnamed type> _5;
+  long unsigned int _6;
+  _Bool _7;
+  const struct Crypto_JobPrimitiveInfoType * _8;
+  <unnamed type> _9;
+  const struct Crypto_JobInfoType * _10;
+  long unsigned int _11;
+  Std_ReturnType _27;
+
+  <bb 2> :
+  RetVal_15 = 1;
+  _1 = pJob_17(D)->jobPrimitiveInputOutput.mode;
+  if (_1 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  RetVal_19 = Crypto_Ipw_ProcessOperation (pJob_17(D));
+  _2 = pJob_17(D)->jobPrimitiveInfo;
+  _3 = _2->processingType;
+  if (_3 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  pJob_17(D)->jobState = 0;
+
+  <bb 5> :
+  if (RetVal_19 == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _4 = pJob_17(D)->jobPrimitiveInfo;
+  _5 = _4->processingType;
+  if (_5 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 7> :
+  _6 = Crypto_aDriverObjectList[u32ObjectIdx_23(D)].u32CryptoQueueSize;
+  if (_6 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 8> :
+  _7 = Crypto_Util_QueueJob (u32ObjectIdx_23(D), pJob_17(D));
+  if (_7 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  RetVal_26 = 0;
+  goto <bb 15>; [INV]
+
+  <bb 10> :
+  RetVal_25 = 5;
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  if (RetVal_19 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  pJob_17(D)->jobState = 0;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+  _8 = pJob_17(D)->jobPrimitiveInfo;
+  _9 = _8->processingType;
+  if (_9 == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _10 = pJob_17(D)->jobInfo;
+  _11 = _10->jobId;
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = _11;
+
+  <bb 15> :
+  # RetVal_12 = PHI <RetVal_15(2), RetVal_19(7), RetVal_19(12), RetVal_19(13), RetVal_19(14), RetVal_19(6), RetVal_25(10), RetVal_26(9)>
+  _27 = RetVal_12;
+
+  <bb 16> :
+<L19>:
+  return _27;
+
+}
+
+
+
+;; Function Crypto_Ipw_CancelJob (Crypto_Ipw_CancelJob, funcdef_no=7, decl_uid=6044, cgraph_uid=8, symbol_order=8)
+
+Crypto_Ipw_CancelJob (const uint32 u32PartitionId, const uint32 u32ObjectIdx, const struct Crypto_JobInfoType * const pJobInfo)
+{
+  Std_ReturnType D.6408;
+  long unsigned int _1;
+  long unsigned int _2;
+  Std_ReturnType _10;
+
+  <bb 2> :
+  _1 = Crypto_Ipw_State.u32CurrentlyProcessedJobId;
+  _2 = pJobInfo_5(D)->jobId;
+  if (_1 == _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Csec_Ip_CancelCommand ();
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Crypto_Util_DequeueJob (u32ObjectIdx_6(D), pJobInfo_5(D));
+
+  <bb 5> :
+  _10 = 0;
+
+  <bb 6> :
+<L3>:
+  return _10;
+
+}
+
+
+
+;; Function Crypto_Ipw_MainFunction (Crypto_Ipw_MainFunction, funcdef_no=8, decl_uid=6046, cgraph_uid=9, symbol_order=9)
+
+Crypto_Ipw_MainFunction (const uint32 u32PartitionId)
+{
+  <bb 2> :
+  Csec_Ip_MainFunction ();
+  return;
+
+}
+
+
+
+;; Function Crypto_Ipw_SetSynchronousRequestsTimeout (Crypto_Ipw_SetSynchronousRequestsTimeout, funcdef_no=9, decl_uid=6049, cgraph_uid=10, symbol_order=10)
+
+Crypto_Ipw_SetSynchronousRequestsTimeout (const uint32 u32PartitionId, const uint32 u32Timeout)
+{
+  <bb 2> :
+  Csec_Ip_SetSynchronousCmdTimeout (u32Timeout_2(D));
+  return;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheSetBootStatus (Crypto_Ipw_SheSetBootStatus, funcdef_no=10, decl_uid=6052, cgraph_uid=11, symbol_order=11)
+
+Crypto_Ipw_SheSetBootStatus (const uint32 u32PartitionId, const boolean bStatus)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6413;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  if (bStatus_3(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CsecResponse_8 = Csec_Ip_BootOk ();
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  CsecResponse_6 = Csec_Ip_BootFailure ();
+
+  <bb 5> :
+  # CsecResponse_1 = PHI <CsecResponse_8(3), CsecResponse_6(4)>
+  RetVal_10 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_1);
+  _11 = RetVal_10;
+
+  <bb 6> :
+<L3>:
+  return _11;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheGetStatus (Crypto_Ipw_SheGetStatus, funcdef_no=11, decl_uid=6055, cgraph_uid=12, symbol_order=12)
+
+Crypto_Ipw_SheGetStatus (const uint32 u32PartitionId, uint8 * pStatus)
+{
+  Std_ReturnType D.6415;
+  unsigned char _1;
+  Std_ReturnType _6;
+
+  <bb 2> :
+  _1 = Csec_Ip_GetStatus ();
+  *pStatus_4(D) = _1;
+  _6 = 0;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheGetId (Crypto_Ipw_SheGetId, funcdef_no=12, decl_uid=6061, cgraph_uid=13, symbol_order=13)
+
+Crypto_Ipw_SheGetId (const uint32 u32PartitionId, const uint8 * pChallenge, uint8 * pId, uint8 * pSreg, uint8 * pMac)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6417;
+  Std_ReturnType _10;
+
+  <bb 2> :
+  CsecResponse_7 = Csec_Ip_GetId (pChallenge_2(D), pId_3(D), pSreg_4(D), pMac_5(D));
+  RetVal_9 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_7);
+  _10 = RetVal_9;
+
+  <bb 3> :
+<L0>:
+  return _10;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheDebugChal (Crypto_Ipw_SheDebugChal, funcdef_no=13, decl_uid=6064, cgraph_uid=14, symbol_order=14)
+
+Crypto_Ipw_SheDebugChal (const uint32 u32PartitionId, uint8 * pChallenge)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6419;
+  Std_ReturnType _7;
+
+  <bb 2> :
+  CsecResponse_4 = Csec_Ip_DbgChal (pChallenge_2(D));
+  RetVal_6 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_4);
+  _7 = RetVal_6;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheDebugAuth (Crypto_Ipw_SheDebugAuth, funcdef_no=14, decl_uid=6067, cgraph_uid=15, symbol_order=15)
+
+Crypto_Ipw_SheDebugAuth (const uint32 u32PartitionId, const uint8 * pAuthorization)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6421;
+  Std_ReturnType _7;
+
+  <bb 2> :
+  CsecResponse_4 = Csec_Ip_DbgAuth (pAuthorization_2(D));
+  RetVal_6 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_4);
+  _7 = RetVal_6;
+
+  <bb 3> :
+<L0>:
+  return _7;
+
+}
+
+
+
+;; Function Crypto_Ipw_SheMPCompression (Crypto_Ipw_SheMPCompression, funcdef_no=15, decl_uid=6073, cgraph_uid=16, symbol_order=16)
+
+Crypto_Ipw_SheMPCompression (const uint32 u32PartitionId, const uint8 * pInput, const uint32 u32InputLen, uint8 * pResult, const uint32 * pResultLen)
+{
+  uint16 u16InputPageLen;
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6423;
+  long unsigned int _1;
+  Std_ReturnType _11;
+
+  <bb 2> :
+  _1 = u32InputLen_2(D) >> 4;
+  u16InputPageLen_3 = (uint16) _1;
+  CsecResponse_8 = Csec_Ip_MpCompress (pInput_5(D), u16InputPageLen_3, pResult_6(D));
+  RetVal_10 = Crypto_Ipw_TranslateCsecResponse (CsecResponse_8);
+  _11 = RetVal_10;
+
+  <bb 3> :
+<L0>:
+  return _11;
+
+}
+
+

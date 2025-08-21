@@ -1,0 +1,11 @@
+FSMupdat.c:48:6:FSM_Update	8	static
+FSMupdat.c:67:19:fsm_CheckInitModeExit	8	static
+FSMupdat.c:88:19:fsm_CheckPBitModeExit	8	static
+FSMupdat.c:147:19:fsm_CheckStandbyModeExit	16	static
+FSMupdat.c:244:19:fsm_CheckBoostModeExit	16	static
+FSMupdat.c:301:19:fsm_CheckBuckModeExit	16	static
+FSMupdat.c:357:19:fsm_CheckEmergencyModeExit	16	static
+FSMupdat.c:408:19:fsm_CheckMaintenanceModeExit	16	static
+FSMupdat.c:436:19:fsm_CheckShutdownModeExit	8	static
+FSMupdat.c:452:19:fsm_CheckS3ModeExit	16	static
+FSMupdat.c:500:13:fsm_ManageInternalMode	8	static

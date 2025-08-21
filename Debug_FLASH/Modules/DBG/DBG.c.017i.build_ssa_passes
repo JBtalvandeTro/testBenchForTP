@@ -1,0 +1,130 @@
+dbg_executeLvMeasureTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.LvMeasure = 1;
+  return;
+
+}
+
+
+dbg_executeHvMeasureTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.HvMeasure = 1;
+  return;
+
+}
+
+
+dbg_executeRelaySwitchTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.relaySwitchTest = 1;
+  return;
+
+}
+
+
+dbg_executeLedsTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.ledCmd = 1;
+  return;
+
+}
+
+
+dbg_executeDiscreteIosTest ()
+{
+  <bb 2> :
+  DBG_Flags.Reqflags.dsioTest = 1;
+  return;
+
+}
+
+
+DBG_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+DBG_Update ()
+{
+  <bb 2> :
+  _1 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _2 = _1 & 8;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  dbg_executeDiscreteIosTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 4> :
+  _3 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _4 = _3 & 16;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  dbg_executeLedsTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 6> :
+  _5 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  dbg_executeRelaySwitchTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 8> :
+  _7 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _8 = _7 & 2;
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  dbg_executeHvMeasureTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 10> :
+  _9 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _10 = _9 & 4;
+  if (_10 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  dbg_executeLvMeasureTest ();
+  DBG_Flags.proccesingFlags.processed = 1;
+
+  <bb 12> :
+  return;
+
+}
+
+
+DBG_Init ()
+{
+  <bb 2> :
+  DBG_Flags.proccesingFlags.processed = 0;
+  return;
+
+}
+
+

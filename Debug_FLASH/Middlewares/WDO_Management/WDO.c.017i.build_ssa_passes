@@ -1,0 +1,109 @@
+WDO_Refresh (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (2, 1);
+  Dio_WriteChannel (2, 0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  WDO_WindowCounter.0_1 = WDO_WindowCounter;
+  if (WDO_WindowCounter.0_1 > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  Wdg_43_Instance0_Service ();
+  WDO_WindowCounter = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  WDO_WindowCounter.1_2 = WDO_WindowCounter;
+  WDO_WindowCounter.2_3 = WDO_WindowCounter.1_2;
+  _4 = WDO_WindowCounter.2_3 + 1;
+  WDO_WindowCounter = _4;
+
+  <bb 7> :
+  return;
+
+}
+
+
+WDO_Management (boolean enable, boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (unsigned char) enable;
+  Dio_WriteChannel (14, _1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_SetMode (1);
+
+  <bb 5> :
+  return;
+
+}
+
+
+WDO_Deinit (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (14, 0);
+  Dio_WriteChannel (2, 0);
+  WDO_ExternalStateFlag = 0;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_SetMode (0);
+  WDO_WindowCounter = 0;
+  WDO_InternalStateFlag = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+WDO_Init (boolean external)
+{
+  <bb 2> :
+  if (external != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Dio_WriteChannel (14, 0);
+  Dio_WriteChannel (2, 0);
+  WDO_ExternalStateFlag = 1;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Wdg_43_Instance0_Init (&Wdg_Config_0_INIT);
+  WDO_WindowCounter = 0;
+  WDO_InternalStateFlag = 1;
+
+  <bb 5> :
+  return;
+
+}
+
+

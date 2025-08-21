@@ -1,0 +1,13 @@
+Crc_Ip_Hw_Access.h:120:20:hwAccCrc_SetCrcWidth	24	static
+Crc_Ip_Hw_Access.h:151:20:hwAccCrc_SetDataMode	16	static
+Crc_Ip_Hw_Access.h:175:20:hwAccCrc_SetPolynom	16	static
+Crc_Ip_Hw_Access.h:197:20:hwAccCrc_SetWriteSwap	16	static
+Crc_Ip_Hw_Access.h:251:20:hwAccCrc_SetReadSwap	16	static
+Crc_Ip_Hw_Access.h:305:20:hwAccCrc_SetInverseResult	16	static
+Crc_Ip_Hw_Access.h:329:20:hwAccCrc_SetInputData	8	static
+Crc_Ip_Hw_Access.h:349:20:hwAccCrc_SetInitialSeedValue	24	static
+Crc_Ip_Hw_Access.h:389:22:hwAccCRC_GetResult	16	static
+Crc_Ip_Devassert.h:110:24:Crc_Ip_DevAssert	8	static
+Crc_Ip_Hardware.c:275:6:Crc_Ip_HwSetConfig	24	static
+Crc_Ip_Hardware.c:325:8:Crc_Ip_HwCalculate	48	static
+Crc_Ip_Hardware.c:438:8:Crc_Ip_HwGetLocResult	24	static

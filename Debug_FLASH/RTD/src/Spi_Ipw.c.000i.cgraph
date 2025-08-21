@@ -1,0 +1,1182 @@
+Trivially needed symbols: Spi_Ipw_JobTransfer Spi_Ipw_CallbackLpspi Spi_Ipw_EndChannelCallback Spi_Ipw_IrqConfig Spi_Ipw_IrqPoll Spi_Ipw_SyncTransmit Spi_Ipw_DeInit Spi_Ipw_Init Spi_Ipw_SyncTransmitProcess Spi_Ipw_au8LpspiHWUnitMapping
+
+
+Initial Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  Aux: @05d15c40
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05d159a0
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05d15700
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05d15460
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05d151c0
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c31ee0
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c319a0
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c31e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c31b60
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not-ready
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Address is taken.
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Spi_Ipw_au8LpspiHWUnitMapping
+Removing variables:
+
+Final Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

@@ -1,0 +1,550 @@
+Crypto_Ipw_SheMPCompression (const uint32 u32PartitionId, const uint8 * pInput, const uint32 u32InputLen, uint8 * pResult, const uint32 * pResultLen)
+{
+  uint16 u16InputPageLen;
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6423;
+
+  <bb 2> :
+  _1 = u32InputLen >> 4;
+  u16InputPageLen = (uint16) _1;
+  CsecResponse = Csec_Ip_MpCompress (pInput, u16InputPageLen, pResult);
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6423 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6423;
+
+}
+
+
+Crypto_Ipw_SheDebugAuth (const uint32 u32PartitionId, const uint8 * pAuthorization)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6421;
+
+  <bb 2> :
+  CsecResponse = Csec_Ip_DbgAuth (pAuthorization);
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6421 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6421;
+
+}
+
+
+Crypto_Ipw_SheDebugChal (const uint32 u32PartitionId, uint8 * pChallenge)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6419;
+
+  <bb 2> :
+  CsecResponse = Csec_Ip_DbgChal (pChallenge);
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6419 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6419;
+
+}
+
+
+Crypto_Ipw_SheGetId (const uint32 u32PartitionId, const uint8 * pChallenge, uint8 * pId, uint8 * pSreg, uint8 * pMac)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6417;
+
+  <bb 2> :
+  CsecResponse = Csec_Ip_GetId (pChallenge, pId, pSreg, pMac);
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6417 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6417;
+
+}
+
+
+Crypto_Ipw_SheGetStatus (const uint32 u32PartitionId, uint8 * pStatus)
+{
+  Std_ReturnType D.6415;
+
+  <bb 2> :
+  _1 = Csec_Ip_GetStatus ();
+  *pStatus = _1;
+  D.6415 = 0;
+
+  <bb 3> :
+<L0>:
+  return D.6415;
+
+}
+
+
+Crypto_Ipw_SheSetBootStatus (const uint32 u32PartitionId, const boolean bStatus)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6413;
+
+  <bb 2> :
+  if (bStatus != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CsecResponse = Csec_Ip_BootOk ();
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  CsecResponse = Csec_Ip_BootFailure ();
+
+  <bb 5> :
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6413 = RetVal;
+
+  <bb 6> :
+<L3>:
+  return D.6413;
+
+}
+
+
+Crypto_Ipw_SetSynchronousRequestsTimeout (const uint32 u32PartitionId, const uint32 u32Timeout)
+{
+  <bb 2> :
+  Csec_Ip_SetSynchronousCmdTimeout (u32Timeout);
+  return;
+
+}
+
+
+Crypto_Ipw_MainFunction (const uint32 u32PartitionId)
+{
+  <bb 2> :
+  Csec_Ip_MainFunction ();
+  return;
+
+}
+
+
+Crypto_Ipw_CancelJob (const uint32 u32PartitionId, const uint32 u32ObjectIdx, const struct Crypto_JobInfoType * const pJobInfo)
+{
+  Std_ReturnType D.6408;
+
+  <bb 2> :
+  _1 = Crypto_Ipw_State.u32CurrentlyProcessedJobId;
+  _2 = pJobInfo->jobId;
+  if (_1 == _2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Csec_Ip_CancelCommand ();
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Crypto_Util_DequeueJob (u32ObjectIdx, pJobInfo);
+
+  <bb 5> :
+  D.6408 = 0;
+
+  <bb 6> :
+<L3>:
+  return D.6408;
+
+}
+
+
+Crypto_Ipw_ProcessJob (const uint32 u32PartitionId, const uint32 u32ObjectIdx, struct Crypto_JobType * const pJob)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6403;
+
+  <bb 2> :
+  RetVal = 1;
+  _1 = pJob->jobPrimitiveInputOutput.mode;
+  if (_1 == 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  RetVal = Crypto_Ipw_ProcessOperation (pJob);
+  _2 = pJob->jobPrimitiveInfo;
+  _3 = _2->processingType;
+  if (_3 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  pJob->jobState = 0;
+
+  <bb 5> :
+  if (RetVal == 2)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 6> :
+  _4 = pJob->jobPrimitiveInfo;
+  _5 = _4->processingType;
+  if (_5 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 7> :
+  _6 = Crypto_aDriverObjectList[u32ObjectIdx].u32CryptoQueueSize;
+  if (_6 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 8> :
+  _7 = Crypto_Util_QueueJob (u32ObjectIdx, pJob);
+  if (_7 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  RetVal = 0;
+  goto <bb 15>; [INV]
+
+  <bb 10> :
+  RetVal = 5;
+  goto <bb 15>; [INV]
+
+  <bb 11> :
+  if (RetVal != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  pJob->jobState = 0;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+  _8 = pJob->jobPrimitiveInfo;
+  _9 = _8->processingType;
+  if (_9 == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _10 = pJob->jobInfo;
+  _11 = _10->jobId;
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = _11;
+
+  <bb 15> :
+  D.6403 = RetVal;
+
+  <bb 16> :
+<L19>:
+  return D.6403;
+
+}
+
+
+Crypto_Ipw_Init (const uint32 u32PartitionId)
+{
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6382;
+
+  <bb 2> :
+  Csec_Ip_Init (&Crypto_Ipw_State.Csec_Ip_State);
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  CsecResponse = Csec_Ip_InitRng ();
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  D.6382 = RetVal;
+
+  <bb 3> :
+<L0>:
+  return D.6382;
+
+}
+
+
+Crypto_Ipw_Random (struct Crypto_JobType * pJob)
+{
+  uint32 * pOutputLength;
+  Crypto_ProcessingType eProcessingType;
+  Std_ReturnType RetVal;
+  struct Csec_Ip_ReqType CsecIpReq;
+  Csec_Ip_ErrorCodeType CsecResponse;
+  Std_ReturnType D.6377;
+
+  <bb 2> :
+  RetVal = 1;
+  _1 = pJob->jobPrimitiveInfo;
+  eProcessingType = _1->processingType;
+  pOutputLength = pJob->jobPrimitiveInputOutput.outputLengthPtr;
+  _2 = *pOutputLength;
+  if (_2 > 15)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  if (eProcessingType == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CsecIpReq.eReqType = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  CsecIpReq.eReqType = 2;
+  CsecIpReq.pfCallback = Crypto_Ipw_ProcessAsyncCsecResponse;
+  CsecIpReq.pCallbackParam = pJob;
+
+  <bb 6> :
+  _3 = pJob->jobPrimitiveInputOutput.outputPtr;
+  CsecResponse = Csec_Ip_GenerateRnd (&CsecIpReq, _3);
+  RetVal = Crypto_Ipw_TranslateCsecResponse (CsecResponse);
+  if (RetVal == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (eProcessingType == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  *pOutputLength = 16;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  RetVal = 3;
+
+  <bb 10> :
+  D.6377 = RetVal;
+  CsecIpReq = {CLOBBER};
+
+  <bb 11> :
+<L11>:
+  return D.6377;
+
+}
+
+
+Crypto_Ipw_TranslateCsecResponse (Csec_Ip_ErrorCodeType CsecResponse)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6380;
+
+  <bb 2> :
+  _1 = (int) CsecResponse;
+  switch (_1) <default: <L14> [INV], case 1: <L0> [INV], case 2: <L3> [INV], case 4: <L12> [INV], case 8: <L13> [INV], case 16: <L10> [INV], case 32: <L3> [INV], case 64: <L11> [INV], case 128: <L3> [INV], case 256: <L3> [INV], case 512: <L3> [INV], case 1024: <L3> [INV], case 2048: <L3> [INV], case 65534: <L2> [INV], case 65535: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  RetVal = 0;
+  goto <bb 12>; [INV]
+
+  <bb 4> :
+<L1>:
+  RetVal = 2;
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+<L2>:
+  RetVal = 128;
+  goto <bb 12>; [INV]
+
+  <bb 6> :
+<L3>:
+  RetVal = 1;
+  goto <bb 12>; [INV]
+
+  <bb 7> :
+<L10>:
+  RetVal = 13;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+<L11>:
+  RetVal = 7;
+  goto <bb 12>; [INV]
+
+  <bb 9> :
+<L12>:
+  RetVal = 8;
+  goto <bb 12>; [INV]
+
+  <bb 10> :
+<L13>:
+  RetVal = 9;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+<L14>:
+  RetVal = 1;
+
+  <bb 12> :
+  D.6380 = RetVal;
+
+  <bb 13> :
+<L16>:
+  return D.6380;
+
+}
+
+
+Crypto_Ipw_ProcessOperation (struct Crypto_JobType * pJob)
+{
+  Std_ReturnType RetVal;
+  Std_ReturnType D.6365;
+
+  <bb 2> :
+  RetVal = 1;
+  pJob->jobState = 1;
+  _1 = pJob->jobPrimitiveInfo;
+  _2 = _1->primitiveInfo;
+  _3 = _2->service;
+  if (_3 == 11)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  RetVal = Crypto_Ipw_Random (pJob);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  RetVal = 1;
+  pJob->jobState = 0;
+
+  <bb 5> :
+  D.6365 = RetVal;
+
+  <bb 6> :
+<L3>:
+  return D.6365;
+
+}
+
+
+Crypto_Ipw_PushJobFromCdoQueueToCsec ()
+{
+  const uint32 u32PartitionId;
+  uint32 u32HeadOfQueuedJobs;
+  struct Crypto_JobType * pJob;
+  Std_ReturnType StdRetVal;
+
+  <bb 2> :
+  u32PartitionId = 0;
+  _1 = Crypto_aeDriverState[u32PartitionId];
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  _2 = Crypto_aObjectQueueList[0].u32HeadOfQueuedJobs;
+  if (_2 != 4294967295)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  u32HeadOfQueuedJobs = Crypto_aObjectQueueList[0].u32HeadOfQueuedJobs;
+  _3 = Crypto_aDriverObjectList[0].pQueuedJobs;
+  _4 = u32HeadOfQueuedJobs * 8;
+  _5 = _3 + _4;
+  pJob = _5->pJob;
+  StdRetVal = Crypto_Ipw_ProcessOperation (pJob);
+  if (StdRetVal != 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  Crypto_Util_DequeueHeadJob (0);
+  if (StdRetVal != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  pJob->jobState = 0;
+  CryIf_CallbackNotification (pJob, StdRetVal);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  _6 = pJob->jobInfo;
+  _7 = _6->jobId;
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = _7;
+
+  <bb 8> :
+  return;
+
+}
+
+
+Crypto_Ipw_ProcessAsyncCsecResponse (Csec_Ip_ErrorCodeType ErrCode, Csec_Ip_CmdType u32CompletedCmd, void * pCallbackParam)
+{
+  Crypto_ServiceInfoType eService;
+  uint32 * pOutputLength;
+  Std_ReturnType CryptoErrorCode;
+  struct Crypto_JobType * const pCryptoJob;
+
+  <bb 2> :
+  pCryptoJob = pCallbackParam;
+  pOutputLength = pCryptoJob->jobPrimitiveInputOutput.outputLengthPtr;
+  _1 = pCryptoJob->jobPrimitiveInfo;
+  _2 = _1->primitiveInfo;
+  eService = _2->service;
+  Crypto_Ipw_PushJobFromCdoQueueToCsec ();
+  Crypto_Ipw_State.u32CurrentlyProcessedJobId = 2779404885;
+  CryptoErrorCode = Crypto_Ipw_TranslateCsecResponse (ErrCode);
+  pCryptoJob->jobState = 0;
+  if (CryptoErrorCode == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (eService == 11)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  *pOutputLength = 16;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  CryIf_CallbackNotification (pCryptoJob, CryptoErrorCode);
+  return;
+
+}
+
+

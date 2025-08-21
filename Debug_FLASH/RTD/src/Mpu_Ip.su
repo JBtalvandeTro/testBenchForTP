@@ -1,0 +1,15 @@
+Mpu_Ip.c:167:6:Mpu_Ip_Init_Privileged	32	static
+Mpu_Ip.c:211:6:Mpu_Ip_SetRegionConfig_Privileged	16	static
+Mpu_Ip.c:251:6:Mpu_Ip_Deinit_Privileged	8	static
+Mpu_Ip.c:287:6:Mpu_Ip_EnableRegion_Privileged	16	static
+Mpu_Ip.c:323:6:Mpu_Ip_SetAccessMode_Privileged	24	static
+Mpu_Ip.c:388:9:Mpu_Ip_GetErrorDetails_Privileged	48	static
+Mpu_Ip.c:476:26:Mpu_Ip_ConvertErrorMasterToEnum	16	static
+Mpu_Ip.c:513:35:Mpu_Ip_ConvertErrorAttributeToEnum	16	static
+Mpu_Ip.c:550:26:Mpu_Ip_ConvertErrorAccessToEnum	16	static
+Mpu_Ip.c:578:6:Mpu_Ip_Init	16	static
+Mpu_Ip.c:591:6:Mpu_Ip_SetRegionConfig	16	static
+Mpu_Ip.c:604:6:Mpu_Ip_Deinit	8	static
+Mpu_Ip.c:617:6:Mpu_Ip_EnableRegion	16	static
+Mpu_Ip.c:630:6:Mpu_Ip_SetAccessMode	24	static
+Mpu_Ip.c:647:9:Mpu_Ip_GetErrorDetails	16	static

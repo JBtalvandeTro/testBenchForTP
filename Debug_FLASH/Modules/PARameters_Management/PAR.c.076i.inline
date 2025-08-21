@@ -1,0 +1,456 @@
+IPA summary for PAR_CalculateCRC/11 is missing.
+IPA summary for par_FetchActiveFlashPartition/10 is missing.
+IPA summary for PAR_Deinit/9 is missing.
+IPA summary for PAR_Init/8 is missing.
+
+Flattening functions:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 0.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function not considered for inlining              :        2 calls, 2.000000 freq, 0 count
+function body not available                       :        6 calls, 6.000000 freq, 0 count
+IPA summary for PAR_CalculateCRC/11 is missing.
+IPA summary for par_FetchActiveFlashPartition/10 is missing.
+IPA summary for PAR_Deinit/9 is missing.
+IPA summary for PAR_Init/8 is missing.
+Symbol table:
+
+Crc_SetChannelCalculate/19 (Crc_SetChannelCalculate) @05ba9e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_CalculateCRC/11 
+  Calls: 
+par_crcConfig.6484/18 (par_crcConfig) @05bd41b0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: PAR_CalculateCRC/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Crc_SetChannelConfig/17 (Crc_SetChannelConfig) @05ba9d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_CalculateCRC/11 
+  Calls: 
+App_BootVersionRomStart/16 (App_BootVersionRomStart) @05bac9d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Init/8 (read)
+  Availability: not_available
+  Varpool flags: read-only
+App_SwVersionRomStart/15 (App_SwVersionRomStart) @05bac990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Init/8 (read)
+  Availability: not_available
+  Varpool flags: read-only
+PAR_CheckIsValueAllowed/14 (PAR_CheckIsValueAllowed) @05ba99a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_Init/8 
+  Calls: 
+PAR_paramConfig/13 (PAR_paramConfig) @05bac900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (write)
+  Availability: not_available
+  Varpool flags:
+FLA_Read/12 (FLA_Read) @05ba98c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: PAR_Init/8 par_FetchActiveFlashPartition/10 par_FetchActiveFlashPartition/10 
+  Calls: 
+PAR_CalculateCRC/11 (PAR_CalculateCRC) @05ba91c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: par_crcConfig.6484/18 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_Init/8 
+  Calls: Crc_SetChannelCalculate/19 Crc_SetChannelConfig/17 
+par_FetchActiveFlashPartition/10 (par_FetchActiveFlashPartition) @05ba0ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: PAR_Init/8 
+  Calls: FLA_Read/12 FLA_Read/12 
+PAR_Deinit/9 (PAR_Deinit) @05ba0b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+PAR_Init/8 (PAR_Init) @05ba07e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramReq/1 (write)PAR_paramReq/1 (write)PAR_flags/0 (write)PAR_currentFlashPartition/7 (write)PAR_currentFlashPartition/7 (read)PAR_currentFlashPartition/7 (read)PAR_ParamValues/5 (addr)PAR_ParamValues/5 (addr)PAR_ParamValues/5 (read)PAR_ParamValues/5 (read)PAR_paramConfig/13 (write)PAR_paramConfig/13 (read)PAR_paramConfig/13 (write)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_ParamValues/5 (write)PAR_flags/0 (write)PAR_flags/0 (read)PAR_ParamValues/5 (read)PAR_paramConfig/13 (write)PAR_ParamValues/5 (write)PAR_paramConfig/13 (write)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_ParamValues/5 (write)PAR_flags/0 (write)PAR_flags/0 (write)PAR_paramConfig/13 (write)PAR_paramConfig/13 (read)PAR_paramConfig/13 (read)PAR_ParamValues/5 (write)App_SwVersionRomStart/15 (read)PAR_paramConfig/13 (write)App_BootVersionRomStart/16 (read)PAR_paramConfig/13 (write)PAR_writeAtInit/4 (write)PAR_flashUpToDate/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: PAR_CheckIsValueAllowed/14 PAR_CalculateCRC/11 FLA_Read/12 par_FetchActiveFlashPartition/10 
+PAR_currentFlashPartition/7 (PAR_currentFlashPartition) @05a01e58
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (read)
+  Availability: available
+  Varpool flags:
+PAR_FpgaParamUpdatePending/6 (PAR_FpgaParamUpdatePending) @05a01e10
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PAR_ParamValues/5 (PAR_ParamValues) @05a01dc8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (addr)PAR_Init/8 (addr)PAR_Init/8 (read)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (write)PAR_Init/8 (write)
+  Availability: available
+  Varpool flags:
+PAR_writeAtInit/4 (PAR_writeAtInit) @05a01d80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (write)
+  Availability: available
+  Varpool flags:
+PAR_flashUpToDate/3 (PAR_flashUpToDate) @05a01d38
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (write)
+  Availability: available
+  Varpool flags:
+PAR_right/2 (PAR_right) @05a01cf0
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+PAR_paramReq/1 (PAR_paramReq) @05a01ca8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (write)PAR_Init/8 (write)
+  Availability: available
+  Varpool flags:
+PAR_flags/0 (PAR_flags) @05a01c60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: PAR_Init/8 (write)PAR_Init/8 (write)PAR_Init/8 (read)PAR_Init/8 (write)PAR_Init/8 (write)
+  Availability: available
+  Varpool flags:
+
+;; Function PAR_Init (PAR_Init, funcdef_no=0, decl_uid=5882, cgraph_uid=1, symbol_order=8)
+
+PAR_Init ()
+{
+  _Bool flashUpToDate;
+  _Bool writeAtInit;
+  uint16_t calcCrc;
+  PAR_ErrorsE error;
+  uint32_t index;
+  <unnamed type> _1;
+  <unnamed type> PAR_currentFlashPartition.0_2;
+  <unnamed type> PAR_currentFlashPartition.1_3;
+  long unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  _Bool _8;
+  _Bool _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int App_SwVersionRomStart.2_13;
+  long unsigned int App_BootVersionRomStart.3_14;
+
+  <bb 2> :
+  PAR_paramReq.processed = 0;
+  PAR_paramReq.index = 0;
+  PAR_flags.moduleFlags.faults.flags.flashValueError = 0;
+  writeAtInit_31 = 0;
+  flashUpToDate_32 = 1;
+  _1 = par_FetchActiveFlashPartition ();
+  PAR_currentFlashPartition = _1;
+  PAR_currentFlashPartition.0_2 = PAR_currentFlashPartition;
+  if (PAR_currentFlashPartition.0_2 <= 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 3> :
+  PAR_currentFlashPartition.1_3 = PAR_currentFlashPartition;
+  FLA_Read (PAR_currentFlashPartition.1_3, 0, &PAR_ParamValues, 1032);
+  calcCrc_42 = PAR_CalculateCRC (&PAR_ParamValues, 1020);
+  _4 = PAR_ParamValues[255];
+  _5 = (short unsigned int) _4;
+  if (calcCrc_42 == _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 4> :
+  index_48 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = PAR_ParamValues[index_15];
+  PAR_paramConfig[index_15].realVal.unsignedVal = _6;
+  index_61 = index_15 + 1;
+
+  <bb 6> :
+  # index_15 = PHI <index_48(4), index_61(5)>
+  if (index_15 <= 67)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  index_49 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  error_55 = PAR_CheckIsValueAllowed (index_16, PAR_paramConfig[index_16].realVal);
+  if (error_55 == 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  PAR_paramConfig[index_16].realVal = PAR_paramConfig[index_16].defaultVal;
+  _7 = PAR_paramConfig[index_16].defaultVal.unsignedVal;
+  PAR_ParamValues[index_16] = _7;
+  PAR_flags.moduleFlags.faults.flags.flashValueError = 1;
+
+  <bb 10> :
+  index_59 = index_16 + 1;
+
+  <bb 11> :
+  # index_16 = PHI <index_49(7), index_59(10)>
+  if (index_16 <= 67)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  _8 = PAR_flags.moduleFlags.faults.flags.flashValueError;
+  _9 = ~_8;
+  if (_9 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 13> :
+  _10 = PAR_ParamValues[6];
+  if (_10 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 14> :
+  PAR_paramConfig[6].realVal.unsignedVal = 0;
+  PAR_ParamValues[6] = 0;
+  flashUpToDate_52 = 0;
+  writeAtInit_53 = 1;
+  goto <bb 22>; [INV]
+
+  <bb 15> :
+  index_43 = 0;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  PAR_paramConfig[index_17].realVal = PAR_paramConfig[index_17].defaultVal;
+  _11 = PAR_paramConfig[index_17].defaultVal.unsignedVal;
+  PAR_ParamValues[index_17] = _11;
+  index_47 = index_17 + 1;
+
+  <bb 17> :
+  # index_17 = PHI <index_43(15), index_47(16)>
+  if (index_17 <= 67)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  PAR_flags.moduleFlags.faults.flags.flashValueError = 1;
+  goto <bb 22>; [INV]
+
+  <bb 19> :
+  PAR_flags.moduleFlags.faults.flags.flashValueError = 1;
+  index_36 = 0;
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  PAR_paramConfig[index_18].realVal = PAR_paramConfig[index_18].defaultVal;
+  _12 = PAR_paramConfig[index_18].defaultVal.unsignedVal;
+  PAR_ParamValues[index_18] = _12;
+  index_39 = index_18 + 1;
+
+  <bb 21> :
+  # index_18 = PHI <index_36(19), index_39(20)>
+  if (index_18 <= 67)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 22> :
+  # writeAtInit_19 = PHI <writeAtInit_31(18), writeAtInit_31(21), writeAtInit_31(13), writeAtInit_53(14), writeAtInit_31(12)>
+  # flashUpToDate_20 = PHI <flashUpToDate_32(18), flashUpToDate_32(21), flashUpToDate_32(13), flashUpToDate_52(14), flashUpToDate_32(12)>
+  App_SwVersionRomStart.2_13 = App_SwVersionRomStart;
+  PAR_paramConfig[0].realVal.unsignedVal = App_SwVersionRomStart.2_13;
+  App_BootVersionRomStart.3_14 = App_BootVersionRomStart;
+  PAR_paramConfig[3].realVal.unsignedVal = App_BootVersionRomStart.3_14;
+  PAR_writeAtInit = writeAtInit_19;
+  PAR_flashUpToDate = flashUpToDate_20;
+  return;
+
+}
+
+
+
+;; Function PAR_Deinit (PAR_Deinit, funcdef_no=1, decl_uid=5887, cgraph_uid=2, symbol_order=9)
+
+PAR_Deinit ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+
+;; Function par_FetchActiveFlashPartition (par_FetchActiveFlashPartition, funcdef_no=2, decl_uid=6450, cgraph_uid=3, symbol_order=10)
+
+par_FetchActiveFlashPartition ()
+{
+  uint32_t specificWord2;
+  uint32_t specificWord1;
+  FLA_PartitionIdE partition;
+  FLA_PartitionIdE D.6512;
+  long unsigned int specificWord1.4_1;
+  long unsigned int specificWord2.5_2;
+  long unsigned int specificWord2.6_3;
+  FLA_PartitionIdE _14;
+
+  <bb 2> :
+  specificWord1 = 0;
+  specificWord2 = 0;
+  FLA_Read (0, 1024, &specificWord1, 4);
+  FLA_Read (1, 1024, &specificWord2, 4);
+  specificWord1.4_1 = specificWord1;
+  if (specificWord1.4_1 == 1431677610)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  specificWord2.5_2 = specificWord2;
+  if (specificWord2.5_2 != 1431677610)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  partition_13 = 0;
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  partition_12 = 3;
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+  specificWord2.6_3 = specificWord2;
+  if (specificWord2.6_3 == 1431677610)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  partition_11 = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  partition_10 = 3;
+
+  <bb 9> :
+  # partition_4 = PHI <partition_12(5), partition_11(7), partition_10(8), partition_13(4)>
+  _14 = partition_4;
+  specificWord1 ={v} {CLOBBER};
+  specificWord2 ={v} {CLOBBER};
+
+  <bb 10> :
+<L10>:
+  return _14;
+
+}
+
+
+
+;; Function PAR_CalculateCRC (PAR_CalculateCRC, funcdef_no=3, decl_uid=5885, cgraph_uid=4, symbol_order=11)
+
+PAR_CalculateCRC (const uint8_t * data, uint32_t len)
+{
+  uint16_t crc;
+  static const struct Crc_ChannelConfigType par_crcConfig = {.Protocol=7};
+  uint16_t D.6515;
+  long long unsigned int _1;
+  uint16_t _9;
+
+  <bb 2> :
+  crc_2 = 0;
+  Crc_SetChannelConfig (0, &par_crcConfig);
+  _1 = Crc_SetChannelCalculate (0, data_5(D), len_6(D), 0, 1);
+  crc_8 = (uint16_t) _1;
+  _9 = crc_8;
+
+  <bb 3> :
+<L0>:
+  return _9;
+
+}
+
+

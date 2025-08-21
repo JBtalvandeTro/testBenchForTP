@@ -1,0 +1,234 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+CAN2_ORED_16_31_MB_IRQHandler/23 (CAN2_ORED_16_31_MB_IRQHandler) @06b1d1c0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN2_ORED_0_15_MB_IRQHandler/22 (CAN2_ORED_0_15_MB_IRQHandler) @06b1d0e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN2_Error_IRQHandler/21 (CAN2_Error_IRQHandler) @06b1d000
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN1_ORED_16_31_MB_IRQHandler/20 (CAN1_ORED_16_31_MB_IRQHandler) @06b1b540
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN1_ORED_0_15_MB_IRQHandler/19 (CAN1_ORED_0_15_MB_IRQHandler) @06b1bee0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN1_Error_IRQHandler/18 (CAN1_Error_IRQHandler) @06b1be00
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN0_ORED_16_31_MB_IRQHandler/17 (CAN0_ORED_16_31_MB_IRQHandler) @06b1bd20
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN0_ORED_0_15_MB_IRQHandler/16 (CAN0_ORED_0_15_MB_IRQHandler) @06b1bc40
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CAN0_Error_IRQHandler/15 (CAN0_Error_IRQHandler) @06b1bb60
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/14 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @06b1ba80
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LPIT_0_CH_1_ISR/13 (LPIT_0_CH_1_ISR) @06b1b9a0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LPIT_0_CH_0_ISR/12 (LPIT_0_CH_0_ISR) @06b1b8c0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_2_IRQHandler/11 (Lpspi_Ip_LPSPI_2_IRQHandler) @06b1b7e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_1_IRQHandler/10 (Lpspi_Ip_LPSPI_1_IRQHandler) @06b1b700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Lpspi_Ip_LPSPI_0_IRQHandler/9 (Lpspi_Ip_LPSPI_0_IRQHandler) @06b1b620
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+undefined_handler/8 (undefined_handler) @06b1b460
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch3_IRQHandler/7 (Dma0_Ch3_IRQHandler) @06b1b380
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch2_IRQHandler/6 (Dma0_Ch2_IRQHandler) @06b1b2a0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch1_IRQHandler/5 (Dma0_Ch1_IRQHandler) @06b1b1c0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma0_Ch0_IRQHandler/4 (Dma0_Ch0_IRQHandler) @06b1b0e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: aIrqRouteConfig/2 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+intRouteConfig/3 (intRouteConfig) @06ada948
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: aIrqRouteConfig/2 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+aIrqRouteConfig/2 (aIrqRouteConfig) @06ada900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma0_Ch0_IRQHandler/4 (addr)Dma0_Ch1_IRQHandler/5 (addr)Dma0_Ch2_IRQHandler/6 (addr)Dma0_Ch3_IRQHandler/7 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)Lpspi_Ip_LPSPI_0_IRQHandler/9 (addr)Lpspi_Ip_LPSPI_1_IRQHandler/10 (addr)Lpspi_Ip_LPSPI_2_IRQHandler/11 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)LPIT_0_CH_0_ISR/12 (addr)LPIT_0_CH_1_ISR/13 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)PORT_CI_ICU_IP_E_EXT_IRQ_ISR/14 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)CAN0_Error_IRQHandler/15 (addr)undefined_handler/8 (addr)CAN0_ORED_0_15_MB_IRQHandler/16 (addr)CAN0_ORED_16_31_MB_IRQHandler/17 (addr)undefined_handler/8 (addr)CAN1_Error_IRQHandler/18 (addr)CAN1_ORED_0_15_MB_IRQHandler/19 (addr)CAN1_ORED_16_31_MB_IRQHandler/20 (addr)undefined_handler/8 (addr)CAN2_Error_IRQHandler/21 (addr)CAN2_ORED_0_15_MB_IRQHandler/22 (addr)CAN2_ORED_16_31_MB_IRQHandler/23 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)undefined_handler/8 (addr)
+  Referring: intRouteConfig/3 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+intCtrlConfig/1 (intCtrlConfig) @06ada828
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: aIrqConfiguration/0 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+aIrqConfiguration/0 (aIrqConfiguration) @06ada7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: intCtrlConfig/1 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

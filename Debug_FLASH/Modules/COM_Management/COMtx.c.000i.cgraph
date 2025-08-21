@@ -1,0 +1,3060 @@
+Trivially needed symbols: getLimitationType com_ComposeControlStatusInfo com_ComposeFaults com_ComposeVoltageMeasures com_ComposeTemperatureMeasures com_ComposePowerMeasures com_ComposeCurrentMeasures com_UpdatePbitResult com_UpdateMeasures com_isInternalFrameReadyToBeSent com_isControlFrameReadyToBeSent com_ManageInternalTx com_ManageControlTx com_ManageTx COM_TxRequestedTasks COM_TxScheduledTasks
+
+
+Initial Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (write)com_ComposeCurrentMeasures/9 (write)com_ComposePowerMeasures/10 (write)com_ComposePowerMeasures/10 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeCurrentMeasures/9 (read)com_ComposePowerMeasures/10 (read)com_ComposePowerMeasures/10 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)getLimitationType/15 (read)getLimitationType/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageTx/2 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 com_ManageTx/2 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)com_ManageTx/2 (read)com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ComposeControlStatusInfo/14 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7fb60
+  References: FSM_mode/20 (read)PAR_paramConfig/49 (read)PAR_paramConfig/49 (read)FSM_mode/20 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)PWB_numberAvailableCOMETi/59 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)CTB_dsoState/61 (read)COM_controlStatusInfo/35 (write)CTB_dsiState/62 (read)COM_controlStatusInfo/35 (write)FSM_mode/20 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)CNV_buckType/63 (read)COM_controlStatusInfo/35 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: getLimitationType/15 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f620
+  References: ACT_errors/58 (read)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f0e0
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7fd20
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)ACT_tempSeverity/57 (read)COM_tempMeasures/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7fa80
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f7e0
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f540
+  References: PAR_paramConfig/49 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f2a0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: com_ComposeControlStatusInfo/14 com_ComposeFaults/13 com_ComposeVoltageMeasures/12 com_ComposeTemperatureMeasures/11 com_ComposePowerMeasures/10 com_ComposeCurrentMeasures/9 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d7f000
+  References: COM_framesInternal/48 (read)COM_framesInternal/48 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (read)COM_framesInternal/48 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d61a80
+  References: COM_framesControl/47 (read)COM_framesControl/47 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (read)COM_framesControl/47 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d61540
+  References: CNV_flags/41 (read)CNV_flags/41 (read)COM_txDelayCounterInternal/45 (read)COM_txDelayCounterInternal/45 (write)COM_txDelayCounterInternal/45 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 com_isInternalFrameReadyToBeSent/6 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d61ee0
+  References: COM_controlStatusInfo/35 (read)COM_errorsAndWarnings/36 (read)FSM_mode/20 (read)COM_txDelayCounterControl/39 (read)COM_txDelayCounterControl/39 (write)COM_txDelayCounterControl/39 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendControlPbitResultsFrame/38 com_isControlFrameReadyToBeSent/5 CBU_SendControlErrorsWarningsFrame/37 com_isControlFrameReadyToBeSent/5 CBU_SendControlControlStatusFrame/29 com_isControlFrameReadyToBeSent/5 CBU_SendControlVoltageMeasuresFrame/34 com_isControlFrameReadyToBeSent/5 CBU_SendControlTemperatureMeasuresFrame/33 com_isControlFrameReadyToBeSent/5 CBU_SendControlPowerMeasuresFrame/32 com_isControlFrameReadyToBeSent/5 CBU_SendControlCurrentMeasuresFrame/31 com_isControlFrameReadyToBeSent/5 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06d61c40
+  References: FSM_mode/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: Can_SetControllerMode/30 Can_SetControllerMode/30 CBU_SendControlControlStatusFrame/29 COM_UpdatePeriodParams/28 com_ManageInternalTx/4 com_ManageControlTx/3 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d619a0
+  References: PAR_paramReq/18 (read)PAR_paramReq/18 (read)PAR_paramReq/18 (read)DBG_Flags/19 (read)FSM_mode/20 (read)DBG_Flags/19 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBio_cmdResults/23 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PAR_paramReq/18 (read)PAR_paramReq/18 (read)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceEquipmentTestResponse/21 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06d61700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_ManageTx/2 CNV_ManageInternalErrorResetRequestFrame/17 com_UpdatePbitResult/8 CBU_CheckErrors/16 com_UpdateMeasures/7 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (write)com_ComposeCurrentMeasures/9 (write)com_ComposePowerMeasures/10 (write)com_ComposePowerMeasures/10 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeCurrentMeasures/9 (read)com_ComposePowerMeasures/10 (read)com_ComposePowerMeasures/10 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)getLimitationType/15 (read)getLimitationType/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageTx/2 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 com_ManageTx/2 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)com_ManageTx/2 (read)com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ComposeControlStatusInfo/14 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)PAR_paramConfig/49 (read)PAR_paramConfig/49 (read)FSM_mode/20 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)PWB_numberAvailableCOMETi/59 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)CTB_dsoState/61 (read)COM_controlStatusInfo/35 (write)CTB_dsiState/62 (read)COM_controlStatusInfo/35 (write)FSM_mode/20 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)CNV_buckType/63 (read)COM_controlStatusInfo/35 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: getLimitationType/15 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/58 (read)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)ACT_tempSeverity/57 (read)COM_tempMeasures/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/49 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: com_ComposeControlStatusInfo/14 com_ComposeFaults/13 com_ComposeVoltageMeasures/12 com_ComposeTemperatureMeasures/11 com_ComposePowerMeasures/10 com_ComposeCurrentMeasures/9 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/48 (read)COM_framesInternal/48 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (read)COM_framesInternal/48 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/47 (read)COM_framesControl/47 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (read)COM_framesControl/47 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_flags/41 (read)CNV_flags/41 (read)COM_txDelayCounterInternal/45 (read)COM_txDelayCounterInternal/45 (write)COM_txDelayCounterInternal/45 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 com_isInternalFrameReadyToBeSent/6 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlStatusInfo/35 (read)COM_errorsAndWarnings/36 (read)FSM_mode/20 (read)COM_txDelayCounterControl/39 (read)COM_txDelayCounterControl/39 (write)COM_txDelayCounterControl/39 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendControlPbitResultsFrame/38 com_isControlFrameReadyToBeSent/5 CBU_SendControlErrorsWarningsFrame/37 com_isControlFrameReadyToBeSent/5 CBU_SendControlControlStatusFrame/29 com_isControlFrameReadyToBeSent/5 CBU_SendControlVoltageMeasuresFrame/34 com_isControlFrameReadyToBeSent/5 CBU_SendControlTemperatureMeasuresFrame/33 com_isControlFrameReadyToBeSent/5 CBU_SendControlPowerMeasuresFrame/32 com_isControlFrameReadyToBeSent/5 CBU_SendControlCurrentMeasuresFrame/31 com_isControlFrameReadyToBeSent/5 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: Can_SetControllerMode/30 Can_SetControllerMode/30 CBU_SendControlControlStatusFrame/29 COM_UpdatePeriodParams/28 com_ManageInternalTx/4 com_ManageControlTx/3 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramReq/18 (read)PAR_paramReq/18 (read)PAR_paramReq/18 (read)DBG_Flags/19 (read)FSM_mode/20 (read)DBG_Flags/19 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBio_cmdResults/23 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PAR_paramReq/18 (read)PAR_paramReq/18 (read)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceEquipmentTestResponse/21 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_ManageTx/2 CNV_ManageInternalErrorResetRequestFrame/17 com_UpdatePbitResult/8 CBU_CheckErrors/16 com_UpdateMeasures/7 
+
+
+Initial Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (write)com_ComposeCurrentMeasures/9 (write)com_ComposePowerMeasures/10 (write)com_ComposePowerMeasures/10 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeCurrentMeasures/9 (read)com_ComposePowerMeasures/10 (read)com_ComposePowerMeasures/10 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)getLimitationType/15 (read)getLimitationType/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageTx/2 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 com_ManageTx/2 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)com_ManageTx/2 (read)com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ComposeControlStatusInfo/14 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)PAR_paramConfig/49 (read)PAR_paramConfig/49 (read)FSM_mode/20 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)PWB_numberAvailableCOMETi/59 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)CTB_dsoState/61 (read)COM_controlStatusInfo/35 (write)CTB_dsiState/62 (read)COM_controlStatusInfo/35 (write)FSM_mode/20 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)CNV_buckType/63 (read)COM_controlStatusInfo/35 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: getLimitationType/15 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/58 (read)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)ACT_tempSeverity/57 (read)COM_tempMeasures/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/49 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: com_ComposeControlStatusInfo/14 com_ComposeFaults/13 com_ComposeVoltageMeasures/12 com_ComposeTemperatureMeasures/11 com_ComposePowerMeasures/10 com_ComposeCurrentMeasures/9 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/48 (read)COM_framesInternal/48 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (read)COM_framesInternal/48 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/47 (read)COM_framesControl/47 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (read)COM_framesControl/47 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_flags/41 (read)CNV_flags/41 (read)COM_txDelayCounterInternal/45 (read)COM_txDelayCounterInternal/45 (write)COM_txDelayCounterInternal/45 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 com_isInternalFrameReadyToBeSent/6 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlStatusInfo/35 (read)COM_errorsAndWarnings/36 (read)FSM_mode/20 (read)COM_txDelayCounterControl/39 (read)COM_txDelayCounterControl/39 (write)COM_txDelayCounterControl/39 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendControlPbitResultsFrame/38 com_isControlFrameReadyToBeSent/5 CBU_SendControlErrorsWarningsFrame/37 com_isControlFrameReadyToBeSent/5 CBU_SendControlControlStatusFrame/29 com_isControlFrameReadyToBeSent/5 CBU_SendControlVoltageMeasuresFrame/34 com_isControlFrameReadyToBeSent/5 CBU_SendControlTemperatureMeasuresFrame/33 com_isControlFrameReadyToBeSent/5 CBU_SendControlPowerMeasuresFrame/32 com_isControlFrameReadyToBeSent/5 CBU_SendControlCurrentMeasuresFrame/31 com_isControlFrameReadyToBeSent/5 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: Can_SetControllerMode/30 Can_SetControllerMode/30 CBU_SendControlControlStatusFrame/29 COM_UpdatePeriodParams/28 com_ManageInternalTx/4 com_ManageControlTx/3 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramReq/18 (read)PAR_paramReq/18 (read)PAR_paramReq/18 (read)DBG_Flags/19 (read)FSM_mode/20 (read)DBG_Flags/19 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBio_cmdResults/23 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PAR_paramReq/18 (read)PAR_paramReq/18 (read)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceEquipmentTestResponse/21 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_ManageTx/2 CNV_ManageInternalErrorResetRequestFrame/17 com_UpdatePbitResult/8 CBU_CheckErrors/16 com_UpdateMeasures/7 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)
+  Availability: not-ready
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (write)com_ComposeCurrentMeasures/9 (write)com_ComposePowerMeasures/10 (write)com_ComposePowerMeasures/10 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)
+  Availability: not-ready
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeCurrentMeasures/9 (read)com_ComposePowerMeasures/10 (read)com_ComposePowerMeasures/10 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)getLimitationType/15 (read)getLimitationType/15 (read)
+  Availability: not-ready
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageTx/2 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageControlTx/3 com_ManageTx/2 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: com_ManageTx/2 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)com_ManageTx/2 (read)com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not-ready
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not-ready
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)
+  Availability: not-ready
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ComposeControlStatusInfo/14 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)PAR_paramConfig/49 (read)PAR_paramConfig/49 (read)FSM_mode/20 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)PWB_numberAvailableCOMETi/59 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)CTB_dsoState/61 (read)COM_controlStatusInfo/35 (write)CTB_dsiState/62 (read)COM_controlStatusInfo/35 (write)FSM_mode/20 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)CNV_buckType/63 (read)COM_controlStatusInfo/35 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: getLimitationType/15 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: ACT_errors/58 (read)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)ACT_tempSeverity/57 (read)COM_tempMeasures/56 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: PAR_paramConfig/49 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: com_ComposeControlStatusInfo/14 com_ComposeFaults/13 com_ComposeVoltageMeasures/12 com_ComposeTemperatureMeasures/11 com_ComposePowerMeasures/10 com_ComposeCurrentMeasures/9 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesInternal/48 (read)COM_framesInternal/48 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (read)COM_framesInternal/48 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_framesControl/47 (read)COM_framesControl/47 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (read)COM_framesControl/47 (read)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: CNV_flags/41 (read)CNV_flags/41 (read)COM_txDelayCounterInternal/45 (read)COM_txDelayCounterInternal/45 (write)COM_txDelayCounterInternal/45 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 com_isInternalFrameReadyToBeSent/6 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: COM_controlStatusInfo/35 (read)COM_errorsAndWarnings/36 (read)FSM_mode/20 (read)COM_txDelayCounterControl/39 (read)COM_txDelayCounterControl/39 (write)COM_txDelayCounterControl/39 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (write)
+  Referring: 
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendControlPbitResultsFrame/38 com_isControlFrameReadyToBeSent/5 CBU_SendControlErrorsWarningsFrame/37 com_isControlFrameReadyToBeSent/5 CBU_SendControlControlStatusFrame/29 com_isControlFrameReadyToBeSent/5 CBU_SendControlVoltageMeasuresFrame/34 com_isControlFrameReadyToBeSent/5 CBU_SendControlTemperatureMeasuresFrame/33 com_isControlFrameReadyToBeSent/5 CBU_SendControlPowerMeasuresFrame/32 com_isControlFrameReadyToBeSent/5 CBU_SendControlCurrentMeasuresFrame/31 com_isControlFrameReadyToBeSent/5 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: FSM_mode/20 (read)
+  Referring: 
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: Can_SetControllerMode/30 Can_SetControllerMode/30 CBU_SendControlControlStatusFrame/29 COM_UpdatePeriodParams/28 com_ManageInternalTx/4 com_ManageControlTx/3 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: PAR_paramReq/18 (read)PAR_paramReq/18 (read)PAR_paramReq/18 (read)DBG_Flags/19 (read)FSM_mode/20 (read)DBG_Flags/19 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBio_cmdResults/23 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PAR_paramReq/18 (read)PAR_paramReq/18 (read)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceEquipmentTestResponse/21 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: com_ManageTx/2 CNV_ManageInternalErrorResetRequestFrame/17 com_UpdatePbitResult/8 CBU_CheckErrors/16 com_UpdateMeasures/7 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)
+  Availability: not_available
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (read)
+  Availability: not_available
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)com_ComposeTemperatureMeasures/11 (write)
+  Availability: not_available
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (write)com_ComposeCurrentMeasures/9 (write)com_ComposePowerMeasures/10 (write)com_ComposePowerMeasures/10 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)com_ComposeVoltageMeasures/12 (write)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeCurrentMeasures/9 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ComposeVoltageMeasures/12 (read)com_ComposeVoltageMeasures/12 (read)getLimitationType/15 (read)getLimitationType/15 (read)com_ComposeCurrentMeasures/9 (read)com_ComposeCurrentMeasures/9 (read)com_ComposePowerMeasures/10 (read)com_ComposePowerMeasures/10 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeTemperatureMeasures/11 (read)com_ComposeFaults/13 (read)com_ComposeFaults/13 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)com_UpdatePbitResult/8 (read)
+  Availability: not_available
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)com_UpdatePbitResult/8 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_UpdatePbitResult/8 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)com_isInternalFrameReadyToBeSent/6 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)com_isControlFrameReadyToBeSent/5 (read)
+  Availability: not_available
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_ManageInternalTx/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isInternalFrameReadyToBeSent/6 (read)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ManageInternalTx/4 (read)com_ManageInternalTx/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_ManageControlTx/3 (read)
+  Availability: not_available
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_isControlFrameReadyToBeSent/5 (read)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)com_ManageControlTx/3 (read)com_ManageControlTx/3 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)com_ComposeFaults/13 (write)
+  Availability: not_available
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)com_ComposeControlStatusInfo/14 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageControlTx/3 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageTx/2 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageTx/2 com_ManageControlTx/3 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: com_ManageTx/2 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 COM_TxRequestedTasks/1 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_TxRequestedTasks/1 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: com_ManageControlTx/3 (read)COM_TxRequestedTasks/1 (read)com_ManageTx/2 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)com_ComposeControlStatusInfo/14 (read)
+  Availability: not_available
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (write)
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)COM_TxRequestedTasks/1 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ComposeControlStatusInfo/14 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/20 (read)PAR_paramConfig/49 (read)PAR_paramConfig/49 (read)FSM_mode/20 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)PWB_numberAvailableCOMETi/59 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)PWB_relayCurrentState/60 (read)COM_controlStatusInfo/35 (write)CTB_dsoState/61 (read)COM_controlStatusInfo/35 (write)CTB_dsiState/62 (read)COM_controlStatusInfo/35 (write)FSM_mode/20 (read)COM_controlStatusInfo/35 (write)COM_controlStatusInfo/35 (write)CNV_buckType/63 (read)COM_controlStatusInfo/35 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: getLimitationType/15 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: ACT_errors/58 (read)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)ACT_errors/58 (read)COM_errorsAndWarnings/36 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)COM_tempMeasures/56 (write)ACT_tempSeverity/57 (read)COM_tempMeasures/56 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_powercoreUnitTable/53 (read)CNV_powercoreUnitTable/53 (read)PWB_measures/54 (read)COM_powerMeasures/55 (write)COM_powerMeasures/55 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_UpdateMeasures/7 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: PAR_paramConfig/49 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)PWB_Flags/51 (read)COM_pbitResultsInfo/50 (write)CTB_Flags/52 (read)COM_pbitResultsInfo/50 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: com_ComposeControlStatusInfo/14 com_ComposeFaults/13 com_ComposeVoltageMeasures/12 com_ComposeTemperatureMeasures/11 com_ComposePowerMeasures/10 com_ComposeCurrentMeasures/9 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesInternal/48 (read)COM_framesInternal/48 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (read)COM_framesInternal/48 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 com_ManageInternalTx/4 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_framesControl/47 (read)COM_framesControl/47 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (read)COM_framesControl/47 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 com_ManageControlTx/3 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: CNV_flags/41 (read)CNV_flags/41 (read)COM_txDelayCounterInternal/45 (read)COM_txDelayCounterInternal/45 (write)COM_txDelayCounterInternal/45 (read)COM_txPeriodInternal/46 (read)COM_txDelayCounterInternal/45 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalModeRequestFrameCOMETiUnits/44 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 com_isInternalFrameReadyToBeSent/6 CBU_SendInternalControlRequestFrameCOMETiUnits/43 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 CBU_SendInternalDisableAlarmsRequest/42 com_isInternalFrameReadyToBeSent/6 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: COM_controlStatusInfo/35 (read)COM_errorsAndWarnings/36 (read)FSM_mode/20 (read)COM_txDelayCounterControl/39 (read)COM_txDelayCounterControl/39 (write)COM_txDelayCounterControl/39 (read)COM_txPeriodControl/40 (read)COM_txDelayCounterControl/39 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: com_ManageTx/2 
+  Calls: CBU_SendControlPbitResultsFrame/38 com_isControlFrameReadyToBeSent/5 CBU_SendControlErrorsWarningsFrame/37 com_isControlFrameReadyToBeSent/5 CBU_SendControlControlStatusFrame/29 com_isControlFrameReadyToBeSent/5 CBU_SendControlVoltageMeasuresFrame/34 com_isControlFrameReadyToBeSent/5 CBU_SendControlTemperatureMeasuresFrame/33 com_isControlFrameReadyToBeSent/5 CBU_SendControlPowerMeasuresFrame/32 com_isControlFrameReadyToBeSent/5 CBU_SendControlCurrentMeasuresFrame/31 com_isControlFrameReadyToBeSent/5 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FSM_mode/20 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: COM_TxScheduledTasks/0 
+  Calls: Can_SetControllerMode/30 Can_SetControllerMode/30 CBU_SendControlControlStatusFrame/29 COM_UpdatePeriodParams/28 com_ManageInternalTx/4 com_ManageControlTx/3 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: PAR_paramReq/18 (read)PAR_paramReq/18 (read)PAR_paramReq/18 (read)DBG_Flags/19 (read)FSM_mode/20 (read)DBG_Flags/19 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBio_cmdResults/23 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PWBCbit_cmdResults/24 (write)PWBCbit_cmdResults/24 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)ctb_DSI_TestResult/25 (write)COM_debugTestReq/22 (read)COM_debugTestReq/22 (write)PAR_paramReq/18 (read)PAR_paramReq/18 (read)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)COM_paramReq/26 (read)COM_paramReq/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceParameterResponse/27 CBU_SendMaintenanceEquipmentTestResponse/21 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: com_ManageTx/2 CNV_ManageInternalErrorResetRequestFrame/17 com_UpdatePbitResult/8 CBU_CheckErrors/16 com_UpdateMeasures/7 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+CNV_buckType/63 (CNV_buckType) @06e17360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_dsiState/62 (CTB_dsiState) @06e172d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_dsoState/61 (CTB_dsoState) @06e17288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_relayCurrentState/60 (PWB_relayCurrentState) @06e17240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_numberAvailableCOMETi/59 (PWB_numberAvailableCOMETi) @06e171f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ACT_errors/58 (ACT_errors) @06e0bdc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ACT_tempSeverity/57 (ACT_tempSeverity) @06e0baf8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_tempMeasures/56 (COM_tempMeasures) @06e0bab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_powerMeasures/55 (COM_powerMeasures) @06e0b798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_measures/54 (PWB_measures) @06e0b750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/53 (CNV_powercoreUnitTable) @06e0b708
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CTB_Flags/52 (CTB_Flags) @06e0b510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWB_Flags/51 (PWB_Flags) @06e0b4c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_pbitResultsInfo/50 (COM_pbitResultsInfo) @06e0b480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramConfig/49 (PAR_paramConfig) @06e0b438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/48 (COM_framesInternal) @06e07bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/47 (COM_framesControl) @06e07750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_txPeriodInternal/46 (COM_txPeriodInternal) @06e072d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_txDelayCounterInternal/45 (COM_txDelayCounterInternal) @06e07288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_SendInternalModeRequestFrameCOMETiUnits/44 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06c9c620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendInternalControlRequestFrameCOMETiUnits/43 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06c9c540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/42 (CBU_SendInternalDisableAlarmsRequest) @06c9c460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CNV_flags/41 (CNV_flags) @06c9be58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_txPeriodControl/40 (COM_txPeriodControl) @06c9b870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_txDelayCounterControl/39 (COM_txDelayCounterControl) @06c9b828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_SendControlPbitResultsFrame/38 (CBU_SendControlPbitResultsFrame) @06c9c1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/37 (CBU_SendControlErrorsWarningsFrame) @06c9c0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_errorsAndWarnings/36 (COM_errorsAndWarnings) @06c9b6c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_controlStatusInfo/35 (COM_controlStatusInfo) @06c9b5e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_SendControlVoltageMeasuresFrame/34 (CBU_SendControlVoltageMeasuresFrame) @06c9c000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/33 (CBU_SendControlTemperatureMeasuresFrame) @06c927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/32 (CBU_SendControlPowerMeasuresFrame) @06c92ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/31 (CBU_SendControlCurrentMeasuresFrame) @06c92e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Can_SetControllerMode/30 (Can_SetControllerMode) @06c92c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlControlStatusFrame/29 (CBU_SendControlControlStatusFrame) @06c92b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_UpdatePeriodParams/28 (COM_UpdatePeriodParams) @06c92a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendMaintenanceParameterResponse/27 (CBU_SendMaintenanceParameterResponse) @06c928c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_paramReq/26 (COM_paramReq) @06c95558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+ctb_DSI_TestResult/25 (ctb_DSI_TestResult) @06c95510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBCbit_cmdResults/24 (PWBCbit_cmdResults) @06c954c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PWBio_cmdResults/23 (PWBio_cmdResults) @06c95480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_debugTestReq/22 (COM_debugTestReq) @06c95438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_SendMaintenanceEquipmentTestResponse/21 (CBU_SendMaintenanceEquipmentTestResponse) @06c92700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+FSM_mode/20 (FSM_mode) @06c953a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+DBG_Flags/19 (DBG_Flags) @06c95360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+PAR_paramReq/18 (PAR_paramReq) @06c95318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CNV_ManageInternalErrorResetRequestFrame/17 (CNV_ManageInternalErrorResetRequestFrame) @06c92380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_CheckErrors/16 (CBU_CheckErrors) @06c922a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+getLimitationType/15 (getLimitationType) @06d7fb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposeControlStatusInfo/14 (com_ComposeControlStatusInfo) @06d7f620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposeFaults/13 (com_ComposeFaults) @06d7f0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposeVoltageMeasures/12 (com_ComposeVoltageMeasures) @06d7fd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposeTemperatureMeasures/11 (com_ComposeTemperatureMeasures) @06d7fa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposePowerMeasures/10 (com_ComposePowerMeasures) @06d7f7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ComposeCurrentMeasures/9 (com_ComposeCurrentMeasures) @06d7f540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_UpdatePbitResult/8 (com_UpdatePbitResult) @06d7f2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_UpdateMeasures/7 (com_UpdateMeasures) @06d7f000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_isInternalFrameReadyToBeSent/6 (com_isInternalFrameReadyToBeSent) @06d61a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_isControlFrameReadyToBeSent/5 (com_isControlFrameReadyToBeSent) @06d61540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ManageInternalTx/4 (com_ManageInternalTx) @06d61ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ManageControlTx/3 (com_ManageControlTx) @06d61c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+com_ManageTx/2 (com_ManageTx) @06d619a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_TxRequestedTasks/1 (COM_TxRequestedTasks) @06d61700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+COM_TxScheduledTasks/0 (COM_TxScheduledTasks) @06d61460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

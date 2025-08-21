@@ -1,0 +1,3352 @@
+Trivially needed symbols: Static_Dma_Ip_GetLogicChannelError Dma_Ip_ErrorIrqHandler Dma_Ip_IntIrqHandler Static_Dma_Ip_SetLogicChannelScatterGatherInit Static_Dma_Ip_ResetConfig Dma_Ip_SetLogicChannelScatterGatherConfig Dma_Ip_GetLogicChannelParam Static_Dma_Ip_SetLogicChannelScatterGatherList Dma_Ip_SetLogicChannelScatterGatherList Static_Dma_Ip_SetLogicChannelTransferList Dma_Ip_SetLogicChannelTransferList Static_Dma_Ip_SetLogicChannelGlobalList Dma_Ip_SetLogicChannelGlobalList Dma_Ip_GetLogicChannelStatus Dma_Ip_SetLogicChannelCommand Dma_Ip_LogicChannelDeinit Dma_Ip_LogicChannelInit Dma_Ip_GetLogicInstanceStatus Dma_Ip_SetLogicInstanceCommand Dma_Ip_Deinit Dma_Ip_Init Static_Dma_Ip_SetLogicChannelTransferConfig Static_Dma_Ip_SetLogicChannelGlobalConfig Dma_Ip_ConvertLogicChToHwCh Dma_Ip_pxInit g_ptHwv2BaseTcdPtrArray g_ptHwv2BaseInstPtrArray
+
+
+Initial Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_IntIrqHandler/24 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_Init/6 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 Dma_Ip_Init/6 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06910460
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06910000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06907b60
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069070e0
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06907d20
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06907a80
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069077e0
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06907540
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @069072a0
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06907000
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068f2c40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f2460
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f2e00
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f2b60
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f28c0
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f2620
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068f2380
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06875a80
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @068752a0
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06875ee0
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @06875c40
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068757e0
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06875460
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068751c0
+  References: 
+  Referring: Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)
+  Availability: not-ready
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @068708b8
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0672cca8
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_IntIrqHandler/24 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_Init/6 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 Dma_Ip_Init/6 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)
+  Availability: not-ready
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_IntIrqHandler/24 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_Init/6 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 Dma_Ip_Init/6 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)
+  Availability: not-ready
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_IntIrqHandler/24 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Dma_Ip_LogicChannelInit/10 Dma_Ip_Init/6 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 Dma_Ip_Init/6 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: Static_Dma_Ip_ResetConfig/22 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_ResetConfig/22 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)
+  Availability: not-ready
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_GetLogicChannelError/26 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherConfig/21 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelParam/20 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Static_Dma_Ip_SetLogicChannelTransferList/17 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicChannelStatus/13 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelCommand/12 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_SetLogicChannelTransferList/16 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_GetLogicInstanceStatus/9 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicInstanceCommand/8 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Deinit/7 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_ErrorIrqHandler/25 Dma_Ip_Init/6 Dma_Ip_LogicChannelInit/10 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_IntIrqHandler/24 Dma_Ip_LogicChannelDeinit/11 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 Dma_Ip_Deinit/7 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_Init/6 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_SetLogicChannelCommand/12 Dma_Ip_LogicChannelDeinit/11 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_ErrorIrqHandler/25 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetLogicChannelScatterGatherConfig/21 Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelGlobalList/14 Dma_Ip_GetLogicChannelStatus/13 Dma_Ip_SetLogicChannelCommand/12 
+  Calls: HwAccDmaCh_GetStatus_Error/65 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_GetHwChannelStatePointer/32 
+   Indirect call
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelDeinit/11 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaCh_GetParam/58 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelScatterGatherList/18 Dma_Ip_SetLogicChannelScatterGatherList/18 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelScatterGatherList/19 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Dma_Ip_SetLogicChannelTransferList/16 Static_Dma_Ip_SetLogicChannelTransferConfig/5 
+  Calls: HwAccDmaCh_SetTransferParam/55 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelTransferList/17 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_SetLogicChannelGlobalList/14 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 
+  Calls: HwAccDmaCh_SetGlobalParam/52 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 Static_Dma_Ip_SetLogicChannelGlobalList/15 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 Dma_Ip_GetHwChannelState/48 HwAccDmaCh_GetStatus/47 Static_Dma_Ip_GetLogicChannelError/26 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_GetLogicChannelError/26 HwAccDmaCh_SetCommand/27 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_Deinit/7 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 HwAccDmaCh_SetCommand/27 Dma_Ip_GetHwChannelStatePointer/32 Static_Dma_Ip_ResetConfig/22 Dma_Ip_SetHwChannelState/39 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_Init/6 
+  Calls: Dma_Ip_SetHwChannelState/39 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelGlobalConfig/4 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Static_Dma_Ip_SetLogicChannelTransferConfig/5 Dma_Ip_SetHwChannelState/39 HwAccDmaCh_SetControl_ScatterGatherAddress/41 HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 Dma_Ip_SetHwChannelState/39 Dma_Ip_GetHwChannelStatePointer/32 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: HwAccDmaInst_GetStatus/38 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 HwAccDmaInst_SetCommand/36 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelDeinit/11 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (write)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Dma_Ip_LogicChannelInit/10 Dma_Ip_GetHwChannelStatePointer/32 Dma_Ip_SetHwChannelStatePointer/31 SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 HwAccDmaInst_SetConfig/29 SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Static_Dma_Ip_ResetConfig/22 
+  Calls: Static_Dma_Ip_SetLogicChannelTransferList/17 HwAccDmaCh_SetCommand/27 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Dma_Ip_LogicChannelInit/10 Dma_Ip_LogicChannelInit/10 Static_Dma_Ip_ResetConfig/22 
+  Calls: Static_Dma_Ip_SetLogicChannelGlobalList/15 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Dma_Ip_pxInit/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Dma_Ip_SetLogicInstanceCommand/8 (read)Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_LogicChannelInit/10 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (read)Dma_Ip_LogicChannelInit/10 (read)Static_Dma_Ip_ResetConfig/22 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_ConvertLogicChToHwCh/3 (read)Static_Dma_Ip_SetLogicChannelTransferList/17 (read)Static_Dma_Ip_SetLogicChannelTransferConfig/5 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicChannelTransferList/16 (read)Dma_Ip_SetLogicChannelScatterGatherList/18 (read)Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_SetLogicChannelScatterGatherConfig/21 (read)Dma_Ip_GetLogicChannelParam/20 (read)Dma_Ip_LogicChannelDeinit/11 (read)Dma_Ip_Deinit/7 (read)Dma_Ip_SetLogicChannelCommand/12 (read)Dma_Ip_GetLogicChannelStatus/13 (read)Dma_Ip_GetLogicInstanceStatus/9 (read)Static_Dma_Ip_ResetConfig/22 (read)Dma_Ip_SetLogicChannelGlobalList/14 (read)Dma_Ip_LogicChannelInit/10 (read)Dma_Ip_Init/6 (write)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)Dma_Ip_Init/6 (read)
+  Availability: available
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Dma_Ip_pxInit g_ptHwv2BaseTcdPtrArray g_ptHwv2BaseInstPtrArray
+Removing variables:
+
+Final Symbol table:
+
+HwAccDmaCh_GetStatus_Error/65 (HwAccDmaCh_GetStatus_Error) @0692a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12/64 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/63 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @06aafb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12/62 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_12) @06aafa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11/61 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/60 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @06aaf700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11/59 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_11) @06aaf620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_GetParam/58 (HwAccDmaCh_GetParam) @06aaf460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09/57 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09/56 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_09) @06aaf0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetTransferParam/55 (HwAccDmaCh_SetTransferParam) @06aa1ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08/54 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08/53 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_08) @06aa1c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetGlobalParam/52 (HwAccDmaCh_SetGlobalParam) @06aa1a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07/51 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa18c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07/50 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_07) @06aa17e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06/49 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_GetHwChannelState/48 (Dma_Ip_GetHwChannelState) @06aa1540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_GetStatus/47 (HwAccDmaCh_GetStatus) @06aa1460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06/46 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_06) @06aa1380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05/45 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa11c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05/44 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_05) @06aa10e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04/43 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04/42 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_04) @06a95e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetControl_ScatterGatherAddress/41 (HwAccDmaCh_SetControl_ScatterGatherAddress) @06a95b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/40 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @06a95a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetHwChannelState/39 (Dma_Ip_SetHwChannelState) @06a959a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaInst_GetStatus/38 (HwAccDmaInst_GetStatus) @06a957e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02/37 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaInst_SetCommand/36 (HwAccDmaInst_SetCommand) @06a95540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02/35 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_02) @06a95460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01/34 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_01) @06a952a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01/33 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_01) @06a951c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_GetHwChannelStatePointer/32 (Dma_Ip_GetHwChannelStatePointer) @06a95000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetHwChannelStatePointer/31 (Dma_Ip_SetHwChannelStatePointer) @06910a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00/30 (SchM_Exit_Mcl_MCL_EXCLUSIVE_AREA_00) @06910ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaInst_SetConfig/29 (HwAccDmaInst_SetConfig) @06910e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00/28 (SchM_Enter_Mcl_MCL_EXCLUSIVE_AREA_00) @06910d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetCommand/27 (HwAccDmaCh_SetCommand) @06910b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_GetLogicChannelError/26 (Static_Dma_Ip_GetLogicChannelError) @06910460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_ErrorIrqHandler/25 (Dma_Ip_ErrorIrqHandler) @06910000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_IntIrqHandler/24 (Dma_Ip_IntIrqHandler) @06907b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelScatterGatherInit/23 (Static_Dma_Ip_SetLogicChannelScatterGatherInit) @069070e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_ResetConfig/22 (Static_Dma_Ip_ResetConfig) @06907d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicChannelScatterGatherConfig/21 (Dma_Ip_SetLogicChannelScatterGatherConfig) @06907a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_GetLogicChannelParam/20 (Dma_Ip_GetLogicChannelParam) @069077e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelScatterGatherList/19 (Static_Dma_Ip_SetLogicChannelScatterGatherList) @06907540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicChannelScatterGatherList/18 (Dma_Ip_SetLogicChannelScatterGatherList) @069072a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelTransferList/17 (Static_Dma_Ip_SetLogicChannelTransferList) @06907000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicChannelTransferList/16 (Dma_Ip_SetLogicChannelTransferList) @068f2c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelGlobalList/15 (Static_Dma_Ip_SetLogicChannelGlobalList) @068f2460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicChannelGlobalList/14 (Dma_Ip_SetLogicChannelGlobalList) @068f2e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_GetLogicChannelStatus/13 (Dma_Ip_GetLogicChannelStatus) @068f2b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicChannelCommand/12 (Dma_Ip_SetLogicChannelCommand) @068f28c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_LogicChannelDeinit/11 (Dma_Ip_LogicChannelDeinit) @068f2620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_LogicChannelInit/10 (Dma_Ip_LogicChannelInit) @068f2380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_GetLogicInstanceStatus/9 (Dma_Ip_GetLogicInstanceStatus) @06875a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_SetLogicInstanceCommand/8 (Dma_Ip_SetLogicInstanceCommand) @068752a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_Deinit/7 (Dma_Ip_Deinit) @06875ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_Init/6 (Dma_Ip_Init) @06875c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelTransferConfig/5 (Static_Dma_Ip_SetLogicChannelTransferConfig) @068757e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Static_Dma_Ip_SetLogicChannelGlobalConfig/4 (Static_Dma_Ip_SetLogicChannelGlobalConfig) @06875460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_ConvertLogicChToHwCh/3 (Dma_Ip_ConvertLogicChToHwCh) @068751c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Dma_Ip_pxInit/2 (Dma_Ip_pxInit) @068708b8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @0672cca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @068708b8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @0672cb88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @0672cca8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

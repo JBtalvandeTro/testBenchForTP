@@ -1,0 +1,719 @@
+ctb_ControlManagement ()
+{
+  unsigned char ctb_taskCounter.16_1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  _Bool _5;
+  long unsigned int _6;
+  _Bool _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  _Bool _10;
+  _Bool _11;
+  long unsigned int _12;
+  _Bool _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  unsigned char ctb_taskCounter.17_16;
+  unsigned char _17;
+  unsigned char ctb_taskCounter.18_18;
+  <unnamed type> FSM_mode.19_19;
+  unsigned char _20;
+  _Bool _21;
+  short unsigned int _22;
+  <unnamed type> FSM_mode.20_23;
+  <unnamed type> FSM_mode.21_24;
+  unsigned char ctb_taskCounter.22_25;
+  unsigned char ctb_taskCounter.23_26;
+  unsigned char ctb_taskCounter.24_27;
+
+  <bb 2> :
+  ctb_taskCounter.16_1 = ctb_taskCounter;
+  if (ctb_taskCounter.16_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _2 = CTB_Read_Maint ();
+  ctb_DSICurrentStates.Maint_DSI_State = _2;
+  _3 = CTB_Read_EMERSTOP ();
+  ctb_DSICurrentStates.EMERSTOP_DSI_State = _3;
+  _4 = ctb_DSICurrentStates.EMERSTOP_DSI_State;
+  _5 = CTB_dsiState.EMERSTOP_DSI_State;
+  if (_4 != _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  _6 = ctb_DSIConfirmationTimers.EMERSTOP_DSI_State;
+  if (_6 > 9)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _7 = ctb_DSICurrentStates.EMERSTOP_DSI_State;
+  CTB_dsiState.EMERSTOP_DSI_State = _7;
+  ctb_DSIConfirmationTimers.EMERSTOP_DSI_State = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _8 = ctb_DSIConfirmationTimers.EMERSTOP_DSI_State;
+  _9 = _8 + 1;
+  ctb_DSIConfirmationTimers.EMERSTOP_DSI_State = _9;
+
+  <bb 7> :
+  _10 = ctb_DSICurrentStates.Maint_DSI_State;
+  _11 = CTB_dsiState.Maint_DSI_State;
+  if (_10 != _11)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 8> :
+  _12 = ctb_DSIConfirmationTimers.Maint_DSI_State;
+  if (_12 > 9)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _13 = ctb_DSICurrentStates.Maint_DSI_State;
+  CTB_dsiState.Maint_DSI_State = _13;
+  ctb_DSIConfirmationTimers.Maint_DSI_State = 0;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  _14 = ctb_DSIConfirmationTimers.Maint_DSI_State;
+  _15 = _14 + 1;
+  ctb_DSIConfirmationTimers.Maint_DSI_State = _15;
+
+  <bb 11> :
+  goto <bb 27>; [INV]
+
+  <bb 12> :
+  ctb_taskCounter.17_16 = ctb_taskCounter;
+  if (ctb_taskCounter.17_16 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _17 = CTB_Read_BbAuxAdd ();
+  CTB_dsiState.bbAux_Address = _17;
+  goto <bb 27>; [INV]
+
+  <bb 14> :
+  ctb_taskCounter.18_18 = ctb_taskCounter;
+  if (ctb_taskCounter.18_18 == 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 15> :
+  FSM_mode.19_19 = FSM_mode;
+  if (FSM_mode.19_19 == 7)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  _20 = COM_debugTestReq.discreteIoCmd;
+  _21 = _20 != 0;
+  CTB_dsoState.Health_State = _21;
+  goto <bb 23>; [INV]
+
+  <bb 17> :
+  _22 = ACT_errors.fastPowerDown.all;
+  if (_22 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  FSM_mode.20_23 = FSM_mode;
+  if (FSM_mode.20_23 == 1)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  CTBCbit_UnsetDSO (7);
+  CTB_dsoState.Health_State = 0;
+  goto <bb 23>; [INV]
+
+  <bb 20> :
+  FSM_mode.21_24 = FSM_mode;
+  if (FSM_mode.21_24 == 5)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  CTBCbit_SetDSO (7);
+  CTB_dsoState.Health_State = 1;
+  goto <bb 23>; [INV]
+
+  <bb 22> :
+  CTBCbit_SetDSO (7);
+  CTB_dsoState.Health_State = 1;
+
+  <bb 23> :
+  goto <bb 27>; [INV]
+
+  <bb 24> :
+  ctb_taskCounter.22_25 = ctb_taskCounter;
+  if (ctb_taskCounter.22_25 == 3)
+    goto <bb 27>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 25> :
+  ctb_taskCounter.23_26 = ctb_taskCounter;
+  if (ctb_taskCounter.23_26 == 4)
+    goto <bb 27>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 26> :
+  ctb_taskCounter.24_27 = ctb_taskCounter;
+
+  <bb 27> :
+  return;
+
+}
+
+
+ctb_CbitManagement ()
+{
+  uint8_t oldAddress;
+  unsigned char ctb_taskCounter.12_1;
+  unsigned char ctb_taskCounter.13_2;
+  unsigned char _3;
+  unsigned char ctb_taskCounter.14_4;
+  _Bool _5;
+  _Bool ctb_DSO_readResult.15_6;
+
+  <bb 2> :
+  ctb_taskCounter.12_1 = ctb_taskCounter;
+  if (ctb_taskCounter.12_1 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  ctb_taskCounter.13_2 = ctb_taskCounter;
+  if (ctb_taskCounter.13_2 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  oldAddress_12 = COM_Address;
+  _3 = CTB_dsiState.bbAux_Address;
+  if (oldAddress_12 != _3)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CTB_Flags.faults.flags.addressChanged = 1;
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+  CTB_Flags.faults.flags.addressChanged = 0;
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+  ctb_taskCounter.14_4 = ctb_taskCounter;
+  if (ctb_taskCounter.14_4 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  CTBCbit_ReadDSO (7);
+  _5 = CTB_dsoState.Health_State;
+  ctb_DSO_readResult.15_6 = ctb_DSO_readResult;
+  if (_5 != ctb_DSO_readResult.15_6)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CTB_Flags.faults.flags.discretIOError = 1;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  CTB_Flags.faults.flags.discretIOError = 0;
+
+  <bb 11> :
+  return;
+
+}
+
+
+ctb_PbitManagement ()
+{
+  CTB_DSI_PinsE pin;
+  CTB_DSI_PinsE pin;
+  _Bool pbitTestsEnded.6_1;
+  unsigned char pbit_timingCounter.7_2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char pbit_timingCounter.8_6;
+  unsigned char pbit_timingCounter.9_7;
+  unsigned char _8;
+  _Bool CTBPbit_Started.10_9;
+  _Bool CTBPbit_TimePeriodEnded.11_10;
+  unsigned char _11;
+  unsigned char _12;
+  unsigned char _13;
+  unsigned char _14;
+  unsigned char _15;
+  unsigned char _16;
+  unsigned char _17;
+  unsigned char _18;
+  unsigned char _19;
+  unsigned char _20;
+  unsigned char _21;
+  unsigned char _22;
+
+  <bb 2> :
+  pbitTestsEnded.6_1 = pbitTestsEnded;
+  if (pbitTestsEnded.6_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  pbit_timingCounter.7_2 = pbit_timingCounter;
+  if (pbit_timingCounter.7_2 > 49)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CTB_Flags.status.flags.pbitDone = 1;
+  CTBPbit_Started = 0;
+  _3 = CTB_Read_BbAuxAdd ();
+  CTB_dsiState.bbAux_Address = _3;
+  _4 = CTB_dsiState.bbAux_Address;
+  COM_Address = _4;
+  _5 = CTB_dsiState.bbAux_Address;
+  CBU_Address = _5;
+  CTBCbit_SetDSO (7);
+  CTB_dsoState.Health_State = 1;
+  goto <bb 24>; [INV]
+
+  <bb 5> :
+  pbit_timingCounter.8_6 = pbit_timingCounter;
+  pbit_timingCounter.9_7 = pbit_timingCounter.8_6;
+  _8 = pbit_timingCounter.9_7 + 1;
+  pbit_timingCounter = _8;
+  goto <bb 24>; [INV]
+
+  <bb 6> :
+  CTBPbit_Started.10_9 = CTBPbit_Started;
+  if (CTBPbit_Started.10_9 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 7> :
+  CTBPbit_TimePeriodEnded.11_10 = CTBPbit_TimePeriodEnded;
+  if (CTBPbit_TimePeriodEnded.11_10 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 8> :
+  pin_35 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  ctbPbit_StopTestDSI (pin_23);
+  pin_42 = pin_23 + 1;
+
+  <bb 10> :
+  # pin_23 = PHI <pin_35(8), pin_42(9)>
+  if (pin_23 <= 7)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  _11 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _12 = _11 & 1;
+  if (_12 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 12> :
+  _13 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _14 = _13 & 2;
+  if (_14 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 13> :
+  _15 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _16 = _15 & 8;
+  if (_16 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 14> :
+  _17 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _18 = _17 & 16;
+  if (_18 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 15> :
+  _19 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _20 = _19 & 4;
+  if (_20 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 16> :
+  _21 = VIEW_CONVERT_EXPR<unsigned char>(ctb_DSI_TestResult);
+  _22 = _21 & 32;
+  if (_22 != 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  CTB_Flags.resultPBit = 1;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  CTB_Flags.faults.flags.discretIOError = 1;
+  CTB_Flags.resultPBit = 0;
+
+  <bb 19> :
+  pbitTestsEnded = 1;
+  CTB_Flags.dsiResults.dsiTestResults = ctb_DSI_TestResult;
+  goto <bb 24>; [INV]
+
+  <bb 20> :
+  pin_30 = 1;
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  ctbPbit_StartTestDSI (pin_24);
+  pin_34 = pin_24 + 1;
+
+  <bb 22> :
+  # pin_24 = PHI <pin_30(20), pin_34(21)>
+  if (pin_24 <= 7)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 23> :
+  pbitTestsEnded = 0;
+  pbit_timingCounter = 0;
+
+  <bb 24> :
+  return;
+
+}
+
+
+ctb_MaintManagement ()
+{
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+
+  <bb 2> :
+  _1 = BIT_FIELD_REF <DBG_Flags.Reqflags, 8, 0>;
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CTBPbit_RunTests ();
+  CTBCbit_Runtests ();
+  ctb_UpdateResults ();
+  DBG_Flags.Reqflags.dsioTest = 0;
+
+  <bb 4> :
+  _3 = BIT_FIELD_REF <DBG_Flags.Reqflags, 8, 0>;
+  _4 = _3 & 2;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CTBio_RunTests ();
+  DBG_Flags.Reqflags.ledCmd = 0;
+
+  <bb 6> :
+  return;
+
+}
+
+
+ctb_UpdateResults ()
+{
+  boolean resultTemp;
+  uint8_t pinId;
+  uint8_t pincmd;
+  int _1;
+  int _2;
+  unsigned char _3;
+  _Bool ctb_DSI_readResult.4_4;
+  unsigned char _5;
+  _Bool ctb_DSO_readResult.5_6;
+  unsigned char _7;
+
+  <bb 2> :
+  pincmd_11 = COM_debugTestReq.discreteIoCmd;
+  pinId_12 = COM_debugTestReq.discreteIoId;
+  _1 = (int) pinId_12;
+  switch (_1) <default: <L6> [INV], case 1: <L0> [INV], case 2: <L1> [INV], case 3: <L3> [INV], case 4: <L2> [INV], case 5: <L4> [INV], case 6: <L5> [INV]>
+
+  <bb 3> :
+<L0>:
+  resultTemp_18 = ctb_DSI_TestResult.HPP_1_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+<L1>:
+  resultTemp_17 = ctb_DSI_TestResult.HPP_2_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  resultTemp_15 = ctb_DSI_TestResult.EMER_STOP_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 6> :
+<L3>:
+  resultTemp_16 = ctb_DSI_TestResult.DSI_SPARE_1_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+<L4>:
+  resultTemp_14 = ctb_DSI_TestResult.DSI_SPARE_2_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+<L5>:
+  resultTemp_13 = ctb_DSI_TestResult.HPP_MAINT_TestResult;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+<L6>:
+
+  <bb 10> :
+  # resultTemp_8 = PHI <resultTemp_18(3), resultTemp_17(4), resultTemp_15(5), resultTemp_16(6), resultTemp_14(7), resultTemp_13(8), resultTemp_19(D)(9)>
+  _2 = (int) pincmd_11;
+  switch (_2) <default: <L11> [INV], case 3: <L10> [INV], case 4: <L9> [INV], case 6: <L8> [INV]>
+
+  <bb 11> :
+<L8>:
+  _3 = (unsigned char) resultTemp_8;
+  COM_debugTestReq.discreteIosPWMResult = _3;
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+<L9>:
+  ctb_DSI_readResult.4_4 = ctb_DSI_readResult;
+  _5 = (unsigned char) ctb_DSI_readResult.4_4;
+  COM_debugTestReq.discreteIosReadResult = _5;
+  goto <bb 15>; [INV]
+
+  <bb 13> :
+<L10>:
+  ctb_DSO_readResult.5_6 = ctb_DSO_readResult;
+  _7 = (unsigned char) ctb_DSO_readResult.5_6;
+  COM_debugTestReq.discreteIosReadResult = _7;
+  goto <bb 15>; [INV]
+
+  <bb 14> :
+<L11>:
+
+  <bb 15> :
+  return;
+
+}
+
+
+CTB_Deinit ()
+{
+  <bb 2> :
+  CTBPbit_Deinit ();
+  CTBCbit_Deinit ();
+  CTBio_Deinit ();
+  return;
+
+}
+
+
+CTB_Read_BbAuxAdd ()
+{
+  uint8_t returnValue;
+  boolean hpp2_state;
+  boolean hpp1_state;
+  uint8_t D.9212;
+  signed char _1;
+  int _2;
+  int _3;
+  signed char _4;
+  signed char _5;
+  uint8_t _12;
+
+  <bb 2> :
+  CTBPbit_ReadDSI (1);
+  hpp1_state_8 = ctb_DSI_readResult;
+  CTBPbit_ReadDSI (2);
+  hpp2_state_10 = ctb_DSI_readResult;
+  _1 = (signed char) hpp1_state_8;
+  _2 = (int) hpp2_state_10;
+  _3 = _2 << 1;
+  _4 = (signed char) _3;
+  _5 = _1 | _4;
+  returnValue_11 = (uint8_t) _5;
+  _12 = returnValue_11;
+
+  <bb 3> :
+<L0>:
+  return _12;
+
+}
+
+
+CTB_Read_Maint ()
+{
+  boolean D.9210;
+  unsigned char _1;
+  boolean _4;
+
+  <bb 2> :
+  _1 = Dio_ReadChannel (137);
+  _4 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+CTB_Read_EMERSTOP ()
+{
+  boolean D.9208;
+  unsigned char _1;
+  boolean _4;
+
+  <bb 2> :
+  _1 = Dio_ReadChannel (140);
+  _4 = _1 != 0;
+
+  <bb 3> :
+<L0>:
+  return _4;
+
+}
+
+
+CTB_Update ()
+{
+  <unnamed type> FSM_mode.0_1;
+  unsigned char ctb_taskCounter.1_2;
+  unsigned char ctb_taskCounter.2_3;
+  unsigned char ctb_taskCounter.3_4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+
+  <bb 2> :
+  FSM_mode.0_1 = FSM_mode;
+  switch (FSM_mode.0_1) <default: <L2> [INV], case 1: <L1> [INV], case 7: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  ctb_MaintManagement ();
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  ctb_PbitManagement ();
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+
+  <bb 6> :
+  ctb_CbitManagement ();
+  ctb_ControlManagement ();
+  ctb_taskCounter.1_2 = ctb_taskCounter;
+  if (ctb_taskCounter.1_2 <= 3)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  ctb_taskCounter.2_3 = ctb_taskCounter;
+  ctb_taskCounter.3_4 = ctb_taskCounter.2_3;
+  _5 = ctb_taskCounter.3_4 + 1;
+  ctb_taskCounter = _5;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  ctb_taskCounter = 0;
+
+  <bb 9> :
+  _6 = BIT_FIELD_REF <COM_flags.moduleFlags.status.flags, 8, 8>;
+  _7 = _6 & 8;
+  if (_7 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  CTB_Flags.faults.all = 0;
+
+  <bb 11> :
+  return;
+
+}
+
+
+CTB_Init ()
+{
+  <bb 2> :
+  CTBPbit_Init ();
+  CTBCbit_Init ();
+  CTBio_Init ();
+  CTB_dsiState.EMERSTOP_DSI_State = 0;
+  CTB_dsiState.Maint_DSI_State = 0;
+  CTB_dsiState.bbAux_Address = 0;
+  CTB_Flags.resultCBit = 0;
+  CTB_Flags.resultPBit = 0;
+  CTB_Flags.faults.all = 0;
+  CTB_Flags.dsiResults.all = 0;
+  CTB_Flags.status.all = 0;
+  return;
+
+}
+
+

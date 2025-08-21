@@ -1,0 +1,9 @@
+Dma_Ip_Driver_State.c:138:13:Dma_Ip_SetHwChannel_ResetEvent	16	static
+Dma_Ip_Driver_State.c:150:13:Dma_Ip_SetHwChannel_ReadyEvent	16	static
+Dma_Ip_Driver_State.c:162:13:Dma_Ip_SetHwChannel_TransferEvent	16	static
+Dma_Ip_Driver_State.c:174:13:Dma_Ip_SetHwChannel_ScatterGatherEvent	16	static
+Dma_Ip_Driver_State.c:186:13:Dma_Ip_SetHwChannel_ErrorEvent	16	static
+Dma_Ip_Driver_State.c:198:6:Dma_Ip_SetHwChannelState	32	static
+Dma_Ip_Driver_State.c:225:32:Dma_Ip_GetHwChannelState	24	static
+Dma_Ip_Driver_State.c:241:29:Dma_Ip_GetHwChannelStatePointer	24	static
+Dma_Ip_Driver_State.c:257:6:Dma_Ip_SetHwChannelStatePointer	16	static

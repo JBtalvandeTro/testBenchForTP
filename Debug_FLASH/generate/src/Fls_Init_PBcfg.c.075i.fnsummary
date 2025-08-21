@@ -1,0 +1,107 @@
+Symbol table:
+
+FlsConfigSet_Init_InitCfg/14 (FlsConfigSet_Init_InitCfg) @05c2fc60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+_WRITE_FUNC_ADDRESS_/13 (_WRITE_FUNC_ADDRESS_) @05c388c0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+_ERASE_FUNC_ADDRESS_/12 (_ERASE_FUNC_ADDRESS_) @05c387e0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Fls_Config_Init/11 (Fls_Config_Init) @05c2fb40
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: _ERASE_FUNC_ADDRESS_/12 (addr)_WRITE_FUNC_ADDRESS_/13 (addr)FlsConfigSet_Init_aFlsSectorEndAddr/2 (addr)FlsConfigSet_Init_aFlsSectorSize/3 (addr)FlsConfigSet_Init_aSectorList/8 (addr)FlsConfigSet_Init_aFlsSectorFlags/1 (addr)FlsConfigSet_Init_aFlsSectorPageSize/4 (addr)FlsConfigSet_Init_paHwCh/9 (addr)FlsConfigSet_Init_paSectorHwAddress/10 (addr)FlsConfigSet_Init_InitCfg/14 (addr)
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_paSectorHwAddress/10 (FlsConfigSet_Init_paSectorHwAddress) @05c2fab0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_paHwCh/9 (FlsConfigSet_Init_paHwCh) @05c2fa20
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_aSectorList/8 (FlsConfigSet_Init_aSectorList) @05c2f990
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: FlsSector_MainParams1_FlsConfigSet_Init_sInternalSectorInfo/5 (addr)FlsSector_MainParams2_FlsConfigSet_Init_sInternalSectorInfo/6 (addr)FlsSector_BackupParams_FlsConfigSet_Init_sInternalSectorInfo/7 (addr)
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsSector_BackupParams_FlsConfigSet_Init_sInternalSectorInfo/7 (FlsSector_BackupParams_FlsConfigSet_Init_sInternalSectorInfo) @05c2f900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: FlsConfigSet_Init_aSectorList/8 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsSector_MainParams2_FlsConfigSet_Init_sInternalSectorInfo/6 (FlsSector_MainParams2_FlsConfigSet_Init_sInternalSectorInfo) @05c2f870
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: FlsConfigSet_Init_aSectorList/8 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsSector_MainParams1_FlsConfigSet_Init_sInternalSectorInfo/5 (FlsSector_MainParams1_FlsConfigSet_Init_sInternalSectorInfo) @05c2f7e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: FlsConfigSet_Init_aSectorList/8 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_aFlsSectorPageSize/4 (FlsConfigSet_Init_aFlsSectorPageSize) @05c2f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_aFlsSectorSize/3 (FlsConfigSet_Init_aFlsSectorSize) @05c2f6c0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_aFlsSectorEndAddr/2 (FlsConfigSet_Init_aFlsSectorEndAddr) @05c2f630
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+FlsConfigSet_Init_aFlsSectorFlags/1 (FlsConfigSet_Init_aFlsSectorFlags) @05c2f5a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Fls_Config_Init/11 (addr)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

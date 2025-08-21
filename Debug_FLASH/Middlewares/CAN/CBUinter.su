@@ -1,0 +1,13 @@
+CBUinter.c:34:6:CBU_SendInternalControlRequestFrameCOMETiUnits	120	static
+CBUinter.c:126:6:CBU_SendInternalModeRequestFrameCOMETiUnits	112	static
+CBUinter.c:163:6:CBU_SendInternalErrorResetRequestFrameCOMETiUnits	112	static
+CBUinter.c:200:6:CBU_SendInternalDisableAlarmsRequest	120	static
+CBUinter.c:235:6:CBU_GetInternalCurrentMeasuresFrameData	16	static
+CBUinter.c:246:6:CBU_GetInternalPowerMeasuresFrameData	16	static
+CBUinter.c:257:6:CBU_GetInternalTemperatureMeasuresFrameData	16	static
+CBUinter.c:277:6:CBU_GetInternalVoltageMeasuresFrameData	16	static
+CBUinter.c:288:6:CBU_GetInternalRegulationInfoFrameData	16	static
+CBUinter.c:302:6:CBU_GetInternalControlInfoFrameData	16	static
+CBUinter.c:311:6:CBU_GetInternalErrorsFrameData	16	static
+CBUinter.c:324:6:CBU_GetInternalWarningsFrameData	8	static
+CBUinter.c:334:10:CBU_GetPowerCoreUnitId	8	static

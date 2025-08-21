@@ -1,0 +1,679 @@
+Trivially needed symbols: Crypto_Util_DequeueJob Crypto_Util_DequeueHeadJob Crypto_Util_QueueJob Crypto_Util_InitJobQueues Crypto_Util_MemCpy8
+
+
+Initial Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_QueueJob/2 (addr)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (write)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (addr)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (write)
+  Availability: not-ready
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (addr)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b3e700
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b3e460
+  References: Crypto_aObjectQueueList/5 (addr)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b3e1c0
+  References: Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b3aee0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_QueueJob/2 (addr)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (write)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (addr)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (write)
+  Availability: not-ready
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (addr)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (addr)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_QueueJob/2 (addr)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (write)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (addr)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (write)
+  Availability: not-ready
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (addr)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (addr)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)
+  Availability: not-ready
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_QueueJob/2 (addr)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (write)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (addr)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (write)
+  Availability: not-ready
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (addr)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (addr)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_DequeueJob/4 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_DequeueHeadJob/3 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crypto_Util_QueueJob/2 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_InitJobQueues/1 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (read)Crypto_Util_QueueJob/2 (write)Crypto_Util_QueueJob/2 (addr)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (write)Crypto_Util_DequeueHeadJob/3 (read)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_InitJobQueues/1 (write)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (addr)Crypto_Util_DequeueJob/4 (read)Crypto_Util_DequeueJob/4 (write)
+  Availability: not_available
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (addr)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aObjectQueueList/5 (addr)Crypto_aObjectQueueList/5 (read)Crypto_aObjectQueueList/5 (read)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aObjectQueueList/5 (write)Crypto_aObjectQueueList/5 (write)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)Crypto_aDriverObjectList/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02/12 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac2460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02/11 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_02) @05ac22a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01/10 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05ac20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01/9 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_01) @05b3e540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00/8 (SchM_Exit_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00/7 (SchM_Enter_Crypto_CRYPTO_EXCLUSIVE_AREA_00) @05b3eee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_aDriverObjectList/6 (Crypto_aDriverObjectList) @05abb558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Crypto_aObjectQueueList/5 (Crypto_aObjectQueueList) @05abb510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Crypto_Util_DequeueJob/4 (Crypto_Util_DequeueJob) @05b3e700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_DequeueHeadJob/3 (Crypto_Util_DequeueHeadJob) @05b3e460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_QueueJob/2 (Crypto_Util_QueueJob) @05b3e1c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_InitJobQueues/1 (Crypto_Util_InitJobQueues) @05b3aee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Crypto_Util_MemCpy8/0 (Crypto_Util_MemCpy8) @05b3ae00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

@@ -1,0 +1,23 @@
+Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

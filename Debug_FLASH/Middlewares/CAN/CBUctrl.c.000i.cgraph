@@ -1,0 +1,903 @@
+Trivially needed symbols: CBU_GetErrorResetCmdFrameData CBU_GetControlPtcuCmdsFrameData CBU_SendControlPbitResultsFrame CBU_SendControlErrorsWarningsFrame CBU_SendControlControlStatusFrame CBU_SendControlVoltageMeasuresFrame CBU_SendControlTemperatureMeasuresFrame CBU_SendControlPowerMeasuresFrame CBU_SendControlCurrentMeasuresFrame
+
+
+Initial Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06094540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06094ee0
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06094c40
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060949a0
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06094700
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @06094460
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @060941c0
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0607cee0
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+
+
+Initial Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not-ready
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not-ready
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlErrorsWarningsFrame/5 (read)
+  Availability: not_available
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlControlStatusFrame/4 (read)
+  Availability: not_available
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendControlPbitResultsFrame/6 CBU_SendControlErrorsWarningsFrame/5 CBU_SendControlControlStatusFrame/4 CBU_SendControlVoltageMeasuresFrame/3 CBU_SendControlTemperatureMeasuresFrame/2 CBU_SendControlPowerMeasuresFrame/1 CBU_SendControlCurrentMeasuresFrame/0 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendControlControlStatusFrame/4 (read)CBU_SendControlErrorsWarningsFrame/5 (read)CBU_SendControlCurrentMeasuresFrame/0 (read)CBU_SendControlPowerMeasuresFrame/1 (read)CBU_SendControlTemperatureMeasuresFrame/2 (read)CBU_SendControlVoltageMeasuresFrame/3 (read)CBU_SendControlPbitResultsFrame/6 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)COM_pbitResultsInfo/17 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)COM_errorsAndWarnings/16 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)COM_controlStatusInfo/15 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)COM_tempMeasures/14 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesControl/9 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)COM_powerMeasures/10 (read)CBU_Address/11 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/13 CBU_CreatePduInfo/12 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+COM_pbitResultsInfo/17 (COM_pbitResultsInfo) @0611f510
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_errorsAndWarnings/16 (COM_errorsAndWarnings) @0611f288
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_controlStatusInfo/15 (COM_controlStatusInfo) @0611f000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_tempMeasures/14 (COM_tempMeasures) @06095af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_SendFrame/13 (CBU_SendFrame) @061162a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_CreatePduInfo/12 (CBU_CreatePduInfo) @061161c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_Address/11 (CBU_Address) @06095630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_powerMeasures/10 (COM_powerMeasures) @060955e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+COM_framesControl/9 (COM_framesControl) @060955a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+CBU_GetErrorResetCmdFrameData/8 (CBU_GetErrorResetCmdFrameData) @06094540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_GetControlPtcuCmdsFrameData/7 (CBU_GetControlPtcuCmdsFrameData) @06094ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlPbitResultsFrame/6 (CBU_SendControlPbitResultsFrame) @06094c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlErrorsWarningsFrame/5 (CBU_SendControlErrorsWarningsFrame) @060949a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlControlStatusFrame/4 (CBU_SendControlControlStatusFrame) @06094700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlVoltageMeasuresFrame/3 (CBU_SendControlVoltageMeasuresFrame) @06094460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlTemperatureMeasuresFrame/2 (CBU_SendControlTemperatureMeasuresFrame) @060941c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlPowerMeasuresFrame/1 (CBU_SendControlPowerMeasuresFrame) @0607cee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+CBU_SendControlCurrentMeasuresFrame/0 (CBU_SendControlCurrentMeasuresFrame) @0607cb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 

@@ -1,0 +1,16 @@
+COMtx.c:54:6:COM_TxScheduledTasks	8	static
+COMtx.c:76:6:COM_TxRequestedTasks	24	static
+COMtx.c:182:13:com_ManageTx	8	static
+COMtx.c:204:13:com_ManageControlTx	16	static
+COMtx.c:269:13:com_ManageInternalTx	16	static
+COMtx.c:329:16:com_isControlFrameReadyToBeSent	16	static
+COMtx.c:382:16:com_isInternalFrameReadyToBeSent	16	static
+COMtx.c:432:13:com_UpdateMeasures	8	static
+COMtx.c:447:13:com_UpdatePbitResult	0	static
+COMtx.c:482:13:com_ComposeCurrentMeasures	24	static
+COMtx.c:511:13:com_ComposePowerMeasures	16	static
+COMtx.c:531:13:com_ComposeTemperatureMeasures	16	static
+COMtx.c:552:13:com_ComposeVoltageMeasures	16	static
+COMtx.c:577:13:com_ComposeFaults	0	static
+COMtx.c:597:13:com_ComposeControlStatusInfo	16	static
+COMtx.c:634:34:getLimitationType	16	static

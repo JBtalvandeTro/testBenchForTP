@@ -1,0 +1,326 @@
+Symbol table:
+
+Crc_Ip_GetChannelResult/13 (Crc_Ip_GetChannelResult) @065d62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_GetChannelResult/6 
+  Calls: 
+Crc_Ip_SetChannelCalculate/12 (Crc_Ip_SetChannelCalculate) @065d60e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_SetChannelCalculate/5 
+  Calls: 
+Crc_xConfigPartition/11 (Crc_xConfigPartition) @06735ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crc_CheckChannelInvalid/2 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Crc_Ip_SetChannelConfig/10 (Crc_Ip_SetChannelConfig) @067342a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_SetChannelConfig/4 
+  Calls: 
+Det_ReportError/9 (Det_ReportError) @06734ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_ReportDetError/1 
+  Calls: 
+Crc_Ip_Init/8 (Crc_Ip_Init) @06734d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Crc_Init/3 
+  Calls: 
+Crc_xConfigInit/7 (Crc_xConfigInit) @06735558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Crc_Init/3 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Crc_GetChannelResult/6 (Crc_GetChannelResult) @067347e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_GetChannelResult/13 Crc_CheckChannelInvalid/2 
+Crc_SetChannelCalculate/5 (Crc_SetChannelCalculate) @06734540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_SetChannelCalculate/12 Crc_ReportDetError/1 Crc_CheckChannelInvalid/2 
+Crc_SetChannelConfig/4 (Crc_SetChannelConfig) @067341c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_SetChannelConfig/10 Crc_CheckChannelInvalid/2 
+Crc_Init/3 (Crc_Init) @06730e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: s_pxCrcInit/0 (write)Crc_xConfigInit/7 (addr)s_pxCrcInit/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Crc_Ip_Init/8 Crc_ReportDetError/1 
+Crc_CheckChannelInvalid/2 (Crc_CheckChannelInvalid) @06730d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Crc_xConfigPartition/11 (addr)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_GetChannelResult/6 Crc_SetChannelCalculate/5 Crc_SetChannelConfig/4 
+  Calls: Crc_ReportDetError/1 Crc_ReportDetError/1 
+Crc_ReportDetError/1 (Crc_ReportDetError) @06730a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Crc_SetChannelCalculate/5 Crc_Init/3 Crc_CheckChannelInvalid/2 Crc_CheckChannelInvalid/2 
+  Calls: Det_ReportError/9 
+s_pxCrcInit/0 (s_pxCrcInit) @06727c18
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Crc_Init/3 (write)Crc_Init/3 (read)
+  Availability: available
+  Varpool flags:
+Crc_GetChannelResult (const uint32 Channel)
+{
+  uint64 Result;
+  uint64 D.5752;
+  _Bool _1;
+  uint64 _10;
+
+  <bb 2> :
+  Result_4 = 0;
+  _1 = Crc_CheckChannelInvalid (Channel_6(D), 12);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Result_9 = Crc_Ip_GetChannelResult (Channel_6(D));
+
+  <bb 4> :
+  # Result_2 = PHI <Result_4(2), Result_9(3)>
+  _10 = Result_2;
+
+  <bb 5> :
+<L2>:
+  return _10;
+
+}
+
+
+Crc_SetChannelCalculate (const uint32 Channel, const uint8 * pCrcData, const uint32 CrcLength, const uint64 CrcStartValue, const boolean IsFirstCall)
+{
+  uint64 Result;
+  uint64 D.5748;
+  _Bool _1;
+  uint64 _15;
+
+  <bb 2> :
+  Result_4 = 0;
+  _1 = Crc_CheckChannelInvalid (Channel_6(D), 11);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (pCrcData_8(D) == 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Crc_ReportDetError (11, 2);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  Result_13 = Crc_Ip_SetChannelCalculate (Channel_6(D), pCrcData_8(D), CrcLength_9(D), CrcStartValue_10(D), IsFirstCall_11(D));
+
+  <bb 6> :
+  # Result_2 = PHI <Result_4(2), Result_4(4), Result_13(5)>
+  _15 = Result_2;
+
+  <bb 7> :
+<L5>:
+  return _15;
+
+}
+
+
+Crc_SetChannelConfig (const uint32 Channel, const struct Crc_ChannelConfigType * pxChannelConfig)
+{
+  _Bool _1;
+
+  <bb 2> :
+  _1 = Crc_CheckChannelInvalid (Channel_4(D), 10);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_Ip_SetChannelConfig (Channel_4(D), pxChannelConfig_6(D));
+
+  <bb 4> :
+  return;
+
+}
+
+
+Crc_Init (const struct Crc_InitType * ConfigPtr)
+{
+  const struct Crc_InitType * s_pxCrcInit.0_1;
+  const struct Crc_Ip_InitType * _2;
+
+  <bb 2> :
+  if (ConfigPtr_4(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_ReportDetError (9, 4);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  s_pxCrcInit = &Crc_xConfigInit;
+  s_pxCrcInit.0_1 = s_pxCrcInit;
+  _2 = s_pxCrcInit.0_1->pxCrcIpConfigInit;
+  Crc_Ip_Init (_2);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Crc_CheckChannelInvalid (const uint32 Channel, uint8 ServiceId)
+{
+  const struct Crc_PartitionType * ConfigPartition;
+  uint32 IndexChannel;
+  boolean Status;
+  boolean D.5741;
+  const uint32 * _1;
+  long unsigned int _2;
+  const uint32 * _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  _Bool _6;
+  boolean _22;
+
+  <bb 2> :
+  Status_11 = 0;
+  IndexChannel_12 = 0;
+  ConfigPartition_13 = &Crc_xConfigPartition;
+  if (Channel_14(D) > 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Crc_ReportDetError (ServiceId_19(D), 1);
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  IndexChannel_15 = 0;
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _1 = ConfigPartition_13->ChannelList;
+  _2 = IndexChannel_9 * 4;
+  _3 = _1 + _2;
+  _4 = *_3;
+  if (Channel_14(D) == _4)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Status_18 = 1;
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+  IndexChannel_17 = IndexChannel_9 + 1;
+
+  <bb 8> :
+  # IndexChannel_9 = PHI <IndexChannel_15(4), IndexChannel_17(7)>
+  _5 = ConfigPartition_13->ChannelMax;
+  if (IndexChannel_9 < _5)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # Status_7 = PHI <Status_18(6), Status_11(8)>
+  _6 = ~Status_7;
+  if (_6 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  Crc_ReportDetError (ServiceId_19(D), 1);
+
+  <bb 11> :
+  # Status_8 = PHI <Status_11(3), Status_7(9), Status_7(10)>
+  _22 = Status_8;
+
+  <bb 12> :
+<L10>:
+  return _22;
+
+}
+
+
+Crc_ReportDetError (uint8 ServiceId, uint8 ErrorId)
+{
+  <bb 2> :
+  Det_ReportError (201, 0, ServiceId_2(D), ErrorId_3(D));
+  return;
+
+}
+
+

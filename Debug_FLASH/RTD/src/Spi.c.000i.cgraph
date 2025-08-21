@@ -1,0 +1,2957 @@
+Trivially needed symbols: Spi_JobTransferFinished Spi_ScheduleNextJob Spi_MainFunction_Handling Spi_SetHWUnitAsyncMode Spi_SetAsyncMode Spi_Cancel Spi_GetHWUnitStatus Spi_SyncTransmit Spi_GetSequenceResult Spi_GetJobResult Spi_GetStatus Spi_SetupEB Spi_ReadIB Spi_AsyncTransmit Spi_WriteIB Spi_DeInit Spi_Init Spi_GetVersionInfo Spi_LockJobsProcess Spi_GetStatusAsyncCheckHwBusy Spi_InitJobsList Spi_InitChannelsJobsSeqsState Spi_SyncJobsTranfer Spi_LockJobs Spi_au32SpiBusySyncHWUnitsStatus Spi_au32SpiSeqUsedHWUnits Spi_axSpiChannelState Spi_axSpiJobState Spi_axSpiSequenceState Spi_apxSpiConfigPtr Spi_axSpiHwUnitQueueArray
+
+
+Initial Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_MainFunction_Handling/32 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_AsyncTransmit/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_DeInit/19 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetHWUnitAsyncMode/31 Spi_SetAsyncMode/30 Spi_Init/18 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncJobsTranfer/12 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: Spi_axSpiHwUnitQueueArray/0 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 Spi_Ipw_JobTransfer/46 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 Spi_UnlockRemainingJobs/10 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c8d000
+  References: Spi_axSpiJobState/3 (read)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14b60
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqPoll/53 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14620
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c140e0
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 Spi_GetAsyncStatus/8 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14d20
+  References: Spi_axSpiSequenceState/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14a80
+  References: Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c147e0
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)Spi_au32SpiSeqUsedHWUnits/5 (read)Spi_axSpiSequenceState/2 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 Spi_SyncJobsTranfer/12 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 
+   Indirect call
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14540
+  References: Spi_axSpiSequenceState/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c142a0
+  References: Spi_axSpiJobState/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05c14000
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_DeInit/19 
+  Calls: Spi_GetStatusAsyncCheckHwBusy/15 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bffb60
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bff620
+  References: Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bff0e0
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/43 Spi_ScheduleJob/11 Spi_LockJobs/9 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bffd20
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bffa80
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_apxSpiConfigPtr/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_DeInit/40 Spi_GetStatus/24 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bff7e0
+  References: Spi_apxSpiConfigPtr/1 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_InitJobsList/14 Spi_Ipw_IrqConfig/39 Spi_Ipw_Init/38 Spi_InitChannelsJobsSeqsState/13 Spi_CheckInit/7 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05bff540
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05bff2a0
+  References: Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05bff000
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_GetStatus/24 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c73b60
+  References: Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c73620
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (write)Spi_axSpiSequenceState/2 (write)Spi_au32SpiSeqUsedHWUnits/5 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c730e0
+  References: Spi_axSpiJobState/3 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SyncTransmit/27 
+  Calls: Spi_Ipw_SyncTransmit/37 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bff0e0
+  References: Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @01733ea0
+  References: Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c73d20
+  References: Spi_axSpiJobState/3 (addr)Spi_axSpiSequenceState/2 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 Spi_LockJobsProcess/16 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05c140e0
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SetAsyncMode/30 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @05bff7e0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05c73540
+  References: 
+  Referring: Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (write)Spi_SyncTransmit/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b49678
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_SyncTransmit/27 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b495e8
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_WriteIB/20 (addr)Spi_SetupEB/23 (addr)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b49558
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_SyncJobsTranfer/12 (addr)Spi_SyncJobsTranfer/12 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_LockJobsProcess/16 (write)Spi_AsyncTransmit/21 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_GetJobResult/25 (read)Spi_ScheduleNextJob/33 (read)Spi_ScheduleNextJob/33 (write)Spi_JobTransferFinished/34 (write)Spi_UnlockRemainingJobs/10 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @05b49510
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_AsyncTransmit/21 (addr)Spi_GetSequenceResult/26 (read)Spi_SyncTransmit/27 (addr)Spi_Cancel/29 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b494c8
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (read)Spi_SyncJobsTranfer/12 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_Init/18 (read)Spi_Init/18 (read)Spi_Init/18 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (write)Spi_WriteIB/20 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_ReadIB/22 (read)Spi_SetupEB/23 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_ScheduleNextJob/33 (read)Spi_JobTransferFinished/34 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05b49438
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (write)Spi_SyncJobsTranfer/12 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_DeInit/19 (write)Spi_AsyncTransmit/21 (addr)Spi_GetHWUnitStatus/28 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_JobTransferFinished/34 (addr)Spi_JobTransferFinished/34 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_MainFunction_Handling/32 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_AsyncTransmit/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_DeInit/19 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetHWUnitAsyncMode/31 Spi_SetAsyncMode/30 Spi_Init/18 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncJobsTranfer/12 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 Spi_Ipw_JobTransfer/46 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 Spi_UnlockRemainingJobs/10 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (read)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqPoll/53 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 Spi_GetAsyncStatus/8 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)Spi_au32SpiSeqUsedHWUnits/5 (read)Spi_axSpiSequenceState/2 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 Spi_SyncJobsTranfer/12 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 
+   Indirect call
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiJobState/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_DeInit/19 
+  Calls: Spi_GetStatusAsyncCheckHwBusy/15 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/43 Spi_ScheduleJob/11 Spi_LockJobs/9 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_apxSpiConfigPtr/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_DeInit/40 Spi_GetStatus/24 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_InitJobsList/14 Spi_Ipw_IrqConfig/39 Spi_Ipw_Init/38 Spi_InitChannelsJobsSeqsState/13 Spi_CheckInit/7 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_GetStatus/24 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (write)Spi_axSpiSequenceState/2 (write)Spi_au32SpiSeqUsedHWUnits/5 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SyncTransmit/27 
+  Calls: Spi_Ipw_SyncTransmit/37 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_axSpiSequenceState/2 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 Spi_LockJobsProcess/16 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SetAsyncMode/30 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (write)Spi_SyncTransmit/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_SyncTransmit/27 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_WriteIB/20 (addr)Spi_SetupEB/23 (addr)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_SyncJobsTranfer/12 (addr)Spi_SyncJobsTranfer/12 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_LockJobsProcess/16 (write)Spi_AsyncTransmit/21 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_GetJobResult/25 (read)Spi_ScheduleNextJob/33 (read)Spi_ScheduleNextJob/33 (write)Spi_JobTransferFinished/34 (write)Spi_UnlockRemainingJobs/10 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_AsyncTransmit/21 (addr)Spi_GetSequenceResult/26 (read)Spi_SyncTransmit/27 (addr)Spi_Cancel/29 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (read)Spi_SyncJobsTranfer/12 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_Init/18 (read)Spi_Init/18 (read)Spi_Init/18 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (write)Spi_WriteIB/20 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_ReadIB/22 (read)Spi_SetupEB/23 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_ScheduleNextJob/33 (read)Spi_JobTransferFinished/34 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (write)Spi_SyncJobsTranfer/12 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_DeInit/19 (write)Spi_AsyncTransmit/21 (addr)Spi_GetHWUnitStatus/28 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_JobTransferFinished/34 (addr)Spi_JobTransferFinished/34 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_MainFunction_Handling/32 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_AsyncTransmit/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_DeInit/19 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetHWUnitAsyncMode/31 Spi_SetAsyncMode/30 Spi_Init/18 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncJobsTranfer/12 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 Spi_Ipw_JobTransfer/46 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 Spi_UnlockRemainingJobs/10 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (read)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqPoll/53 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 Spi_GetAsyncStatus/8 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)Spi_au32SpiSeqUsedHWUnits/5 (read)Spi_axSpiSequenceState/2 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 Spi_SyncJobsTranfer/12 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 
+   Indirect call
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiJobState/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_DeInit/19 
+  Calls: Spi_GetStatusAsyncCheckHwBusy/15 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/43 Spi_ScheduleJob/11 Spi_LockJobs/9 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_apxSpiConfigPtr/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_DeInit/40 Spi_GetStatus/24 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_InitJobsList/14 Spi_Ipw_IrqConfig/39 Spi_Ipw_Init/38 Spi_InitChannelsJobsSeqsState/13 Spi_CheckInit/7 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_GetStatus/24 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (write)Spi_axSpiSequenceState/2 (write)Spi_au32SpiSeqUsedHWUnits/5 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SyncTransmit/27 
+  Calls: Spi_Ipw_SyncTransmit/37 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_axSpiSequenceState/2 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 Spi_LockJobsProcess/16 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SetAsyncMode/30 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (write)Spi_SyncTransmit/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_SyncTransmit/27 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_WriteIB/20 (addr)Spi_SetupEB/23 (addr)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_SyncJobsTranfer/12 (addr)Spi_SyncJobsTranfer/12 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_LockJobsProcess/16 (write)Spi_AsyncTransmit/21 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_GetJobResult/25 (read)Spi_ScheduleNextJob/33 (read)Spi_ScheduleNextJob/33 (write)Spi_JobTransferFinished/34 (write)Spi_UnlockRemainingJobs/10 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_AsyncTransmit/21 (addr)Spi_GetSequenceResult/26 (read)Spi_SyncTransmit/27 (addr)Spi_Cancel/29 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (read)Spi_SyncJobsTranfer/12 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_Init/18 (read)Spi_Init/18 (read)Spi_Init/18 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (write)Spi_WriteIB/20 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_ReadIB/22 (read)Spi_SetupEB/23 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_ScheduleNextJob/33 (read)Spi_JobTransferFinished/34 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (write)Spi_SyncJobsTranfer/12 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_DeInit/19 (write)Spi_AsyncTransmit/21 (addr)Spi_GetHWUnitStatus/28 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_JobTransferFinished/34 (addr)Spi_JobTransferFinished/34 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_MainFunction_Handling/32 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_ScheduleJob/11 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_AsyncTransmit/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_DeInit/19 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SetHWUnitAsyncMode/31 Spi_SetAsyncMode/30 Spi_Init/18 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_SyncJobsTranfer/12 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 Spi_Ipw_JobTransfer/46 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 Spi_UnlockRemainingJobs/10 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (read)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqPoll/53 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 Spi_GetAsyncStatus/8 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)Spi_au32SpiSeqUsedHWUnits/5 (read)Spi_axSpiSequenceState/2 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 Spi_SyncJobsTranfer/12 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 
+   Indirect call
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiSequenceState/2 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiJobState/3 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_DeInit/19 
+  Calls: Spi_GetStatusAsyncCheckHwBusy/15 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/43 Spi_ScheduleJob/11 Spi_LockJobs/9 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_apxSpiConfigPtr/1 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_DeInit/40 Spi_GetStatus/24 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Spi_InitJobsList/14 Spi_Ipw_IrqConfig/39 Spi_Ipw_Init/38 Spi_InitChannelsJobsSeqsState/13 Spi_CheckInit/7 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_GetStatus/24 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (write)Spi_axSpiSequenceState/2 (write)Spi_au32SpiSeqUsedHWUnits/5 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SyncTransmit/27 
+  Calls: Spi_Ipw_SyncTransmit/37 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_axSpiJobState/3 (write)
+  Referring: 
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder
+  References: Spi_axSpiJobState/3 (addr)Spi_axSpiSequenceState/2 (addr)
+  Referring: 
+  Function flags: body
+  Called by: Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 Spi_LockJobsProcess/16 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Function flags: body
+  Called by: Spi_SetAsyncMode/30 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (write)Spi_SyncTransmit/27 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_SyncTransmit/27 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_WriteIB/20 (addr)Spi_SetupEB/23 (addr)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_SyncJobsTranfer/12 (addr)Spi_SyncJobsTranfer/12 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_LockJobsProcess/16 (write)Spi_AsyncTransmit/21 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_GetJobResult/25 (read)Spi_ScheduleNextJob/33 (read)Spi_ScheduleNextJob/33 (write)Spi_JobTransferFinished/34 (write)Spi_UnlockRemainingJobs/10 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_AsyncTransmit/21 (addr)Spi_GetSequenceResult/26 (read)Spi_SyncTransmit/27 (addr)Spi_Cancel/29 (write)
+  Availability: not-ready
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (read)Spi_SyncJobsTranfer/12 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_Init/18 (read)Spi_Init/18 (read)Spi_Init/18 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (write)Spi_WriteIB/20 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_ReadIB/22 (read)Spi_SetupEB/23 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_SetAsyncMode/30 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_ScheduleNextJob/33 (read)Spi_JobTransferFinished/34 (read)
+  Availability: not-ready
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (write)Spi_SyncJobsTranfer/12 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_InitJobsList/14 (write)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (write)Spi_DeInit/19 (write)Spi_AsyncTransmit/21 (addr)Spi_GetHWUnitStatus/28 (read)Spi_GetAsyncStatus/8 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_MainFunction_Handling/32 (read)Spi_JobTransferFinished/34 (addr)Spi_JobTransferFinished/34 (addr)
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_ScheduleNextJob/33 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_MainFunction_Handling/32 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SyncTransmit/27 Spi_SyncTransmit/27 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SyncTransmit/27 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SetupEB/23 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_JobTransferFinished/34 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_ScheduleJob/11 Spi_ScheduleJob/11 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_ScheduleJob/11 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_AsyncTransmit/21 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_WriteIB/20 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_DeInit/19 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SetHWUnitAsyncMode/31 Spi_SetAsyncMode/30 Spi_Init/18 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_SyncJobsTranfer/12 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 Spi_Ipw_JobTransfer/46 Spi_ScheduleNextJob/33 Spi_ScheduleJob/11 Spi_ScheduleNextJob/33 Spi_ScheduleNextJob/33 Spi_UnlockRemainingJobs/10 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_axSpiJobState/3 (read)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 Spi_JobTransferFinished/34 
+  Calls: Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqPoll/53 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_IrqConfig/39 Spi_GetAsyncStatus/8 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiSequenceState/2 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)Spi_au32SpiSeqUsedHWUnits/5 (read)Spi_axSpiSequenceState/2 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 Spi_SyncJobsTranfer/12 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 
+   Indirect call
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiSequenceState/2 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiJobState/3 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_au32SpiBusySyncHWUnitsStatus/6 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_DeInit/19 
+  Calls: Spi_GetStatusAsyncCheckHwBusy/15 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Det_ReportRuntimeError/43 Spi_ScheduleJob/11 Spi_LockJobs/9 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_axSpiChannelState/4 (addr)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_apxSpiConfigPtr/1 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_DeInit/40 Spi_GetStatus/24 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/1 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_InitJobsList/14 Spi_Ipw_IrqConfig/39 Spi_Ipw_Init/38 Spi_InitChannelsJobsSeqsState/13 Spi_CheckInit/7 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_axSpiSequenceState/2 (addr)Spi_axSpiJobState/3 (addr)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_LockJobs/9 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_GetStatus/24 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_axSpiChannelState/4 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiSequenceState/2 (write)Spi_axSpiSequenceState/2 (write)Spi_au32SpiSeqUsedHWUnits/5 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_axSpiJobState/3 (addr)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiHwUnitQueueArray/0 (write)Spi_axSpiJobState/3 (write)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_SyncTransmit/27 
+  Calls: Spi_Ipw_SyncTransmit/37 
+   Indirect call
+   Indirect call
+   Indirect call
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)Spi_axSpiJobState/3 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Spi_JobTransferFinished/34 Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 Spi_Ipw_JobTransfer/46 SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Spi_axSpiJobState/3 (write)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Spi_JobTransferFinished/34 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_axSpiJobState/3 (addr)Spi_axSpiSequenceState/2 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_AsyncTransmit/21 
+  Calls: SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 Spi_LockJobsProcess/16 SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_apxSpiConfigPtr/1 (read)Spi_axSpiHwUnitQueueArray/0 (read)Spi_apxSpiConfigPtr/1 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Spi_SetAsyncMode/30 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Spi_Init/18 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Spi_GetStatus/24 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (write)Spi_SyncTransmit/27 (write)
+  Availability: available
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_SyncTransmit/27 (read)
+  Availability: available
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_WriteIB/20 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_InitChannelsJobsSeqsState/13 (write)Spi_SetupEB/23 (addr)
+  Availability: available
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_LockJobsProcess/16 (addr)Spi_UnlockRemainingJobs/10 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleJob/11 (write)Spi_SyncJobsTranfer/12 (addr)Spi_SyncJobsTranfer/12 (write)Spi_LockJobsProcess/16 (write)Spi_AsyncTransmit/21 (write)Spi_GetJobResult/25 (read)Spi_ScheduleNextJob/33 (write)Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_ScheduleJob/11 (write)Spi_ScheduleNextJob/33 (read)Spi_JobTransferFinished/34 (write)
+  Availability: available
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Spi_InitChannelsJobsSeqsState/13 (write)Spi_AsyncTransmit/21 (addr)Spi_GetSequenceResult/26 (read)Spi_SyncTransmit/27 (addr)Spi_LockJobsProcess/16 (addr)Spi_LockJobs/9 (addr)Spi_InitChannelsJobsSeqsState/13 (write)Spi_Cancel/29 (write)
+  Availability: available
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Spi_SetAsyncMode/30 (read)Spi_ScheduleNextJob/33 (read)Spi_MainFunction_Handling/32 (read)Spi_SyncTransmit/27 (read)Spi_SyncTransmit/27 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_SetAsyncMode/30 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_SyncJobsTranfer/12 (read)Spi_SyncJobsTranfer/12 (read)Spi_GetAsyncStatus/8 (read)Spi_GetAsyncStatus/8 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_AsyncTransmit/21 (read)Spi_AsyncTransmit/21 (read)Spi_SetupEB/23 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_Init/18 (read)Spi_WriteIB/20 (read)Spi_AsyncTransmit/21 (read)Spi_Init/18 (read)Spi_Init/18 (read)Spi_ReadIB/22 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_GetStatus/24 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (read)Spi_DeInit/19 (write)Spi_SyncTransmit/27 (read)Spi_SetAsyncMode/30 (read)Spi_SetHWUnitAsyncMode/31 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_InitChannelsJobsSeqsState/13 (read)Spi_Init/18 (write)Spi_MainFunction_Handling/32 (read)Spi_MainFunction_Handling/32 (read)Spi_JobTransferFinished/34 (read)
+  Availability: available
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: Spi_SyncJobsTranfer/12 (write)Spi_MainFunction_Handling/32 (read)Spi_GetHWUnitStatus/28 (read)Spi_InitJobsList/14 (write)Spi_GetAsyncStatus/8 (read)Spi_SyncJobsTranfer/12 (write)Spi_InitJobsList/14 (write)Spi_Init/18 (write)Spi_GetStatusAsyncCheckHwBusy/15 (read)Spi_AsyncTransmit/21 (addr)Spi_SetHWUnitAsyncMode/31 (read)Spi_DeInit/19 (write)Spi_InitJobsList/14 (write)Spi_JobTransferFinished/34 (addr)Spi_JobTransferFinished/34 (addr)
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Spi_au32SpiBusySyncHWUnitsStatus Spi_au32SpiSeqUsedHWUnits Spi_axSpiChannelState Spi_axSpiJobState Spi_axSpiSequenceState Spi_apxSpiConfigPtr Spi_axSpiHwUnitQueueArray
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02/57 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02/56 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_02) @05f2f460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01/55 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01/54 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_01) @05f2f0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_IrqPoll/53 (Spi_Ipw_IrqPoll) @05f1aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07/52 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07/51 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_07) @05f1a7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06/50 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06/49 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_06) @05f1a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05/48 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_05) @05f1a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05/47 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_05) @05f0aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_JobTransfer/46 (Spi_Ipw_JobTransfer) @05f0ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00/45 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_00) @05f0ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00/44 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_00) @05f0aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Det_ReportRuntimeError/43 (Det_ReportRuntimeError) @05f0a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04/42 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04/41 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_04) @05f0a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_DeInit/40 (Spi_Ipw_DeInit) @05f0a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_IrqConfig/39 (Spi_Ipw_IrqConfig) @05f0a0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_Init/38 (Spi_Ipw_Init) @05f0a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Ipw_SyncTransmit/37 (Spi_Ipw_SyncTransmit) @05c8d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03/36 (SchM_Exit_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03/35 (SchM_Enter_Spi_SPI_EXCLUSIVE_AREA_03) @05c8d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_JobTransferFinished/34 (Spi_JobTransferFinished) @05c8d000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_ScheduleNextJob/33 (Spi_ScheduleNextJob) @05c14b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_MainFunction_Handling/32 (Spi_MainFunction_Handling) @05c14620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_SetHWUnitAsyncMode/31 (Spi_SetHWUnitAsyncMode) @05c140e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_SetAsyncMode/30 (Spi_SetAsyncMode) @05c14d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Cancel/29 (Spi_Cancel) @05c14a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetHWUnitStatus/28 (Spi_GetHWUnitStatus) @05c147e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_SyncTransmit/27 (Spi_SyncTransmit) @05c14540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetSequenceResult/26 (Spi_GetSequenceResult) @05c142a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetJobResult/25 (Spi_GetJobResult) @05c14000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetStatus/24 (Spi_GetStatus) @05bffb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_SetupEB/23 (Spi_SetupEB) @05bff620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_ReadIB/22 (Spi_ReadIB) @05bff0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_AsyncTransmit/21 (Spi_AsyncTransmit) @05bffd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_WriteIB/20 (Spi_WriteIB) @05bffa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_DeInit/19 (Spi_DeInit) @05bff7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_Init/18 (Spi_Init) @05bff540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetVersionInfo/17 (Spi_GetVersionInfo) @05bff2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_LockJobsProcess/16 (Spi_LockJobsProcess) @05bff000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetStatusAsyncCheckHwBusy/15 (Spi_GetStatusAsyncCheckHwBusy) @05c73b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_InitJobsList/14 (Spi_InitJobsList) @05c73620
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_InitChannelsJobsSeqsState/13 (Spi_InitChannelsJobsSeqsState) @05c730e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_SyncJobsTranfer/12 (Spi_SyncJobsTranfer) @05c73d20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_ScheduleJob/11 (Spi_ScheduleJob) @05c73a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Spi_UnlockRemainingJobs/10 (Spi_UnlockRemainingJobs) @05c737e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Spi_LockJobs/9 (Spi_LockJobs) @05c73540
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+Spi_GetAsyncStatus/8 (Spi_GetAsyncStatus) @05c732a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Spi_CheckInit/7 (Spi_CheckInit) @05c73000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+Spi_au32SpiBusySyncHWUnitsStatus/6 (Spi_au32SpiBusySyncHWUnitsStatus) @05b49678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_au32SpiSeqUsedHWUnits/5 (Spi_au32SpiSeqUsedHWUnits) @05b495e8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05b49678
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_axSpiChannelState/4 (Spi_axSpiChannelState) @05b49558
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05b495e8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_axSpiJobState/3 (Spi_axSpiJobState) @05b49510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05b49558
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_axSpiSequenceState/2 (Spi_axSpiSequenceState) @05b494c8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written
+  Aux: @05b49510
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_apxSpiConfigPtr/1 (Spi_apxSpiConfigPtr) @05b49438
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05b494c8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Spi_axSpiHwUnitQueueArray/0 (Spi_axSpiHwUnitQueueArray) @05b493a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05b49438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

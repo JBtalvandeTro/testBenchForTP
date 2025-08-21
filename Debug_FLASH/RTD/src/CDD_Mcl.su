@@ -1,0 +1,15 @@
+CDD_Mcl.c:173:23:Mcl_ValidatePtrInit	24	static
+CDD_Mcl.c:205:13:Mcl_DmaReturnCheck	16	static
+CDD_Mcl.c:238:6:Mcl_Init	32	static
+CDD_Mcl.c:314:6:Mcl_DeInit	16	static
+CDD_Mcl.c:351:6:Mcl_SetDmaInstanceCommand	24	static
+CDD_Mcl.c:376:6:Mcl_GetDmaInstanceStatus	32	static
+CDD_Mcl.c:405:6:Mcl_SetDmaChannelCommand	24	static
+CDD_Mcl.c:430:6:Mcl_GetDmaChannelStatus	32	static
+CDD_Mcl.c:460:6:Mcl_SetDmaChannelGlobalList	32	static
+CDD_Mcl.c:496:6:Mcl_SetDmaChannelTransferList	32	static
+CDD_Mcl.c:532:6:Mcl_SetDmaChannelScatterGatherList	32	static
+CDD_Mcl.c:568:6:Mcl_GetDmaChannelParam	32	static
+CDD_Mcl.c:593:6:Mcl_SetDmaChannelScatterGatherConfig	24	static
+CDD_Mcl.c:616:6:Mcl_SetTrgMuxInput	16	static
+CDD_Mcl.c:624:6:Mcl_SetTrgMuxLock	16	static

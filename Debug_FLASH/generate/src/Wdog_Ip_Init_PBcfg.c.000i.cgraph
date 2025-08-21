@@ -1,0 +1,168 @@
+Trivially needed symbols: Wdog_Ip_FastModeSettings_INIT Wdog_Ip_SlowModeSettings_INIT Wdog_Ip_OffModeSettings_INIT
+
+
+Initial Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @01733ea0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05a3f3a8
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @05a3f318
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdog_Ip_FastModeSettings_INIT Wdog_Ip_SlowModeSettings_INIT Wdog_Ip_OffModeSettings_INIT
+Removing variables:
+
+Final Symbol table:
+
+Wdog_Ip_FastModeSettings_INIT/2 (Wdog_Ip_FastModeSettings_INIT) @05a3f3a8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_SlowModeSettings_INIT/1 (Wdog_Ip_SlowModeSettings_INIT) @05a3f318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05a3f3a8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdog_Ip_OffModeSettings_INIT/0 (Wdog_Ip_OffModeSettings_INIT) @05a3f288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public
+  Aux: @05a3f318
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

@@ -1,0 +1,1066 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Spi_Ipw_JobTransfer Spi_Ipw_IrqConfig Spi_Ipw_IrqPoll Spi_Ipw_SyncTransmit Spi_Ipw_DeInit Spi_Ipw_Init
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Spi_JobTransferFinished/22 (Spi_JobTransferFinished) @05d28c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Lpspi_Ip_AsyncTransmit/21 (Lpspi_Ip_AsyncTransmit) @05d28b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 
+  Calls: 
+Spi_axSpiHwUnitQueueArray/20 (Spi_axSpiHwUnitQueueArray) @05d76828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (write)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_UpdateTransferMode/19 (Lpspi_Ip_UpdateTransferMode) @05d288c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_IrqConfig/6 Spi_Ipw_IrqConfig/6 
+  Calls: 
+Lpspi_Ip_ManageBuffers/18 (Lpspi_Ip_ManageBuffers) @05d28700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_IrqPoll/5 
+  Calls: 
+Lpspi_Ip_apxStateStructureArray/17 (Lpspi_Ip_apxStateStructureArray) @05d27c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_DeInit/16 (Lpspi_Ip_DeInit) @05d28380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_DeInit/3 
+  Calls: 
+Spi_apxSpiConfigPtr/15 (Spi_apxSpiConfigPtr) @05d27558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Spi_Ipw_DeInit/3 (read)Spi_Ipw_DeInit/3 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_SyncTransmit/4 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqPoll/5 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_IrqConfig/6 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_EndChannelCallback/7 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)Spi_Ipw_JobTransfer/9 (read)
+  Availability: not_available
+  Varpool flags:
+Lpspi_Ip_Init/14 (Lpspi_Ip_Init) @05d281c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_Init/2 
+  Calls: 
+Lpspi_Ip_SyncTransmit/13 (Lpspi_Ip_SyncTransmit) @05d28000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateLsb/12 (Lpspi_Ip_UpdateLsb) @05d15a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateFrameSize/11 (Lpspi_Ip_UpdateFrameSize) @05d157e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Lpspi_Ip_UpdateDefaultTransmitData/10 (Lpspi_Ip_UpdateDefaultTransmitData) @05d15540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Spi_Ipw_JobTransfer/9 Spi_Ipw_EndChannelCallback/7 Spi_Ipw_SyncTransmitProcess/1 
+  Calls: 
+Spi_Ipw_JobTransfer/9 (Spi_Ipw_JobTransfer) @05d15c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+   Indirect call
+Spi_Ipw_CallbackLpspi/8 (Spi_Ipw_CallbackLpspi) @05d159a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Spi_Ipw_EndChannelCallback/7 (addr)Spi_Ipw_JobTransfer/9 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_EndChannelCallback/7 Spi_Ipw_EndChannelCallback/7 
+Spi_Ipw_EndChannelCallback/7 (Spi_Ipw_EndChannelCallback) @05d15700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_apxSpiConfigPtr/15 (read)Spi_axSpiHwUnitQueueArray/20 (read)Spi_axSpiHwUnitQueueArray/20 (write)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_Ipw_CallbackLpspi/8 (addr)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Ipw_CallbackLpspi/8 Spi_Ipw_CallbackLpspi/8 
+  Calls: Spi_JobTransferFinished/22 Lpspi_Ip_AsyncTransmit/21 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_IrqConfig/6 (Spi_Ipw_IrqConfig) @05d15460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_UpdateTransferMode/19 Lpspi_Ip_UpdateTransferMode/19 
+Spi_Ipw_IrqPoll/5 (Spi_Ipw_IrqPoll) @05d151c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_ManageBuffers/18 
+Spi_Ipw_SyncTransmit/4 (Spi_Ipw_SyncTransmit) @05c31ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Spi_apxSpiConfigPtr/15 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)Lpspi_Ip_apxStateStructureArray/17 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Spi_Ipw_SyncTransmitProcess/1 
+Spi_Ipw_DeInit/3 (Spi_Ipw_DeInit) @05c319a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_apxSpiConfigPtr/15 (read)Spi_apxSpiConfigPtr/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_DeInit/16 
+Spi_Ipw_Init/2 (Spi_Ipw_Init) @05c31e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: Spi_Ipw_au8LpspiHWUnitMapping/0 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Lpspi_Ip_Init/14 
+Spi_Ipw_SyncTransmitProcess/1 (Spi_Ipw_SyncTransmitProcess) @05c31b60
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: Spi_Ipw_SyncTransmit/4 
+  Calls: Lpspi_Ip_SyncTransmit/13 Lpspi_Ip_UpdateLsb/12 Lpspi_Ip_UpdateFrameSize/11 Lpspi_Ip_UpdateDefaultTransmitData/10 
+Spi_Ipw_au8LpspiHWUnitMapping/0 (Spi_Ipw_au8LpspiHWUnitMapping) @05c30120
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: Spi_Ipw_Init/2 (write)Spi_Ipw_EndChannelCallback/7 (read)
+  Availability: available
+  Varpool flags:
+Spi_Ipw_JobTransfer (const struct Spi_JobConfigType * JobConfig)
+{
+  Lpspi_Ip_StatusType LpspiStatus;
+  uint32 SpiCoreID;
+  Spi_DataBufferType * TxBuffer;
+  Spi_DataBufferType * RxBuffer;
+  Spi_NumberOfDataType NumberOfBytes;
+  const struct Spi_ChannelConfigType * NextChannelConfig;
+  const struct Spi_ChannelConfigType * ChannelConfig;
+  uint8 Instance;
+  const struct Lpspi_Ip_ExternalDeviceType * LpspiExternalDevice;
+
+  <bb 2> :
+  SpiCoreID = 0;
+  _1 = JobConfig->StartNotification;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = JobConfig->StartNotification;
+  _2 ();
+
+  <bb 4> :
+  _3 = JobConfig->ExternalDeviceConfig;
+  _4 = _3->ExDeviceConfig;
+  LpspiExternalDevice = _4->ExternalDeviceConfig.LpspiExternalDeviceConfig;
+  _5 = JobConfig->ExternalDeviceConfig;
+  _6 = _5->ExDeviceConfig;
+  Instance = _6->Instance;
+  _7 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _8 = _7->ChannelConfig;
+  _9 = JobConfig->ChannelIndexList;
+  _10 = *_9;
+  _11 = (unsigned int) _10;
+  _12 = _11 * 4;
+  _13 = _8 + _12;
+  ChannelConfig = _13->ChannelCfg;
+  _14 = ChannelConfig->ChannelState;
+  NumberOfBytes = _14->Length;
+  _15 = ChannelConfig->BufferDescriptor;
+  RxBuffer = _15->BufferRX;
+  _16 = ChannelConfig->ChannelState;
+  _17 = _16->Flags;
+  _18 = (unsigned int) _17;
+  _19 = _18 & 1;
+  if (_19 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  TxBuffer = 0B;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _20 = ChannelConfig->BufferDescriptor;
+  TxBuffer = _20->BufferTX;
+
+  <bb 7> :
+  _21 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _22 = _21->HWUnitConfig;
+  _23 = JobConfig->HWUnit;
+  _24 = (unsigned int) _23;
+  _25 = _24 * 4;
+  _26 = _22 + _25;
+  _27 = _26->PhyUnitConfig;
+  _28 = _27->IpType;
+  if (_28 == 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 8> :
+  _29 = JobConfig->NumChannels;
+  if (_29 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _30 = (int) Instance;
+  _31 = Lpspi_Ip_apxStateStructureArray[_30];
+  _31->KeepCs = 0;
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+  _32 = (int) Instance;
+  _33 = Lpspi_Ip_apxStateStructureArray[_32];
+  _33->KeepCs = 1;
+  _34 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _35 = _34->ChannelConfig;
+  _36 = JobConfig->ChannelIndexList;
+  _37 = _36 + 1;
+  _38 = *_37;
+  _39 = (unsigned int) _38;
+  _40 = _39 * 4;
+  _41 = _35 + _40;
+  NextChannelConfig = _41->ChannelCfg;
+  _42 = NextChannelConfig->ChannelState;
+  _43 = _42->Flags;
+  _44 = (unsigned int) _43;
+  _45 = _44 & 1;
+  if (_45 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _46 = (int) Instance;
+  _47 = Lpspi_Ip_apxStateStructureArray[_46];
+  _47->TxBufferNext = 0B;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  _48 = NextChannelConfig->BufferDescriptor;
+  _49 = (int) Instance;
+  _50 = Lpspi_Ip_apxStateStructureArray[_49];
+  _51 = _48->BufferTX;
+  _50->TxBufferNext = _51;
+
+  <bb 13> :
+  _52 = (int) Instance;
+  _53 = Lpspi_Ip_apxStateStructureArray[_52];
+  _54 = NextChannelConfig->FrameSize;
+  _53->FrameSizeNext = _54;
+  _55 = (int) Instance;
+  _56 = Lpspi_Ip_apxStateStructureArray[_55];
+  _57 = NextChannelConfig->Lsb;
+  _56->LsbNext = _57;
+  _58 = (int) Instance;
+  _59 = Lpspi_Ip_apxStateStructureArray[_58];
+  _60 = NextChannelConfig->DefaultTransmitValue;
+  _59->DefaultDataNext = _60;
+  _61 = NextChannelConfig->ChannelState;
+  _62 = (int) Instance;
+  _63 = Lpspi_Ip_apxStateStructureArray[_62];
+  _64 = _61->Length;
+  _63->LengthNext = _64;
+
+  <bb 14> :
+  _65 = (int) Instance;
+  _66 = Lpspi_Ip_apxStateStructureArray[_65];
+  _66->FirstCmd = 1;
+  _67 = ChannelConfig->DefaultTransmitValue;
+  LpspiStatus = Lpspi_Ip_UpdateDefaultTransmitData (LpspiExternalDevice, _67);
+  if (LpspiStatus == 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 15> :
+  _68 = ChannelConfig->FrameSize;
+  LpspiStatus = Lpspi_Ip_UpdateFrameSize (LpspiExternalDevice, _68);
+  if (LpspiStatus == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 16> :
+  _69 = ChannelConfig->Lsb;
+  LpspiStatus = Lpspi_Ip_UpdateLsb (LpspiExternalDevice, _69);
+  if (LpspiStatus == 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  Lpspi_Ip_AsyncTransmit (LpspiExternalDevice, TxBuffer, RxBuffer, NumberOfBytes, Spi_Ipw_CallbackLpspi);
+
+  <bb 18> :
+  return;
+
+}
+
+
+Spi_Ipw_CallbackLpspi (uint8 Instance, Lpspi_Ip_EventType Event)
+{
+  Spi_Ipw_SupportedIpsType IpType;
+
+  <bb 2> :
+  IpType = 0;
+  if (Event != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Spi_Ipw_EndChannelCallback (Instance, IpType, 2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Spi_Ipw_EndChannelCallback (Instance, IpType, 0);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Spi_Ipw_EndChannelCallback (uint8 Instance, Spi_Ipw_SupportedIpsType IpType, Spi_JobResultType JobResult)
+{
+  Lpspi_Ip_StatusType LpspiStatus;
+  Spi_DataBufferType * TxBuffer;
+  Spi_DataBufferType * RxBuffer;
+  Spi_NumberOfDataType NumberOfBytes;
+  const struct Spi_ChannelConfigType * NextChannelConfig;
+  const struct Spi_ChannelConfigType * ChannelConfig;
+  const struct Lpspi_Ip_ExternalDeviceType * LpspiExternalDevice;
+  Spi_JobType Job;
+  Spi_ChannelType ChannelNumber;
+  Spi_ChannelType NumberOfChannels;
+  Spi_ChannelType ChannelIndex;
+  Spi_HWUnitType HwUnit;
+  uint32 SpiCoreID;
+
+  <bb 2> :
+  HwUnit = 0;
+  SpiCoreID = 0;
+  if (IpType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = (int) Instance;
+  HwUnit = Spi_Ipw_au8LpspiHWUnitMapping[_1];
+
+  <bb 4> :
+  _2 = (int) HwUnit;
+  ChannelIndex = Spi_axSpiHwUnitQueueArray[_2].Channel;
+  _3 = (int) HwUnit;
+  Job = Spi_axSpiHwUnitQueueArray[_3].Job;
+  _4 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _5 = _4->JobConfig;
+  _6 = (unsigned int) Job;
+  _7 = _6 * 4;
+  _8 = _5 + _7;
+  _9 = _8->JobCfg;
+  NumberOfChannels = _9->NumChannels;
+  _10 = (unsigned int) ChannelIndex;
+  _11 = _10 + 1;
+  _12 = (unsigned int) NumberOfChannels;
+  if (_11 < _12)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 5> :
+  if (JobResult == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 6> :
+  _13 = (int) HwUnit;
+  _14 = Spi_axSpiHwUnitQueueArray[_13].Channel;
+  _15 = _14;
+  _16 = _15 + 1;
+  Spi_axSpiHwUnitQueueArray[_13].Channel = _16;
+  ChannelIndex.1_17 = ChannelIndex;
+  ChannelIndex = ChannelIndex.1_17 + 1;
+  _18 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _19 = _18->JobConfig;
+  _20 = (unsigned int) Job;
+  _21 = _20 * 4;
+  _22 = _19 + _21;
+  _23 = _22->JobCfg;
+  _24 = _23->ChannelIndexList;
+  _25 = (sizetype) ChannelIndex;
+  _26 = _24 + _25;
+  ChannelNumber = *_26;
+  _27 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _28 = _27->ChannelConfig;
+  _29 = (unsigned int) ChannelNumber;
+  _30 = _29 * 4;
+  _31 = _28 + _30;
+  ChannelConfig = _31->ChannelCfg;
+  _32 = ChannelConfig->ChannelState;
+  NumberOfBytes = _32->Length;
+  _33 = ChannelConfig->BufferDescriptor;
+  RxBuffer = _33->BufferRX;
+  _34 = ChannelConfig->BufferDescriptor;
+  TxBuffer = _34->BufferTX;
+  if (IpType == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 7> :
+  _35 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _36 = _35->JobConfig;
+  _37 = (unsigned int) Job;
+  _38 = _37 * 4;
+  _39 = _36 + _38;
+  _40 = _39->JobCfg;
+  _41 = _40->ExternalDeviceConfig;
+  _42 = _41->ExDeviceConfig;
+  LpspiExternalDevice = _42->ExternalDeviceConfig.LpspiExternalDeviceConfig;
+  _43 = (unsigned int) ChannelIndex;
+  _44 = (unsigned int) NumberOfChannels;
+  _45 = _44 + 4294967295;
+  if (_43 == _45)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _46 = (int) Instance;
+  _47 = Lpspi_Ip_apxStateStructureArray[_46];
+  _47->KeepCs = 0;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  _48 = (int) Instance;
+  _49 = Lpspi_Ip_apxStateStructureArray[_48];
+  _49->KeepCs = 1;
+  _50 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _51 = _50->ChannelConfig;
+  _52 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _53 = _52->JobConfig;
+  _54 = (unsigned int) Job;
+  _55 = _54 * 4;
+  _56 = _53 + _55;
+  _57 = _56->JobCfg;
+  _58 = _57->ChannelIndexList;
+  _59 = (sizetype) ChannelIndex;
+  _60 = _59 + 1;
+  _61 = _58 + _60;
+  _62 = *_61;
+  _63 = (unsigned int) _62;
+  _64 = _63 * 4;
+  _65 = _51 + _64;
+  NextChannelConfig = _65->ChannelCfg;
+  _66 = NextChannelConfig->ChannelState;
+  _67 = _66->Flags;
+  _68 = (unsigned int) _67;
+  _69 = _68 & 1;
+  if (_69 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _70 = (int) Instance;
+  _71 = Lpspi_Ip_apxStateStructureArray[_70];
+  _71->TxBufferNext = 0B;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  _72 = NextChannelConfig->BufferDescriptor;
+  _73 = (int) Instance;
+  _74 = Lpspi_Ip_apxStateStructureArray[_73];
+  _75 = _72->BufferTX;
+  _74->TxBufferNext = _75;
+
+  <bb 12> :
+  _76 = (int) Instance;
+  _77 = Lpspi_Ip_apxStateStructureArray[_76];
+  _78 = NextChannelConfig->FrameSize;
+  _77->FrameSizeNext = _78;
+  _79 = (int) Instance;
+  _80 = Lpspi_Ip_apxStateStructureArray[_79];
+  _81 = NextChannelConfig->Lsb;
+  _80->LsbNext = _81;
+  _82 = (int) Instance;
+  _83 = Lpspi_Ip_apxStateStructureArray[_82];
+  _84 = NextChannelConfig->DefaultTransmitValue;
+  _83->DefaultDataNext = _84;
+  _85 = NextChannelConfig->ChannelState;
+  _86 = (int) Instance;
+  _87 = Lpspi_Ip_apxStateStructureArray[_86];
+  _88 = _85->Length;
+  _87->LengthNext = _88;
+
+  <bb 13> :
+  _89 = (int) Instance;
+  _90 = Lpspi_Ip_apxStateStructureArray[_89];
+  _90->FirstCmd = 0;
+  _91 = ChannelConfig->DefaultTransmitValue;
+  LpspiStatus = Lpspi_Ip_UpdateDefaultTransmitData (LpspiExternalDevice, _91);
+  if (LpspiStatus == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _92 = ChannelConfig->FrameSize;
+  LpspiStatus = Lpspi_Ip_UpdateFrameSize (LpspiExternalDevice, _92);
+
+  <bb 15> :
+  if (LpspiStatus == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  _93 = ChannelConfig->Lsb;
+  LpspiStatus = Lpspi_Ip_UpdateLsb (LpspiExternalDevice, _93);
+
+  <bb 17> :
+  if (LpspiStatus == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  Lpspi_Ip_AsyncTransmit (LpspiExternalDevice, TxBuffer, RxBuffer, NumberOfBytes, Spi_Ipw_CallbackLpspi);
+
+  <bb 19> :
+  goto <bb 21>; [INV]
+
+  <bb 20> :
+  _94 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _95 = _94->JobConfig;
+  _96 = (unsigned int) Job;
+  _97 = _96 * 4;
+  _98 = _95 + _97;
+  _99 = _98->JobCfg;
+  Spi_JobTransferFinished (_99, JobResult);
+
+  <bb 21> :
+  return;
+
+}
+
+
+Spi_Ipw_IrqConfig (Spi_HWUnitType HWUnit, Spi_AsyncModeType Mode, uint32 SpiCoreID)
+{
+  Lpspi_Ip_StatusType Lpspi_Ip_Status;
+
+  <bb 2> :
+  Lpspi_Ip_Status = 0;
+  _1 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _2 = _1->HWUnitConfig;
+  _3 = (unsigned int) HWUnit;
+  _4 = _3 * 4;
+  _5 = _2 + _4;
+  _6 = _5->PhyUnitConfig;
+  _7 = _6->IpType;
+  if (_7 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  if (Mode == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _8 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _9 = _8->HWUnitConfig;
+  _10 = (unsigned int) HWUnit;
+  _11 = _10 * 4;
+  _12 = _9 + _11;
+  _13 = _12->PhyUnitConfig;
+  _14 = _13->Instance;
+  Lpspi_Ip_Status = Lpspi_Ip_UpdateTransferMode (_14, 0);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _15 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _16 = _15->HWUnitConfig;
+  _17 = (unsigned int) HWUnit;
+  _18 = _17 * 4;
+  _19 = _16 + _18;
+  _20 = _19->PhyUnitConfig;
+  _21 = _20->Instance;
+  Lpspi_Ip_Status = Lpspi_Ip_UpdateTransferMode (_21, 1);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Spi_Ipw_IrqPoll (Spi_HWUnitType HWUnit, uint32 SpiCoreID)
+{
+  <bb 2> :
+  _1 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _2 = _1->HWUnitConfig;
+  _3 = (unsigned int) HWUnit;
+  _4 = _3 * 4;
+  _5 = _2 + _4;
+  _6 = _5->PhyUnitConfig;
+  _7 = _6->IpType;
+  if (_7 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _8 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _9 = _8->HWUnitConfig;
+  _10 = (unsigned int) HWUnit;
+  _11 = _10 * 4;
+  _12 = _9 + _11;
+  _13 = _12->PhyUnitConfig;
+  _14 = _13->Instance;
+  _15 = (int) _14;
+  _16 = Lpspi_Ip_apxStateStructureArray[_15];
+  _17 = _16->TransferMode;
+  if (_17 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _18 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _19 = _18->HWUnitConfig;
+  _20 = (unsigned int) HWUnit;
+  _21 = _20 * 4;
+  _22 = _19 + _21;
+  _23 = _22->PhyUnitConfig;
+  _24 = _23->Instance;
+  Lpspi_Ip_ManageBuffers (_24);
+
+  <bb 5> :
+  return;
+
+}
+
+
+Spi_Ipw_SyncTransmit (const struct Spi_JobConfigType * JobConfig, uint32 SpiCoreID)
+{
+  Spi_Ipw_SupportedIpsType IpType;
+  Spi_ChannelType ChannelIndex;
+  Spi_ChannelType NumChannelsInJob;
+  Spi_ChannelType ChannelID;
+  const struct Spi_ChannelConfigType * NextChannelConfig;
+  const struct Spi_ChannelConfigType * ChannelConfig;
+  Spi_DataBufferType * TxBuffer;
+  Spi_DataBufferType * RxBuffer;
+  Std_ReturnType Ipw_Status;
+  Std_ReturnType D.6080;
+
+  <bb 2> :
+  Ipw_Status = 0;
+  _1 = JobConfig->ExternalDeviceConfig;
+  _2 = _1->ExDeviceConfig;
+  IpType = _2->IpType;
+  NumChannelsInJob = JobConfig->NumChannels;
+  ChannelIndex = 0;
+  goto <bb 17>; [INV]
+
+  <bb 3> :
+  _3 = JobConfig->ChannelIndexList;
+  _4 = (sizetype) ChannelIndex;
+  _5 = _3 + _4;
+  ChannelID = *_5;
+  _6 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _7 = _6->ChannelConfig;
+  _8 = (unsigned int) ChannelID;
+  _9 = _8 * 4;
+  _10 = _7 + _9;
+  ChannelConfig = _10->ChannelCfg;
+  _11 = ChannelConfig->BufferDescriptor;
+  RxBuffer = _11->BufferRX;
+  _12 = ChannelConfig->ChannelState;
+  _13 = _12->Flags;
+  _14 = (unsigned int) _13;
+  _15 = _14 & 1;
+  if (_15 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  TxBuffer = 0B;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _16 = ChannelConfig->BufferDescriptor;
+  TxBuffer = _16->BufferTX;
+
+  <bb 6> :
+  if (IpType == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 7> :
+  _17 = (unsigned int) ChannelIndex;
+  _18 = (unsigned int) NumChannelsInJob;
+  _19 = _18 + 4294967295;
+  if (_17 == _19)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _20 = JobConfig->ExternalDeviceConfig;
+  _21 = _20->ExDeviceConfig;
+  _22 = _21->Instance;
+  _23 = (int) _22;
+  _24 = Lpspi_Ip_apxStateStructureArray[_23];
+  _24->KeepCs = 0;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  _25 = JobConfig->ExternalDeviceConfig;
+  _26 = _25->ExDeviceConfig;
+  _27 = _26->Instance;
+  _28 = (int) _27;
+  _29 = Lpspi_Ip_apxStateStructureArray[_28];
+  _29->KeepCs = 1;
+  _30 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _31 = _30->ChannelConfig;
+  _32 = JobConfig->ChannelIndexList;
+  _33 = (sizetype) ChannelIndex;
+  _34 = _33 + 1;
+  _35 = _32 + _34;
+  _36 = *_35;
+  _37 = (unsigned int) _36;
+  _38 = _37 * 4;
+  _39 = _31 + _38;
+  NextChannelConfig = _39->ChannelCfg;
+  _40 = NextChannelConfig->ChannelState;
+  _41 = _40->Flags;
+  _42 = (unsigned int) _41;
+  _43 = _42 & 1;
+  if (_43 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _44 = JobConfig->ExternalDeviceConfig;
+  _45 = _44->ExDeviceConfig;
+  _46 = _45->Instance;
+  _47 = (int) _46;
+  _48 = Lpspi_Ip_apxStateStructureArray[_47];
+  _48->TxBufferNext = 0B;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  _49 = NextChannelConfig->BufferDescriptor;
+  _50 = JobConfig->ExternalDeviceConfig;
+  _51 = _50->ExDeviceConfig;
+  _52 = _51->Instance;
+  _53 = (int) _52;
+  _54 = Lpspi_Ip_apxStateStructureArray[_53];
+  _55 = _49->BufferTX;
+  _54->TxBufferNext = _55;
+
+  <bb 12> :
+  _56 = JobConfig->ExternalDeviceConfig;
+  _57 = _56->ExDeviceConfig;
+  _58 = _57->Instance;
+  _59 = (int) _58;
+  _60 = Lpspi_Ip_apxStateStructureArray[_59];
+  _61 = NextChannelConfig->FrameSize;
+  _60->FrameSizeNext = _61;
+  _62 = JobConfig->ExternalDeviceConfig;
+  _63 = _62->ExDeviceConfig;
+  _64 = _63->Instance;
+  _65 = (int) _64;
+  _66 = Lpspi_Ip_apxStateStructureArray[_65];
+  _67 = NextChannelConfig->Lsb;
+  _66->LsbNext = _67;
+  _68 = JobConfig->ExternalDeviceConfig;
+  _69 = _68->ExDeviceConfig;
+  _70 = _69->Instance;
+  _71 = (int) _70;
+  _72 = Lpspi_Ip_apxStateStructureArray[_71];
+  _73 = NextChannelConfig->DefaultTransmitValue;
+  _72->DefaultDataNext = _73;
+  _74 = NextChannelConfig->ChannelState;
+  _75 = JobConfig->ExternalDeviceConfig;
+  _76 = _75->ExDeviceConfig;
+  _77 = _76->Instance;
+  _78 = (int) _77;
+  _79 = Lpspi_Ip_apxStateStructureArray[_78];
+  _80 = _74->Length;
+  _79->LengthNext = _80;
+
+  <bb 13> :
+  if (ChannelIndex == 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _81 = JobConfig->ExternalDeviceConfig;
+  _82 = _81->ExDeviceConfig;
+  _83 = _82->Instance;
+  _84 = (int) _83;
+  _85 = Lpspi_Ip_apxStateStructureArray[_84];
+  _85->FirstCmd = 1;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  _86 = JobConfig->ExternalDeviceConfig;
+  _87 = _86->ExDeviceConfig;
+  _88 = _87->Instance;
+  _89 = (int) _88;
+  _90 = Lpspi_Ip_apxStateStructureArray[_89];
+  _90->FirstCmd = 0;
+
+  <bb 16> :
+  Ipw_Status = Spi_Ipw_SyncTransmitProcess (JobConfig, ChannelConfig, RxBuffer, TxBuffer);
+  ChannelIndex.0_91 = ChannelIndex;
+  ChannelIndex = ChannelIndex.0_91 + 1;
+
+  <bb 17> :
+  if (ChannelIndex < NumChannelsInJob)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  D.6080 = Ipw_Status;
+
+  <bb 19> :
+<L17>:
+  return D.6080;
+
+}
+
+
+Spi_Ipw_DeInit (Spi_HWUnitType HWUnit, uint32 SpiCoreID)
+{
+  <bb 2> :
+  _1 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _2 = _1->HWUnitConfig;
+  _3 = (unsigned int) HWUnit;
+  _4 = _3 * 4;
+  _5 = _2 + _4;
+  _6 = _5->PhyUnitConfig;
+  _7 = _6->IpType;
+  if (_7 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _8 = Spi_apxSpiConfigPtr[SpiCoreID];
+  _9 = _8->HWUnitConfig;
+  _10 = (unsigned int) HWUnit;
+  _11 = _10 * 4;
+  _12 = _9 + _11;
+  _13 = _12->PhyUnitConfig;
+  _14 = _13->Instance;
+  Lpspi_Ip_DeInit (_14);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Spi_Ipw_Init (const Spi_HWUnitType HWUnitId, const struct Spi_HWUnitConfigType * HWUnit)
+{
+  <bb 2> :
+  _1 = HWUnit->IpType;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = HWUnit->Instance;
+  _3 = (int) _2;
+  Spi_Ipw_au8LpspiHWUnitMapping[_3] = HWUnitId;
+  _4 = HWUnit->IpConfig.LpspiIpConfig;
+  Lpspi_Ip_Init (_4);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Spi_Ipw_SyncTransmitProcess (const struct Spi_JobConfigType * JobConfig, const struct Spi_ChannelConfigType * ChannelConfig, Spi_DataBufferType * RxBuffer, Spi_DataBufferType * TxBuffer)
+{
+  Spi_Ipw_SupportedIpsType IpType;
+  Spi_NumberOfDataType NumberOfBytes;
+  Std_ReturnType Ipw_Status;
+  const struct Lpspi_Ip_ExternalDeviceType * LpspiExternalDevice;
+  Lpspi_Ip_StatusType Lpspi_spiStatus;
+  Std_ReturnType D.6060;
+
+  <bb 2> :
+  Lpspi_spiStatus = 0;
+  Ipw_Status = 0;
+  _1 = JobConfig->ExternalDeviceConfig;
+  _2 = _1->ExDeviceConfig;
+  IpType = _2->IpType;
+  _3 = ChannelConfig->ChannelState;
+  NumberOfBytes = _3->Length;
+  if (IpType == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  _4 = JobConfig->ExternalDeviceConfig;
+  _5 = _4->ExDeviceConfig;
+  LpspiExternalDevice = _5->ExternalDeviceConfig.LpspiExternalDeviceConfig;
+  _6 = ChannelConfig->DefaultTransmitValue;
+  Lpspi_spiStatus = Lpspi_Ip_UpdateDefaultTransmitData (LpspiExternalDevice, _6);
+  if (Lpspi_spiStatus == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  _7 = ChannelConfig->FrameSize;
+  Lpspi_spiStatus = Lpspi_Ip_UpdateFrameSize (LpspiExternalDevice, _7);
+  if (Lpspi_spiStatus == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  _8 = ChannelConfig->Lsb;
+  Lpspi_spiStatus = Lpspi_Ip_UpdateLsb (LpspiExternalDevice, _8);
+  if (Lpspi_spiStatus == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Lpspi_spiStatus = Lpspi_Ip_SyncTransmit (LpspiExternalDevice, TxBuffer, RxBuffer, NumberOfBytes, 5000);
+
+  <bb 7> :
+  if (Lpspi_spiStatus != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Ipw_Status = 1;
+
+  <bb 9> :
+  D.6060 = Ipw_Status;
+
+  <bb 10> :
+<L10>:
+  return D.6060;
+
+}
+
+

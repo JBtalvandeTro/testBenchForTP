@@ -1,0 +1,4480 @@
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+fpHwAcc_DmaCh_GetParam.7019/131 (fpHwAcc_DmaCh_GetParam) @05e545a0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: HwAccDmaCh_GetSourceAddress/115 (addr)HwAccDmaCh_GetDestinationAddress/116 (addr)HwAccDmaCh_GetBeginIterCount/117 (addr)HwAccDmaCh_GetCurrentIterCount/118 (addr)HwAccDmaCh_GetParamDummyFunction/65 (addr)HwAccDmaCh_GetParamDummyFunction/65 (addr)HwAccDmaCh_GetIntMajor/119 (addr)HwAccDmaCh_GetIntHalfMajor/120 (addr)HwAccDmaCh_GetParamDummyFunction/65 (addr)
+  Referring: HwAccDmaCh_GetParam/121 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+fpHwAcc_DmaCh_SetTransferParam.6951/130 (fpHwAcc_DmaCh_SetTransferParam) @05cca090
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: HwAccDmaCh_SetSource_Address/90 (addr)HwAccDmaCh_SetSource_SignedOffset/91 (addr)HwAccDmaCh_SetSource_LastAddrAdj/92 (addr)HwAccDmaCh_SetSource_TransferSize/93 (addr)HwAccDmaCh_SetSource_Modulo/94 (addr)HwAccDmaCh_SetDestination_Address/95 (addr)HwAccDmaCh_SetDestination_SignedOffset/96 (addr)HwAccDmaCh_SetDestination_LastAddrAdj/97 (addr)HwAccDmaCh_SetDestination_TransferSize/98 (addr)HwAccDmaCh_SetDestination_Modulo/99 (addr)HwAccDmaCh_SetMinorLoop_enSrcOffset/100 (addr)HwAccDmaCh_SetMinorLoop_enDstOffset/101 (addr)HwAccDmaCh_SetMinorLoop_Offset/102 (addr)HwAccDmaCh_SetMinorLoop_EnLink/103 (addr)HwAccDmaCh_SetMinorLoop_LogicLinkCh/104 (addr)HwAccDmaCh_SetMinorLoop_Size/105 (addr)HwAccDmaCh_SetMajorLoop_EnLink/106 (addr)HwAccDmaCh_SetMajorLoop_LogicLinkCh/107 (addr)HwAccDmaCh_SetMajorLoop_Count/108 (addr)HwAccDmaCh_SetTransferDummyFunction/64 (addr)HwAccDmaCh_SetControl_EnStart/109 (addr)HwAccDmaCh_SetControl_EnMajor/110 (addr)HwAccDmaCh_SetControl_EnHalfMajor/111 (addr)HwAccDmaCh_SetControl_DisAutoHwRequest/112 (addr)HwAccDmaCh_SetTransferDummyFunction/64 (addr)HwAccDmaCh_SetControl_BandwidthControl/113 (addr)
+  Referring: HwAccDmaCh_SetTransferParam/114 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Dma_Ip_ConvertLogicChToHwCh/129 (Dma_Ip_ConvertLogicChToHwCh) @05e468c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMajorLoop_LogicLinkCh/107 HwAccDmaCh_SetMinorLoop_LogicLinkCh/104 
+  Calls: 
+fpHwAcc_DmaCh_SetGlobalParam.6747/128 (fpHwAcc_DmaCh_SetGlobalParam) @05e337e0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: HwAccDmaCh_SetGlobalDummyFunction/63 (addr)HwAccDmaCh_SetGlobalDummyFunction/63 (addr)HwAccDmaCh_SetRequest_EnMuxSource/81 (addr)HwAccDmaCh_SetRequest_MuxSource/82 (addr)HwAccDmaCh_SetRequest_EnMuxTrigger/83 (addr)HwAccDmaCh_SetRequest_EnRequest/84 (addr)HwAccDmaCh_SetInterrupt_EnError/85 (addr)HwAccDmaCh_SetGlobalDummyFunction/63 (addr)HwAccDmaCh_SetPriority_Level/86 (addr)HwAccDmaCh_SetPriority_EnPreemption/87 (addr)HwAccDmaCh_SetPriority_DisPreempt/88 (addr)
+  Referring: HwAccDmaCh_SetGlobalParam/89 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+fpHwAcc_DmaCh_Command.6636/127 (fpHwAcc_DmaCh_Command) @05e23798
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: HwAccDmaCh_CmdSetHwRequest/73 (addr)HwAccDmaCh_CmdClearHwRequest/74 (addr)HwAccDmaCh_CmdSetSwRequest/75 (addr)HwAccDmaCh_CmdClearDone/76 (addr)HwAccDmaCh_CmdClearError/77 (addr)
+  Referring: HwAccDmaCh_SetCommand/78 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+fpHwAcc_DmaInst_Command.6577/126 (fpHwAcc_DmaInst_Command) @05e19288
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: hwAccDmaInst_CmdCancelTransfer/67 (addr)hwAccDmaInst_CmdCancelTransferWithError/68 (addr)hwAccDmaInst_CmdHalt/69 (addr)hwAccDmaInst_CmdResume/70 (addr)
+  Referring: HwAccDmaInst_SetCommand/71 (read)
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+HwAccDmaCh_SetControl_EnScatterGatherProcessing/125 (HwAccDmaCh_SetControl_EnScatterGatherProcessing) @05deeee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing/58 
+HwAccDmaCh_SetControl_ScatterGatherAddress/124 (HwAccDmaCh_SetControl_ScatterGatherAddress) @05deec40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress/46 
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/123 (HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd) @05dee9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdClearDone/13 
+HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 (HwAccDmaCh_LoadConfigIntoSoftwareTcd) @05de5a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj/29 hwv2AccInlineDmaCh_SetMajorLoop_Count/45 hwv2AccInlineDmaCh_SetMajorLoop_LinkCh/44 hwv2AccInlineDmaCh_SetMajorLoop_LinkCh/44 Dma_Ip_ConvertLogicChToHwCh/129 hwv2AccInlineDmaCh_SetMajorLoop_EnLink/43 hwv2AccInlineDmaCh_SetMinorLoop_Size/42 hwv2AccInlineDmaCh_SetMinorLoop_LinkCh/41 Dma_Ip_ConvertLogicChToHwCh/129 hwv2AccInlineDmaCh_SetMinorLoop_EnLink/40 hwv2AccInlineDmaCh_SetSignedMinorLoopOffset/61 hwv2AccInlineDmaCh_SetTransferAttributes/60 hwv2AccInlineDmaCh_SetDestination_SignedOffset/33 hwv2AccInlineDmaCh_SetDestination_Address/32 hwv2AccInlineDmaCh_SetSource_SignedOffset/28 hwv2AccInlineDmaCh_SetSource_Address/27 hwv2AccInlineDmaCh_SetControlAndStatus/59 hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing/58 hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress/46 hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress/46 
+HwAccDmaCh_GetParam/121 (HwAccDmaCh_GetParam) @05de5380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: fpHwAcc_DmaCh_GetParam.7019/131 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+HwAccDmaCh_GetIntHalfMajor/120 (HwAccDmaCh_GetIntHalfMajor) @05de5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetIntHalfMajor/57 
+HwAccDmaCh_GetIntMajor/119 (HwAccDmaCh_GetIntMajor) @05de59a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetIntMajor/56 
+HwAccDmaCh_GetCurrentIterCount/118 (HwAccDmaCh_GetCurrentIterCount) @05de5620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetCurrentIterCount/55 
+HwAccDmaCh_GetBeginIterCount/117 (HwAccDmaCh_GetBeginIterCount) @05de52a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetBeginIterCount/54 
+HwAccDmaCh_GetDestinationAddress/116 (HwAccDmaCh_GetDestinationAddress) @05ddcee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetDestinationAddress/53 
+HwAccDmaCh_GetSourceAddress/115 (HwAccDmaCh_GetSourceAddress) @05ddc620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetSourceAddress/52 
+HwAccDmaCh_SetTransferParam/114 (HwAccDmaCh_SetTransferParam) @05ddce00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: fpHwAcc_DmaCh_SetTransferParam.6951/130 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+HwAccDmaCh_SetControl_BandwidthControl/113 (HwAccDmaCh_SetControl_BandwidthControl) @05ddca80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_BandwidthControl/51 
+HwAccDmaCh_SetControl_DisAutoHwRequest/112 (HwAccDmaCh_SetControl_DisAutoHwRequest) @05ddc7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest/50 
+HwAccDmaCh_SetControl_EnHalfMajor/111 (HwAccDmaCh_SetControl_EnHalfMajor) @05ddc540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_EnHalfMajor/49 
+HwAccDmaCh_SetControl_EnMajor/110 (HwAccDmaCh_SetControl_EnMajor) @05ddc2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_EnMajor/48 
+HwAccDmaCh_SetControl_EnStart/109 (HwAccDmaCh_SetControl_EnStart) @05ddc000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetControl_EnStart/47 
+HwAccDmaCh_SetMajorLoop_Count/108 (HwAccDmaCh_SetMajorLoop_Count) @05dd6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMajorLoop_Count/45 
+HwAccDmaCh_SetMajorLoop_LogicLinkCh/107 (HwAccDmaCh_SetMajorLoop_LogicLinkCh) @05dd6620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMajorLoop_LinkCh/44 Dma_Ip_ConvertLogicChToHwCh/129 
+HwAccDmaCh_SetMajorLoop_EnLink/106 (HwAccDmaCh_SetMajorLoop_EnLink) @05dd60e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMajorLoop_EnLink/43 
+HwAccDmaCh_SetMinorLoop_Size/105 (HwAccDmaCh_SetMinorLoop_Size) @05dd6d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_Size/42 
+HwAccDmaCh_SetMinorLoop_LogicLinkCh/104 (HwAccDmaCh_SetMinorLoop_LogicLinkCh) @05dd6a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_LinkCh/41 Dma_Ip_ConvertLogicChToHwCh/129 
+HwAccDmaCh_SetMinorLoop_EnLink/103 (HwAccDmaCh_SetMinorLoop_EnLink) @05dd67e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_EnLink/40 
+HwAccDmaCh_SetMinorLoop_Offset/102 (HwAccDmaCh_SetMinorLoop_Offset) @05dd6540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset/39 
+HwAccDmaCh_SetMinorLoop_enDstOffset/101 (HwAccDmaCh_SetMinorLoop_enDstOffset) @05dd62a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset/38 
+HwAccDmaCh_SetMinorLoop_enSrcOffset/100 (HwAccDmaCh_SetMinorLoop_enSrcOffset) @05dd6000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset/37 
+HwAccDmaCh_SetDestination_Modulo/99 (HwAccDmaCh_SetDestination_Modulo) @05dcfb60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetDestination_Modulo/36 
+HwAccDmaCh_SetDestination_TransferSize/98 (HwAccDmaCh_SetDestination_TransferSize) @05dcf620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetDestination_TransferSize/35 
+HwAccDmaCh_SetDestination_LastAddrAdj/97 (HwAccDmaCh_SetDestination_LastAddrAdj) @05dcf0e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetDestination_LastAddrAdj/34 
+HwAccDmaCh_SetDestination_SignedOffset/96 (HwAccDmaCh_SetDestination_SignedOffset) @05dcfd20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetDestination_SignedOffset/33 
+HwAccDmaCh_SetDestination_Address/95 (HwAccDmaCh_SetDestination_Address) @05dcfa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetDestination_Address/32 
+HwAccDmaCh_SetSource_Modulo/94 (HwAccDmaCh_SetSource_Modulo) @05dcf7e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_Modulo/31 
+HwAccDmaCh_SetSource_TransferSize/93 (HwAccDmaCh_SetSource_TransferSize) @05dcf540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_TransferSize/30 
+HwAccDmaCh_SetSource_LastAddrAdj/92 (HwAccDmaCh_SetSource_LastAddrAdj) @05dcf2a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj/29 
+HwAccDmaCh_SetSource_SignedOffset/91 (HwAccDmaCh_SetSource_SignedOffset) @05dcf000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_SignedOffset/28 
+HwAccDmaCh_SetSource_Address/90 (HwAccDmaCh_SetSource_Address) @05dc6c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetSource_Address/27 
+HwAccDmaCh_SetGlobalParam/89 (HwAccDmaCh_SetGlobalParam) @05dc6700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+HwAccDmaCh_SetPriority_DisPreempt/88 (HwAccDmaCh_SetPriority_DisPreempt) @05dc6e00
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetPriority_DisPreempt/26 
+HwAccDmaCh_SetPriority_EnPreemption/87 (HwAccDmaCh_SetPriority_EnPreemption) @05dc6b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetPriority_EnPreemption/25 
+HwAccDmaCh_SetPriority_Level/86 (HwAccDmaCh_SetPriority_Level) @05dc68c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetPriority_Level/24 
+HwAccDmaCh_SetInterrupt_EnError/85 (HwAccDmaCh_SetInterrupt_EnError) @05dc6620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetInterrupt_EnError/22 
+HwAccDmaCh_SetRequest_EnRequest/84 (HwAccDmaCh_SetRequest_EnRequest) @05dc6380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetRequest_EnHwRequest/21 
+HwAccDmaCh_SetRequest_EnMuxTrigger/83 (HwAccDmaCh_SetRequest_EnMuxTrigger) @05dc60e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetRequest_EnTriggerMux/19 
+HwAccDmaCh_SetRequest_MuxSource/82 (HwAccDmaCh_SetRequest_MuxSource) @05dc0a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetRequest_SourceMux/18 
+HwAccDmaCh_SetRequest_EnMuxSource/81 (HwAccDmaCh_SetRequest_EnMuxSource) @05dc00e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux/20 
+HwAccDmaCh_GetStatus_Error/80 (HwAccDmaCh_GetStatus_Error) @05dc0c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetErrorStatus/15 
+HwAccDmaCh_GetStatus/79 (HwAccDmaCh_GetStatus) @05dc09a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_GetDoneStatus/17 hwv2AccInlineDmaCh_GetActiveStatus/16 
+HwAccDmaCh_SetCommand/78 (HwAccDmaCh_SetCommand) @05dc0540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: fpHwAcc_DmaCh_Command.6636/127 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+HwAccDmaCh_CmdClearError/77 (HwAccDmaCh_CmdClearError) @05dc02a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_Command.6636/127 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdClearError/14 
+HwAccDmaCh_CmdClearDone/76 (HwAccDmaCh_CmdClearDone) @05dc0000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_Command.6636/127 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdClearDone/13 
+HwAccDmaCh_CmdSetSwRequest/75 (HwAccDmaCh_CmdSetSwRequest) @05db7b60
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_Command.6636/127 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdSwReqStart/12 
+HwAccDmaCh_CmdClearHwRequest/74 (HwAccDmaCh_CmdClearHwRequest) @05db7620
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_Command.6636/127 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdClearRequest/11 
+HwAccDmaCh_CmdSetHwRequest/73 (HwAccDmaCh_CmdSetHwRequest) @05db70e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_Command.6636/127 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaCh_CmdSetRequest/10 
+HwAccDmaInst_GetStatus/72 (HwAccDmaInst_GetStatus) @05db7d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_GetActiveStatus/9 hwv2AccInlineDmaInst_GetActiveIdStatus/8 hwv2AccInlineDmaInst_GetErrorStatus/7 
+HwAccDmaInst_SetCommand/71 (HwAccDmaInst_SetCommand) @05db7a80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: fpHwAcc_DmaInst_Command.6577/126 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+   Indirect call
+hwAccDmaInst_CmdResume/70 (hwAccDmaInst_CmdResume) @05db77e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaInst_Command.6577/126 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_CmdResume/6 
+hwAccDmaInst_CmdHalt/69 (hwAccDmaInst_CmdHalt) @05db7540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaInst_Command.6577/126 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_CmdHalt/5 
+hwAccDmaInst_CmdCancelTransferWithError/68 (hwAccDmaInst_CmdCancelTransferWithError) @05db72a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaInst_Command.6577/126 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_CmdCancelTransferWithError/4 
+hwAccDmaInst_CmdCancelTransfer/67 (hwAccDmaInst_CmdCancelTransfer) @05db7000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaInst_Command.6577/126 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_CmdCancelTransfer/3 
+HwAccDmaInst_SetConfig/66 (HwAccDmaInst_SetConfig) @05cbfa80
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: hwv2AccInlineDmaInst_SetConfig/2 
+HwAccDmaCh_GetParamDummyFunction/65 (HwAccDmaCh_GetParamDummyFunction) @05cbfee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_GetParam.7019/131 (addr)fpHwAcc_DmaCh_GetParam.7019/131 (addr)fpHwAcc_DmaCh_GetParam.7019/131 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetTransferDummyFunction/64 (HwAccDmaCh_SetTransferDummyFunction) @05cbfc40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)fpHwAcc_DmaCh_SetTransferParam.6951/130 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+HwAccDmaCh_SetGlobalDummyFunction/63 (HwAccDmaCh_SetGlobalDummyFunction) @05cbf9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: 
+  Referring: fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)fpHwAcc_DmaCh_SetGlobalParam.6747/128 (addr)
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+g_ptHwv2MuxBasePtrArray/62 (g_ptHwv2MuxBasePtrArray) @05cb5240
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+hwv2AccInlineDmaCh_SetSignedMinorLoopOffset/61 (hwv2AccInlineDmaCh_SetSignedMinorLoopOffset) @05cae380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 
+  Calls: 
+hwv2AccInlineDmaCh_SetTransferAttributes/60 (hwv2AccInlineDmaCh_SetTransferAttributes) @05cae0e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 
+  Calls: 
+hwv2AccInlineDmaCh_SetControlAndStatus/59 (hwv2AccInlineDmaCh_SetControlAndStatus) @05ca7e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 
+  Calls: 
+hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing/58 (hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing) @05ca7b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_EnScatterGatherProcessing/125 HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 
+  Calls: 
+hwv2AccInlineDmaCh_GetIntHalfMajor/57 (hwv2AccInlineDmaCh_GetIntHalfMajor) @05ca77e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetIntHalfMajor/120 
+  Calls: 
+hwv2AccInlineDmaCh_GetIntMajor/56 (hwv2AccInlineDmaCh_GetIntMajor) @05ca7540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetIntMajor/119 
+  Calls: 
+hwv2AccInlineDmaCh_GetCurrentIterCount/55 (hwv2AccInlineDmaCh_GetCurrentIterCount) @05ca72a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetCurrentIterCount/118 
+  Calls: 
+hwv2AccInlineDmaCh_GetBeginIterCount/54 (hwv2AccInlineDmaCh_GetBeginIterCount) @05ca7000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetBeginIterCount/117 
+  Calls: 
+hwv2AccInlineDmaCh_GetDestinationAddress/53 (hwv2AccInlineDmaCh_GetDestinationAddress) @05ca3d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetDestinationAddress/116 
+  Calls: 
+hwv2AccInlineDmaCh_GetSourceAddress/52 (hwv2AccInlineDmaCh_GetSourceAddress) @05ca3a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetSourceAddress/115 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_BandwidthControl/51 (hwv2AccInlineDmaCh_SetControl_BandwidthControl) @05ca37e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_BandwidthControl/113 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest/50 (hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest) @05ca3460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_DisAutoHwRequest/112 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_EnHalfMajor/49 (hwv2AccInlineDmaCh_SetControl_EnHalfMajor) @05ca30e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_EnHalfMajor/111 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_EnMajor/48 (hwv2AccInlineDmaCh_SetControl_EnMajor) @05c54d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_EnMajor/110 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_EnStart/47 (hwv2AccInlineDmaCh_SetControl_EnStart) @05c549a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_EnStart/109 
+  Calls: 
+hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress/46 (hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress) @05c54620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetControl_ScatterGatherAddress/124 HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 
+  Calls: 
+hwv2AccInlineDmaCh_SetMajorLoop_Count/45 (hwv2AccInlineDmaCh_SetMajorLoop_Count) @05c542a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMajorLoop_Count/108 
+  Calls: 
+hwv2AccInlineDmaCh_SetMajorLoop_LinkCh/44 (hwv2AccInlineDmaCh_SetMajorLoop_LinkCh) @05c50c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMajorLoop_LogicLinkCh/107 
+  Calls: 
+hwv2AccInlineDmaCh_SetMajorLoop_EnLink/43 (hwv2AccInlineDmaCh_SetMajorLoop_EnLink) @05c508c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMajorLoop_EnLink/106 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_Size/42 (hwv2AccInlineDmaCh_SetMinorLoop_Size) @05c50540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMinorLoop_Size/105 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_LinkCh/41 (hwv2AccInlineDmaCh_SetMinorLoop_LinkCh) @05c500e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMinorLoop_LogicLinkCh/104 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_EnLink/40 (hwv2AccInlineDmaCh_SetMinorLoop_EnLink) @05c4dc40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetMinorLoop_EnLink/103 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset/39 (hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset) @05c4d7e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetMinorLoop_Offset/102 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset/38 (hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset) @05c4d460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetMinorLoop_enDstOffset/101 
+  Calls: 
+hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset/37 (hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset) @05c4d0e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetMinorLoop_enSrcOffset/100 
+  Calls: 
+hwv2AccInlineDmaCh_SetDestination_Modulo/36 (hwv2AccInlineDmaCh_SetDestination_Modulo) @05c37d20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetDestination_Modulo/99 
+  Calls: 
+hwv2AccInlineDmaCh_SetDestination_TransferSize/35 (hwv2AccInlineDmaCh_SetDestination_TransferSize) @05c379a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetDestination_TransferSize/98 
+  Calls: 
+hwv2AccInlineDmaCh_SetDestination_LastAddrAdj/34 (hwv2AccInlineDmaCh_SetDestination_LastAddrAdj) @05c37620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetDestination_LastAddrAdj/97 
+  Calls: 
+hwv2AccInlineDmaCh_SetDestination_SignedOffset/33 (hwv2AccInlineDmaCh_SetDestination_SignedOffset) @05c372a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetDestination_SignedOffset/96 
+  Calls: 
+hwv2AccInlineDmaCh_SetDestination_Address/32 (hwv2AccInlineDmaCh_SetDestination_Address) @05c31ee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetDestination_Address/95 
+  Calls: 
+hwv2AccInlineDmaCh_SetSource_Modulo/31 (hwv2AccInlineDmaCh_SetSource_Modulo) @05c31b60
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetSource_Modulo/94 
+  Calls: 
+hwv2AccInlineDmaCh_SetSource_TransferSize/30 (hwv2AccInlineDmaCh_SetSource_TransferSize) @05c317e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetSource_TransferSize/93 
+  Calls: 
+hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj/29 (hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj) @05c31460
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetSource_LastAddrAdj/92 
+  Calls: 
+hwv2AccInlineDmaCh_SetSource_SignedOffset/28 (hwv2AccInlineDmaCh_SetSource_SignedOffset) @05c310e0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetSource_SignedOffset/91 
+  Calls: 
+hwv2AccInlineDmaCh_SetSource_Address/27 (hwv2AccInlineDmaCh_SetSource_Address) @05c2dd20
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadConfigIntoSoftwareTcd/122 HwAccDmaCh_SetSource_Address/90 
+  Calls: 
+hwv2AccInlineDmaCh_SetPriority_DisPreempt/26 (hwv2AccInlineDmaCh_SetPriority_DisPreempt) @05c2d9a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetPriority_DisPreempt/88 
+  Calls: 
+hwv2AccInlineDmaCh_SetPriority_EnPreemption/25 (hwv2AccInlineDmaCh_SetPriority_EnPreemption) @05c2d620
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetPriority_EnPreemption/87 
+  Calls: 
+hwv2AccInlineDmaCh_SetPriority_Level/24 (hwv2AccInlineDmaCh_SetPriority_Level) @05c2d2a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetPriority_Level/86 
+  Calls: 
+hwv2AccInlineDmaCh_SetInterrupt_EnError/22 (hwv2AccInlineDmaCh_SetInterrupt_EnError) @05c2bc40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetInterrupt_EnError/85 
+  Calls: 
+hwv2AccInlineDmaCh_SetRequest_EnHwRequest/21 (hwv2AccInlineDmaCh_SetRequest_EnHwRequest) @05c2b9a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetRequest_EnRequest/84 
+  Calls: 
+hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux/20 (hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux) @05c2b700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetRequest_EnMuxSource/81 
+  Calls: 
+hwv2AccInlineDmaCh_SetRequest_EnTriggerMux/19 (hwv2AccInlineDmaCh_SetRequest_EnTriggerMux) @05c2b380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetRequest_EnMuxTrigger/83 
+  Calls: 
+hwv2AccInlineDmaCh_SetRequest_SourceMux/18 (hwv2AccInlineDmaCh_SetRequest_SourceMux) @05c2b000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_SetRequest_MuxSource/82 
+  Calls: 
+hwv2AccInlineDmaCh_GetDoneStatus/17 (hwv2AccInlineDmaCh_GetDoneStatus) @05ae1c40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetStatus/79 
+  Calls: 
+hwv2AccInlineDmaCh_GetActiveStatus/16 (hwv2AccInlineDmaCh_GetActiveStatus) @05ae19a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetStatus/79 
+  Calls: 
+hwv2AccInlineDmaCh_GetErrorStatus/15 (hwv2AccInlineDmaCh_GetErrorStatus) @05ae1700
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_GetStatus_Error/80 
+  Calls: 
+hwv2AccInlineDmaCh_CmdClearError/14 (hwv2AccInlineDmaCh_CmdClearError) @05ae1380
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_CmdClearError/77 
+  Calls: 
+hwv2AccInlineDmaCh_CmdClearDone/13 (hwv2AccInlineDmaCh_CmdClearDone) @05ae1000
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd/123 HwAccDmaCh_CmdClearDone/76 
+  Calls: 
+hwv2AccInlineDmaCh_CmdSwReqStart/12 (hwv2AccInlineDmaCh_CmdSwReqStart) @05adcc40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_CmdSetSwRequest/75 
+  Calls: 
+hwv2AccInlineDmaCh_CmdClearRequest/11 (hwv2AccInlineDmaCh_CmdClearRequest) @05adc8c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_CmdClearHwRequest/74 
+  Calls: 
+hwv2AccInlineDmaCh_CmdSetRequest/10 (hwv2AccInlineDmaCh_CmdSetRequest) @05adc540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaCh_CmdSetHwRequest/73 
+  Calls: 
+hwv2AccInlineDmaInst_GetActiveStatus/9 (hwv2AccInlineDmaInst_GetActiveStatus) @05adc1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaInst_GetStatus/72 
+  Calls: 
+hwv2AccInlineDmaInst_GetActiveIdStatus/8 (hwv2AccInlineDmaInst_GetActiveIdStatus) @05adaee0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaInst_GetStatus/72 
+  Calls: 
+hwv2AccInlineDmaInst_GetErrorStatus/7 (hwv2AccInlineDmaInst_GetErrorStatus) @05adac40
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaInst_GetStatus/72 
+  Calls: 
+hwv2AccInlineDmaInst_CmdResume/6 (hwv2AccInlineDmaInst_CmdResume) @05ada8c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: hwAccDmaInst_CmdResume/70 
+  Calls: 
+hwv2AccInlineDmaInst_CmdHalt/5 (hwv2AccInlineDmaInst_CmdHalt) @05ada540
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: hwAccDmaInst_CmdHalt/69 
+  Calls: 
+hwv2AccInlineDmaInst_CmdCancelTransferWithError/4 (hwv2AccInlineDmaInst_CmdCancelTransferWithError) @05ada1c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: hwAccDmaInst_CmdCancelTransferWithError/68 
+  Calls: 
+hwv2AccInlineDmaInst_CmdCancelTransfer/3 (hwv2AccInlineDmaInst_CmdCancelTransfer) @05ab0e00
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: hwAccDmaInst_CmdCancelTransfer/67 
+  Calls: 
+hwv2AccInlineDmaInst_SetConfig/2 (hwv2AccInlineDmaInst_SetConfig) @05ab0a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: HwAccDmaInst_SetConfig/66 
+  Calls: 
+g_ptHwv2BaseTcdPtrArray/1 (g_ptHwv2BaseTcdPtrArray) @05aa5ca8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+g_ptHwv2BaseInstPtrArray/0 (g_ptHwv2BaseInstPtrArray) @05aa5b88
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+HwAccDmaCh_SetControl_EnScatterGatherProcessing (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, boolean LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_ScatterGatherAddress (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_LoadSoftwareTcdIntoHardwareTcd (const struct Dma_Ip_LogicChannelIdType * const pxLocLogicCh, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint32 LocHwCh;
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  struct Dma_Ip_Hwv2InstRegType * _4;
+  struct Dma_Ip_SwTcdRegType * _5;
+  struct Dma_Ip_Hwv2TcdArrayType * _6;
+  long unsigned int _7;
+  struct Dma_Ip_SwTcdRegType * _8;
+  struct Dma_Ip_Hwv2TcdArrayType * _9;
+  short unsigned int _10;
+  struct Dma_Ip_SwTcdRegType * _11;
+  struct Dma_Ip_Hwv2TcdArrayType * _12;
+  short unsigned int _13;
+  struct Dma_Ip_SwTcdRegType * _14;
+  struct Dma_Ip_Hwv2TcdArrayType * _15;
+  long unsigned int _16;
+  struct Dma_Ip_SwTcdRegType * _17;
+  struct Dma_Ip_Hwv2TcdArrayType * _18;
+  long unsigned int _19;
+  struct Dma_Ip_SwTcdRegType * _20;
+  struct Dma_Ip_Hwv2TcdArrayType * _21;
+  long unsigned int _22;
+  struct Dma_Ip_SwTcdRegType * _23;
+  struct Dma_Ip_Hwv2TcdArrayType * _24;
+  short unsigned int _25;
+  struct Dma_Ip_SwTcdRegType * _26;
+  struct Dma_Ip_Hwv2TcdArrayType * _27;
+  short unsigned int _28;
+  struct Dma_Ip_SwTcdRegType * _29;
+  struct Dma_Ip_Hwv2TcdArrayType * _30;
+  long unsigned int _31;
+  struct Dma_Ip_SwTcdRegType * _32;
+  struct Dma_Ip_Hwv2TcdArrayType * _33;
+  short unsigned int _34;
+  struct Dma_Ip_SwTcdRegType * _35;
+  struct Dma_Ip_Hwv2TcdArrayType * _36;
+  short unsigned int _37;
+
+  <bb 2> :
+  _1 = pxLocLogicCh_40(D)->HwVersId;
+  LocHwVers_41 = (uint32) _1;
+  _2 = pxLocLogicCh_40(D)->HwInstId;
+  LocHwInst_42 = (uint32) _2;
+  _3 = pxLocLogicCh_40(D)->HwChId;
+  LocHwCh_43 = (uint32) _3;
+  if (LocHwVers_41 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _4 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearDone (_4, LocHwCh_43);
+  _5 = pxLocScatterGather_45(D)->Stcd;
+  _6 = 1073778688B;
+  _7 = _5->reg_SADDR;
+  _6->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_SADDR = _7;
+  _8 = pxLocScatterGather_45(D)->Stcd;
+  _9 = 1073778688B;
+  _10 = _8->reg_SOFF;
+  _9->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_SOFF = _10;
+  _11 = pxLocScatterGather_45(D)->Stcd;
+  _12 = 1073778688B;
+  _13 = _11->reg_ATTR;
+  _12->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_ATTR = _13;
+  _14 = pxLocScatterGather_45(D)->Stcd;
+  _15 = 1073778688B;
+  _16 = _14->reg_NBYTES.reg_MLOFFYES;
+  _15->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_NBYTES.reg_MLOFFYES = _16;
+  _17 = pxLocScatterGather_45(D)->Stcd;
+  _18 = 1073778688B;
+  _19 = _17->reg_SLAST;
+  _18->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_SLAST = _19;
+  _20 = pxLocScatterGather_45(D)->Stcd;
+  _21 = 1073778688B;
+  _22 = _20->reg_DADDR;
+  _21->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_DADDR = _22;
+  _23 = pxLocScatterGather_45(D)->Stcd;
+  _24 = 1073778688B;
+  _25 = _23->reg_DOFF;
+  _24->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_DOFF = _25;
+  _26 = pxLocScatterGather_45(D)->Stcd;
+  _27 = 1073778688B;
+  _28 = _26->reg_CITER.reg_ELINKYES;
+  _27->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_CITER.reg_ELINKYES = _28;
+  _29 = pxLocScatterGather_45(D)->Stcd;
+  _30 = 1073778688B;
+  _31 = _29->reg_DLAST_SGA;
+  _30->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_DLAST_SGA = _31;
+  _32 = pxLocScatterGather_45(D)->Stcd;
+  _33 = 1073778688B;
+  _34 = _32->reg_BITER.reg_ELINKYES;
+  _33->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_BITER.reg_ELINKYES = _34;
+  _35 = pxLocScatterGather_45(D)->Stcd;
+  _36 = 1073778688B;
+  _37 = _35->reg_CSR;
+  _36->TCD_RSV[LocHwCh_43].tChTcdReg.tTcdReg.reg_CSR = _37;
+
+  <bb 4> :
+  return;
+
+}
+
+
+HwAccDmaCh_LoadConfigIntoSoftwareTcd (uint32 HwVersId, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather, const uint32 ElementId, const boolean NotLastElement)
+{
+  uint32 hwLinkCh;
+  const uint32 iftmp.6;
+  const uint32 iftmp.5;
+  struct Dma_Ip_SwTcdRegType * _1;
+  struct Dma_Ip_ScatterGatherConfigType * _2;
+  struct Dma_Ip_SwTcdRegType * _3;
+  long unsigned int _4;
+  struct Dma_Ip_SwTcdRegType * _5;
+  struct Dma_Ip_SwTcdRegType * _6;
+  struct Dma_Ip_TransferConfigType * _7;
+  struct Dma_Ip_SwTcdRegType * _8;
+  struct Dma_Ip_SwTcdRegType * _9;
+  struct Dma_Ip_TransferConfigType * _10;
+  long unsigned int _11;
+  struct Dma_Ip_SwTcdRegType * _12;
+  struct Dma_Ip_TransferConfigType * _13;
+  short int _14;
+  long unsigned int _15;
+  struct Dma_Ip_SwTcdRegType * _16;
+  struct Dma_Ip_TransferConfigType * _17;
+  long unsigned int _18;
+  struct Dma_Ip_SwTcdRegType * _19;
+  struct Dma_Ip_TransferConfigType * _20;
+  short int _21;
+  long unsigned int _22;
+  struct Dma_Ip_SwTcdRegType * _23;
+  struct Dma_Ip_SwTcdRegType * _24;
+  struct Dma_Ip_SwTcdRegType * _25;
+  struct Dma_Ip_TransferConfigType * _26;
+  _Bool _27;
+  struct Dma_Ip_TransferConfigType * _28;
+  unsigned char _29;
+  long unsigned int _30;
+  struct Dma_Ip_SwTcdRegType * _31;
+  struct Dma_Ip_SwTcdRegType * _32;
+  struct Dma_Ip_TransferConfigType * _33;
+  long unsigned int _34;
+  struct Dma_Ip_SwTcdRegType * _35;
+  struct Dma_Ip_TransferConfigType * _36;
+  _Bool _37;
+  struct Dma_Ip_TransferConfigType * _38;
+  _Bool _39;
+  struct Dma_Ip_TransferConfigType * _40;
+  unsigned char _41;
+  long unsigned int _42;
+  struct Dma_Ip_SwTcdRegType * _43;
+  struct Dma_Ip_SwTcdRegType * _44;
+  struct Dma_Ip_SwTcdRegType * _45;
+  struct Dma_Ip_TransferConfigType * _46;
+  long unsigned int _47;
+  struct Dma_Ip_SwTcdRegType * _48;
+  struct Dma_Ip_TransferConfigType * _49;
+  long int _50;
+  long unsigned int _51;
+  const uint32 iftmp.5_52;
+  const uint32 iftmp.6_53;
+  const uint32 iftmp.5_71;
+  const uint32 iftmp.5_72;
+  const uint32 iftmp.6_78;
+  const uint32 iftmp.6_79;
+
+  <bb 2> :
+  if (HwVersId_57(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 3> :
+  if (NotLastElement_59(D) != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _1 = pxLocScatterGather_60(D)->Stcd;
+  _2 = pxLocScatterGather_60(D)->NextConfig;
+  _3 = _2->Stcd;
+  _4 = (long unsigned int) _3;
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (_1, _4);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (_5, 0);
+
+  <bb 6> :
+  _6 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (_6, NotLastElement_59(D));
+  _7 = pxLocScatterGather_60(D)->TransferConfig;
+  if (_7 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 7> :
+  _8 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetControlAndStatus (_8, pxLocScatterGather_60(D));
+  _9 = pxLocScatterGather_60(D)->Stcd;
+  _10 = pxLocScatterGather_60(D)->TransferConfig;
+  _11 = _10->Source.Addr;
+  hwv2AccInlineDmaCh_SetSource_Address (_9, _11);
+  _12 = pxLocScatterGather_60(D)->Stcd;
+  _13 = pxLocScatterGather_60(D)->TransferConfig;
+  _14 = _13->Source.SignedOffset;
+  _15 = (long unsigned int) _14;
+  hwv2AccInlineDmaCh_SetSource_SignedOffset (_12, _15);
+  _16 = pxLocScatterGather_60(D)->Stcd;
+  _17 = pxLocScatterGather_60(D)->TransferConfig;
+  _18 = _17->Destination.Addr;
+  hwv2AccInlineDmaCh_SetDestination_Address (_16, _18);
+  _19 = pxLocScatterGather_60(D)->Stcd;
+  _20 = pxLocScatterGather_60(D)->TransferConfig;
+  _21 = _20->Destination.SignedOffset;
+  _22 = (long unsigned int) _21;
+  hwv2AccInlineDmaCh_SetDestination_SignedOffset (_19, _22);
+  _23 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetTransferAttributes (_23, pxLocScatterGather_60(D));
+  _24 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetSignedMinorLoopOffset (_24, pxLocScatterGather_60(D));
+  _25 = pxLocScatterGather_60(D)->Stcd;
+  _26 = pxLocScatterGather_60(D)->TransferConfig;
+  _27 = _26->MinorLoop.EnLink;
+  if (_27 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  iftmp.5_72 = 1;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.5_71 = 0;
+
+  <bb 10> :
+  # iftmp.5_52 = PHI <iftmp.5_72(8), iftmp.5_71(9)>
+  hwv2AccInlineDmaCh_SetMinorLoop_EnLink (_25, iftmp.5_52);
+  _28 = pxLocScatterGather_60(D)->TransferConfig;
+  _29 = _28->MinorLoop.LogicLinkCh;
+  _30 = (long unsigned int) _29;
+  hwLinkCh_75 = Dma_Ip_ConvertLogicChToHwCh (_30);
+  _31 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (_31, hwLinkCh_75);
+  _32 = pxLocScatterGather_60(D)->Stcd;
+  _33 = pxLocScatterGather_60(D)->TransferConfig;
+  _34 = _33->MinorLoop.Size;
+  hwv2AccInlineDmaCh_SetMinorLoop_Size (_32, _34);
+  _35 = pxLocScatterGather_60(D)->Stcd;
+  _36 = pxLocScatterGather_60(D)->TransferConfig;
+  _37 = _36->MajorLoop.EnLink;
+  if (_37 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  iftmp.6_79 = 1;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.6_78 = 0;
+
+  <bb 13> :
+  # iftmp.6_53 = PHI <iftmp.6_79(11), iftmp.6_78(12)>
+  hwv2AccInlineDmaCh_SetMajorLoop_EnLink (_35, iftmp.6_53);
+  _38 = pxLocScatterGather_60(D)->TransferConfig;
+  _39 = _38->MajorLoop.EnLink;
+  if (_39 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _40 = pxLocScatterGather_60(D)->TransferConfig;
+  _41 = _40->MajorLoop.LogicLinkCh;
+  _42 = (long unsigned int) _41;
+  hwLinkCh_84 = Dma_Ip_ConvertLogicChToHwCh (_42);
+  _43 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (_43, hwLinkCh_84);
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  _44 = pxLocScatterGather_60(D)->Stcd;
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (_44, ElementId_81(D));
+
+  <bb 16> :
+  _45 = pxLocScatterGather_60(D)->Stcd;
+  _46 = pxLocScatterGather_60(D)->TransferConfig;
+  _47 = _46->MajorLoop.Count;
+  hwv2AccInlineDmaCh_SetMajorLoop_Count (_45, _47);
+  _48 = pxLocScatterGather_60(D)->Stcd;
+  _49 = pxLocScatterGather_60(D)->TransferConfig;
+  _50 = _49->Source.LastAddrAdj;
+  _51 = (long unsigned int) _50;
+  hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (_48, _51);
+
+  <bb 17> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetParam (const uint32 Parameter, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  static void (*<T647>) (const uint32, const uint32, const uint32, uint32 * const) fpHwAcc_DmaCh_GetParam[9] = {HwAccDmaCh_GetSourceAddress, HwAccDmaCh_GetDestinationAddress, HwAccDmaCh_GetBeginIterCount, HwAccDmaCh_GetCurrentIterCount, HwAccDmaCh_GetParamDummyFunction, HwAccDmaCh_GetParamDummyFunction, HwAccDmaCh_GetIntMajor, HwAccDmaCh_GetIntHalfMajor, HwAccDmaCh_GetParamDummyFunction};
+  void (*<T643>) (const uint32, const uint32, const uint32, uint32 * const) _1;
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_GetParam[Parameter_3(D)];
+  _1 (LocHwVers_4(D), LocHwInst_5(D), LocHwCh_6(D), retValue_7(D));
+  return;
+
+}
+
+
+HwAccDmaCh_GetIntHalfMajor (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_5(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetIntHalfMajor (_2, retValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetIntMajor (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_5(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetIntMajor (_2, retValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetCurrentIterCount (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_5(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetCurrentIterCount (_2, retValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetBeginIterCount (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_5(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetBeginIterCount (_2, retValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetDestinationAddress (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  uint32 LocPhysicalAddress;
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+  long unsigned int LocPhysicalAddress.4_3;
+
+  <bb 2> :
+  if (LocHwVers_5(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_6(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetDestinationAddress (_2, &LocPhysicalAddress);
+  LocPhysicalAddress.4_3 = LocPhysicalAddress;
+  *retValue_9(D) = LocPhysicalAddress.4_3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  LocPhysicalAddress ={v} {CLOBBER};
+  return;
+
+}
+
+
+HwAccDmaCh_GetSourceAddress (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  uint32 LocPhysicalAddress;
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+  long unsigned int LocPhysicalAddress.3_3;
+
+  <bb 2> :
+  if (LocHwVers_5(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_6(D)].tChTcdReg.tTcdReg;
+  hwv2AccInlineDmaCh_GetSourceAddress (_2, &LocPhysicalAddress);
+  LocPhysicalAddress.3_3 = LocPhysicalAddress;
+  *retValue_9(D) = LocPhysicalAddress.3_3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  LocPhysicalAddress ={v} {CLOBBER};
+  return;
+
+}
+
+
+HwAccDmaCh_SetTransferParam (const uint32 Parameter, const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  static void (*<T638>) (const uint32, struct Dma_Ip_TcdRegType *, const uint32) fpHwAcc_DmaCh_SetTransferParam[26] = {HwAccDmaCh_SetSource_Address, HwAccDmaCh_SetSource_SignedOffset, HwAccDmaCh_SetSource_LastAddrAdj, HwAccDmaCh_SetSource_TransferSize, HwAccDmaCh_SetSource_Modulo, HwAccDmaCh_SetDestination_Address, HwAccDmaCh_SetDestination_SignedOffset, HwAccDmaCh_SetDestination_LastAddrAdj, HwAccDmaCh_SetDestination_TransferSize, HwAccDmaCh_SetDestination_Modulo, HwAccDmaCh_SetMinorLoop_enSrcOffset, HwAccDmaCh_SetMinorLoop_enDstOffset, HwAccDmaCh_SetMinorLoop_Offset, HwAccDmaCh_SetMinorLoop_EnLink, HwAccDmaCh_SetMinorLoop_LogicLinkCh, HwAccDmaCh_SetMinorLoop_Size, HwAccDmaCh_SetMajorLoop_EnLink, HwAccDmaCh_SetMajorLoop_LogicLinkCh, HwAccDmaCh_SetMajorLoop_Count, HwAccDmaCh_SetTransferDummyFunction, HwAccDmaCh_SetControl_EnStart, HwAccDmaCh_SetControl_EnMajor, HwAccDmaCh_SetControl_EnHalfMajor, HwAccDmaCh_SetControl_DisAutoHwRequest, HwAccDmaCh_SetTransferDummyFunction, HwAccDmaCh_SetControl_BandwidthControl};
+  void (*<T634>) (const uint32, struct Dma_Ip_TcdRegType *, const uint32) _1;
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_SetTransferParam[Parameter_3(D)];
+  _1 (LocHwVers_4(D), pxLocTcd_5(D), LocValue_6(D));
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_BandwidthControl (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_BandwidthControl (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_DisAutoHwRequest (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnHalfMajor (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_EnHalfMajor (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnMajor (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetControl_EnMajor (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetControl_EnStart (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  _Bool _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocValue_4(D) != 0;
+  hwv2AccInlineDmaCh_SetControl_EnStart (pxLocTcd_6(D), _1);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_Count (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_Count (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_LogicLinkCh (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  uint32 hwLinkCh;
+
+  <bb 2> :
+  hwLinkCh_5 = Dma_Ip_ConvertLogicChToHwCh (LocValue_3(D));
+  if (LocHwVers_6(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (pxLocTcd_7(D), hwLinkCh_5);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMajorLoop_EnLink (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMajorLoop_EnLink (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_Size (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_Size (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_LogicLinkCh (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  uint32 hwLinkCh;
+
+  <bb 2> :
+  hwLinkCh_5 = Dma_Ip_ConvertLogicChToHwCh (LocValue_3(D));
+  if (LocHwVers_6(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (pxLocTcd_7(D), hwLinkCh_5);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_EnLink (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_EnLink (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_Offset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_enDstOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetMinorLoop_enSrcOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_Modulo (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_Modulo (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_TransferSize (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_TransferSize (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_LastAddrAdj (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_LastAddrAdj (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_SignedOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_SignedOffset (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetDestination_Address (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetDestination_Address (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_Modulo (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_Modulo (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_TransferSize (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_TransferSize (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_LastAddrAdj (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_SignedOffset (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_SignedOffset (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetSource_Address (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  if (LocHwVers_2(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  hwv2AccInlineDmaCh_SetSource_Address (pxLocTcd_4(D), LocValue_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetGlobalParam (const uint32 Parameter, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  static void (*<T626>) (const uint32, const uint32, const uint32, const uint32) fpHwAcc_DmaCh_SetGlobalParam[11] = {HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetRequest_EnMuxSource, HwAccDmaCh_SetRequest_MuxSource, HwAccDmaCh_SetRequest_EnMuxTrigger, HwAccDmaCh_SetRequest_EnRequest, HwAccDmaCh_SetInterrupt_EnError, HwAccDmaCh_SetGlobalDummyFunction, HwAccDmaCh_SetPriority_Level, HwAccDmaCh_SetPriority_EnPreemption, HwAccDmaCh_SetPriority_DisPreempt};
+  void (*<T622>) (const uint32, const uint32, const uint32, const uint32) _1;
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_SetGlobalParam[Parameter_3(D)];
+  _1 (LocHwVers_4(D), LocHwInst_5(D), LocHwCh_6(D), LocValue_7(D));
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_DisPreempt (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh_5(D) ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_DisPreempt (_1, _2, LocValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_EnPreemption (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh_5(D) ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_EnPreemption (_1, _2, LocValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetPriority_Level (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  if (LocHwVers_4(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  _2 = LocHwCh_5(D) ^ 3;
+  hwv2AccInlineDmaCh_SetPriority_Level (_1, _2, LocValue_7(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetInterrupt_EnError (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_SetInterrupt_EnError (_1, LocHwCh_5(D), LocValue_6(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_SetRequest_EnHwRequest (_1, LocHwCh_5(D), LocValue_6(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnMuxTrigger (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+  long unsigned int _1;
+  struct DMAMUX_Type * _2;
+  volatile uint8_t * _3;
+
+  <bb 2> :
+  LocDmaCh_5 = 0;
+  LocDmaMuxInst_6 = 0;
+  LocDmaMuxCh_7 = 0;
+  if (LocHwVers_8(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst_9(D) * 16;
+  LocDmaCh_11 = LocHwCh_10(D) + _1;
+  LocDmaMuxInst_12 = LocDmaCh_11 / 16;
+  LocDmaMuxCh_13 = LocDmaCh_11 & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh_13];
+  hwv2AccInlineDmaCh_SetRequest_EnTriggerMux (_3, LocValue_15(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_MuxSource (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+  long unsigned int _1;
+  struct DMAMUX_Type * _2;
+  volatile uint8_t * _3;
+
+  <bb 2> :
+  LocDmaCh_5 = 0;
+  LocDmaMuxInst_6 = 0;
+  LocDmaMuxCh_7 = 0;
+  if (LocHwVers_8(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst_9(D) * 16;
+  LocDmaCh_11 = LocHwCh_10(D) + _1;
+  LocDmaMuxInst_12 = LocDmaCh_11 / 16;
+  LocDmaMuxCh_13 = LocDmaCh_11 & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh_13];
+  hwv2AccInlineDmaCh_SetRequest_SourceMux (_3, LocValue_15(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetRequest_EnMuxSource (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  uint32 LocDmaMuxCh;
+  uint32 LocDmaMuxInst;
+  uint32 LocDmaCh;
+  long unsigned int _1;
+  struct DMAMUX_Type * _2;
+  volatile uint8_t * _3;
+
+  <bb 2> :
+  LocDmaCh_5 = 0;
+  LocDmaMuxInst_6 = 0;
+  LocDmaMuxCh_7 = 0;
+  if (LocHwVers_8(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = LocHwInst_9(D) * 16;
+  LocDmaCh_11 = LocHwCh_10(D) + _1;
+  LocDmaMuxInst_12 = LocDmaCh_11 / 16;
+  LocDmaMuxCh_13 = LocDmaCh_11 & 15;
+  _2 = 1073876992B;
+  _3 = &_2->CHCFG[LocDmaMuxCh_13];
+  hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux (_3, LocValue_15(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetStatus_Error (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const pLocError)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_GetErrorStatus (LocHwCh_5(D), _1, pLocError_6(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetStatus (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, struct Dma_Ip_LogicChannelStatusType * const pChStatus)
+{
+  struct Dma_Ip_Hwv2TcdArrayType * _1;
+  struct Dma_Ip_TcdRegType * _2;
+  boolean * _3;
+  struct Dma_Ip_Hwv2TcdArrayType * _4;
+  struct Dma_Ip_TcdRegType * _5;
+  boolean * _6;
+
+  <bb 2> :
+  if (LocHwVers_8(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073778688B;
+  _2 = &_1->TCD_RSV[LocHwCh_9(D)].tChTcdReg.tTcdReg;
+  _3 = &pChStatus_10(D)->Active;
+  hwv2AccInlineDmaCh_GetActiveStatus (_2, _3);
+  _4 = 1073778688B;
+  _5 = &_4->TCD_RSV[LocHwCh_9(D)].tChTcdReg.tTcdReg;
+  _6 = &pChStatus_10(D)->Done;
+  hwv2AccInlineDmaCh_GetDoneStatus (_5, _6);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetCommand (const uint32 Command, const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  static void (*<T60e>) (const uint32, const uint32, const uint32) fpHwAcc_DmaCh_Command[5] = {HwAccDmaCh_CmdSetHwRequest, HwAccDmaCh_CmdClearHwRequest, HwAccDmaCh_CmdSetSwRequest, HwAccDmaCh_CmdClearDone, HwAccDmaCh_CmdClearError};
+  void (*<T60a>) (const uint32, const uint32, const uint32) _1;
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaCh_Command[Command_3(D)];
+  _1 (LocHwVers_4(D), LocHwInst_5(D), LocHwCh_6(D));
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearError (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearError (_1, LocHwCh_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearDone (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearDone (_1, LocHwCh_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdSetSwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdSwReqStart (_1, LocHwCh_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdClearHwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdClearRequest (_1, LocHwCh_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_CmdSetHwRequest (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh)
+{
+  struct Dma_Ip_Hwv2InstRegType * _1;
+
+  <bb 2> :
+  if (LocHwVers_3(D) == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _1 = 1073774592B;
+  hwv2AccInlineDmaCh_CmdSetRequest (_1, LocHwCh_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_GetStatus (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst, struct Dma_Ip_LogicInstanceStatusType * const Status)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+  uint32 * _4;
+  struct Dma_Ip_Hwv2InstRegType * _5;
+  uint8 * _6;
+  struct Dma_Ip_Hwv2InstRegType * _7;
+  boolean * _8;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_11(D)->HwVersId;
+  LocHwVers_12 = (uint32) _1;
+  _2 = pxLocLogicInst_11(D)->HwInstId;
+  LocHwInst_13 = (uint32) _2;
+  if (LocHwVers_12 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  _4 = &Status_14(D)->Errors;
+  hwv2AccInlineDmaInst_GetErrorStatus (_3, _4);
+  _5 = 1073774592B;
+  _6 = &Status_14(D)->ActiveId;
+  hwv2AccInlineDmaInst_GetActiveIdStatus (_5, _6);
+  _7 = 1073774592B;
+  _8 = &Status_14(D)->Active;
+  hwv2AccInlineDmaInst_GetActiveStatus (_7, _8);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_SetCommand (const uint32 Command, const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  static void (*<T5fa>) (const struct Dma_Ip_LogicInstanceIdType * const) fpHwAcc_DmaInst_Command[4] = {hwAccDmaInst_CmdCancelTransfer, hwAccDmaInst_CmdCancelTransferWithError, hwAccDmaInst_CmdHalt, hwAccDmaInst_CmdResume};
+  void (*<T5f6>) (const struct Dma_Ip_LogicInstanceIdType * const) _1;
+
+  <bb 2> :
+  _1 = fpHwAcc_DmaInst_Command[Command_3(D)];
+  _1 (pxLocLogicInst_4(D));
+  return;
+
+}
+
+
+hwAccDmaInst_CmdResume (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_6(D)->HwVersId;
+  LocHwVers_7 = (uint32) _1;
+  _2 = pxLocLogicInst_6(D)->HwInstId;
+  LocHwInst_8 = (uint32) _2;
+  if (LocHwVers_7 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdResume (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdHalt (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_6(D)->HwVersId;
+  LocHwVers_7 = (uint32) _1;
+  _2 = pxLocLogicInst_6(D)->HwInstId;
+  LocHwInst_8 = (uint32) _2;
+  if (LocHwVers_7 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdHalt (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdCancelTransferWithError (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_6(D)->HwVersId;
+  LocHwVers_7 = (uint32) _1;
+  _2 = pxLocLogicInst_6(D)->HwInstId;
+  LocHwInst_8 = (uint32) _2;
+  if (LocHwVers_7 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdCancelTransferWithError (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwAccDmaInst_CmdCancelTransfer (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_6(D)->HwVersId;
+  LocHwVers_7 = (uint32) _1;
+  _2 = pxLocLogicInst_6(D)->HwInstId;
+  LocHwInst_8 = (uint32) _2;
+  if (LocHwVers_7 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_CmdCancelTransfer (_3);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaInst_SetConfig (const struct Dma_Ip_LogicInstanceIdType * const pxLocLogicInst, const struct Dma_Ip_LogicInstanceConfigType * const pxLocInstConfig)
+{
+  uint32 LocHwInst;
+  uint32 LocHwVers;
+  unsigned char _1;
+  unsigned char _2;
+  struct Dma_Ip_Hwv2InstRegType * _3;
+
+  <bb 2> :
+  _1 = pxLocLogicInst_6(D)->HwVersId;
+  LocHwVers_7 = (uint32) _1;
+  _2 = pxLocLogicInst_6(D)->HwInstId;
+  LocHwInst_8 = (uint32) _2;
+  if (LocHwVers_7 == 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  _3 = 1073774592B;
+  hwv2AccInlineDmaInst_SetConfig (_3, pxLocInstConfig_9(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+
+  <bb 5> :
+  return;
+
+}
+
+
+HwAccDmaCh_GetParamDummyFunction (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, uint32 * const retValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetTransferDummyFunction (const uint32 LocHwVers, struct Dma_Ip_TcdRegType * pxLocTcd, const uint32 LocValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+HwAccDmaCh_SetGlobalDummyFunction (const uint32 LocHwVers, const uint32 LocHwInst, const uint32 LocHwCh, const uint32 LocValue)
+{
+  <bb 2> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSignedMinorLoopOffset (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint32 reg;
+  long unsigned int iftmp.12;
+  long unsigned int iftmp.11;
+  long unsigned int _1;
+  struct Dma_Ip_TransferConfigType * _2;
+  _Bool _3;
+  long unsigned int _4;
+  struct Dma_Ip_TransferConfigType * _5;
+  _Bool _6;
+  long unsigned int _7;
+  struct Dma_Ip_TransferConfigType * _8;
+  long int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int iftmp.11_13;
+  long unsigned int iftmp.12_14;
+  long unsigned int iftmp.11_19;
+  long unsigned int iftmp.11_20;
+  long unsigned int iftmp.12_22;
+  long unsigned int iftmp.12_23;
+
+  <bb 2> :
+  reg_17 = ptTcd_16(D)->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg_17 & 2147483647;
+  _2 = pxLocScatterGather_18(D)->TransferConfig;
+  _3 = _2->MinorLoop.EnSrcOffset;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.11_20 = 2147483648;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.11_19 = 0;
+
+  <bb 5> :
+  # iftmp.11_13 = PHI <iftmp.11_20(3), iftmp.11_19(4)>
+  reg_21 = iftmp.11_13 | _1;
+  _4 = reg_21 & 3221225471;
+  _5 = pxLocScatterGather_18(D)->TransferConfig;
+  _6 = _5->MinorLoop.EnDstOffset;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.12_23 = 1073741824;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.12_22 = 0;
+
+  <bb 8> :
+  # iftmp.12_14 = PHI <iftmp.12_23(6), iftmp.12_22(7)>
+  reg_24 = iftmp.12_14 | _4;
+  _7 = reg_24 & 3221226495;
+  _8 = pxLocScatterGather_18(D)->TransferConfig;
+  _9 = _8->MinorLoop.Offset;
+  _10 = (long unsigned int) _9;
+  _11 = _10 << 10;
+  _12 = _11 & 1073740800;
+  reg_25 = _7 | _12;
+  ptTcd_16(D)->reg_NBYTES.reg_MLOFFYES = reg_25;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetTransferAttributes (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint16 reg;
+  short unsigned int _1;
+  struct Dma_Ip_TransferConfigType * _2;
+  unsigned char _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  struct Dma_Ip_TransferConfigType * _8;
+  unsigned char _9;
+  short unsigned int _10;
+  short unsigned int _11;
+  short unsigned int _12;
+  struct Dma_Ip_TransferConfigType * _13;
+  unsigned char _14;
+  short unsigned int _15;
+  short unsigned int _16;
+  short unsigned int _17;
+  struct Dma_Ip_TransferConfigType * _18;
+  unsigned char _19;
+  short unsigned int _20;
+  short unsigned int _21;
+  short unsigned int _22;
+
+  <bb 2> :
+  reg_25 = ptTcd_24(D)->reg_ATTR;
+  _1 = reg_25 & 63743;
+  _2 = pxLocScatterGather_26(D)->TransferConfig;
+  _3 = _2->Source.TransferSize;
+  _4 = (short unsigned int) _3;
+  _5 = _4 << 8;
+  _6 = _5 & 1792;
+  reg_27 = _1 | _6;
+  _7 = reg_27 & 2047;
+  _8 = pxLocScatterGather_26(D)->TransferConfig;
+  _9 = _8->Source.Modulo;
+  _10 = (short unsigned int) _9;
+  _11 = _10 << 11;
+  reg_28 = _7 | _11;
+  _12 = reg_28 & 65528;
+  _13 = pxLocScatterGather_26(D)->TransferConfig;
+  _14 = _13->Destination.TransferSize;
+  _15 = (short unsigned int) _14;
+  _16 = _15 & 7;
+  reg_29 = _12 | _16;
+  _17 = reg_29 & 65287;
+  _18 = pxLocScatterGather_26(D)->TransferConfig;
+  _19 = _18->Destination.Modulo;
+  _20 = (short unsigned int) _19;
+  _21 = _20 << 3;
+  _22 = _21 & 255;
+  reg_30 = _17 | _22;
+  ptTcd_24(D)->reg_ATTR = reg_30;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControlAndStatus (struct Dma_Ip_TcdRegType * ptTcd, const struct Dma_Ip_ScatterGatherConfigType * const pxLocScatterGather)
+{
+  uint16 reg;
+  uint16 iftmp.10;
+  uint16 iftmp.9;
+  uint16 iftmp.8;
+  short unsigned int _1;
+  struct Dma_Ip_TransferConfigType * _2;
+  _Bool _3;
+  _Bool _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  struct Dma_Ip_TransferConfigType * _7;
+  unsigned char _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  short unsigned int _11;
+  struct Dma_Ip_TransferConfigType * _12;
+  _Bool _13;
+  short unsigned int _14;
+  struct Dma_Ip_TransferConfigType * _15;
+  _Bool _16;
+  short unsigned int _17;
+  struct Dma_Ip_TransferConfigType * _18;
+  _Bool _19;
+  uint16 iftmp.8_20;
+  uint16 iftmp.9_21;
+  uint16 iftmp.10_22;
+  uint16 iftmp.8_29;
+  uint16 iftmp.8_30;
+  uint16 iftmp.9_32;
+  uint16 iftmp.9_33;
+  uint16 iftmp.10_35;
+  uint16 iftmp.10_36;
+
+  <bb 2> :
+  reg_25 = ptTcd_24(D)->reg_CSR;
+  _1 = reg_25 & 65534;
+  _2 = pxLocScatterGather_26(D)->TransferConfig;
+  _3 = _2->Control.EnStart;
+  _4 = _3;
+  _5 = (short unsigned int) _4;
+  reg_27 = _1 | _5;
+  _6 = reg_27 & 16383;
+  _7 = pxLocScatterGather_26(D)->TransferConfig;
+  _8 = _7->Control.BandwidthControl;
+  _9 = (short unsigned int) _8;
+  _10 = _9 << 14;
+  reg_28 = _6 | _10;
+  _11 = reg_28 & 65533;
+  _12 = pxLocScatterGather_26(D)->TransferConfig;
+  _13 = _12->Control.EnMajorInt;
+  if (_13 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.8_30 = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.8_29 = 0;
+
+  <bb 5> :
+  # iftmp.8_20 = PHI <iftmp.8_30(3), iftmp.8_29(4)>
+  reg_31 = iftmp.8_20 | _11;
+  _14 = reg_31 & 65531;
+  _15 = pxLocScatterGather_26(D)->TransferConfig;
+  _16 = _15->Control.EnHalfMajorInt;
+  if (_16 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.9_33 = 4;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.9_32 = 0;
+
+  <bb 8> :
+  # iftmp.9_21 = PHI <iftmp.9_33(6), iftmp.9_32(7)>
+  reg_34 = iftmp.9_21 | _14;
+  _17 = reg_34 & 65527;
+  _18 = pxLocScatterGather_26(D)->TransferConfig;
+  _19 = _18->Control.DisAutoHwRequest;
+  if (_19 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.10_36 = 8;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.10_35 = 0;
+
+  <bb 11> :
+  # iftmp.10_22 = PHI <iftmp.10_36(9), iftmp.10_35(10)>
+  reg_37 = iftmp.10_22 | _17;
+  ptTcd_24(D)->reg_CSR = reg_37;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetAuxiliary_EnScatterGatherProcessing (struct Dma_Ip_TcdRegType * ptTcd, boolean Value)
+{
+  uint16 reg;
+  uint16 iftmp.7;
+  short unsigned int _1;
+  short unsigned int _2;
+  uint16 iftmp.7_3;
+  uint16 iftmp.7_8;
+  uint16 iftmp.7_9;
+
+  <bb 2> :
+  reg_6 = ptTcd_5(D)->reg_CSR;
+  _1 = reg_6 & 65519;
+  if (Value_7(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.7_9 = 16;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.7_8 = 0;
+
+  <bb 5> :
+  # iftmp.7_3 = PHI <iftmp.7_9(3), iftmp.7_8(4)>
+  _2 = iftmp.7_3 | _1;
+  ptTcd_5(D)->reg_CSR = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetIntHalfMajor (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  short unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  _1 = ptTcd_6(D)->reg_CSR;
+  _2 = (long unsigned int) _1;
+  _3 = _2 >> 2;
+  _4 = _3 & 1;
+  *retValue_7(D) = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetIntMajor (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  short unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  _1 = ptTcd_6(D)->reg_CSR;
+  _2 = (long unsigned int) _1;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  *retValue_7(D) = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetCurrentIterCount (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  _1 = ptTcd_10(D)->reg_CITER.reg_ELINKYES;
+  reg_11 = _1 & 32768;
+  if (reg_11 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ptTcd_10(D)->reg_CITER.reg_ELINKYES;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 511;
+  *retValue_12(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = ptTcd_10(D)->reg_CITER.reg_ELINKNO;
+  _6 = (long unsigned int) _5;
+  _7 = _6 & 32767;
+  *retValue_12(D) = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetBeginIterCount (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  _1 = ptTcd_10(D)->reg_BITER.reg_ELINKYES;
+  reg_11 = _1 & 32768;
+  if (reg_11 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ptTcd_10(D)->reg_BITER.reg_ELINKYES;
+  _3 = (long unsigned int) _2;
+  _4 = _3 & 511;
+  *retValue_12(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = ptTcd_10(D)->reg_BITER.reg_ELINKYES;
+  _6 = (long unsigned int) _5;
+  _7 = _6 & 32767;
+  *retValue_12(D) = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetDestinationAddress (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  long unsigned int _1;
+
+  <bb 2> :
+  _1 = ptTcd_3(D)->reg_DADDR;
+  *retValue_4(D) = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetSourceAddress (const struct Dma_Ip_TcdRegType * ptTcd, uint32 * const retValue)
+{
+  long unsigned int _1;
+
+  <bb 2> :
+  _1 = ptTcd_3(D)->reg_SADDR;
+  *retValue_4(D) = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_BandwidthControl (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+
+  <bb 2> :
+  reg_7 = ptTcd_6(D)->reg_CSR;
+  _1 = reg_7 & 16383;
+  _2 = (short unsigned int) Value_8(D);
+  _3 = _2 << 14;
+  _4 = _1 | _3;
+  ptTcd_6(D)->reg_CSR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_DisAutoHwRequest (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_CSR;
+  _1 = reg_8 & 65527;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 3;
+  _4 = _3 & 8;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnHalfMajor (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_CSR;
+  _1 = reg_8 & 65531;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 2;
+  _4 = _3 & 4;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnMajor (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_CSR;
+  _1 = reg_8 & 65533;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 1;
+  _4 = _3 & 2;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_EnStart (struct Dma_Ip_TcdRegType * ptTcd, const boolean Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  _Bool _2;
+  short unsigned int _3;
+  short unsigned int _4;
+
+  <bb 2> :
+  reg_7 = ptTcd_6(D)->reg_CSR;
+  _1 = reg_7 & 65534;
+  _2 = Value_8(D);
+  _3 = (short unsigned int) _2;
+  _4 = _1 | _3;
+  ptTcd_6(D)->reg_CSR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetControl_ScatterGatherAddress (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 = ptTcd_2(D)->reg_DLAST_SGA;
+  ptTcd_2(D)->reg_DLAST_SGA = Value_4(D);
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_Count (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+  short unsigned int _11;
+  short unsigned int _12;
+  short unsigned int _13;
+  short unsigned int _14;
+  short unsigned int _15;
+  short unsigned int _16;
+  short unsigned int _17;
+  short unsigned int _18;
+  short unsigned int _19;
+
+  <bb 2> :
+  _1 = ptTcd_22(D)->reg_BITER.reg_ELINKYES;
+  _2 = ptTcd_22(D)->reg_CITER.reg_ELINKYES;
+  _3 = _1 | _2;
+  reg_23 = _3 & 32768;
+  if (reg_23 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  reg_29 = ptTcd_22(D)->reg_BITER.reg_ELINKYES;
+  _4 = reg_29 & 65024;
+  _5 = (short unsigned int) Value_25(D);
+  _6 = _5 & 511;
+  _7 = _4 | _6;
+  ptTcd_22(D)->reg_BITER.reg_ELINKYES = _7;
+  reg_31 = ptTcd_22(D)->reg_CITER.reg_ELINKYES;
+  _8 = reg_31 & 65024;
+  _9 = (short unsigned int) Value_25(D);
+  _10 = _9 & 511;
+  _11 = _8 | _10;
+  ptTcd_22(D)->reg_CITER.reg_ELINKYES = _11;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  reg_24 = ptTcd_22(D)->reg_BITER.reg_ELINKNO;
+  _12 = reg_24 & 32768;
+  _13 = (short unsigned int) Value_25(D);
+  _14 = _13 & 32767;
+  _15 = _12 | _14;
+  ptTcd_22(D)->reg_BITER.reg_ELINKNO = _15;
+  reg_27 = ptTcd_22(D)->reg_CITER.reg_ELINKNO;
+  _16 = reg_27 & 32768;
+  _17 = (short unsigned int) Value_25(D);
+  _18 = _17 & 32767;
+  _19 = _16 | _18;
+  ptTcd_22(D)->reg_CITER.reg_ELINKNO = _19;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_LinkCh (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_CSR;
+  _1 = reg_8 & 61695;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 8;
+  _4 = _3 & 3840;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMajorLoop_EnLink (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_CSR;
+  _1 = reg_8 & 65503;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 5;
+  _4 = _3 & 32;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_CSR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_Size (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> :
+  reg_11 = ptTcd_10(D)->reg_NBYTES.reg_MLOFFNO;
+  _1 = reg_11 & 3221225472;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = reg_11 & 4294966272;
+  _3 = Value_12(D) & 1023;
+  _4 = _2 | _3;
+  ptTcd_10(D)->reg_NBYTES.reg_MLOFFNO = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = reg_11 & 3221225472;
+  _6 = Value_12(D) & 1073741823;
+  _7 = _5 | _6;
+  ptTcd_10(D)->reg_NBYTES.reg_MLOFFNO = _7;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_LinkCh (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+  short unsigned int _9;
+  short unsigned int _10;
+
+  <bb 2> :
+  reg_13 = ptTcd_12(D)->reg_BITER.reg_ELINKYES;
+  _1 = reg_13 & 57855;
+  _2 = (short unsigned int) Value_14(D);
+  _3 = _2 << 9;
+  _4 = _3 & 7680;
+  _5 = _1 | _4;
+  ptTcd_12(D)->reg_BITER.reg_ELINKYES = _5;
+  reg_16 = ptTcd_12(D)->reg_CITER.reg_ELINKYES;
+  _6 = reg_16 & 57855;
+  _7 = (short unsigned int) Value_14(D);
+  _8 = _7 << 9;
+  _9 = _8 & 7680;
+  _10 = _6 | _9;
+  ptTcd_12(D)->reg_CITER.reg_ELINKYES = _10;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_EnLink (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+
+  <bb 2> :
+  reg_11 = ptTcd_10(D)->reg_BITER.reg_ELINKYES;
+  _1 = reg_11 & 32767;
+  _2 = (short unsigned int) Value_12(D);
+  _3 = _2 << 15;
+  _4 = _1 | _3;
+  ptTcd_10(D)->reg_BITER.reg_ELINKYES = _4;
+  reg_14 = ptTcd_10(D)->reg_CITER.reg_ELINKYES;
+  _5 = reg_14 & 32767;
+  _6 = (short unsigned int) Value_12(D);
+  _7 = _6 << 15;
+  _8 = _5 | _7;
+  ptTcd_10(D)->reg_CITER.reg_ELINKYES = _8;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  reg_7 = ptTcd_6(D)->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg_7 & 3221226495;
+  _2 = Value_8(D) << 10;
+  _3 = _2 & 1073740800;
+  _4 = _1 | _3;
+  ptTcd_6(D)->reg_NBYTES.reg_MLOFFYES = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_enDstOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  reg_7 = ptTcd_6(D)->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg_7 & 3221225471;
+  _2 = Value_8(D) << 30;
+  _3 = _2 & 1073741824;
+  _4 = _1 | _3;
+  ptTcd_6(D)->reg_NBYTES.reg_MLOFFYES = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetMinorLoop_enSrcOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> :
+  reg_6 = ptTcd_5(D)->reg_NBYTES.reg_MLOFFYES;
+  _1 = reg_6 & 2147483647;
+  _2 = Value_7(D) << 31;
+  _3 = _1 | _2;
+  ptTcd_5(D)->reg_NBYTES.reg_MLOFFYES = _3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_Modulo (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+
+  <bb 2> :
+  reg_8 = ptTcd_7(D)->reg_ATTR;
+  _1 = reg_8 & 65287;
+  _2 = (short unsigned int) Value_9(D);
+  _3 = _2 << 3;
+  _4 = _3 & 255;
+  _5 = _1 | _4;
+  ptTcd_7(D)->reg_ATTR = _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_TransferSize (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+
+  <bb 2> :
+  reg_7 = ptTcd_6(D)->reg_ATTR;
+  _1 = reg_7 & 65528;
+  _2 = (short unsigned int) Value_8(D);
+  _3 = _2 & 7;
+  _4 = _1 | _3;
+  ptTcd_6(D)->reg_ATTR = _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_LastAddrAdj (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 = ptTcd_2(D)->reg_DLAST_SGA;
+  ptTcd_2(D)->reg_DLAST_SGA = Value_4(D);
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint16 reg;
+  short unsigned int _1;
+
+  <bb 2> :
+  reg_4 = ptTcd_3(D)->reg_DOFF;
+  _1 = (short unsigned int) Value_5(D);
+  ptTcd_3(D)->reg_DOFF = _1;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetDestination_Address (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 = ptTcd_2(D)->reg_DADDR;
+  ptTcd_2(D)->reg_DADDR = Value_4(D);
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_Modulo (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+
+  <bb 2> :
+  _1 = ptTcd_8(D)->reg_ATTR;
+  reg_9 = (uint32) _1;
+  _2 = (short unsigned int) reg_9;
+  _3 = _2 & 2047;
+  _4 = (short unsigned int) Value_10(D);
+  _5 = _4 << 11;
+  _6 = _3 | _5;
+  ptTcd_8(D)->reg_ATTR = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_TransferSize (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+
+  <bb 2> :
+  _1 = ptTcd_9(D)->reg_ATTR;
+  reg_10 = (uint32) _1;
+  _2 = (short unsigned int) reg_10;
+  _3 = _2 & 63743;
+  _4 = (short unsigned int) Value_11(D);
+  _5 = _4 << 8;
+  _6 = _5 & 1792;
+  _7 = _3 | _6;
+  ptTcd_9(D)->reg_ATTR = _7;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_SignedLastAddrAdj (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 = ptTcd_2(D)->reg_SLAST;
+  ptTcd_2(D)->reg_SLAST = Value_4(D);
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_SignedOffset (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+  short unsigned int _1;
+  short unsigned int _2;
+
+  <bb 2> :
+  _1 = ptTcd_4(D)->reg_SOFF;
+  reg_5 = (uint32) _1;
+  _2 = (short unsigned int) Value_6(D);
+  ptTcd_4(D)->reg_SOFF = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetSource_Address (struct Dma_Ip_TcdRegType * ptTcd, const uint32 Value)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 = ptTcd_2(D)->reg_SADDR;
+  ptTcd_2(D)->reg_SADDR = Value_4(D);
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_DisPreempt (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+
+  <bb 2> :
+  reg_9 ={v} ptCh_7(D)->reg_DCHPRI[Channel_8(D)];
+  _1 = reg_9 & 191;
+  _2 = (unsigned char) Value_10(D);
+  _3 = _2 << 6;
+  _4 = _3 & 64;
+  _5 = _1 | _4;
+  ptCh_7(D)->reg_DCHPRI[Channel_8(D)] ={v} _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_EnPreemption (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+
+  <bb 2> :
+  reg_8 ={v} ptCh_6(D)->reg_DCHPRI[Channel_7(D)];
+  _1 = reg_8 & 127;
+  _2 = (unsigned char) Value_9(D);
+  _3 = _2 << 7;
+  _4 = _1 | _3;
+  ptCh_6(D)->reg_DCHPRI[Channel_7(D)] ={v} _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetPriority_Level (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint8 reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+
+  <bb 2> :
+  reg_8 ={v} ptCh_6(D)->reg_DCHPRI[Channel_7(D)];
+  _1 = reg_8 & 240;
+  _2 = (unsigned char) Value_9(D);
+  _3 = _2 & 15;
+  _4 = _1 | _3;
+  ptCh_6(D)->reg_DCHPRI[Channel_7(D)] ={v} _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetInterrupt_EnError (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  reg_8 ={v} ptCh_7(D)->reg_EEI;
+  _1 = 1 << Channel_9(D);
+  _2 = ~_1;
+  _3 = reg_8 & _2;
+  _4 = Value_10(D) << Channel_9(D);
+  _5 = _3 | _4;
+  ptCh_7(D)->reg_EEI ={v} _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnHwRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 Channel, uint32 Value)
+{
+  uint32 reg;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  reg_8 ={v} ptCh_7(D)->reg_ERQ;
+  _1 = 1 << Channel_9(D);
+  _2 = ~_1;
+  _3 = reg_8 & _2;
+  _4 = Value_10(D) << Channel_9(D);
+  _5 = _3 | _4;
+  ptCh_7(D)->reg_ERQ ={v} _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnHwRequestMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, const uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+
+  <bb 2> :
+  reg_7 ={v} *pMuxChCfg_6(D);
+  _1 = reg_7 & 127;
+  _2 = (unsigned char) Value_8(D);
+  _3 = _2 << 7;
+  _4 = _1 | _3;
+  *pMuxChCfg_6(D) ={v} _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_EnTriggerMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+
+  <bb 2> :
+  reg_8 ={v} *pMuxChCfg_7(D);
+  _1 = reg_8 & 191;
+  _2 = (unsigned char) Value_9(D);
+  _3 = _2 << 6;
+  _4 = _3 & 64;
+  _5 = _1 | _4;
+  *pMuxChCfg_7(D) ={v} _5;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_SetRequest_SourceMux (volatile Dma_Ip_MuxRegType * pMuxChCfg, const uint32 Value)
+{
+  Dma_Ip_MuxRegType reg;
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+
+  <bb 2> :
+  reg_7 ={v} *pMuxChCfg_6(D);
+  _1 = reg_7 & 192;
+  _2 = (unsigned char) Value_8(D);
+  _3 = _2 & 63;
+  _4 = _1 | _3;
+  *pMuxChCfg_6(D) ={v} _4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetDoneStatus (const struct Dma_Ip_TcdRegType * ptTcd, boolean * const pBool)
+{
+  short unsigned int _1;
+  unsigned int _2;
+  unsigned int _3;
+  int _4;
+  int _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = ptTcd_8(D)->reg_CSR;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 7;
+  _4 = (int) _3;
+  _5 = _4 & 1;
+  _6 = _5 != 0;
+  *pBool_9(D) = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetActiveStatus (const struct Dma_Ip_TcdRegType * ptTcd, boolean * const pBool)
+{
+  short unsigned int _1;
+  unsigned int _2;
+  unsigned int _3;
+  int _4;
+  int _5;
+  _Bool _6;
+
+  <bb 2> :
+  _1 = ptTcd_8(D)->reg_CSR;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 6;
+  _4 = (int) _3;
+  _5 = _4 & 1;
+  _6 = _5 != 0;
+  *pBool_9(D) = _6;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_GetErrorStatus (uint32 LocHwCh, const struct Dma_Ip_Hwv2InstRegType * ptCh, uint32 * const pValue)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  _1 ={v} ptCh_7(D)->reg_ERR;
+  _2 = _1 >> LocHwCh_8(D);
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 ={v} ptCh_7(D)->reg_ES;
+  _4 = _3 & 2147569663;
+  *pValue_9(D) = _4;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  *pValue_9(D) = 0;
+
+  <bb 5> :
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearError (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel_2(D);
+  reg_3 = _1 & 15;
+  ptCh_5(D)->reg_CERR ={v} reg_3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearDone (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel_2(D);
+  reg_3 = _1 & 15;
+  ptCh_5(D)->reg_CDNE ={v} reg_3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdSwReqStart (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel_2(D);
+  reg_3 = _1 & 15;
+  ptCh_5(D)->reg_SSRT ={v} reg_3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdClearRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel_2(D);
+  reg_3 = _1 & 15;
+  ptCh_5(D)->reg_CERQ ={v} reg_3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaCh_CmdSetRequest (struct Dma_Ip_Hwv2InstRegType * ptCh, const uint32 Channel)
+{
+  uint8 reg;
+  unsigned char _1;
+
+  <bb 2> :
+  _1 = (unsigned char) Channel_2(D);
+  reg_3 = _1 & 15;
+  ptCh_5(D)->reg_SERQ ={v} reg_3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetActiveStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, boolean * const pBool)
+{
+  long unsigned int _1;
+  signed int _2;
+  _Bool _3;
+
+  <bb 2> :
+  _1 ={v} ptInst_5(D)->reg_CR;
+  _2 = (signed int) _1;
+  _3 = _2 < 0;
+  *pBool_6(D) = _3;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetActiveIdStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, uint8 * const pValue)
+{
+  <bb 2> :
+  *pValue_2(D) = 255;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_GetErrorStatus (const struct Dma_Ip_Hwv2InstRegType * const ptInst, uint32 * const pValue)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  _1 ={v} ptInst_4(D)->reg_ES;
+  _2 = _1 & 2147569663;
+  *pValue_5(D) = _2;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdResume (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 ={v} ptInst_2(D)->reg_CR;
+  reg_4 = reg_3 & 4294967263;
+  ptInst_2(D)->reg_CR ={v} reg_4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdHalt (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 ={v} ptInst_2(D)->reg_CR;
+  reg_4 = reg_3 | 32;
+  ptInst_2(D)->reg_CR ={v} reg_4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdCancelTransferWithError (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 ={v} ptInst_2(D)->reg_CR;
+  reg_4 = reg_3 | 65536;
+  ptInst_2(D)->reg_CR ={v} reg_4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_CmdCancelTransfer (struct Dma_Ip_Hwv2InstRegType * const ptInst)
+{
+  uint32 reg;
+
+  <bb 2> :
+  reg_3 ={v} ptInst_2(D)->reg_CR;
+  reg_4 = reg_3 | 131072;
+  ptInst_2(D)->reg_CR ={v} reg_4;
+  return;
+
+}
+
+
+hwv2AccInlineDmaInst_SetConfig (struct Dma_Ip_Hwv2InstRegType * const ptInst, const struct Dma_Ip_LogicInstanceConfigType * const pxConfig)
+{
+  uint32 reg;
+  long unsigned int iftmp.2;
+  long unsigned int iftmp.1;
+  long unsigned int iftmp.0;
+  long unsigned int _1;
+  _Bool _2;
+  long unsigned int _3;
+  _Bool _4;
+  long unsigned int _5;
+  _Bool _6;
+  long unsigned int iftmp.0_7;
+  long unsigned int iftmp.1_8;
+  long unsigned int iftmp.2_9;
+  long unsigned int iftmp.0_14;
+  long unsigned int iftmp.0_15;
+  long unsigned int iftmp.1_17;
+  long unsigned int iftmp.1_18;
+  long unsigned int iftmp.2_20;
+  long unsigned int iftmp.2_21;
+
+  <bb 2> :
+  reg_12 ={v} ptInst_11(D)->reg_CR;
+  _1 = reg_12 & 4294967293;
+  _2 = pxConfig_13(D)->EnDebug;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.0_15 = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.0_14 = 0;
+
+  <bb 5> :
+  # iftmp.0_7 = PHI <iftmp.0_15(3), iftmp.0_14(4)>
+  reg_16 = iftmp.0_7 | _1;
+  _3 = reg_16 & 4294967291;
+  _4 = pxConfig_13(D)->EnRoundRobin;
+  if (_4 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.1_18 = 4;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.1_17 = 0;
+
+  <bb 8> :
+  # iftmp.1_8 = PHI <iftmp.1_18(6), iftmp.1_17(7)>
+  reg_19 = iftmp.1_8 | _3;
+  _5 = reg_19 & 4294967279;
+  _6 = pxConfig_13(D)->EnHaltAfterError;
+  if (_6 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.2_21 = 16;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.2_20 = 0;
+
+  <bb 11> :
+  # iftmp.2_9 = PHI <iftmp.2_21(9), iftmp.2_20(10)>
+  reg_22 = iftmp.2_9 | _5;
+  reg_23 = reg_22 | 128;
+  reg_24 = reg_23 & 4294967231;
+  ptInst_11(D)->reg_CR ={v} reg_24;
+  return;
+
+}
+
+

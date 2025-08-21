@@ -1,0 +1,1161 @@
+Symbol table:
+
+INI_InitModules/98 (INI_InitModules) @09da20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+INI_InitLibrairies/97 (INI_InitLibrairies) @09da2000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+INI_InitMiddlewares/96 (INI_InitMiddlewares) @09d9dee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Crc_xConfigInit/95 (Crc_xConfigInit) @09d9f4c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Crc_Init/94 (Crc_Init) @09d9de00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Pwm_Config_Init/93 (Pwm_Config_Init) @09d9f438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Pwm_Init/92 (Pwm_Init) @09d9dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Can_Config_Init/91 (Can_Config_Init) @09d9f3a8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Can_Init/90 (Can_Init) @09d9db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Spi_SetAsyncMode/89 (Spi_SetAsyncMode) @09d9da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Spi_Config_Init/88 (Spi_Config_Init) @09d9f2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Spi_Init/87 (Spi_Init) @09d9d9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Gpt_Config_Init/86 (Gpt_Config_Init) @09d9f240
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Gpt_Init/85 (Gpt_Init) @09d9d8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Platform_Init/84 (Platform_Init) @09d9d7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Port_Config_Init/83 (Port_Config_Init) @09d9acf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Port_Init/82 (Port_Init) @09d9d700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Mcl_Config_INIT/81 (Mcl_Config_INIT) @09d9ac60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_ExitLowPower/43 (addr)
+  Availability: not_available
+  Varpool flags: read-only
+Mcl_Init/80 (Mcl_Init) @09d9d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 
+  Calls: 
+Mcu_SetMode/79 (Mcu_SetMode) @09d9d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 sch_EnterLowPower/42 
+  Calls: 
+Platform_SetIrq/78 (Platform_SetIrq) @09d9d380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_ExitLowPower/43 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 sch_EnterLowPower/42 
+  Calls: 
+Mcl_DeInit/77 (Mcl_DeInit) @09d9d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+Gpt_DeInit/76 (Gpt_DeInit) @09d9d1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+Spi_DeInit/75 (Spi_DeInit) @09d9d0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+Pwm_DeInit/74 (Pwm_DeInit) @09d9d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+FLA_Deinit/73 (FLA_Deinit) @09d97ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+MPM_Deinit/72 (MPM_Deinit) @09d97e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+FSM_Deinit/71 (FSM_Deinit) @09d97d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+ACT_Deinit/70 (ACT_Deinit) @09d97c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_EnterLowPower/42 
+  Calls: 
+WDO_ExternalStateFlag/69 (WDO_ExternalStateFlag) @09d96ee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_Interruption/41 (read)
+  Availability: not_available
+  Varpool flags:
+WDO_InternalStateFlag/68 (WDO_InternalStateFlag) @09d96e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_Interruption/41 (read)
+  Availability: not_available
+  Varpool flags:
+PAR_SaveParametersInFlash/67 (PAR_SaveParametersInFlash) @09d97700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1sTasks/38 
+  Calls: 
+CTBPbit_SetTimePeriod/66 (CTBPbit_SetTimePeriod) @09d97460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run100msTasks/36 
+  Calls: 
+COM_TxRequestedTasks/65 (COM_TxRequestedTasks) @09d971c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run20msTasks/34 
+  Calls: 
+COM_RxTask/64 (COM_RxTask) @09d97000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run10msTasks/33 
+  Calls: 
+MPM_Management/63 (MPM_Management) @09c79460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run10msTasks/33 
+  Calls: 
+ACT_readyForLowPower/62 (ACT_readyForLowPower) @09d96048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_Run10msTasks/33 (read)
+  Availability: not_available
+  Varpool flags:
+COM_TxScheduledTasks/61 (COM_TxScheduledTasks) @09c79d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+CNV_Update/60 (CNV_Update) @09c79c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+DBG_Update/59 (DBG_Update) @09c79b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+CTB_Update/58 (CTB_Update) @09c79a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+PWB_Update/57 (PWB_Update) @09c799a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+FSM_Update/56 (FSM_Update) @09c798c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+ACT_UpdateFaults/55 (ACT_UpdateFaults) @09c797e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+PAR_Update/54 (PAR_Update) @09c79700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+WDO_Refresh/53 (WDO_Refresh) @09c79620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Interruption/41 sch_Interruption/41 sch_Run1msTasks/31 
+  Calls: 
+Mcu_PerformReset/52 (Mcu_PerformReset) @09c79540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: sch_Run1msTasks/31 
+  Calls: 
+PAR_flags/51 (PAR_flags) @09d91948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sch_Run1msTasks/31 (read)
+  Availability: not_available
+  Varpool flags:
+Gpt_DisableNotification/50 (Gpt_DisableNotification) @09c79000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SCH_Deinit/29 
+  Calls: 
+Gpt_StartTimer/49 (Gpt_StartTimer) @09c727e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SCH_Init/28 
+  Calls: 
+Gpt_EnableNotification/48 (Gpt_EnableNotification) @09c722a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SCH_Init/28 
+  Calls: 
+SCH_lpit0Freq.11424/47 (SCH_lpit0Freq) @09c6f750
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SCH_Init/28 (write)SCH_Init/28 (read)
+  Availability: available
+  Varpool flags:
+Mcu_GetClockFrequency/46 (Mcu_GetClockFrequency) @09c72000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SCH_Init/28 
+  Calls: 
+LPIT_0_CH_0_ISR/45 (LPIT_0_CH_0_ISR) @09c72ee0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: SCH_Init/28 (addr)
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Platform_InstallIrqHandler/44 (Platform_InstallIrqHandler) @09c72e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SCH_Init/28 
+  Calls: 
+sch_ExitLowPower/43 (sch_ExitLowPower) @09c729a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: Mcl_Config_INIT/81 (addr)Port_Config_Init/83 (addr)Gpt_Config_Init/86 (addr)Spi_Config_Init/88 (addr)Can_Config_Init/91 (addr)Pwm_Config_Init/93 (addr)Crc_xConfigInit/95 (addr)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: sch_Run10msTasks/33 
+  Calls: INI_InitModules/98 INI_InitLibrairies/97 INI_InitMiddlewares/96 Crc_Init/94 Pwm_Init/92 Can_Init/90 Spi_SetAsyncMode/89 Spi_Init/87 Gpt_Init/85 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_Init/84 Port_Init/82 Mcl_Init/80 Mcu_SetMode/79 
+sch_EnterLowPower/42 (sch_EnterLowPower) @09c72700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: sch_Run10msTasks/33 
+  Calls: Mcu_SetMode/79 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Platform_SetIrq/78 Mcl_DeInit/77 Gpt_DeInit/76 Spi_DeInit/75 Pwm_DeInit/74 FLA_Deinit/73 MPM_Deinit/72 FSM_Deinit/71 ACT_Deinit/70 
+sch_Interruption/41 (sch_Interruption) @09c72460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sch_counters/26 (read)sch_counters/26 (write)WDO_InternalStateFlag/68 (read)WDO_ExternalStateFlag/69 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: WDO_Refresh/53 WDO_Refresh/53 
+sch_UpdateLoadMeasures/40 (sch_UpdateLoadMeasures) @09c721c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_mainLoopElapsedTimeUs/27 (read)SCH_MinLoad/2 (read)SCH_MinLoad/2 (write)SCH_MaxLoad/1 (read)SCH_MaxLoad/1 (write)SCH_AverageLoad/3 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: 
+sch_Run10sTasks/39 (sch_Run10sTasks) @09c6cd20
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: 
+sch_Run1sTasks/38 (sch_Run1sTasks) @09c6c7e0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: PAR_SaveParametersInFlash/67 
+sch_Run500msTasks/37 (sch_Run500msTasks) @09c6c2a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: 
+sch_Run100msTasks/36 (sch_Run100msTasks) @09c6cee0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: CTBPbit_SetTimePeriod/66 
+sch_Run50msTasks/35 (sch_Run50msTasks) @09c6cc40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: 
+sch_Run20msTasks/34 (sch_Run20msTasks) @09c6c9a0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: COM_TxRequestedTasks/65 
+sch_Run10msTasks/33 (sch_Run10msTasks) @09c6c700
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)ACT_readyForLowPower/62 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: COM_RxTask/64 MPM_Management/63 sch_ExitLowPower/43 sch_EnterLowPower/42 
+sch_Run5msTasks/32 (sch_Run5msTasks) @09c6c460
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: 
+sch_Run1msTasks/31 (sch_Run1msTasks) @09c6c1c0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)sch_counters/26 (read)sch_counters/26 (write)PAR_flags/51 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SCH_MainLoop/30 
+  Calls: COM_TxScheduledTasks/61 CNV_Update/60 DBG_Update/59 CTB_Update/58 PWB_Update/57 FSM_Update/56 ACT_UpdateFaults/55 PAR_Update/54 WDO_Refresh/53 Mcu_PerformReset/52 
+SCH_MainLoop/30 (SCH_MainLoop) @09c66d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)sch_counters/26 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: sch_UpdateLoadMeasures/40 sch_Run10sTasks/39 sch_Run1sTasks/38 sch_Run500msTasks/37 sch_Run100msTasks/36 sch_Run50msTasks/35 sch_Run20msTasks/34 sch_Run10msTasks/33 sch_Run5msTasks/32 sch_Run1msTasks/31 
+SCH_Deinit/29 (SCH_Deinit) @09c66ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Gpt_DisableNotification/50 
+SCH_Init/28 (SCH_Init) @09c66c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SCH_MinLoad/2 (write)SCH_MaxLoad/1 (write)SCH_AverageLoad/3 (write)LPIT_0_CH_0_ISR/45 (addr)SCH_lpit0Freq.11424/47 (write)SCH_lpit0Freq.11424/47 (read)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)sch_counters/26 (write)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Gpt_StartTimer/49 Gpt_EnableNotification/48 Mcu_GetClockFrequency/46 Platform_InstallIrqHandler/44 
+sch_mainLoopElapsedTimeUs/27 (sch_mainLoopElapsedTimeUs) @09c63a68
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: sch_UpdateLoadMeasures/40 (read)
+  Availability: available
+  Varpool flags:
+sch_counters/26 (sch_counters) @09c639d8
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: sch_Run10sTasks/39 (write)sch_Run1msTasks/31 (write)sch_Run5msTasks/32 (write)sch_Run20msTasks/34 (write)sch_Run50msTasks/35 (write)sch_Run100msTasks/36 (write)sch_Run500msTasks/37 (write)SCH_Deinit/29 (write)sch_Run1sTasks/38 (write)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Interruption/41 (read)sch_Run10msTasks/33 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)SCH_Deinit/29 (write)sch_Run1msTasks/31 (read)sch_Interruption/41 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Init/28 (write)SCH_Deinit/29 (write)SCH_Init/28 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)sch_Run1msTasks/31 (write)sch_Run1msTasks/31 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)SCH_MainLoop/30 (read)
+  Availability: available
+  Varpool flags:
+g_ptLmemBasePtrArray/4 (g_ptLmemBasePtrArray) @09921678
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+SCH_AverageLoad/3 (SCH_AverageLoad) @070c28b8
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: SCH_Init/28 (write)sch_UpdateLoadMeasures/40 (write)
+  Availability: available
+  Varpool flags:
+SCH_MinLoad/2 (SCH_MinLoad) @070c2870
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: SCH_Init/28 (write)sch_UpdateLoadMeasures/40 (read)sch_UpdateLoadMeasures/40 (write)
+  Availability: available
+  Varpool flags:
+SCH_MaxLoad/1 (SCH_MaxLoad) @070c2828
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: SCH_Init/28 (write)sch_UpdateLoadMeasures/40 (read)sch_UpdateLoadMeasures/40 (write)
+  Availability: available
+  Varpool flags:
+sch_ExitLowPower ()
+{
+  <bb 2> :
+  Mcu_SetMode (0);
+  Mcl_Init (&Mcl_Config_INIT);
+  Port_Init (&Port_Config_Init);
+  Platform_Init (0B);
+  Platform_SetIrq (79, 1);
+  Platform_SetIrq (81, 1);
+  Platform_SetIrq (82, 1);
+  Platform_SetIrq (86, 1);
+  Platform_SetIrq (80, 1);
+  Platform_SetIrq (88, 1);
+  Platform_SetIrq (89, 1);
+  Platform_SetIrq (0, 1);
+  Platform_SetIrq (1, 1);
+  Platform_SetIrq (2, 1);
+  Platform_SetIrq (3, 1);
+  Platform_SetIrq (26, 1);
+  Platform_SetIrq (27, 1);
+  Platform_SetIrq (49, 1);
+  Platform_SetIrq (50, 1);
+  Gpt_Init (&Gpt_Config_Init);
+  Spi_Init (&Spi_Config_Init);
+  Spi_SetAsyncMode (1);
+  Can_Init (&Can_Config_Init);
+  Pwm_Init (&Pwm_Config_Init);
+  Crc_Init (&Crc_xConfigInit);
+  INI_InitMiddlewares ();
+  INI_InitLibrairies ();
+  INI_InitModules ();
+  return;
+
+}
+
+
+sch_EnterLowPower ()
+{
+  <bb 2> :
+  ACT_Deinit ();
+  FSM_Deinit ();
+  MPM_Deinit ();
+  FLA_Deinit ();
+  Pwm_DeInit ();
+  Spi_DeInit ();
+  Gpt_DeInit ();
+  Mcl_DeInit ();
+  Platform_SetIrq (79, 0);
+  Platform_SetIrq (81, 1);
+  Platform_SetIrq (82, 1);
+  Platform_SetIrq (86, 0);
+  Platform_SetIrq (80, 1);
+  Platform_SetIrq (88, 0);
+  Platform_SetIrq (89, 0);
+  Platform_SetIrq (0, 0);
+  Platform_SetIrq (1, 0);
+  Platform_SetIrq (2, 0);
+  Platform_SetIrq (3, 0);
+  Platform_SetIrq (26, 0);
+  Platform_SetIrq (27, 0);
+  Platform_SetIrq (28, 0);
+  Platform_SetIrq (48, 0);
+  Platform_SetIrq (49, 0);
+  Platform_SetIrq (50, 0);
+  Mcu_SetMode (1);
+  return;
+
+}
+
+
+sch_Interruption ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  _Bool WDO_InternalStateFlag.5_3;
+  _Bool WDO_ExternalStateFlag.6_4;
+
+  <bb 2> :
+  _1 = sch_counters.count1ms;
+  _2 = _1 + 1;
+  sch_counters.count1ms = _2;
+  WDO_InternalStateFlag.5_3 = WDO_InternalStateFlag;
+  if (WDO_InternalStateFlag.5_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  WDO_Refresh (0);
+
+  <bb 4> :
+  WDO_ExternalStateFlag.6_4 = WDO_ExternalStateFlag;
+  if (WDO_ExternalStateFlag.6_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  WDO_Refresh (1);
+
+  <bb 6> :
+  return;
+
+}
+
+
+sch_UpdateLoadMeasures ()
+{
+  uint32_t tempLoad;
+  long unsigned int sch_mainLoopElapsedTimeUs.2_1;
+  long unsigned int _2;
+  unsigned char SCH_MinLoad.3_3;
+  long unsigned int _4;
+  unsigned char _5;
+  unsigned char SCH_MaxLoad.4_6;
+  long unsigned int _7;
+  unsigned char _8;
+  unsigned char _9;
+
+  <bb 2> :
+  sch_mainLoopElapsedTimeUs.2_1 ={v} sch_mainLoopElapsedTimeUs;
+  _2 = sch_mainLoopElapsedTimeUs.2_1 * 100;
+  tempLoad_14 = _2 / 100;
+  if (tempLoad_14 > 100)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  tempLoad_15 = 100;
+
+  <bb 4> :
+  # tempLoad_10 = PHI <tempLoad_14(2), tempLoad_15(3)>
+  SCH_MinLoad.3_3 = SCH_MinLoad;
+  _4 = (long unsigned int) SCH_MinLoad.3_3;
+  if (tempLoad_10 < _4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = (unsigned char) tempLoad_10;
+  SCH_MinLoad = _5;
+
+  <bb 6> :
+  SCH_MaxLoad.4_6 = SCH_MaxLoad;
+  _7 = (long unsigned int) SCH_MaxLoad.4_6;
+  if (tempLoad_10 > _7)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  _8 = (unsigned char) tempLoad_10;
+  SCH_MaxLoad = _8;
+
+  <bb 8> :
+  _9 = (unsigned char) tempLoad_10;
+  SCH_AverageLoad = _9;
+  return;
+
+}
+
+
+sch_Run10sTasks ()
+{
+  <bb 2> :
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+
+sch_Run1sTasks ()
+{
+  <bb 2> :
+  sch_counters.count1s = 0;
+  PAR_SaveParametersInFlash ();
+  return;
+
+}
+
+
+sch_Run500msTasks ()
+{
+  <bb 2> :
+  sch_counters.count500ms = 0;
+  return;
+
+}
+
+
+sch_Run100msTasks ()
+{
+  <bb 2> :
+  sch_counters.count100ms = 0;
+  CTBPbit_SetTimePeriod ();
+  return;
+
+}
+
+
+sch_Run50msTasks ()
+{
+  <bb 2> :
+  sch_counters.count50ms = 0;
+  return;
+
+}
+
+
+sch_Run20msTasks ()
+{
+  <bb 2> :
+  sch_counters.count20ms = 0;
+  COM_TxRequestedTasks ();
+  return;
+
+}
+
+
+sch_Run10msTasks ()
+{
+  _Bool ACT_readyForLowPower.1_1;
+
+  <bb 2> :
+  sch_counters.count10ms = 0;
+  ACT_readyForLowPower.1_1 = ACT_readyForLowPower;
+  if (ACT_readyForLowPower.1_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  sch_EnterLowPower ();
+  sch_ExitLowPower ();
+
+  <bb 4> :
+  MPM_Management ();
+  COM_RxTask ();
+  return;
+
+}
+
+
+sch_Run5msTasks ()
+{
+  <bb 2> :
+  sch_counters.count5ms = 0;
+  return;
+
+}
+
+
+sch_Run1msTasks ()
+{
+  uint32_t localCnt1msCpy;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  unsigned char _17;
+  unsigned char _18;
+
+  <bb 2> :
+  localCnt1msCpy_21 = sch_counters.count1ms;
+  sch_counters.count1ms = 0;
+  _1 = sch_counters.count5ms;
+  _2 = localCnt1msCpy_21 + _1;
+  sch_counters.count5ms = _2;
+  _3 = sch_counters.count10ms;
+  _4 = localCnt1msCpy_21 + _3;
+  sch_counters.count10ms = _4;
+  _5 = sch_counters.count20ms;
+  _6 = localCnt1msCpy_21 + _5;
+  sch_counters.count20ms = _6;
+  _7 = sch_counters.count50ms;
+  _8 = localCnt1msCpy_21 + _7;
+  sch_counters.count50ms = _8;
+  _9 = sch_counters.count100ms;
+  _10 = localCnt1msCpy_21 + _9;
+  sch_counters.count100ms = _10;
+  _11 = sch_counters.count500ms;
+  _12 = localCnt1msCpy_21 + _11;
+  sch_counters.count500ms = _12;
+  _13 = sch_counters.count1s;
+  _14 = localCnt1msCpy_21 + _13;
+  sch_counters.count1s = _14;
+  _15 = sch_counters.count10s;
+  _16 = localCnt1msCpy_21 + _15;
+  sch_counters.count10s = _16;
+  _17 = BIT_FIELD_REF <PAR_flags.moduleFlags.status.flags, 8, 0>;
+  _18 = _17 & 2;
+  if (_18 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Mcu_PerformReset ();
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  WDO_Refresh (1);
+
+  <bb 5> :
+  PAR_Update ();
+  ACT_UpdateFaults ();
+  FSM_Update ();
+  PWB_Update ();
+  CTB_Update ();
+  DBG_Update ();
+  CNV_Update ();
+  COM_TxScheduledTasks ();
+  return;
+
+}
+
+
+SCH_MainLoop ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  _1 = sch_counters.count1ms;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  sch_Run1msTasks ();
+
+  <bb 4> :
+  _2 = sch_counters.count5ms;
+  if (_2 > 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  sch_Run5msTasks ();
+
+  <bb 6> :
+  _3 = sch_counters.count10ms;
+  if (_3 > 9)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  sch_Run10msTasks ();
+
+  <bb 8> :
+  _4 = sch_counters.count20ms;
+  if (_4 > 19)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  sch_Run20msTasks ();
+
+  <bb 10> :
+  _5 = sch_counters.count50ms;
+  if (_5 > 49)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  sch_Run50msTasks ();
+
+  <bb 12> :
+  _6 = sch_counters.count100ms;
+  if (_6 > 99)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  sch_Run100msTasks ();
+
+  <bb 14> :
+  _7 = sch_counters.count500ms;
+  if (_7 > 499)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  sch_Run500msTasks ();
+
+  <bb 16> :
+  _8 = sch_counters.count1s;
+  if (_8 > 999)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  sch_Run1sTasks ();
+
+  <bb 18> :
+  _9 = sch_counters.count10s;
+  if (_9 > 9999)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  sch_Run10sTasks ();
+
+  <bb 20> :
+  sch_UpdateLoadMeasures ();
+  return;
+
+}
+
+
+SCH_Deinit ()
+{
+  <bb 2> :
+  Gpt_DisableNotification (0);
+  sch_counters.count1ms = 0;
+  sch_counters.count5ms = 0;
+  sch_counters.count10ms = 0;
+  sch_counters.count20ms = 0;
+  sch_counters.count50ms = 0;
+  sch_counters.count100ms = 0;
+  sch_counters.count500ms = 0;
+  sch_counters.count1s = 0;
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+
+SCH_Init ()
+{
+  static uint32_t SCH_lpit0Freq;
+  long unsigned int _1;
+  long unsigned int SCH_lpit0Freq.0_2;
+  long unsigned int _3;
+
+  <bb 2> :
+  SCH_MinLoad = 100;
+  SCH_MaxLoad = 0;
+  SCH_AverageLoad = 0;
+  Platform_InstallIrqHandler (48, LPIT_0_CH_0_ISR, 0B);
+  _1 = Mcu_GetClockFrequency (78);
+  SCH_lpit0Freq = _1;
+  Gpt_EnableNotification (0);
+  SCH_lpit0Freq.0_2 = SCH_lpit0Freq;
+  _3 = SCH_lpit0Freq.0_2 / 1000;
+  Gpt_StartTimer (0, _3);
+  sch_counters.count1ms = 0;
+  sch_counters.count5ms = 0;
+  sch_counters.count10ms = 0;
+  sch_counters.count20ms = 0;
+  sch_counters.count50ms = 0;
+  sch_counters.count100ms = 0;
+  sch_counters.count500ms = 0;
+  sch_counters.count1s = 0;
+  sch_counters.count10s = 0;
+  return;
+
+}
+
+

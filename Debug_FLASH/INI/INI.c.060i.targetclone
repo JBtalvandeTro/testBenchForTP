@@ -1,0 +1,123 @@
+INI_DeinitModules ()
+{
+  <bb 2> :
+  FSM_Deinit ();
+  MPM_Deinit ();
+  CNV_Init ();
+  CNV_Deinit ();
+  SCH_Deinit ();
+  ACT_Deinit ();
+  return;
+
+}
+
+
+INI_DeinitLibrairies ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_DeinitMiddlewares ()
+{
+  <bb 2> :
+  CBU_Deinit ();
+  return;
+
+}
+
+
+INI_DeinitDrivers ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_InitModules ()
+{
+  <bb 2> :
+  ACT_Init ();
+  PAR_Init ();
+  FSM_Init ();
+  MPM_Init ();
+  COM_Init ();
+  CNV_Init ();
+  CTB_Init ();
+  PWB_Init ();
+  DBG_Init ();
+  FSM_Update ();
+  Dio_WriteChannel (87, 1);
+  Dio_WriteChannel (142, 1);
+  Dio_WriteChannel (143, 1);
+  Dio_WriteChannel (151, 1);
+  Dio_WriteChannel (152, 1);
+  Dio_WriteChannel (153, 1);
+  Dio_WriteChannel (154, 1);
+  Dio_WriteChannel (122, 1);
+  Dio_WriteChannel (124, 1);
+  return;
+
+}
+
+
+INI_InitLibrairies ()
+{
+  <bb 2> :
+  return;
+
+}
+
+
+INI_InitMiddlewares ()
+{
+  <bb 2> :
+  FLA_Init ();
+  return;
+
+}
+
+
+INI_InitDrivers ()
+{
+  <unnamed type> _1;
+
+  <bb 2> :
+  Mcu_Init (&Mcu_Config_Init);
+  Mcu_InitClock (0);
+
+  <bb 3> :
+  _1 = Mcu_GetPllStatus ();
+  if (_1 != 51)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  Mcu_DistributePllClock ();
+  Mcu_SetMode (0);
+  Mcl_Init (&Mcl_Config_INIT);
+  Port_Init (&Port_Config_Init);
+  Platform_Init (0B);
+  Gpt_Init (&Gpt_Config_Init);
+  Spi_Init (&Spi_Config_Init);
+  Spi_SetAsyncMode (1);
+  Can_Init (&Can_Config_Init);
+  Icu_Init (&Icu_Config_Init);
+  Pwm_Init (&Pwm_Config_Init);
+  Crc_Init (&Crc_xConfigInit);
+  Dio_WriteChannel (87, 1);
+  Pwm_SetPeriodAndDuty (0, 60241, 16384);
+  Pwm_SetPeriodAndDuty (1, 60241, 16384);
+  Pwm_SetPeriodAndDuty (2, 60241, 16384);
+  Pwm_SetPeriodAndDuty (3, 60241, 16384);
+  Pwm_SetPeriodAndDuty (4, 60241, 16384);
+  Pwm_SetPeriodAndDuty (5, 60241, 16384);
+  return;
+
+}
+
+

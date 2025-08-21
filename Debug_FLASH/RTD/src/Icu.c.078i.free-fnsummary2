@@ -1,0 +1,581 @@
+Icu_LogicChStateCallback (uint16 logicChannel, uint8 mask, boolean set)
+{
+  <bb 2> :
+  if (set_2(D) != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  Icu_SetBitChState (logicChannel_4(D), mask_5(D));
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Icu_ClearBitChState (logicChannel_4(D), mask_5(D));
+
+  <bb 5> :
+  return;
+
+}
+
+
+Icu_ReportEvents (uint16 Channel, boolean bOverflow)
+{
+  uint32 u32CoreId;
+
+  <bb 2> :
+  u32CoreId_1 = 0;
+  Icu_SetBitChState (Channel_3(D), 2);
+  Icu_ReportWakeupAndOverflow (Channel_3(D), bOverflow_5(D));
+  Icu_CallNotification (Channel_3(D), u32CoreId_1);
+  return;
+
+}
+
+
+Icu_ReportWakeupAndOverflow (uint16 Channel, boolean bOverflow)
+{
+  unsigned char _1;
+  <unnamed type> Icu_CurrentMode.2_2;
+
+  <bb 2> :
+  _1 = Icu_GetBitChState (Channel_6(D), 1);
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  Icu_CurrentMode.2_2 = Icu_CurrentMode;
+  if (Icu_CurrentMode.2_2 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Icu_SetBitChState (Channel_6(D), 128);
+
+  <bb 5> :
+  if (bOverflow_9(D) != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Icu_SetBitChState (Channel_6(D), 16);
+
+  <bb 7> :
+  return;
+
+}
+
+
+Icu_DisableEdgeDetection (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_10(D);
+  _4 = *_2[_3];
+  ChannelIndex_11 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_11;
+  ChannelConfig_12 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableEdgeDetection (ChannelConfig_12);
+  Icu_ClearBitChState (Channel_10(D), 8);
+  return;
+
+}
+
+
+Icu_EnableEdgeDetection (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  Icu_SetBitChState (Channel_10(D), 8);
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_10(D);
+  _4 = *_2[_3];
+  ChannelIndex_12 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_12;
+  ChannelConfig_13 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableEdgeDetection (ChannelConfig_13);
+  return;
+
+}
+
+
+Icu_GetEdgeNumbers (Icu_ChannelType Channel)
+{
+  Icu_EdgeNumberType edgeNumbers;
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  Icu_EdgeNumberType D.7316;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  Icu_EdgeNumberType _16;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  edgeNumbers_9 = 0;
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_11(D);
+  _4 = *_2[_3];
+  ChannelIndex_12 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_12;
+  ChannelConfig_13 = *_6[_7].Icu_IpwChannelConfigPtr;
+  edgeNumbers_15 = Icu_Ipw_GetEdgeNumbers (ChannelConfig_13);
+  _16 = edgeNumbers_15;
+
+  <bb 3> :
+<L0>:
+  return _16;
+
+}
+
+
+Icu_DisableEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_10(D);
+  _4 = *_2[_3];
+  ChannelIndex_11 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_11;
+  ChannelConfig_12 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableEdgeCount (ChannelConfig_12);
+  Icu_ClearBitChState (Channel_10(D), 8);
+  return;
+
+}
+
+
+Icu_EnableEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  Icu_ClearBitChState (Channel_10(D), 16);
+  Icu_SetBitChState (Channel_10(D), 8);
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_10(D);
+  _4 = *_2[_3];
+  ChannelIndex_13 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_13;
+  ChannelConfig_14 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableEdgeCount (ChannelConfig_14);
+  return;
+
+}
+
+
+Icu_ResetEdgeCount (Icu_ChannelType Channel)
+{
+  uint32 u32CoreId;
+  const struct Icu_Ipw_ChannelConfigType * ChannelConfig;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+
+  <bb 2> :
+  u32CoreId_8 = 0;
+  _1 = Icu_pCfgPtr[u32CoreId_8];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_10(D);
+  _4 = *_2[_3];
+  ChannelIndex_11 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_8];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_11;
+  ChannelConfig_12 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_ClearBitChState (Channel_10(D), 16);
+  Icu_Ipw_ResetEdgeCount (ChannelConfig_12);
+  return;
+
+}
+
+
+Icu_EnableNotification (Icu_ChannelType Channel)
+{
+  Icu_ChannelType ChannelIndex;
+  uint32 u32CoreId;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  const struct Icu_Ipw_ChannelConfigType * _8;
+
+  <bb 2> :
+  u32CoreId_9 = 0;
+  Icu_SetBitChState (Channel_11(D), 4);
+  _1 = Icu_pCfgPtr[u32CoreId_9];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_11(D);
+  _4 = *_2[_3];
+  ChannelIndex_13 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_9];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_13;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_EnableNotification (_8);
+  return;
+
+}
+
+
+Icu_DisableNotification (Icu_ChannelType Channel)
+{
+  Icu_ChannelType ChannelIndex;
+  uint32 u32CoreId;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  const struct Icu_Ipw_ChannelConfigType * _8;
+
+  <bb 2> :
+  u32CoreId_9 = 0;
+  Icu_ClearBitChState (Channel_11(D), 4);
+  _1 = Icu_pCfgPtr[u32CoreId_9];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_11(D);
+  _4 = *_2[_3];
+  ChannelIndex_13 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_9];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_13;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_DisableNotification (_8);
+  return;
+
+}
+
+
+Icu_SetActivationCondition (Icu_ChannelType Channel, Icu_ActivationType Activation)
+{
+  uint32 u32CoreId;
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  const struct Icu_ConfigType * _5;
+  const struct Icu_ChannelConfigType[<unknown>] * _6;
+  int _7;
+  const struct Icu_Ipw_ChannelConfigType * _8;
+
+  <bb 2> :
+  u32CoreId_9 = 0;
+  Icu_ClearBitChState (Channel_11(D), 2);
+  _1 = Icu_pCfgPtr[u32CoreId_9];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_11(D);
+  _4 = *_2[_3];
+  ChannelIndex_13 = (Icu_ChannelType) _4;
+  _5 = Icu_pCfgPtr[u32CoreId_9];
+  _6 = _5->Icu_ChannelConfigPtr;
+  _7 = (int) ChannelIndex_13;
+  _8 = *_6[_7].Icu_IpwChannelConfigPtr;
+  Icu_Ipw_SetActivationCondition (Activation_14(D), _8);
+  return;
+
+}
+
+
+Icu_Init (const struct Icu_ConfigType * ConfigPtr)
+{
+  uint32 u32CoreId;
+  Icu_ChannelType ChannelIndex;
+  Icu_ChannelType Channel;
+  const struct Icu_ConfigType * _1;
+  unsigned char _2;
+  const struct Icu_ConfigType * _3;
+  const struct Icu_Ipw_IpConfigType[<unknown>] * _4;
+  int _5;
+  short unsigned int ChannelIndex.0_6;
+  const struct Icu_ConfigType * _7;
+  unsigned char _8;
+  short unsigned int _9;
+
+  <bb 2> :
+  u32CoreId_13 = 0;
+  Icu_pCfgPtr[u32CoreId_13] = ConfigPtr_15(D);
+  _1 = Icu_pCfgPtr[u32CoreId_13];
+  _2 = _1->nNumInstances;
+  _3 = Icu_pCfgPtr[u32CoreId_13];
+  _4 = _3->Icu_IpConfigPtr;
+  Icu_Ipw_Init (_2, _4);
+  ChannelIndex_18 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  Channel_21 = Icu_ConvertChannelIndexToChannel (ChannelIndex_10, u32CoreId_13);
+  if (Channel_21 <= 5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _5 = (int) Channel_21;
+  Icu_aChannelState[_5] ={v} 0;
+
+  <bb 5> :
+  ChannelIndex.0_6 = ChannelIndex_10;
+  ChannelIndex_23 = ChannelIndex.0_6 + 1;
+
+  <bb 6> :
+  # ChannelIndex_10 = PHI <ChannelIndex_18(2), ChannelIndex_23(5)>
+  _7 = Icu_pCfgPtr[u32CoreId_13];
+  _8 = _7->nNumChannels;
+  _9 = (short unsigned int) _8;
+  if (ChannelIndex_10 < _9)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  Icu_CurrentMode = 0;
+  return;
+
+}
+
+
+Icu_ConvertChannelIndexToChannel (Icu_ChannelType ChannelIndex, uint32 u32CoreId)
+{
+  Icu_ChannelType Channel;
+  Icu_ChannelType D.7314;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  short unsigned int _5;
+  short unsigned int Channel.1_6;
+  Icu_ChannelType _13;
+
+  <bb 2> :
+  Channel_8 = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  _1 = Icu_pCfgPtr[u32CoreId_10(D)];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_7;
+  _4 = *_2[_3];
+  _5 = (short unsigned int) _4;
+  if (ChannelIndex_11(D) == _5)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  Channel.1_6 = Channel_7;
+  Channel_12 = Channel.1_6 + 1;
+
+  <bb 6> :
+  # Channel_7 = PHI <Channel_8(2), Channel_12(5)>
+  if (Channel_7 <= 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  _13 = Channel_7;
+
+  <bb 8> :
+<L5>:
+  return _13;
+
+}
+
+
+Icu_CallNotification (Icu_ChannelType Channel, uint32 u32CoreId)
+{
+  Icu_ChannelType ChannelIndex;
+  const struct Icu_ConfigType * _1;
+  const uint8[<unknown>] * _2;
+  int _3;
+  unsigned char _4;
+  unsigned char _5;
+  const struct Icu_ConfigType * _6;
+  const struct Icu_ChannelConfigType[<unknown>] * _7;
+  int _8;
+  void (*<T4ad>) (void) _9;
+  const struct Icu_ConfigType * _10;
+  const struct Icu_ChannelConfigType[<unknown>] * _11;
+  int _12;
+  void (*<T4ad>) (void) _13;
+
+  <bb 2> :
+  _1 = Icu_pCfgPtr[u32CoreId_16(D)];
+  _2 = _1->Icu_IndexChannelMap;
+  _3 = (int) Channel_17(D);
+  _4 = *_2[_3];
+  ChannelIndex_18 = (Icu_ChannelType) _4;
+  _5 = Icu_GetBitChState (Channel_17(D), 4);
+  if (_5 == 4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _6 = Icu_pCfgPtr[u32CoreId_16(D)];
+  _7 = _6->Icu_ChannelConfigPtr;
+  _8 = (int) ChannelIndex_18;
+  _9 = *_7[_8].Icu_ChannelNotification;
+  if (_9 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _10 = Icu_pCfgPtr[u32CoreId_16(D)];
+  _11 = _10->Icu_ChannelConfigPtr;
+  _12 = (int) ChannelIndex_18;
+  _13 = *_11[_12].Icu_ChannelNotification;
+  _13 ();
+
+  <bb 5> :
+  return;
+
+}
+
+
+Icu_ClearBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  int _1;
+  unsigned char _2;
+  unsigned char _3;
+  int _4;
+  unsigned char _5;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01 ();
+  _1 = (int) Channel_8(D);
+  _2 ={v} Icu_aChannelState[_1];
+  _3 = ~mask_9(D);
+  _4 = (int) Channel_8(D);
+  _5 = _2 & _3;
+  Icu_aChannelState[_4] ={v} _5;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01 ();
+  return;
+
+}
+
+
+Icu_GetBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  Icu_ChannelStateType D.7324;
+  int _1;
+  unsigned char _2;
+  Icu_ChannelStateType _6;
+
+  <bb 2> :
+  _1 = (int) Channel_3(D);
+  _2 ={v} Icu_aChannelState[_1];
+  _6 = mask_5(D) & _2;
+
+  <bb 3> :
+<L0>:
+  return _6;
+
+}
+
+
+Icu_SetBitChState (Icu_ChannelType Channel, Icu_ChannelStateType mask)
+{
+  int _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+
+  <bb 2> :
+  SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00 ();
+  _1 = (int) Channel_7(D);
+  _2 ={v} Icu_aChannelState[_1];
+  _3 = (int) Channel_7(D);
+  _4 = mask_8(D) | _2;
+  Icu_aChannelState[_3] ={v} _4;
+  SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00 ();
+  return;
+
+}
+
+

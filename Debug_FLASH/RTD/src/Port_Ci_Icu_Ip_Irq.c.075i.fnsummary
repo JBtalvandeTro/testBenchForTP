@@ -1,0 +1,249 @@
+Symbol table:
+
+Port_Ci_Icu_Ip_u32ChState/4 (Port_Ci_Icu_Ip_u32ChState) @067e7ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)Port_Ci_Icu_Ip_ReportEvents/2 (read)
+  Availability: not_available
+  Varpool flags:
+s_Port_Ci_Base/3 (s_Port_Ci_Base) @067e7900
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)Port_Ci_Icu_Ip_ProcessInterrupt/0 (read)
+  Availability: not_available
+  Varpool flags: read-only
+Port_Ci_Icu_Ip_ReportEvents/2 (Port_Ci_Icu_Ip_ReportEvents) @067e58c0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)Port_Ci_Icu_Ip_u32ChState/4 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+  Calls: 
+   Indirect call
+   Indirect call
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 (PORT_CI_ICU_IP_E_EXT_IRQ_ISR) @067e5d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Port_Ci_Icu_Ip_ProcessInterrupt/0 
+Port_Ci_Icu_Ip_ProcessInterrupt/0 (Port_Ci_Icu_Ip_ProcessInterrupt) @067e5a80
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)s_Port_Ci_Base/3 (read)
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: PORT_CI_ICU_IP_E_EXT_IRQ_ISR/1 
+  Calls: Port_Ci_Icu_Ip_ReportEvents/2 
+Port_Ci_Icu_Ip_ReportEvents (uint8 portId, uint8 pinId)
+{
+  int _1;
+  int _2;
+  _Bool _3;
+  int _4;
+  int _5;
+  void (*<T4a0>) (uint16, boolean) _6;
+  int _7;
+  int _8;
+  void (*<T4a0>) (uint16, boolean) _9;
+  int _10;
+  int _11;
+  short unsigned int _12;
+  int _13;
+  int _14;
+  _Bool _15;
+  int _16;
+  int _17;
+  void (*<T49c>) (void) _18;
+  int _19;
+  int _20;
+  _Bool _21;
+  int _22;
+  int _23;
+  void (*<T49c>) (void) _24;
+
+  <bb 2> :
+  _1 = (int) portId_26(D);
+  _2 = (int) pinId_27(D);
+  _3 = Port_Ci_Icu_Ip_u32ChState[_1][_2].chInit;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = (int) portId_26(D);
+  _5 = (int) pinId_27(D);
+  _6 = Port_Ci_Icu_Ip_u32ChState[_4][_5].callback;
+  if (_6 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _7 = (int) portId_26(D);
+  _8 = (int) pinId_27(D);
+  _9 = Port_Ci_Icu_Ip_u32ChState[_7][_8].callback;
+  _10 = (int) portId_26(D);
+  _11 = (int) pinId_27(D);
+  _12 = Port_Ci_Icu_Ip_u32ChState[_10][_11].callbackParam;
+  _9 (_12, 0);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  _13 = (int) portId_26(D);
+  _14 = (int) pinId_27(D);
+  _15 = Port_Ci_Icu_Ip_u32ChState[_13][_14].chInit;
+  if (_15 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 6> :
+  _16 = (int) portId_26(D);
+  _17 = (int) pinId_27(D);
+  _18 = Port_Ci_Icu_Ip_u32ChState[_16][_17].PortCiChannelNotification;
+  if (_18 != 0B)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  _19 = (int) portId_26(D);
+  _20 = (int) pinId_27(D);
+  _21 = Port_Ci_Icu_Ip_u32ChState[_19][_20].notificationEnable;
+  if (_21 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _22 = (int) portId_26(D);
+  _23 = (int) pinId_27(D);
+  _24 = Port_Ci_Icu_Ip_u32ChState[_22][_23].PortCiChannelNotification;
+  _24 ();
+
+  <bb 9> :
+  return;
+
+}
+
+
+PORT_CI_ICU_IP_E_EXT_IRQ_ISR ()
+{
+  <bb 2> :
+  Port_Ci_Icu_Ip_ProcessInterrupt (4);
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+Port_Ci_Icu_Ip_ProcessInterrupt (uint8 portId)
+{
+  uint32 u32RegPort_CiISFR;
+  uint32 pinIdMask;
+  uint32 u32RegIrqMask;
+  uint32 u32Port_CiPCRTemp;
+  uint32 u32Port_CiPCR;
+  uint8 pinId;
+  int _1;
+  struct PORT_Type * _2;
+  int _3;
+  struct PORT_Type * _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  int _8;
+  struct PORT_Type * _9;
+  long unsigned int _10;
+  int _11;
+  struct PORT_Type * _12;
+  long unsigned int _13;
+  unsigned char pinId.0_14;
+
+  <bb 2> :
+  u32Port_CiPCRTemp_21 = 0;
+  u32RegIrqMask_22 = 0;
+  pinIdMask_23 = 1;
+  _1 = (int) portId_24(D);
+  _2 = s_Port_Ci_Base[_1];
+  u32RegPort_CiISFR_26 ={v} _2->ISFR;
+  pinId_27 = 0;
+  goto <bb 10>; [INV]
+
+  <bb 3> :
+  _3 = (int) portId_24(D);
+  _4 = s_Port_Ci_Base[_3];
+  _5 = (int) pinId_15;
+  _6 ={v} _4->PCR[_5];
+  u32Port_CiPCR_28 = _6 & 983040;
+  if (u32Port_CiPCR_28 == 589824)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  if (u32Port_CiPCR_28 == 655360)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  if (u32Port_CiPCR_28 == 720896)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  u32Port_CiPCRTemp_29 = u32Port_CiPCRTemp_17 | pinIdMask_18;
+
+  <bb 7> :
+  # u32Port_CiPCRTemp_16 = PHI <u32Port_CiPCRTemp_17(5), u32Port_CiPCRTemp_29(6)>
+  _7 = pinIdMask_18 & u32RegPort_CiISFR_26;
+  u32RegIrqMask_30 = u32Port_CiPCRTemp_16 & _7;
+  if (u32RegIrqMask_30 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _8 = (int) portId_24(D);
+  _9 = s_Port_Ci_Base[_8];
+  _10 ={v} _9->ISFR;
+  _11 = (int) portId_24(D);
+  _12 = s_Port_Ci_Base[_11];
+  _13 = u32RegIrqMask_30 | _10;
+  _12->ISFR ={v} _13;
+  Port_Ci_Icu_Ip_ReportEvents (portId_24(D), pinId_15);
+
+  <bb 9> :
+  pinIdMask_33 = pinIdMask_18 << 1;
+  pinId.0_14 = pinId_15;
+  pinId_34 = pinId.0_14 + 1;
+
+  <bb 10> :
+  # pinId_15 = PHI <pinId_27(2), pinId_34(9)>
+  # u32Port_CiPCRTemp_17 = PHI <u32Port_CiPCRTemp_21(2), u32Port_CiPCRTemp_16(9)>
+  # pinIdMask_18 = PHI <pinIdMask_23(2), pinIdMask_33(9)>
+  if (pinId_15 <= 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  return;
+
+}
+
+

@@ -1,0 +1,1158 @@
+getLimitationType ()
+{
+  COM_LimitationTypeValuesE returnVal;
+  CNV_LimitationTypeValuesE limitationTypeCOMETi2;
+  CNV_LimitationTypeValuesE limitationTypeCOMETi1;
+  COM_LimitationTypeValuesE D.8864;
+  COM_LimitationTypeValuesE _17;
+
+  <bb 2> :
+  limitationTypeCOMETi1_6 = 0;
+  limitationTypeCOMETi2_7 = 0;
+  returnVal_8 = 0;
+  limitationTypeCOMETi1_10 = CNV_powercoreUnitTable[0].regulInfo.limitationType;
+  limitationTypeCOMETi2_11 = CNV_powercoreUnitTable[1].regulInfo.limitationType;
+  if (limitationTypeCOMETi1_10 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (limitationTypeCOMETi2_11 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  returnVal_12 = 1;
+
+  <bb 5> :
+  # returnVal_1 = PHI <returnVal_8(3), returnVal_12(4)>
+  if (limitationTypeCOMETi1_10 == 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  if (limitationTypeCOMETi2_11 == 4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  returnVal_13 = 2;
+
+  <bb 8> :
+  # returnVal_2 = PHI <returnVal_1(6), returnVal_13(7)>
+  if (limitationTypeCOMETi1_10 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  if (limitationTypeCOMETi2_11 == 4)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  returnVal_14 = 3;
+
+  <bb 11> :
+  # returnVal_3 = PHI <returnVal_2(8), returnVal_2(9), returnVal_14(10)>
+  if (limitationTypeCOMETi1_10 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 12> :
+  if (limitationTypeCOMETi2_11 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  returnVal_15 = 3;
+
+  <bb 14> :
+  # returnVal_4 = PHI <returnVal_3(11), returnVal_3(12), returnVal_15(13)>
+  if (limitationTypeCOMETi1_10 == 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  if (limitationTypeCOMETi2_11 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  returnVal_16 = 0;
+
+  <bb 17> :
+  # returnVal_5 = PHI <returnVal_4(14), returnVal_4(15), returnVal_16(16)>
+  _17 = returnVal_5;
+
+  <bb 18> :
+<L18>:
+  return _17;
+
+}
+
+
+com_ComposeControlStatusInfo ()
+{
+  uint32_t setpointPAR;
+  uint32_t tempCurrentLimit;
+  <unnamed type> FSM_mode.4_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  <unnamed type> FSM_mode.5_4;
+  long unsigned int _5;
+  long unsigned int _6;
+  short unsigned int _7;
+  int _8;
+  short unsigned int _9;
+  int _10;
+  int _11;
+  short unsigned int _12;
+  unsigned char PWB_numberAvailableCOMETi.6_13;
+  _Bool _14;
+  <unnamed type> _15;
+  _Bool _16;
+  <unnamed type> _17;
+  _Bool _18;
+  _Bool _19;
+  <unnamed type> FSM_mode.7_20;
+  <unnamed type> _21;
+  <unnamed type> CNV_buckType.8_22;
+
+  <bb 2> :
+  tempCurrentLimit_25 = 0;
+  setpointPAR_26 = 0;
+  FSM_mode.4_1 = FSM_mode;
+  if (FSM_mode.4_1 == 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = PAR_paramConfig[16].realVal.unsignedVal;
+  setpointPAR_30 = _2 * 10;
+  _3 = PAR_paramConfig[66].realVal.unsignedVal;
+  tempCurrentLimit_31 = _3 * 10;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  FSM_mode.5_4 = FSM_mode;
+  if (FSM_mode.5_4 == 4)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = CNV_powercoreUnitTable[0].regulInfo.setpoint;
+  _6 = CNV_powercoreUnitTable[1].regulInfo.setpoint;
+  setpointPAR_28 = _5 + _6;
+  _7 = CNV_powercoreUnitTable[0].controlInfo.currentLimit;
+  _8 = (int) _7;
+  _9 = CNV_powercoreUnitTable[1].controlInfo.currentLimit;
+  _10 = (int) _9;
+  _11 = _8 + _10;
+  tempCurrentLimit_29 = (uint32_t) _11;
+
+  <bb 6> :
+  # tempCurrentLimit_23 = PHI <tempCurrentLimit_31(3), tempCurrentLimit_25(4), tempCurrentLimit_29(5)>
+  # setpointPAR_24 = PHI <setpointPAR_30(3), setpointPAR_26(4), setpointPAR_28(5)>
+  _12 = (short unsigned int) tempCurrentLimit_23;
+  COM_controlStatusInfo.currentLimit = _12;
+  COM_controlStatusInfo.setpoint = setpointPAR_24;
+  PWB_numberAvailableCOMETi.6_13 = PWB_numberAvailableCOMETi;
+  COM_controlStatusInfo.powercoreUnitsNb = PWB_numberAvailableCOMETi.6_13;
+  _14 = PWB_relayCurrentState.stateSwitchS2;
+  _15 = (<unnamed type>) _14;
+  COM_controlStatusInfo.lvPrechargeStatus = _15;
+  _16 = PWB_relayCurrentState.stateSwitchS3;
+  _17 = (<unnamed type>) _16;
+  COM_controlStatusInfo.hvCouplerStatus1 = _17;
+  _18 = CTB_dsoState.Health_State;
+  COM_controlStatusInfo.healthStatus = _18;
+  _19 = CTB_dsiState.EMERSTOP_DSI_State;
+  COM_controlStatusInfo.emerstopStatus = _19;
+  FSM_mode.7_20 = FSM_mode;
+  COM_controlStatusInfo.dcdcState = FSM_mode.7_20;
+  _21 = getLimitationType ();
+  COM_controlStatusInfo.limitationType = _21;
+  CNV_buckType.8_22 = CNV_buckType;
+  COM_controlStatusInfo.buckType = CNV_buckType.8_22;
+  return;
+
+}
+
+
+com_ComposeFaults ()
+{
+  short unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  <unnamed type> _13;
+
+  <bb 2> :
+  _1 = ACT_errors.fastPowerDown.all;
+  _2 = ACT_errors.slowPowerDown.all;
+  _3 = (short unsigned int) _2;
+  _4 = _1 + _3;
+  COM_errorsAndWarnings.bbauxErrors = _4;
+  _5 = ACT_errors.warnings.all;
+  COM_errorsAndWarnings.bbauxWarnings = _5;
+  _6 = CNV_powercoreUnitTable[0].flags.moduleFlags.faults.all;
+  _7 = CNV_powercoreUnitTable[1].flags.moduleFlags.faults.all;
+  _8 = _6 | _7;
+  COM_errorsAndWarnings.powercoreErrors = _8;
+  _9 = CNV_powercoreUnitTable[0].flags.moduleFlags.warns.all;
+  _10 = CNV_powercoreUnitTable[1].flags.moduleFlags.warns.all;
+  _11 = _9 | _10;
+  COM_errorsAndWarnings.powercoreWarnings = _11;
+  _12 = ACT_errors.origin.all;
+  COM_errorsAndWarnings.faultOrigin = _12;
+  _13 = ACT_errors.severity;
+  COM_errorsAndWarnings.severity = _13;
+  return;
+
+}
+
+
+com_ComposeVoltageMeasures ()
+{
+  size_t i;
+  uint32_t tempVoltageMeas2;
+  uint32_t tempVoltageMeas1;
+  short unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  short unsigned int _6;
+  long unsigned int _7;
+  short unsigned int _8;
+  short unsigned int _9;
+
+  <bb 2> :
+  tempVoltageMeas1_13 = 0;
+  tempVoltageMeas2_14 = 0;
+  i_15 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[i_12].powerMeas.vBus1;
+  _2 = (long unsigned int) _1;
+  tempVoltageMeas1_22 = tempVoltageMeas1_10 + _2;
+  _3 = CNV_powercoreUnitTable[i_12].powerMeas.vBus2;
+  _4 = (long unsigned int) _3;
+  tempVoltageMeas2_23 = tempVoltageMeas2_11 + _4;
+  i_24 = i_12 + 1;
+
+  <bb 4> :
+  # tempVoltageMeas1_10 = PHI <tempVoltageMeas1_13(2), tempVoltageMeas1_22(3)>
+  # tempVoltageMeas2_11 = PHI <tempVoltageMeas2_14(2), tempVoltageMeas2_23(3)>
+  # i_12 = PHI <i_15(2), i_24(3)>
+  if (i_12 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  tempVoltageMeas1_16 = tempVoltageMeas1_10 / 2;
+  tempVoltageMeas2_17 = tempVoltageMeas2_11 / 2;
+  _5 = PWB_measures.Hv_Voltage;
+  _6 = (short unsigned int) _5;
+  COM_powerMeasures.uBusHv = _6;
+  _7 = PWB_measures.Lv_Voltage;
+  _8 = (short unsigned int) _7;
+  COM_powerMeasures.uBusLv = _8;
+  _9 = (short unsigned int) tempVoltageMeas1_16;
+  COM_powerMeasures.uBusHvAux = _9;
+  return;
+
+}
+
+
+com_ComposeTemperatureMeasures ()
+{
+  uint32_t tempHvTemp;
+  uint32_t tempTempCometi2;
+  uint32_t tempTempCometi1;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  <unnamed type> ACT_tempSeverity.3_9;
+
+  <bb 2> :
+  tempTempCometi1_10 = 0;
+  tempTempCometi2_11 = 0;
+  _1 = CNV_powercoreUnitTable[0].tempMeas.temp8;
+  tempTempCometi1_13 = (uint32_t) _1;
+  _2 = CNV_powercoreUnitTable[1].tempMeas.temp8;
+  tempTempCometi2_14 = (uint32_t) _2;
+  tempHvTemp_15 = 0;
+  _3 = PWB_measures.Hv_Temp;
+  tempHvTemp_16 = _3 + 50;
+  tempHvTemp_17 = tempHvTemp_16 / 10;
+  _4 = (unsigned char) tempHvTemp_17;
+  COM_tempMeasures.tempHvCoupler = _4;
+  _5 = (unsigned char) tempTempCometi1_13;
+  _6 = _5 + 50;
+  COM_tempMeasures.temp1Cometi = _6;
+  _7 = (unsigned char) tempTempCometi2_14;
+  _8 = _7 + 50;
+  COM_tempMeasures.temp2Cometi = _8;
+  ACT_tempSeverity.3_9 = ACT_tempSeverity;
+  COM_tempMeasures.tempNotif = ACT_tempSeverity.3_9;
+  return;
+
+}
+
+
+com_ComposePowerMeasures ()
+{
+  size_t i;
+  uint32_t tempPowerMeasure2;
+  uint32_t tempPowerMeasure1;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  tempPowerMeasure1_6 = 0;
+  tempPowerMeasure2_7 = 0;
+  i_8 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _1 = CNV_powercoreUnitTable[i_5].powerMeas.pBus1;
+  tempPowerMeasure1_12 = tempPowerMeasure1_3 + _1;
+  _2 = CNV_powercoreUnitTable[i_5].powerMeas.pBus2;
+  tempPowerMeasure2_13 = tempPowerMeasure2_4 + _2;
+  i_14 = i_5 + 1;
+
+  <bb 4> :
+  # tempPowerMeasure1_3 = PHI <tempPowerMeasure1_6(2), tempPowerMeasure1_12(3)>
+  # tempPowerMeasure2_4 = PHI <tempPowerMeasure2_7(2), tempPowerMeasure2_13(3)>
+  # i_5 = PHI <i_8(2), i_14(3)>
+  if (i_5 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  COM_powerMeasures.pBusHv = tempPowerMeasure1_3;
+  COM_powerMeasures.pBusLv = tempPowerMeasure2_4;
+  return;
+
+}
+
+
+com_ComposeCurrentMeasures ()
+{
+  size_t i;
+  uint32_t tempIBusHv;
+  const uint16_t currentOffset;
+  uint32_t tempCurrentMeasure2;
+  uint32_t tempCurrentMeasure1;
+  long unsigned int _1;
+  long unsigned int _2;
+  short unsigned int _3;
+  long unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  short unsigned int _7;
+  short unsigned int _8;
+
+  <bb 2> :
+  tempCurrentMeasure1_12 = 0;
+  tempCurrentMeasure2_13 = 0;
+  currentOffset_14 = 32768;
+  _1 = (long unsigned int) currentOffset_14;
+  tempCurrentMeasure1_15 = tempCurrentMeasure1_12 + _1;
+  _2 = (long unsigned int) currentOffset_14;
+  tempCurrentMeasure2_16 = tempCurrentMeasure2_13 + _2;
+  i_17 = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  _3 = CNV_powercoreUnitTable[i_11].powerMeas.iBus1;
+  _4 = (long unsigned int) _3;
+  tempCurrentMeasure1_23 = tempCurrentMeasure1_9 + _4;
+  _5 = CNV_powercoreUnitTable[i_11].powerMeas.iBus2;
+  _6 = (long unsigned int) _5;
+  tempCurrentMeasure2_24 = tempCurrentMeasure2_10 + _6;
+  i_25 = i_11 + 1;
+
+  <bb 4> :
+  # tempCurrentMeasure1_9 = PHI <tempCurrentMeasure1_15(2), tempCurrentMeasure1_23(3)>
+  # tempCurrentMeasure2_10 = PHI <tempCurrentMeasure2_16(2), tempCurrentMeasure2_24(3)>
+  # i_11 = PHI <i_17(2), i_25(3)>
+  if (i_11 <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  tempIBusHv_18 = 0;
+  tempIBusHv_20 = PWB_measures.Hv_Current;
+  _7 = (short unsigned int) tempIBusHv_20;
+  COM_powerMeasures.iBusHv = _7;
+  _8 = (short unsigned int) tempCurrentMeasure2_10;
+  COM_powerMeasures.iBusLv = _8;
+  return;
+
+}
+
+
+com_UpdatePbitResult ()
+{
+  long unsigned int _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  _Bool _5;
+  _Bool _6;
+  _Bool _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  _Bool _12;
+  <unnamed type> _13;
+  _Bool _14;
+  <unnamed type> _15;
+  unsigned char _16;
+  unsigned char _17;
+
+  <bb 2> :
+  _1 = PAR_paramConfig[0].realVal.unsignedVal;
+  COM_pbitResultsInfo.softwareVersion = _1;
+  _2 = PWB_Flags.resultPBit;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _3 = CTB_Flags.resultPBit;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  COM_pbitResultsInfo.pbitStatus = 2;
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+  _4 = PWB_Flags.status.flags.pbitDone;
+  _5 = ~_4;
+  if (_5 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  _6 = CTB_Flags.status.flags.pbitDone;
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  COM_pbitResultsInfo.pbitStatus = 1;
+  goto <bb 12>; [INV]
+
+  <bb 8> :
+  _8 = VIEW_CONVERT_EXPR<unsigned char>(PWB_Flags.status.flags);
+  _9 = _8 & 1;
+  if (_9 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  _10 = VIEW_CONVERT_EXPR<unsigned char>(CTB_Flags.status.flags);
+  _11 = _10 & 1;
+  if (_11 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  COM_pbitResultsInfo.pbitStatus = 3;
+  goto <bb 12>; [INV]
+
+  <bb 11> :
+  COM_pbitResultsInfo.pbitStatus = 0;
+
+  <bb 12> :
+  _12 = PWB_Flags.faults.flags.hvRelayNok;
+  _13 = (<unnamed type>) _12;
+  COM_pbitResultsInfo.hvCouplerStatus = _13;
+  _14 = PWB_Flags.faults.flags.lvRelayNok;
+  _15 = (<unnamed type>) _14;
+  COM_pbitResultsInfo.lvPrechargeStatus = _15;
+  _16 = CTB_Flags.dsiResults.all;
+  _17 = ~_16;
+  COM_pbitResultsInfo.dsioStatus = _17;
+  return;
+
+}
+
+
+com_UpdateMeasures ()
+{
+  <bb 2> :
+  com_ComposeCurrentMeasures ();
+  com_ComposePowerMeasures ();
+  com_ComposeTemperatureMeasures ();
+  com_ComposeVoltageMeasures ();
+  com_ComposeFaults ();
+  com_ComposeControlStatusInfo ();
+  return;
+
+}
+
+
+com_isInternalFrameReadyToBeSent (COM_FramesControlNameE frame, boolean hasNewValues)
+{
+  COM_FrameGroupE D.8828;
+  COM_FrameGroupE frameGroup;
+  boolean check;
+  boolean D.8826;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  COM_FrameGroupE _12;
+  boolean _16;
+
+  <bb 2> :
+  check_8 = 0;
+  frameGroup_11 = COM_framesInternal[frame_10(D)].group;
+  if (frame_10(D) <= 16)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _1 = COM_framesInternal[frame_10(D)].dir;
+  if (_1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  _12 = frameGroup_11 + 4294967293;
+  if (_12 <= 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 5> :
+<L2>:
+  _2 = COM_txPeriodInternal[frameGroup_11];
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _3 = COM_txDelayCounterInternal[frameGroup_11];
+  _4 = COM_framesInternal[frame_10(D)].offset;
+  if (_3 == _4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  check_15 = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  check_14 = hasNewValues_13(D);
+
+  <bb 9> :
+  # check_5 = PHI <check_15(7), check_14(8), check_8(6)>
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L9>:
+
+  <bb 11> :
+  # check_6 = PHI <check_5(9), check_8(10)>
+
+  <bb 12> :
+  # check_7 = PHI <check_8(2), check_8(3), check_6(11)>
+  _16 = check_7;
+
+  <bb 13> :
+<L14>:
+  return _16;
+
+}
+
+
+com_isControlFrameReadyToBeSent (COM_FramesControlNameE frame, boolean hasNewValues)
+{
+  COM_FrameGroupE frameGroup;
+  boolean check;
+  boolean D.8814;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  boolean _15;
+
+  <bb 2> :
+  check_8 = 0;
+  frameGroup_11 = COM_framesControl[frame_10(D)].group;
+  if (frame_10(D) <= 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 3> :
+  _1 = COM_framesControl[frame_10(D)].dir;
+  if (_1 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 4> :
+  switch (frameGroup_11) <default: <L11> [INV], case 1 ... 2: <L2> [INV], case 5 ... 6: <L2> [INV]>
+
+  <bb 5> :
+<L2>:
+  _2 = COM_txPeriodControl[frameGroup_11];
+  if (_2 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  _3 = COM_txDelayCounterControl[frameGroup_11];
+  _4 = COM_framesControl[frame_10(D)].offset;
+  if (_3 == _4)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  check_14 = 1;
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  check_13 = hasNewValues_12(D);
+
+  <bb 9> :
+  # check_5 = PHI <check_14(7), check_13(8), check_8(6)>
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L11>:
+
+  <bb 11> :
+  # check_6 = PHI <check_5(9), check_8(10)>
+
+  <bb 12> :
+  # check_7 = PHI <check_8(2), check_8(3), check_6(11)>
+  _15 = check_7;
+
+  <bb 13> :
+<L16>:
+  return _15;
+
+}
+
+
+com_ManageInternalTx ()
+{
+  uint32_t i;
+  _Bool _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  _Bool _6;
+  _Bool _7;
+  _Bool _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+
+  <bb 2> :
+  _1 = com_isInternalFrameReadyToBeSent (0, 0);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  _2 = VIEW_CONVERT_EXPR<unsigned char>(CNV_flags.moduleFlags.status.flags);
+  _3 = _2 & 64;
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65534, 65534);
+  CBU_SendInternalDisableAlarmsRequest (1, 65534, 65534);
+  goto <bb 8>; [INV]
+
+  <bb 5> :
+  _4 = VIEW_CONVERT_EXPR<unsigned char>(CNV_flags.moduleFlags.status.flags);
+  _5 = _4 & 32;
+  if (_5 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65531, 65531);
+  CBU_SendInternalDisableAlarmsRequest (1, 65531, 65531);
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_SendInternalDisableAlarmsRequest (0, 65535, 65535);
+  CBU_SendInternalDisableAlarmsRequest (1, 65535, 65535);
+
+  <bb 8> :
+  CBU_SendInternalControlRequestFrameCOMETiUnits (0);
+
+  <bb 9> :
+  _6 = com_isInternalFrameReadyToBeSent (2, 0);
+  if (_6 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  CBU_SendInternalControlRequestFrameCOMETiUnits (1);
+
+  <bb 11> :
+  _7 = com_isInternalFrameReadyToBeSent (1, 0);
+  if (_7 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  CBU_SendInternalModeRequestFrameCOMETiUnits (0);
+
+  <bb 13> :
+  _8 = com_isInternalFrameReadyToBeSent (3, 0);
+  if (_8 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  CBU_SendInternalModeRequestFrameCOMETiUnits (1);
+
+  <bb 15> :
+  i_36 = 0;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  _9 = COM_txDelayCounterInternal[i_14];
+  _10 = _9 + 1;
+  COM_txDelayCounterInternal[i_14] = _10;
+  _11 = COM_txDelayCounterInternal[i_14];
+  _12 = COM_txPeriodInternal[i_14];
+  _13 = _11 % _12;
+  COM_txDelayCounterInternal[i_14] = _13;
+  i_39 = i_14 + 1;
+
+  <bb 17> :
+  # i_14 = PHI <i_36(15), i_39(16)>
+  if (i_14 <= 6)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  return;
+
+}
+
+
+com_ManageControlTx ()
+{
+  uint32_t i;
+  _Bool _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  _Bool _5;
+  _Bool _6;
+  _Bool _7;
+  _Bool _8;
+  <unnamed type> FSM_mode.2_9;
+  _Bool _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+
+  <bb 2> :
+  _1 = com_isControlFrameReadyToBeSent (0, 0);
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CBU_SendControlCurrentMeasuresFrame ();
+
+  <bb 4> :
+  _2 = com_isControlFrameReadyToBeSent (1, 0);
+  if (_2 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  CBU_SendControlPowerMeasuresFrame ();
+
+  <bb 6> :
+  _3 = com_isControlFrameReadyToBeSent (2, 0);
+  if (_3 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  CBU_SendControlTemperatureMeasuresFrame ();
+
+  <bb 8> :
+  _4 = com_isControlFrameReadyToBeSent (3, 0);
+  if (_4 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  CBU_SendControlVoltageMeasuresFrame ();
+
+  <bb 10> :
+  _5 = COM_controlStatusInfo.hasNewValues;
+  _6 = com_isControlFrameReadyToBeSent (4, _5);
+  if (_6 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  CBU_SendControlControlStatusFrame ();
+
+  <bb 12> :
+  _7 = COM_errorsAndWarnings.hasNewValuesErr;
+  _8 = com_isControlFrameReadyToBeSent (5, _7);
+  if (_8 != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  CBU_SendControlErrorsWarningsFrame ();
+
+  <bb 14> :
+  FSM_mode.2_9 = FSM_mode;
+  if (FSM_mode.2_9 == 1)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  _10 = com_isControlFrameReadyToBeSent (6, 0);
+  if (_10 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  CBU_SendControlPbitResultsFrame ();
+
+  <bb 17> :
+  i_40 = 0;
+  goto <bb 19>; [INV]
+
+  <bb 18> :
+  _11 = COM_txDelayCounterControl[i_16];
+  _12 = _11 + 1;
+  COM_txDelayCounterControl[i_16] = _12;
+  _13 = COM_txDelayCounterControl[i_16];
+  _14 = COM_txPeriodControl[i_16];
+  _15 = _13 % _14;
+  COM_txDelayCounterControl[i_16] = _15;
+  i_43 = i_16 + 1;
+
+  <bb 19> :
+  # i_16 = PHI <i_40(17), i_43(18)>
+  if (i_16 <= 6)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  return;
+
+}
+
+
+com_ManageTx ()
+{
+  <unnamed type> FSM_mode.1_1;
+
+  <bb 2> :
+  com_ManageControlTx ();
+  com_ManageInternalTx ();
+  COM_UpdatePeriodParams ();
+  FSM_mode.1_1 = FSM_mode;
+  if (FSM_mode.1_1 == 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  CBU_SendControlControlStatusFrame ();
+  Can_SetControllerMode (0, 2);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  Can_SetControllerMode (0, 1);
+
+  <bb 5> :
+  return;
+
+}
+
+
+COM_TxRequestedTasks ()
+{
+  uint32_t parReadValue;
+  uint32_t parValueLocal;
+  uint16_t parIndex;
+  boolean status;
+  unsigned char _1;
+  unsigned char _2;
+  <unnamed type> FSM_mode.0_3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  unsigned char _9;
+  unsigned char _10;
+  unsigned char _11;
+  unsigned char _12;
+  unsigned char _13;
+  <unnamed type> _14;
+  unsigned char _15;
+  unsigned char _16;
+  unsigned char _17;
+  unsigned char _18;
+  unsigned char _19;
+  unsigned char _20;
+  unsigned char _21;
+  unsigned char _22;
+
+  <bb 2> :
+  status_31 = 0;
+  parIndex_33 = PAR_paramReq.index;
+  parValueLocal_34 = PAR_paramReq.value.unsignedVal;
+  parReadValue_35 = PAR_paramReq.readValue.unsignedVal;
+  _1 = VIEW_CONVERT_EXPR<unsigned char>(DBG_Flags.proccesingFlags);
+  _2 = _1 & 1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 3> :
+  FSM_mode.0_3 = FSM_mode;
+  if (FSM_mode.0_3 == 7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  CBU_SendMaintenanceEquipmentTestResponse ();
+
+  <bb 5> :
+  DBG_Flags.proccesingFlags.processed = 0;
+  _4 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  COM_debugTestReq.relaySwitchTestRequest = 0;
+  PWBio_cmdResults.SwitchReadCmdResult = 0;
+
+  <bb 7> :
+  _6 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _7 = _6 & 2;
+  if (_7 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  COM_debugTestReq.hvMeasuresTestRequest = 0;
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  COM_debugTestReq.hmiMeasure = 0;
+  COM_debugTestReq.rawMeasure = 0;
+
+  <bb 9> :
+  _8 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _9 = _8 & 4;
+  if (_9 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  COM_debugTestReq.lvMeasuresTestRequest = 0;
+  PWBCbit_cmdResults.ReadMeasResultHMI = 0;
+  PWBCbit_cmdResults.ReadMeasResultRaw = 0;
+  COM_debugTestReq.hmiMeasure = 0;
+  COM_debugTestReq.rawMeasure = 0;
+
+  <bb 11> :
+  _10 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _11 = _10 & 8;
+  if (_11 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  COM_debugTestReq.discreteIosTestRequest = 0;
+  ctb_DSI_TestResult.HPP_1_TestResult = 0;
+  ctb_DSI_TestResult.HPP_2_TestResult = 0;
+  ctb_DSI_TestResult.HPP_MAINT_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_1_TestResult = 0;
+  ctb_DSI_TestResult.DSI_SPARE_2_TestResult = 0;
+  ctb_DSI_TestResult.EMER_STOP_TestResult = 0;
+
+  <bb 13> :
+  _12 = BIT_FIELD_REF <COM_debugTestReq, 8, 0>;
+  _13 = _12 & 16;
+  if (_13 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  COM_debugTestReq.ledsTestRequest = 0;
+
+  <bb 15> :
+  _14 = PAR_paramReq.lastError;
+  if (_14 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  status_59 = 1;
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  status_58 = 0;
+
+  <bb 18> :
+  # status_23 = PHI <status_59(16), status_58(17)>
+  _15 = BIT_FIELD_REF <PAR_paramReq, 8, 0>;
+  _16 = _15 & 1;
+  if (_16 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 19> :
+  _17 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _18 = _17 & 1;
+  if (_18 != 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  CBU_SendMaintenanceParameterResponse (parIndex_33, parReadValue_35, status_23);
+  COM_paramReq.readRequest = 0;
+  goto <bb 25>; [INV]
+
+  <bb 21> :
+  _19 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _20 = _19 & 2;
+  if (_20 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 22> :
+  CBU_SendMaintenanceParameterResponse (parIndex_33, parValueLocal_34, status_23);
+  COM_paramReq.changeRequest = 0;
+  goto <bb 25>; [INV]
+
+  <bb 23> :
+  _21 = BIT_FIELD_REF <COM_paramReq, 8, 0>;
+  _22 = _21 & 4;
+  if (_22 != 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  CBU_SendMaintenanceParameterResponse (65535, 0, status_23);
+  COM_paramReq.saveRequest = 0;
+
+  <bb 25> :
+  return;
+
+}
+
+
+COM_TxScheduledTasks ()
+{
+  <bb 2> :
+  com_UpdateMeasures ();
+  CBU_CheckErrors ();
+  com_UpdatePbitResult ();
+  CNV_ManageInternalErrorResetRequestFrame ();
+  com_ManageTx ();
+  return;
+
+}
+
+

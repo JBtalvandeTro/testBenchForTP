@@ -1,0 +1,12 @@
+CTBCbit.c:41:6:CTBCbit_Init	8	static
+CTBCbit.c:59:6:CTBCbit_SetDSO	16	static
+CTBCbit.c:79:6:CTBCbit_UnsetDSO	16	static
+CTBCbit.c:99:6:CTBCbit_ReadDSO	16	static
+CTBCbit.c:119:6:CTBCbit_Runtests	16	static
+CTBCbit.c:146:6:CTBCbit_Deinit	0	static
+CTBCbit.c:155:16:ctbCbit_ReadHealthDSO	8	static
+CTBCbit.c:165:16:ctbCbit_ReadSpareDSO	8	static
+CTBCbit.c:175:13:ctbCbit_SetHealthDSO	8	static
+CTBCbit.c:185:13:ctbCbit_UnsetHealthDSO	8	static
+CTBCbit.c:195:13:ctbCbit_SetSpareDSO	8	static
+CTBCbit.c:205:13:ctbCbit_UnsetSpareDSO	8	static

@@ -1,0 +1,1033 @@
+Symbol table:
+
+CBU_SendFrame/20 (CBU_SendFrame) @06e0e460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendInternalDisableAlarmsRequest/4 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/3 CBU_SendInternalModeRequestFrameCOMETiUnits/2 CBU_SendInternalControlRequestFrameCOMETiUnits/1 
+  Calls: 
+CBU_CreatePduInfo/19 (CBU_CreatePduInfo) @06e0e380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CBU_SendInternalDisableAlarmsRequest/4 CBU_SendInternalErrorResetRequestFrameCOMETiUnits/3 CBU_SendInternalModeRequestFrameCOMETiUnits/2 CBU_SendInternalControlRequestFrameCOMETiUnits/1 
+  Calls: 
+PAR_paramConfig/18 (PAR_paramConfig) @06d9cdc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)
+  Availability: not_available
+  Varpool flags:
+PWB_measures/17 (PWB_measures) @06d9cd80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)
+  Availability: not_available
+  Varpool flags:
+FSM_mode/16 (FSM_mode) @06d9cd38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)
+  Availability: not_available
+  Varpool flags:
+CNV_powercoreUnitTable/15 (CNV_powercoreUnitTable) @06d9ccf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalModeRequestFrameCOMETiUnits/2 (read)CBU_SendInternalModeRequestFrameCOMETiUnits/2 (read)
+  Availability: not_available
+  Varpool flags:
+COM_framesInternal/14 (COM_framesInternal) @06d9cca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CBU_SendInternalModeRequestFrameCOMETiUnits/2 (read)CBU_SendInternalModeRequestFrameCOMETiUnits/2 (read)CBU_SendInternalErrorResetRequestFrameCOMETiUnits/3 (read)CBU_SendInternalErrorResetRequestFrameCOMETiUnits/3 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_GetPowerCoreUnitId/13 (read)CBU_GetPowerCoreUnitId/13 (read)
+  Availability: not_available
+  Varpool flags:
+CBU_GetPowerCoreUnitId/13 (CBU_GetPowerCoreUnitId) @06da37e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesInternal/14 (read)COM_framesInternal/14 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: CBU_SendInternalDisableAlarmsRequest/4 
+  Calls: 
+CBU_GetInternalWarningsFrameData/12 (CBU_GetInternalWarningsFrameData) @06da32a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalErrorsFrameData/11 (CBU_GetInternalErrorsFrameData) @06da3ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalControlInfoFrameData/10 (CBU_GetInternalControlInfoFrameData) @06da3c40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalRegulationInfoFrameData/9 (CBU_GetInternalRegulationInfoFrameData) @06da39a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalVoltageMeasuresFrameData/8 (CBU_GetInternalVoltageMeasuresFrameData) @06da3700
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalTemperatureMeasuresFrameData/7 (CBU_GetInternalTemperatureMeasuresFrameData) @06da3460
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalPowerMeasuresFrameData/6 (CBU_GetInternalPowerMeasuresFrameData) @06da31c0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_GetInternalCurrentMeasuresFrameData/5 (CBU_GetInternalCurrentMeasuresFrameData) @06d96d20
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+CBU_SendInternalDisableAlarmsRequest/4 (CBU_SendInternalDisableAlarmsRequest) @06d96380
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/20 CBU_CreatePduInfo/19 CBU_GetPowerCoreUnitId/13 
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits/3 (CBU_SendInternalErrorResetRequestFrameCOMETiUnits) @06d96540
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesInternal/14 (read)COM_framesInternal/14 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/20 CBU_CreatePduInfo/19 
+CBU_SendInternalModeRequestFrameCOMETiUnits/2 (CBU_SendInternalModeRequestFrameCOMETiUnits) @06d960e0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesInternal/14 (read)COM_framesInternal/14 (read)CNV_powercoreUnitTable/15 (read)CNV_powercoreUnitTable/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/20 CBU_CreatePduInfo/19 
+CBU_SendInternalControlRequestFrameCOMETiUnits/1 (CBU_SendInternalControlRequestFrameCOMETiUnits) @06d96ee0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: COM_framesInternal/14 (read)COM_framesInternal/14 (read)CNV_powercoreUnitTable/15 (read)FSM_mode/16 (read)PWB_measures/17 (read)PAR_paramConfig/18 (read)currentSetpoint/0 (read)currentSetpoint/0 (write)FSM_mode/16 (read)PWB_measures/17 (read)PAR_paramConfig/18 (read)currentSetpoint/0 (read)currentSetpoint/0 (write)currentSetpoint/0 (write)currentSetpoint/0 (read)currentSetpoint/0 (read)currentSetpoint/0 (write)currentSetpoint/0 (write)CNV_powercoreUnitTable/15 (read)currentSetpoint/0 (read)currentSetpoint/0 (read)currentSetpoint/0 (read)currentSetpoint/0 (read)CNV_powercoreUnitTable/15 (read)CNV_powercoreUnitTable/15 (read)
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: CBU_SendFrame/20 CBU_CreatePduInfo/19 
+currentSetpoint/0 (currentSetpoint) @06d8dea0
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (write)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (write)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (write)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (write)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (write)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)CBU_SendInternalControlRequestFrameCOMETiUnits/1 (read)
+  Availability: available
+  Varpool flags: initialized
+CBU_GetPowerCoreUnitId (uint8_t powerCoreUnit)
+{
+  uint32_t D.8437;
+  uint32_t _1;
+  uint32_t _3;
+  uint32_t _5;
+  uint32_t _6;
+
+  <bb 2> :
+  if (powerCoreUnit_2(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _6 = COM_framesInternal[4].id;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  if (powerCoreUnit_2(D) == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _5 = COM_framesInternal[5].id;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  _3 = 0;
+  // predicted unlikely by early return (on trees) predictor.
+
+  <bb 7> :
+  # _1 = PHI <_6(3), _5(5), _3(6)>
+<L4>:
+  return _1;
+
+}
+
+
+CBU_GetInternalWarningsFrameData (const uint8_t * buffer, uint32_t * warnings)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  const uint8_t * _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+
+  <bb 2> :
+  _1 = buffer_18(D) + 3;
+  _2 = *_1;
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 24;
+  _5 = buffer_18(D) + 2;
+  _6 = *_5;
+  _7 = (long unsigned int) _6;
+  _8 = _7 << 16;
+  _9 = _4 | _8;
+  _10 = buffer_18(D) + 1;
+  _11 = *_10;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 8;
+  _14 = _9 | _13;
+  _15 = *buffer_18(D);
+  _16 = (long unsigned int) _15;
+  _17 = _14 | _16;
+  *warnings_20(D) = _17;
+  return;
+
+}
+
+
+CBU_GetInternalErrorsFrameData (const uint8_t * buffer, uint32_t * criticalErrors, uint32_t * functionnalErrors)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  const uint8_t * _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  const uint8_t * _18;
+  unsigned char _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  const uint8_t * _22;
+  unsigned char _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  const uint8_t * _27;
+  unsigned char _28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  const uint8_t * _32;
+  unsigned char _33;
+  long unsigned int _34;
+  long unsigned int _35;
+
+  <bb 2> :
+  _1 = buffer_36(D) + 3;
+  _2 = *_1;
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 24;
+  _5 = buffer_36(D) + 2;
+  _6 = *_5;
+  _7 = (long unsigned int) _6;
+  _8 = _7 << 16;
+  _9 = _4 | _8;
+  _10 = buffer_36(D) + 1;
+  _11 = *_10;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 8;
+  _14 = _9 | _13;
+  _15 = *buffer_36(D);
+  _16 = (long unsigned int) _15;
+  _17 = _14 | _16;
+  *criticalErrors_38(D) = _17;
+  _18 = buffer_36(D) + 7;
+  _19 = *_18;
+  _20 = (long unsigned int) _19;
+  _21 = _20 << 24;
+  _22 = buffer_36(D) + 6;
+  _23 = *_22;
+  _24 = (long unsigned int) _23;
+  _25 = _24 << 16;
+  _26 = _21 | _25;
+  _27 = buffer_36(D) + 5;
+  _28 = *_27;
+  _29 = (long unsigned int) _28;
+  _30 = _29 << 8;
+  _31 = _26 | _30;
+  _32 = buffer_36(D) + 4;
+  _33 = *_32;
+  _34 = (long unsigned int) _33;
+  _35 = _31 | _34;
+  *functionnalErrors_40(D) = _35;
+  return;
+
+}
+
+
+CBU_GetInternalControlInfoFrameData (const uint8_t * buffer, uint8_t * regMode, uint8_t * regType, uint16_t * currentLimit)
+{
+  unsigned char _1;
+  unsigned char _2;
+  const uint8_t * _3;
+  unsigned char _4;
+  int _5;
+  int _6;
+  signed short _7;
+  const uint8_t * _8;
+  unsigned char _9;
+  signed short _10;
+  signed short _11;
+  short unsigned int _12;
+
+  <bb 2> :
+  _1 = *buffer_14(D);
+  *regMode_15(D) = _1;
+  _2 = MEM[(const uint8_t *)buffer_14(D) + 1B];
+  *regType_17(D) = _2;
+  _3 = buffer_14(D) + 3;
+  _4 = *_3;
+  _5 = (int) _4;
+  _6 = _5 << 8;
+  _7 = (signed short) _6;
+  _8 = buffer_14(D) + 2;
+  _9 = *_8;
+  _10 = (signed short) _9;
+  _11 = _7 | _10;
+  _12 = (short unsigned int) _11;
+  *currentLimit_19(D) = _12;
+  return;
+
+}
+
+
+CBU_GetInternalRegulationInfoFrameData (const uint8_t * buffer, uint8_t * softwareMode, uint32_t * setpoint, uint8_t * limitationType)
+{
+  unsigned char _1;
+  const uint8_t * _2;
+  unsigned char _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  const uint8_t * _6;
+  unsigned char _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  const uint8_t * _11;
+  unsigned char _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  const uint8_t * _16;
+  unsigned char _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  unsigned char _20;
+
+  <bb 2> :
+  _1 = *buffer_22(D);
+  *softwareMode_23(D) = _1;
+  _2 = buffer_22(D) + 4;
+  _3 = *_2;
+  _4 = (long unsigned int) _3;
+  _5 = _4 << 24;
+  _6 = buffer_22(D) + 3;
+  _7 = *_6;
+  _8 = (long unsigned int) _7;
+  _9 = _8 << 16;
+  _10 = _5 | _9;
+  _11 = buffer_22(D) + 2;
+  _12 = *_11;
+  _13 = (long unsigned int) _12;
+  _14 = _13 << 8;
+  _15 = _10 | _14;
+  _16 = buffer_22(D) + 1;
+  _17 = *_16;
+  _18 = (long unsigned int) _17;
+  _19 = _15 | _18;
+  *setpoint_25(D) = _19;
+  _20 = MEM[(const uint8_t *)buffer_22(D) + 5B];
+  *limitationType_27(D) = _20;
+  return;
+
+}
+
+
+CBU_GetInternalVoltageMeasuresFrameData (const uint8_t * buffer, uint16_t * vBus1, uint16_t * vBus2)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  int _3;
+  int _4;
+  signed short _5;
+  unsigned char _6;
+  signed short _7;
+  signed short _8;
+  short unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  int _12;
+  int _13;
+  signed short _14;
+  const uint8_t * _15;
+  unsigned char _16;
+  signed short _17;
+  signed short _18;
+  short unsigned int _19;
+
+  <bb 2> :
+  _1 = buffer_20(D) + 1;
+  _2 = *_1;
+  _3 = (int) _2;
+  _4 = _3 << 8;
+  _5 = (signed short) _4;
+  _6 = *buffer_20(D);
+  _7 = (signed short) _6;
+  _8 = _5 | _7;
+  _9 = (short unsigned int) _8;
+  *vBus1_22(D) = _9;
+  _10 = buffer_20(D) + 3;
+  _11 = *_10;
+  _12 = (int) _11;
+  _13 = _12 << 8;
+  _14 = (signed short) _13;
+  _15 = buffer_20(D) + 2;
+  _16 = *_15;
+  _17 = (signed short) _16;
+  _18 = _14 | _17;
+  _19 = (short unsigned int) _18;
+  *vBus2_24(D) = _19;
+  return;
+
+}
+
+
+CBU_GetInternalTemperatureMeasuresFrameData (const uint8_t * buffer, uint8_t * temp1, uint8_t * temp2, uint8_t * temp3, uint8_t * temp4, uint8_t * temp5, uint8_t * temp6, uint8_t * temp7, uint8_t * temp8)
+{
+  unsigned char _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+
+  <bb 2> :
+  _1 = *buffer_10(D);
+  *temp1_11(D) = _1;
+  _2 = MEM[(const uint8_t *)buffer_10(D) + 1B];
+  *temp2_13(D) = _2;
+  _3 = MEM[(const uint8_t *)buffer_10(D) + 2B];
+  *temp3_15(D) = _3;
+  _4 = MEM[(const uint8_t *)buffer_10(D) + 3B];
+  *temp4_17(D) = _4;
+  _5 = MEM[(const uint8_t *)buffer_10(D) + 4B];
+  *temp5_19(D) = _5;
+  _6 = MEM[(const uint8_t *)buffer_10(D) + 5B];
+  *temp6_21(D) = _6;
+  _7 = MEM[(const uint8_t *)buffer_10(D) + 6B];
+  *temp7_23(D) = _7;
+  _8 = MEM[(const uint8_t *)buffer_10(D) + 7B];
+  *temp8_25(D) = _8;
+  return;
+
+}
+
+
+CBU_GetInternalPowerMeasuresFrameData (const uint8_t * buffer, uint32_t * pBus1, uint32_t * pBus2)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  const uint8_t * _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  const uint8_t * _15;
+  unsigned char _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  const uint8_t * _19;
+  unsigned char _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  const uint8_t * _23;
+  unsigned char _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  const uint8_t * _28;
+  unsigned char _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  unsigned char _33;
+  long unsigned int _34;
+  long unsigned int _35;
+
+  <bb 2> :
+  _1 = buffer_36(D) + 7;
+  _2 = *_1;
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 24;
+  _5 = buffer_36(D) + 6;
+  _6 = *_5;
+  _7 = (long unsigned int) _6;
+  _8 = _7 << 16;
+  _9 = _4 | _8;
+  _10 = buffer_36(D) + 5;
+  _11 = *_10;
+  _12 = (long unsigned int) _11;
+  _13 = _12 << 8;
+  _14 = _9 | _13;
+  _15 = buffer_36(D) + 4;
+  _16 = *_15;
+  _17 = (long unsigned int) _16;
+  _18 = _14 | _17;
+  *pBus1_38(D) = _18;
+  _19 = buffer_36(D) + 3;
+  _20 = *_19;
+  _21 = (long unsigned int) _20;
+  _22 = _21 << 24;
+  _23 = buffer_36(D) + 2;
+  _24 = *_23;
+  _25 = (long unsigned int) _24;
+  _26 = _25 << 16;
+  _27 = _22 | _26;
+  _28 = buffer_36(D) + 1;
+  _29 = *_28;
+  _30 = (long unsigned int) _29;
+  _31 = _30 << 8;
+  _32 = _27 | _31;
+  _33 = *buffer_36(D);
+  _34 = (long unsigned int) _33;
+  _35 = _32 | _34;
+  *pBus2_40(D) = _35;
+  return;
+
+}
+
+
+CBU_GetInternalCurrentMeasuresFrameData (const uint8_t * buffer, uint16_t * iBus1, uint16_t * iBus2)
+{
+  const uint8_t * _1;
+  unsigned char _2;
+  int _3;
+  int _4;
+  signed short _5;
+  unsigned char _6;
+  signed short _7;
+  signed short _8;
+  short unsigned int _9;
+  const uint8_t * _10;
+  unsigned char _11;
+  int _12;
+  int _13;
+  signed short _14;
+  const uint8_t * _15;
+  unsigned char _16;
+  signed short _17;
+  signed short _18;
+  short unsigned int _19;
+
+  <bb 2> :
+  _1 = buffer_20(D) + 1;
+  _2 = *_1;
+  _3 = (int) _2;
+  _4 = _3 << 8;
+  _5 = (signed short) _4;
+  _6 = *buffer_20(D);
+  _7 = (signed short) _6;
+  _8 = _5 | _7;
+  _9 = (short unsigned int) _8;
+  *iBus1_22(D) = _9;
+  _10 = buffer_20(D) + 3;
+  _11 = *_10;
+  _12 = (int) _11;
+  _13 = _12 << 8;
+  _14 = (signed short) _13;
+  _15 = buffer_20(D) + 2;
+  _16 = *_15;
+  _17 = (signed short) _16;
+  _18 = _14 | _17;
+  _19 = (short unsigned int) _18;
+  *iBus2_24(D) = _19;
+  return;
+
+}
+
+
+CBU_SendInternalDisableAlarmsRequest (uint8_t powerCoreUnit, CNV_ErrorCritAndFuncMaskE errorCritMask, CNV_ErrorCritAndFuncMaskE errorFoncMask)
+{
+  uint8_t maskSize;
+  uint8_t index;
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  int _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+
+  <bb 2> :
+  id_value_8 = CBU_GetPowerCoreUnitId (powerCoreUnit_6(D));
+  swPduHandle_9 = 0;
+  index_10 = 0;
+  maskSize_11 = 4;
+  _1 = (int) index_10;
+  _2 = (unsigned char) errorCritMask_12(D);
+  buffer[_1] = _2;
+  index_14 = index_10 + maskSize_11;
+  _3 = (int) index_14;
+  _4 = (unsigned char) errorFoncMask_15(D);
+  buffer[_3] = _4;
+  index_17 = index_14 + maskSize_11;
+  id_value_18 = id_value_8 + 2147483648;
+  CBU_CreatePduInfo (id_value_18, swPduHandle_9, index_17, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 24);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+CBU_SendInternalErrorResetRequestFrameCOMETiUnits (uint8_t powerCoreUnit)
+{
+  uint8_t length;
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+
+  <bb 2> :
+  id_value_2 = 0;
+  if (powerCoreUnit_3(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  id_value_6 = COM_framesInternal[4].id;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (powerCoreUnit_3(D) == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  id_value_5 = COM_framesInternal[5].id;
+
+  <bb 6> :
+  # id_value_1 = PHI <id_value_6(3), id_value_2(4), id_value_5(5)>
+  swPduHandle_7 = 0;
+  id_value_8 = id_value_1 + 2147483648;
+  length_9 = 0;
+  CBU_CreatePduInfo (id_value_8, swPduHandle_7, length_9, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 21);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+CBU_SendInternalModeRequestFrameCOMETiUnits (uint8_t powerCoreUnit)
+{
+  uint8_t index;
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  int _1;
+  <unnamed type> _2;
+  unsigned char index.3_3;
+  int _4;
+  unsigned char _5;
+  int _6;
+  <unnamed type> _7;
+  unsigned char index.4_8;
+  int _9;
+  unsigned char _10;
+
+  <bb 2> :
+  id_value_12 = 0;
+  if (powerCoreUnit_13(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  id_value_16 = COM_framesInternal[1].id;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (powerCoreUnit_13(D) == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  id_value_15 = COM_framesInternal[3].id;
+
+  <bb 6> :
+  # id_value_11 = PHI <id_value_16(3), id_value_12(4), id_value_15(5)>
+  swPduHandle_17 = 0;
+  index_18 = 0;
+  _1 = (int) powerCoreUnit_13(D);
+  _2 = CNV_powercoreUnitTable[_1].request.regMode;
+  index.3_3 = index_18;
+  index_19 = index.3_3 + 1;
+  _4 = (int) index.3_3;
+  _5 = (unsigned char) _2;
+  buffer[_4] = _5;
+  _6 = (int) powerCoreUnit_13(D);
+  _7 = CNV_powercoreUnitTable[_6].request.regType;
+  index.4_8 = index_19;
+  index_21 = index.4_8 + 1;
+  _9 = (int) index.4_8;
+  _10 = (unsigned char) _7;
+  buffer[_9] = _10;
+  id_value_23 = id_value_11 + 2147483648;
+  CBU_CreatePduInfo (id_value_23, swPduHandle_17, index_21, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 13);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+
+CBU_SendInternalControlRequestFrameCOMETiUnits (uint8_t powerCoreUnit)
+{
+  uint32_t currentStateOfCometi;
+  uint32_t setpointRamp;
+  uint32_t setpointTarget;
+  uint8_t index;
+  uint16_t swPduHandle;
+  struct Can_PduType local_pduInfo;
+  uint8_t buffer[64];
+  uint32_t id_value;
+  int _1;
+  <unnamed type> FSM_mode.0_2;
+  long unsigned int _3;
+  int _4;
+  long unsigned int _5;
+  int _6;
+  <unnamed type> FSM_mode.1_7;
+  long unsigned int _8;
+  int _9;
+  long unsigned int _10;
+  int _11;
+  int _12;
+  int _13;
+  long unsigned int _14;
+  int _15;
+  long unsigned int _16;
+  int _17;
+  long unsigned int _18;
+  int _19;
+  int _20;
+  _Bool _21;
+  unsigned char index.2_22;
+  int _23;
+  unsigned char _24;
+  int _25;
+  long unsigned int _26;
+  unsigned char _27;
+  int _28;
+  unsigned char _29;
+  int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  long unsigned int _33;
+  int _34;
+  int _35;
+  unsigned char _36;
+  int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  int _41;
+  int _42;
+  unsigned char _43;
+  int _44;
+  long unsigned int _45;
+  long unsigned int _46;
+  long unsigned int _47;
+  int _48;
+  int _49;
+  unsigned char _50;
+  int _51;
+  short unsigned int _52;
+  unsigned char _53;
+  int _54;
+  unsigned char _55;
+  int _56;
+  short unsigned int _57;
+  int _58;
+  int _59;
+  int _60;
+  int _61;
+  int _62;
+  unsigned char _63;
+
+  <bb 2> :
+  id_value_68 = 0;
+  if (powerCoreUnit_69(D) == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  id_value_72 = COM_framesInternal[0].id;
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  if (powerCoreUnit_69(D) == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  id_value_71 = COM_framesInternal[2].id;
+
+  <bb 6> :
+  # id_value_64 = PHI <id_value_72(3), id_value_68(4), id_value_71(5)>
+  swPduHandle_73 = 0;
+  index_74 = 0;
+  _1 = (int) powerCoreUnit_69(D);
+  setpointTarget_75 = CNV_powercoreUnitTable[_1].request.setpoint;
+  setpointRamp_76 = 0;
+  currentStateOfCometi_77 = 0;
+  FSM_mode.0_2 = FSM_mode;
+  if (FSM_mode.0_2 == 3)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 7> :
+  _3 = PWB_measures.VHv_Cometi;
+  currentStateOfCometi_83 = _3 / 10;
+  setpointRamp_84 = PAR_paramConfig[19].realVal.unsignedVal;
+  _4 = (int) powerCoreUnit_69(D);
+  _5 = currentSetpoint[_4];
+  if (currentStateOfCometi_83 > _5)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 8> :
+  _6 = (int) powerCoreUnit_69(D);
+  currentSetpoint[_6] = currentStateOfCometi_83;
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  FSM_mode.1_7 = FSM_mode;
+  if (FSM_mode.1_7 == 4)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  _8 = PWB_measures.VLv_Cometi;
+  currentStateOfCometi_80 = _8 / 10;
+  setpointRamp_81 = PAR_paramConfig[21].realVal.unsignedVal;
+  _9 = (int) powerCoreUnit_69(D);
+  _10 = currentSetpoint[_9];
+  if (currentStateOfCometi_80 > _10)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  _11 = (int) powerCoreUnit_69(D);
+  currentSetpoint[_11] = currentStateOfCometi_80;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  setpointRamp_78 = 0;
+  _12 = (int) powerCoreUnit_69(D);
+  currentSetpoint[_12] = 0;
+
+  <bb 13> :
+  # setpointRamp_65 = PHI <setpointRamp_84(8), setpointRamp_81(11), setpointRamp_78(12), setpointRamp_84(7), setpointRamp_81(10)>
+  _13 = (int) powerCoreUnit_69(D);
+  _14 = currentSetpoint[_13];
+  if (setpointTarget_75 > _14)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  _15 = (int) powerCoreUnit_69(D);
+  _16 = currentSetpoint[_15];
+  _17 = (int) powerCoreUnit_69(D);
+  _18 = setpointRamp_65 + _16;
+  currentSetpoint[_17] = _18;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  _19 = (int) powerCoreUnit_69(D);
+  currentSetpoint[_19] = setpointTarget_75;
+
+  <bb 16> :
+  _20 = (int) powerCoreUnit_69(D);
+  _21 = CNV_powercoreUnitTable[_20].request.startOrder;
+  index.2_22 = index_74;
+  index_88 = index.2_22 + 1;
+  _23 = (int) index.2_22;
+  _24 = (unsigned char) _21;
+  buffer[_23] = _24;
+  _25 = (int) powerCoreUnit_69(D);
+  _26 = currentSetpoint[_25];
+  _27 = (unsigned char) _26;
+  _28 = (int) index_88;
+  _29 = _27 * 10;
+  buffer[_28] = _29;
+  _30 = (int) powerCoreUnit_69(D);
+  _31 = currentSetpoint[_30];
+  _32 = _31 * 10;
+  _33 = _32 >> 8;
+  _34 = (int) index_88;
+  _35 = _34 + 1;
+  _36 = (unsigned char) _33;
+  buffer[_35] = _36;
+  _37 = (int) powerCoreUnit_69(D);
+  _38 = currentSetpoint[_37];
+  _39 = _38 * 10;
+  _40 = _39 >> 16;
+  _41 = (int) index_88;
+  _42 = _41 + 2;
+  _43 = (unsigned char) _40;
+  buffer[_42] = _43;
+  _44 = (int) powerCoreUnit_69(D);
+  _45 = currentSetpoint[_44];
+  _46 = _45 * 10;
+  _47 = _46 >> 24;
+  _48 = (int) index_88;
+  _49 = _48 + 3;
+  _50 = (unsigned char) _47;
+  buffer[_49] = _50;
+  index_94 = index_88 + 4;
+  _51 = (int) powerCoreUnit_69(D);
+  _52 = CNV_powercoreUnitTable[_51].request.currentLimit;
+  _53 = (unsigned char) _52;
+  _54 = (int) index_94;
+  _55 = _53 * 10;
+  buffer[_54] = _55;
+  _56 = (int) powerCoreUnit_69(D);
+  _57 = CNV_powercoreUnitTable[_56].request.currentLimit;
+  _58 = (int) _57;
+  _59 = _58 * 10;
+  _60 = _59 >> 8;
+  _61 = (int) index_94;
+  _62 = _61 + 1;
+  _63 = (unsigned char) _60;
+  buffer[_62] = _63;
+  index_97 = index_94 + 2;
+  id_value_98 = id_value_64 + 2147483648;
+  CBU_CreatePduInfo (id_value_98, swPduHandle_73, index_97, &buffer, &local_pduInfo);
+  CBU_SendFrame (local_pduInfo, 12);
+  buffer ={v} {CLOBBER};
+  local_pduInfo ={v} {CLOBBER};
+  return;
+
+}
+
+

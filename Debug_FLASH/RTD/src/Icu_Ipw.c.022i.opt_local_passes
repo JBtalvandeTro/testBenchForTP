@@ -1,0 +1,680 @@
+Icu_Ipw_DisableNotification (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _1;
+  const struct Lpit_Icu_Ip_ChannelConfigType * _2;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType * _3;
+
+  <bb 2> :
+  module_7 = ChannelConfig_6(D)->instanceNo;
+  ipType_8 = ChannelConfig_6(D)->channelIp;
+  switch (ipType_8) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig_6(D)->pFtmHwChannelConfig;
+  channel_15 = _1->hwChannel;
+  Ftm_Icu_Ip_DisableNotification (module_7, channel_15);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig_6(D)->pLpitHwChannelConfig;
+  channel_13 = _2->hwChannel;
+  Lpit_Icu_Ip_DisableNotification (module_7, channel_13);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_DisableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig_6(D)->pPortCiHwChannelConfig;
+  channel_10 = _3->pinId;
+  Port_Ci_Icu_Ip_DisableNotification (module_7, channel_10);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_DisableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableNotification (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _1;
+  const struct Lpit_Icu_Ip_ChannelConfigType * _2;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType * _3;
+
+  <bb 2> :
+  module_7 = ChannelConfig_6(D)->instanceNo;
+  ipType_8 = ChannelConfig_6(D)->channelIp;
+  switch (ipType_8) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig_6(D)->pFtmHwChannelConfig;
+  channel_15 = _1->hwChannel;
+  Ftm_Icu_Ip_EnableNotification (module_7, channel_15);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig_6(D)->pLpitHwChannelConfig;
+  channel_13 = _2->hwChannel;
+  Lpit_Icu_Ip_EnableNotification (module_7, channel_13);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_EnableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig_6(D)->pPortCiHwChannelConfig;
+  channel_10 = _3->pinId;
+  Port_Ci_Icu_Ip_EnableNotification (module_7, channel_10);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_EnableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_DisableEdgeDetection (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _1;
+  const struct Lpit_Icu_Ip_ChannelConfigType * _2;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType * _3;
+
+  <bb 2> :
+  module_7 = ChannelConfig_6(D)->instanceNo;
+  ipType_8 = ChannelConfig_6(D)->channelIp;
+  switch (ipType_8) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig_6(D)->pFtmHwChannelConfig;
+  channel_16 = _1->hwChannel;
+  Ftm_Icu_Ip_DisableEdgeDetection (module_7, channel_16);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig_6(D)->pLpitHwChannelConfig;
+  channel_14 = _2->hwChannel;
+  Lpit_Icu_Ip_DisableDetectionMode (module_7, channel_14);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_DisableDetection (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig_6(D)->pPortCiHwChannelConfig;
+  channel_11 = _3->pinId;
+  Port_Ci_Icu_Ip_DisableDetection (module_7, channel_11);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_DisableInterrupt (module_7);
+  Cmp_Ip_DisableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableEdgeDetection (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _1;
+  const struct Lpit_Icu_Ip_ChannelConfigType * _2;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType * _3;
+
+  <bb 2> :
+  module_7 = ChannelConfig_6(D)->instanceNo;
+  ipType_8 = ChannelConfig_6(D)->channelIp;
+  switch (ipType_8) <default: <L5> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig_6(D)->pFtmHwChannelConfig;
+  channel_16 = _1->hwChannel;
+  Ftm_Icu_Ip_EnableEdgeDetection (module_7, channel_16);
+  goto <bb 9>; [INV]
+
+  <bb 4> :
+<L1>:
+  _2 = ChannelConfig_6(D)->pLpitHwChannelConfig;
+  channel_14 = _2->hwChannel;
+  Lpit_Icu_Ip_EnableEdgeDetection (module_7, channel_14);
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+<L2>:
+  Lptmr_Icu_Ip_EnableEdgeDetection (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 6> :
+<L3>:
+  _3 = ChannelConfig_6(D)->pPortCiHwChannelConfig;
+  channel_11 = _3->pinId;
+  Port_Ci_Icu_Ip_EnableEdgeDetection (module_7, channel_11);
+  goto <bb 9>; [INV]
+
+  <bb 7> :
+<L4>:
+  Cmp_Ip_EnableInterrupt (module_7);
+  Cmp_Ip_EnableNotification (module_7);
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+<L5>:
+
+  <bb 9> :
+  return;
+
+}
+
+
+Icu_Ipw_GetEdgeNumbers (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  uint16 edgeNumber;
+  uint16 D.7252;
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _3;
+  unsigned char _4;
+  <unnamed type> _5;
+  unsigned char _6;
+  uint16 _17;
+
+  <bb 2> :
+  edgeNumber_9 = 0;
+  _1 = ChannelConfig_11(D)->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig_11(D)->instanceNo;
+  _3 = ChannelConfig_11(D)->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  edgeNumber_16 = Ftm_Icu_Ip_GetEdgeNumbers (_2, _4);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig_11(D)->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig_11(D)->instanceNo;
+  edgeNumber_14 = Lptmr_Icu_Ip_GetEdgeNumbers (_6);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  edgeNumber_12 = 0;
+
+  <bb 7> :
+  # edgeNumber_7 = PHI <edgeNumber_16(3), edgeNumber_14(5), edgeNumber_12(6)>
+  _17 = edgeNumber_7;
+
+  <bb 8> :
+<L6>:
+  return _17;
+
+}
+
+
+Icu_Ipw_DisableEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _3;
+  unsigned char _4;
+  <unnamed type> _5;
+  unsigned char _6;
+
+  <bb 2> :
+  _1 = ChannelConfig_9(D)->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig_9(D)->instanceNo;
+  _3 = ChannelConfig_9(D)->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_DisableEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig_9(D)->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig_9(D)->instanceNo;
+  Lptmr_Icu_Ip_DisableEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_EnableEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _3;
+  unsigned char _4;
+  <unnamed type> _5;
+  unsigned char _6;
+
+  <bb 2> :
+  _1 = ChannelConfig_9(D)->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig_9(D)->instanceNo;
+  _3 = ChannelConfig_9(D)->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_EnableEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig_9(D)->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig_9(D)->instanceNo;
+  Lptmr_Icu_Ip_EnableEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_ResetEdgeCount (const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _3;
+  unsigned char _4;
+  <unnamed type> _5;
+  unsigned char _6;
+
+  <bb 2> :
+  _1 = ChannelConfig_9(D)->channelIp;
+  if (_1 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  _2 = ChannelConfig_9(D)->instanceNo;
+  _3 = ChannelConfig_9(D)->pFtmHwChannelConfig;
+  _4 = _3->hwChannel;
+  Ftm_Icu_Ip_ResetEdgeCount (_2, _4);
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  _5 = ChannelConfig_9(D)->channelIp;
+  if (_5 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _6 = ChannelConfig_9(D)->instanceNo;
+  Lptmr_Icu_Ip_ResetEdgeCount (_6);
+
+  <bb 6> :
+  return;
+
+}
+
+
+Icu_Ipw_SetActivationCondition (Icu_ActivationType activation, const struct Icu_Ipw_ChannelConfigType * ChannelConfig)
+{
+  Icu_Ipw_ModuleType ipType;
+  uint8 module;
+  uint8 channel;
+  const struct Ftm_Icu_Ip_ChannelConfigType * _1;
+  const struct Port_Ci_Icu_Ip_ChannelConfigType * _2;
+
+  <bb 2> :
+  module_10 = ChannelConfig_9(D)->instanceNo;
+  ipType_11 = ChannelConfig_9(D)->channelIp;
+  switch (ipType_11) <default: <L34> [INV], case 0: <L0> [INV], case 2: <L20> [INV], case 3: <L10> [INV], case 4: <L24> [INV]>
+
+  <bb 3> :
+<L0>:
+  _1 = ChannelConfig_9(D)->pFtmHwChannelConfig;
+  channel_24 = _1->hwChannel;
+  if (activation_12(D) == 2)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  Ftm_Icu_Ip_SetActivationCondition (module_10, channel_24, 2);
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  if (activation_12(D) == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  Ftm_Icu_Ip_SetActivationCondition (module_10, channel_24, 1);
+  goto <bb 10>; [INV]
+
+  <bb 7> :
+  if (activation_12(D) == 3)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  Ftm_Icu_Ip_SetActivationCondition (module_10, channel_24, 3);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  Ftm_Icu_Ip_SetActivationCondition (module_10, channel_24, 0);
+
+  <bb 10> :
+  goto <bb 32>; [INV]
+
+  <bb 11> :
+<L10>:
+  _2 = ChannelConfig_9(D)->pPortCiHwChannelConfig;
+  channel_17 = _2->pinId;
+  if (activation_12(D) == 2)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module_10, channel_17, 1);
+  goto <bb 18>; [INV]
+
+  <bb 13> :
+  if (activation_12(D) == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module_10, channel_17, 2);
+  goto <bb 18>; [INV]
+
+  <bb 15> :
+  if (activation_12(D) == 3)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module_10, channel_17, 3);
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  Port_Ci_Icu_Ip_SetActivationCondition (module_10, channel_17, 0);
+
+  <bb 18> :
+  goto <bb 32>; [INV]
+
+  <bb 19> :
+<L20>:
+  if (activation_12(D) == 2)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  Lptmr_Icu_Ip_SetActivationCondition (module_10, 1);
+  goto <bb 22>; [INV]
+
+  <bb 21> :
+  Lptmr_Icu_Ip_SetActivationCondition (module_10, 0);
+
+  <bb 22> :
+  goto <bb 32>; [INV]
+
+  <bb 23> :
+<L24>:
+  if (activation_12(D) == 2)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  Cmp_Ip_SetInterruptActivation (module_10, 1);
+  goto <bb 30>; [INV]
+
+  <bb 25> :
+  if (activation_12(D) == 1)
+    goto <bb 26>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 26> :
+  Cmp_Ip_SetInterruptActivation (module_10, 2);
+  goto <bb 30>; [INV]
+
+  <bb 27> :
+  if (activation_12(D) == 3)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 28> :
+  Cmp_Ip_SetInterruptActivation (module_10, 3);
+  goto <bb 30>; [INV]
+
+  <bb 29> :
+  Cmp_Ip_SetInterruptActivation (module_10, 0);
+
+  <bb 30> :
+  goto <bb 32>; [INV]
+
+  <bb 31> :
+<L34>:
+
+  <bb 32> :
+  return;
+
+}
+
+
+Icu_Ipw_Init (uint8 count, const struct Icu_Ipw_IpConfigType[<unknown>] * pIpConfig)
+{
+  uint8 index;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  unsigned char _4;
+  int _5;
+  const struct Ftm_Icu_Ip_ConfigType * _6;
+  int _7;
+  <unnamed type> _8;
+  int _9;
+  unsigned char _10;
+  int _11;
+  const struct Lpit_Icu_Ip_ConfigType * _12;
+  int _13;
+  <unnamed type> _14;
+  int _15;
+  unsigned char _16;
+  int _17;
+  const struct Lptmr_Icu_Ip_ConfigType * _18;
+  int _19;
+  <unnamed type> _20;
+  int _21;
+  unsigned char _22;
+  int _23;
+  const struct Port_Ci_Icu_Ip_ConfigType * _24;
+  int _25;
+  <unnamed type> _26;
+  int _27;
+  unsigned char _28;
+  int _29;
+  const struct Cmp_Ip_ConfigType * _30;
+  unsigned char index.0_31;
+
+  <bb 2> :
+  index_35 = 0;
+  goto <bb 14>; [INV]
+
+  <bb 3> :
+  _1 = (int) index_32;
+  _2 = *pIpConfig_38(D)[_1].instanceIp;
+  if (_2 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  _3 = (int) index_32;
+  _4 = *pIpConfig_38(D)[_3].instanceNo;
+  _5 = (int) index_32;
+  _6 = *pIpConfig_38(D)[_5].pFtmHwIpConfig;
+  Ftm_Icu_Ip_Init (_4, _6);
+  goto <bb 13>; [INV]
+
+  <bb 5> :
+  _7 = (int) index_32;
+  _8 = *pIpConfig_38(D)[_7].instanceIp;
+  if (_8 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  _9 = (int) index_32;
+  _10 = *pIpConfig_38(D)[_9].instanceNo;
+  _11 = (int) index_32;
+  _12 = *pIpConfig_38(D)[_11].pLpitHwInstanceConfig;
+  Lpit_Icu_Ip_Init (_10, _12);
+  goto <bb 13>; [INV]
+
+  <bb 7> :
+  _13 = (int) index_32;
+  _14 = *pIpConfig_38(D)[_13].instanceIp;
+  if (_14 == 2)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  _15 = (int) index_32;
+  _16 = *pIpConfig_38(D)[_15].instanceNo;
+  _17 = (int) index_32;
+  _18 = *pIpConfig_38(D)[_17].pLptmrHwIpConfig;
+  Lptmr_Icu_Ip_Init (_16, _18);
+  goto <bb 13>; [INV]
+
+  <bb 9> :
+  _19 = (int) index_32;
+  _20 = *pIpConfig_38(D)[_19].instanceIp;
+  if (_20 == 3)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  _21 = (int) index_32;
+  _22 = *pIpConfig_38(D)[_21].instanceNo;
+  _23 = (int) index_32;
+  _24 = *pIpConfig_38(D)[_23].pPortCiHwIpConfig;
+  Port_Ci_Icu_Ip_Init (_22, _24);
+  goto <bb 13>; [INV]
+
+  <bb 11> :
+  _25 = (int) index_32;
+  _26 = *pIpConfig_38(D)[_25].instanceIp;
+  if (_26 == 4)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  _27 = (int) index_32;
+  _28 = *pIpConfig_38(D)[_27].instanceNo;
+  _29 = (int) index_32;
+  _30 = *pIpConfig_38(D)[_29].pCmpHwIpConfig;
+  Cmp_Ip_Init (_28, _30);
+
+  <bb 13> :
+  index.0_31 = index_32;
+  index_44 = index.0_31 + 1;
+
+  <bb 14> :
+  # index_32 = PHI <index_35(2), index_44(13)>
+  if (index_32 < count_37(D))
+    goto <bb 3>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  return;
+
+}
+
+

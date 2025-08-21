@@ -1,0 +1,103 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: main
+
+
+Marking externally visible variables: appVers
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SCH_MainLoop/8 (SCH_MainLoop) @05f2e2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+SCH_Init/7 (SCH_Init) @05f2e1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+INI_InitModules/6 (INI_InitModules) @05f2e0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+INI_InitLibrairies/5 (INI_InitLibrairies) @05f2e000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+INI_InitMiddlewares/4 (INI_InitMiddlewares) @05f2aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+INI_InitDrivers/3 (INI_InitDrivers) @05f2ae00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/2 
+  Calls: 
+main/2 (main) @05f2a9a0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SCH_MainLoop/8 SCH_Init/7 INI_InitModules/6 INI_InitLibrairies/5 INI_InitMiddlewares/4 INI_InitDrivers/3 
+appVers/1 (appVers) @05b06c60
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public section:.appVersSec
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+main ()
+{
+  int D.6317;
+
+  <bb 2> :
+  INI_InitDrivers ();
+  INI_InitMiddlewares ();
+  INI_InitLibrairies ();
+  INI_InitModules ();
+  SCH_Init ();
+
+  <bb 3> :
+  SCH_MainLoop ();
+  goto <bb 3>; [INV]
+
+}
+
+
